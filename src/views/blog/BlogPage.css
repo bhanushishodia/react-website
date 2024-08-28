@@ -1,0 +1,54 @@
+/* BlogPage.css */
+.summary-card {
+    border: 1px solid rgba(153, 153, 153, .2);
+    border-radius: 5px;
+    padding: 40px;
+    position: sticky !important;
+    top: 120px;
+}
+
+.summary-card h3 {
+
+    font-size: 20px;
+    font-weight: 700;
+
+}
+
+.summary-card ul li {
+    padding-left: 0;
+    font-size: 14px;
+    color: #999;
+    text-align: left;
+    margin: 15px 0;
+
+
+}
+
+.brd-gray {
+    border-color: rgba(0, 0, 0, .1333333333) !important;
+}
+
+
+.blogBox p {
+    text-align: justify;
+}
+
+.blogBox h4 {
+    text-align: justify;
+}
+
+.blogBox h3 {
+    text-align: justify;
+}
+
+.entry-content {
+    line-height: 1.6;
+}
+
+.entry-content p {
+    margin-bottom: 1rem;
+}
+
+html {
+    scroll-behavior: smooth;
+}

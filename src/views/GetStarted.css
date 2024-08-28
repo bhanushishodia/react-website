@@ -1,0 +1,36 @@
+.get-started-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .content-wrapper {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+  }
+  
+  .get-started-content {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  .link {
+    color: #5dc4eb;
+    text-decoration: none;
+  }
+  
+  h1, h2, h3 {
+    color: #333;
+  }
+  
+  @media (max-width: 768px) {
+    .get-started-container {
+      padding: 10px;
+    }
+  
+    .content-wrapper {
+      padding: 20px;
+    }
+  }
+  

@@ -1,0 +1,14 @@
+.form_affiliate {
+    border-top: 10px solid #27afc8;
+    background: linear-gradient(45deg, transparent, #def1fa, transparent, #def1fa, transparent);
+    animation: 20s linear infinite gradient;
+    overflow: hidden;
+    border-radius: 30px;
+}.form-control {
+    border: 1px solid rgba(153, 153, 153, .2666666667);
+    border-radius: 30px;
+    min-height: 50px;
+    font-size: 13px;
+    padding: 10px 25px;
+    background-color: #fff;
+}

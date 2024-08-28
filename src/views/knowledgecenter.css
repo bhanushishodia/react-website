@@ -1,0 +1,29 @@
+
+  
+  .knowledge-center-page h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .knowledge-center-page p {
+    font-size: 1rem;
+  }
+  .knowledge_card{
+      border: 1px solid rgba(153, 153, 153, .2666666667);
+      border-radius: 5px;
+      padding: 25px;
+      display: flex;
+      background-color: #fff;
+
+  }
+  .knowledge_card h6{
+    font-size: 1.5rem;
+      text-align: left;
+  
+
+  }
+  .knowledge_card .user_img {
+    margin-right: 25px;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+}

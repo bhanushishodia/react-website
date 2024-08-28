@@ -1,0 +1,70 @@
+/* src/views/contact.css */
+.contact-page {
+  /* max-width: 600px; */
+  margin: 0 auto;
+  /* padding: 20px; */
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.googleMap {
+  width: 100%;
+}
+
+.clients .client-card {
+  padding: 22px 40px;
+  border: 1px solid rgba(153, 153, 153, .2);
+  border-radius: 15px;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+  text-align: left;
+}
+
+.clients .client-card img {
+  width: 40%;
+}
+
+.clients .client-card h5 {
+  padding: 5px 0px;  
+  margin-top: 10px;
+}
+
+.contact  {
+   background: -o-linear-gradient(45deg, transparent, #def1fa, transparent, #e8e8f3, transparent);
+  background: linear-gradient(45deg, transparent, #def1fa, transparent, #e8e8f347, transparent);
+  background-size: 400% 400%;
+  -webkit-animation: 20s linear infinite gradient;
+  animation: 20s linear infinite gradient;
+  border-radius: 30px;
+  overflow: hidden;
+  padding-bottom: 20px;
+
+}
+

@@ -1,0 +1,219 @@
+/* Basic styling for header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid rgb(0 0 0 / 10%);
+  /* Ensures the header stays on top of other content */
+}
+.custom-divider {
+  position: relative;
+  color: #5dc4eb;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 0 0 12px 10px;
+  margin-bottom: 13px;
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid rgba(153, 153, 153, .2);
+  transition: .3s;
+}
+.subline {
+  font-size: 11px;
+  margin-left: 50px;
+  letter-spacing: 1px;
+  display: block;
+  color: #666;
+}
+
+.border-end {
+  border-right: 1px solid #dee2e6 !important;
+}
+
+.border-bottom {
+  max-width: 1291px;
+  width: 100%;
+  border: none;
+  z-index: 10;
+  margin: auto;
+  opacity: 1;
+}
+
+/* Logo styling */
+.logo {
+  width: 200px;
+}
+
+.dropdown-toggle::after {
+  position: relative;
+  top: 3px;
+  opacity: .8;
+  content: "\f078";
+  font-weight: 900;
+  font-family: "Font Awesome 5 pro";
+  border: 0;
+  font-size: 80%;
+}
+
+.button {
+  margin-left: auto;
+}
+
+/* Menu styling */
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+.top-navbar {
+  position: relative;
+  z-index: 9999;
+  background: #f3fbff;
+}
+
+.nav-scroll {
+  background: #fff !important;
+  -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, .1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .1);
+  padding: 0;
+  position: fixed !important;
+  top: -100px !important;
+  left: 0;
+  width: 100%;
+  -webkit-transition: -webkit-transform .5s;
+  transition: transform .5s;
+  -o-transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+  -webkit-transform: translateY(100px);
+  -ms-transform: translateY(100px);
+  transform: translateY(100px);
+  border-radius: 0 !important;
+  margin: 0 !important;
+}
+
+.menu ul li {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 15px;
+  margin: 6px 20px;
+  /* Adjust spacing between menu items */
+}
+
+.menu ul li:last-child {
+  margin-right: 0;
+  /* Remove margin from last menu item */
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #333;
+  /* Menu item text color */
+  font-size: 16px;
+  /* Adjust font size */
+}
+
+.menu ul li a:hover {
+  color: #007bff;
+  /* Hover color */
+}
+
+/* Button styling */
+.button {
+  margin-left: auto;
+}
+
+.button a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #5dc4eb;
+  padding: 10px 25px;
+  font-weight: 500;
+  font-size: 14px;
+
+}
+
+.button a:hover {
+  background-color: #4ac1ed;
+  /* Hover background color */
+}
+
+/* src/components/Header.css */
+
+/* Enable dropdowns on hover */
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+
+/* Custom styles for dropdown arrows */
+.header .dropdown-toggle::after {
+  margin-left: 0.5rem;
+  vertical-align: 0.255em;
+  content: "";
+  border-top: 0.3em solid;
+  top: 2px;
+  border-right: 0.3em solid transparent;
+  border-bottom: 0;
+  border-left: 0.3em solid transparent;
+}
+
+/* Customize the dropdown menu appearance */
+.header .dropdown-menu {
+  border: none;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, .0666666667);
+  box-shadow: 0 0 20px rgba(0, 0, 0, .0666666667);
+  padding: 15px 0;
+  background: #fff;
+  border: 1px solid #ced3d9;
+  min-width: auto;
+  border-radius: 15px;
+  top: 100%;
+
+}
+
+.header .dropdown-item img {
+  margin-right: 10px;
+  /* Adjust if necessary */
+  width: 30px;
+  /* Increase the width to make the image larger */
+  border-right: 1px solid #dee2e6 !important;
+  vertical-align: middle;
+  /* Aligns the image vertically with the text */
+}
+
+.dropdown-menu {
+  min-width: auto;
+  background: #fff;
+  border: 1px solid #ced3d9;
+  padding: 15px 0;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, .0666666667);
+  box-shadow: 0 0 20px rgba(0, 0, 0, .0666666667);
+  top: 100%;
+}
+
+.dropdown-item {
+  padding: .25rem 1rem;
+  clear: both;
+  font-size: 14px !important;
+}
+
+/* Styles for dropdown menu columns */
+.dropdown-menu-columns .row {
+  flex-wrap: nowrap;
+}
+
+#integrationDropdown .dropdown-menu {
+  display: block;
+  left: -205px;
+  position: absolute;
+  margin-top: 0;
+
+}

@@ -1,0 +1,55 @@
+.ecom-card {
+  position: relative;
+  cursor: pointer;
+  height: 100%;
+  border-bottom: 3px solid #54cdeb !important;
+  padding: 10px 20px;
+   border: 1px solid #ddd; 
+   border-radius: 10px;
+   background: #fff;
+   transition: all 0.5s ease;
+   transition-duration: 1s;
+   text-align: left;
+
+}
+.ecom-card:hover {
+
+    transform: scale(1.1);
+
+}
+
+.ecom-card p {
+  font-size: 14px;
+}
+.ecom-card .card-title {
+  font-size: 18px;
+  color: #54cdeb;
+  margin-bottom: 10px;
+}
+
+.cta-card .cta-content {
+  padding: 20px;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.cta-card.active {
+  border: 2px solid #007bff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
+
+.cta-card:not(.active):hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.cta-card{
+  text-align: center;
+}

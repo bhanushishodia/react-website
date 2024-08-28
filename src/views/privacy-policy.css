@@ -1,0 +1,46 @@
+.privacy-policy-container {
+   
+    
+    padding: 20px;
+  }
+  .privacy-policy-page header{
+
+    text-align: left;
+  }
+  .content-wrapper {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+  }
+  
+  .privacy-content {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    text-align: left;
+  }
+  
+  .intro-text {
+    margin-bottom: 20px;
+  }
+  
+  .link {
+    color: #5dc4eb;
+    text-decoration: none;
+  }
+  
+  h2, h3, h4 {
+    margin-top: 20px;
+    color: #333;
+  }
+  
+  
+  
+  @media (max-width: 768px) {
+    .privacy-policy-container {
+      padding: 10px;
+    }
+  
+    .content-wrapper {
+      padding: 20px;
+    }
+  }

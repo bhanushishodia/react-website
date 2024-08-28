@@ -1,0 +1,48 @@
+/* AutomatedChats.css */
+
+
+
+.projects {
+    padding: 30px;
+}
+
+.projects-tabs {
+    margin: 0 auto;
+    border-radius: 12px;
+}
+
+.nav-pills .nav-link {
+    border-radius: 12px;
+    text-align: center;
+}
+
+.nav-pills .nav-link.active {
+    background: #76c6b7;
+    color: #fff;
+}
+
+.project-card {
+    border-radius: 12px;
+    
+}
+
+.project-card .info h3 {
+    color: #333;
+}
+
+.project-card .info p {
+    color: #666;
+}
+
+.internalpage_link {
+    color: #76c6b7;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.internalpage_link:hover {
+    text-decoration: underline;
+}
+.about.style-9 .info ul li .icon img, .chats li img {
+    width: 60px;
+}

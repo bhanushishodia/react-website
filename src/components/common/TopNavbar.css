@@ -1,0 +1,18 @@
+.top-navbar {
+    position: relative;
+    z-index: 9999;
+    background: #f3fbff;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 12px 17px;
+}
+.top-navbar a {
+    padding: 10px 17px;
+    color: #000;
+    border-bottom: 2px solid transparent;
+    transition: .3s;
+    font-weight: 500;
+}
+.top-navbar a:hover {
+    border-bottom-color: #5dc4eb !important;
+}

@@ -1,0 +1,115 @@
+/* Ensure the Swiper container has a defined size */
+.swiper-container {
+  width: 100%;
+  height: auto;
+  overflow-y: hidden;
+  /* Hide vertical scrollbar */
+  overflow-x: hidden;
+  /* Hide horizontal scrollbar */
+  -ms-overflow-style: none;
+  /* Hide scrollbar for IE and Edge */
+  scrollbar-width: none;
+  /* Hide scrollbar for Firefox */
+}
+
+.swiper-container::-webkit-scrollbar {
+  display: none;
+  /* Hide scrollbar for WebKit-based browsers */
+}
+
+/* Swiper buttons styling */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #000;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  /* Ensure they are above other content */
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 20px;
+  color: #000;
+  /* Adjust color to ensure visibility */
+}
+
+.swiper-button-next {
+  right: 10px;
+}
+
+.swiper-button-prev {
+  left: 10px;
+}
+
+.bg-gray5 {
+  background-color: #f3f7fe;
+
+}
+
+.img-cover img {
+  width: 100%;
+  height: 100%;
+}
+
+.card-img,
+.card-img-top {
+  border-top-left-radius: calc(.25rem - 1px);
+  border-top-right-radius: calc(.25rem - 1px);
+}
+
+.blog .card::after,
+.blog-page.style-5 .related-postes-slider .swiper-slide-active::after,
+.blog-page.style-5 .related-postes-slider .swiper-slide-prev::after {
+  position: absolute;
+  content: "";
+  right: -40px;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  background-color: rgba(153, 153, 153, .2666666667);
+}
+
+.blog .card {
+  text-align: left;
+}
+
+.blog a {
+  font-weight: 500;
+  font-size: 18px !important;
+  color: #666;
+  font-weight: 700;
+}
+
+.blog .card,
+.card .icon,
+.sidebar h4,
+.sidebar h5,
+.sidebar ul li {
+  text-align: left;
+}
+
+.blog .card {
+
+  padding: 10px 25px;
+  border-radius: 10px;
+  height: 100%;
+  color: #000;
+  border: 2px solid #4fc3f563;
+  position: relative;
+  -webkit-transition: .32s ease-in-out;
+  transition: all 0.5s ease;
+  transition-duration: 1s;
+}
+
+.blog .small,
+small {
+  font-size: 13px;
+  margin-top: 15px;
+  line-height: 1.7;
+}

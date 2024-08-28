@@ -1,0 +1,20 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+.logo-carousel {
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .logo-carousel .slick-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logo-carousel .logo-image {
+    max-width: 150px;
+    padding: 0px;
+  
+  }
+  

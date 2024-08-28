@@ -1,0 +1,100 @@
+/* Base styles for the StickyBar */
+.UTQd8b {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translate3d(calc(100% - 16px), -50%, 0);
+  transition: transform 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.1s;
+  z-index: 4501;
+  border-radius: 8px 0 0 8px;
+  box-shadow: 0 0 4px rgb(0 0 0 / 10%);
+  padding: 4px;
+}
+.UTQd8b svg {
+   color: #54cdeb!important;
+  margin: 10px 0px;
+}
+
+@media screen and (min-width: 841px) {
+  .UTQd8b .cCNe0 {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      flex-direction: column;
+  }
+}
+/* Styling for the container */
+.cCNe0 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 841px) {
+  .UTQd8b .cCNe0 {
+    
+      flex-direction: column;
+  }
+}
+/* Arrow styling */
+.arrow {
+  position: absolute;
+
+  width: 0;
+  height: 0;
+  top: 50%;
+  border-left: 5px solid #333;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  transform: translateY(-50%);
+  fill: #fff;
+
+
+
+}
+
+/* Hover effects */
+.UTQd8b:hover {
+  transform: translate3d(0, -50%, 0);
+  transition: transform .3s cubic-bezier(0.19,1,0.22,1), -webkit-transform .3s cubic-bezier(0.19,1,0.22,1);
+}
+
+.UTQd8b:hover .cCNe0 {
+  transform: translateX(0);
+  transition: transform .3s cubic-bezier(0.19,1,0.22,1), -webkit-transform .3s cubic-bezier(0.19,1,0.22,1);
+}
+
+.XfpeWb {
+  margin-left: 1px;
+  position: absolute;
+  top: 50%;
+  transition: transform 0.3s cubic-bezier(0.19, 1, 0.22, 1) 0.6s;
+}
+
+/* Icons container styling */
+.UTQd8b .cCNe0 .icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+/* Transition effect for icons */
+.UTQd8b:hover .icon-container {
+  transform: translateX(-56px); /* Move the icons left */
+}
+
+/* Responsive adjustments */
+@media screen and (min-width: 841px) {
+  .UTQd8b {
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 8px 0 0 8px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+    padding: 4px;
+  }
+  
+ 
+
+  .UTQd8b .XfpeWb {
+    transition: transform 0.3s cubic-bezier(0.19, 1, 0.22, 1) 0.6s;
+  }
+}

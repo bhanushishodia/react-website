@@ -1,0 +1,40 @@
+/* AffiliateProgram.css */
+
+.affiliate-container {
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.partner_heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.affiliate-header {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.affiliate-content {
+    font-size: 16px;
+    color: #666;
+}
+
+.affiliate-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.affiliate-button:hover {
+    background-color: #0056b3;
+}

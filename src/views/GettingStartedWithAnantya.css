@@ -1,0 +1,36 @@
+
+
+h1 {
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+.btn-primary {
+    background-color: #5dc4eb;
+    border-color: #5dc4eb;
+}
+
+.btn-primary:hover {
+    background-color: #4aafc3;
+    border-color: #4aafc3;
+}
+.resources ul li{
+    list-style: none;
+    padding: 15px 10px;
+    text-align: left;
+    border-radius: 10px;
+    background-color: transparent;
+    transition: background-color .2s;
+}.card_anantya_started {
+    width: 100%;
+    color: rgba(0, 0, 0, .87);
+    padding: 10px 30px !important;
+    background: #fff;
+    border-radius: 10px !important;
+    transition: max-height 5s ease-in-out;
+    border: 1px solid #e6e6e6;
+    font-weight: 500;
+}
