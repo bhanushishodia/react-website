@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import axios from 'axios'; // Ensure you have axios installed
-import './form.css'; // Import your CSS file if needed
+import axios from 'axios';
+import './form.css'; // Make sure this path is correct
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -11,6 +11,8 @@ const ContactForm = () => {
     url: ''
   });
 
+  const [statusMessage, setStatusMessage] = useState('');
+  
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -23,32 +25,37 @@ const ContactForm = () => {
     e.preventDefault();
 
     try {
-      // Replace with your Odoo API endpoint and headers
       const response = await axios.post(
-        'https://yourdomain.odoo.com/web/dataset/call_kw',
+        'https://anantyaai.odoo.com/web/dataset/call_kw', // Replace with your Odoo URL
         {
-          model: 'crm.lead', // Odoo model for leads
-          method: 'create',
-          args: [
-            {
-              name: formData.name,
-              email_from: formData.email,
-              phone: formData.phone,
-              description: formData.message,
-              website: formData.url
-            }
-          ],
-          kwargs: {}
+          jsonrpc: "2.0",
+          method: "call",
+          params: {
+            model: 'crm.lead',
+            method: 'create',
+            args: [
+              {
+                name: formData.name,
+                email_from: formData.email,
+                phone: formData.phone,
+                description: formData.message,
+                website: formData.url
+              }
+            ]
+          },
+          id: Math.floor(Math.random() * 100000) // Random ID for request
         },
         {
           headers: {
             'Content-Type': 'application/json',
-            'Authorization': `Bearer YOUR_API_KEY` // Replace with your API key
+            'Authorization': `Bearer YOUR_API_KEY` // Replace with your API key or session info
           }
         }
       );
 
       console.log('Form data submitted successfully:', response.data);
+      setStatusMessage('Form submitted successfully!');
+      
       // Optionally, clear the form or display a success message
       setFormData({
         name: '',
@@ -59,7 +66,7 @@ const ContactForm = () => {
       });
     } catch (error) {
       console.error('Error submitting form data:', error);
-      // Optionally, display an error message
+      setStatusMessage('Error submitting form. Please try again.');
     }
   };
 
@@ -131,6 +138,7 @@ const ContactForm = () => {
             className="btn bg-green text-light fs-12px w-50"
           />
         </div>
+        {statusMessage && <p className="text-center mt-3">{statusMessage}</p>}
       </div>
     </form>
   );
