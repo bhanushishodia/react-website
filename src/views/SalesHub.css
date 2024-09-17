@@ -1,26 +1,112 @@
-.sales-hub {
-    /* Full viewport height */
-    min-height: 100vh;
-    display: flex;
-    flex-direction: row;
-    padding: 0;
+/* Basic styles */
+
+
+/* Sticky Top Bar */
+ .sales-hub .top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #dee2e633;
+  padding: 4px 20px;
+  position: sticky;
+  width: 100%;
+  z-index: 9999; /* Highest z-index value */
+  top: 0;
+
+}
+
+.sales-hub .logo {
+  height: auto;
+  width: 200px;
+}
+
+/* Main Container */
+ .sales-hub .main-container {
+  display: flex;
+  min-height: 100vh;
+  z-index: 99;
+}
+
+/* Sidebar Styling */
+ .sales-hub .sidebar {
+  width: 250px;
+  background-color: #f3f3f3;
+  padding: 20px;
+  color: #000;
+  position: sticky;
+  top: 80px; /* to stay below the sticky bar */
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.sidebar::-webkit-scrollbar {
+  width: 0;
+  background: 0 0
+}
+.sales-hub .sidebar h3 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+ .sales-hub .sidebar ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ .sales-hub.sidebar ul li {
+  margin-bottom: 10px;
+}
+
+.sales-hub .sidebar ul li a {
+  color: #000;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.sales-hub .sidebar ul li a:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Content Area */
+.sales-hub .content {
+  flex: 1;
+  padding: 20px;
+}
+
+.sales-hub .content-section {
+  margin-bottom: 30px;
+}
+
+.sales-hub .content-section h4 {
+  margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .sales-hub .sidebar {
+    width: 100%;
+    position: static;
+    height: auto;
+    padding: 10px;
   }
-  
-  .sidebar {
-    background-color: #f8f9fa;
-    padding: 1rem;
-    height: 100vh;
-    position: sticky;
-    top: 0;
-    overflow-y: auto;
+
+  .sales-hub .main-container {
+    flex-direction: column;
   }
-  
-  .content {
-    
-    flex: 1;
+
+  .sales-hub .top-bar {
+    padding: 10px;
   }
-  
-  .content-section {
-    margin-bottom: 2rem;
+
+  .sales-hub .top-bar-left, .top-bar-right {
+    text-align: center;
   }
-  
+
+  .sales-hub .content {
+    padding: 10px;
+  }
+}

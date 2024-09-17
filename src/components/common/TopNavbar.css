@@ -1,7 +1,8 @@
 .top-navbar {
-    position: relative;
+    position: fixed;
     z-index: 9999;
-    background: #f3fbff;
+    width: 100%;
+    background: linear-gradient(85.7deg, #e6f3ff 1.71%, #fff8e0 99.56%);
     font-size: 12px;
     font-weight: 600;
     padding: 12px 17px;
@@ -15,4 +16,23 @@
 }
 .top-navbar a:hover {
     border-bottom-color: #5dc4eb !important;
-}
+}/* CSS for sticky navbar */
+
+  
+
+  
+  @keyframes slide-vertical {
+    0% {
+      transform: translateY(100%);
+    }
+    20% {
+      transform: translateY(0);
+    }
+    80% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-100%);
+    }
+  }
+  

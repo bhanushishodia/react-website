@@ -2,7 +2,46 @@
 main {
   text-align: left;
 }
+@media screen and (max-width: 991px) {
+   h1{
+      font-size: 30px!important;
+  }
+}
+@media screen and (max-width: 991px) {
+  h2 {
+      font-size: 25px!important;
+  }
+}
+/* Highlight animation */
+h2 span {
+  background-image: linear-gradient(-225deg, rgb(93, 196, 235) 0%, #54b9a6 29%, #00bdff 67%, #ffb8bf 100%);
+  background-size: 200% auto; /* Ensures the gradient moves over the text */
+  background-clip: text;
+  color: transparent; /* Makes the text color invisible so the gradient shows */
+  -webkit-background-clip: text; /* Clip the gradient to the text in WebKit browsers */
+  -webkit-text-fill-color: transparent; /* Make text color invisible in WebKit browsers */
+  animation: textclip 2s linear infinite; /* Applies the animation effect */
+  padding: 0px 0px; /* Adds padding around the text */
+  border-radius: 10px; /* Optional rounded corners */
+  white-space: nowrap; /* Prevents text wrapping */
+  font-weight: 700;
+  overflow: hidden; /* Contains the animation within the element */
+}
 
+/* Keyframes for gradient animation */
+@keyframes textclip {
+  from {
+    background-position: 0% 50%; /* Starts the gradient from the left */
+  }
+  to {
+    background-position: 200% 50%; /* Moves the gradient across the text */
+  }
+}
+
+.numbers h2 span{
+  -webkit-text-fill-color: #00bdff;
+
+}
 
 @media (max-width:767px) {
   main {
@@ -27,11 +66,13 @@ main {
 
 .intro {
   font-weight: 700;
-  font-size: 40px
+  font-size: 40px;
+ 
 }
 
 .typing {
   font-size: 50px;
+  font-family: 'Poppins', sans-serif;
   position: absolute;
   border-radius: 5px;
   line-height: 3.5rem;
@@ -282,6 +323,9 @@ main {
   border-bottom: 2px solid #157efb;
 
   padding: 10px;
+ 
+  transition: all 1s;
+  
 }
 
 .features-cards {
@@ -290,6 +334,12 @@ main {
   border-radius: 27px;
   transition: background-color .4s, box-shadow .4s;
 }
+@media screen and (max-width: 991px) {
+  .features-cards .icon{
+    margin: 0 auto;
+  }
+}
+
 
 .features-cards:hover {
   background-color: #fff;
@@ -505,14 +555,11 @@ main {
   top: 0;
   left: 50%;
   margin-top: 0;
-  z-index: 1000;
+  z-index: 10000;
   background: white;
   box-shadow: 0px 8px 30px rgba(247, 186, 235, 0.1);
 }
 
-.body-std {
-  text-align: justify;
-}
 
 .logo_heading {
   font-style: normal;
@@ -522,4 +569,21 @@ main {
   text-align: center;
   letter-spacing: .1em;
   padding: 8px 36px;
+}.video-section {
+  transition: transform 1.5s ease-in-out, opacity 1.5s ease-in-out;
+  transform: translateY(50px) scale(0.9); /* Initial zoom-out effect */
+  opacity: 0; /* Initially hidden */
+}
+
+.video-section.zoom-in {
+  transform: translateY(0) scale(1); /* Zoom-in and slide up */
+  opacity: 1; /* Visible */
+}
+
+.video-section.zoom-out {
+  transform: translateY(50px) scale(0.9); /* Zoom-out and slide down */
+  opacity: 0; /* Hidden */
+}
+.clients{
+  background: linear-gradient(85.7deg, #e6f3ff 1.71%, #e8f5fb31 99.56%);
 }

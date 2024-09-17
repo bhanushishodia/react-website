@@ -12,19 +12,34 @@ const UseCasesSection = () => {
     const tabContent = [
       {
         number: 1,
-        title: 'Promotional Campaigns',
+        title: (
+          <>
+            Promotional <br /> Campaigns
+          </>
+        ), // Using React fragment to include a line break
         content: 'Engage your customer base by offering promotions, discount codes, and flash sales to boost sales conversions. Let\'s spice up your marketing strategy and reel in those conversions!',
         imgSrc: promoCampaignsImg
-      },
+      },  
       {
         number: 2,
-        title: 'Upselling & Cross-selling',
+        title: (
+          <>
+           Upselling &
+            <br /> Cross-selling
+          </>
+        ), // Using React fragment to include a line break
+
         content: 'Drive your customers to explore other products or services that are customised to their needs. Let\'s give them a little nudge in the right direction!',
         imgSrc: upsellingImg
       },
       {
         number: 3,
-        title: 'WhatsApp Newsletters',
+        title: (
+          <>
+           WhatsApp
+          <br />  Newsletters
+          </>
+        ), // Using React fragment to include a line break
         content: 'Sustain customer engagement and inspire them to repeat purchases by providing regular updates. Let\'s keep them coming back for more!',
         imgSrc: newslettersImg
       }

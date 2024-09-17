@@ -18,8 +18,8 @@ const ReportsAnalytics = () => {
           <div className="row align-items-center">
             <div className="col-lg-6 text-black mt-20 text-lg-start text-center">
               <div className="info text-black pe-md-2">
-                <h1>
-                  <span>Actionable WhatsApp</span> Analytics for Unparalleled
+                <h1 className="heading">
+                  Actionable WhatsApp Analytics for Unparalleled
                   Success
                 </h1>
                 <p className="mt-20 text-black pe-md-5">

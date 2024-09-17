@@ -20,7 +20,7 @@ const AffiliateProgram = () => {
   return (
     <>
     <section>
-      <div className="container py-5">
+      <div className="container py-5 my-5">
         <div className="row">
           <div className="col-md-6 col-sm-12 my-auto  text-md-start text-center">
             <span style={{ letterSpacing: '.2rem', paddingLeft: '0.5rem', color: '#4a4a56' }}>

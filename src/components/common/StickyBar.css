@@ -2,25 +2,25 @@
 .UTQd8b {
   position: fixed;
   top: 50%;
-  right: 0;
-  transform: translate3d(calc(100% - 16px), -50%, 0);
+  left: 0; /* Move it to the left side */
+  transform: translate3d(calc(-100% + 16px), -50%, 0); /* Adjust the transform to slide out from the left */
   transition: transform 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.1s;
   z-index: 4501;
-  border-radius: 8px 0 0 8px;
+  border-radius: 0 8px 8px 0; /* Adjust border-radius to the right side */
   box-shadow: 0 0 4px rgb(0 0 0 / 10%);
   padding: 4px;
 }
 .UTQd8b svg {
-   color: #54cdeb!important;
+  color: #54cdeb!important;
   margin: 10px 0px;
 }
 
 @media screen and (min-width: 841px) {
   .UTQd8b .cCNe0 {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-      flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    flex-direction: column;
   }
 }
 /* Styling for the container */
@@ -31,26 +31,10 @@
 }
 @media screen and (min-width: 841px) {
   .UTQd8b .cCNe0 {
-    
-      flex-direction: column;
+    flex-direction: column;
   }
 }
-/* Arrow styling */
-.arrow {
-  position: absolute;
 
-  width: 0;
-  height: 0;
-  top: 50%;
-  border-left: 5px solid #333;
-  border-top: 5px solid transparent;
-  border-bottom: 5px solid transparent;
-  transform: translateY(-50%);
-  fill: #fff;
-
-
-
-}
 
 /* Hover effects */
 .UTQd8b:hover {
@@ -64,7 +48,7 @@
 }
 
 .XfpeWb {
-  margin-left: 1px;
+  margin-right: 1px; /* Adjust margin for the right side */
   position: absolute;
   top: 50%;
   transition: transform 0.3s cubic-bezier(0.19, 1, 0.22, 1) 0.6s;
@@ -80,21 +64,67 @@
 
 /* Transition effect for icons */
 .UTQd8b:hover .icon-container {
-  transform: translateX(-56px); /* Move the icons left */
+  transform: translateX(56px); /* Move the icons right */
 }
 
 /* Responsive adjustments */
 @media screen and (min-width: 841px) {
   .UTQd8b {
     background: rgba(255, 255, 255, 0.5);
-    border-radius: 8px 0 0 8px;
+    border-radius: 0 8px 8px 0; /* Adjust border-radius for the left side */
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
     padding: 4px;
   }
   
- 
-
   .UTQd8b .XfpeWb {
     transition: transform 0.3s cubic-bezier(0.19, 1, 0.22, 1) 0.6s;
   }
 }
+.social-icon{
+   width: 30px;
+   margin: 10px 0px;
+   transition: .3s;
+}
+.social-icon:hover{
+
+  transform: scale(1.05);
+ 
+}
+.social-icon-linkdin{
+   width: 30px;
+  
+}
+
+.zYxYi {
+  width: 35%;
+}
+.cCNe0{
+ width: 5%;
+
+}
+.DIJzlf{
+  width: 35%;
+}
+.rw97Ub{
+  width: 35%;
+}
+.instagramShare{
+  width: 35%;
+}
+.arrow {
+  position: absolute;
+  right: 5px; /* Move the arrow slightly to the left */
+  top: 50%;
+  transform: translateY(-50%); /* Center vertically */
+  display: inline-block;
+  width: 10px; /* Arrow size width */
+  height: 10px; /* Arrow size height */
+  border-right: 2px solid rgb(60, 64, 67); /* Arrow shaft */
+  border-bottom: 2px solid rgb(60, 64, 67); /* Arrow head */
+  transform: rotate(-45deg); /* Rotate the arrow to point right */
+  transition: transform 0.3s cubic-bezier(0.19, 1, 0.22, 1) 0.7s; /* Smooth rotation transition */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+
+

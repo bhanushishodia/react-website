@@ -79,7 +79,7 @@
   .tab-links li {
     padding: 10px 20px;
     cursor: pointer;
-    font-weight: bold;
+    
     transition: background-color 0.3s ease;
   }
   

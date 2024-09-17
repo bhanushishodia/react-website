@@ -19,6 +19,15 @@ import whatsappBankingImg from "../assets/images/blog/whatsapp-business-api-in-b
 import metaUpdateImg from "../assets/images/blog/meta-frequency-capping-update.webp";
 import whatsappMarketingImg from "../assets/images/blog/whatsapp-marketing-direct-communication-with-customers.webp";
 import whatsappPricingImg from "../assets/images/blog/whatsapp-business-api-conversation-pricing.webp";
+
+import whatsappGreenToBlueTickImg from '../assets/images/blog/whatsapp-business-switching-from-green-tick-to-blue-tick.webp';
+import whatsappPricingChangeImg from '../assets/images/blog/whatsapp-authentication-rates.webp';
+import whatsappFreeEntryImg from '../assets/images/blog/whatsapp-free-entry-frequency-capping.webp';
+import whatsappBroadcastListImg from '../assets/images/blog/whatsapp-broadcast-list-and-its-features.webp';
+import whatsappGovtAPIImg from '../assets/images/blog/whatsapp-business-api-for-government.webp';
+import whatsappAPIProvidersImg from '../assets/images/blog/whatsapp-business-api-providers-2024.webp';
+
+
 const Blog = () => {
   const [selectedCategory, setSelectedCategory] = useState("all");
 
@@ -141,17 +150,66 @@ const Blog = () => {
       link: "/blog/whatsapp-business-api-pricing",
       category: "WhatsApp News Updates",
     },
+    {
+      imgSrc: whatsappGreenToBlueTickImg,
+      title: "Why WhatsApp Business is Switching from Green Tick to Blue Tick Verification",
+      description:
+        "Have you recently noticed any changes in WhatsApp? No… no… I am not talking about the app’s upgraded version..",
+        link: "/blog/whatsapp-business-switching-from-green-tick-to-blue-tick",
+        category: "WhatsApp News Updates",
+    },
+    {
+      imgSrc: whatsappPricingChangeImg,
+      title: "Telecom Revolt on International Authentication Messages: The WhatsApp Pricing Change",
+      description:
+        "Reaching millions of people with just a single click, the world has grown digitally. WhatsApp has become the first-ever..",
+      link: "/blog/change-in-whatsapp-international-authentication-pricing",
+      category: "WhatsApp News Updates",
+    },
+    
+    {
+      imgSrc: whatsappFreeEntryImg,
+      title: "WhatsApp’s Free Entry Point and Frequency Capping in 2024: What Businesses Need to Know",
+      description:
+        "With the 2024 update, Meta’s new change in WhatsApp has shaken things up. This update has limited how..",
+      link: "/blog/whatsapp-free-entry-frequency-capping",
+      category: "WhatsApp News Updates",
+    },
+    {
+      imgSrc: whatsappBroadcastListImg,
+      title: "How to Create a WhatsApp Broadcast List and Its Features",
+      description:
+        "Have you ever wondered about sending out messages to hundreds of customers on WhatsApp without ..",
+      link: "/blog/whatsapp-broadcast-list",
+      category: "Use Cases & Features",
+    },
+    {
+      imgSrc: whatsappGovtAPIImg,
+      title: "How the Government Can Use WhatsApp Business API to Serve Indian Citizens",
+      description:
+        "Have you ever visited a government office? After seeing such a huge waiting queue, do you also feel frustrated or maybe just want to go back home?",
+      link: "/blog/whatsapp-business-api-for-government",
+      category: "Industries",
+    },
+    {
+      imgSrc: whatsappAPIProvidersImg,
+      title: "Top WhatsApp Business API Providers in 2024",
+      description:
+        "“Where there are people, there is business”. With nearly 3 billion users, WhatsApp is quickly becoming the first choice for communication platforms to market their products",
+      link: "/blog/whatsapp-business-api-providers",
+      category: "Marketing Strategies",
+    },
     // Add other card data objects here
   ];
 
-  const filteredCards =
+  const filteredCards = 
     selectedCategory === "all"
       ? cardsData
       : cardsData.filter((card) => card.category === selectedCategory);
   return (
     <>
       <section className="blog ">
-        <div className="container py-4">
+        <div className="container py-4 mt-5">
           <div
             className="content wow fadeInUp"
             style={{ visibility: "visible", animationName: "fadeInUp" }}
@@ -345,9 +403,9 @@ const Blog = () => {
                     <div className="info">
                       <div className="text">{card.description}</div>
                       <a href={card.link}>
-                        <i className="far fa-long-arrow-right l-arrow me-2"></i>{" "}
+                       
                         Read More
-                        <i className="far fa-long-arrow-right r-arrow ms-2"></i>
+                        <i class="fas fa-long-arrow-right ms-2 colorfa_1 my-auto mt-2"></i>
                       </a>
                     </div>
                   </div>

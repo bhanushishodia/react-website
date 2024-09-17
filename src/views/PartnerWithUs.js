@@ -29,7 +29,7 @@ const PartnerWithUs = () => {
       {/* section1 */}
       <section>
          <div className="partner">
-            <div className="container">
+            <div className="container py-5">
               <div className="row">
                 <div className="col-lg-6">
                   <div className="text-md-start text-center">
@@ -75,7 +75,7 @@ const PartnerWithUs = () => {
                             className="btn  rounded-pill bg-green"
                           >
                             <span>
-                              Become a Partner <i className="bi bi-arrow-right ms-1"></i>
+                              Become a Partner 
                             </span>
                           </button>
                         </div>
@@ -169,7 +169,7 @@ const PartnerWithUs = () => {
         <div className="row row-cols-1 row-cols-md-3 g-4 py-0">
           <div className="col mt-md-0 mt-3">
             <div className="h-100">
-              <a href="affiliate-program" target="_blank" rel="noopener noreferrer">
+              <a href="/affiliate-program" target="_blank" rel="noopener noreferrer">
                 <img
                   src={affiliatePartnerImg}
                   className="img-fluid Affiliate_Image"
@@ -186,14 +186,14 @@ const PartnerWithUs = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Become an Affiliate Partner <i className="fal fa-long-arrow-right ms-2 color-blue7"></i>
+                Become an Affiliate Partner <i class="fas fa-long-arrow-right ms-2 colorfa_1 my-auto"></i>
               </a>
             </div>
           </div>
 
           <div className="col mt-md-0 mt-3">
             <div className="h-100">
-              <a href="white- lable-partner" target="_blank" rel="noopener noreferrer">
+              <a href="/white-label-partner" target="_blank" rel="noopener noreferrer">
                 <img
                   src={whiteLabelPartnerImg}
                   className="img-fluid Affiliate_Image"
@@ -210,7 +210,7 @@ const PartnerWithUs = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Become a WhiteLabel Partner <i className="fal fa-long-arrow-right ms-2 color-blue7"></i>
+                Become a WhiteLabel Partner <i class="fas fa-long-arrow-right ms-2 colorfa_1 my-auto"></i>
               </a>
             </div>
           </div>
@@ -234,7 +234,7 @@ const PartnerWithUs = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Become a Solution Partner <i className="fal fa-long-arrow-right ms-2 color-blue7"></i>
+                Become a Solution Partner <i class="fas fa-long-arrow-right ms-2 colorfa_1 my-auto"></i>
               </a>
             </div>
           </div>

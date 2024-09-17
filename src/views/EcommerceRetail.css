@@ -53,3 +53,9 @@
 .cta-card{
   text-align: center;
 }
+.faq-section button{
+   border-bottom: 1px solid #ccc;
+   border-radius: 14px;
+  background-color: transparent;
+  color: #007bff;
+}

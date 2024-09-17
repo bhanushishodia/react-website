@@ -4,18 +4,20 @@
   margin-bottom: 20px;
 }
 
-.partner-with-us-page h2 {
-  font-weight: 700;
+
+.form-group .btn {
+  position: absolute;
+  left: 33%;
+  bottom: 88px;
 
 }
 
-.partner-with-us-page h2 span {
-  display: inline;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-image: linear-gradient(to right, #5dc4eb 20%, #5dc4eb 30%, #5dc4eb 52%, #5dc4eb 8%, #5dc4eb 100%);
+form .form-group .icon {
+  position: absolute;
+  left: 30px;
+  bottom: 93px;
+  font-size: 18px;
 }
-
 .latest_story .story_box .story_img img {
   width: 100%;
   margin-top: -79px;
@@ -37,17 +39,13 @@
 
 .form-group input {
   width: 100%;
-  padding: 16px 18px 16px 30px;
+  padding: 16px 18px 16px 46px;
   background-color: #fff;
   border: 1px solid #ccc;
   border-radius: 30px;
 }
 
-.form-group .btn {
 
-  right: 8px;
-  top: 7px;
-}
 
 .latest_story .story_box {
   background-color: #fff;
@@ -70,3 +68,14 @@
   border: 1px solid #ced3d9;
   border-radius: 10px;
 }
+.solution-cards img{
+   text-align: left;
+  width: 25%;
+  align-items: start;
+}
+.solution-cards{
+  border: 2px solid #ccc;
+   border-radius: 20px; 
+   height: 100%;
+ 
+  }

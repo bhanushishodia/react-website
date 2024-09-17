@@ -3,14 +3,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 0px 20px;
   background-color: #fff;
   position: sticky;
-  top: 0;
+  top: 42px;
   z-index: 1000;
   border-bottom: 1px solid rgb(0 0 0 / 10%);
   /* Ensures the header stays on top of other content */
 }
+
+
 .custom-divider {
   position: relative;
   color: #5dc4eb;
@@ -25,8 +27,9 @@
 }
 .subline {
   font-size: 11px;
-  margin-left: 50px;
+  margin-left: 48px;
   letter-spacing: 1px;
+  margin-top: -2px;
   display: block;
   color: #666;
 }
@@ -183,7 +186,7 @@
   /* Adjust if necessary */
   width: 30px;
   /* Increase the width to make the image larger */
-  border-right: 1px solid #dee2e6 !important;
+ 
   vertical-align: middle;
   /* Aligns the image vertically with the text */
 }
@@ -200,7 +203,7 @@
 }
 
 .dropdown-item {
-  padding: .25rem 1rem;
+  padding: .25rem 0.25rem;
   clear: both;
   font-size: 14px !important;
 }

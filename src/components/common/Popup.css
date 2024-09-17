@@ -3,32 +3,146 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+
+
 }
 
 .popup {
-  background-color: white;
+  background: white;
   padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  max-width: 80%;
-  text-align: center;
+  border-radius: 32px 32px 32px 60px;
+  position: relative;
+  max-width: 500px; /* Adjust as needed */
+  width: 100%;
 }
- .whatsapp-chat-header {
-  background-color: #5dc4eb;
-  color: #fff;
-  padding: 20px;
-}
- .whatsapp-chat-header small {
-  padding: 5px;
-  color: #fff;
 
+.popup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
 }
-.whatsapp-chat-name{
-  text-align: left;
+
+.popup-header .modal-title {
+  margin: 0;
+}
+
+.btn-close {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.btn-close::before {
+  content: "×";
+  font-size: 1.5rem;
+  color: black;
+}
+
+.popup form {
+  margin-top: 10px;
+}
+
+
+.login-box form a {
+  position: relative;
+  color: #5dc4eb !important;
+  font-size: 16px;
+  text-decoration: none;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 20px;
+  letter-spacing: 1px
+}
+
+.login-box a span {
+  position: absolute;
+  display: block
+}
+
+.login-box a span:first-child {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #5dc4eb);
+  animation: 1s linear infinite btn-anim1
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%
+  }
+
+  100%,
+  50% {
+    left: 100%
+  }
+}
+
+.login-box a span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #5dc4eb);
+  animation: 1s linear .25s infinite btn-anim2
+}
+
+@keyframes btn-anim2 {
+  0% {
+    top: -100%
+  }
+
+  100%,
+  50% {
+    top: 100%
+  }
+}
+
+.login-box a span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #5dc4eb);
+  animation: 1s linear .5s infinite btn-anim3
+}
+
+@keyframes btn-anim3 {
+  0% {
+    right: -100%
+  }
+
+  100%,
+  50% {
+    right: 100%
+  }
+}
+
+.login-box a span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #5dc4eb);
+  animation: 1s linear .75s infinite btn-anim4
+}
+
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%
+  }
+
+  100%,
+  50% {
+    bottom: 100%
+  }
 }

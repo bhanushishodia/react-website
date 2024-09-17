@@ -45,6 +45,8 @@
     position: absolute;
     bottom: 0;
     left: 50%;
+    max-width: 100%;
+    height: auto;
     transform: translate(-50%, 0);
     z-index: 1;
     visibility: visible;
@@ -213,4 +215,13 @@
   }
   .entry-content p{
     padding: 8px 0px;
+  }
+  .body-std p{
+    margin: 0px 0px 36px;
+    text-align: center;
+  }
+  .use-cases-section button {
+    background-color: transparent;
+    
+
   }

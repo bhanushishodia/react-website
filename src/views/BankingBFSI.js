@@ -104,7 +104,7 @@ const BankingBFSI = () => {
             <div className="col-lg-6 text-black mt-20 text-lg-start text-center">
               <div className="info text-black pe-md-2">
                 {/* <small className="mb-20 title_small">whatsapp-marketing</small> */}
-                <h1>Leverage WhatsApp for Finance & Insurance</h1>
+                <h1 className="heading">Leverage WhatsApp for Finance & Insurance</h1>
 
                 <p className="mt-20 text-black">
                   Carry out KYC processes like ID verification, document
@@ -252,7 +252,7 @@ const BankingBFSI = () => {
                 filling and document collection with effortless chat
                 interactions
               </p>
-              <br />
+            
               <p className="text-justify">
                 Facilitate KYC verification, customer onboarding, and activation
                 through messaging, voice, and video. Achieve a significant 26%

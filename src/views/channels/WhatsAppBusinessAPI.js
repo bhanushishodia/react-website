@@ -14,11 +14,11 @@ const WhatsAppBusinessAPI = () => {
   return (
     <div className="channel-page">
       <div className="container">
-        <div className="content py-md-4 py-0">
+        <div className="content py-md-5 py-0">
           <div className="row align-items-center">
             <div className="col-lg-6 text-black mt-30 text-lg-start text-center">
               <div className="info text-black">
-                <h1 className="pe-5 mb-20">
+                <h1 className=" mb-20 heading">
                   Grow Your Business With WhatsApp Business API
                 </h1>
 
@@ -30,7 +30,7 @@ const WhatsAppBusinessAPI = () => {
                   <li>Build Chatbots & Solve for 24 x 7 Support & Engagement</li>
                 </ul>
 
-                <div className="d-flex align-items-center mt-30 youtube">
+                <div className="d-flex align-items-center  youtube">
                   <p className="me-5">
                     Powered by{' '}
                     <a
@@ -273,7 +273,7 @@ const WhatsAppBusinessAPI = () => {
                             Tap Into The Power Of Selling What's In High Demand! Find new ways to grow, boost your presence in the market, and expand strategically for overall growth.
                         </p>
                         <a 
-                            href="partner-with-us.html" 
+                            href="/partner-with-us" 
                             className="btn bg-green text-white mt-3" 
                             target="_blank" 
                             rel="noopener noreferrer"

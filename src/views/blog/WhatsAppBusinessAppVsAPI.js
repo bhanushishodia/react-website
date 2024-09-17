@@ -7,7 +7,7 @@ import WhatsAppWidget from "../../components/common/WhatsAppWidget";
 const WhatsAppBusinessAppVsAPI = () => {
   return (
     <section>
-      <div className="container py-5">
+      <div className="container py-5 blog-page">
         <h1 id="intro" className="font-weight pb-2 text-center">
           WhatsApp Business App vs. WhatsApp Business API: Simplified Comparison
           for Business Owners

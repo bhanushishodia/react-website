@@ -69,13 +69,13 @@ function Footer() {
                 <h6>Top Features</h6>
                 <ul>
                   <li>
-                    <a href="/live-agent-assistant">Live Agent Assistant</a>
+                    <a href="/live-agent-support">Live Agent Assistant</a>
                   </li>
                   <li>
                     <a href="/whatsapp-broadcasting">WhatsApp Broadcasting</a>
                   </li>
                   <li>
-                    <a href="/reports-analytics">Reports & Analytics</a>
+                    <a href="/reports-and-analytics">Reports & Analytics</a>
                   </li>
                   <li>
                     <a href="/automated-chatbot">Automated ChatBot</a>
@@ -97,25 +97,25 @@ function Footer() {
                 <h6>Industry</h6>
                 <ul>
                   <li>
-                    <a href="/ecommerce-retail">Ecommerce & Retail</a>
+                    <a href="/ecommerce-industry">Ecommerce & Retail</a>
                   </li>
                   <li>
                     <a href="/healthcare">Healthcare</a>
                   </li>
                   <li>
-                    <a href="/ed-tech">Ed-Tech</a>
+                    <a href="/ecommerce-industry">Ed-Tech</a>
                   </li>
                   <li>
                     <a href="/banking-industry">Banking & BFSI</a>
                   </li>
                   <li>
-                    <a href="/industry/media-entertainment">Media & Entertainment</a>
+                    <a href="/media-entertainment-industry">Media & Entertainment</a>
                   </li>
                   <li>
-                    <a href="/industry/food-beverage">Food & Beverage</a>
+                    <a href="/food-and-beverage-industry">Food & Beverage</a>
                   </li>
                   <li>
-                    <a href="/industry/travel-hospitality">Travel & Hospitality</a>
+                    <a href="/travel-and-hospitality-industry">Travel & Hospitality</a>
                   </li>
                 </ul>
               </div>
@@ -125,16 +125,19 @@ function Footer() {
                 <h6>Use Case</h6>
                 <ul>
                   <li>
-                    <a href="/use-case/whatsapp-marketing">WhatsApp Marketing</a>
+                    <a href="/whatsapp-marketing">WhatsApp Marketing</a>
                   </li>
                   <li>
-                    <a href="/use-case/whatsapp-commerce">WhatsApp Commerce</a>
+                    <a href="/whatsapp-commerce">WhatsApp Commerce</a>
                   </li>
                   <li>
-                    <a href="/use-case/whatsapp-support">WhatsApp Support</a>
+                    <a href="/whatsapp-support">WhatsApp Support</a>
                   </li>
                   <li>
-                    <a href="/use-case/whatsapp-authentication">WhatsApp Authentication</a>
+                    <a href="/whatsapp-authentication">WhatsApp Authentication</a>
+                  </li>
+                  <li>
+                    <a href="/generate-whatsapp-link">WhatsApp Chat Link Generator</a>
                   </li>
                 </ul>
               </div>
@@ -148,7 +151,7 @@ function Footer() {
                 <h6>Channels</h6>
                 <ul>
                   <li>
-                    <a href="/features/whatsapp-business-api">WhatsApp Business API</a>
+                    <a href="/channels/whatsapp-business-api">WhatsApp Business API</a>
                   </li>
                   <li>
                     <a href="/features/messenger">Messenger</a>
@@ -264,7 +267,7 @@ function Footer() {
                 <img src={linkedin} alt="LinkedIn" className="social-icon" />
               </a>
               <a
-                href="https://www.youtube.com/channel/UC0e_H2FWWljLVd8ECR8kzIQ"
+                href="https://www.youtube.com/@Anantyaai"
                 target="_blank"
                 rel="noopener noreferrer"
               >

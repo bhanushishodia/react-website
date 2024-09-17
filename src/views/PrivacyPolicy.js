@@ -9,7 +9,7 @@ const PrivacyPolicy = () => {
       <div className="container">
 
       <div className="content-wrapper">
-        <div className="privacy-content">
+        <div className="privacy-content mt-5">
         <header>
           <h1 className="display-4">Privacy Policy</h1>
           <p>Effective Date: [Insert Date]</p>

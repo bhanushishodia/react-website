@@ -2,11 +2,12 @@ import React from "react";
 import "./workwithus.css"; // Optional: Add custom CSS file for styling
 import ScrollToTopButton from "../components/common/ScrollToTopButton";
 import WhatsAppWidget from "../components/common/WhatsAppWidget";
+import OpenPositions from "../components/common/OpenPositions"; // Import the new OpenPositions component
 const WorkWithUs = () => {
   return (
     <div className="work-with-us-page">
       <div className="container">
-        <div className="content py-md-4 py-0">
+        <div className="content pt-5 mt-md-0 mt-5">
           <div className="row align-items-center text-center">
             <h1>Anantya.ai</h1>
             <h5 className="py-2">
@@ -17,7 +18,7 @@ const WorkWithUs = () => {
         </div>
       </div>
       <div className="container">
-        <div className="row_am features_section px-md-0 px-3 my-3">
+        <div className="row_am features_section px-md-5 px-2 my-3">
           <div className="features_inner">
             <div className="section_title px-md-5 px-0">
               <h2 className="text-center mb-20">
@@ -36,6 +37,9 @@ const WorkWithUs = () => {
         </div>
       </div>
       {/* Add more content or sections as needed */}
+       {/* Use OpenPositions Component */}
+    
+       <OpenPositions />
       <ScrollToTopButton />
       <WhatsAppWidget />
     </div>

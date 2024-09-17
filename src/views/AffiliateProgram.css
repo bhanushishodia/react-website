@@ -38,3 +38,60 @@
 .affiliate-button:hover {
     background-color: #0056b3;
 }
+/* Accordion Container */
+/* Accordion Container */
+.accordion {
+    text-align: left;
+    border-radius: 10px; /* Rounded corners for the entire accordion */
+    overflow: hidden; /* Ensures content stays within rounded corners */
+  }
+  
+  /* Accordion Item */
+  .accordion-item {
+    border-top: 1px solid #ccc; /* Light gray border for separation */
+    border: none;
+  }
+  
+  /* Accordion Button */
+  .accordion-button {
+    border-bottom: 2px solid #ccc; /* Gray border for the button */
+    border-top: none;
+    color: #54cdeb; /* Dark gray text color */
+    border-radius: 10px; /* Matches the rounded corners of the accordion */
+    padding: 10px 15px; /* Adds padding inside the button */
+    text-align: left; /* Aligns text to the left */
+
+    font-weight: bold; /* Makes the text bold */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    transition: border-color 0.3s, color 0.3s; /* Smooth transition for border color and text color */
+    outline: none; /* Removes outline for better appearance */
+    background: transparent; /* No background color */
+  }
+  
+  /* Accordion Button Hover */
+  .accordion-button:hover {
+    border-color: #999; /* Slightly darker gray border on hover */
+    color: #000; /* Darker text color on hover */
+    background-color: none!important;
+  }
+  
+  /* Accordion Collapse */
+  .accordion-collapse {
+    padding: 15px; /* Adds padding inside the content area */
+    font-size: 14px; /* Sets a readable font size */
+    color: #333; /* Dark text color for content */
+  }
+  
+  
+  .accordion-button:not(.collapsed) {
+    color: none;
+    background-color: none;
+  }
+  .accordion-button:not(.collapsed) {
+    color: #54cdeb;
+    background-color: transparent;
+    box-shadow: none;
+}
+.accordion .button:hover {
+  background-color: transparent!important;
+}

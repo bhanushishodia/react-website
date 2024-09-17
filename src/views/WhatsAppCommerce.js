@@ -21,7 +21,7 @@ const WhatsAppCommercePage = () => {
         <div className="row align-items-center">
           <div className="col-lg-6 text-black mt-20 text-md-start text-center">
             <div className="info text-black">
-              <h1>
+              <h1 className='heading'>
                 WhatsApp Commerce:<br /> Set up your online store
               </h1>
               <p className="mt-30 text-black pe-md-5">

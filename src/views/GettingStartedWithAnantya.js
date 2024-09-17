@@ -28,7 +28,7 @@ const GettingStartedWithAnantya = () => {
               Helpful resources to easily set up your Anantya account
             </p>
          
-          <div className="resources mt-50">
+          <div className="resource mt-50">
             <div className="row">
               <div className="col-lg-12">
                 <div className="info wow fadeInUp" style={{ visibility: 'visible', animationName: 'fadeInUp' }}>
@@ -39,19 +39,19 @@ const GettingStartedWithAnantya = () => {
                           <li>
                             <a href="how-to-setup-a-welcome-message-on-anantya.ai">
                               &nbsp;1. How to Set Up a Welcome Message: Step-by-Step Guide
-                              
+                              <i className="fas fa-chevron-right"></i>
                             </a>
                           </li>
                           <li>
                             <a href="how-to-add-agent-sublogin">
                               &nbsp;2. How to Add Agent Sublogin: A Step-by-Step Guide
-                            
+                              <i className="fas fa-chevron-right"></i>
                             </a>
                           </li>
                           <li>
                             <a href="how-to-launch-first-campaign-in-anantya.ai">
                               &nbsp;3. How to Launch Your Campaign: Step-by-Step Guide
-                            
+                              <i className="fas fa-chevron-right"></i>
                             </a>
                           </li>
                           <li>

@@ -27,3 +27,34 @@
     -ms-flex-negative: 0;
     flex-shrink: 0;
 }
+.career-details-page.style-5 .summary-card {
+  border: 1px solid rgba(153, 153, 153, .2);
+  border-radius: 5px;
+  padding: 40px;
+  position: sticky;
+  top: 123px;
+}
+
+.career-details-page.style-5 .summary-card li {
+  font-size: 14px;
+  list-style-type: none;
+  color: #999;
+  margin: 15px 0;
+}
+.career-details-page.style-5 .summary-card ul {
+padding-left: 0;
+} 
+.career-details-page.style-5 .summary-card ul li a {
+  font-size: 14px;
+  color: #999;
+}
+.career-details-page.style-5  h6 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.brd-gray {
+  border-color: rgba(0, 0, 0, .1333333333) !important;
+}.color-999 {
+  color: #999 !important;
+}

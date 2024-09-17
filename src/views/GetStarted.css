@@ -1,8 +1,4 @@
-.get-started-container {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 20px;
-  }
+
   
   .content-wrapper {
     background-color: white;
@@ -11,7 +7,7 @@
   }
   
   .get-started-content {
-    font-family: Arial, sans-serif;
+   text-align: left;
     line-height: 1.6;
   }
   
@@ -33,4 +29,11 @@
       padding: 20px;
     }
   }
-  
+  .contact {
+    background: linear-gradient(45deg, transparent, #def1fa, transparent, #e8e8f347, transparent);
+    background-size: 400% 400%;
+    animation: 20s linear infinite gradient;
+    border-radius: 30px;
+    overflow: hidden;
+    padding-bottom: 20px;
+}

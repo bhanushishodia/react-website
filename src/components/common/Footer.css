@@ -2,6 +2,8 @@
 
 footer {
   background-color: #f3fbff;
+  background: linear-gradient(85.7deg, #e6f3ff 1.71%, #e8f5fb31 99.56%);
+  /* background: linear-gradient(85.7deg, #e6f3ff 1.71%, #fff8e0 99.56%); */
   color: #000;
 
 }

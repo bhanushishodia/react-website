@@ -1,0 +1,81 @@
+.open-positions {
+    margin: 20px 0;
+    font-family: 'Lexend', sans-serif; /* Apply consistent font */
+  }
+  
+  .positions-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px; /* Add space between items */
+  }
+  
+  .positions-list li {
+    cursor: pointer;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #ffffff;
+    border-radius: 5px;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .positions-list li.active {
+    background-color: #0056b3; /* Active state for selected item */
+  }
+  
+  .positions-list li:hover {
+    background-color: #0056b3;
+  }
+  
+  .job-details {
+    margin-top: 30px;
+  }
+  
+  .job-description {
+    border-radius: 16px;
+    border: 1px solid #e2e2e2;
+    padding: 44px; 
+    margin-bottom: 40px;
+    transition: .3s;
+    text-align: left;
+    background: #fff;
+   
+  
+  }
+  .job-description ul li {
+text-align: left;
+  list-style-type: none;
+  
+  }
+  
+  .job-application-form {
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  .job-application-form .form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Adjust the spacing between the form fields */
+  }
+  
+  .job-application-form .col-md-6 {
+    flex: 1;
+    min-width: 48%; /* Adjust the width to align two fields in a row */
+  }
+  
+  .job-application-form .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+   
+  }
+  

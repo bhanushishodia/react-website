@@ -6,7 +6,6 @@ import WhatsAppWidget from "../components/common/WhatsAppWidget";
 
 import welcomeBackground from '../assets/images/inner5_back.png';
 import welcomeImage from '../assets/images/integration.webp';
-
 import articleImage4 from '../assets/images/article-4.png';
 const AutoAssignChats = () => {
   return (

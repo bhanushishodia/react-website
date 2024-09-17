@@ -1,0 +1,38 @@
+/* InnerHeader.css */
+
+  
+  .inner-header.style-5 {
+    background-image: url('../../assets/images/inner5_back.png');
+    background-size: cover;
+    color: #000;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .inner-header.style-5 .content {
+    padding: 120px 0;
+    position: relative;
+}.inner-header.style-5 .content h2 {
+    font-size: 60px;
+    text-transform: capitalize;
+    margin-top: 20px;
+}.inner-header.style-5 .content .side-img {
+    position: absolute;
+    right: 0;
+    top: 30%;
+    height: 40%;
+    pointer-events: none;
+}
+.inner-header.style-5 .content .links a {
+    font-size: 16px;
+    color: #999;
+    text-transform: capitalize;
+    position: relative;
+    padding-right: 20px;
+    border-right: 1px solid rgba(153, 153, 153, .2);
+    margin-right: 20px;
+}
+.slide_up_down {
+    -webkit-animation: 1.7s ease-in-out infinite alternate both slide_up_down;
+    animation: 1.7s ease-in-out infinite alternate both slide_up_down;
+}

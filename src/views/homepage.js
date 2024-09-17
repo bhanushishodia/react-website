@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef, useState } from 'react';
 
 import "./homepage.css";
 // import CustomHeader from '../components/common/CustomHeader'; // Importing the component
@@ -21,6 +21,9 @@ import icon2 from "../assets/images/icons/Reliable-service.png"; // Import the i
 import icon3 from "../assets/images/icons/fortified-security.png"; // Import the image
 
 const Homepage = () => {
+  const videoRef = useRef(null);
+  const [isVisible, setIsVisible] = useState(false);
+
   useEffect(() => {
     const handleScroll = () => {
       if (window.innerWidth >= 768) {
@@ -35,11 +38,35 @@ const Homepage = () => {
       }
     };
 
+    // Add scroll event listener
     window.addEventListener("scroll", handleScroll);
 
-    // Clean up the event listener
+    // Intersection Observer logic for the video
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setIsVisible(true);
+          } else {
+            setIsVisible(false);
+          }
+        });
+      },
+      {
+        threshold: 0.5, // Trigger at 50% visibility
+      }
+    );
+
+    if (videoRef.current) {
+      observer.observe(videoRef.current);
+    }
+
+    // Clean up event listeners
     return () => {
       window.removeEventListener("scroll", handleScroll);
+      if (videoRef.current) {
+        observer.unobserve(videoRef.current);
+      }
     };
   }, []); // Empty dependency array means this effect runs once after initial <render></render>
   return (
@@ -47,10 +74,10 @@ const Homepage = () => {
       {/* section1 */}
       <div className="parent-wrapper">
         <div className="container">
-          <div className="content py-md-5 py-0">
+          <div className="content py-5 mt-md-4 mt-5 py-0">
             <div className="row align-items-center">
               <div className="col-lg-6 col-md-6 col-sm-12 text-black  my-auto">
-                <div className="info text-black text-md-start">
+                <div className="info text-black text-start">
                   <h1>
                     Automate Your
                     <main id="restart" className="centered text-black">
@@ -124,7 +151,7 @@ const Homepage = () => {
               </div>
               <div className="col-lg-6 col-md-6 col-sm-12 pt-md-0 pt-4">
                 <div
-                  className="wow zoomIn"
+                  className="wow animate__animated animate__fadeInUp"
                   data-wow-delay="0.2s"
                   style={{
                     visibility: "visible",
@@ -214,26 +241,26 @@ const Homepage = () => {
                   sales and marketing processes.
                 </p>
               </div>
-              <div className="col-lg-12">
-                <video
-                  preload="auto"
-                  loop
-                  playsInline
-                  muted
-                  autoPlay
-                  src={video6}
-                  width="100%"
-                  height="auto"
-                  style={{
-                    Width: "100%",
-                    height: "auto",
-                    maxHeight: "38.25vw",
-                    aspectRatio: "16/9",
-                  }}
-                  title="Omnichannel live chat diagram"
-                  data-lazyplay-target="video"
-                ></video>
-              </div>
+              <div className={`col-lg-12 video-section ${isVisible ? 'zoom-in' : 'zoom-out'}`} ref={videoRef}>
+        <video
+          preload="auto"
+          loop
+          playsInline
+          muted
+          autoPlay
+          src={video6}
+          width="100%"
+          height="auto"
+          style={{
+            width: '100%',
+            height: 'auto',
+            maxHeight: '32.25vw',
+            aspectRatio: '16/9',
+          }}
+          title="Omnichannel live chat diagram"
+          data-lazyplay-target="video"
+        ></video>
+             </div>
             </div>
             <div className="btns mt-5 text-center">
               <a
@@ -272,7 +299,7 @@ const Homepage = () => {
               <div className="row row-cols-1 row-cols-md-3 g-5 py-4 px-md-0 px-3 text-lg-start text-center">
                 <div className="col">
                   <div className="features-cards  h-100">
-                    <div className="icon w-25">
+                    <div className="icon w-25 text-lg-start text-center">
                       <img src={icon1} class="img-fluid" alt="24-7" />
                     </div>
                     <div className="info">
@@ -287,7 +314,7 @@ const Homepage = () => {
                 </div>
                 <div className="col">
                   <div className="features-cards h-100">
-                    <div className="icon w-25">
+                    <div className="icon w-25 text-lg-start text-center">
                       <img src={icon2} class="img-fluid" alt="services" />
                     </div>
                     <div className="info pt-3">
@@ -302,7 +329,7 @@ const Homepage = () => {
                 </div>
                 <div className="col">
                   <div className="features-cards style-5 h-100">
-                    <div className="icon w-25">
+                    <div className="icon w-25 text-lg-start text-center">
                       <img src={icon3} class="img-fluid" alt="cyber-security" />
                     </div>
                     <div className="info pt-3">
@@ -348,9 +375,7 @@ const Homepage = () => {
       {/* section 8 end */}
       {/* Other sections */}
       <section
-        className="clients style-5 pb-20 mt-5"
-        style={{ backgroundColor: "#f3fbff" }}
-      >
+        className="clients style-5 pb-20 mt-5">
         <div className="container">
           <div className="row row-cols-1 row-cols-md-2 g-4 px-md-0 px-3">
             <div className="section-head text-start style-5 pt-5 col my-auto">

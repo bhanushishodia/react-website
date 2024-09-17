@@ -19,7 +19,7 @@ const LiveAgentAssistant = () => {
         <div className="row align-items-center">
           <div className="col-lg-6 text-black mt-20 text-md-start text-center">
             <div className="info text-black pe-md-4">
-              <h1>Supercharge your Team's Productivity with WhatsApp</h1>
+              <h1 className='heading'>Supercharge your Team's Productivity with WhatsApp</h1>
               <p className="mt-1 text-black pe-md-5">
                 With the WhatsApp Business API, provide Live Chat across multiple devices using the same phone number, to handle customer support, boost sales, and grow your business on WhatsApp.
               </p>
@@ -115,7 +115,7 @@ const LiveAgentAssistant = () => {
                             Allow agents to handle questions on over 30 messaging channels from one place.
                             Use smart routing and workflows to automatically send chats to agents with the right skills and availability.
                         </p>
-                        <br />
+                       
                         <p className="text-justify">
                             Use pre-written responses to reply quicker and save agent time for more complicated problems.
                         </p>

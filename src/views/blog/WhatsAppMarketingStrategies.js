@@ -48,7 +48,7 @@ const WhatsAppMarketingStrategies = () => {
                   business. Firstly, let's brief you a bit on what exactly{" "}
                   <b>WhatsApp Marketing</b> is.
                 </p>
-                <h2 id="what-is-whatsapp-marketing" className="pb-2">
+                <h2 id="what-is-whatsapp-marketing" className="pb-2 text-md-start">
                   What exactly is WhatsApp marketing?
                 </h2>
                 <p>
@@ -263,15 +263,15 @@ const WhatsAppMarketingStrategies = () => {
                   </a>{" "}
                   to get started.
                 </p>
-                <h5 className="wp-block-heading">
-                  What all you can do with Anantya.ai👇
+                <h5 className="wp-block-heading text-start">
+                  What all you can do with Anantya.ai👇 
                 </h5>
                 <p>
                   Before we go deeper into the topic, let me quickly explain the
                   main differences between the WhatsApp Business App and the
                   WhatsApp Business API in simple words.
                 </p>
-                <ul className="py-4">
+                <ul className="py-4 text-start" style={{ listStyleType: 'none' }}>
                   <li>
                     <span className="icon color-blue5 me-2 flex-shrink-0">
                       <i className="fas fa-check-circle"></i>
@@ -314,49 +314,42 @@ const WhatsAppMarketingStrategies = () => {
               </section>
             </div>
           </div>
-          <aside className="col-lg-4 col-md-12 summary-card">
-            <h3 className="pb-2 font-weight-bold">Table of Contents</h3>
-            <ul>
-              <li>
-                <a href="#what-is-whatsapp-marketing">
-                  What exactly is WhatsApp marketing?
-                </a>
-              </li>
-              <li>
-                <a href="#top-5-strategies">
-                  Top 5 WhatsApp Marketing Strategies to get started
-                </a>
-              </li>
-              <li>
-                <a href="#broadcast-promotional-messages">
-                  Broadcast Promotional Messages on WhatsApp
-                </a>
-              </li>
-              <li>
-                <a href="#automate-notifications-reminders">
-                  Automate Notifications & Reminders on WhatsApp
-                </a>
-              </li>
-              <li>
-                <a href="#run-direct-ads">Run Direct to WhatsApp Ads</a>
-              </li>
-              <li>
-                <a href="#redirect-website-traffic">
-                  Redirect Website Traffic on WhatsApp with a WhatsApp Button
-                </a>
-              </li>
-              <li>
-                <a href="#automate-support-sales">
-                  Automate Support & Sales with WhatsApp Chatbot
-                </a>
-              </li>
-              <li>
-                <a href="#get-started-anantya">
-                  How to get started with WhatsApp Marketing via Anantya.ai?
-                </a>
-              </li>
-            </ul>
-          </aside>
+          <div className="col-lg-4 col-md-12 py-4 py-lg-0 ">
+            <aside className="summary-card">
+              <h3 className="font-weight-bold mb-3 text-start pb-3 border-bottom border-1 brd-gray">
+                Table of Contents
+              </h3>
+              <ul className="list-unstyled">
+                <li>
+                  <a href="#intro">Introduction</a>
+                </li>
+                <li>
+                  <a href="#differences">
+                    Differences between WhatsApp Business App vs WhatsApp
+                    Business API
+                  </a>
+                </li>
+                <li>
+                  <a href="#designed-for">Designed For</a>
+                </li>
+                <li>
+                  <a href="#broadcast-limitations">Broadcast Limitations</a>
+                </li>
+                <li>
+                  <a href="#team-inbox">Team Inbox</a>
+                </li>
+                <li>
+                  <a href="#voice-calls">Voice Calls</a>
+                </li>
+                <li>
+                  <a href="#multi-user-access">Multi User Access</a>
+                </li>
+                <li>
+                  <a href="#automated-chatbots">Automated Chatbots</a>
+                </li>
+              </ul>
+            </aside>
+          </div>
         </div>
       </div>
     </section>

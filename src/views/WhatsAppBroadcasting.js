@@ -24,8 +24,8 @@ const WhatsAppBroadcasting = () => {
         <div className="content py-md-5 py-0">
           <div className="row align-items-center">
             <div className="col-lg-6 text-black text-md-start text-center">
-              <div className="info text-black pe-md-5">
-                <h1>
+              <div className="info text-black">
+                <h1 className="heading">
                   Engage Customers through Unlimited{" "}
                   <span>WhatsApp Broadcasting</span>
                 </h1>

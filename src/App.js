@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -8,14 +8,12 @@ import Header from './components/common/Header';
 import Footer from './components/common/Footer';
 import CustomHeader from './components/common/CustomHeader';
 import TawkToScript from './components/common/TawkToScript';
+import BlogSlider from './components/common/BlogSlider';
 
-import AutomatedChats from './components/common/AutomatedChats'; // Adjust the path if necessary
+
+
 
 // Views
-import OnboardingProcess from './components/common/OnboardingProcess';
-import IncrediblePlatformCapabilities from './components/common/IncrediblePlatformCapabilities'; // Adjust the path as needed
-import SalesHub from "./views/SalesHub";
-import YourAffiliateLink from './views/YourAffiliateLink';
 import MainContent from './views/homepage';
 import Contact from './views/contact';
 import About from './views/About';
@@ -60,6 +58,7 @@ import Salesforce from './views/Integration/Salesforce';
 import Pipedrive from './views/Integration/Pipedrive';
 import Webhook from './views/Integration/Webhook';
 
+// Channel Pages
 import WhatsAppBusinessAPI from './views/channels/WhatsAppBusinessAPI';
 import Instagram from './views/channels/Instagram';
 import GoogleMessages from './views/channels/GoogleMessages';
@@ -67,6 +66,8 @@ import Viber from './views/channels/Viber';
 import Line from './views/channels/Line';
 import Messenger from './views/channels/Messenger';
 import WeChat from './views/channels/WeChat';
+
+// Blog Pages
 import WhatsAppBusinessAppVsAPI from './views/blog/WhatsAppBusinessAppVsAPI';
 import WhatsAppMarketingStrategies from './views/blog/WhatsAppMarketingStrategies';
 import WhatsAppMarketingDirectCommunication from './views/blog/WhatsAppMarketingDirectCommunication';
@@ -82,23 +83,50 @@ import Gitex2023Highlights from './views/blog/Gitex2023Highlights';
 import MetaFrequencyCappingUpdate from './views/blog/MetaFrequencyCappingUpdate';
 import WhatsAppBusinessAPIPricing from './views/blog/WhatsAppBusinessAPIPricing';
 
+import WhatsAppBusinessSwitching from './views/blog/WhatsAppBusinessSwitching';
+import WhatsAppInternationalPricing from './views/blog/WhatsAppInternationalPricing';
+import WhatsAppFreeEntryCapping from './views/blog/WhatsAppFreeEntryCapping';
+import WhatsAppBroadcastList from './views/blog/WhatsAppBroadcastList';
+import WhatsAppBusinessApiGovernment from './views/blog/WhatsAppBusinessApiGovernment';
+import WhatsAppBusinessApiProviders from './views/blog/WhatsAppBusinessApiProviders';
+// Additional Pages
 import WelcomeMessage from './views/WelcomeMessage';
 import AgentSublogin from './views/AgentSublogin';
 import LaunchCampaign from './views/LaunchCampaign';
 import OutOfOfficeMessage from './views/OutOfOfficeMessage';
 import AutoAssignChats from './views/AutoAssignChats';
 import WhatsAppTemplateMessages from './views/WhatsAppTemplateMessages';
+import GenerateWhatsAppLink from './views/GenerateWhatsAppLink';
+import YourAffiliateLink from './views/YourAffiliateLink';
+import SalesHub from "./views/SalesHub";
 
-// Common Components
-import BlogSlider from './components/common/BlogSlider';
+import HowToSetupWelcomeMessage from './views/HowToSetupWelcomeMessage';
+import HowToAddAgentSublogin from './views/HowToAddAgentSublogin';
+import HowToLaunchFirstCampaign from './views/HowToLaunchFirstCampaign';
+import HowToEnableOutOfOfficeMessage from './views/HowToEnableOutOfOfficeMessage';
+import HowToAutoAssignChats from './views/HowToAutoAssignChats';
+import HowToCreateWhatsAppTemplateMessages from './views/HowToCreateWhatsAppTemplateMessages';
+
+function Layout({ children }) {
+  const location = useLocation();
+  const showHeaderFooter = location.pathname !== '/sales-hub';
+
+  return (
+    <div className="App">
+      {showHeaderFooter && <CustomHeader />}
+      {showHeaderFooter && <Header />}
+      {children}
+      {showHeaderFooter && <Footer />}
+    </div>
+  );
+}
 
 function App() {
   return (
     <Router>
       <TawkToScript />
-      <div className="App">
-        <CustomHeader />
-        <Header />
+
+      <Layout>
         <Routes>
           <Route path="/" element={<MainContent />} />
           <Route path="/contact" element={<Contact />} />
@@ -144,37 +172,54 @@ function App() {
           <Route path="/integration/pipedrive" element={<Pipedrive />} />
           <Route path="/integration/webhook" element={<Webhook />} />
           <Route path="/channels/whatsapp-business-api" element={<WhatsAppBusinessAPI />} />
-        <Route path="/channels/instagram" element={<Instagram />} />
-        <Route path="/channels/google-messages" element={<GoogleMessages />} />
-        <Route path="/channels/viber" element={<Viber />} />
-        <Route path="/channels/line" element={<Line />} />
-        <Route path="/channels/messenger" element={<Messenger />} />
-        <Route path="/channels/wechat" element={<WeChat />} />
-        <Route path="/blog/whatsapp-business-app-vs-whatsapp-business-api" element={<WhatsAppBusinessAppVsAPI />} />
-  <Route path="/blog/whatsapp-marketing-strategies-to-drive-sales" element={<WhatsAppMarketingStrategies />} />
-  <Route path="/blog/whatsapp-marketing-a-direct-communication-with-customers" element={<WhatsAppMarketingDirectCommunication />} />
-  <Route path="/blog/reshaping-customer-engagement-on-whatsapp" element={<ReshapingCustomerEngagement />} />
-  <Route path="/blog/boost-sales-on-festive-season-with-ai-chatbots" element={<BoostSalesWithAIChatbots />} />
-  <Route path="/blog/whatsapp-business-api-ultimate-guide" element={<WhatsAppBusinessAPIUltimateGuide />} />
-  <Route path="/blog/whatsapp-broadcasting-ultimate-guide" element={<WhatsAppBroadcastingUltimateGuide />} />
-  <Route path="/blog/how-to-create-a-whatsapp-chatbot-for-business" element={<CreateWhatsAppChatbot />} />
-  <Route path="/blog/click-to-whatsapp-ads-marketing-2023" element={<ClickToWhatsAppAdsMarketing2023 />} />
-  <Route path="/blog/whatsapp-for-healthcare-a-simple-guide" element={<WhatsAppForHealthcareGuide />} />
-  <Route path="/blog/whatsapp-business-api-for-banking-sector" element={<WhatsAppBusinessAPIBankingSector />} />
-  <Route path="/blog/gitex-2023-highlights-anantya-ai-ai-powered-messaging-evolution" element={<Gitex2023Highlights />} />
-  <Route path="/blog/meta-new-frequency-capping-update" element={<MetaFrequencyCappingUpdate />} />
-  <Route path="/blog/whatsapp-business-api-pricing" element={<WhatsAppBusinessAPIPricing />} />
-  <Route path="/sales-hub" element={<SalesHub />} />
-  <Route path="/how-to-setup-a-welcome-message-on-anantya.ai" element={<WelcomeMessage />} />
-        <Route path="/how-to-add-agent-sublogin" element={<AgentSublogin />} />
-        <Route path="/how-to-launch-first-campaign-in-anantya.ai" element={<LaunchCampaign />} />
-        <Route path="/how-to-enable-whatsapp-out-of-office-message" element={<OutOfOfficeMessage />} />
-        <Route path="/how-to-auto-assign-chats" element={<AutoAssignChats />} />
-        <Route path="/how-to-create-whatsapp-templete-messages-in-anantya.ai" element={<WhatsAppTemplateMessages />} />
-        <Route path="/your-affiliate-link" element={<YourAffiliateLink />} />
+          <Route path="/channels/instagram" element={<Instagram />} />
+          <Route path="/channels/google-messages" element={<GoogleMessages />} />
+          <Route path="/channels/viber" element={<Viber />} />
+          <Route path="/channels/line" element={<Line />} />
+          <Route path="/channels/messenger" element={<Messenger />} />
+          <Route path="/channels/wechat" element={<WeChat />} />
+          <Route path="/blog/whatsapp-business-app-vs-whatsapp-business-api" element={<WhatsAppBusinessAppVsAPI />} />
+          <Route path="/blog/whatsapp-marketing-strategies-to-drive-sales" element={<WhatsAppMarketingStrategies />} />
+          <Route path="/blog/whatsapp-marketing-a-direct-communication-with-customers" element={<WhatsAppMarketingDirectCommunication />} />
+          <Route path="/blog/reshaping-customer-engagement-on-whatsapp" element={<ReshapingCustomerEngagement />} />
+          <Route path="/blog/boost-sales-on-festive-season-with-ai-chatbots" element={<BoostSalesWithAIChatbots />} />
+          <Route path="/blog/whatsapp-business-api-ultimate-guide" element={<WhatsAppBusinessAPIUltimateGuide />} />
+          <Route path="/blog/whatsapp-broadcasting-ultimate-guide" element={<WhatsAppBroadcastingUltimateGuide />} />
+          <Route path="/blog/how-to-create-a-whatsapp-chatbot-for-business" element={<CreateWhatsAppChatbot />} />
+          <Route path="/blog/click-to-whatsapp-ads-marketing-2023" element={<ClickToWhatsAppAdsMarketing2023 />} />
+          <Route path="/blog/whatsapp-for-healthcare-a-simple-guide" element={<WhatsAppForHealthcareGuide />} />
+          <Route path="/blog/whatsapp-business-api-for-banking-sector" element={<WhatsAppBusinessAPIBankingSector />} />
+          <Route path="/blog/gitex-2023-highlights-anantya-ai-ai-powered-messaging-evolution" element={<Gitex2023Highlights />} />
+          <Route path="/blog/meta-new-frequency-capping-update" element={<MetaFrequencyCappingUpdate />} />
+          <Route path="/blog/whatsapp-business-api-pricing" element={<WhatsAppBusinessAPIPricing />} />
+
+          <Route path="/blog/whatsapp-business-switching-from-green-tick-to-blue-tick" element={<WhatsAppBusinessSwitching />} />
+        <Route path="/blog/change-in-whatsapp-international-authentication-pricing" element={<WhatsAppInternationalPricing />} />
+        <Route path="/blog/whatsapp-free-entry-frequency-capping" element={<WhatsAppFreeEntryCapping />} />
+        <Route path="/blog/whatsapp-broadcast-list" element={<WhatsAppBroadcastList />} />
+        <Route path="/blog/whatsapp-business-api-for-government" element={<WhatsAppBusinessApiGovernment />} />
+        <Route path="/blog/whatsapp-business-api-providers" element={<WhatsAppBusinessApiProviders />} />
+          <Route path="/welcome-message" element={<WelcomeMessage />} />
+          <Route path="/agent-sublogin" element={<AgentSublogin />} />
+          <Route path="/launch-campaign" element={<LaunchCampaign />} />
+          <Route path="/out-of-office-message" element={<OutOfOfficeMessage />} />
+          <Route path="/auto-assign-chats" element={<AutoAssignChats />} />
+          <Route path="/whatsapp-template-messages" element={<WhatsAppTemplateMessages />} />
+          <Route path="/generate-whatsapp-link" element={<GenerateWhatsAppLink />} />
+          <Route path="/your-affiliate-link" element={<YourAffiliateLink />} />
+          <Route path="/sales-hub" element={<SalesHub />} />
+
+          {/* resources */}
+          <Route path="/how-to-setup-a-welcome-message-on-anantya.ai" element={<HowToSetupWelcomeMessage />} />
+<Route path="/how-to-add-agent-sublogin" element={<HowToAddAgentSublogin />} />
+<Route path="/how-to-launch-first-campaign-in-anantya.ai" element={<HowToLaunchFirstCampaign />} />
+<Route path="/how-to-enable-whatsapp-out-of-office-message" element={<HowToEnableOutOfOfficeMessage />} />
+<Route path="/how-to-auto-assign-chats" element={<HowToAutoAssignChats />} />
+<Route path="/how-to-create-whatsapp-templete-messages-in-anantya.ai" element={<HowToCreateWhatsAppTemplateMessages />} />
+
+          
         </Routes>
-        <Footer />
-      </div>
+      </Layout>
     </Router>
   );
 }

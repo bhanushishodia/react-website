@@ -11,7 +11,8 @@ import solutionProvidersImg from "../assets/images/icons/solution-providers.png"
 import consultantsFreelancersImg from "../assets/images/icons/consultants-&-freelancers.png";
 import allYouNeedImage from "../assets/images/all-You-need-to-do.webp"; // Adjust the import path as needed
 import ctaImg from '../assets/images/partner-cta.webp'; // Adjust the path as necessary
-
+import ScrollToTopButton from "../components/common/ScrollToTopButton";
+import WhatsAppWidget from "../components/common/WhatsAppWidget";
 const SolutionPartner = () => {
   return (
     <>
@@ -258,7 +259,7 @@ const SolutionPartner = () => {
               </div>
             </div>
 
-            <div className="col mt-md-0 mt-3">
+            <div className="col ">
               <div className="solution-cards h-100 p-4">
                 <img
                   src={solutionProvidersImg}
@@ -274,7 +275,7 @@ const SolutionPartner = () => {
               </div>
             </div>
 
-            <div className="col mt-md-0 mt-3">
+            <div className="col ">
               <div className="solution-cards p-4 h-100">
                 <img
                   src={consultantsFreelancersImg}
@@ -363,6 +364,8 @@ const SolutionPartner = () => {
         
       </div>
       </section>
+      <ScrollToTopButton /> 
+      <WhatsAppWidget />
     </>
   );
 };

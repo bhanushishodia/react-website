@@ -1,34 +1,42 @@
 import React from 'react';
 import './GetStarted.css';
-
+import ScrollToTopButton from "../components/common/ScrollToTopButton";
+import WhatsAppWidget from "../components/common/WhatsAppWidget";
+import ContactForm from "../forms/ContactForm"; // Correct casing used here
 const GetStarted = () => {
   return (
-    <div className="get-started-container">
-      <div className="content-wrapper">
-        <div className="get-started-content">
-          <h1>Get Started</h1>
+    <div className="container">
+      <div className="content-wrapper row">
+        <div className="get-started-content col-xl-6 col-lg-6 col-md-6 col-sm-12">
+          <h1>Experience Anantya.ai in Action!</h1>
           <p>
-            Ready to start your journey with Anantya? Follow the steps below to get up and running with our services.
+          In this demo, we’ll show you how you can:
           </p>
-          <h2>Step 1: Sign Up</h2>
+          <h2 className='h6 fw-bold'>Build Your Own WhatsApp Chatbot</h2>
           <p>
-            Create an account by filling out our <a href="/signup" className="link">sign-up form</a>. You will receive a confirmation email once your account is created.
+          Design custom chatflows tailored to your business needs and automate messages via integrations.
           </p>
-          <h2>Step 2: Setup Your Profile</h2>
+          <h2 className='h6 fw-bold'>Run AD Campaigns and Do Bulk Broadcasting Through WhatsApp</h2>
           <p>
-            After signing up, log in to your account and complete your profile setup. This includes adding necessary information and preferences.
+          Send out promotional offers to an unlimited audience, enhancing engagement with interactive buttons for better responses.
           </p>
-          <h2>Step 3: Explore Our Services</h2>
+          <h2 className='h6 fw-bold'> Use Powerful Analytics</h2>
           <p>
-            Navigate through our platform to explore the various services and features we offer. Use the <a href="/guide" className="link">user guide</a> for assistance.
+          Efficiently manage conversations & Agents from a single, powerful Platform and automate support to improve customer satisfaction.
           </p>
           <h3>Need Help?</h3>
           <p>
             If you need help at any stage, our support team is available at <a href="mailto:support@anantya.ai" className="link">support@anantya.ai</a>.
           </p>
         </div>
+        <div className="text-md-end col-xl-6 col-lg-6 col-md-6 col-sm-12">
+        <ContactForm />
+        </div>
       </div>
+      <ScrollToTopButton />
+      <WhatsAppWidget />
     </div>
+    
   );
 };
 

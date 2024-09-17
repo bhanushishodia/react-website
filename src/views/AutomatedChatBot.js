@@ -19,7 +19,7 @@ const AutomatedChatBot = () => {
         <div className="row align-items-center">
           <div className="col-lg-6 text-black mt-20">
             <div className="info text-black pe-md-4 text-lg-start text-center">
-              <h1>
+              <h1 className='heading'>
                 Automate up to 96% Queries with <span>WhatsApp Chatbots</span>
               </h1>
               <p className="mt-20 text-black">
@@ -48,7 +48,7 @@ const AutomatedChatBot = () => {
         <div className="content py-5 text-center">
        
             <h2 className='pb-4'>
-              Create Chatbots for <span>24/7 Support</span> & Engagement
+              Create Chatbots for <span>24/7 Support</span> <br/> & Engagement
             </h2> 
      
           <div className="content">

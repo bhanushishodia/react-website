@@ -36,6 +36,7 @@
   .faq-answer.show {
     max-height: 1000px; /* Arbitrary large value to accommodate content */
     color: #666;
+    padding: 0px 12px;
     font-size: 15px;  
   }
   .faq-answer ol {

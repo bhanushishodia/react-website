@@ -104,7 +104,7 @@ const FoodBeverage = () => {
           <div className="row align-items-center">
             <div className="col-lg-6 text-black mt-20 text-lg-start text-center">
               <div className="info text-black pe-md-5">
-                <h1>Expand your Food Business with WhatsApp API</h1>
+                <h1 className="heading">Expand your Food Business with WhatsApp API</h1>
 
                 <p className="mt-20 text-black">
                   Get people excited about your food menu, taking orders for

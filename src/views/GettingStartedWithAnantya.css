@@ -17,14 +17,22 @@ h2 {
     background-color: #4aafc3;
     border-color: #4aafc3;
 }
-.resources ul li{
+.resource ul li{
     list-style: none;
     padding: 15px 10px;
     text-align: left;
     border-radius: 10px;
     background-color: transparent;
     transition: background-color .2s;
-}.card_anantya_started {
+}
+.resource ul li:hover{
+    background-color: #f3fbff;
+    border-radius: 10px;
+
+}
+
+
+.card_anantya_started {
     width: 100%;
     color: rgba(0, 0, 0, .87);
     padding: 10px 30px !important;

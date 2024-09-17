@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: 'Lexend', sans-serif;
+  font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -10,18 +10,37 @@ code {
     monospace;
 }
 
+/* Poppins Font */
 @font-face {
-  font-family: 'Lexend';
-  src: url('/path/to/fonts/Lexend-Regular.woff2') format('woff2'),
-       url('/path/to/fonts/Lexend-Regular.woff') format('woff');
+  font-family: 'Poppins';
+  src: url('/path/to/fonts/Poppins-Regular.woff2') format('woff2'),
+       url('/path/to/fonts/Poppins-Regular.woff') format('woff');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Lexend';
-  src: url('/path/to/fonts/Lexend-Bold.woff2') format('woff2'),
-       url('/path/to/fonts/Lexend-Bold.woff') format('woff');
+  font-family: 'Poppins';
+  src: url('/path/to/fonts/Poppins-Bold.woff2') format('woff2'),
+       url('/path/to/fonts/Poppins-Bold.woff') format('woff');
   font-weight: 700;
   font-style: normal;
 }
+
+/* Nunito Sans Font */
+@font-face {
+  font-family: 'Nunito Sans';
+  src: url('/path/to/fonts/NunitoSans-Regular.woff2') format('woff2'),
+       url('/path/to/fonts/NunitoSans-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nunito Sans';
+  src: url('/path/to/fonts/NunitoSans-Bold.woff2') format('woff2'),
+       url('/path/to/fonts/NunitoSans-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+

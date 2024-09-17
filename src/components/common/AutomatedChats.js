@@ -121,8 +121,8 @@ const AutomatedChats = () => {
                                             <div className="swiper-slide">
                                                 <div className="project-card style-7 d-inline-flex py-5 row m-md-0  m-0 p-0">
                                                     <div className="info col-xl-6 col-lg-6 col-md-6 col-sm-12 my-auto text-lg-start text-center">
-                                                        <h3>Customer Support Made Simple</h3>
-                                                        <p className="my-3">Automate replies and deliver personalized support experiences.</p>
+                                                        <h3>Engage Customers 24x7 via Smart Chatbot</h3>
+                                                        <p className="my-3">Whether you're solving customer queries or leading your team, we have the right tools for you.</p>
                                                         <ul>
                                                             <li className="d-flex align-items-center mb-2">
                                                                 <small className="icon-30 rounded-circle color-blue4 d-inline-flex align-items-center justify-content-center me-3">
@@ -130,7 +130,7 @@ const AutomatedChats = () => {
                                                                         <path d="M5.60003 10.6L1.40003 6.4L3.05176e-05 7.8L5.60003 13.4L17.6 1.4L16.2 0L5.60003 10.6Z" fill="#448AFF"></path>
                                                                     </svg>
                                                                 </small>
-                                                                <p>Setup automated responses to common queries</p>
+                                                                <p>Enable multiple team members to handle Live Chat Support on one WhatsApp Business Number!</p>
                                                             </li>
                                                             <li className="d-flex align-items-center mb-2">
                                                                 <small className="icon-30 rounded-circle color-blue4 d-inline-flex align-items-center justify-content-center me-3">
@@ -138,24 +138,9 @@ const AutomatedChats = () => {
                                                                         <path d="M5.60003 10.6L1.40003 6.4L3.05176e-05 7.8L5.60003 13.4L17.6 1.4L16.2 0L5.60003 10.6Z" fill="#448AFF"></path>
                                                                     </svg>
                                                                 </small>
-                                                                <p>Provide 24/7 customer service with automated replies</p>
+                                                                <p>Build Chatbots & Solve for 24 x 7 Support & Engagement</p>
                                                             </li>
-                                                            <li className="d-flex align-items-center mb-2">
-                                                                <small className="icon-30 rounded-circle color-blue4 d-inline-flex align-items-center justify-content-center me-3">
-                                                                    <svg width="14" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                        <path d="M5.60003 10.6L1.40003 6.4L3.05176e-05 7.8L5.60003 13.4L17.6 1.4L16.2 0L5.60003 10.6Z" fill="#448AFF"></path>
-                                                                    </svg>
-                                                                </small>
-                                                                <p>Send customized follow-up messages</p>
-                                                            </li>
-                                                            <li className="d-flex align-items-center">
-                                                                <small className="icon-30 rounded-circle color-blue4 d-inline-flex align-items-center justify-content-center me-3">
-                                                                    <svg width="14" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                        <path d="M5.60003 10.6L1.40003 6.4L3.05176e-05 7.8L5.60003 13.4L17.6 1.4L16.2 0L5.60003 10.6Z" fill="#448AFF"></path>
-                                                                    </svg>
-                                                                </small>
-                                                                <p>Integrate with CRM to manage and track interactions</p>
-                                                            </li>
+                                                           
                                                             <a className="mt-30 internalpage_link" href="whatsapp-support.html">
                                                                 Explore WhatsApp Support <i class="fas fa-long-arrow-right ms-2 colorfa_1 my-auto"></i>
                                                             </a>
@@ -173,8 +158,8 @@ const AutomatedChats = () => {
                                             <div className="swiper-slide">
                                                 <div className="project-card style-7 d-inline-flex py-5 row m-md-0 m-0 p-0 ">
                                                     <div className="info col-xl-6 col-lg-6 col-md-6 col-sm-12 my-auto text-lg-start text-center">
-                                                        <h3>Streamline Your Online Sales</h3>
-                                                        <p className="my-3">Manage your product catalogs and engage customers directly on WhatsApp.</p>
+                                                        <h3>5X Your Sales - Start selling on WhatsApp!</h3>
+                                                        <p className="my-3">customers easily find, check out, and buy your products or services on the go.</p>
                                                         <ul>
                                                             <li className="d-flex align-items-center mb-2">
                                                                 <small className="icon-30 rounded-circle color-blue4 d-inline-flex align-items-center justify-content-center me-3">
@@ -182,7 +167,7 @@ const AutomatedChats = () => {
                                                                         <path d="M5.60003 10.6L1.40003 6.4L3.05176e-05 7.8L5.60003 13.4L17.6 1.4L16.2 0L5.60003 10.6Z" fill="#448AFF"></path>
                                                                     </svg>
                                                                 </small>
-                                                                <p>Showcase products with rich media and descriptions</p>
+                                                                <p>Sell products Online with WhatsApp Catalogs and cart.</p>
                                                             </li>
                                                             <li className="d-flex align-items-center mb-2">
                                                                 <small className="icon-30 rounded-circle color-blue4 d-inline-flex align-items-center justify-content-center me-3">
@@ -190,24 +175,9 @@ const AutomatedChats = () => {
                                                                         <path d="M5.60003 10.6L1.40003 6.4L3.05176e-05 7.8L5.60003 13.4L17.6 1.4L16.2 0L5.60003 10.6Z" fill="#448AFF"></path>
                                                                     </svg>
                                                                 </small>
-                                                                <p>Enable easy and secure checkout process</p>
+                                                                <p>Effortlessly share product catalogs through automated notifications.</p>
                                                             </li>
-                                                            <li className="d-flex align-items-center mb-2">
-                                                                <small className="icon-30 rounded-circle color-blue4 d-inline-flex align-items-center justify-content-center me-3">
-                                                                    <svg width="14" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                        <path d="M5.60003 10.6L1.40003 6.4L3.05176e-05 7.8L5.60003 13.4L17.6 1.4L16.2 0L5.60003 10.6Z" fill="#448AFF"></path>
-                                                                    </svg>
-                                                                </small>
-                                                                <p>Track orders and send updates to customers</p>
-                                                            </li>
-                                                            <li className="d-flex align-items-center">
-                                                                <small className="icon-30 rounded-circle color-blue4 d-inline-flex align-items-center justify-content-center me-3">
-                                                                    <svg width="14" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                        <path d="M5.60003 10.6L1.40003 6.4L3.05176e-05 7.8L5.60003 13.4L17.6 1.4L16.2 0L5.60003 10.6Z" fill="#448AFF"></path>
-                                                                    </svg>
-                                                                </small>
-                                                                <p>Automate sales notifications and updates</p>
-                                                            </li>
+                                                         
                                                             <a className="mt-30 internalpage_link" href="whatsapp-commerce.html">
                                                                 Explore WhatsApp Commerce <i class="fas fa-long-arrow-right ms-2 colorfa_1 my-auto"></i>
                                                             </a>
@@ -225,8 +195,8 @@ const AutomatedChats = () => {
                                             <div className="swiper-slide">
                                                 <div className="project-card style-7 d-inline-flex py-5 row m-md-0  m-0 p-0">
                                                     <div className="info col-xl-6 col-lg-6 col-md-6 col-sm-12 my-auto text-lg-start text-center">
-                                                        <h3>Boost Engagement with Marketing Campaigns</h3>
-                                                        <p className="my-3">Create personalized marketing campaigns and reach customers on WhatsApp.</p>
+                                                        <h3>Boost Security with WhatsApp's Easy Authentication.</h3>
+                                                        <p className="my-3">Verify user identity at every login step using OTPs, including registration, recovery, and integrity validation.</p>
                                                         <ul>
                                                             <li className="d-flex align-items-center mb-2">
                                                                 <small className="icon-30 rounded-circle color-blue4 d-inline-flex align-items-center justify-content-center me-3">
@@ -234,7 +204,7 @@ const AutomatedChats = () => {
                                                                         <path d="M5.60003 10.6L1.40003 6.4L3.05176e-05 7.8L5.60003 13.4L17.6 1.4L16.2 0L5.60003 10.6Z" fill="#448AFF"></path>
                                                                     </svg>
                                                                 </small>
-                                                                <p>Design and send targeted marketing messages</p>
+                                                                <p>Users can easily request a password reset and receive an OTP on WhatsApp.</p>
                                                             </li>
                                                             <li className="d-flex align-items-center mb-2">
                                                                 <small className="icon-30 rounded-circle color-blue4 d-inline-flex align-items-center justify-content-center me-3">
@@ -242,26 +212,11 @@ const AutomatedChats = () => {
                                                                         <path d="M5.60003 10.6L1.40003 6.4L3.05176e-05 7.8L5.60003 13.4L17.6 1.4L16.2 0L5.60003 10.6Z" fill="#448AFF"></path>
                                                                     </svg>
                                                                 </small>
-                                                                <p>Segment your audience for better targeting</p>
+                                                                <p>Provide a convenient and secure verification process.</p>
                                                             </li>
-                                                            <li className="d-flex align-items-center mb-2">
-                                                                <small className="icon-30 rounded-circle color-blue4 d-inline-flex align-items-center justify-content-center me-3">
-                                                                    <svg width="14" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                        <path d="M5.60003 10.6L1.40003 6.4L3.05176e-05 7.8L5.60003 13.4L17.6 1.4L16.2 0L5.60003 10.6Z" fill="#448AFF"></path>
-                                                                    </svg>
-                                                                </small>
-                                                                <p>Track campaign performance and optimize</p>
-                                                            </li>
-                                                            <li className="d-flex align-items-center">
-                                                                <small className="icon-30 rounded-circle color-blue4 d-inline-flex align-items-center justify-content-center me-3">
-                                                                    <svg width="14" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                        <path d="M5.60003 10.6L1.40003 6.4L3.05176e-05 7.8L5.60003 13.4L17.6 1.4L16.2 0L5.60003 10.6Z" fill="#448AFF"></path>
-                                                                    </svg>
-                                                                </small>
-                                                                <p>Integrate with analytics tools for deeper insights</p>
-                                                            </li>
+                                                          
                                                             <a className="mt-30 internalpage_link" href="whatsapp-marketing.html">
-                                                                Explore WhatsApp Marketing <i class="fas fa-long-arrow-right ms-2 colorfa_1 my-auto"></i>
+                                                                Explore WhatsApp Authentication <i class="fas fa-long-arrow-right ms-2 colorfa_1 my-auto"></i>
                                                             </a>
                                                         </ul>
                                                     </div>

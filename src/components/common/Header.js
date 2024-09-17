@@ -6,7 +6,7 @@ import "./TopNavbar.css"; // Assuming you have a CSS file for styles
 import TopNavbar from "./TopNavbar"; // Adjust the path as necessary
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
-import Popup from "./Popup";
+
 
 // Corrected paths for assets
 import logo from "../../assets/images/logo.webp";
@@ -527,18 +527,24 @@ function Header() {
                       <li>
                         <a className="dropdown-item" href="/blog">
                           <img src={blogIcon} alt="Blog" /> Blog
+                          <span class="subline">Explore our latest articles,<br/>
+                          updates, and insights.</span>
                         </a>
                       </li>
 
                       <li>
                         <a className="dropdown-item" href="/about">
                           <img src={aboutUsIcon} alt="About Us" /> About Us
+                          <span class="subline">Discover our mission, <br/> values and the
+                                                        story </span>
                         </a>
                       </li>
                       <li>
                         <a className="dropdown-item" href="/work-with-us">
                           <img src={workWithUsIcon} alt="Work With Us" /> Work
                           With Us
+                          <span class="subline">Explore current
+                                                        job <br/> openings </span>
                         </a>
                       </li>
                     </div>
@@ -546,6 +552,8 @@ function Header() {
                       <li>
                         <a className="dropdown-item" href="/contact">
                           <img src={contactIcon} alt="Contact" /> Contact
+                          <span class="subline">Get in touch for inquiries, <br/> or
+                                                        support.</span>
                         </a>
                       </li>
                       <li>
@@ -555,12 +563,16 @@ function Header() {
                             alt="Knowledge Center"
                           />{" "}
                           Knowledge Center
+                          <span class="subline">Access guides, <br/> and informative content.
+                                                    </span>
                         </a>
                       </li>
                       <li>
                         <a className="dropdown-item" href="/partner-with-us">
                           <img src={partnerWithUsIcon} alt="Partner With Us" />{" "}
                           Partner With Us
+                          <span class="subline">Learn about our <br/> partnership
+                                                        programs.</span>
                         </a>
                       </li>
                     </div>
@@ -572,10 +584,14 @@ function Header() {
 
           {/* Button on the right */}
           <div className="button">
-            <button onClick={togglePopup} className="btn btn-primary">
-              Start a free trial
-            </button>
-            {showPopup && <Popup closePopup={togglePopup} />}
+             <a
+      href="https://calendly.com/info-w0m/30min?month=2024-02"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="btn btn-primary"
+    >
+      Book a Demo
+    </a>
           </div>
         </div>
       </header>

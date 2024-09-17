@@ -19,7 +19,7 @@ const WhatsAppAuthentication = () => {
           <div className="col-lg-6 text-black mt-20 text-lg-start text-center">
             <div className="info text-black pe-md-5">
               {/* <small className="mb-20 title_small">whatsapp-marketing</small> */}
-              <h1>Double up Business Security with WhatsApp OTP</h1>
+              <h1 className='heading'>Double up Business Security with WhatsApp OTP</h1>
               <p className="mt-20 text-black pe-md-5">
                 Boost security with WhatsApp's easy authentication. Verify user identity at every login step using OTPs, including registration, recovery, and integrity validation.
               </p>

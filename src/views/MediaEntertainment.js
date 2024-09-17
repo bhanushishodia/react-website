@@ -104,7 +104,7 @@ const MediaEntertainment = () => {
                     <div className="col-lg-6 text-black mt-20 text-lg-start text-center">
                         <div className="info text-black pe-md-5">
                       
-                            <h1>Connect Better with Conversational AI!</h1>
+                            <h1 className="heading">Connect Better with Conversational AI!</h1>
 
                             <p className="mt-20 text-black">Get people excited about your new releases, suggest shows that match their interests, and attract more subscribers by having meaningful conversations with your audience at every stage with WhatsApp Business API.</p>
                             

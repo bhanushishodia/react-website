@@ -22,7 +22,7 @@ const WhatsAppSupport = () => {
             <div className="col-lg-6 text-black mt-20 text-md-start text-center">
               <div className="info text-black pe-md-5">
                 {/* <small className="mb-20 title_small"> whatsapp-marketing</small> */}
-                <h1>Offer Support at Scale with WhatsApp Business API</h1>
+                <h1 className="heading">Offer Support at Scale with WhatsApp Business API</h1>
                 <p className="mt-30 text-black pe-md-5"></p>
                 <ul style={{ marginLeft: "0px" }}>
                   <li className="pb-20">

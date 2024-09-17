@@ -104,7 +104,7 @@ const TravelHospitality = () => {
                     <div className="col-lg-6 text-black mt-20">
                         <div className="info text-black pe-md-5 text-lg-start text-center">
                         
-                            <h1>Get More Leads for Your Travel Agency on WhatsApp</h1>
+                            <h1 className="heading">Get More Leads for Your Travel Agency on WhatsApp</h1>
 
                             <p className="mt-30 text-black">Offer 24/7 Customer Support and Agent Availability</p>
                             <p className="mt-20 text-black">Instantly Answer Travel and Tourism FAQs</p>

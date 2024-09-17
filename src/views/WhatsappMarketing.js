@@ -15,17 +15,17 @@ const WhatsappMarketing = () => {
     
   return (
     <div className="whatsapp-marketing-page">
-      <div className="container py-5">
+      <div className="container py-5 mt-5">
         <div className="content">
           <div className="row align-items-center">
             <div className="col-lg-6 text-black mt-20">
               <div className="info text-black text-md-start text-center">
-                <h1>Kick Start Your WhatsApp Marketing Journey</h1>
-                <p className="mt-30 mb-30 text-black pe-md-5">
+                <h1 className="heading">Kick Start Your WhatsApp Marketing Journey</h1>
+                <p className=" text-black pe-md-5">
                   Unlock the power of WhatsApp Marketing and watch your business
                   skyrocket to new heights! With us, you can achieve:
                 </p>
-                <ul style={{ marginLeft: "20px" }}>
+                <ul style={{ listStyleType: "none", }}>
                   <li>Upto 150x ROI by Broadcasting Messages</li>
                   <li>5x Conversions with Click to WhatsApp Ads</li>
                   <li>Automate your business for 2x Boost in sales</li>
@@ -53,7 +53,7 @@ const WhatsappMarketing = () => {
             </div>
             <div className="col-lg-6">
               <div
-                className="wow zoomIn"
+                className="wow animate__animated animate__fadeInUp"
                 data-wow-delay="0.2s"
                 style={{
                   visibility: "visible",
@@ -185,11 +185,35 @@ const WhatsappMarketing = () => {
         <div className="modal-dialog">
           <div className="modal-content">
             <div className="modal-header">
-              <h5 className="modal-title" id="myModalLabel1">Download Ebook</h5>
+              <h5 className="modal-title" id="myModalLabel1">Download Ebook Now</h5>
               <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body">
-              {/* Your modal content for the first ebook */}
+              {/* Your modal content for the first ebook */}  
+              <form action="https://formspree.io/f/mdorezev" method="post" id="marketing">
+              
+                <div className="row">
+                  <div className="col-lg-12 mb-20">
+                    <input type="text" name="name" className="form-control" placeholder="Name" required />
+                  </div>
+                  <div className="col-lg-12 mb-20">
+                    <input type="text" name="email" className="form-control" placeholder="Email Address *" required />
+                  </div>
+                  <div className="col-lg-12 mb-20">
+                    <input type="text" name="phone" className="form-control" placeholder="Phone Number (optional)" />
+                  </div>
+                  <div className="col-lg-12 mb-20">
+                    <input type="text" name="message" className="form-control" placeholder="Name of Organisation" required />
+                  </div>
+                  <div className="col-lg-12">
+                    <input type="url" name="url" className="form-control" placeholder="Website URL" required />
+                  </div>
+                  <div className="col-lg-12 text-center mt-3">
+                    <input type="submit" value="Send Your Request" className="btn bg-green text-white cursor-pointer" />
+                  </div>
+                </div>
+              </form>
+              
             </div>
           </div>
         </div>

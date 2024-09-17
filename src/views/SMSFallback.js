@@ -14,17 +14,17 @@ import completeReachImg from "../assets/images/icons/complete-reach.png";
 const SMSFallback = () => {
   return (
     <div>
-      <div className="container  py-0">
+      <div className="container  py-5">
         <div className="row align-items-center">
           <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 text-black mt-30 text-md-start text-center">
             <div className="info text-black">
-              <h1>Enhance Engagement with SMS Fallback Feature</h1>
+              <h1 className="heading">Enhance Engagement with SMS Fallback Feature</h1>
               <p className="mt-20 text-black pe-md-5">
                 Anantya.ai ensures messages are received, whether through
                 WhatsApp or reliable fallback SMS.
               </p>
 
-              <div className="btns">
+              <div className="btns mt-4">
                 <a
                   href="https://calendly.com/info-w0m/30min?month=2024-02"
                   target="_blank"
@@ -56,7 +56,7 @@ const SMSFallback = () => {
         </div>
       </div>
       <section className="numbers py-5">
-        <div className="container">
+        <div className="container px-0">
           <div className="content">
             <div className="row">
               <div className="col-lg-3">
