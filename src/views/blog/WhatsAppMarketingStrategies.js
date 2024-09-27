@@ -2,10 +2,107 @@ import React from "react";
 import "./BlogPage.css"; // Import custom CSS if needed
 import whatsappMarketingImg from "../../assets/images/blog/whatsapp-marketing.webp";
 import offerAndDiscountImg from "../../assets/images/blog/offer-and-discount.webp";
+import ScrollToTopButton from '../../components/common/ScrollToTopButton';
+import WhatsAppWidget from '../../components/common/WhatsAppWidget';
+import { Helmet } from 'react-helmet';
 const WhatsAppMarketingStrategies = () => {
   return (
-    <section>
-      <div className="container py-5">
+    <div>
+       <Helmet>
+            <title>WhatsApp Marketing Strategies to Drive 3X More Sales in 2024</title>
+            <meta name="keywords" content="whatsapp marketing,whatsapp marketing strategy,whatsapp marketing ideas,whatsapp marketing tips,whatsapp business marketing,whatsapp marketing service" />
+            <meta name="robots" content="index,follow" />
+            <meta name="description" content="WhatsApp marketing is all about promoting goods and services using WhatsApp. 5 strategies will help you drive 3 times more sales for your business." />
+            <meta property="og:type" content="article" />
+            <meta property="og:locale" content="en_AE" />
+            <meta property="og:locale" content="en_SA" />
+            <meta property="og:locale" content="en_BH" />
+            <meta property="og:title" content="WhatsApp Marketing Strategies to Drive 3X More Sales in 2024" />
+            <meta property="og:description" content="WhatsApp marketing is all about promoting goods and services using WhatsApp. 5 strategies will help you drive 3 times more sales for your business." />
+            <meta property="og:url" content="https://anantya.ai/whatsapp-marketing-strategies-to-drive-sales" />
+            <meta property="og:site_name" content="anantya.ai" />
+            <meta property="og:image" content="https://anantya.ai/assets/img/home/whatsapp-marketing.webp" />
+            <link rel="canonical" href="https://anantya.ai/whatsapp-marketing-strategies-to-drive-sales" />
+            <meta name="author" content="Anantya" />
+
+            <script type="application/ld+json">
+                {JSON.stringify({
+                    "@context": "https://schema.org",
+                    "@type": "Organization",
+                    "name": "anantya.ai",
+                    "alternateName": "Conversational Engagement Platform for Businesses | Anantya.ai",
+                    "url": "https://anantya.ai",
+                    "logo": "https://anantya.ai/assets/img/logo.webp",
+                    "contactPoint": {
+                        "@type": "ContactPoint",
+                        "telephone": "+971565480273",
+                        "contactType": "sales",
+                        "areaServed": ["AE", "SA", "BH"],
+                        "availableLanguage": ["en"]
+                    },
+                    "sameAs": [
+                        "https://www.facebook.com/anantyaai",
+                        "https://www.instagram.com/anantya.ai",
+                        "https://www.youtube.com/@Anantyaai",
+                        "https://www.linkedin.com/company/anantya-ai",
+                        "https://www.pinterest.com/anantyaai"
+                    ]
+                })}
+            </script>
+
+            <script type="application/ld+json">
+                {JSON.stringify({
+                    "@context": "https://schema.org",
+                    "@type": "BlogPosting",
+                    "mainEntityOfPage": {
+                        "@type": "WebPage",
+                        "@id": "https://anantya.ai/whatsapp-marketing-strategies-to-drive-sales"
+                    },
+                    "headline": "WhatsApp Marketing Strategies to Drive 3X More Sales in 2024",
+                    "description": "WhatsApp marketing is all about promoting goods and services using WhatsApp. 5 strategies will help you drive 3 times more sales for your business.",
+                    "image": "https://anantya.ai/assets/img/home/whatsapp-marketing.webp",
+                    "author": {
+                        "@type": "Organization",
+                        "name": "Anantya.ai",
+                        "url": "https://anantya.ai",
+                        "areaServed": ["AE", "SA", "BH"]
+                    },
+                    "publisher": {
+                        "@type": "Organization",
+                        "name": "Anantya.ai",
+                        "logo": {
+                            "@type": "ImageObject",
+                            "url": "https://anantya.ai/assets/img/logo.webp"
+                        }
+                    },
+                    "datePublished": "2024-06-25",
+                    "dateModified": "2024-07-12"
+                })}
+            </script>
+
+            <script type="application/ld+json">
+                {JSON.stringify({
+                    "@context": "https://schema.org/",
+                    "@type": "BreadcrumbList",
+                    "itemListElement": [
+                        {
+                            "@type": "ListItem",
+                            "position": 1,
+                            "name": "Home",
+                            "item": "https://anantya.ai/"
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 2,
+                            "name": "WhatsApp Marketing Strategies to Drive 3X More Sales in 2024",
+                            "item": "https://anantya.ai/whatsapp-marketing-strategies-to-drive-sales"
+                        }
+                    ]
+                })}
+            </script>
+        </Helmet>
+
+       <div className="container py-5 my-4">
         <div className="row px-1 mx-1">
           <h1 className="pb-2 text-center">
             5 Winning WhatsApp Marketing Strategies to Drive 3X More Sales
@@ -34,7 +131,7 @@ const WhatsAppMarketingStrategies = () => {
                 <p>
                   And here's the thing – if you're not utilizing{" "}
                   <a
-                    href="whatsapp-marketing.html"
+                    href="whatsapp-marketing"
                     style={{ color: "#5dc4eb" }}
                   >
                     {" "}
@@ -77,7 +174,7 @@ const WhatsAppMarketingStrategies = () => {
                   If the term WhatsApp Business API is new to you, then you
                   should probably first check out this{" "}
                   <a
-                    href="whatsapp-business-api-ultimate-guide.html"
+                    href="whatsapp-business-api-ultimate-guide"
                     style={{ color: "#5dc4eb" }}
                   >
                     {" "}
@@ -116,7 +213,7 @@ const WhatsAppMarketingStrategies = () => {
                       With WhatsApp’s high open rate, personalized
                       communication, and creative messaging options, you can 3x
                       your business' sales and conversions with{" "}
-                      <a href="whatsapp-marketing.html"> WhatsApp Marketing.</a>
+                      <a href="whatsapp-marketing"> WhatsApp Marketing.</a>
                     </p>
                   </li>
                   <li>
@@ -168,7 +265,7 @@ const WhatsAppMarketingStrategies = () => {
                       </a>
                       , you can run{" "}
                       <a
-                        href="click-to-whatsapp-ads-marketing-2023.html"
+                        href="click-to-whatsapp-ads-marketing-2023"
                         style={{ color: "#5dc4eb" }}
                       >
                         Click-to-WhatsApp Ads
@@ -242,7 +339,7 @@ const WhatsAppMarketingStrategies = () => {
                 <p>
                   The{" "}
                   <a
-                    href="whatsapp-marketing.html"
+                    href="whatsapp-marketing"
                     style={{ color: "#5dc4eb" }}
                   >
                     {" "}
@@ -352,7 +449,10 @@ const WhatsAppMarketingStrategies = () => {
           </div>
         </div>
       </div>
-    </section>
+      <ScrollToTopButton />
+      <WhatsAppWidget />
+
+    </div>
   );
 };
 

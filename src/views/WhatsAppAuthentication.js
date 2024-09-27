@@ -1,5 +1,6 @@
 // src/views/WhatsAppAuthentication.js
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import ScrollToTopButton from "../components/common/ScrollToTopButton";
 import WhatsAppWidget from "../components/common/WhatsAppWidget";
 import securityImage from '../assets/images/double-up-on-security.webp';
@@ -9,12 +10,106 @@ import enhancedCustomerExperienceImg from '../assets/images/enhanced-customer-ex
 import DownloadEbookSection from "../components/common/DownloadEbookSection"; // Import the new component
 import downloadEbookImage from "../assets/images/download-ebook.png"; // Adjust path as needed
 import improveSecurityImg from '../assets/images/improve-security-with-whatsapp-otp.webp';
-
+import pdfFile from '../assets/pdf/Usecase-WhatsApp-Authentication.pdf';
 const WhatsAppAuthentication = () => {
+const submitFormAndOpenPDF = (event) => {
+    // Prevent the default form submission behavior
+    event.preventDefault();
+
+    // Perform form submission (assuming you have a form with the id 'marketing')
+    document.getElementById("marketing").submit();
+
+    // Open PDF in a new tab	
+      	
+  window.open(pdfFile, "_blank");
+  };
   return (
     <div>
-       <div className="container">
-      <div className="content py-md-5 py-0">
+       <Helmet>
+            <title>WhatsApp OTP Verification | Anantya.ai</title>
+            <meta name="keywords" content="Whatsapp OTP,Whatsapp OTP Verification API,Whatsapp OTP verification,whatsapp otp api" />
+            <meta name="robots" content="index,follow" />
+            <meta 
+                name="description" 
+                content="Secure your account & transaction with Anantya.ai's WhatsApp OTP Verification. Fast, reliable, & easy to implement. Ensure user authenticity with every interaction." 
+            />
+            <meta property="og:title" content="WhatsApp OTP Verification | Anantya.ai" />
+            <meta property="og:type" content="article" />
+            <meta 
+                property="og:description" 
+                content="Secure your account & transaction with Anantya.ai's WhatsApp OTP Verification. Fast, reliable, & easy to implement. Ensure user authenticity with every interaction." 
+            />
+            <meta property="og:url" content="https://anantya.ai/whatsapp-authentication" />
+            <meta property="og:site_name" content="anantya.ai" />
+            <meta property="og:image" content="https://anantya.ai/assets/img/whatsapp-support/offer-support-at-scale-with.webp" />
+            <link rel="canonical" href="https://anantya.ai/whatsapp-authentication" />
+            <meta name="author" content="Anantya" />
+
+            <script type="application/ld+json">
+                {`
+                {
+                  "@context": "https://schema.org",
+                  "@type": "Organization",
+                  "name": "Anantya.ai",
+                  "alternateName": "Conversational Engagement Platform for Businesses | Anantya.ai",
+                  "url": "https://anantya.ai/",
+                  "logo": "https://anantya.ai/assets/img/logo.webp",
+                  "contactPoint": {
+                    "@type": "ContactPoint",
+                    "telephone": "+971565480273",
+                    "contactType": "sales",
+                    "areaServed": ["AE", "SA", "BH"],
+                    "availableLanguage": "en"
+                  },
+                  "sameAs": [
+                    "https://www.facebook.com/anantyaai",
+                    "https://www.instagram.com/anantya.ai",
+                    "https://www.youtube.com/@Anantyaai",
+                    "https://www.linkedin.com/company/anantya-ai",
+                    "https://www.pinterest.com/anantyaai"
+                  ]
+                }
+                `}
+            </script>
+
+            <script type="application/ld+json">
+                {`
+                {
+                  "@context": "https://schema.org/",
+                  "@type": "WebPage",
+                  "@id": "#WebPage",
+                  "url": "https://anantya.ai/whatsapp-authentication",
+                  "name": "WhatsApp OTP Verification | Anantya.ai"
+                }
+                `}
+            </script>
+
+            <script type="application/ld+json">
+                {`
+                {
+                  "@context": "https://schema.org",
+                  "@type": "BreadcrumbList",
+                  "itemListElement": [
+                    {
+                      "@type": "ListItem",
+                      "position": 1,
+                      "name": "Home",
+                      "item": "https://anantya.ai"
+                    },
+                    {
+                      "@type": "ListItem",
+                      "position": 2,
+                      "name": "WhatsApp OTP Verification | Anantya.ai",
+                      "item": "https://anantya.ai/whatsapp-authentication"
+                    }
+                  ]
+                }
+                `}
+            </script>
+        </Helmet>
+
+       <div className="container mt-5  py-5">
+      <div className="content">
         <div className="row align-items-center">
           <div className="col-lg-6 text-black mt-20 text-lg-start text-center">
             <div className="info text-black pe-md-5">
@@ -151,6 +246,67 @@ const WhatsAppAuthentication = () => {
             </div>
             <div className="modal-body">
               {/* Your modal content for the second ebook */}
+                <form
+                  action="https://formspree.io/f/mdorezev"
+                  className="py-2 px-md-5 px-4"
+                  method="post"
+                  id="marketing"
+                  onSubmit={submitFormAndOpenPDF}
+                >
+                  <div className="row">
+                    <div className="col-lg-12 mb-3">
+                      <input
+                        type="text"
+                        name="name"
+                        className="form-control"
+                        placeholder="Name"
+                        required
+                      />
+                    </div>
+                    <div className="col-lg-12 mb-3">
+                      <input
+                        type="text"
+                        name="email"
+                        className="form-control"
+                        placeholder="Email Address *"
+                        required
+                      />
+                    </div>
+                    <div className="col-lg-12 mb-3">
+                      <input
+                        type="text"
+                        name="phone"
+                        className="form-control"
+                        placeholder="Phone Number (optional)"
+                      />
+                    </div>
+                    <div className="col-lg-12 mb-3">
+                      <input
+                        type="text"
+                        name="message"
+                        className="form-control"
+                        placeholder="Name of Organisation"
+                        required
+                      />
+                    </div>
+                    <div className="col-lg-12">
+                      <input
+                        type="url"
+                        name="url"
+                        className="form-control"
+                        placeholder="Website URL"
+                        required
+                      />
+                    </div>
+                    <div className="col-lg-12 text-center mt-3">
+                      <input
+                        type="submit"
+                        value="Send Your Request"
+                        className="btn w-50 bg-green text-white cursor-pointer"
+                      />
+                    </div>
+                  </div>
+                </form>    
             </div>
           </div>
         </div>

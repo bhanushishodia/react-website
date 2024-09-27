@@ -1,13 +1,8 @@
 import React, { useState } from "react";
-import "./Popup.css"; // Import CSS for the popup
+import "./Popup.css"; // Import your popup CSS
 
-function Popup({ onClose }) {
+function PopupComponent({ closePopup }) { // Accept closePopup as a prop
   const [teamId, setTeamId] = useState("");
-
-  // Function to handle click events within the popup
-  const handlePopupClick = (e) => {
-    e.stopPropagation(); // Prevent click events from bubbling up
-  };
 
   // Handle input change and validate input
   const handleInputChange = (e) => {
@@ -19,7 +14,7 @@ function Popup({ onClose }) {
     }
   };
 
-  // Function to handle the proceed button click
+  // Handle the proceed button click
   const handleProceed = () => {
     if (!teamId.trim()) {
       console.log("Team ID is empty");
@@ -28,28 +23,17 @@ function Popup({ onClose }) {
     window.location.href = `https://${teamId}.anantya.ai`;
   };
 
-  // Handle scroll event to toggle icons visibility
-  const toggleIconsVisibility = () => {
-    // Implement the functionality as needed
+  // Handle popup click to prevent closing when clicking inside
+  const handlePopupClick = (e) => {
+    e.stopPropagation(); // Prevent click events from bubbling up
   };
 
-  // Add scroll event listener on component mount
-  React.useEffect(() => {
-    window.addEventListener("scroll", toggleIconsVisibility);
-    toggleIconsVisibility();
-
-    return () => {
-      window.removeEventListener("scroll", toggleIconsVisibility);
-    };
-  }, []);
-
   return (
-    <div className="popup-overlay" onClick={onClose}>
-      {/* Ensure clicking inside the popup does not propagate to close the popup */}
-      <div className="popup login-box" onClick={handlePopupClick}>
+    <div className="popup-overlay" onClick={closePopup}> {/* Close on outside click */}
+      <div className="popup login-box py-2 px-md-5 px-4" onClick={handlePopupClick}>
         <div className="popup-header">
-          <h3 className="modal-title mx-auto">Start Your Free Trial</h3>
-          <button type="button" className="btn-close" onClick={onClose} aria-label="Close"></button>
+          <h3 className="modal-title mx-auto fw-bold">Start Your Free Trial</h3>
+          <button type="button" className="btn-close" onClick={closePopup} aria-label="Close"></button>
         </div>
         <h5 className="text-center py-3">
           Everything you need to grow your business on WhatsApp
@@ -79,11 +63,11 @@ function Popup({ onClose }) {
             onClick={handleProceed}
             style={{ borderWidth: '1px' }}
           >
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
             Proceed
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
           </a>
         </form>
       </div>
@@ -91,4 +75,4 @@ function Popup({ onClose }) {
   );
 }
 
-export default Popup;
+export default PopupComponent;

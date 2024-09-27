@@ -3,20 +3,53 @@ import React from 'react';
 import Breadcrumb from '../components/common/Breadcrumb';
 import ScrollToTopButton from "../components/common/ScrollToTopButton";
 import WhatsAppWidget from "../components/common/WhatsAppWidget";
-
+import { Helmet } from 'react-helmet';
 import welcomeBackground from '../assets/images/inner5_back.png';
 import welcomeImage from '../assets/images/integration.webp';
 import articleImage4 from '../assets/images/article-4.png';
 const AutoAssignChats = () => {
   return (
     <div>
+
+        <Helmet>
+        {/* Title and Meta Tags */}
+        <title>How to Auto Assign Chats | Knowledge Center</title>
+        <meta name="robots" content="index,follow" />
+        <meta
+          name="description"
+          content="Here you can learn how to Auto Assign Chats"
+        />
+        <meta
+          property="og:title"
+          content="How to Auto Assign Chats | Knowledge Center"
+        />
+        <meta property="og:type" content="article" />
+        <meta
+          property="og:description"
+          content="Here you can learn how to Auto Assign Chats"
+        />
+        <meta
+          property="og:url"
+          content="https://anantya.ai/how-to-auto-assign-chats"
+        />
+        <meta property="og:site_name" content="anantya.ai" />
+        <meta
+          property="og:image"
+          content="https://anantya.ai/assets/img/auto-assign-section.webp"
+        />
+        <link
+          rel="canonical"
+          href="https://anantya.ai/how-to-auto-assign-chats"
+        />
+        <meta name="author" content="Anantya.ai" />
+      </Helmet>
     <Breadcrumb
   links={[{ href: '#', text: 'Home' }, { href: '#', text: 'Welcome Message' }]}
   backgroundImage={welcomeBackground}
   title="Resources"
   sideImage={welcomeImage}
 />
-<main className="career-details-page style-5 pt-100">
+      <main className="career-details-page style-5 pt-100">
       {/* ====== start careers-features ====== */}
       <section className="jop-details pb-100">
         <div className="container">
@@ -25,15 +58,16 @@ const AutoAssignChats = () => {
               <div className="col-lg-8">
                 <div className="jop-info">
                   <div className="tags mb-40">
-                    <a href="#">Auto assign chat</a>
-                    <a href="#">Agent Sublogin</a>
+                    <a href="/contact">Auto assign chat</a>
+                    <a href="/contact">Agent Sublogin</a>
                   </div>
                   <h3 className="main-title mb-10">
                     How to Auto Assign Chats - Step-by-Step Guide
                   </h3>
-                  <p className="pb-40 color-999">
-                    By <a href="#" className="color-000">Deepika Yadav</a>
-                  </p>
+                   <p className="pb-40 color-999">
+                          By <span className="color-000">Deepika Yadav</span>
+                          </p>
+
 
                   <div className="text d-flex mb-20">
                     <span className="icon color-blue5 me-2 flex-shrink-0">
@@ -175,7 +209,9 @@ const AutoAssignChats = () => {
       {/* ====== end careers-features ====== */}
     </main>
 {/* Add your content here */}
-</div>
+<ScrollToTopButton />
+<WhatsAppWidget />  
+   </div>
   );
 };
 

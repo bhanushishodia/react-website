@@ -1,8 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';  
 import downloadEbookImage from '../../assets/images/download-ebook.png';
-
-
 const DownloadEbookSection = ({ title, description, modalTarget }) => {
   return (
     <section>                               

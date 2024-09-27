@@ -1,15 +1,38 @@
 // src/views/OutOfOfficeMessage.js
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import Breadcrumb from '../components/common/Breadcrumb';
 import ScrollToTopButton from "../components/common/ScrollToTopButton";
 import WhatsAppWidget from "../components/common/WhatsAppWidget";
-
 import welcomeBackground from '../assets/images/inner5_back.png';
 import welcomeImage from '../assets/images/integration.webp';
-
 import articleImage4 from '../assets/images/article-4.png';
+
 const OutOfOfficeMessage = () => {
   return (
+    <>
+    <Helmet>
+    <title>How to Enable WhatsApp Out-of-Office Message in Anantya.ai | Knowledge Center</title>
+    <meta name="robots" content="index,follow" />
+    <meta 
+      name="description" 
+      content="How to Enable WhatsApp Out-of-Office Message in Anantya.ai, Step-by-Step" 
+    />
+    <meta property="og:title" content="How to Enable WhatsApp Out-of-Office Message in Anantya.ai | Knowledge Center" />
+    <meta property="og:type" content="article" />
+    <meta 
+      property="og:description" 
+      content="How to Enable WhatsApp Out-of-Office Message in Anantya.ai, Step-by-Step" 
+    />
+    <meta property="og:url" content="https://anantya.ai/how-to-enable-whatsapp-out-of-office-message" />
+    <meta property="og:site_name" content="anantya.ai" />
+    <meta 
+      property="og:image" 
+      content="https://anantya.ai/assets/img/go-to-bot-setup.webp" 
+    />
+    <link rel="canonical" href="https://anantya.ai/how-to-enable-whatsapp-out-of-office-message" />
+    <meta name="author" content="Anantya.ai" />
+  </Helmet>
     <div>
     <Breadcrumb
   links={[{ href: '#', text: 'Home' }, { href: '#', text: 'Welcome Message' }]}
@@ -137,7 +160,11 @@ const OutOfOfficeMessage = () => {
       {/* ====== end careers-features ====== */}
     </main>
 {/* Add your content here */}
-</div>
+    </div>
+
+    <ScrollToTopButton />
+    <WhatsAppWidget />
+    </>
   );
 };
 

@@ -2,6 +2,7 @@
 import React from "react";
 import CountUp from "react-countup";  
 import './WhatsappSupport.css';
+import { Helmet } from 'react-helmet';
 import ScrollToTopButton from "../components/common/ScrollToTopButton";
 import WhatsAppWidget from "../components/common/WhatsAppWidget";
 import DownloadEbookSection from "../components/common/DownloadEbookSection"; // Import the new component
@@ -13,31 +14,136 @@ import supportIcon from "../assets/images/icons/24_7-support.png"; // Adjust the
 import reliableServiceIcon from "../assets/images/icons/Reliable-service.png"; // Adjust the path as per your project structure
 import securityIcon from "../assets/images/icons/fortified-security.png"; // Adjust the path as per your project structure
 import boostSupportImage from "../assets/images/boost-your-support-teams-efficiency.webp"; // Adjust path as needed
+import pdfFile from '../assets/pdf/Usecase-WhatsApp-Support.pdf';
+
 const WhatsAppSupport = () => {
+const submitFormAndOpenPDF = (event) => {
+    // Prevent the default form submission behavior
+    event.preventDefault();
+
+    // Perform form submission (assuming you have a form with the id 'marketing')
+    document.getElementById("marketing").submit();
+
+    // Open PDF in a new tab	
+      	
+  window.open(pdfFile, "_blank");
+  };
+
   return (
     <div>
-      <div className="container">
-        <div className="content py-md-5 py-0">
+      <Helmet>
+      {/* Title and Meta Tags */}
+      <title>Customer Support Chatbot by Anantya.ai | Chatbot Solutions</title>
+      <meta name="robots" content="index,follow" />
+      <meta
+        name="description"
+        content="Enhance customer support with Anantya.ai's WhatsApp chatbot. Offer 24/7 assistance, resolve issues quickly, and improve customer satisfaction."
+      />
+
+      {/* Open Graph Meta Tags */}
+      <meta property="og:title" content="Customer Support Chatbot by Anantya.ai | Chatbot Solutions" />
+      <meta property="og:type" content="article" />
+      <meta
+        property="og:description"
+        content="Enhance customer support with Anantya.ai's WhatsApp chatbot. Offer 24/7 assistance, resolve issues quickly, and improve customer satisfaction."
+      />
+      <meta property="og:url" content="https://anantya.ai/whatsapp-support" />
+      <meta property="og:site_name" content="anantya.ai" />
+      <meta property="og:image" content="https://anantya.ai/assets/img/whatsapp-support/offer-support-at-scale-with.webp" />
+
+      {/* Canonical Link */}
+      <link rel="canonical" href="https://anantya.ai/whatsapp-support" />
+
+      {/* Author */}
+      <meta name="author" content="Anantya" />
+
+      {/* JSON-LD Schema for Organization */}
+      <script type="application/ld+json">
+        {`
+          {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Anantya.ai",
+            "alternateName": "Conversational Engagement Platform for Businesses | Anantya.ai",
+            "url": "https://anantya.ai/",
+            "logo": "https://anantya.ai/assets/img/logo.webp",
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+971565480273",
+              "contactType": "sales",
+              "areaServed": ["AE", "SA", "BH"],
+              "availableLanguage": "en"
+            },
+            "sameAs": [
+              "https://www.facebook.com/anantyaai",
+              "https://www.instagram.com/anantya.ai",
+              "https://www.youtube.com/@Anantyaai",
+              "https://www.linkedin.com/company/anantya-ai",
+              "https://www.pinterest.com/anantyaai"
+            ]
+          }
+        `}
+      </script>
+
+      {/* JSON-LD Schema for WebPage */}
+      <script type="application/ld+json">
+        {`
+          {
+            "@context": "https://schema.org/",
+            "@type": "WebPage",
+            "@id": "#WebPage",
+            "url": "https://anantya.ai/whatsapp-support",
+            "name": "Customer Support Chatbot by Anantya.ai | Chatbot Solutions"
+          }
+        `}
+      </script>
+
+      {/* JSON-LD Schema for BreadcrumbList */}
+      <script type="application/ld+json">
+        {`
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://anantya.ai"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Customer Support Chatbot by Anantya.ai | Chatbot Solutions",
+                "item": "https://anantya.ai/whatsapp-support"
+              }
+            ]
+          }
+        `}
+      </script>
+      </Helmet>
+      <div className="container mt-5">
+        <div className="content py-5">
           <div className="row align-items-center">
             <div className="col-lg-6 text-black mt-20 text-md-start text-center">
               <div className="info text-black pe-md-5">
                 {/* <small className="mb-20 title_small"> whatsapp-marketing</small> */}
                 <h1 className="heading">Offer Support at Scale with WhatsApp Business API</h1>
-                <p className="mt-30 text-black pe-md-5"></p>
+                
                 <ul style={{ marginLeft: "0px" }}>
-                  <li className="pb-20">
+                  <li className="text-start">
                     Drive 24x7 support with automated Chatbots
                   </li>
-                  <li>
+                  <li className="text-start mt-2">
                     Manage Multiple agents on one WhatsApp Business Number.
                   </li>
                 </ul>
-                <div className="d-flex align-items-center mt-30 youtube">
+                <div className="d-flex align-items-center mt-10 youtube">
                   <p className="me-5">
                     ⚡️Powered by Official WhatsApp Business API
                   </p>
                 </div>
-                <div className="btns mt-30">
+                <div className="btns mt-10">
                   <a
                     href="https://calendly.com/info-w0m/30min?month=2024-02"
                     className="btn me-2 bg-green text-white btn-color"
@@ -51,7 +157,7 @@ const WhatsAppSupport = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-6">
+            <div className="col-lg-6 mt-md-0 mt-4">
               <div
                 className="wow zoomIn"
                 data-wow-delay="0.2s"
@@ -267,6 +373,72 @@ const WhatsAppSupport = () => {
             </div>
             <div className="modal-body">
               {/* Your modal content for the second ebook */}
+  
+             
+                {/* Your modal content for the first ebook */}
+                <form
+                  action="https://formspree.io/f/mdorezev"
+                  className="py-2 px-md-5 px-4"
+                  method="post"
+                  id="marketing"
+                  onSubmit={submitFormAndOpenPDF}
+                >
+                  <div className="row">
+                    <div className="col-lg-12 mb-3">
+                      <input
+                        type="text"
+                        name="name"
+                        className="form-control"
+                        placeholder="Name"
+                        required
+                      />
+                    </div>
+                    <div className="col-lg-12 mb-3">
+                      <input
+                        type="text"
+                        name="email"
+                        className="form-control"
+                        placeholder="Email Address *"
+                        required
+                      />
+                    </div>
+                    <div className="col-lg-12 mb-3">
+                      <input
+                        type="text"
+                        name="phone"
+                        className="form-control"
+                        placeholder="Phone Number (optional)"
+                      />
+                    </div>
+                    <div className="col-lg-12 mb-3">
+                      <input
+                        type="text"
+                        name="message"
+                        className="form-control"
+                        placeholder="Name of Organisation"
+                        required
+                      />
+                    </div>
+                    <div className="col-lg-12">
+                      <input
+                        type="url"
+                        name="url"
+                        className="form-control"
+                        placeholder="Website URL"
+                        required
+                      />
+                    </div>
+                    <div className="col-lg-12 text-center mt-3">
+                      <input
+                        type="submit"
+                        value="Send Your Request"
+                        className="btn w-50 bg-green text-white cursor-pointer"
+                      />
+                    </div>
+                  </div>
+                </form>
+             
+
             </div>
           </div>
         </div>

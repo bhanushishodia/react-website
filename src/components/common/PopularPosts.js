@@ -1,7 +1,9 @@
-// src/components/PopularPosts.js
 import React from 'react';
 import Slider from 'react-slick';
 import './PopularPosts.css'; // Import the CSS file for styling
+import InstagramIcon from '../../assets/images/icons/instagram.svg';
+import WhatsAppIcon from '../../assets/images/icons/Whatsapp.webp';
+import MessengerIcon from '../../assets/images/icons/Messenger.webp';
 
 const PopularPosts = () => {
   // Slick Slider settings
@@ -41,9 +43,9 @@ const PopularPosts = () => {
         <h5 className="fw-bold text-uppercase mb-5">You might also like</h5>        
         <Slider {...settings} className="related-postes-slider position-relative">
           <div className="slide-item">
-            <a href="instagram.html" className="card h-100 text-lg-start">  
+            <a href="instagram" className="card h-100 text-lg-start">  
               <div className="icon">
-                <img src="/assets/img/home/instagram.svg" alt="Instagram" />
+                <img src={InstagramIcon} alt="Instagram" />
               </div>
               <div className="info mt-20">
                 <h5 className="card-title">Instagram</h5>
@@ -54,9 +56,9 @@ const PopularPosts = () => {
             </a>
           </div>
           <div className="slide-item">
-            <a href="../whatsapp-business-api.html" className="card style-5 h-100 text-lg-start">
+            <a href="../whatsapp-business-api" className="card style-5 h-100 text-lg-start">
               <div className="icon">
-                <img src="/assets/img/home/Whatsapp.webp" alt="WhatsApp Business" />
+                <img src={WhatsAppIcon} alt="WhatsApp Business" />
               </div>
               <div className="info mt-20">
                 <h5 className="card-title">WhatsApp Business</h5>
@@ -67,9 +69,9 @@ const PopularPosts = () => {
             </a>
           </div>
           <div className="slide-item">
-            <a href="facebook-messenger.html" className="card style-5 h-100 text-lg-start">
+            <a href="facebook-messenger" className="card style-5 h-100 text-lg-start">
               <div className="icon">
-                <img src="/assets/img/home/Messenger.webp" alt="Facebook Messenger" />
+                <img src={MessengerIcon} alt="Facebook Messenger" />
               </div>
               <div className="info mt-20">
                 <h5 className="card-title">Facebook Messenger</h5>

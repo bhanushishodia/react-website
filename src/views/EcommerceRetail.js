@@ -17,8 +17,21 @@ import sellMoreImage from "../assets/images/sell-more-with-whatsapp-catalogues.w
 import defaultImage from "../assets/images/convert-browsers-into.webp";
 import hoverImage1 from "../assets/images/promote-on-every-channel.webp";
 import hoverImage2 from "../assets/images/convert-browsers-into.webp";
+import { Helmet } from 'react-helmet';
+import pdfFile from '../assets/pdf/Usecase-WhatsApp-Commerce.pdf';
 
 const EcommerceRetail = () => {
+  const submitFormAndOpenPDF = (event) => {
+      // Prevent the default form submission behavior
+      event.preventDefault();
+  
+      // Perform form submission (assuming you have a form with the id 'marketing')
+      document.getElementById("marketing").submit();
+  
+      // Open PDF in a new tab	
+          
+    window.open(pdfFile, "_blank");
+    };
   const homeFAQs = [
     {
       question:
@@ -101,8 +114,129 @@ const EcommerceRetail = () => {
 
   return (
     <div>
-      <div className="container">
-        <div className="content py-md-5 py-0">
+       <Helmet>
+      <title>Conversational E-commerce Chatbot - WhatsApp Engagement for E-commerce</title>
+      <meta name="keywords" content="whatsapp chatbot for ecommerce, whatsapp ecommerce integration, whatsapp business ecommerce, whatsapp api for ecommerce, whatsapp business api for ecommerce" />
+      <meta name="robots" content="index,follow" />
+      <meta name="description" content="Discover how Anantya.ai empowers the ecommerce industry with WhatsApp Chatbot services. Maximize sales, provide instant support, and grow your online business." />
+      <meta property="og:title" content="Conversational E-commerce Chatbot - WhatsApp Engagement for E-commerce" />
+      <meta property="og:type" content="article" />
+      <meta property="og:description" content="Discover how Anantya.ai empowers the ecommerce industry with WhatsApp Chatbot services. Maximize sales, provide instant support, and grow your online business." />
+      <meta property="og:url" content="https://anantya.ai/ecommerce-industry" />
+      <meta property="og:site_name" content="anantya.ai" />
+      <meta property="og:image" content="https://anantya.ai/assets/img/ecom/chat-and-sell-more-with.webp" />
+      <link rel="canonical" href="https://anantya.ai/ecommerce-industry" />
+      <meta name="author" content="Anantya" />
+
+      {/* JSON-LD structured data */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Anantya.ai",
+          "alternateName": "Conversational Engagement Platform for Businesses | Anantya.ai",
+          "url": "https://anantya.ai/",
+          "logo": "https://anantya.ai/assets/img/logo.webp",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+971565480273",
+            "contactType": "sales",
+            "areaServed": ["AE", "SA", "BH"],
+            "availableLanguage": "en"
+          },
+          "sameAs": [
+            "https://www.facebook.com/anantyaai",
+            "https://www.instagram.com/anantya.ai",
+            "https://www.youtube.com/@Anantyaai",
+            "https://www.linkedin.com/company/anantya-ai",
+            "https://www.pinterest.com/anantyaai"
+          ]
+        })}
+      </script>
+
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebPage",
+              "name": "Conversational E-commerce Chatbot - WhatsApp Engagement for E-commerce",
+              "description": "Discover how Anantya.ai empowers the ecommerce industry with WhatsApp Chatbot services. Maximize sales, provide instant support, and grow your online business."
+            },
+            {
+              "@type": "WebSite",
+              "name": "Anantya",
+              "alternateName": "anantya.ai",
+              "url": "https://anantya.ai/"
+            }
+          ]
+        })}
+      </script>
+
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://anantya.ai"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "E-commerce & Retail",
+              "item": "https://anantya.ai/ecommerce-industry"
+            }
+          ]
+        })}
+      </script>
+
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How Can An E-Commerce Business Benefit From Utilizing WhatsApp Business API?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "By leveraging the WhatsApp Business API, e-commerce businesses can effectively grow and sell products online. It enables direct communication with customers, providing personalized interactions and enhancing customer engagement. This leads to increased sales, improved customer satisfaction, and expanded reach."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How Can E-Commerce Businesses Utilize WhatsApp Business API For Marketing And Sales?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "E-commerce businesses can utilize WhatsApp Business API for marketing and sales by:\n1. Sending personalized product recommendations and promotions to customers.\n2. Sharing product catalogs, allowing customers to browse and make purchases directly on WhatsApp.\n3. Automating abandoned cart notifications to recover lost sales.\n4. Providing real-time customer support, addressing queries, and resolving issues promptly.\n5. Sending order updates, delivery notifications, and post-purchase follow-ups."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is WhatsApp Business API Suitable For Businesses Of All Sizes?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, WhatsApp Business API is suitable for businesses of all sizes, ranging from small startups to large enterprises. It offers scalability, flexibility, and a range of features that can be tailored to meet the specific needs of each business. Whether you're just starting or already established, WhatsApp Business API can be an effective tool for e-commerce growth."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What Are The Advantages Of Conversational Commerce?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Conversational commerce offers numerous benefits to businesses. With Anantya.ai, businesses can:\n1. Expand market reach with chatbot shopping.\n2. Build direct digital connections with customers.\n3. Engage and respond in real time.\n4. Turn messaging into a sales channel.\n5. Create consultative and conversational online commerce experiences."
+              }
+            }
+          ]
+        })}
+      </script>
+       </Helmet>
+      <div className="container py-5  mt-5">
+        <div className="content ">
           <div className="row align-items-center">
             <div className="col-lg-6 text-black mt-20 text-lg-start text-center">
               <div className="info text-black pe-md-2">
@@ -293,6 +427,72 @@ const EcommerceRetail = () => {
             </div>
             <div className="modal-body">
               {/* Your modal content for the second ebook */}
+                
+             
+                {/* Your modal content for the first ebook */}
+                <form
+                  action="https://formspree.io/f/mdorezev"
+                  className="py-2 px-md-5 px-4"
+                  method="post"
+                  id="marketing"
+                  onSubmit={submitFormAndOpenPDF}
+                >
+                  <div className="row">
+                    <div className="col-lg-12 mb-3">
+                      <input
+                        type="text"
+                        name="name"
+                        className="form-control"
+                        placeholder="Name"
+                        required
+                      />
+                    </div>
+                    <div className="col-lg-12 mb-3">
+                      <input
+                        type="text"
+                        name="email"
+                        className="form-control"
+                        placeholder="Email Address *"
+                        required
+                      />
+                    </div>
+                    <div className="col-lg-12 mb-3">
+                      <input
+                        type="text"
+                        name="phone"
+                        className="form-control"
+                        placeholder="Phone Number (optional)"
+                      />
+                    </div>
+                    <div className="col-lg-12 mb-3">
+                      <input
+                        type="text"
+                        name="message"
+                        className="form-control"
+                        placeholder="Name of Organisation"
+                        required
+                      />
+                    </div>
+                    <div className="col-lg-12">
+                      <input
+                        type="url"
+                        name="url"
+                        className="form-control"
+                        placeholder="Website URL"
+                        required
+                      />
+                    </div>
+                    <div className="col-lg-12 text-center mt-3">
+                      <input
+                        type="submit"
+                        value="Send Your Request"
+                        className="btn w-50 bg-green text-white cursor-pointer"
+                      />
+                    </div>
+                  </div>
+                </form>
+          
+          
             </div>
           </div>
         </div>

@@ -1,62 +1,67 @@
 /* Styling for the ResourceLibrary component */
 .sales-hub .projects-tabs {
-    background-color: #fff;
-    padding: 7px;
-    border-radius: 18px;
-  }
-  .resources {
-    background: #f5faff;
-    border: 1px solid #bef2fc;
-    padding: 25px;
-    border-radius: 20px;
-    margin-top: 40px;
+  background-color: #fff;
+  padding: 7px;
+  border-radius: 18px;
 }
-  .resources ul li {
-    padding: 0px 15px;
-   
+
+.resources {
+  background: #f5faff;
+  border: 1px solid #bef2fc;
+  padding: 25px;
+  border-radius: 20px;
+  margin-top: 40px;
 }
-  .nav-pills {
-    justify-content: space-evenly;
-  }
-  
-  .sales-hub .card img {
-    width: 52px;
-    height: 52px;
-   
-  }
-  .sales-hub .card  {
-    height: 100%;
-    width: calc(25% - 20px);
-    display: flex;
-    align-items: center;
-    background: #fff;
-    border-radius: 12px;
-    cursor: pointer;
-    padding: 16px;
-  
-    box-shadow: 0 -1px 14px #27497d0f;
-    width: 100%;
-    transition: .3s;  
-    border: none;
-  }
-  .sales-hub .card:hover  {
-    transform: scale(1.05);
-  }
-  .sales-hub .card h6{
-    font-weight: 500;
-    font-size: 14px;
-    margin-bottom: 0;
-    transition: .3s;
-    color: #1c4980;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+
+.resources ul li {
+  padding: 0px 15px;
+
+}
+
+.nav-pills {
+  justify-content: space-evenly;
+}
+
+.sales-hub .card img {
+  width: 52px;
+  height: 52px;
+
+}
+
+.sales-hub .card {
+  height: 100%;
+  width: calc(25% - 20px);
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 12px;
+  cursor: pointer;
+  padding: 16px;
+
+  box-shadow: 0 -1px 14px #27497d0f;
+  width: 100%;
+  transition: .3s;
+  border: none;
+}
+
+.sales-hub .card:hover {
+  transform: scale(1.05);
+}
+
+.sales-hub .card h6 {
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 0;
+  transition: .3s;
+  color: #1c4980;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
 
-  }
-  
-  
-  h6.text-center {
-    padding-top: 15px;
-  }
-  
+}
+
+
+h6.text-center {
+  padding-top: 15px;
+}

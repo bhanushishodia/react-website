@@ -15,27 +15,27 @@ const TopNavbar = () => {
   // Array of blog links
   const blogLinks = [
     {
-      href: "whatsapp-business-app-vs-whatsapp-business-api",
+      href: "/blog/whatsapp-business-app-vs-whatsapp-business-api",
       text: "WhatsApp Business App vs WhatsApp Business API",
     },
     {
-      href: "whatsapp-business-api-ultimate-guide",
+      href: "/blog/whatsapp-business-api-ultimate-guide",
       text: "WhatsApp Business API: Your Ultimate 2024 Guide",
     },
     {
-      href: "whatsapp-free-entry-frequency-capping",
+      href: "/blog/whatsapp-free-entry-frequency-capping",
       text: "WhatsApp’s Free Entry Point and Frequency Capping in 2024",
     },
     {
-      href: "change-in-whatsapp-international-authentication-pricing",
+      href: "/blog/change-in-whatsapp-international-authentication-pricing",
       text: "Telecom Revolt on International Authentication Messages",
     },
     {
-      href: "whatsapp-broadcasting-ultimate-guide",
+      href: "/blog/whatsapp-broadcasting-ultimate-guide",
       text: "WhatsApp Broadcast: Your Complete Business Booster Guide",
     },
     {
-      href: "meta-new-frequency-capping-update",
+      href: "/blog/meta-new-frequency-capping-update",
       text: "What will change after Meta’s new frequency capping update?",
     },
   ];

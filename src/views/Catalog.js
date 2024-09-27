@@ -10,11 +10,82 @@ import connectWithAudienceImg from '../assets/images/connect-with-a-wider-audien
 import whatsappCatalogImg from '../assets/images/cta/whatsapp-catalog.webp'; // Adjust path if necessary
 import simplifyShoppingImg from '../assets/images/Simplify-shopping-with-whatsapp.webp'; // Adjust path if necessary
 import whatsappImg from '../assets/images/wa.link_3dzezc.png'; // Adjust path if necessary
+import { Helmet } from 'react-helmet';
 const Catalog = () => {
   return (
     <div>
-     <div className="container">
-      <div className="content py-md-5 py-0">
+       <Helmet>
+      <title>Whatsapp Catalog | Increase Engagement and Boost Sales</title>
+      <meta name="keywords" content="Whatsapp Catalog, Whatsapp Business Catalog, catalogue for whatsapp business" />
+      <meta name="robots" content="index,follow" />
+      <meta name="description" content="Anantya.ai provides whatsapp business catalog service, now businesses can easily create product catalogs & it will increase engagement and boost sales." />
+      <meta property="og:title" content="Whatsapp Catalog | Increase Engagement and Boost Sales" />
+      <meta property="og:type" content="article" />
+      <meta property="og:description" content="Anantya.ai provides whatsapp business catalog service, now businesses can easily create product catalogs & it will increase engagement and boost sales." />
+      <meta property="og:url" content="https://anantya.ai/whatsapp-catalog" />
+      <meta property="og:site_name" content="anantya.ai" />
+      <meta property="og:image" content="https://anantya.ai/assets/img/whatsapp-support/offer-support-at-scale-with.webp" />
+      <link rel="canonical" href="https://anantya.ai/whatsapp-catalog" />
+      <meta name="author" content="Anantya" />
+      
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Anantya.ai",
+          "alternateName": "Conversational Engagement Platform for Businesses | Anantya.ai",
+          "url": "https://anantya.ai/",
+          "logo": "https://anantya.ai/assets/img/logo.webp",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+971565480273",
+            "contactType": "sales",
+            "areaServed": ["AE", "SA", "BH"],
+            "availableLanguage": "en"
+          },
+          "sameAs": [
+            "https://www.facebook.com/anantyaai",
+            "https://www.instagram.com/anantya.ai",
+            "https://www.youtube.com/@Anantyaai",
+            "https://www.linkedin.com/company/anantya-ai",
+            "https://www.pinterest.com/anantyaai"
+          ]
+        })}
+      </script>
+
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org/",
+          "@type": "WebPage",
+          "@id": "#WebPage",
+          "url": "https://anantya.ai/whatsapp-catalog",
+          "name": "Whatsapp Catalog | Increase Engagement and Boost Sales"
+        })}
+      </script>
+
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://anantya.ai"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Whatsapp Catalog | Increase Engagement and Boost Sales",
+              "item": "https://anantya.ai/whatsapp-catalog"
+            }
+          ]
+        })}
+      </script>
+    </Helmet>
+     <div className="container py-5 mt-5">
+      <div className="content">
         <div className="row align-items-center">
           <div className="col-lg-6 text-black mt-20">
             <div className="info text-black pe-md-5 text-lg-start text-center">
@@ -63,7 +134,7 @@ const Catalog = () => {
           <div className="content pt-4">
             <div className="row row-cols-1 row-cols-md-3 g-4 pb-5 px-md-0 px-3">
               <div className="col">
-                <a href="contact.html" className="features-card style-5 box-1 h-100">
+                <a href="contact" className="features-card style-5 box-1 h-100">
                   <div className="icon">
                     <img src={increasedReachIcon} alt="24-7" />
                   </div>
@@ -76,7 +147,7 @@ const Catalog = () => {
                 </a>
               </div>
               <div className="col">
-                <a href="contact.html" className="features-card style-5 box-2 h-100">
+                <a href="contact" className="features-card style-5 box-2 h-100">
                   <div className="icon">
                     <img src={realTimeUpdatesIcon} alt="services" />
                   </div>
@@ -89,7 +160,7 @@ const Catalog = () => {
                 </a>
               </div>
               <div className="col">
-                <a href="contact.html" className="features-card style-5 box-3 h-100">
+                <a href="contact" className="features-card style-5 box-3 h-100">
                   <div className="icon">
                     <img src={easyShoppingIcon} alt="cyber-security" />
                   </div>
@@ -104,7 +175,7 @@ const Catalog = () => {
             </div>
           </div>
           <a
-            href="whatsapp-commerce.html"
+            href="whatsapp-commerce"
             className="btn bg-green text-white mt-2"
             target="_blank"
             rel="noopener noreferrer"

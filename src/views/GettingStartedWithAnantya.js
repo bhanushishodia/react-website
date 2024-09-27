@@ -2,18 +2,54 @@ import React from 'react';
 import './GettingStartedWithAnantya.css'; // Import CSS file if needed
 import ScrollToTopButton from "../components/common/ScrollToTopButton";
 import WhatsAppWidget from "../components/common/WhatsAppWidget";
+import { Helmet } from 'react-helmet';
 const GettingStartedWithAnantya = () => {
     return (
+      <>
+      <Helmet>
+      <title>Anantya.ai Knowledge Center</title>
+      <meta name="robots" content="index,follow" />
+      <meta name="description" content="Anantya.ai Knowledge Center" />
+      <meta property="og:title" content="Anantya.ai Knowledge Center" />
+      <meta property="og:type" content="article" />
+      <meta property="og:description" content="Anantya.ai Knowledge Center" />
+      <meta property="og:url" content="https://anantya.ai/knowledge-center" />
+      <meta property="og:site_name" content="anantya.ai" />
+      <meta property="og:image" content="" />
+      <link rel="canonical" href="https://anantya.ai/knowledge-center" />
+      <meta name="author" content="Anantya.ai" />
+
+      <script type="application/ld+json">{`
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "anantya.ai",
+          "alternateName": "Anantya.ai: WhatsApp Business API Providers",
+          "url": "https://anantya.ai/",
+          "logo": "https://anantya.ai/images/logo.png",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+971565480273",
+            "contactType": "sales",
+            "availableLanguage": ["en"]
+          },
+          "sameAs": [
+            "https://www.facebook.com/anantyaai",
+            "https://www.instagram.com/anantya.ai/",
+            "https://www.linkedin.com/company/anantya-ai/",
+            "https://www.pinterest.com/anantyaai/"
+          ]
+        }
+      `}</script>
+    </Helmet>
         <div className="px-0 ">
               <section className="support-section" style={{ background: '#f3fbff' }}>
              <div className="container py-5 text-center">
              <div className="row py-5 text-black">
-          <div className="col-md-6 col-sm-12  ">
-            <h1 className="font-weight-bold">Anantya Support</h1>
-          </div>
-          <div className="col-md-6 col-sm-12 text-right">
-           
-          </div>
+             <div className="col-lg-12 col-md-12 col-sm-12  ">
+              <h1 className="fw-bold">Anantya Support</h1>
+             </div>
+        
               </div>
               </div>
              </section>
@@ -22,9 +58,9 @@ const GettingStartedWithAnantya = () => {
               <div className="container py-5">
         
             <h2 className="wow fadeInUp" style={{ visibility: 'visible', animationName: 'fadeInUp' }}>
-              Getting started with <span className="fw-normal">Anantya</span>
+              Getting started with <span>Anantya</span>
             </h2>
-            <p className="mt-10 text-uppercase wow fadeInUp" style={{ visibility: 'visible', animationName: 'fadeInUp' }}>
+            <p className="mt-10  wow fadeInUp" style={{ visibility: 'visible', animationName: 'fadeInUp' }}>
               Helpful resources to easily set up your Anantya account
             </p>
          
@@ -85,7 +121,8 @@ const GettingStartedWithAnantya = () => {
            
             <ScrollToTopButton />
             <WhatsAppWidget />
-             </div>
+        </div>
+        </>
     );
 }
 

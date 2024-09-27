@@ -12,9 +12,6 @@ import bulkBroadcastingImg from '../../assets/images/bulk-broadcasting.webp';
 import automatedChatbotImg from '../../assets/images/automated-chatbot.webp';
 import campaignAnalyticsImg from '../../assets/images/campaign-analytics.webp';
 import productCatalogImg from '../../assets/images/Product-catalog.webp';
-
-
-
 const ChooseUsSection = () => {
     return (
         <section className="choose-us style-9 py-5">
@@ -60,21 +57,21 @@ const ChooseUsSection = () => {
                                             <img src={sharedTeamInboxImg} alt="Shared Team Inbox" />
                                         </div>
                                     </div>
-                                    <div className="col-lg-5 offset-lg-1">
+                                    <div className="col-lg-5 offset-lg-1 text-start">
                                         <div className="info mt-4 mt-lg-0">
                                             
                                             <h2> Supercharge Your Team's Productivity with Anantya.ai </h2>
                                             <p> Enable multiple team members to manage Live Chat Support using a single WhatsApp Business Number. 
                                                 Efficiently organize chats by tags, campaigns, and attributes to facilitate
                                                 Smart Agent Chat Routing. </p>
-                                            <a className="mt-30 internalpage_link" href="whatsapp-marketing.html">
-                                                Explore Live Chat <i className="fal fa-long-arrow-right ms-2 color-blue7"></i></a>
+                                            <a className="mt-30 internalpage_link" href="whatsapp-marketing">
+                                                Explore Live Chat <i className="fas fa-long-arrow-right ms-2 color-blue7"></i></a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div className="tab-pane fade" id="choose2" role="tabpane2">
+                        <div className="tab-pane fade" id="choose2" role="tabpanel">
                             <div className="feat-content">
                                 <div className="row align-items-center gx-0">
                                     <div className="col-lg-6">
@@ -82,20 +79,20 @@ const ChooseUsSection = () => {
                                             <img src={bulkBroadcastingImg} alt="Bulk Broadcasting" />
                                         </div>
                                     </div>
-                                    <div className="col-lg-5 offset-lg-1">
+                                    <div className="col-lg-5 offset-lg-1 text-start">
                                         <div className="info mt-4 mt-lg-0">
                                          
                                             <h2> Bulk Broadcast Messages to Unlimited Users in One Go </h2>
                                             <p> You can send bulk broadcast messages to users who have opted in, sharing awesome stuff like discount offers,
                                                 festival promotions, product launches, season-end sales, and so much more. </p>
-                                            <a className="mt-30 internalpage_link" href="whatsapp-broadcasting.html">
-                                                Explore Broadcasting <i className="fal fa-long-arrow-right ms-2 color-blue7"></i></a>
+                                            <a className="mt-30 internalpage_link" href="whatsapp-broadcasting">
+                                                Explore Broadcasting <i className="fas fa-long-arrow-right ms-2 color-blue7"></i></a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div className="tab-pane fade" id="choose3" role="tabpane3">
+                        <div className="tab-pane fade" id="choose3" role="tabpanel">
                             <div className="feat-content">
                                 <div className="row align-items-center gx-0">
                                     <div className="col-lg-6">
@@ -103,20 +100,20 @@ const ChooseUsSection = () => {
                                             <img src={automatedChatbotImg} alt="Automated Chatbot" />
                                         </div>
                                     </div>
-                                    <div className="col-lg-5 offset-lg-1">
+                                    <div className="col-lg-5 offset-lg-1 text-start">
                                         <div className="info mt-4 mt-lg-0">
                                            
                                             <h2> Build Chatbots for 24/7 Support & Engagement </h2>
                                             <p> From lead generation and customer onboarding to order updates and post-purchase assistance, chatbots on WhatsApp can handle it all.
                                                 Revolutionize the way you connect with customers with zero-code chatbots.</p>
-                                            <a className="mt-30 internalpage_link" href="automated-chatbot.html">
-                                                Explore Automated Chatbot <i className="fal fa-long-arrow-right ms-2 color-blue7"></i></a>
+                                            <a className="mt-30 internalpage_link" href="automated-chatbot">
+                                                Explore Automated Chatbot <i className="fas fa-long-arrow-right ms-2 color-blue7"></i></a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div className="tab-pane fade" id="choose4" role="tabpane4">
+                        <div className="tab-pane fade" id="choose4" role="tabpanel">
                             <div className="feat-content">
                                 <div className="row align-items-center gx-0">
                                     <div className="col-lg-6">
@@ -124,20 +121,20 @@ const ChooseUsSection = () => {
                                             <img src={campaignAnalyticsImg} alt="Campaign Analytics" />
                                         </div>
                                     </div>
-                                    <div className="col-lg-5 offset-lg-1">
+                                    <div className="col-lg-5 offset-lg-1 text-start">
                                         <div className="info mt-4 mt-lg-0">
                                            
                                             <h2> Advanced Algorithms That Dive Deep into Customer Behavior </h2>
                                             <p> Gone are the days of making blind decisions and relying on guesswork. With Anantya.ai, you gain valuable insights into your customers' preferences,
                                                 needs, and desires. By understanding their behavior, you can optimize your strategies.</p>
-                                            <a className="mt-30 internalpage_link" href="reports-and-analytics.html">
-                                                Explore Analytics <i className="fal fa-long-arrow-right ms-2 color-blue7"></i></a>
+                                            <a className="mt-30 internalpage_link" href="reports-and-analytics">
+                                                Explore Analytics <i class="fas fa-long-arrow-right ms-2 colorfa_1 my-auto mt-2"></i></a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div className="tab-pane fade" id="choose5" role="tabpane5">
+                        <div className="tab-pane fade" id="choose5" role="tabpanel">
                             <div className="feat-content">
                                 <div className="row align-items-center gx-0">
                                     <div className="col-lg-6">
@@ -145,14 +142,14 @@ const ChooseUsSection = () => {
                                             <img src={productCatalogImg} alt="Product Catalogs" />
                                         </div>
                                     </div>
-                                    <div className="col-lg-5 offset-lg-1">
+                                    <div className="col-lg-5 offset-lg-1 text-start">
                                         <div className="info mt-4 mt-lg-0">
                                            
                                             <h2> A Seamless Shopping Experience Through WhatsApp </h2>
                                             <p> Unlock the potential of WhatsApp for your business by allowing customers to browse, inquire, and purchase directly from the app.
                                                 This unique experience enhances customer engagement and satisfaction.</p>
-                                            <a className="mt-30 internalpage_link" href="product-catalog.html">
-                                                Explore Catalogs <i className="fal fa-long-arrow-right ms-2 color-blue7"></i></a>
+                                            <a className="mt-30 internalpage_link" href="product-catalog">
+                                                Explore Catalogs <i class="fas fa-long-arrow-right ms-2 colorfa_1 my-auto"></i></a>
                                         </div>
                                     </div>
                                 </div>

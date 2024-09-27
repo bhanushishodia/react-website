@@ -1,16 +1,41 @@
 // src/views/WhatsAppTemplateMessages.js
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import Breadcrumb from '../components/common/Breadcrumb';
 import ScrollToTopButton from "../components/common/ScrollToTopButton";
 import WhatsAppWidget from "../components/common/WhatsAppWidget";
-
 import welcomeBackground from '../assets/images/inner5_back.png';
 import welcomeImage from '../assets/images/integration.webp';
 
-import articleImage4 from '../assets/images/article-4.png';
 const WhatsAppTemplateMessages = () => {
   return (
     <div>
+        <Helmet>
+      {/* Title and Meta Tags */}
+      <title>How to Create Your Whatsapp Template Messages in Anantya.ai | Knowledge Center</title>
+      <meta name="robots" content="index,follow" />
+      <meta
+        name="description"
+        content="Learn all the important steps to make WhatsApp Template Messages and get them approved by WhatsApp in a single guide!"
+      />
+      
+      {/* Open Graph Meta Tags */}
+      <meta property="og:title" content="How to Create Your Whatsapp Template Messages in Anantya.ai | Knowledge Center" />
+      <meta property="og:type" content="article" />
+      <meta
+        property="og:description"
+        content="Learn all the important steps to make WhatsApp Template Messages and get them approved by WhatsApp in a single guide!"
+      />
+      <meta property="og:url" content="https://anantya.ai/how-to-create-whatsapp-templete-messages-in-anantya.ai" />
+      <meta property="og:site_name" content="anantya.ai" />
+      <meta property="og:image" content="https://anantya.ai/assets/img/submit-a-new-whatsApp-template-message.webp" />
+      
+      {/* Canonical Link */}
+      <link rel="canonical" href="https://anantya.ai/how-to-create-whatsapp-templete-messages-in-anantya.ai" />
+      
+      {/* Author */}
+      <meta name="author" content="Anantya.ai" />
+    </Helmet>
     <Breadcrumb
   links={[{ href: '#', text: 'Home' }, { href: '#', text: 'Welcome Message' }]}
   backgroundImage={welcomeBackground}
@@ -200,7 +225,9 @@ const WhatsAppTemplateMessages = () => {
       {/* ====== end careers-features ====== */}
     </main>
 {/* Add your content here */}
-</div>
+<ScrollToTopButton />
+<WhatsAppWidget />
+    </div>
   );
 };
 

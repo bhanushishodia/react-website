@@ -106,7 +106,7 @@ const OpenPositions = () => {
           className="job-description"
         ></div>
 
-        <h5 className="px-5 mx-4">
+        <h5 className="px-md-5 mx-md-4 px-4">
           Are you excited to work with our amazingly talented team ? Send your
           resume and portfolio link to
           <a href="mailto:HR-India@mobishastra.com">

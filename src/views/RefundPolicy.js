@@ -1,12 +1,33 @@
 import React from "react";
+import { Helmet } from 'react-helmet';
 import "./refund-policy.css"; // Optional: Add custom CSS file for styling
 import ScrollToTopButton from "../components/common/ScrollToTopButton";
 import WhatsAppWidget from "../components/common/WhatsAppWidget";
 
 const RefundPolicy = () => {
   return (
+    <>
+     <Helmet>
+      <title>Cancellation and Refund Policy</title>
+      <meta name="robots" content="noindex,nofollow" />
+      <meta 
+        name="description" 
+        content="Safeguarding Your Data is Our Priority. Learn How Anantya.ai Ensures Your Privacy. Discover Our Privacy Policy Today." 
+      />
+      <meta property="og:title" content="Cancellation and Refund Policy - Anantya.ai" />
+      <meta property="og:type" content="Article" />
+      <meta 
+        property="og:description" 
+        content="Safeguarding Your Data is Our Priority. Learn How Anantya.ai Ensures Your Privacy. Discover Our Privacy Policy Today." 
+      />
+      <meta property="og:url" content="https://anantya.ai/cancellation-and-refund-policy" />
+      <meta property="og:site_name" content="anantya.ai" />
+      <meta property="og:image" content="" />
+      <link rel="canonical" href="https://anantya.ai/cancellation-and-refund-policy" />
+      <meta name="author" content="Anantya.ai" />
+    </Helmet>
     <div className="refund-policy-page">
-      <div className="container">
+      <div className="container pt-md-0 pt-5">
         <main className="privacy-policy-content my-5 py-3 px-5 bg-white ">
           <header>
             <h1 className="display-4">Cancellation and Refund Policy</h1>
@@ -126,6 +147,7 @@ const RefundPolicy = () => {
       <ScrollToTopButton />
       <WhatsAppWidget />
     </div>
+    </>
   );
 };
 

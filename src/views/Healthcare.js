@@ -1,5 +1,6 @@
 // src/views/Healthcare.js
 import React, { useState } from "react";
+import { Helmet } from 'react-helmet';
 import ScrollToTopButton from "../components/common/ScrollToTopButton";
 import WhatsAppWidget from "../components/common/WhatsAppWidget";
 import LogoCarousel from "../components/common/LogoCarousel";
@@ -16,8 +17,20 @@ import whatsappScannerImg from "../assets/images/wa.link_3dzezc.png";
 import "./EcommerceRetail.css"; // Import your CSS file if needed
 import automateAppointmentImg from "../assets/images/automate-appointment-schedules.webp"; // Adjust the path if necessary
 import promoteTestPackagesImg from "../assets/images/promote-test-packages.webp"; // Adjust the path if necessary
+import pdfFile from '../assets/pdf/Healthcare-Usecase-Updated.pdf';
 
 const Healthcare = () => {
+const submitFormAndOpenPDF = (event) => {
+    // Prevent the default form submission behavior
+    event.preventDefault();
+
+    // Perform form submission (assuming you have a form with the id 'marketing')
+    document.getElementById("marketing").submit();
+
+    // Open PDF in a new tab	
+      	
+  window.open(pdfFile, "_blank");
+  };
   const homeFAQs = [
     {
       question:
@@ -55,8 +68,120 @@ const Healthcare = () => {
   };
   return (
     <div>
-      <div className="container">
-        <div className="content py-md-5 py-0">
+        <Helmet>
+            <title>Whatsapp Chatbot for Healthcare: Transform Communication with WhatsApp</title>
+            <meta name="keywords" content="whatsapp chatbot for healthcare,Whatsapp for Healthcare,Whatsapp Business API for healthcare,whatsapp business for healthcare,conversational ai in healthcare,conversational ai for healthcare,healthcare ai chatbot" />
+            <meta name="robots" content="index,follow" />
+            <meta name="description" content="Improve patient communication and healthcare services using Anantya AI's WhatsApp Chatbot Services. Secure, reliable, and efficient communication for the healthcare industry." />
+            <meta property="og:title" content="Whatsapp Chatbot for Healthcare: Transform Communication with WhatsApp" />
+            <meta property="og:type" content="article" />
+            <meta property="og:description" content="Improve patient communication and healthcare services using Anantya AI's WhatsApp Chatbot Services. Secure, reliable, and efficient communication for the healthcare industry." />
+            <meta property="og:url" content="https://anantya.ai/healthcare-industry" />
+            <meta property="og:site_name" content="anantya.ai" />
+            <meta property="og:image" content="https://anantya.ai/assets/img/health/keep-your-finger-on-your-customer%E2%80%99s.webp" />
+            <link rel="canonical" href="https://anantya.ai/healthcare-industry" />
+            <meta name="author" content="Anantya" />
+
+            <script type="application/ld+json">
+                {JSON.stringify({
+                    "@context": "https://schema.org",
+                    "@type": "Organization",
+                    "name": "Anantya.ai",
+                    "alternateName": "Conversational Engagement Platform for Businesses | Anantya.ai",
+                    "url": "https://anantya.ai/",
+                    "logo": "https://anantya.ai/assets/img/logo.webp",
+                    "contactPoint": {
+                        "@type": "ContactPoint",
+                        "telephone": "+971565480273",
+                        "contactType": "sales",
+                        "areaServed": ["AE", "SA", "BH"],
+                        "availableLanguage": "en"
+                    },
+                    "sameAs": [
+                        "https://www.facebook.com/anantyaai",
+                        "https://www.instagram.com/anantya.ai",
+                        "https://www.youtube.com/@Anantyaai",
+                        "https://www.linkedin.com/company/anantya-ai",
+                        "https://www.pinterest.com/anantyaai"
+                    ]
+                })}
+            </script>
+
+            <script type="application/ld+json">
+                {JSON.stringify({
+                    "@context": "https://schema.org",
+                    "@graph": [
+                        {
+                            "@type": "WebPage",
+                            "name": "Whatsapp Chatbot for Healthcare: Transform Communication with WhatsApp",
+                            "description": "Improve patient communication and healthcare services using Anantya AI's WhatsApp Chatbot Services. Secure, reliable, and efficient communication for the healthcare industry."
+                        },
+                        {
+                            "@type": "WebSite",
+                            "name": "Anantya",
+                            "alternateName": "anantya.ai",
+                            "url": "https://anantya.ai/"
+                        }
+                    ]
+                })}
+            </script>
+
+            <script type="application/ld+json">
+                {JSON.stringify({
+                    "@context": "https://schema.org",
+                    "@type": "BreadcrumbList",
+                    "itemListElement": [
+                        {
+                            "@type": "ListItem",
+                            "position": 1,
+                            "name": "Home",
+                            "item": "https://anantya.ai"
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 2,
+                            "name": "Healthcare",
+                            "item": "https://anantya.ai/healthcare-industry"
+                        }
+                    ]
+                })}
+            </script>
+
+            <script type="application/ld+json">
+                {JSON.stringify({
+                    "@context": "https://schema.org",
+                    "@type": "FAQPage",
+                    "mainEntity": [
+                        {
+                            "@type": "Question",
+                            "name": "Are There Any Limitations Or Restrictions For Using WhatsApp Business API In Healthcare?",
+                            "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "Yes, WhatsApp has certain guidelines and policies that businesses must adhere to while using WhatsApp Business API. These include restrictions on sending promotional content, complying with opt-in/opt-out regulations, and respecting user privacy."
+                            }
+                        },
+                        {
+                            "@type": "Question",
+                            "name": "Is WhatsApp Business API Secure For Handling Patient Data?",
+                            "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "Yes, WhatsApp Business API is designed with security and privacy in mind. It offers end-to-end encryption for messages, ensuring that patient data and communications remain secure."
+                            }
+                        },
+                        {
+                            "@type": "Question",
+                            "name": "How Can WhatsApp Business API Benefit The Healthcare Industry?",
+                            "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "WhatsApp Business API offers several benefits for the healthcare industry. It enables seamless communication between healthcare providers and patients, facilitates appointment scheduling, provides real-time updates and reminders, offers personalized support, and enhances overall patient engagement and satisfaction."
+                            }
+                        }
+                    ]
+                })}
+            </script>
+        </Helmet>
+      <div className="container py-5 mt-5">
+        <div className="content ">
           <div className="row align-items-center">
             <div className="col-lg-6 text-black mt-20 text-lg-start text-center">
               <div className="info text-black pe-md-5">
@@ -238,7 +363,71 @@ const Healthcare = () => {
               ></button>
             </div>
             <div className="modal-body">
-              {/* Your modal content for the second ebook */}
+           
+                {/* Your modal content for the first ebook */}
+                <form
+                  action="https://formspree.io/f/mdorezev"
+                  className="py-2 px-md-5 px-4"
+                  method="post"
+                  id="marketing"
+                  onSubmit={submitFormAndOpenPDF}
+                >
+                  <div className="row">
+                    <div className="col-lg-12 mb-3">
+                      <input
+                        type="text"
+                        name="name"
+                        className="form-control"
+                        placeholder="Name"
+                        required
+                      />
+                    </div>
+                    <div className="col-lg-12 mb-3">
+                      <input
+                        type="text"
+                        name="email"
+                        className="form-control"
+                        placeholder="Email Address *"
+                        required
+                      />
+                    </div>
+                    <div className="col-lg-12 mb-3">
+                      <input
+                        type="text"
+                        name="phone"
+                        className="form-control"
+                        placeholder="Phone Number (optional)"
+                      />
+                    </div>
+                    <div className="col-lg-12 mb-3">
+                      <input
+                        type="text"
+                        name="message"
+                        className="form-control"
+                        placeholder="Name of Organisation"
+                        required
+                      />
+                    </div>
+                    <div className="col-lg-12">
+                      <input
+                        type="url"
+                        name="url"
+                        className="form-control"
+                        placeholder="Website URL"
+                        required
+                      />
+                    </div>
+                    <div className="col-lg-12 text-center mt-3">
+                      <input
+                        type="submit"
+                        value="Send Your Request"
+                        className="btn w-50 bg-green text-white cursor-pointer"
+                      />
+                    </div>
+                  </div>
+                </form>
+          
+          
             </div>
           </div>
         </div>

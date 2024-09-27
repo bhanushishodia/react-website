@@ -28,6 +28,7 @@ h2 {
 .resource ul li:hover{
     background-color: #f3fbff;
     border-radius: 10px;
+    color: #5dc4eb;
 
 }
 
@@ -41,4 +42,10 @@ h2 {
     transition: max-height 5s ease-in-out;
     border: 1px solid #e6e6e6;
     font-weight: 500;
+}
+.card_anantya_started ul li a{
+    list-style: none;
+    color: rgb(0 0 0 / 87%)!important;
+    font-size: 14px;
+ 
 }

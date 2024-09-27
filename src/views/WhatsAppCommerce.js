@@ -1,5 +1,6 @@
 // src/views/WhatsAppCommercePage.js
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import ScrollToTopButton from '../components/common/ScrollToTopButton';
 import WhatsAppWidget from '../components/common/WhatsAppWidget';
 // Import images or other assets if needed
@@ -10,19 +11,132 @@ import DownloadEbookSection from "../components/common/DownloadEbookSection"; //
 import downloadEbookImage from '../assets/images/download-ebook.png'; // Adjust path as needed
 import whatsappImage from '../assets/images/cta/whatsapp-commerce.webp'; // Ensure the path is correct
 import shareCatalogsImage from '../assets/images/share-catalogs-as-part-of-campaigns.webp'; // Adjust the path as needed
-
+import pdfFile from '../assets/pdf/Usecase-WhatsApp-Commerce.pdf';
 import CountUp from 'react-countup';
 const WhatsAppCommercePage = () => {
+  
+
+const submitFormAndOpenPDF = (event) => {
+  // Prevent the default form submission behavior
+  event.preventDefault();
+
+  // Perform form submission (assuming you have a form with the id 'marketing')
+  document.getElementById("marketing").submit();
+
+  // Open PDF in a new tab
+    
+window.open(pdfFile, "_blank");
+};
+
   return (
+    <>
+     <Helmet>
+      {/* Title and Meta Tags */}
+      <title>WhatsApp Commerce | Anantya.ai</title>
+      <meta
+        name="keywords"
+        content="Whatsapp Commerce,Whatsapp Commerce Platform,Whatsapp Commerce API"
+      />
+      <meta name="robots" content="index,follow" />
+      <meta
+        name="description"
+        content="Use WhatsApp Commerce to directly sell your products and services, boost sales, improve conversion rates, and streamline customer service operations."
+      />
+
+      {/* Open Graph Meta Tags */}
+      <meta property="og:title" content="WhatsApp Commerce | Anantya.ai" />
+      <meta property="og:type" content="article" />
+      <meta
+        property="og:description"
+        content="Use WhatsApp Commerce to directly sell your products and services, boost sales, improve conversion rates, and streamline customer service operations."
+      />
+      <meta property="og:url" content="https://anantya.ai/whatsapp-commerce" />
+      <meta property="og:site_name" content="anantya.ai" />
+      <meta
+        property="og:image"
+        content="https://anantya.ai/assets/img/whatsapp-commerce/set-up-your-online-store-on-whatsapp.webp"
+      />
+
+      {/* Canonical Link */}
+      <link rel="canonical" href="https://anantya.ai/whatsapp-commerce" />
+
+      {/* Author */}
+      <meta name="author" content="Anantya" />
+
+      {/* JSON-LD Schema for Organization */}
+      <script type="application/ld+json">
+        {`
+          {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Anantya.ai",
+            "alternateName": "Conversational Engagement Platform for Businesses | Anantya.ai",
+            "url": "https://anantya.ai/",
+            "logo": "https://anantya.ai/assets/img/logo.webp",
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+971565480273",
+              "contactType": "sales",
+              "areaServed": ["AE", "SA", "BH"],
+              "availableLanguage": "en"
+            },
+            "sameAs": [
+              "https://www.facebook.com/anantyaai",
+              "https://www.instagram.com/anantya.ai",
+              "https://www.youtube.com/@Anantyaai",
+              "https://www.linkedin.com/company/anantya-ai",
+              "https://www.pinterest.com/anantyaai"
+            ]
+          }
+        `}
+      </script>
+
+      {/* JSON-LD Schema for WebPage */}
+      <script type="application/ld+json">
+        {`
+          {
+            "@context": "https://schema.org/",
+            "@type": "WebPage",
+            "@id": "#WebPage",
+            "url": "https://anantya.ai/whatsapp-commerce",
+            "name": "WhatsApp Commerce | Anantya.ai"
+          }
+        `}
+      </script>
+
+      {/* JSON-LD Schema for BreadcrumbList */}
+      <script type="application/ld+json">
+        {`
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://anantya.ai"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "WhatsApp Commerce | Anantya.ai",
+                "item": "https://anantya.ai/whatsapp-commerce"
+              }
+            ]
+          }
+        `}
+      </script>
+    </Helmet>
     <div className="whatsapp-commerce-page">
       <section>
-      <div className="container">
-      <div className="content py-md-5 py-0">
+      <div className="container mt-5 py-5">
+      <div className="content ">
         <div className="row align-items-center">
           <div className="col-lg-6 text-black mt-20 text-md-start text-center">
-            <div className="info text-black">
+            <div className="info text-black "> 
               <h1 className='heading'>
-                WhatsApp Commerce:<br /> Set up your online store
+                WhatsApp Commerce: Set up your online store
               </h1>
               <p className="mt-30 text-black pe-md-5">
                 Generate Leads, Qualify, Drive Discovery, Share Catalogs,
@@ -44,7 +158,7 @@ const WhatsAppCommercePage = () => {
               </div>
             </div>
           </div>
-          <div className="col-lg-6">
+          <div className="col-lg-6 mt-4">
             <div className="wow zoomIn" data-wow-delay="0.2s" style={{ visibility: 'visible', animationDelay: '0.2s', animationName: 'zoomIn' }}>
               <img
                 src={commerceImage}
@@ -171,6 +285,71 @@ const WhatsAppCommercePage = () => {
             </div>
             <div className="modal-body">
               {/* Your modal content for the second ebook */}
+                
+              
+                <form
+                  action="https://formspree.io/f/mdorezev"
+                  className="py-2 px-md-5 px-4"
+                  method="post"
+                  id="marketing"
+                  onSubmit={submitFormAndOpenPDF}
+                >
+                  <div className="row">
+                    <div className="col-lg-12 mb-3">
+                      <input
+                        type="text"
+                        name="name"
+                        className="form-control"
+                        placeholder="Name"
+                        required
+                      />
+                    </div>
+                    <div className="col-lg-12 mb-3">
+                      <input
+                        type="text"
+                        name="email"
+                        className="form-control"
+                        placeholder="Email Address *"
+                        required
+                      />
+                    </div>
+                    <div className="col-lg-12 mb-3">
+                      <input
+                        type="text"
+                        name="phone"
+                        className="form-control"
+                        placeholder="Phone Number (optional)"
+                      />
+                    </div>
+                    <div className="col-lg-12 mb-3">
+                      <input
+                        type="text"
+                        name="message"
+                        className="form-control"
+                        placeholder="Name of Organisation"
+                        required
+                      />
+                    </div>
+                    <div className="col-lg-12">
+                      <input
+                        type="url"
+                        name="url"
+                        className="form-control"
+                        placeholder="Website URL"
+                        required
+                      />
+                    </div>
+                    <div className="col-lg-12 text-center mt-3">
+                      <input
+                        type="submit"
+                        value="Send Your Request"
+                        className="btn w-50 bg-green text-white cursor-pointer"
+                      />
+                    </div>
+                  </div>
+                </form>
+         
+        
             </div>
           </div>
         </div>
@@ -213,6 +392,7 @@ const WhatsAppCommercePage = () => {
       <ScrollToTopButton />
       <WhatsAppWidget />
     </div>
+    </>
   );
 };
 

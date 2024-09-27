@@ -5,12 +5,53 @@ import WhatsAppWidget from "../components/common/WhatsAppWidget";
 import MapVideo from "../assets/videos/Map-video.mp4";
 import banerImage from "../assets/images/About-Us-Graphic.webp"; // Adjust the path as necessary
 import YashikaImage from "../assets/images/yashika-Maam.webp"; // Adjust the path as necessary
-
+import { Helmet } from 'react-helmet';
 const About = () => {
   return (
-    <div className="about-page">
+    <>
+    <Helmet>
+                <title>About Anantya | Verified Whatsapp Business API</title>
+                <meta name="robots" content="index,follow" />
+                <meta
+                    name="description"
+                    content="Learn about Anantya AI, a leading provider of intelligent software solutions. Discover how our cutting-edge technology helps businesses streamline operations, enhance productivity, and achieve success."
+                />
+                <meta property="og:title" content="About Anantya | Verified Whatsapp Business API" />
+                <meta property="og:type" content="article" />
+                <meta
+                    property="og:description"
+                    content="Learn about Anantya AI, a leading provider of intelligent software solutions. Discover how our cutting-edge technology helps businesses streamline operations, enhance productivity, and achieve success."
+                />
+                <meta property="og:url" content="https://anantya.ai/about" />
+                <meta property="og:site_name" content="anantya.ai" />
+                <meta property="og:image" content="https://anantya.ai/assets/img/team/About%20Us%20Graphic.webp" />
+                <link rel="canonical" href="https://anantya.ai/about" />
+                <meta name="author" content="Anantya" />
+
+                <script type="application/ld+json">
+                    {JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "BreadcrumbList",
+                        "itemListElement": [
+                            {
+                                "@type": "ListItem",
+                                "position": 1,
+                                "name": "Home",
+                                "item": "https://anantya.ai",
+                            },
+                            {
+                                "@type": "ListItem",
+                                "position": 2,
+                                "name": "About Us",
+                                "item": "https://anantya.ai/about",
+                            },
+                        ],
+                    })}
+                </script>
+     </Helmet>
+    <div className="about-page mt-md-2 pt-md-5 mt-5 pt-5">
       <h1>Anantya.ai</h1>
-      <p>Bridging the Gap Between Businesses and Customers</p>
+      <p className="px-3">Bridging the Gap Between Businesses and Customers</p>
       <p>⚡️Powered by Meta</p>
       <div className="container">
       <div
@@ -140,7 +181,7 @@ const About = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-7 my-auto text-md-start text-center">
+              <div className="col-lg-7 my-auto text-start ">
                 <div
                   className="info wow fadeInUp"
                   style={{ visibility: "visible", animationName: "fadeInUp" }}
@@ -350,6 +391,7 @@ const About = () => {
       <ScrollToTopButton />
       <WhatsAppWidget />
     </div>
+    </>
   );
 };
 

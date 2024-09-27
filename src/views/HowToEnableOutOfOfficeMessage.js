@@ -1,174 +1,184 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import InnerHeader from '../components/common/InnerHeader';
-import stepImg1 from '../assets/images/fill-out-the-form.webp'; // Adjust the path based on your folder structure
-import stepImg2 from '../assets/images/set-a-strong-password.webp';
-
+import goToBotSetupImage from '../assets/images/go-to-bot-setup.webp';
+import addAwayMessageImage from '../assets/images/add-a-away-message.webp';
+import setupYourMessageImage from '../assets/images/setup-your-message.webp';
+import submitYourAwayMessageImage from '../assets/images/submit-your-away-message.webp';
 import './knowledgecenter.css'; // Import the CSS file
 import ScrollToTopButton from "../components/common/ScrollToTopButton";
 import WhatsAppWidget from "../components/common/WhatsAppWidget";
 const OutOfOffice = () => {
   return (
+    <>
+      <Helmet>
+            <title>How to Enable WhatsApp Out-of-Office Message in Anantya.ai | Knowledge Center</title>
+            <meta name="robots" content="index,follow" />
+            <meta name="description" content="How to Enable WhatsApp Out-of-Office Message in Anantya.ai, Step-by-Step" />
+            <meta property="og:title" content="How to Enable WhatsApp Out-of-Office Message in Anantya.ai | Knowledge Center" />
+            <meta property="og:type" content="article" />
+            <meta property="og:description" content="How to Enable WhatsApp Out-of-Office Message in Anantya.ai, Step-by-Step" />
+            <meta property="og:url" content="https://anantya.ai/how-to-enable-whatsapp-out-of-office-message" />
+            <meta property="og:site_name" content="anantya.ai" />
+            <meta property="og:image" content="https://anantya.ai/assets/img/go-to-bot-setup.webp" />
+            <link rel="canonical" href="https://anantya.ai/how-to-enable-whatsapp-out-of-office-message" />
+            <meta name="author" content="Anantya.ai" />
+
+         
+        </Helmet>
     <div className="page-content">
     <div>
       <InnerHeader />
     </div>
     <main className="career-details-page style-5 pt-100">
     <section className="jop-details pb-100">
-      <div className="container">
+      <div className="container py-5">
         <div className="content">
           <div className="row">
           <div className="col-lg-8">
-          <div className="jop-info">
-            <div className="tags mb-40">
-              <a href="#">Auto assign chat</a>
-              <a href="#">Agent Sublogin</a>
-            </div>
-            <h3 className="main-title mb-10">
-              How to Launch Your First Campaign - Step-by-Step Guide
-            </h3>
-            <p className="pb-40 color-999">
-              By <a href="#" className="color-000">Deepika Yadav</a>
-            </p>
+      <div className="jop-info text-start">
+        <div className="tags mb-40">
+          <a href="/contact">Auto assign chat</a>
+          <a href="/contact">Agent Sublogin</a>
+        </div>
+        <h3 className="main-title mb-10">How to Enable WhatsApp Out-of-Office Message: Step-by-Step Guide</h3>
+        <p className="pb-40 color-999">
+    By <span className="color-000">Deepika Yadav</span>
+</p>
 
-            <div className="text d-flex mb-20">
-              <span className="icon color-blue5 me-2 flex-shrink-0">
-                <i className="fas fa-check-circle"></i>
-              </span>
-              <p>
-                Launching your very first campaign can be both exciting and a bit overwhelming.
-              </p>
-            </div>
-            <div className="text d-flex mb-20">
-              <span className="icon color-blue5 me-2 flex-shrink-0">
-                <i className="fas fa-check-circle"></i>
-              </span>
-              <p>
-                Whether you're trying to promote a product, raise awareness for a cause, or spread the word about an event, here is a step-by-step guide to launch your first campaign.
-              </p>
-            </div>
 
-            <h6 className="mt-40 mb-20">Step 1: Set Up Your WhatsApp Broadcast Campaign</h6>
-            <div className="text d-flex mb-20">
-              <span className="icon color-blue5 me-2 flex-shrink-0">
-                <i className="fas fa-check-circle"></i>
-              </span>
-              <p><strong className="color-000">Access the Campaigns Page:</strong> Log in to Anantya.ai Panel and navigate to the Campaigns Page.</p>
-            </div>
-            <div className="text d-flex mb-20">
-              <span className="icon color-blue5 me-2 flex-shrink-0">
-                <i className="fas fa-check-circle"></i>
-              </span>
-              <p><strong className="color-000">Create a New Campaign:</strong> Look for the "Add Campaign" button located at the top right corner of the page. Click on it to start a new campaign.</p>
-            </div>
-            <div className="text d-flex mb-20">
-              <span className="icon color-blue5 me-2 flex-shrink-0">
-                <i className="fas fa-check-circle"></i>
-              </span>
-              <p><strong className="color-000">Channel and Campaign Name:</strong> Choose a meaningful channel name that identifies the purpose of your campaign. Then, give your campaign a clear and concise name that reflects its content.</p>
-            </div>
-            <div className="text-center">
-              <img src="assets/img/broadcast-campaign.webp" className="img-fluid pb-3 mx-auto" alt="Broadcast Campaign" />
-            </div>
-            <div className="text d-flex mb-20">
-              <span className="icon color-blue5 me-2 flex-shrink-0">
-                <i className="fas fa-check-circle"></i>
-              </span>
-              <p><strong className="color-000">Select a Template:</strong> Choose a pre-approved template for your campaign.</p>
-            </div>
-            <div className="text d-flex mb-20">
-              <span className="icon color-blue5 me-2 flex-shrink-0">
-                <i className="fas fa-check-circle"></i>
-              </span>
-              <p>Pre-approved Template Messages are the different message templates that you got approved from WhatsApp according to different use cases. This includes Images, Text, Videos, PDFs, CTAs, and Quick Replies.</p>
-            </div>
-            <div className="text d-flex mb-20">
-              <span className="icon color-blue5 me-2 flex-shrink-0">
-                <i className="fas fa-check-circle"></i>
-              </span>
-              <p>These messages can be sent to both Active users (who are in the 24 hours window) and Inactive users.</p>
-            </div>
-            <div className="text d-flex mb-20">
-              <span className="icon color-blue5 me-2 flex-shrink-0">
-                <i className="fas fa-check-circle"></i>
-              </span>
-              <p><strong className="color-000">Import or Download Contacts:</strong> You have two options for adding contacts. You can import a list of contacts from a file, or you can use a sample format provided by the platform. This list should include the phone numbers of the recipients.</p>
-            </div>
-            <div className="text d-flex mb-20">
-              <span className="icon color-blue5 me-2 flex-shrink-0">
-                <i className="fas fa-check-circle"></i>
-              </span>
-              <p><strong className="color-000">Set Up Campaign:</strong> Follow the steps to configure your WhatsApp Broadcast campaign. This may include scheduling the send time, setting up any necessary personalization, and crafting the content of your message.</p>
-            </div>
+        <div className="text d-flex mb-20">
+          <span className="icon color-blue5 me-2 flex-shrink-0">
+            <i className="fas fa-check-circle"></i>
+          </span>
+          <p>This feature will allow you to automate a message from WhatsApp Chatbot to people who contact you outside working hours.</p>
+        </div>
 
-            <h6 className="mt-40 mb-20">Step 2: Validate and Review Contacts</h6>
-            <div className="text d-flex mb-20">
-              <span className="icon color-blue5 me-2 flex-shrink-0">
-                <i className="fas fa-check-circle"></i>
-              </span>
-              <p><strong className="color-000">Select Attributes:</strong> This step involves identifying attributes or fields in your contact list that you want to use for personalization. This could include names, locations, or any other relevant information.</p>
-            </div>
-            <div className="text d-flex mb-20">
-              <span className="icon color-blue5 me-2 flex-shrink-0">
-                <i className="fas fa-check-circle"></i>
-              </span>
-              <p><strong className="color-000">Validate Mapping:</strong> Ensure that the attributes you've selected match the corresponding fields in your contact list. This step helps avoid errors in personalization.</p>
-            </div>
-            <div className="text d-flex mb-20">
-              <span className="icon color-blue5 me-2 flex-shrink-0">
-                <i className="fas fa-check-circle"></i>
-              </span>
-              <p><strong className="color-000">Check Validity:</strong> The platform will display the number of valid and invalid contacts in your list. Review this information to ensure your message reaches the intended recipients.</p>
-            </div>
-            <div className="text-center">
-              <img src="assets/img/validate-and-review-contacts.webp" className="img-fluid pb-3 mx-auto" alt="Validate and Review Contacts" />
-            </div>
+        <div className="text d-flex mb-20">
+          <span className="icon color-blue5 me-2 flex-shrink-0">
+            <i className="fas fa-check-circle"></i>
+          </span>
+          <p>
+            So, Whenever a user messages you outside working hours, your WhatsApp Chat Bot will automate a message stating that the business will contact them later.
+          </p>
+        </div>
 
-            <h6 className="mt-40 mb-20">Step 3: Review and Submit</h6>
-            <div className="text d-flex mb-20">
-              <span className="icon color-blue5 me-2 flex-shrink-0">
-                <i className="fas fa-check-circle"></i>
-              </span>
-              <p>The platform might provide a mechanism to determine the likelihood of recipients engaging with your message. This helps you assess the potential effectiveness of your campaign.</p>
-            </div>
-            <div className="text d-flex mb-20">
-              <span className="icon color-blue5 me-2 flex-shrink-0">
-                <i className="fas fa-check-circle"></i>
-              </span>
-              <p><strong className="color-000">Submit Your Campaign:</strong> After reviewing all the previous steps and ensuring everything is set up correctly, click on the "Submit" button to finalize your campaign setup.</p>
-            </div>
-            <div className="text-center">
-              <img src="assets/img/review-and-submit.webp" className="img-fluid pb-3 mx-auto" alt="Review and Submit" />
-            </div>
+        <div className="text d-flex mb-20">
+          <span className="icon color-blue5 me-2 flex-shrink-0">
+            <i className="fas fa-check-circle"></i>
+          </span>
+          <p>Follow this comprehensive step-by-step guide to enable an Out-of-Office message for your users.</p>
+        </div>
 
-            <h6 className="mt-40 mb-20">Step 4: Monitor and Optimize</h6>
-            <div className="text d-flex mb-20">
-              <span className="icon color-blue5 me-2 flex-shrink-0">
-                <i className="fas fa-check-circle"></i>
-              </span>
-              <p><strong className="color-000">Monitor Campaign Performance:</strong> Once your campaign is live, monitor its performance through the campaign management platform. Track metrics like open rates, click-through rates, and responses.</p>
-            </div>
-            <div className="text d-flex mb-20">
-              <span className="icon color-blue5 me-2 flex-shrink-0">
-                <i className="fas fa-check-circle"></i>
-              </span>
-              <p><strong className="color-000">Optimize Based on Feedback:</strong> Based on the performance data and recipient feedback, make necessary adjustments to optimize future campaigns for better results.</p>
-            </div>
+        {/* Step 1 */}
+        <h6 className="mt-40 mb-20">Step 1: Go to Bot Setup</h6>
+        <div className="text d-flex mb-20">
+          <span className="icon color-blue5 me-2 flex-shrink-0">
+            <i className="fas fa-check-circle"></i>
+          </span>
+          <p>Navigate to the 'Bot Setup' section on your Anantya.ai Panel. Select 'Away Message'.</p>
+        </div>
 
-            <h6 className="mt-40 mb-20">Conclusion</h6>
-            <div className="text d-flex mb-20">
-              <span className="icon color-blue5 me-2 flex-shrink-0">
-                <i className="fas fa-check-circle"></i>
-              </span>
-              <p>Launching your first campaign can be an exciting journey. By following these steps, you’ll be well-equipped to create and manage successful campaigns that drive engagement and achieve your goals.</p>
-            </div>
-            <div className="text d-flex mb-20">
-              <span className="icon color-blue5 me-2 flex-shrink-0">
-                <i className="fas fa-check-circle"></i>
-              </span>
-              <p>If you have any further questions or need assistance, don’t hesitate to reach out to our support team for help.</p>
-            </div>
+        <div className="text d-flex mb-20">
+          <span className="icon color-blue5 me-2 flex-shrink-0">
+            <i className="fas fa-check-circle"></i>
+          </span>
+          <p>Within the 'Bot Setup' section, locate and click on the option labeled 'Away Message.' This is where you'll configure your welcome message settings.</p>
+        </div>
+
+        <div className="text-center">
+          <img src={goToBotSetupImage} className="img-fluid pb-3 mx-auto" alt="Go to Bot Setup" />
+        </div>
+
+        {/* Step 2 */}
+        <h6 className="mt-40 mb-20">Step 2: Add an Away Message</h6>
+        <div className="text d-flex mb-20">
+          <span className="icon color-blue5 me-2 flex-shrink-0">
+            <i className="fas fa-check-circle"></i>
+          </span>
+          <p>In this step, you'll create and add your away message. Click on the 'Add Away Message' button to proceed.</p>
+        </div>
+
+        <div className="text-center">
+          <img src={addAwayMessageImage} className="img-fluid pb-3 mx-auto" alt="Add Away Message" />
+        </div>
+
+        {/* Step 3 */}
+        <h6 className="mt-40 mb-20">Step 3: Setup Your Message</h6>
+        <div className="text d-flex mb-10">
+          <span className="icon color-blue5 me-2 flex-shrink-0">
+            <i className="fas fa-check-circle"></i>
+          </span>
+          <p>Begin by choosing the communication channel.</p>
+        </div>
+        <div className="text d-flex mb-10">
+          <span className="icon color-blue5 me-2 flex-shrink-0">
+            <i className="fas fa-check-circle"></i>
+          </span>
+          <p>Select the specific days you'll be using an away message.</p>
+        </div>
+        <div className="text d-flex mb-10">
+          <span className="icon color-blue5 me-2 flex-shrink-0">
+            <i className="fas fa-check-circle"></i>
+          </span>
+          <p>Set your opening and closing hours for each day.</p>
+        </div>
+        <div className="text d-flex mb-10">
+          <span className="icon color-blue5 me-2 flex-shrink-0">
+            <i className="fas fa-check-circle"></i>
+          </span>
+          <p>If you receive messages beyond your closing time, an automatic away message will be triggered.</p>
+        </div>
+        <div className="text d-flex mb-10">
+          <span className="icon color-blue5 me-2 flex-shrink-0">
+            <i className="fas fa-check-circle"></i>
+          </span>
+          <p>Create a friendly and relatable message for your audience.</p>
+        </div>
+        <div className="text d-flex mb-10">
+          <span className="icon color-blue5 me-2 flex-shrink-0">
+            <i className="fas fa-check-circle"></i>
+          </span>
+          <p>If using multimedia, ensure images and videos align with your brand.</p>
+        </div>
+
+        <div className="text-center">
+          <img src={setupYourMessageImage} className="img-fluid pb-3 mx-auto" alt="Setup Your Message" />
+        </div>
+
+        {/* Step 4 */}
+        <h6 className="mt-40 mb-20">Step 4: Submit Your Away Message</h6>
+        <div className="text d-flex mb-20">
+          <span className="icon color-blue5 me-2 flex-shrink-0">
+            <i className="fas fa-check-circle"></i>
+          </span>
+          <p>Once you're satisfied with your away message, click the 'Submit' button to save your settings and activate the away message feature.</p>
+        </div>
+
+        <div className="text-center">
+          <img src={submitYourAwayMessageImage} className="img-fluid pb-3 mx-auto" alt="Submit Your Away Message" />
+        </div>
+
+        <div className="text d-flex mb-20">
+          <span className="icon color-blue5 me-2 flex-shrink-0">
+            <i className="fas fa-check-circle"></i>
+          </span>
+          <p>Congratulations! You've successfully set up your away message.</p>
+        </div>
+        <div className="text d-flex mb-20">
+          <span className="icon color-blue5 me-2 flex-shrink-0">
+            <i className="fas fa-check-circle"></i>
+          </span>
+          <p>From this point, you have the flexibility to manage your away messages.</p>
+        </div>
+        <div className="text d-flex mb-20">
+          <span className="icon color-blue5 me-2 flex-shrink-0">
+            <i className="fas fa-check-circle"></i>
+          </span>
+          <p>Now you can always change your message to keep things fresh. You can also hide messages if you don't need them anymore.</p>
+        </div>
+      </div>
           </div>
-           </div>
       
          
             <div className="col-lg-4">
@@ -194,6 +204,7 @@ const OutOfOffice = () => {
     <ScrollToTopButton />
       <WhatsAppWidget />
   </div>
+  </>
   );
 };
 

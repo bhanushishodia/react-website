@@ -1,12 +1,8 @@
 import React from "react";
 import "./SalesHub.css"; // Import your CSS file for styles
 import PreSales from "../components/common/PreSales";
-
-
 import leftLogo from '../assets/images/sales-hub/logo.webp'; // Left logo import
 import rightLogo from '../assets/images/sales-hub/mobi-logo.png'; // Right logo import
-
-
 import presalesImage from '../assets/images/sales-hub/pre-sales.webp'; // Right logo import
 import postsalesImage from '../assets/images/sales-hub/post-confirmations.webp'; // Right logo import
 import resourceImage from '../assets/images/sales-hub/resources-process.webp'; // Right logo import
@@ -102,7 +98,7 @@ const SalesHub = () => {
         </div>
       </div>
     </div>
-  );
+  ); 
 };
 
 export default SalesHub;

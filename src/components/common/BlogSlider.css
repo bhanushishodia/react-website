@@ -49,7 +49,6 @@
 
 .bg-gray5 {
   background-color: #f3f7fe;
-
 }
 
 .img-cover img {
@@ -59,8 +58,8 @@
 
 .card-img,
 .card-img-top {
-  border-top-left-radius: calc(.25rem - 1px);
-  border-top-right-radius: calc(.25rem - 1px);
+  border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px);
 }
 
 .blog .card::after,
@@ -72,7 +71,7 @@
   top: 0;
   width: 1px;
   height: 100%;
-  background-color: rgba(153, 153, 153, .2666666667);
+  background-color: rgba(153, 153, 153, 0.2666666667);
 }
 
 .blog .card {
@@ -83,7 +82,6 @@
   font-weight: 500;
   font-size: 18px !important;
   color: #666;
-
 }
 
 .blog .card,
@@ -95,14 +93,13 @@
 }
 
 .blog .card {
-
   padding: 10px 25px;
   border-radius: 10px;
   height: 100%;
   color: #000;
   border: 2px solid #4fc3f563;
   position: relative;
-  -webkit-transition: .32s ease-in-out;
+  -webkit-transition: 0.32s ease-in-out;
   transition: all 0.5s ease;
   transition-duration: 1s;
 }

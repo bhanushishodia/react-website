@@ -6,8 +6,6 @@ import "./TopNavbar.css"; // Assuming you have a CSS file for styles
 import TopNavbar from "./TopNavbar"; // Adjust the path as necessary
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
-
-
 // Corrected paths for assets
 import logo from "../../assets/images/logo.webp";
 import whatsappMarketingIcon from "../../assets/images/icons/whatsapp-marketing.png";
@@ -293,7 +291,7 @@ function Header() {
                   Integration
                 </a>
                 <ul
-                  className="dropdown-menu dropdown-menu-columns"
+                  className="dropdown-menu  custom-dropdown dropdown-menu-columns"
                   aria-labelledby="integrationDropdown"
                 >
                   <div className="d-flex justify-content-between">
@@ -304,202 +302,124 @@ function Header() {
                       Integration
                     </span>
                   </div>
-                  <div className="row">
-                    <div className="col-6">
-                      <li>
-                        <a
-                          className="dropdown-item"
-                          href="/channels/whatsapp-business-api"
-                        >
-                          {" "}
-                          <img
-                            src={whatsappBusinessIcon}
-                            alt="WhatsApp Business API"
-                            className="icon"
-                          />
-                          WhatsApp Business API
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          className="dropdown-item"
-                          href="/channels/instagram"
-                        >
-                          {" "}
-                          <img
-                            src={instagramIcon}
-                            alt="Instagram"
-                            className="icon"
-                          />
-                          Instagram
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          className="dropdown-item"
-                          href="/channels/google-messages"
-                        >
-                          {" "}
-                          <img
-                            src={googleMessagesIcon}
-                            alt="Google Messages"
-                            className="icon"
-                          />
-                          Google Messages
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          className="dropdown-item"
-                          href="/channels/viber"
-                        >
-                          {" "}
-                          <img src={viberIcon} alt="Viber" className="icon" />
-                          Viber
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          className="dropdown-item"
-                          href="/channels/line"
-                        >
-                          {" "}
-                          <img src={lineIcon} alt="Line" className="icon" />
-                          Line
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          className="dropdown-item"
-                          href="/channels/messenger"
-                        >
-                          {" "}
-                          <img
-                            src={messengerIcon}
-                            alt="Messenger"
-                            className="icon"
-                          />
-                          Messenger
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          className="dropdown-item"
-                          href="/channels/wechat"
-                        >
-                          {" "}
-                          <img src={weChatIcon} alt="WeChat" className="icon" />
-                          WeChat
-                        </a>
-                      </li>
-                    </div>
+                  <div className="row px-0 ">
+  <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+    <div className="row">
+      <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+        <li>
+          <a className="dropdown-item" href="/whatsapp-business-api">
+            <img src={whatsappBusinessIcon} alt="WhatsApp Business API" className="icon" />
+            WhatsApp Business API
+          </a>
+        </li>
+        <li>
+          <a className="dropdown-item" href="/integrations/instagram">
+            <img src={instagramIcon} alt="Instagram" className="icon" />
+            Instagram
+          </a>
+        </li>
+        <li>
+          <a className="dropdown-item" href="/integrations/google-business-messages">
+            <img src={googleMessagesIcon} alt="Google Messages" className="icon" />
+            Google Messages
+          </a>
+        </li>
+        <li>
+          <a className="dropdown-item" href="/integrations/viber">
+            <img src={viberIcon} alt="Viber" className="icon" />
+            Viber
+          </a>
+        </li>
+      </div>
+      <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+        <li>
+          <a className="dropdown-item" href="/integrations/line">
+            <img src={lineIcon} alt="Line" className="icon" />
+            Line
+          </a>
+        </li>
+        <li>
+          <a className="dropdown-item" href="/integrations/facebook-messenger">
+            <img src={messengerIcon} alt="Messenger" className="icon" />
+            Messenger
+          </a>
+        </li>
+        <li>
+          <a className="dropdown-item" href="/integrations/wechat">
+            <img src={weChatIcon} alt="WeChat" className="icon" />
+            WeChat
+          </a>
+        </li>
+      </div>
+    </div>
+  </div>
 
-                    <div className="col-6">
-                      <li>
-                        <a
-                          className="dropdown-item"
-                          href="/integration/zapier"
-                        >
-                          {" "}
-                          <img src={zapierIcon} alt="Zapier" className="icon" />
-                          Zapier
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          className="dropdown-item"
-                          href="/integration/hubspot"
-                        >
-                          {" "}
-                          <img
-                            src={hubspotIcon}
-                            alt="Hubspot"
-                            className="icon"
-                          />
-                          Hubspot
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          className="dropdown-item"
-                          href="/integration/woocommerce"
-                        >
-                          {" "}
-                          <img
-                            src={woocommerceIcon}
-                            alt="WooCommerce"
-                            className="icon"
-                          />
-                          WooCommerce
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          className="dropdown-item"
-                          href="/integration/dialogflow"
-                        >
-                          {" "}
-                          <img
-                            src={dialogflowIcon}
-                            alt="Dialogflow"
-                            className="icon"
-                          />
-                          Dialogflow
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          className="dropdown-item"
-                          href="/integration/makecom"
-                        >
-                          {" "}
-                          <img src={makeIcon} alt="Make.com" className="icon" />
-                          make.com
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          className="dropdown-item"
-                          href="/integration/salesforce"
-                        >
-                          {" "}
-                          <img
-                            src={salesforceIcon}
-                            alt="Salesforce"
-                            className="icon"
-                          />
-                          Salesforce
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          className="dropdown-item"
-                          href="/integration/pipedrive"
-                        >
-                          <img
-                            src={pipedriveIcon}
-                            alt="Pipedrive"
-                            className="icon"
-                          />
-                          Pipedrive
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          className="dropdown-item"
-                          href="/integration/webhook"
-                        >
-                          {" "}
-                          <img
-                            src={webhookIcon}
-                            alt="Webhook"
-                            className="icon"
-                          />
-                          Webhook
-                        </a>
-                      </li>
+  <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+    <div className="row">
+      <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+        <li>
+          <a className="dropdown-item" href="/integrations/zapier">
+            <img src={zapierIcon} alt="Zapier" className="icon" />
+            Zapier
+          </a>
+        </li>
+        <li>
+          <a className="dropdown-item" href="/integrations/hubspot">
+            <img src={hubspotIcon} alt="Hubspot" className="icon" />
+            Hubspot
+          </a>
+        </li>
+        <li>
+          <a className="dropdown-item" href="/integrations/woocommerce">
+            <img src={woocommerceIcon} alt="WooCommerce" className="icon" />
+            WooCommerce
+          </a>
+        </li>
+        <li>
+          <a className="dropdown-item" href="/integrations/dialogflow">
+            <img src={dialogflowIcon} alt="Dialogflow" className="icon" />
+            Dialogflow
+          </a>
+        </li>
+      </div>
+      <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+        <li>
+          <a className="dropdown-item" href="/integrations/make">
+            <img src={makeIcon} alt="Make.com" className="icon" />
+            make.com
+          </a>
+        </li>
+        <li>
+          <a className="dropdown-item" href="/integrations/salesforce">
+            <img src={salesforceIcon} alt="Salesforce" className="icon" />
+            Salesforce
+          </a>
+        </li>
+        <li>
+          <a className="dropdown-item" href="/integrations/pipedrive">
+            <img src={pipedriveIcon} alt="Pipedrive" className="icon" />
+            Pipedrive
+          </a>
+        </li>
+        <li>
+          <a className="dropdown-item" href="/integrations/webhook">
+            <img src={webhookIcon} alt="Webhook" className="icon" />
+            Webhook
+          </a>
+        </li>
+      </div>
+    </div>
+  </div>
                     </div>
-                  </div>
+                    <div className="div-block-277 mb-0">
+  <a className="internalpage_link" href="/integration">
+    View More Integration
+    <i className="fas fa-long-arrow-right ms-2 color-blue7"></i>
+  </a>
+</div>
+
+
+
                 </ul>
               </li>
 
@@ -523,7 +443,7 @@ function Header() {
                     Resources
                   </span>
                   <div className="row">
-                    <div className="col-5">
+                    <div className="col-6">
                       <li>
                         <a className="dropdown-item" href="/blog">
                           <img src={blogIcon} alt="Blog" /> Blog
@@ -548,7 +468,7 @@ function Header() {
                         </a>
                       </li>
                     </div>
-                    <div className="col-5">
+                    <div className="col-6">
                       <li>
                         <a className="dropdown-item" href="/contact">
                           <img src={contactIcon} alt="Contact" /> Contact

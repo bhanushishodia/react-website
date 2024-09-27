@@ -17,8 +17,20 @@ import hoverImage1 from "../assets/images/attract-students-with-exciting.webp";
 import hoverImage2 from "../assets/images/provide-support-to-students.webp";
 import smoothImage from "../assets/images/smooth-admissions-process.webp";
 import keepImage from "../assets/images/keep-students-engaged.webp";
-
+import { Helmet } from 'react-helmet';
+import pdfFile from '../assets/pdf/Education-Industry-Usecase-Updated.pdf';
 const EdTech = () => {
+const submitFormAndOpenPDF = (event) => {
+    // Prevent the default form submission behavior
+    event.preventDefault();
+
+    // Perform form submission (assuming you have a form with the id 'marketing')
+    document.getElementById("marketing").submit();
+
+    // Open PDF in a new tab	
+      	
+  window.open(pdfFile, "_blank");
+  };
   const homeFAQs = [
     {
       question:
@@ -109,8 +121,127 @@ const EdTech = () => {
   };
   return (
     <div>
-      <div className="container">
-        <div className="content py-md-5 py-0">
+    <Helmet>
+      <title>Enhance Learning with WhatsApp Integration | Ed-tech Whatsapp Chatbot</title>
+      <meta name="robots" content="index,follow" />
+      <meta name="description" content="Whatsapp Chatbot for EdTech solutions with Anantya AI's WhatsApp integration. Streamline communication, engage learners, and create a more connected educational experience." />
+      <meta property="og:title" content="Enhance Learning with WhatsApp Integration | Ed-tech Whatsapp Chatbot" />
+      <meta property="og:type" content="article" />
+      <meta property="og:description" content="Whatsapp Chatbot for EdTech solutions with Anantya AI's WhatsApp integration. Streamline communication, engage learners, and create a more connected educational experience." />
+      <meta property="og:url" content="https://anantya.ai/edtech-industry" />
+      <meta property="og:site_name" content="anantya.ai" />
+      <meta property="og:image" content="https://anantya.ai/assets/img/edtech/transform-education-with-whatsapp.webp" />
+      <link rel="canonical" href="https://anantya.ai/edtech-industry" />
+      <meta name="author" content="Anantya" />
+
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Anantya.ai",
+          "alternateName": "Conversational Engagement Platform for Businesses | Anantya.ai",
+          "url": "https://anantya.ai/",
+          "logo": "https://anantya.ai/assets/img/logo.webp",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+971565480273",
+            "contactType": "sales",
+            "areaServed": ["AE", "SA", "BH"],
+            "availableLanguage": "en"
+          },
+          "sameAs": [
+            "https://www.facebook.com/anantyaai",
+            "https://www.instagram.com/anantya.ai",
+            "https://www.youtube.com/@Anantyaai",
+            "https://www.linkedin.com/company/anantya-ai",
+            "https://www.pinterest.com/anantyaai"
+          ]
+        })}
+      </script>
+
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebPage",
+              "name": "Enhance Learning with WhatsApp Integration | Ed-tech Whatsapp Chatbot",
+              "description": "Whatsapp Chatbot for EdTech solutions with Anantya AI's WhatsApp integration. Streamline communication, engage learners, and create a more connected educational experience."
+            },
+            {
+              "@type": "WebSite",
+              "name": "Anantya",
+              "alternateName": "anantya.ai",
+              "url": "https://anantya.ai/"
+            }
+          ]
+        })}
+      </script>
+
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://anantya.ai"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Ed-tech",
+              "item": "https://anantya.ai/edtech-industry"
+            }
+          ]
+        })}
+      </script>
+
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How Can Educational Institutes Benefit From Using WhatsApp?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "WhatsApp can be a powerful tool for educational institutes to enhance communication, engagement, and student support. It allows institutes to connect with students, share information, provide updates, deliver study materials, and facilitate interactive discussions."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What Are Some Ways Educational Institutes Can Leverage WhatsApp?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Educational institutes can leverage WhatsApp in several ways, such as: Sending important announcements and notifications to students and parents. Sharing course materials, study resources, and assignment details. Conducting interactive discussions and Q&A sessions with students. Offering personalized support and guidance to students through direct messaging. Facilitating quick and convenient communication between teachers, students, and parents."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can WhatsApp Be Used For Admissions And Enrollment Processes?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Absolutely! WhatsApp can simplify and expedite the admissions and enrollment process. Institutes can: Share admission forms, prospectuses, and course catalogs via WhatsApp. Answer prospective students' queries promptly and guide them through the application process. Conduct interviews, group discussions, and admission-related discussions through WhatsApp. Collect required documents and information from applicants using WhatsApp."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is WhatsApp A Secure Platform For Educational Institutes To Use?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "While WhatsApp provides end-to-end encryption for messages, it's essential to ensure that sensitive information is shared responsibly. Institutes should educate users on data privacy, avoid sharing confidential information over public groups, and comply with applicable data protection regulations."
+              }
+            }
+          ]
+        })}
+      </script>
+    </Helmet>
+      <div className="container py-5 mt-5">
+        <div className="content ">
           <div className="row align-items-center">
             <div className="col-lg-6 text-black mt-20 text-lg-start text-center">
               <div className="info text-black pe-md-5">
@@ -307,6 +438,70 @@ const EdTech = () => {
             </div>
             <div className="modal-body">
               {/* Your modal content for the second ebook */}
+
+                <form
+                  action="https://formspree.io/f/mdorezev"
+                  className="py-2 px-md-5 px-4"
+                  method="post"
+                  id="marketing"
+                  onSubmit={submitFormAndOpenPDF}
+                >
+                  <div className="row">
+                    <div className="col-lg-12 mb-3">
+                      <input
+                        type="text"
+                        name="name"
+                        className="form-control"
+                        placeholder="Name"
+                        required
+                      />
+                    </div>
+                    <div className="col-lg-12 mb-3">
+                      <input
+                        type="text"
+                        name="email"
+                        className="form-control"
+                        placeholder="Email Address *"
+                        required
+                      />
+                    </div>
+                    <div className="col-lg-12 mb-3">
+                      <input
+                        type="text"
+                        name="phone"
+                        className="form-control"
+                        placeholder="Phone Number (optional)"
+                      />
+                    </div>
+                    <div className="col-lg-12 mb-3">
+                      <input
+                        type="text"
+                        name="message"
+                        className="form-control"
+                        placeholder="Name of Organisation"
+                        required
+                      />
+                    </div>
+                    <div className="col-lg-12">
+                      <input
+                        type="url"
+                        name="url"
+                        className="form-control"
+                        placeholder="Website URL"
+                        required
+                      />
+                    </div>
+                    <div className="col-lg-12 text-center mt-3">
+                      <input
+                        type="submit"
+                        value="Send Your Request"
+                        className="btn w-50 bg-green text-white cursor-pointer"
+                      />
+                    </div>
+                  </div>
+                </form>
+          
+          
             </div>
           </div>
         </div>

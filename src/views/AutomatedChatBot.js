@@ -1,6 +1,6 @@
 // src/views/AutomatedChatBot.js
 import React from 'react';
-
+import { Helmet } from 'react-helmet';
 import ScrollToTopButton from "../components/common/ScrollToTopButton";
 import WhatsAppWidget from "../components/common/WhatsAppWidget";
 import createChatbotsImg from '../assets/images/create-whatsapp-chatbots-easily.webp';
@@ -14,8 +14,106 @@ import whatsappImage from '../assets/images/wa.link_3dzezc.png';
 const AutomatedChatBot = () => {
   return (
     <div>
-       <div className="container">
-      <div className="content py-md-5 py-0">
+    
+      <Helmet>
+        {/* Title and Meta Tags */}
+        <title>Whatsapp Chatbot for Business | No-Code Chatbot Builder</title>
+        <meta
+          name="keywords"
+          content="Whatsapp Chatbot for Business,Whatsapp Automation Chatbot,whatsapp auto reply chatbot,Whatsapp Chatbot,Chatbot in Whatsapp,Whatsapp Bot,whatsapp auto reply chatbot"
+        />
+        <meta name="robots" content="index,follow" />
+        <meta
+          name="description"
+          content="Build Whatsapp Chatbot within a few minutes from Anantya.ai's no-code chatbot builder. You can automate chat between customers & Organisations."
+        />
+        <meta
+          property="og:title"
+          content="Whatsapp Chatbot for Business | No-Code Chatbot Builder"
+        />
+        <meta property="og:type" content="article" />
+        <meta
+          property="og:description"
+          content="Build Whatsapp Chatbot within a few minutes from Anantya.ai's no-code chatbot builder. You can automate chat between customers & Organisations."
+        />
+        <meta
+          property="og:url"
+          content="https://anantya.ai/automated-chatbot"
+        />
+        <meta property="og:site_name" content="anantya.ai" />
+        <meta
+          property="og:image"
+          content="https://anantya.ai/assets/img/whatsapp-support/offer-support-at-scale-with.webp"
+        />
+        <link
+          rel="canonical"
+          href="https://anantya.ai/automated-chatbot"
+        />
+        <meta name="author" content="Anantya" />
+
+        {/* JSON-LD Schema for Organization */}
+        <script type="application/ld+json">{`
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Anantya.ai",
+          "alternateName": "Conversational Engagement Platform for Businesses | Anantya.ai",
+          "url": "https://anantya.ai/",
+          "logo": "https://anantya.ai/assets/img/logo.webp",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+971565480273",
+            "contactType": "sales",
+            "areaServed": ["AE","SA","BH"],
+            "availableLanguage": "en"
+          },
+          "sameAs": [
+            "https://www.facebook.com/anantyaai",
+            "https://www.instagram.com/anantya.ai",
+            "https://www.youtube.com/@Anantyaai",
+            "https://www.linkedin.com/company/anantya-ai",
+            "https://www.pinterest.com/anantyaai"
+          ]
+        }
+        `}</script>
+
+        {/* JSON-LD Schema for WebPage */}
+        <script type="application/ld+json">{`
+        {         
+          "@context": "https://schema.org/",         
+          "@type": "WebPage",         
+          "@id": "#WebPage",         
+          "url": "https://anantya.ai/automated-chatbot",          
+          "name": "Whatsapp Chatbot for Business | No-Code Chatbot Builder"
+        }
+        `}</script>
+
+        {/* JSON-LD Schema for BreadcrumbList */}
+        <script type="application/ld+json">{`
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://anantya.ai"
+          },  
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Whatsapp Chatbot for Business | No-Code Chatbot Builder",
+            "item": "https://anantya.ai/automated-chatbot"
+          }]
+        }
+        `}</script>
+      </Helmet>
+
+
+
+       <div className="container py-5 mt-5">
+      <div className="content">
         <div className="row align-items-center">
           <div className="col-lg-6 text-black mt-20">
             <div className="info text-black pe-md-4 text-lg-start text-center">
@@ -54,7 +152,7 @@ const AutomatedChatBot = () => {
           <div className="content">
             <div className="row row-cols-1 row-cols-md-3 g-4 pb-5 px-md-0 px-3">
               <div className="col">
-                <a href="contact.html" className="features-card style-5 box-1 h-100">
+                <a href="contact" className="features-card style-5 box-1 h-100">
                   <div className="icon">
                     <img src={logicalFlowsImg} alt="logical-flows" />
                   </div>
@@ -67,7 +165,7 @@ const AutomatedChatBot = () => {
                 </a>
               </div>
               <div className="col">
-                <a href="contact.html" className="features-card style-5 box-2 h-100">
+                <a href="contact" className="features-card style-5 box-2 h-100">
                   <div className="icon">
                     <img src={saveTimeImg} alt="save-time" />
                   </div>
@@ -80,7 +178,7 @@ const AutomatedChatBot = () => {
                 </a>
               </div>
               <div className="col">
-                <a href="contact.html" className="features-card style-5 box-3 h-100">
+                <a href="contact" className="features-card style-5 box-3 h-100">
                   <div className="icon">
                     <img src={automateIntegrationImg} alt="automate-integration" />
                   </div>
@@ -121,7 +219,7 @@ const AutomatedChatBot = () => {
         </div>
       </div>
       <div className="container py-5">
-      <a href="/campaign-request-demo.html" target="_blank" rel="noopener noreferrer">
+      <a href="/campaign-request-demo" target="_blank" rel="noopener noreferrer">
         <img
           src={callToActionImg}
           className="img-fluid"

@@ -1,18 +1,23 @@
 import React from "react";
+import { Helmet } from 'react-helmet';
 import "./whatsapppricing.css"; // Optional: Add custom CSS file for styling
 import ScrollToTopButton from "../components/common/ScrollToTopButton";
 import WhatsAppWidget from "../components/common/WhatsAppWidget";
 import CountUp from "react-countup";
-import bannerImage from "../assets/images/no-code-chat-bot.webp"; // Import image
-import alInsanLogo from "../assets/images/1.png"; // Import images
-import alMadinaLogo from "../assets/images/2.png";
-import amokilLogo from "../assets/images/3.png";
-import ivySmsLogo from "../assets/images/4.png";
-import kinMarcheLogo from "../assets/images/5.png";
-import northStarLogo from "../assets/images/6.png";
+
+import sebiLogo from '../assets/images/sebi.png';
+import harmanhouseLogo from '../assets/images/harmanhouse.png';
+import gulfUniversityLogo from '../assets/images/gulf-university.png';
+import orangeLogo from '../assets/images/orange.png';
+import suzukiLogo from '../assets/images/suzuki.png';
+import fullmarksLogo from '../assets/images/fullmarks.png';
 import checkIcon from "../assets/images/Check-icon.svg";
-import { FaWhatsapp } from "react-icons/fa";
-import { BsPersonAdd, BsPatchCheck } from "react-icons/bs";
+import instantSetup from '../assets/images/icons/instant-whatsapp-setup.png';
+import noHiddenCharges from '../assets/images/icons/no-extra-hidden-charges.png';
+import customerSupport from '../assets/images/icons/24-7-customer-support.png';
+import whatsappMarketing from '../assets/images/whatsapp-marketing-home-page.webp';
+import chatbotImage from '../assets/images/create-whatsapp-chatbots-easily.webp';
+import liveAgentImage from '../assets/images/supercharge-your-teams-productivity.webp';
 const WhatsAppPricing = () => {
   const showContent = (contentId) => {
     document.getElementById("monthly-content").style.display =
@@ -21,25 +26,116 @@ const WhatsAppPricing = () => {
       contentId === "yearly-content" ? "block" : "none";
   };
   return (
-    <div className="whatsapp-pricing-page">
+    <>
+     <Helmet>
+      {/* Title and Meta Tags */}
+      <title>WhatsApp API Pricing in India | Affordable Business Solutions</title>
+      <meta name="robots" content="index,follow" />
+      <meta
+        name="description"
+        content="Affordable WhatsApp pricing plans in India by Anantya.aI. Get the best rates for WhatsApp Business API, chatbots, and more to enhance customer communication."
+      />
+      <meta
+        name="keywords"
+        content="whatsapp api pricing, whatsapp business api pricing, whatsapp business pricing, whatsapp business api cost, pricing for whatsapp business api, whatsapp for business pricing, whatsapp api pricing india, whatsapp api cost, whatsapp business cost, whatsapp business api price, whatsapp api charges, whatsapp business api pricing india, pricing for whatsapp business api, whatsapp pricing api"
+      />
+
+      {/* Open Graph Meta Tags */}
+      <meta property="og:type" content="article" />
+      <meta property="og:locale" content="en_IN" />
+      <meta property="og:title" content="WhatsApp API Pricing in India | Affordable Business Solutions" />
+      <meta
+        property="og:description"
+        content="Affordable WhatsApp pricing plans in India by Anantya.aI. Get the best rates for WhatsApp Business API, chatbots, and more to enhance customer communication."
+      />
+      <meta property="og:url" content="https://anantya.ai/whatsapp-pricing" />
+      <meta property="og:site_name" content="anantya.ai" />
+      <meta property="og:image" content="https://anantya.ai/assets/img/no-code-chat-bot.webp" />
+
+      {/* Canonical Link */}
+      <link rel="canonical" href="https://anantya.ai/whatsapp-pricing" />
+
+      {/* Author */}
+      <meta name="author" content="Anantya" />
+
+      {/* JSON-LD Schema for Organization */}
+      <script type="application/ld+json">
+        {`
+          {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "anantya.ai",
+            "alternateName": "Conversational Engagement Platform for Businesses | Anantya.ai",
+            "url": "https://anantya.ai",
+            "logo": "https://anantya.ai/assets/img/logo.webp",
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+971565480273",
+              "contactType": "sales",
+              "areaServed": ["IN"],
+              "availableLanguage": ["en"]
+            },
+            "sameAs": [
+              "https://www.facebook.com/anantyaai",
+              "https://www.instagram.com/anantya.ai",
+              "https://www.youtube.com/@Anantyaai",
+              "https://www.linkedin.com/company/anantya-ai",
+              "https://www.pinterest.com/anantyaai"
+            ]
+          }
+        `}
+      </script>
+
+      {/* JSON-LD Schema for BreadcrumbList */}
+      <script type="application/ld+json">
+        {`
+          {
+            "@context": "https://schema.org/", 
+            "@type": "BreadcrumbList", 
+            "itemListElement": [{
+              "@type": "ListItem", 
+              "position": 1, 
+              "name": "Home",
+              "item": "https://anantya.ai/"
+            }, {
+              "@type": "ListItem", 
+              "position": 2, 
+              "name": "WhatsApp API Pricing in India | Affordable Business Solutions",
+              "item": "https://anantya.ai/whatsapp-pricing"  
+            }]
+          }
+        `}
+      </script>
+    </Helmet>
+
+
+    <div className="whatsapp-pricing-page py-md-2 py-4">
       <section>
         <div className="container">
           <div className="row my-0 py-5 mx-md-0 mx-1">
             <div className="col-md-7 col-sm-12 my-auto text-lg-start text-center">
               
 
-              <h1 className="pt-4 pb-20">
-              Grow Your Leads and Sales on WhatsApp with the Right WhatsApp Business API</h1>
+              <h2 className="pb-4">
+              Grow Your Leads and Sales on WhatsApp with the Right <span>WhatsApp Business API</span></h2>
 
               <p className="partner_subheading pb-20">
               Handle all your Sales, Support, and Marketing conversations on WhatsApp with Anantya.
-               Perfect for businesses across India!
+               <b> Perfect for businesses across India!</b>
               </p>
 
-              <p> &nbsp; Design Custom Chatbots & Catalogs</p>
-              <p> &nbsp; Run Bulk Campaigns & Click Ads </p>
-              <p> &nbsp; Track Results with Advanced Analytics </p>
-              <p> &nbsp; Automate Support & SMS Fallback </p>
+              <p><span><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10">
+                        <path d="M9.1.3L4 5.4l-2-2c-.3-.3-.7-.4-1-.3S0 3.5 0 4c0 .4 0 .8.3 1l2.8 2.8c.2.2.5.3.8.3s.6-.1.8-.3l6-5.9c.3-.2.4-.6.3-1a1 1 0 0 0-.8-.8c-.4 0-.8 0-1 .3z" fill="#54cdeb"></path>
+                    </svg> &nbsp;Design Custom Chatbots &amp; Catalogs</span> &nbsp; </p>
+                    <p><span><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10">
+                        <path d="M9.1.3L4 5.4l-2-2c-.3-.3-.7-.4-1-.3S0 3.5 0 4c0 .4 0 .8.3 1l2.8 2.8c.2.2.5.3.8.3s.6-.1.8-.3l6-5.9c.3-.2.4-.6.3-1a1 1 0 0 0-.8-.8c-.4 0-.8 0-1 .3z" fill="#54cdeb"></path>
+                    </svg> &nbsp;Run Bulk Campaigns &amp; Click Ads</span></p>
+                    <p><span><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10">
+                        <path d="M9.1.3L4 5.4l-2-2c-.3-.3-.7-.4-1-.3S0 3.5 0 4c0 .4 0 .8.3 1l2.8 2.8c.2.2.5.3.8.3s.6-.1.8-.3l6-5.9c.3-.2.4-.6.3-1a1 1 0 0 0-.8-.8c-.4 0-.8 0-1 .3z" fill="#54cdeb"></path>
+                    </svg> &nbsp;Track Results with Advanced Analytics</span></p>
+                    <p><span><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10">
+                        <path d="M9.1.3L4 5.4l-2-2c-.3-.3-.7-.4-1-.3S0 3.5 0 4c0 .4 0 .8.3 1l2.8 2.8c.2.2.5.3.8.3s.6-.1.8-.3l6-5.9c.3-.2.4-.6.3-1a1 1 0 0 0-.8-.8c-.4 0-.8 0-1 .3z" fill="#54cdeb"></path>
+                    </svg> &nbsp; Automate Support &amp; SMS Fallback</span></p>
             </div>
 
             <div className="col-md-5 col-sm-12 pt-md-0 pt-5" id="myForm">
@@ -56,7 +152,7 @@ const WhatsAppPricing = () => {
                 }}
               >
                 <h3 className="text-center">Book a Demo Call</h3>
-                <form action="https://formspree.io/f/mdorezev" method="POST">
+                <form action="https://formspree.io/f/mdorezev" method="POST" id="myForm">
                   <label htmlFor="name"></label>
                   <input
                     type="text"
@@ -115,130 +211,97 @@ const WhatsAppPricing = () => {
           </div>
         </div>
       </section>
-
-      <section className="banner_section">
-        <div className="container py-5">
-          <div className="row">
-            <div className="col-lg-6 col-md-6">
-              <img
-                src={bannerImage}
-                className="img-fluid"
-                alt="No-code Chatbot"
-              />
-            </div>
-            <div className="col-lg-6 col-md-6 col-sm-12 my-auto ps-md-5 ps-4 text-lg-start text-center">
-              <div className="banner_text">
-                <span>Bring your Brand to the Top Level</span>
-                <h2 className="py-3">
-                  Drive 3X Revenue with <br />
-                  <span> WhatsApp Business API</span>
-                </h2>
-                <p>
-                  Enhance your communication game & boost sales with the
-                  WhatsApp Business API platform that automates marketing,
-                  sales, support, and service.
-                </p>
-                <a
-                  href="https://wa.link/zvhije"
-                  className="btn me-2 bg-green text-white btn-color mt-20"
-                >
-                  <i className="fab fa-whatsapp me-2 pe-2 border-end"></i>
-                  Create your No-code Chatbot
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      
+     
 
       <section>
         <div className="statics my-5" style={{ backgroundColor: "#e1fafe52" }}>
-          <div className="container py-5">
-            <div className="all-statics">
-              <div className="row no-gutters my-auto">
+          <div className="container pb-5">
+            <div className="all-statics mt-3">
+              <div className="row no-gutters my-auto py-3 px-3 ">
                 <div className="col-md-6 col-sm-12 align-items-center my-auto">
-                  <h2>Enabling Purposeful Engagements across 1000+ brands</h2>
+                  <h2>Trusted by 100+ brands across <span>India</span></h2>
                   <div className="d-flex flex-wrap align-items-center mt-4">
                     <div className="logo-container mx-2">
                       <img
-                        src={alInsanLogo}
+                        src={sebiLogo}
                         className="anantya_logo"
-                        alt="Al Insan"
+                        alt="sebi-logo"
                       />
                     </div>
                     <div className="logo-container mx-2">
                       <img
-                        src={alMadinaLogo}
+                        src={harmanhouseLogo}
                         className="anantya_logo"
-                        alt="Al Madina"
+                        alt="harmanhouse-logo"
                       />
                     </div>
                     <div className="logo-container mx-2">
                       <img
-                        src={amokilLogo}
+                        src={gulfUniversityLogo}
                         className="anantya_logo"
-                        alt="Amokil"
+                        alt="glfuniversity-logo"
                       />
                     </div>
                     <div className="logo-container mx-2">
                       <img
-                        src={ivySmsLogo}
+                        src={orangeLogo}
                         className="anantya_logo"
-                        alt="Ivy SMS"
+                        alt="ornage-logo"
                       />
                     </div>
                     <div className="logo-container mx-2">
                       <img
-                        src={kinMarcheLogo}
+                        src={suzukiLogo}
                         className="anantya_logo"
-                        alt="Kin Marche"
+                        alt="suzuki-logo"
                       />
                     </div>
                     <div className="logo-container mx-2">
                       <img
-                        src={northStarLogo}
+                        src={fullmarksLogo}
                         className="anantya_logo"
-                        alt="North Star"
+                        alt="fullmarks-logo"
                       />
                     </div>
                   </div>
                 </div>
-                <div className="col-md-6 col-sm-12 my-auto">
+                <div className="col-md-6 col-sm-12 my-auto mt-md-0 mt-4">
                   <section className="numbers style-6 mt-70">
                     <div className="content pb-100 brd-gray">
                       <div className="row">
                         <div className="col-lg-6">
-                          <div className="number-card style-6">
+                          <div className=" card_statices  style-6">
                             <h2 className="me-4 color-blue5">
                               <CountUp
                                 start={0}
-                                end={41}
-                                duration={2.75}
-                                suffix="%"
-                              />
-                            </h2>
-                            <div className="text">
-                              Decreased Customer Acquisition Cost
-                            </div>
-                          </div>
-                        </div>
-                        <div className="col-lg-6">
-                          <div className="number-card style-6">
-                            <h2 className="me-4 color-blue5">
-                              <CountUp
-                                start={0}
-                                end={90}
+                                end={5}
                                 duration={2.75}
                                 suffix="X"
                               />
                             </h2>
                             <div className="text">
-                              Increase in Customer Retention
+                            Growth in Lead Generation
                             </div>
                           </div>
                         </div>
                         <div className="col-lg-6">
-                          <div className="number-card style-6 border-0">
+                          <div className="card_statices style-6">
+                            <h2 className="me-4 color-blue5">
+                              <CountUp
+                                start={0}
+                                end={90}
+                                duration={2.75}
+                                suffix="%"
+                              />
+                            </h2>
+                            <div className="text">
+                            Boost in Engagement
+                            </div>
+                          </div>
+                        </div>
+                        <div className="col-lg-6 mt-2">
+                          <div className="card_statices style-6 ">
                             <h2 className="me-4 color-blue5">
                               <CountUp
                                 start={0}
@@ -248,22 +311,22 @@ const WhatsAppPricing = () => {
                               />
                             </h2>
                             <div className="text">
-                              Decreased Resolution Time
+                            Faster Resolution Time
                             </div>
                           </div>
                         </div>
-                        <div className="col-lg-6">
-                          <div className="number-card style-6 border-0">
+                        <div className="col-lg-6 mt-2">
+                          <div className="card_statices style-6 ">
                             <h2 className="me-4 color-blue5">
                               <CountUp
                                 start={0}
-                                end={62}
+                                end={60}
                                 duration={2.75}
                                 suffix="%"
                               />
                             </h2>
                             <div className="text">
-                              Increase Cross-Sell & Upsell
+                            Boost in Cart Recovery
                             </div>
                           </div>
                         </div>
@@ -276,6 +339,150 @@ const WhatsAppPricing = () => {
           </div>
         </div>
       </section>
+
+      <section className="banner_section">
+      <div className="container wp-pricing-img pb-5">
+        <h2 className="text-center pb-4">
+          Complete WhatsApp Platform: <br /> <span>Everything You Need in One Place</span>
+        </h2>
+
+        <div className="row px-md-4">
+          <div className="col-lg-6 col-md-6 col-sm-12  pe-md-4 text-md-start text-center">
+            <div className="banner_text">
+              <h2 className="py-3">
+                WhatsApp <span>Marketing</span>
+              </h2>
+              <p className="pb-2">
+                Connect with your target audience instantly through WhatsApp broadcasting. Share offers, product tips, and reminders to engage customers at scale. Anantya.ai helps you reach a wide and diverse audience.
+              </p>
+              <p>
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10">
+                    <path d="M9.1.3L4 5.4l-2-2c-.3-.3-.7-.4-1-.3S0 3.5 0 4c0 .4 0 .8.3 1l2.8 2.8c.2.2.5.3.8.3s.6-.1.8-.3l6-5.9c.3-.2.4-.6.3-1a1 1 0 0 0-.8-.8c-.4 0-.8 0-1 .3z" fill="#54cdeb"></path>
+                  </svg>
+                  &nbsp;Custom Templates with Buttons
+                </span>
+              </p>
+              <p>
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10">
+                    <path d="M9.1.3L4 5.4l-2-2c-.3-.3-.7-.4-1-.3S0 3.5 0 4c0 .4 0 .8.3 1l2.8 2.8c.2.2.5.3.8.3s.6-.1.8-.3l6-5.9c.3-.2.4-.6.3-1a1 1 0 0 0-.8-.8c-.4 0-.8 0-1 .3z" fill="#54cdeb"></path>
+                  </svg>
+                  &nbsp;Targeted Audience Segmentation
+                </span>
+              </p>
+              <p>
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10">
+                    <path d="M9.1.3L4 5.4l-2-2c-.3-.3-.7-.4-1-.3S0 3.5 0 4c0 .4 0 .8.3 1l2.8 2.8c.2.2.5.3.8.3s.6-.1.8-.3l6-5.9c.3-.2.4-.6.3-1a1 1 0 0 0-.8-.8c-.4 0-.8 0-.1.3z" fill="#54cdeb"></path>
+                  </svg>
+                  &nbsp;Powerful Analytics
+                </span>
+              </p>
+            </div>
+          </div>
+          <div className="col-lg-6 col-md-6">
+            <img src={whatsappMarketing} className="img-fluid" alt="Start your WhatsApp Marketing Journey With Anantya.ai" />
+          </div>
+        </div>
+
+        <div className="row py-5 px-md-4">
+          <div className="col-lg-6 col-md-6 my-auto">
+            <img src={chatbotImage} className="img-fluid" alt="create-whatsapp-chatbots-easily" />
+          </div>
+          <div className="col-lg-6 col-md-6 col-sm-12  text-md-start text-center ps-md-5">
+            <div className="banner_text">
+              <h2 className="py-3">
+                WhatsApp Chatbots, <span>Automation, and Catalogs</span>
+              </h2>
+              <p className="pb-2">
+                Engage customers instantly with chatbots, automate key tasks, and showcase your products with the WhatsApp Catalog. Anantya offers an intuitive drag-and-drop chatbot builder to qualify leads, solve queries, book appointments, and more. Streamline your customer journey and drive growth.
+              </p>
+              <p>
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10">
+                    <path d="M9.1.3L4 5.4l-2-2c-.3-.3-.7-.4-1-.3S0 3.5 0 4c0 .4 0 .8.3 1l2.8 2.8c.2.2.5.3.8.3s.6-.1.8-.3l6-5.9c.3-.2.4-.6.3-1a1 1 0 0 0-.8-.8c-.4 0-.8 0-1 .3z" fill="#54cdeb"></path>
+                  </svg>
+                  &nbsp;Drag-and-Drop Chatbot Builder
+                </span>
+              </p>
+              <p>
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10">
+                    <path d="M9.1.3L4 5.4l-2-2c-.3-.3-.7-.4-1-.3S0 3.5 0 4c0 .4 0 .8.3 1l2.8 2.8c.2.2.5.3.8.3s.6-.1.8-.3l6-5.9c.3-.2.4-.6.3-1a1 1 0 0 0-.8-.8c-.4 0-.8 0-.1.3z" fill="#54cdeb"></path>
+                  </svg>
+                  &nbsp;Trigger-Based Workflows
+                </span>
+              </p>
+              <p>
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10">
+                    <path d="M9.1.3L4 5.4l-2-2c-.3-.3-.7-.4-1-.3S0 3.5 0 4c0 .4 0 .8.3 1l2.8 2.8c.2.2.5.3.8.3s.6-.1.8-.3l6-5.9c.3-.2.4-.6.3-1a1 1 0 0 0-.8-.8c-.4 0-.8 0-.1.3z" fill="#54cdeb"></path>
+                  </svg>
+                  &nbsp;Developer APIs for Automation
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="row px-md-4">
+          <div className="col-lg-6 col-md-6 col-sm-12 pe-md-5  text-md-start text-center">
+            <div className="banner_text">
+              <h2 className="py-3">
+                Streamlined Multi-Agent <span>Customer Support</span>
+              </h2>
+              <p className="pb-2">
+                Enhance your customer service with Anantya. Handle multiple inquiries simultaneously for faster and better support.
+              </p>
+              <p>
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10">
+                    <path d="M9.1.3L4 5.4l-2-2c-.3-.3-.7-.4-1-.3S0 3.5 0 4c0 .4 0 .8.3 1l2.8 2.8c.2.2.5.3.8.3s.6-.1.8-.3l6-5.9c.3-.2.4-.6.3-1a1 1 0 0 0-.8-.8c-.4 0-.8 0-.1.3z" fill="#54cdeb"></path>
+                  </svg>
+                  &nbsp;Support Large Customer Bases
+                </span>
+              </p>
+              <p>
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10">
+                    <path d="M9.1.3L4 5.4l-2-2c-.3-.3-.7-.4-1-.3S0 3.5 0 4c0 .4 0 .8.3 1l2.8 2.8c.2.2.5.3.8.3s.6-.1.8-.3l6-5.9c.3-.2.4-.6.3-1a1 1 0 0 0-.8-.8c-.4 0-.8 0-1 .3z" fill="#54cdeb"></path>
+                  </svg>
+                  &nbsp;Team Management & Productivity Tools
+                </span>
+              </p>
+              <p>
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10">
+                    <path d="M9.1.3L4 5.4l-2-2c-.3-.3-.7-.4-1-.3S0 3.5 0 4c0 .4 0 .8.3 1l2.8 2.8c.2.2.5.3.8.3s.6-.1.8-.3l6-5.9c.3-.2.4-.6.3-1a1 1 0 0 0-.8-.8c-.4 0-.8 0-.1.3z" fill="#54cdeb"></path>
+                  </svg>
+                  &nbsp;Multi-Agent Dashboard
+                </span>
+              </p>
+            </div>
+          </div>
+          <div className="col-lg-6 col-md-6">
+            <img src={liveAgentImage} className="img-fluid" alt="Live Agent Productivity" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container text-center mb-5">
+  <div class="col-md-12 mb-5">
+    <div class="get_demo">
+      <h3>Start your free trial and get expert WhatsApp support now!</h3>
+      <a
+          href="#myForm"
+          type="button"
+          className="btn me-2 btn btn-primary text-white btn-color mt-2"
+        >
+          Start Free Trial
+        </a>
+    </div>
+  </div>
+    </div>
+
       <section style={{ backgroundColor: "#e1fafe52" }}>
         <div class="container py-3 text-center">
           <header class="pricing">
@@ -915,87 +1122,78 @@ const WhatsAppPricing = () => {
           </div>
         </div>
       </section>
-      <section>
-        <div className="container my-5">
-          <div className="sales">
-            <div className="row px-md-5">
-              <div className="col-md-6 col-sm-12 text-lg-start text-center">
-                <h4>
-                  Get Additional Sessions as{" "}
-                  <span className="highlight-2 text-center">Add-On</span>
-                </h4>
-                <p>
-                  Enhance your anantya.ai experience with a dedicated Customer
-                  Success Manager for seamless integration and personalized
-                  support of our solution.
-                </p>
-                <a
-                  href="https://wa.link/9rbekw"
-                  className="btn me-2 bg-green text-white btn-color mt-20"
-                >
-                  <FaWhatsapp className="me-2 pe-2 border-end" />
-                  Talk to Sales
-                </a>
-              </div>
-              <div className="col-md-6 col-sm-12 border-left my-auto ps-md-5 text-lg-start text-center">
-                <div className="titles">
-                  <h5 className="card-title">
-                    <BsPersonAdd style={{ color: "#50B9F7" }} />
-                    &nbsp;&nbsp; Additional users{" "}
-                    <span className="highlight-2 text-center">
-                      {" "}
-                      ₹752/ Month
-                    </span>
-                  </h5>
-                  <p>
-                    Add another team member on panel and get more done for just
-                    ₹752/per month
-                  </p>
-                </div>
-                <div className="titles">
-                  <h5 className="card-title">
-                    <BsPatchCheck style={{ color: "#50B9F7" }} />
-                    &nbsp;&nbsp; Greentick{" "}
-                    <span className="highlight-2 text-center">
-                      {" "}
-                      ₹2,423/ Month
-                    </span>
-                  </h5>
-                  <p>
-                    Boost customer trust on your WhatsApp Business account and
-                    watch your business thrive.
-                  </p>
-                </div>
-              </div>
+      <section className="section_bx3">
+      <div className="container pb-4">
+        <h2 className="text-center pb-3">
+          Why Choose <span>Anantya.ai?</span>
+        </h2>
+        <div className="row row-cols-1 row-cols-md-3 g-5 px-md-0 px-3 pt-4 text-lg-start text-center">
+          <div className="col">
+            <div className="wp-pricing-card">
+              <img
+                src={instantSetup}
+                className="img-fluid w-25 pe-2"
+                alt="whatsapp-setup"
+              />
+              <h4>
+                <span>Instant</span> WhatsApp Setup
+              </h4>
+            </div>
+          </div>
+
+          <div className="col">
+            <div className="wp-pricing-card">
+              <img
+                src={noHiddenCharges}
+                className="img-fluid w-25 pe-2"
+                alt="no-extra-hidden-charges"
+              />
+              <h4>
+                <span>No</span> Extra Hidden Charges
+              </h4>
+            </div>
+          </div>
+
+          <div className="col">
+            <div className="wp-pricing-card">
+              <img
+                src={customerSupport}
+                className="img-fluid w-25 pe-2"
+                alt="customer-support"
+              />
+              <h4>
+                <span>24*7</span> Customer Support
+              </h4>
             </div>
           </div>
         </div>
-      </section>
-      <section style={{ backgroundColor: "#50B9F7" }}>
-        <div className="container py-5">
-          <div className="row">
-            <div className="col-md-6 col-sm-12 text-lg-start text-center text-white">
-              <h3>
-                Enable direct communication with customers through Click-to-Chat
-                Ads
-              </h3>
-            </div>
-            <div className="col-md-6 col-sm-12 text-lg-end text-center my-auto">
-              <a
-                href="https://wa.link/vyno4q"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="start_button text-white btn-color me-2"
-              >
-                Start 7-day Free Trial
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
+      </div>
+    </section>
+      <section style={{ background: "linear-gradient(to top, #fff 0%, #edf4fe 74%, #e7f1ff 100%)" }}>
+  <div className="container py-5">
+    <div className="row">
+      <div className="col-md-7 col-sm-12 text-lg-start text-center text-white">
+        <h2>
+          Boost Your Customer Conversations on WhatsApp with <span> Anantya.ai!</span>
+        </h2>
+      </div>
+      <div className="col-md-5 col-sm-12 text-lg-end text-center my-auto">
+        <a
+          href="#myForm"
+          type="button"
+          className="btn me-2 bg-green text-white btn-color mt-20"
+        >
+          Request a Call Back
+        </a>
+      </div>
+    </div>
+  </div>
+     </section>
+
       <ScrollToTopButton />
       <WhatsAppWidget />
     </div>
+    </>
   );
 };
 

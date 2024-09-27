@@ -1,5 +1,6 @@
 import React from 'react';
 import './YourAffiliateLink.css';
+import { Helmet } from 'react-helmet';
 function AffiliateProgram() {
   const copyTextToClipboard = () => {
     const copyText = document.getElementById('Affiliate_input');
@@ -14,7 +15,88 @@ function AffiliateProgram() {
   };
 
   return (
+    
     <section>
+     
+    <Helmet>
+      {/* Title and Meta Tags */}
+      <title>Affiliate Program Link | Anantya.ai</title>
+      <meta name="robots" content="index,follow" />
+      <meta
+        name="description"
+        content="Affiliate Program Link | Anantya.ai"
+      />
+      <meta
+        name="keywords"
+        content="affiliate program, affiliate marketing programs, affiliate marketing, best affiliate programs"
+      />
+      
+      {/* Open Graph Meta Tags */}
+      <meta property="og:title" content="Affiliate Program Link | Anantya.ai" />
+      <meta property="og:type" content="article" />
+      <meta
+        property="og:description"
+        content="Affiliate Program Link | Anantya.ai"
+      />
+      <meta property="og:url" content="https://anantya.ai/affiliate-program" />
+      <meta property="og:site_name" content="anantya.ai" />
+      <meta
+        property="og:image"
+        content="https://anantya.ai/assets/img/partner/why-should-you-join.webp"
+      />
+      
+      {/* Canonical Link */}
+      <link rel="canonical" href="https://anantya.ai/affiliate-program" />
+      
+      {/* Author */}
+      <meta name="author" content="Anantya" />
+
+      {/* JSON-LD Structured Data for WebPage */}
+      <script type="application/ld+json">
+        {`
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebPage",
+              "name": "Affiliate Program Link | Anantya.ai",
+              "description": "Affiliate Program Link | Anantya.ai"
+            },
+            {
+              "@type": "WebSite",
+              "name": "Anantya",
+              "alternateName": "anantya.ai",
+              "url": "https://anantya.ai/"
+            }
+          ]
+        }
+        `}
+      </script>
+
+      {/* JSON-LD Structured Data for BreadcrumbList */}
+      <script type="application/ld+json">
+        {`
+        {
+          "@context": "https://schema.org/",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Homepage",
+              "item": "https://anantya.ai"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Your Affiliate Link",
+              "item": "https://anantya.ai/your-affiliate-link"
+            }
+          ]
+        }
+        `}
+      </script>
+    </Helmet>
       <div className="container">
         <div className="row">
           <div className="col-md-7 col-sm-12 pe-md-5 text-lg-start text-center">

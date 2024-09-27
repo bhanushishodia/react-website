@@ -1,34 +1,61 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import InnerHeader from '../components/common/InnerHeader';
 import stepImg1 from '../assets/images/fill-out-the-form.webp'; // Adjust the path based on your folder structure
 import stepImg2 from '../assets/images/set-a-strong-password.webp';
-
 import './knowledgecenter.css'; // Import the CSS file
 import ScrollToTopButton from "../components/common/ScrollToTopButton";
 import WhatsAppWidget from "../components/common/WhatsAppWidget";
 const HowToAddAgentSublogin = () => {
   return (
+    <>
+     <Helmet>
+            <title>How to Add Agent Sublogin: A Step-by-Step Guide | Knowledge Center</title>
+            <meta name="robots" content="index,follow" />
+            <meta name="description" content="Step-by-Step Guide, How to Add Agent Sublogin" />
+            <meta property="og:title" content="How to Add Agent Sublogin: A Step-by-Step Guide | Knowledge Center" />
+            <meta property="og:type" content="article" />
+            <meta property="og:description" content="Step-by-Step Guide, How to Add Agent Sublogin" />
+            <meta property="og:url" content="https://anantya.ai/how-to-add-agent-sublogin" />
+            <meta property="og:site_name" content="anantya.ai" />
+            <meta property="og:image" content="https://anantya.ai/assets/img/fill-out-the-form.webp" />
+            <link rel="canonical" href="https://anantya.ai/how-to-add-agent-sublogin" />
+            <meta name="author" content="Anantya.ai" />
+
+            {/* JSON-LD Schema Markup */}
+            <script type="application/ld+json">
+                {JSON.stringify({
+                    "@context": "https://schema.org",
+                    "@type": "WebPage",
+                    "name": "How to Add Agent Sublogin: A Step-by-Step Guide | Knowledge Center",
+                    "description": "Step-by-Step Guide, How to Add Agent Sublogin",
+                    "url": "https://anantya.ai/how-to-add-agent-sublogin"
+                })}
+            </script>
+        </Helmet>
+
     <div className="page-content">
     <div>
       <InnerHeader />
     </div>
     <main className="career-details-page style-5 pt-100">
     <section className="jop-details pb-100">
-      <div className="container">
+      <div className="container py-5">
         <div className="content">
           <div className="row">
             <div className="col-lg-8">
-              <div className="jop-info py-5">
+              <div className="jop-info text-start">
                 <div className="tags mb-40">
-                  <a href="#">Auto assign chat</a>
-                  <a href="#">Agent Sublogin</a>
+                  <a href="/contact">Auto assign chat</a>
+                  <a href="/contact">Agent Sublogin</a>
                 </div>
                 <h3 className="main-title mb-10">
                   How to Add Agent Sublogin: A Step-by-Step Guide
                 </h3>
                 <p className="pb-40 color-999">
-                  By <a href="#" className="color-000">Deepika Yadav</a>
-                </p>
+    By <span className="color-000">Deepika Yadav</span>
+</p>
+
                 <div className="text d-flex mb-20">
                   <span className="icon color-blue5 me-2 flex-shrink-0">
                     <i className="fas fa-check-circle"></i>
@@ -47,15 +74,15 @@ const HowToAddAgentSublogin = () => {
                   </span>
                   <p>In this tutorial, you'll learn how to assign roles to agents in the Anantya.ai Panel.</p>
                 </div>
-                <h3 className="main-title mt-40">Steps to Create Agents in Anantya.ai Panel</h3>
-                <h6 className="mt-40 mb-20">Step 1: Access the Agent Section</h6>
+                <h3 className="main-title mt-4">Steps to Create Agents in Anantya.ai Panel</h3>
+                <h6 className="mt-4 mb-20">Step 1: Access the Agent Section</h6>
                 <div className="text d-flex mb-20">
                   <span className="icon color-blue5 me-2 flex-shrink-0">
                     <i className="fas fa-check-circle"></i>
                   </span>
                   <p>First, log in as the owner of the account. Once you're in, look to the left side of your screen for the "Agents" section.</p>
                 </div>
-                <h6 className="mt-40 mb-20">Step 2: Create a New Agent</h6>
+                <h6 className="mt-4 mb-20">Step 2: Create a New Agent</h6>
                 <div className="text d-flex mb-20">
                   <span className="icon color-blue5 me-2 flex-shrink-0">
                     <i className="fas fa-check-circle"></i>
@@ -65,7 +92,7 @@ const HowToAddAgentSublogin = () => {
                 <div className="text-center">
                   <img src={stepImg1} className="img-fluid pb-3 mx-auto" alt="Fill Out the Form" />
                 </div>
-                <h6 className="mt-40 mb-20">Step 3: Fill Out the Form</h6>
+                <h6 className="mt-4 mb-20">Step 3: Fill Out the Form</h6>
                 <div className="text d-flex mb-20">
                   <span className="icon color-blue5 me-2 flex-shrink-0">
                     <i className="fas fa-check-circle"></i>
@@ -143,7 +170,8 @@ const HowToAddAgentSublogin = () => {
     {/* Add more sections as needed */}
     <ScrollToTopButton />
       <WhatsAppWidget />
-  </div>
+    </div>
+    </>
   );
 };
 

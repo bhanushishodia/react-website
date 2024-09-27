@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import AffiliateForm from '../forms/AffiliateForm'; // Adjust the path as needed
 import ScrollToTopButton from "../components/common/ScrollToTopButton";
 import WhatsAppWidget from "../components/common/WhatsAppWidget";
@@ -15,6 +16,113 @@ import partnerImage from '../assets/images/partner/partner-cta.webp';
 const WhiteLabelPartner = () => {
   return (
    <>
+    <Helmet>
+      {/* Title and Meta Tags */}
+      <title>Whatsapp API White Lable Partner | Anantya.ai</title>
+      <meta name="robots" content="index,follow" />
+      <meta
+        name="description"
+        content="WhatsApp Business API provider. Become Anantya's whitelabel whatsapp api reseller to get whitelabel API, and platform with your brand and logo."
+      />
+      <meta
+        name="keywords"
+        content="white lable whatsapp api, whatsapp api white lable, whatsapp business api, reseller"
+      />
+      
+      {/* Open Graph Meta Tags */}
+      <meta property="og:title" content="Whatsapp API White Lable Partner | Anantya.ai" />
+      <meta property="og:type" content="article" />
+      <meta
+        property="og:description"
+        content="WhatsApp Business API provider. Become Anantya's whitelabel whatsapp api reseller to get whitelabel API, and platform with your brand and logo."
+      />
+      <meta property="og:url" content="https://anantya.ai/white-lable-partner" />
+      <meta property="og:site_name" content="anantya.ai" />
+      <meta
+        property="og:image"
+        content="https://anantya.ai/assets/img/partner/you-run-the-business-we.webp"
+      />
+      
+      {/* Canonical Link */}
+      <link rel="canonical" href="https://anantya.ai/white-lable-partner" />
+      
+      {/* Author */}
+      <meta name="author" content="Anantya" />
+
+      {/* JSON-LD Structured Data for Organization */}
+      <script type="application/ld+json">
+        {`
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Anantya.ai",
+          "alternateName": "Conversational Engagement Platform for Businesses | Anantya.ai",
+          "url": "https://anantya.ai/",
+          "logo": "https://anantya.ai/assets/img/logo.webp",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+971565480273",
+            "contactType": "sales",
+            "areaServed": ["AE", "SA", "BH"],
+            "availableLanguage": "en"
+          },
+          "sameAs": [
+            "https://www.facebook.com/anantyaai",
+            "https://www.instagram.com/anantya.ai",
+            "https://www.youtube.com/@Anantyaai",
+            "https://www.linkedin.com/company/anantya-ai",
+            "https://www.pinterest.com/anantyaai"
+          ]
+        }
+        `}
+      </script>
+
+      {/* JSON-LD Structured Data for WebPage */}
+      <script type="application/ld+json">
+        {`
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebPage",
+              "name": "Whatsapp API White Lable Partner | Anantya.ai",
+              "description": "WhatsApp Business API provider. Become Anantya's whitelabel whatsapp api reseller to get whitelabel API, and platform with your brand and logo."
+            },
+            {
+              "@type": "WebSite",
+              "name": "Anantya",
+              "alternateName": "anantya.ai",
+              "url": "https://anantya.ai/"
+            }
+          ]
+        }
+        `}
+      </script>
+
+      {/* JSON-LD Structured Data for BreadcrumbList */}
+      <script type="application/ld+json">
+        {`
+        {
+          "@context": "https://schema.org/",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Homepage",
+              "item": "https://anantya.ai"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "White Lable Partner",
+              "item": "https://anantya.ai/white-lable-partner"
+            }
+          ]
+        }
+        `}
+      </script>
+    </Helmet>
        <div className="container py-3">
         <div className="row py-5">
           <div className="col-md-6 col-sm-12 my-auto info text-lg-start text-center">
@@ -28,7 +136,7 @@ const WhiteLabelPartner = () => {
             <p className="mt-30 mb-30">
               Get Access to WhatsApp APIs, build your own solution & win <br /> it big in the market.
             </p>
-            <a href="contact.html" className="button_partner my-3 btn me-2 bg-green text-white btn-color">
+            <a href="contact" className="button_partner my-3 btn me-2 bg-green text-white btn-color">
               Apply Now
             </a>
           </div>

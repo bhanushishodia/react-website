@@ -1,34 +1,56 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import InnerHeader from '../components/common/InnerHeader';
-import stepImg1 from '../assets/images/fill-out-the-form.webp'; // Adjust the path based on your folder structure
-import stepImg2 from '../assets/images/set-a-strong-password.webp';
+
+import broadcastImg from '../assets/images/broadcast-campaign.webp'; // Adjust the path based on your folder structure
+import validateImg from '../assets/images/validate-and-review-contacts.webp';
+import reviewImg from '../assets/images/review-and-submit.webp';
+import monitorImg from '../assets/images/monitor-and-optimize.webp';
 
 import './knowledgecenter.css'; // Import the CSS file
 import ScrollToTopButton from "../components/common/ScrollToTopButton";
 import WhatsAppWidget from "../components/common/WhatsAppWidget";
 const HowToLaunchFirstCampaign = () => {
   return (
+    <>
+    <Helmet>
+            <title>How to Launch Your First Campaign in Anantya.ai | Knowledge Center</title>
+            <meta name="robots" content="index,follow" />
+            <meta name="description" content="Step-by-step guide to launch your first campaign in Anantya.ai" />
+            <meta property="og:title" content="How to Launch Your First Campaign in Anantya.ai" />
+            <meta property="og:type" content="article" />
+            <meta property="og:description" content="Step-by-step guide to launch your first campaign in Anantya.ai" />
+            <meta property="og:url" content="https://anantya.ai/how-to-launch-first-campaign-in-anantya.ai" />
+            <meta property="og:site_name" content="anantya.ai" />
+            <meta property="og:image" content="https://anantya.ai/assets/img/broadcast-campaign.webp" />
+            <link rel="canonical" href="https://anantya.ai/how-to-launch-first-campaign-in-anantya.ai" />
+            <meta name="author" content="Anantya.ai" />
+
+           
+        </Helmet>
+    
     <div className="page-content">
     <div>
       <InnerHeader />
     </div>
     <main className="career-details-page style-5 pt-100">
     <section className="jop-details pb-100">
-      <div className="container">
+      <div className="container py-5 ">
         <div className="content">
           <div className="row">
           <div className="col-lg-8">
-          <div className="jop-info">
+          <div className="jop-info text-start">
             <div className="tags mb-40">
-              <a href="#">Auto assign chat</a>
-              <a href="#">Agent Sublogin</a>
+              <a href="/contact">Auto assign chat</a>
+              <a href="/contact">Agent Sublogin</a>
             </div>
             <h3 className="main-title mb-10">
               How to Launch Your First Campaign - Step-by-Step Guide
             </h3>
             <p className="pb-40 color-999">
-              By <a href="#" className="color-000">Deepika Yadav</a>
-            </p>
+                  By <span className="color-000">Deepika Yadav</span>
+                  </p>
+
 
             <div className="text d-flex mb-20">
               <span className="icon color-blue5 me-2 flex-shrink-0">
@@ -47,7 +69,7 @@ const HowToLaunchFirstCampaign = () => {
               </p>
             </div>
 
-            <h6 className="mt-40 mb-20">Step 1: Set Up Your WhatsApp Broadcast Campaign</h6>
+            <h6 className="mt-4 mb-20">Step 1: Set Up Your WhatsApp Broadcast Campaign</h6>
             <div className="text d-flex mb-20">
               <span className="icon color-blue5 me-2 flex-shrink-0">
                 <i className="fas fa-check-circle"></i>
@@ -67,7 +89,7 @@ const HowToLaunchFirstCampaign = () => {
               <p><strong className="color-000">Channel and Campaign Name:</strong> Choose a meaningful channel name that identifies the purpose of your campaign. Then, give your campaign a clear and concise name that reflects its content.</p>
             </div>
             <div className="text-center">
-              <img src="assets/img/broadcast-campaign.webp" className="img-fluid pb-3 mx-auto" alt="Broadcast Campaign" />
+              <img src={broadcastImg} className="img-fluid pb-3 mx-auto" alt="Broadcast Campaign" />
             </div>
             <div className="text d-flex mb-20">
               <span className="icon color-blue5 me-2 flex-shrink-0">
@@ -100,7 +122,7 @@ const HowToLaunchFirstCampaign = () => {
               <p><strong className="color-000">Set Up Campaign:</strong> Follow the steps to configure your WhatsApp Broadcast campaign. This may include scheduling the send time, setting up any necessary personalization, and crafting the content of your message.</p>
             </div>
 
-            <h6 className="mt-40 mb-20">Step 2: Validate and Review Contacts</h6>
+            <h6 className="mt-4 mb-20">Step 2: Validate and Review Contacts</h6>
             <div className="text d-flex mb-20">
               <span className="icon color-blue5 me-2 flex-shrink-0">
                 <i className="fas fa-check-circle"></i>
@@ -120,10 +142,10 @@ const HowToLaunchFirstCampaign = () => {
               <p><strong className="color-000">Check Validity:</strong> The platform will display the number of valid and invalid contacts in your list. Review this information to ensure your message reaches the intended recipients.</p>
             </div>
             <div className="text-center">
-              <img src="assets/img/validate-and-review-contacts.webp" className="img-fluid pb-3 mx-auto" alt="Validate and Review Contacts" />
+              <img src={validateImg} className="img-fluid pb-3 mx-auto" alt="Validate and Review Contacts" />
             </div>
 
-            <h6 className="mt-40 mb-20">Step 3: Review and Submit</h6>
+            <h6 className="mt-4 mb-20">Step 3: Review and Submit</h6>
             <div className="text d-flex mb-20">
               <span className="icon color-blue5 me-2 flex-shrink-0">
                 <i className="fas fa-check-circle"></i>
@@ -137,10 +159,10 @@ const HowToLaunchFirstCampaign = () => {
               <p><strong className="color-000">Submit Your Campaign:</strong> After reviewing all the previous steps and ensuring everything is set up correctly, click on the "Submit" button to finalize your campaign setup.</p>
             </div>
             <div className="text-center">
-              <img src="assets/img/review-and-submit.webp" className="img-fluid pb-3 mx-auto" alt="Review and Submit" />
+              <img src={reviewImg} className="img-fluid pb-3 mx-auto" alt="Review and Submit" />
             </div>
 
-            <h6 className="mt-40 mb-20">Step 4: Monitor and Optimize</h6>
+            <h6 className="mt-4 mb-20">Step 4: Monitor and Optimize</h6>
             <div className="text d-flex mb-20">
               <span className="icon color-blue5 me-2 flex-shrink-0">
                 <i className="fas fa-check-circle"></i>
@@ -153,8 +175,9 @@ const HowToLaunchFirstCampaign = () => {
               </span>
               <p><strong className="color-000">Optimize Based on Feedback:</strong> Based on the performance data and recipient feedback, make necessary adjustments to optimize future campaigns for better results.</p>
             </div>
+            <img src={monitorImg} className='img-fluid pb-3 mx-auto' alt="Monitor Campaign Performance" />
 
-            <h6 className="mt-40 mb-20">Conclusion</h6>
+            <h6 className="mt-4 mb-20">Conclusion</h6>
             <div className="text d-flex mb-20">
               <span className="icon color-blue5 me-2 flex-shrink-0">
                 <i className="fas fa-check-circle"></i>
@@ -194,6 +217,7 @@ const HowToLaunchFirstCampaign = () => {
     <ScrollToTopButton />
       <WhatsAppWidget />
   </div>
+  </>
   );
 };
 

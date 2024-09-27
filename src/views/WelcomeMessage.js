@@ -1,5 +1,6 @@
 // src/views/WelcomeMessage.js
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import Breadcrumb from '../components/common/Breadcrumb';
 import ScrollToTopButton from "../components/common/ScrollToTopButton";
 import WhatsAppWidget from "../components/common/WhatsAppWidget";
@@ -13,6 +14,30 @@ import articleImage4 from '../assets/images/article-4.png';
 const WelcomeMessage = () => {
   return (
     <div>
+      <Helmet>
+            <title>Set Up a Welcome Message on Anantya.ai Step by Step</title>
+            <meta name="robots" content="index,follow" />
+            <meta name="description" content="Guide to setup a welcome message on Anantya.ai for businesses." />
+            <meta property="og:title" content="Set Up a Welcome Message on Anantya.ai Step by Step" />
+            <meta property="og:type" content="article" />
+            <meta property="og:description" content="Guide to setup a welcome message on Anantya.ai for businesses." />
+            <meta property="og:url" content="https://anantya.ai/how-to-setup-a-welcome-message-on-anantya.ai" />
+            <meta property="og:site_name" content="anantya.ai" />
+            <meta property="og:image" content="https://anantya.ai/assets/img/article-1.png" />
+            <link rel="canonical" href="https://anantya.ai/how-to-setup-a-welcome-message-on-anantya.ai" />
+            <meta name="author" content="Anantya.ai" />
+
+            <script type="application/ld+json">
+                {`
+                {
+                  "@context": "https://schema.org",
+                  "@type": "WebPage",
+                  "name": "Set Up a Welcome Message on Anantya.ai Step by Step",
+                  "description": "Guide to setup a welcome message on Anantya.ai for businesses."
+                }
+                `}
+            </script>
+        </Helmet> 
       <Breadcrumb
         links={[{ href: '#', text: 'Home' }, { href: '#', text: 'Welcome Message' }]}
         backgroundImage={welcomeBackground}

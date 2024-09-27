@@ -25,7 +25,6 @@ const logos = [
   img10
 ];
 
-
 const LogoCarousel = () => {
   const settings = {
     dots: false,
@@ -37,7 +36,33 @@ const LogoCarousel = () => {
     autoplaySpeed: 0,
     cssEase: "linear",
     pauseOnHover: false,
-    swipeToSlide: true
+    swipeToSlide: true,
+    responsive: [
+      {
+        breakpoint: 1200, // For larger tablets
+        settings: {
+          slidesToShow: 4,
+        },
+      },
+      {
+        breakpoint: 992, // For tablets
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 768, // For small tablets and large phones
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 576, // For mobile devices
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+    ],
   };
 
   return (

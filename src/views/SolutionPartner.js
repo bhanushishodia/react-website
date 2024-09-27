@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from 'react-helmet';
 import AffiliateForm from '../forms/AffiliateForm'; // Adjust the path as needed
 import partnerImage from "../assets/images/solution-partner-home-page.webp"; // Adjust the path as needed
 import dedicatedManagerImg from "../assets/images/icons/dedicated-manager.png";
@@ -16,6 +17,85 @@ import WhatsAppWidget from "../components/common/WhatsAppWidget";
 const SolutionPartner = () => {
   return (
     <>
+    <Helmet>
+            <title>Solution Partner | Solution Program | Anantya.ai</title>
+            <meta name="robots" content="index,follow" />
+            <meta name="description" content="Join our Solution Program, become a valued solution partner, and use our products to drive your customers' growth. Witness your business flourish as you provide effective solutions." />
+            <meta name="keywords" content="solution program, solution partner" />
+            <meta property="og:title" content="Solution Partner | Solution Program | Anantya.ai" />
+            <meta property="og:type" content="article" />
+            <meta property="og:description" content="Join our Solution Program, become a valued solution partner, and use our products to drive your customers' growth. Witness your business flourish as you provide effective solutions." />
+            <meta property="og:url" content="https://anantya.ai/solution-partner" />
+            <meta property="og:site_name" content="anantya.ai" />
+            <meta property="og:image" content="https://anantya.ai/assets/img/partner/promote-&-sell.webp" />
+            <link rel="canonical" href="https://anantya.ai/solution-partner" />
+            <meta name="author" content="Anantya" />
+
+            <script type="application/ld+json">
+                {JSON.stringify({
+                    "@context": "https://schema.org",
+                    "@type": "Organization",
+                    "name": "Anantya.ai",
+                    "alternateName": "Conversational Engagement Platform for Businesses | Anantya.ai",
+                    "url": "https://anantya.ai/",
+                    "logo": "https://anantya.ai/assets/img/logo.webp",
+                    "contactPoint": {
+                        "@type": "ContactPoint",
+                        "telephone": "+971565480273",
+                        "contactType": "sales",
+                        "areaServed": ["AE", "SA", "BH"],
+                        "availableLanguage": "en"
+                    },
+                    "sameAs": [
+                        "https://www.facebook.com/anantyaai",
+                        "https://www.instagram.com/anantya.ai",
+                        "https://www.youtube.com/@Anantyaai",
+                        "https://www.linkedin.com/company/anantya-ai",
+                        "https://www.pinterest.com/anantyaai"
+                    ]
+                })}
+            </script>
+
+            <script type="application/ld+json">
+                {JSON.stringify({
+                    "@context": "https://schema.org",
+                    "@graph": [
+                        {
+                            "@type": "WebPage",
+                            "name": "Solution Partner | Solution Program | Anantya.ai",
+                            "description": "Join our Solution Program, become a valued solution partner, and use our products to drive your customers' growth. Witness your business flourish as you provide effective solutions."
+                        },
+                        {
+                            "@type": "WebSite",
+                            "name": "Anantya",
+                            "alternateName": "anantya.ai",
+                            "url": "https://anantya.ai/"
+                        }
+                    ]
+                })}
+            </script>
+
+            <script type="application/ld+json">
+                {JSON.stringify({
+                    "@context": "https://schema.org/",
+                    "@type": "BreadcrumbList",
+                    "itemListElement": [
+                        {
+                            "@type": "ListItem",
+                            "position": 1,
+                            "name": "Homepage",
+                            "item": "https://anantya.ai"
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 2,
+                            "name": "Solution Partner",
+                            "item": "https://anantya.ai/solution-partner"
+                        }
+                    ]
+                })}
+            </script>
+        </Helmet>
       <section>
         <div className="container py-md-5 py-2">
           <div className="row">
@@ -39,7 +119,7 @@ const SolutionPartner = () => {
               </p>
 
               <a
-                href="contact.html"
+                href="contact"
                 className="button_partner my-3 btn me-2 bg-green text-white btn-color"
               >
                 Become a Solution Partner

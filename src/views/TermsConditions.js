@@ -2,11 +2,52 @@ import React from "react";
 import "./terms-conditions.css"; // Optional: Add custom CSS file for styling
 import ScrollToTopButton from "../components/common/ScrollToTopButton";
 import WhatsAppWidget from "../components/common/WhatsAppWidget";
-
+import { Helmet } from 'react-helmet';
 const TermsConditions = () => {
   return (
+    <>
+    <Helmet>
+      <title>Terms and Conditions - Anantya.ai</title>
+      <meta name="robots" content="noindex,nofollow" />
+      <meta
+        name="description"
+        content="Navigate the Guidelines for Using Anantya.ai Services Effectively. Explore Our Service Terms and Conditions for a Clear Understanding of Expectations."
+      />
+      <meta property="og:title" content="Terms and Conditions - Anantya.ai" />
+      <meta property="og:type" content="Article" />
+      <meta
+        property="og:description"
+        content="Navigate the Guidelines for Using Anantya.ai Services Effectively. Explore Our Service Terms and Conditions for a Clear Understanding of Expectations."
+      />
+      <meta property="og:url" content="https://anantya.ai/terms-and-condition" />
+      <meta property="og:site_name" content="anantya.ai" />
+      <meta property="og:image" content="" />
+      <link rel="canonical" href="https://anantya.ai/terms-and-condition" />
+      <meta name="author" content="Anantya.ai" />
+
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://anantya.ai/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Terms and Condition",
+              "item": "https://anantya.ai/terms-and-condition"
+            }
+          ]
+        })}
+      </script>
+    </Helmet>
     <div className="terms-conditions-page">
-      <div className="container">
+      <div className="container pt-md-0 pt-5">
        <main className="terms-conditions-content my-5 py-3  bg-white  px-5">
       <header className="terms-header">
         <h1 className="display-4">Terms and Conditions</h1>
@@ -244,6 +285,7 @@ const TermsConditions = () => {
       <ScrollToTopButton />
       <WhatsAppWidget />
     </div>
+    </>
   );
 };
 

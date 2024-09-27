@@ -10,13 +10,27 @@ import DownloadEbookSection from "../components/common/DownloadEbookSection"; //
 import downloadEbookImage from "../assets/images/download-ebook.png"; // Adjust path as needed
 import whatsappScannerImg from "../assets/images/wa.link_3dzezc.png";
 import "./EcommerceRetail.css"; // Import your CSS file if needed
+import { Helmet } from 'react-helmet';
 import educationImg from "../assets/images/transform-education-with-whatsapp.webp"; // Adjust the path if necessary
 import defaultImage from "../assets/images/empowering-fin-tech.webp";
 import hoverImage1 from "../assets/images/empowering-fin-tech.webp";
 import hoverImage2 from "../assets/images/convey-transactional-notifications.webp";
 import OnboardingMadeImage from "../assets/images/onboarding-made-easy.webp";
 import reduceCustomerImage from "../assets/images/reduce-customer-drop-offs.webp";
+import pdfFile from '../assets/pdf/Banking-Usecase-Updated.pdf';
+
 const BankingBFSI = () => {
+  const submitFormAndOpenPDF = (event) => {
+      // Prevent the default form submission behavior
+      event.preventDefault();
+  
+      // Perform form submission (assuming you have a form with the id 'marketing')
+      document.getElementById("marketing").submit();
+  
+      // Open PDF in a new tab	
+          
+    window.open(pdfFile, "_blank");
+    };
   const homeFAQs = [
     {
       question:
@@ -98,8 +112,132 @@ const BankingBFSI = () => {
   };
   return (
     <div>
-      <div className="container">
-        <div className="content py-md-5 py-0">
+       <Helmet>
+      <title>Banking and Finance Whatsapp Chatbots | Secure WhatsApp API</title>
+      <meta name="keywords" content="Whatsapp chatbot for Banking,Chatbot for Banking,conversational ai for banking" />
+      <meta name="robots" content="index,follow" />
+      <meta name="description" content="Use a automated Whatsapp Chatbot for banking industry to simplify the communication process, make customer interactions fast and secure with Anantya.ai." />
+      <meta property="og:title" content="Banking and Finance Whatsapp Chatbots | Secure WhatsApp API" />
+      <meta property="og:type" content="article" />
+      <meta property="og:description" content="Use a automated Whatsapp Chatbot for banking industry to simplify the communication process, make customer interactions fast and secure with Anantya.ai." />
+      <meta property="og:url" content="https://anantya.ai/banking-industry" />
+      <meta property="og:site_name" content="anantya.ai" />
+      <meta property="og:image" content="https://anantya.ai/assets/img/bfsi/exceptional-customer-experience.webp" />
+      <link rel="canonical" href="https://anantya.ai/banking-industry" />
+      <meta name="author" content="Anantya" />
+      
+      {/* JSON-LD for Organization */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Anantya.ai",
+          "alternateName": "Conversational Engagement Platform for Businesses | Anantya.ai",
+          "url": "https://anantya.ai/",
+          "logo": "https://anantya.ai/assets/img/logo.webp",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+971565480273",
+            "contactType": "sales",
+            "areaServed": ["AE", "SA", "BH"],
+            "availableLanguage": "en"
+          },
+          "sameAs": [
+            "https://www.facebook.com/anantyaai",
+            "https://www.instagram.com/anantya.ai",
+            "https://www.youtube.com/@Anantyaai",
+            "https://www.linkedin.com/company/anantya-ai",
+            "https://www.pinterest.com/anantyaai"
+          ]
+        })}
+      </script>
+
+      {/* JSON-LD for WebPage and WebSite */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebPage",
+              "name": "Banking and Finance Whatsapp Chatbots | Secure WhatsApp API",
+              "description": "Use a automated Whatsapp Chatbot for banking industry to simplify the communication process, make customer interactions fast and secure with Anantya.ai."
+            },
+            {
+              "@type": "WebSite",
+              "name": "Anantya",
+              "alternateName": "anantya.ai",
+              "url": "https://anantya.ai/"
+            }
+          ]
+        })}
+      </script>
+
+      {/* JSON-LD for BreadcrumbList */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://anantya.ai"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Banking & BFSI",
+              "item": "https://anantya.ai/banking-industry"
+            }
+          ]
+        })}
+      </script>
+
+      {/* JSON-LD for FAQPage */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Q1: What Is A Finance Or Banking Chatbot?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A finance or banking chatbot encompasses a spectrum of capabilities, from straightforward, predefined journeys for common queries to sophisticated AI-driven conversations. These chatbots are trained on industry-specific data and scenarios within the banking, financial services, and insurance (BFSI) sector."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What Are The Benefits Of A Finance Chatbot?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Intuitive and Convenient: A finance chatbot offers customers an intuitive and self-serve channel, available 24/7, for transactions, advice, and product exploration. Wide Engagement: With conversational AI, financial service providers can engage customers across 30+ messaging channels, catering to commerce, marketing, and support needs. Meaningful Digital Experiences: Deliver meaningful digital experiences to customers at scale, ensuring easy onboarding, accelerated transactions, simplified service requests, and elevated support quality."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can BFSI Companies Leverage WhatsApp For Marketing And Promotions?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, WhatsApp can be utilized for marketing and promotional activities in the BFSI industry. Companies can share updates about new products, exclusive offers, investment opportunities, and financial tips to engage customers and nurture leads. However, it is important to follow WhatsApp's policies and guidelines for marketing purposes."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What Are Some Best Practices For BFSI Companies Utilizing WhatsApp?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "To maximize the benefits of WhatsApp, BFSI companies should focus on providing personalized customer experiences, ensuring timely responses to customer queries, maintaining data privacy, leveraging automation for routine tasks, and continuously adapting to customer needs and preferences."
+              }
+            }
+          ]
+        })}
+      </script>
+    </Helmet>
+      <div className="container py-5 mt-5">
+        <div className="content">
           <div className="row align-items-center">
             <div className="col-lg-6 text-black mt-20 text-lg-start text-center">
               <div className="info text-black pe-md-2">
@@ -292,6 +430,70 @@ const BankingBFSI = () => {
             </div>
             <div className="modal-body">
               {/* Your modal content for the second ebook */}
+    
+                <form
+                  action="https://formspree.io/f/mdorezev"
+                  className="py-2 px-md-5 px-4"
+                  method="post"
+                  id="marketing"
+                  onSubmit={submitFormAndOpenPDF}
+                >
+                  <div className="row">
+                    <div className="col-lg-12 mb-3">
+                      <input
+                        type="text"
+                        name="name"
+                        className="form-control"
+                        placeholder="Name"
+                        required
+                      />
+                    </div>
+                    <div className="col-lg-12 mb-3">
+                      <input
+                        type="text"
+                        name="email"
+                        className="form-control"
+                        placeholder="Email Address *"
+                        required
+                      />
+                    </div>
+                    <div className="col-lg-12 mb-3">
+                      <input
+                        type="text"
+                        name="phone"
+                        className="form-control"
+                        placeholder="Phone Number (optional)"
+                      />
+                    </div>
+                    <div className="col-lg-12 mb-3">
+                      <input
+                        type="text"
+                        name="message"
+                        className="form-control"
+                        placeholder="Name of Organisation"
+                        required
+                      />
+                    </div>
+                    <div className="col-lg-12">
+                      <input
+                        type="url"
+                        name="url"
+                        className="form-control"
+                        placeholder="Website URL"
+                        required
+                      />
+                    </div>
+                    <div className="col-lg-12 text-center mt-3">
+                      <input
+                        type="submit"
+                        value="Send Your Request"
+                        className="btn w-50 bg-green text-white cursor-pointer"
+                      />
+                    </div>
+                  </div>
+                </form>
+          
+          
             </div>
           </div>
         </div>

@@ -1,16 +1,48 @@
 // src/views/AgentSublogin.js
 import React from 'react';
 import Breadcrumb from '../components/common/Breadcrumb';
+import { Helmet } from 'react-helmet';
 import ScrollToTopButton from "../components/common/ScrollToTopButton";
 import WhatsAppWidget from "../components/common/WhatsAppWidget";
-
 import welcomeBackground from '../assets/images/inner5_back.png';
 import welcomeImage from '../assets/images/integration.webp';
-
 import articleImage4 from '../assets/images/article-4.png';
 const AgentSublogin = () => {
   return (
     <div>
+      <Helmet>
+        {/* Title and Meta Tags */}
+        <title>How to Add Agent Sublogin: A Step-by-Step Guide | Knowledge Center</title>
+        <meta name="robots" content="index,follow" />
+        <meta
+          name="description"
+          content="Step-by-Step Guide, How to Add Agent Sublogin"
+        />
+        <meta
+          property="og:title"
+          content="How to Add Agent Sublogin: A Step-by-Step Guide | Knowledge Center"
+        />
+        <meta property="og:type" content="article" />
+        <meta
+          property="og:description"
+          content="Step-by-Step Guide, How to Add Agent Sublogin"
+        />
+        <meta
+          property="og:url"
+          content="https://anantya.ai/how-to-add-agent-sublogin"
+        />
+        <meta property="og:site_name" content="anantya.ai" />
+        <meta
+          property="og:image"
+          content="https://anantya.ai/assets/img/fill-out-the-form.webp"
+        />
+        <link
+          rel="canonical"
+          href="https://anantya.ai/how-to-add-agent-sublogin"
+        />
+        <meta name="author" content="Anantya.ai" />
+      </Helmet>
+
       <Breadcrumb
         links={[{ href: '#', text: 'Home' }, { href: '#', text: 'Welcome Message' }]}
         backgroundImage={welcomeBackground}

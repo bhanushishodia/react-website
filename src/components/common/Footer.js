@@ -11,7 +11,7 @@ import highestRated from "../../assets/images/highest-rated-winter-2024.png";
 function Footer() {
   return (
     <footer className="style-11">
-      <div className="container px-0">
+      <div className="container">
         {/* Footer Links */}
         <div className="foot-links">
           {/* Lower row */}
@@ -100,10 +100,10 @@ function Footer() {
                     <a href="/ecommerce-industry">Ecommerce & Retail</a>
                   </li>
                   <li>
-                    <a href="/healthcare">Healthcare</a>
+                    <a href="/healthcare-industry">Healthcare</a>
                   </li>
                   <li>
-                    <a href="/ecommerce-industry">Ed-Tech</a>
+                    <a href="/edtech-industry">Ed-Tech</a>
                   </li>
                   <li>
                     <a href="/banking-industry">Banking & BFSI</a>
@@ -151,19 +151,19 @@ function Footer() {
                 <h6>Channels</h6>
                 <ul>
                   <li>
-                    <a href="/channels/whatsapp-business-api">WhatsApp Business API</a>
+                    <a href="/whatsapp-business-api">WhatsApp Business API</a>
                   </li>
                   <li>
-                    <a href="/features/messenger">Messenger</a>
+                    <a href="/integrations/facebook-messenger">Messenger</a>
                   </li>
                   <li>
-                    <a href="/features/instagram">Instagram</a>
+                    <a href="/integrations/instagram">Instagram</a>
                   </li>
                   <li>
-                    <a href="/features/google-business">Google Business</a>
+                    <a href="/integrations/google-business-messages">Google Business</a>
                   </li>
                   <li>
-                    <a href="/features/messages">Messages</a>
+                    <a href="/integrations/viber">Viber</a>
                   </li>
                 </ul>
               </div>
@@ -173,19 +173,19 @@ function Footer() {
                 <h6>Integration</h6>
                 <ul>
                   <li>
-                    <a href="/features/hubspot">HubSpot</a>
+                    <a href="/integrations/hubspot">HubSpot</a>
                   </li>
                   <li>
-                    <a href="/features/zapier">Zapier</a>
+                    <a href="/integrations/zapier">Zapier</a>
                   </li>
                   <li>
-                    <a href="/features/webhook">Webhook</a>
+                    <a href="/integrations/webhook">Webhook</a>
                   </li>
                   <li>
-                    <a href="/features/salesforce">Salesforce</a>
+                    <a href="/integrations/salesforce">Salesforce</a>
                   </li>
                   <li>
-                    <a href="/features/woocommerce">WooCommerce</a>
+                    <a href="/integrations/woocommerce">WooCommerce</a>
                   </li>
                 </ul>
               </div>
@@ -198,13 +198,13 @@ function Footer() {
                     <a href="/blog">Blog</a>
                   </li>
                   <li>
-                    <a href="/contact-us">Contact Us</a>
+                    <a href="/contact">Contact Us</a>
                   </li>
                   <li>
                     <a href="/knowledge-center">Knowledge Center</a>
                   </li>
                   <li>
-                    <a href="/get-started">Get Started @ $99</a>
+                    <a href="/campaign-request-demo">Get Started @ $99</a>
                   </li>
                   <li>
                     <a href="/work-with-us">Work with Us</a>

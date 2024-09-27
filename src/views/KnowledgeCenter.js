@@ -1,20 +1,99 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import './knowledgecenter.css'; // Optional: Add custom CSS file for styling
 import ScrollToTopButton from "../components/common/ScrollToTopButton";
 import WhatsAppWidget from "../components/common/WhatsAppWidget";
 const KnowledgeCenter = () => {
   return (
+    <>
+     <Helmet>
+            <title>Knowledge Center - Knowledge center of Conversational Platform</title>
+            <meta name="robots" content="index,follow" />
+            <meta name="description" content="In our Knowledge centre pages we will explore scope of Conversational ai platform." />
+            <meta property="og:title" content="Knowledge Center - Knowledge center of Conversational Platform" />
+            <meta property="og:type" content="website" />
+            <meta property="og:description" content="In our Knowledge centre pages we will explore scope of Conversational ai platform." />
+            <meta property="og:url" content="https://anantya.ai/knowledge-center" />
+            <meta property="og:site_name" content="anantya.ai" />
+            <meta property="og:image" content="https://anantya.ai/assets/img/home/Home%20page%20Graphics.webp" />
+            <link rel="canonical" href="https://anantya.ai/knowledge-center" />
+            <meta name="author" content="Anantya" />
+
+            {/* JSON-LD Schema Markup */}
+            <script type="application/ld+json">
+                {JSON.stringify({
+                    "@context": "https://schema.org",
+                    "@type": "Organization",
+                    "name": "Anantya.ai",
+                    "alternateName": "Conversational Engagement Platform for Businesses | Anantya.ai",
+                    "url": "https://anantya.ai/",
+                    "logo": "https://anantya.ai/assets/img/logo.webp",
+                    "contactPoint": {
+                        "@type": "ContactPoint",
+                        "telephone": "+971565480273",
+                        "contactType": "sales",
+                        "areaServed": ["AE", "SA", "BH"],
+                        "availableLanguage": "en"
+                    },
+                    "sameAs": [
+                        "https://www.facebook.com/anantyaai",
+                        "https://www.instagram.com/anantya.ai",
+                        "https://www.youtube.com/@Anantyaai",
+                        "https://www.linkedin.com/company/anantya-ai",
+                        "https://www.pinterest.com/anantyaai"
+                    ]
+                })}
+            </script>
+
+            <script type="application/ld+json">
+                {JSON.stringify({
+                    "@context": "https://schema.org",
+                    "@graph": [
+                        {
+                            "@type": "WebPage",
+                            "name": "Knowledge Center - Knowledge center of Conversational Platform",
+                            "description": "In our Knowledge centre pages we will explore scope of Conversational ai platform."
+                        },
+                        {
+                            "@type": "WebSite",
+                            "name": "Anantya",
+                            "alternateName": "anantya.ai",
+                            "url": "https://anantya.ai/"
+                        }
+                    ]
+                })}
+            </script>
+
+            <script type="application/ld+json">
+                {JSON.stringify({
+                    "@context": "https://schema.org/",
+                    "@type": "BreadcrumbList",
+                    "itemListElement": [
+                        {
+                            "@type": "ListItem",
+                            "position": 1,
+                            "name": "Homepage",
+                            "item": "https://anantya.ai"
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 2,
+                            "name": "Knowledge Center",
+                            "item": "https://anantya.ai/knowledge-center"
+                        }
+                    ]
+                })}
+            </script>
+        </Helmet>
     <div className="knowledge-center-page">
          {/* section1*/}
         <section style={{ background: '#f3fbff' }}>
             <div className="container py-5 text-lg-start">
-                <div className="row py-5 text-black">
-                    <div className="col-md-6 col-sm-12">
-                        <h1>Anantya Support</h1>
+                <div className="row py-5 text-black text-center my-auto">
+                    <div className="col-md-12 col-sm-12 pt-3">
+                        <h1 className='fw-bold h2'>Anantya Support </h1>
                     </div>
-                    <div className="col-md-6 col-sm-12 text-end">
-                      
-                    </div>
+                   
                 </div>
             </div>
         </section>
@@ -37,8 +116,8 @@ const KnowledgeCenter = () => {
                         </div>
                         <a href="/getting-started-with-anantya" className="inf_content">
                             <h6>1. Anantya Platform</h6>
-                            <p>Getting Started with Anantya.ai: <span className="text-muted">Account Setup and Features
-                                Guide</span></p>
+                            <p>Getting Started with Anantya.ai: Account Setup and Features
+                                Guide</p>
                         </a>
                     </div>
                 </div>
@@ -50,6 +129,7 @@ const KnowledgeCenter = () => {
       <ScrollToTopButton />
       <WhatsAppWidget />
     </div>
+      </>
   );
 };
 

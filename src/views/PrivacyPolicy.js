@@ -1,12 +1,55 @@
 import React from "react";
+import { Helmet } from 'react-helmet';
 import "./privacy-policy.css"; // Optional: Add custom CSS file for styling
 import ScrollToTopButton from "../components/common/ScrollToTopButton";
 import WhatsAppWidget from "../components/common/WhatsAppWidget";
 
 const PrivacyPolicy = () => {
   return (
+    <>
+      <Helmet>
+      <title>Privacy and Policy - Anantya.ai</title>
+      <meta name="robots" content="noindex,nofollow" />
+      <meta 
+        name="description" 
+        content="Safeguarding Your Data is Our Priority. Learn How Anantya.ai Ensures Your Privacy. Discover Our Privacy Policy Today." 
+      />
+      <meta property="og:title" content="Privacy and Policy - Anantya.ai" />
+      <meta property="og:type" content="Article" />
+      <meta 
+        property="og:description" 
+        content="Safeguarding Your Data is Our Priority. Learn How Anantya.ai Ensures Your Privacy. Discover Our Privacy Policy Today." 
+      />
+      <meta property="og:url" content="https://anantya.ai/privacy-and-policy" />
+      <meta property="og:site_name" content="anantya.ai" />
+      <meta property="og:image" content="" />
+      <link rel="canonical" href="https://anantya.ai/privacy-and-policy" />
+      <meta name="author" content="Anantya.ai" />
+      <script type="application/ld+json">
+        {`
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://anantya.ai/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Privacy and Policy",
+                "item": "https://anantya.ai/privacy-and-policy"
+              }
+            ]
+          }
+        `}
+      </script>
+    </Helmet>
     <div className="privacy-policy-page">    
-      <div className="container">
+      <div className="container pt-md-0 pt-5">
 
       <div className="content-wrapper">
         <div className="privacy-content mt-5">
@@ -89,6 +132,7 @@ const PrivacyPolicy = () => {
       <ScrollToTopButton />
       <WhatsAppWidget />
     </div>
+    </>
   );
 };
 

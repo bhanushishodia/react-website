@@ -1,7 +1,7 @@
 .features-card.style-5.box-1 {
     display: block;
     border: 1px solid #fdf5e6;
-    border-radius: 12px 12px 12px 60px;
+    border-radius: 30px;
     background: linear-gradient(180deg, #fdf5e6, #fff 40%, #fff)
     
 }
@@ -9,14 +9,14 @@
 .features-card.style-5.box-2 {
     display: block;
     border: 1px solid #e7f1f5;
-    border-radius: 12px 12px 12px 60px;
+    border-radius: 30px;
     background: linear-gradient(180deg, #e7f1f5, #fff 40%, #fff)
 }
 
 .features-card.style-5.box-3 {
     display: block;
     border: 1px solid rgb(251 232 218 / 73%);
-    border-radius: 12px 12px 12px 60px;
+    border-radius: 30px;
     background: linear-gradient(180deg, rgb(251 232 218 / 73%), #fff 40%, #fff)
 }
 .features-card  img{

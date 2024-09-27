@@ -1,6 +1,5 @@
 import React from 'react';
 import './Breadcrumb.css'; // Ensure the CSS file is in the same directory
-
 // Import default images if needed
 import defaultBackground from '../../assets/images/inner5_back.png';
 import defaultSideImage from '../../assets/images/integration.webp';

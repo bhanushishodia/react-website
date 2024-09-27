@@ -58,3 +58,16 @@ padding-left: 0;
 }.color-999 {
   color: #999 !important;
 }
+  .career-details-page.style-5 .jop-details .jop-info .tags a, .tags a {
+  font-weight: 600;
+  padding: 6px 15px;
+  margin: 0px 5px;
+  border-radius: 30px;
+  background-color: #edf5ff;
+  color: #157efb;
+  font-size: 14px;
+}
+.fa-check-circle{
+  color: #54ceeb;
+
+}

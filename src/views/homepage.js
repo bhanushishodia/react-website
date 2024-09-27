@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 
 import "./homepage.css";
 // import CustomHeader from '../components/common/CustomHeader'; // Importing the component
-
+import { Helmet } from 'react-helmet';
 import IncrediblePlatformCapabilities from "../components/common/IncrediblePlatformCapabilities";
 import AutomatedChats from "../components/common/AutomatedChats";
 import LogoCarousel from "../components/common/LogoCarousel";
@@ -70,7 +70,52 @@ const Homepage = () => {
     };
   }, []); // Empty dependency array means this effect runs once after initial <render></render>
   return (
+
+    
     <div className="main-content">
+      <div>
+      <Helmet>
+        <title>Conversational Engagement Platform for Businesses | Anantya.ai</title>
+        <meta name="robots" content="index,follow" />
+        <meta name="description" content="Anantya.ai is your Smartest Conversational Engagement Platform for Marketing, Commerce and Support & get every channel on a single platform." />
+        <meta name="keywords" content="conversational engagement platform, conversational ai platform for customer engagement, conversational customer engagement software, conversational engagement software, whatsApp official api provider, whatsApp business solutions, whatsapp business solution provider, whatsapp business api, whatsapp api, Whatsapp for Business, whatsapp bulk message sender, whatsapp bulk message software, bulk whatsapp sender software, mass whatsapp messaging, whatsapp bulk sms sender, whatsapp bulk sms software, api of whatsapp, Whatsapp Api for Business" />
+        <meta property="og:title" content="Conversational Engagement Platform for Businesses | Anantya.ai" />
+        <meta property="og:type" content="website" />
+        <meta property="og:description" content="Anantya.ai is your Smartest Conversational Engagement Platform for Marketing, Commerce and Support & get every channel on a single platform." />
+        <meta property="og:url" content="https://anantya.ai" />
+        <meta property="og:site_name" content="anantya.ai" />
+        <meta property="og:image" content="https://anantya.ai/assets/img/home/Home%20page%20Graphics.webp" />
+        <link rel="canonical" href="https://anantya.ai" />
+        <meta name="author" content="Anantya" />
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Anantya.ai",
+              "alternateName": "Conversational Engagement Platform for Businesses | Anantya.ai",
+              "url": "https://anantya.ai/",
+              "logo": "https://anantya.ai/assets/img/logo.webp",
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+971565480273",
+                "contactType": "sales",
+                "areaServed": ["AE","SA","BH"],
+                "availableLanguage": "en"
+              },
+              "sameAs": [
+                "https://www.facebook.com/anantyaai",
+                "https://www.instagram.com/anantya.ai",
+                "https://www.youtube.com/@Anantyaai",
+                "https://www.linkedin.com/company/anantya-ai",
+                "https://www.pinterest.com/anantyaai"
+              ]
+            }
+          `}
+        </script>
+      </Helmet>
+      
+    </div>
       {/* section1 */}
       <div className="parent-wrapper">
         <div className="container">
@@ -130,14 +175,11 @@ const Homepage = () => {
                   </div>
 
                   <div className="btns mt-30">
-                    <button
-                      className="btn me-md-2 bg-green text-white btn-color"
-                      data-bs-toggle="modal"
-                      data-bs-target="#myModal"
-                    >
-                      <i className="fab fa-whatsapp me-2 pe-2 border-end"></i>
-                      Try Anantya.ai
-                    </button>
+                  <a href="/contact" className="btn me-md-2 bg-green text-white btn-color">
+  <i className="fab fa-whatsapp me-2 pe-2 border-end"></i>
+  Try Anantya.ai
+</a>
+
                     <a
                       href="https://calendly.com/info-w0m/30min?month=2024-02"
                       target="_blank"

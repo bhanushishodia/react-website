@@ -1,8 +1,9 @@
 // src/views/LiveAgentAssistant.js
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import ScrollToTopButton from "../components/common/ScrollToTopButton";
 import WhatsAppWidget from "../components/common/WhatsAppWidget";
-import productivityImage from '../assets/images/supercharge-your-team\'s-productivity.webp'; // Adjust path as needed
+import productivityImage from '../assets/images/supercharge-your-teams-productivity.webp'; // Adjust path as needed
 import noCardIcon from '../assets/images/No-card-icon.svg'; // Adjust path as needed
 import helpAgent from '../assets/images/help-agents-create-better-customer.webp'; // Adjust path as needed
 import ctaImage from '../assets/images/cta/home-pagecta.jpg'; // Adjust the path as needed
@@ -12,10 +13,89 @@ import agentIcon from "../assets/images/icons/track-agent-performance.png"; // A
 import organizeServiceIcon from "../assets/images/icons/organize-teams.png"; // Adjust the path as per your project structure
 import manageIcon from "../assets/images/icons/manage-contacts.png"; // Adjust the path as per your projec
 const LiveAgentAssistant = () => {
-  return (
-    <div>       
-     <div className="container"> 
-      <div className="content py-md-4 py-0">
+  return (  
+    <div>     
+       <Helmet>
+      <title>Live Agent Support on Whatsapp | Assistant for Customer Service</title>
+      <meta name="keywords" content="live agent support,live chat integration" />
+      <meta name="robots" content="index,follow" />
+      <meta name="description" content="Enhance your customer service with Anantya's Whatsapp live agent support. Get real-time assistance and advanced features for exceptional service." />
+      <meta property="og:title" content="Live Agent Support on Whatsapp | Assistant for Customer Service" />
+      <meta property="og:type" content="article" />
+      <meta property="og:description" content="Enhance your customer service with Anantya's Whatsapp live agent support. Get real-time assistance and advanced features for exceptional service." />
+      <meta property="og:url" content="https://anantya.ai/live-agent-support" />
+      <meta property="og:site_name" content="anantya.ai" />
+      <meta property="og:image" content="https://anantya.ai/assets/img/live-agent/supercharge-your-team's-productivity.webp" />
+      <link rel="canonical" href="https://anantya.ai/live-agent-support" />
+      <meta name="author" content="Anantya" />
+
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Anantya.ai",
+          "alternateName": "Conversational Engagement Platform for Businesses | Anantya.ai",
+          "url": "https://anantya.ai/",
+          "logo": "https://anantya.ai/assets/img/logo.webp",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+971565480273",
+            "contactType": "sales",
+            "areaServed": ["AE", "SA", "BH"],
+            "availableLanguage": "en"
+          },
+          "sameAs": [
+            "https://www.facebook.com/anantyaai",
+            "https://www.instagram.com/anantya.ai",
+            "https://www.youtube.com/@Anantyaai",
+            "https://www.linkedin.com/company/anantya-ai",
+            "https://www.pinterest.com/anantyaai"
+          ]
+        })}
+      </script>
+
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebPage",
+              "name": "Live Agent Support on Whatsapp | Assistant for Customer Service",
+              "description": "Enhance your customer service with Anantya's Whatsapp live agent support. Get real-time assistance and advanced features for exceptional service."
+            },
+            {
+              "@type": "WebSite",
+              "name": "Anantya",
+              "alternateName": "anantya.ai",
+              "url": "https://anantya.ai/"
+            }
+          ]
+        })}
+      </script>
+
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://anantya.ai"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Live Agent Support",
+              "item": "https://anantya.ai/live-agent-support"
+            }
+          ]
+        })}
+      </script>
+    </Helmet>  
+     <div className="container py-5 mt-5"> 
+      <div className="content">
         <div className="row align-items-center">
           <div className="col-lg-6 text-black mt-20 text-md-start text-center">
             <div className="info text-black pe-md-4">

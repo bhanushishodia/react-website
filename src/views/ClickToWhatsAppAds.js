@@ -10,11 +10,83 @@ import VisibilityImg from "../assets/images/increase-the-visibility-of-your.webp
 import clickToWhatsAppImg from "../assets/images/cta/click-to-whatsapp.png"; // Adjust the path according to your folder structure
 import attractAndRetainImg from "../assets/images/attract-and-retain-customers.webp"; // Adjust the path as necessary
 import waLinkImg from "../assets/images/wa.link_3dzezc.png"; // Adjust the path as necessary
+import { Helmet } from 'react-helmet';
 const ClickToWhatsAppAds = () => {
   return (
     <div>
-      <div className="container">
-        <div className="content py-md-5 py-0">
+      <Helmet>
+      <title>Click-to-Whatsapp Ads | Experience Real-Time Connection</title>
+      <meta name="keywords" content="Click to Whatsapp Ads" />
+      <meta name="robots" content="index,follow" />
+      <meta name="description" content="Increase 5x ROI with click-to-WhatsApp ads, Run Click-to-WhatsApp ads on Facebook and Instagram to invite people for a chat." />
+      <meta property="og:title" content="Click-to-Whatsapp Ads | Experience Real-Time Connection" />
+      <meta property="og:type" content="article" />
+      <meta property="og:description" content="Increase 5x ROI with click-to-WhatsApp ads, Run Click-to-WhatsApp ads on Facebook and Instagram to invite people for a chat." />
+      <meta property="og:url" content="https://anantya.ai/click-to-whatsapp-ads" />
+      <meta property="og:site_name" content="anantya.ai" />
+      <meta property="og:image" content="https://anantya.ai/assets/img/whatsapp-support/offer-support-at-scale-with.webp" />
+      <link rel="canonical" href="https://anantya.ai/click-to-whatsapp-ads" />
+      <meta name="author" content="Anantya" />
+      
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Anantya.ai",
+          "alternateName": "Conversational Engagement Platform for Businesses | Anantya.ai",
+          "url": "https://anantya.ai/",
+          "logo": "https://anantya.ai/assets/img/logo.webp",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+971565480273",
+            "contactType": "sales",
+            "areaServed": ["AE", "SA", "BH"],
+            "availableLanguage": "en"
+          },
+          "sameAs": [
+            "https://www.facebook.com/anantyaai",
+            "https://www.instagram.com/anantya.ai",
+            "https://www.youtube.com/@Anantyaai",
+            "https://www.linkedin.com/company/anantya-ai",
+            "https://www.pinterest.com/anantyaai"
+          ]
+        })}
+      </script>
+
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org/",
+          "@type": "WebPage",
+          "@id": "#WebPage",
+          "url": "https://anantya.ai/click-to-whatsapp-ads",
+          "name": "Click-to-Whatsapp Ads | Experience Real-Time Connection"
+        })}
+      </script>
+
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://anantya.ai"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Click-to-Whatsapp Ads | Experience Real-Time Connection",
+              "item": "https://anantya.ai/click-to-whatsapp-ads"
+            }
+          ]
+        })}
+      </script>
+      </Helmet>
+
+      <div className="container py-5 mt-5">
+        <div className="content ">
           <div className="row align-items-center">
             <div className="col-lg-6 text-black mt-20 text-lg-start text-center">
               <div className="info text-black pe-md-5">
@@ -69,7 +141,7 @@ const ClickToWhatsAppAds = () => {
               <div className="row row-cols-1 row-cols-md-3 g-4 pb-5 px-md-0 px-3">
                 <div className="col">
                   <a
-                    href="contact.html"
+                    href="contact"
                     className="features-card style-5 box-1 h-100"
                   >
                     <div className="icon">
@@ -86,7 +158,7 @@ const ClickToWhatsAppAds = () => {
                 </div>
                 <div className="col">
                   <a
-                    href="contact.html"
+                    href="contact"
                     className="features-card style-5 box-2 h-100"
                   >
                     <div className="icon">
@@ -106,7 +178,7 @@ const ClickToWhatsAppAds = () => {
                 </div>
                 <div className="col">
                   <a
-                    href="contact.html"
+                    href="contact"
                     className="features-card style-5 box-3 h-100"
                   >
                     <div className="icon">
@@ -127,7 +199,7 @@ const ClickToWhatsAppAds = () => {
               </div>
             </div>
             <a
-              href="contact.html"
+              href="contact"
               className="btn bg-green text-white "
               target="_blank"
               rel="noopener noreferrer"
@@ -172,7 +244,7 @@ const ClickToWhatsAppAds = () => {
       </section>
       <div className="container py-5">
         <a
-          href="/campaign-request-demo.html"
+          href="/campaign-request-demo"
           target="_blank"
           rel="noopener noreferrer"
         >

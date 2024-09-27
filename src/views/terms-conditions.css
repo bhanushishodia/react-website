@@ -14,6 +14,11 @@ h2 {
     font-weight: 600;
     margin-bottom: 20px;
 }
+.terms-conditions-page p {
+    text-align: left;
+
+   
+}
 
 .terms-conditions-page .terms-header {
     text-align: left;
@@ -33,6 +38,10 @@ h3 {
 .terms-conditions-page
 a {
     color: #007bff;
+}
+.terms-conditions-page
+li {
+  text-align: left;
 }
 
 

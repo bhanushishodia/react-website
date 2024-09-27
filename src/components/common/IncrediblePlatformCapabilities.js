@@ -70,7 +70,7 @@ const IncrediblePlatformCapabilities = () => {
         "With the API, offer Live Chat on as many devices as you need, all with the same phone number.",
       ],
       videoSrc: video3,
-      link: "/channels/whatsapp-business-api",
+      link: "/whatsapp-business-api",
       pClassName: "scrollAnimationSection_3",
       h3ClassName: "section-heading_3",
       linkText: "Explore Live Chat",
@@ -143,6 +143,7 @@ const IncrediblePlatformCapabilities = () => {
                     loop
                   >
                     <source src={section.videoSrc} type="video/mp4" />
+                    <track src="captions.vtt" kind="captions" srclang="en" label="English"/>
                     Your browser does not support the video tag.
                   </video>
                 </div>
@@ -196,6 +197,7 @@ const IncrediblePlatformCapabilities = () => {
                     loop
                   >
                     <source src={section.videoSrc} type="video/mp4" />
+                    <track src="captions.vtt" kind="captions" srclang="en" label="English"/>
                     Your browser does not support the video tag.
                   </video>
                 </div>
@@ -205,9 +207,7 @@ const IncrediblePlatformCapabilities = () => {
         </div>
       
       ))}
-      <div className="progress-container">
-        <div className="progress-bar" style={{ width: `${progress}%` }}></div>
-      </div>
+      
     </section>
   );
 };

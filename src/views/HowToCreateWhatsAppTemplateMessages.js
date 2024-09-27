@@ -1,176 +1,174 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import InnerHeader from '../components/common/InnerHeader';
-import stepImg1 from '../assets/images/fill-out-the-form.webp'; // Adjust the path based on your folder structure
-import stepImg2 from '../assets/images/set-a-strong-password.webp';
+import submitTemplateMessageImage from "../assets/images/submit-a-new-whatsApp-template-message.webp";
+import customizeTemplateMessageImage from "../assets/images/customize-the-template-message.webp";
+import templateMessageImage from "../assets/images/template-message.webp";
+import templateApprovalImage from "../assets/images/template-message-for-approval.webp";
 
 import './knowledgecenter.css'; // Import the CSS file
 import ScrollToTopButton from "../components/common/ScrollToTopButton";
 import WhatsAppWidget from "../components/common/WhatsAppWidget";
 const TemplateMessages = () => {
   return (
+    <>
+     <Helmet>
+            <title>How to Create Your Whatsapp Template Messages in Anantya.ai | Knowledge Center</title>
+            <meta name="robots" content="index,follow" />
+            <meta name="description" content="Learn all the important steps to make WhatsApp Template Messages and get them approved by WhatsApp in a single guide!" />
+            <meta property="og:title" content="How to Create Your Whatsapp Template Messages in Anantya.ai | Knowledge Center" />
+            <meta property="og:type" content="article" />
+            <meta property="og:description" content="Learn all the important steps to make WhatsApp Template Messages and get them approved by WhatsApp in a single guide!" />
+            <meta property="og:url" content="https://anantya.ai/how-to-create-whatsapp-templete-messages-in-anantya.ai" />
+            <meta property="og:site_name" content="anantya.ai" />
+            <meta property="og:image" content="https://anantya.ai/assets/img/submit-a-new-whatsApp-template-message.webp" />
+            <link rel="canonical" href="https://anantya.ai/how-to-create-whatsapp-templete-messages-in-anantya.ai" />
+            <meta name="author" content="Anantya.ai" />
+
+            {/* JSON-LD Schema Markup */}
+            <script type="application/ld+json">
+                {JSON.stringify({
+                    "@context": "https://schema.org",
+                    "@type": "WebPage",
+                    "name": "How to Create Your Whatsapp Template Messages in Anantya.ai | Knowledge Center",
+                    "description": "Learn all the important steps to make WhatsApp Template Messages and get them approved by WhatsApp in a single guide!",
+                    "url": "https://anantya.ai/how-to-create-whatsapp-templete-messages-in-anantya.ai"
+                })}
+            </script>
+        </Helmet>
     <div className="page-content">
     <div>
       <InnerHeader />
     </div>
     <main className="career-details-page style-5 pt-100">
     <section className="jop-details pb-100">
-      <div className="container">
+      <div className="container py-5">
         <div className="content">
           <div className="row">
           <div className="col-lg-8">
-          <div className="jop-info">
-            <div className="tags mb-40">
-              <a href="#">Auto assign chat</a>
-              <a href="#">Agent Sublogin</a>
-            </div>
-            <h3 className="main-title mb-10">
-              How to Launch Your First Campaign - Step-by-Step Guide
-            </h3>
-            <p className="pb-40 color-999">
-              By <a href="#" className="color-000">Deepika Yadav</a>
-            </p>
+      <div className="jop-info text-start">
+        <div className="tags mb-40">
+          <a href="/contact">Auto assign chat</a>
+          <a href="/contact">Agent Sublogin</a>
+        </div>
+        <h3 className="main-title mb-10">
+          How to Create Your First WhatsApp Template Messages in Anantya.ai:
+          Step-by-Step Guide
+        </h3>
+        <p className="pb-40 color-999">
+    By <span className="color-000">Deepika Yadav</span>
+</p>
 
-            <div className="text d-flex mb-20">
-              <span className="icon color-blue5 me-2 flex-shrink-0">
-                <i className="fas fa-check-circle"></i>
-              </span>
-              <p>
-                Launching your very first campaign can be both exciting and a bit overwhelming.
-              </p>
-            </div>
-            <div className="text d-flex mb-20">
-              <span className="icon color-blue5 me-2 flex-shrink-0">
-                <i className="fas fa-check-circle"></i>
-              </span>
-              <p>
-                Whether you're trying to promote a product, raise awareness for a cause, or spread the word about an event, here is a step-by-step guide to launch your first campaign.
-              </p>
-            </div>
 
-            <h6 className="mt-40 mb-20">Step 1: Set Up Your WhatsApp Broadcast Campaign</h6>
-            <div className="text d-flex mb-20">
-              <span className="icon color-blue5 me-2 flex-shrink-0">
-                <i className="fas fa-check-circle"></i>
-              </span>
-              <p><strong className="color-000">Access the Campaigns Page:</strong> Log in to Anantya.ai Panel and navigate to the Campaigns Page.</p>
-            </div>
-            <div className="text d-flex mb-20">
-              <span className="icon color-blue5 me-2 flex-shrink-0">
-                <i className="fas fa-check-circle"></i>
-              </span>
-              <p><strong className="color-000">Create a New Campaign:</strong> Look for the "Add Campaign" button located at the top right corner of the page. Click on it to start a new campaign.</p>
-            </div>
-            <div className="text d-flex mb-20">
-              <span className="icon color-blue5 me-2 flex-shrink-0">
-                <i className="fas fa-check-circle"></i>
-              </span>
-              <p><strong className="color-000">Channel and Campaign Name:</strong> Choose a meaningful channel name that identifies the purpose of your campaign. Then, give your campaign a clear and concise name that reflects its content.</p>
-            </div>
-            <div className="text-center">
-              <img src="assets/img/broadcast-campaign.webp" className="img-fluid pb-3 mx-auto" alt="Broadcast Campaign" />
-            </div>
-            <div className="text d-flex mb-20">
-              <span className="icon color-blue5 me-2 flex-shrink-0">
-                <i className="fas fa-check-circle"></i>
-              </span>
-              <p><strong className="color-000">Select a Template:</strong> Choose a pre-approved template for your campaign.</p>
-            </div>
-            <div className="text d-flex mb-20">
-              <span className="icon color-blue5 me-2 flex-shrink-0">
-                <i className="fas fa-check-circle"></i>
-              </span>
-              <p>Pre-approved Template Messages are the different message templates that you got approved from WhatsApp according to different use cases. This includes Images, Text, Videos, PDFs, CTAs, and Quick Replies.</p>
-            </div>
-            <div className="text d-flex mb-20">
-              <span className="icon color-blue5 me-2 flex-shrink-0">
-                <i className="fas fa-check-circle"></i>
-              </span>
-              <p>These messages can be sent to both Active users (who are in the 24 hours window) and Inactive users.</p>
-            </div>
-            <div className="text d-flex mb-20">
-              <span className="icon color-blue5 me-2 flex-shrink-0">
-                <i className="fas fa-check-circle"></i>
-              </span>
-              <p><strong className="color-000">Import or Download Contacts:</strong> You have two options for adding contacts. You can import a list of contacts from a file, or you can use a sample format provided by the platform. This list should include the phone numbers of the recipients.</p>
-            </div>
-            <div className="text d-flex mb-20">
-              <span className="icon color-blue5 me-2 flex-shrink-0">
-                <i className="fas fa-check-circle"></i>
-              </span>
-              <p><strong className="color-000">Set Up Campaign:</strong> Follow the steps to configure your WhatsApp Broadcast campaign. This may include scheduling the send time, setting up any necessary personalization, and crafting the content of your message.</p>
-            </div>
+        <div className="text d-flex mb-20">
+          <span className="icon color-blue5 me-2 flex-shrink-0">
+            <i className="fas fa-check-circle"></i>
+          </span>
+          <p>
+            WhatsApp Template Messages is a predefined message that you can use
+            multiple times to connect with your audience once they've opted-in
+            to receive a message from you. To send these templates to users,
+            businesses need to get approval from WhatsApp.
+          </p>
+        </div>
+        <div className="text d-flex mb-20">
+          <span className="icon color-blue5 me-2 flex-shrink-0">
+            <i className="fas fa-check-circle"></i>
+          </span>
+          <p>
+            Usually, it takes between 1 minute to 24 hours for WhatsApp template
+            messages to be approved.
+          </p>
+        </div>
+        <div className="text d-flex mb-20">
+          <span className="icon color-blue5 me-2 flex-shrink-0">
+            <i className="fas fa-check-circle"></i>
+          </span>
+          <p>
+            WhatsApp Template Messages can be in formats like Text, Image, File,
+            or Video. Every format must include Text, which is necessary. This
+            means sending only Images, Files, or Videos as Template Messages is
+            not allowed.
+          </p>
+        </div>
 
-            <h6 className="mt-40 mb-20">Step 2: Validate and Review Contacts</h6>
-            <div className="text d-flex mb-20">
-              <span className="icon color-blue5 me-2 flex-shrink-0">
-                <i className="fas fa-check-circle"></i>
-              </span>
-              <p><strong className="color-000">Select Attributes:</strong> This step involves identifying attributes or fields in your contact list that you want to use for personalization. This could include names, locations, or any other relevant information.</p>
-            </div>
-            <div className="text d-flex mb-20">
-              <span className="icon color-blue5 me-2 flex-shrink-0">
-                <i className="fas fa-check-circle"></i>
-              </span>
-              <p><strong className="color-000">Validate Mapping:</strong> Ensure that the attributes you've selected match the corresponding fields in your contact list. This step helps avoid errors in personalization.</p>
-            </div>
-            <div className="text d-flex mb-20">
-              <span className="icon color-blue5 me-2 flex-shrink-0">
-                <i className="fas fa-check-circle"></i>
-              </span>
-              <p><strong className="color-000">Check Validity:</strong> The platform will display the number of valid and invalid contacts in your list. Review this information to ensure your message reaches the intended recipients.</p>
-            </div>
-            <div className="text-center">
-              <img src="assets/img/validate-and-review-contacts.webp" className="img-fluid pb-3 mx-auto" alt="Validate and Review Contacts" />
-            </div>
+        <h3 className="main-title mb-10">
+          How to submit a New WhatsApp Template Message?
+        </h3>
 
-            <h6 className="mt-40 mb-20">Step 3: Review and Submit</h6>
-            <div className="text d-flex mb-20">
-              <span className="icon color-blue5 me-2 flex-shrink-0">
-                <i className="fas fa-check-circle"></i>
-              </span>
-              <p>The platform might provide a mechanism to determine the likelihood of recipients engaging with your message. This helps you assess the potential effectiveness of your campaign.</p>
-            </div>
-            <div className="text d-flex mb-20">
-              <span className="icon color-blue5 me-2 flex-shrink-0">
-                <i className="fas fa-check-circle"></i>
-              </span>
-              <p><strong className="color-000">Submit Your Campaign:</strong> After reviewing all the previous steps and ensuring everything is set up correctly, click on the "Submit" button to finalize your campaign setup.</p>
-            </div>
-            <div className="text-center">
-              <img src="assets/img/review-and-submit.webp" className="img-fluid pb-3 mx-auto" alt="Review and Submit" />
-            </div>
+        <h6 className="mt-4 mb-20">
+          Step 1- Navigate to the 'Templates' section on your Anantya.ai Panel.
+          click on the “Add Template Message” button on the top right corner.
+        </h6>
 
-            <h6 className="mt-40 mb-20">Step 4: Monitor and Optimize</h6>
-            <div className="text d-flex mb-20">
-              <span className="icon color-blue5 me-2 flex-shrink-0">
-                <i className="fas fa-check-circle"></i>
-              </span>
-              <p><strong className="color-000">Monitor Campaign Performance:</strong> Once your campaign is live, monitor its performance through the campaign management platform. Track metrics like open rates, click-through rates, and responses.</p>
-            </div>
-            <div className="text d-flex mb-20">
-              <span className="icon color-blue5 me-2 flex-shrink-0">
-                <i className="fas fa-check-circle"></i>
-              </span>
-              <p><strong className="color-000">Optimize Based on Feedback:</strong> Based on the performance data and recipient feedback, make necessary adjustments to optimize future campaigns for better results.</p>
-            </div>
+        <div className="text-center">
+          <img
+            src={submitTemplateMessageImage}
+            className="img-fluid pb-3 mx-auto"
+            alt="Submit Template"
+          />
+        </div>
 
-            <h6 className="mt-40 mb-20">Conclusion</h6>
-            <div className="text d-flex mb-20">
-              <span className="icon color-blue5 me-2 flex-shrink-0">
-                <i className="fas fa-check-circle"></i>
-              </span>
-              <p>Launching your first campaign can be an exciting journey. By following these steps, you’ll be well-equipped to create and manage successful campaigns that drive engagement and achieve your goals.</p>
-            </div>
-            <div className="text d-flex mb-20">
-              <span className="icon color-blue5 me-2 flex-shrink-0">
-                <i className="fas fa-check-circle"></i>
-              </span>
-              <p>If you have any further questions or need assistance, don’t hesitate to reach out to our support team for help.</p>
-            </div>
-          </div>
+        <h6 className="mt-4 mb-20">Step 2- Customize the Template Message</h6>
+        <div className="text d-flex mb-20">
+          <span className="icon color-blue5 me-2 flex-shrink-0">
+            <i className="fas fa-check-circle"></i>
+          </span>
+          <p>
+            You can start creating a template from scratch or choose a
+            pre-approved Template message and submit it for approval.
+          </p>
+        </div>
+
+        <div className="text-center">
+          <img
+            src={customizeTemplateMessageImage}
+            className="img-fluid pb-3 mx-auto"
+            alt="Customize Template"
+          />
+        </div>
+
+        <h6 className="mt-4 mb-20">
+          Fill all the fields and the format of the input text to create a new
+          template–
+        </h6>
+        <div className="text d-flex">
+          <span className="icon color-blue5 me-2 flex-shrink-0">
+            <i className="fas fa-check-circle"></i>
+          </span>
+          <p>1. Begin by choosing the communication channel.</p>
+        </div>
+        {/* Add more steps here like in the original HTML */}
+        <div className="text-center">
+          <img
+            src={templateMessageImage}
+            className="img-fluid pb-3 mx-auto"
+            alt="Template Message"
+          />
+        </div>
+
+        <h6 className="mt-4 mb-20">
+          Step 3- Submit Template Message for Approval
+        </h6>
+        <div className="text-center">
+          <img
+            src={templateApprovalImage}
+            className="img-fluid pb-3 mx-auto"
+            alt="Template Approval"
+          />
+        </div>
+
+        <div className="text d-flex mb-20">
+          <span className="icon color-blue5 me-2 flex-shrink-0">
+            <i className="fas fa-check-circle"></i>
+          </span>
+          <p>
+            Usually, WhatsApp Template Messages are approved within a time frame
+            of 1 minute to 24 hours!
+          </p>
+        </div>
+      </div>
            </div>
-      
-         
             <div className="col-lg-4">
               <div className="summary-card">
                 <h6 className="mb-20 pb-4 border-bottom border-1 brd-gray">Anantya Platform</h6>
@@ -189,11 +187,12 @@ const TemplateMessages = () => {
         </div>
       </div>
     </section>
-  </main>
+    </main>
     {/* Add more sections as needed */}
     <ScrollToTopButton />
       <WhatsAppWidget />
-  </div>
+    </div>
+   </>
   );
 };
 

@@ -12,6 +12,27 @@
   /* Ensures the header stays on top of other content */
 }
 
+@media (min-width: 992px) {
+  .header .dropdown-menu {
+    position: absolute;
+    top: 49px !important; /* Ensure no gap is created */
+    left: -150px !important;
+    display: block; /* Keep the dropdown visible */
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.2s ease, visibility 0.2s ease;
+  }
+  @media (min-width: 992px) {
+    .header .dropdown-menu.custom-dropdown {
+      left: -299px !important; /* Increase the left value to move it more to the left */
+    }
+  }
+
+  .header .dropdown:hover .dropdown-menu {
+    visibility: visible;
+    opacity: 1;
+  }
+}
 
 .custom-divider {
   position: relative;
@@ -22,8 +43,8 @@
   margin-bottom: 13px;
   display: block;
   width: 100%;
-  border-bottom: 1px solid rgba(153, 153, 153, .2);
-  transition: .3s;
+  border-bottom: 1px solid rgba(153, 153, 153, 0.2);
+  transition: 0.3s;
 }
 .subline {
   font-size: 11px;
@@ -55,7 +76,7 @@
 .dropdown-toggle::after {
   position: relative;
   top: 3px;
-  opacity: .8;
+  opacity: 0.8;
   content: "\f078";
   font-weight: 900;
   font-family: "Font Awesome 5 pro";
@@ -72,7 +93,6 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
-
 }
 
 .top-navbar {
@@ -83,17 +103,17 @@
 
 .nav-scroll {
   background: #fff !important;
-  -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, .1);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, .1);
+  -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   padding: 0;
   position: fixed !important;
   top: -100px !important;
   left: 0;
   width: 100%;
-  -webkit-transition: -webkit-transform .5s;
-  transition: transform .5s;
-  -o-transition: transform .5s;
-  transition: transform .5s, -webkit-transform .5s;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  -o-transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
   -webkit-transform: translateY(100px);
   -ms-transform: translateY(100px);
   transform: translateY(100px);
@@ -139,7 +159,6 @@
   padding: 10px 25px;
   font-weight: 500;
   font-size: 14px;
-
 }
 
 .button a:hover {
@@ -170,15 +189,14 @@
 /* Customize the dropdown menu appearance */
 .header .dropdown-menu {
   border: none;
-  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, .0666666667);
-  box-shadow: 0 0 20px rgba(0, 0, 0, .0666666667);
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.0666666667);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.0666666667);
   padding: 15px 0;
   background: #fff;
   border: 1px solid #ced3d9;
   min-width: auto;
   border-radius: 15px;
   top: 100%;
-
 }
 
 .header .dropdown-item img {
@@ -186,7 +204,7 @@
   /* Adjust if necessary */
   width: 30px;
   /* Increase the width to make the image larger */
- 
+
   vertical-align: middle;
   /* Aligns the image vertically with the text */
 }
@@ -197,13 +215,13 @@
   border: 1px solid #ced3d9;
   padding: 15px 0;
   border-radius: 15px;
-  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, .0666666667);
-  box-shadow: 0 0 20px rgba(0, 0, 0, .0666666667);
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.0666666667);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.0666666667);
   top: 100%;
 }
 
 .dropdown-item {
-  padding: .25rem 0.25rem;
+  padding: 0.25rem 0.25rem;
   clear: both;
   font-size: 14px !important;
 }
@@ -213,10 +231,29 @@
   flex-wrap: nowrap;
 }
 
-#integrationDropdown .dropdown-menu {
-  display: block;
-  left: -205px;
-  position: absolute;
-  margin-top: 0;
+.internalpage_link {
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 0;
+  background: 0 0;
+  color: #5dc4eb;
+  margin: 5px 0 5px 5px;
+  text-transform: capitalize;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
 
+.div-block-277 {
+  height: 45px;
+  color: #5dc4eb;
+  border-right: 1px solid var(--light-grey);
+  background-color: #f3f3f3;
+  justify-content: flex-start;
+  align-self: auto;
+  align-items: center;
+  margin-top: 20px;
+  padding-left: 35px;
+  transition: 0.2s ease-out;
+  display: flex;
 }

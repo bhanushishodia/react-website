@@ -8,10 +8,11 @@ const InnerHeader = () => {
       className="inner-header style-5">
       <div className="container">
         <div className="content">
-          <div className="links">
-            <a href="#">Home</a>
-            <a href="#">Anantya Support</a>
+        <div className="links">
+          <a href="/homepage">Home</a>
+         <a href="/knowledge-center">Anantya Support</a>
           </div>
+
           <h2>Resources</h2>
           <img
             src={integrationImg}

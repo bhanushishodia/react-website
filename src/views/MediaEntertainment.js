@@ -1,22 +1,36 @@
-    // src/views/MediaEntertainment.js
-    import React, { useState } from "react";
-    import ScrollToTopButton from "../components/common/ScrollToTopButton";
-    import WhatsAppWidget from "../components/common/WhatsAppWidget";
-    import LTRSlider from "../components/common/LTRSlider";
-    import RTLSlider from "../components/common/RTLSlider";
-    import FAQSection from "../components/common/FAQSection";
-    import LogoCarousel from "../components/common/LogoCarousel";
-    import DownloadEbookSection from "../components/common/DownloadEbookSection"; // Import the new component
-    import downloadEbookImage from "../assets/images/download-ebook.png"; // Adjust path as needed
-    import whatsappScannerImg from '../assets/images/wa.link_3dzezc.png';
-    import "./EcommerceRetail.css"; // Import your CSS file if needed
-    import transformingEngagementImg from '../assets/images/transforming-engagement.webp'; // Adjust the path if necessary
-    import defaultImage from "../assets/images/drive-targeted-ad-campaigns.webp";
-    import hoverImage1 from "../assets/images/drive-targeted-ad-campaigns.webp";
-    import hoverImage2 from "../assets/images/marketing-&-promotions.webp";
-    import easySubscriptionImage from "../assets/images/easy-subscription-management.webp";
-    import eventUpdatesImage from "../assets/images/event-updates-and-reminders.webp";
+// src/views/MediaEntertainment.js
+import React, { useState } from "react";
+import { Helmet } from "react-helmet";
+import ScrollToTopButton from "../components/common/ScrollToTopButton";
+import WhatsAppWidget from "../components/common/WhatsAppWidget";
+import LTRSlider from "../components/common/LTRSlider";
+import RTLSlider from "../components/common/RTLSlider";
+import FAQSection from "../components/common/FAQSection";
+import LogoCarousel from "../components/common/LogoCarousel";
+import DownloadEbookSection from "../components/common/DownloadEbookSection"; // Import the new component
+import downloadEbookImage from "../assets/images/download-ebook.png"; // Adjust path as needed
+import whatsappScannerImg from "../assets/images/wa.link_3dzezc.png";
+import "./EcommerceRetail.css"; // Import your CSS file if needed
+import transformingEngagementImg from "../assets/images/transforming-engagement.webp"; // Adjust the path if necessary
+import defaultImage from "../assets/images/drive-targeted-ad-campaigns.webp";
+import hoverImage1 from "../assets/images/drive-targeted-ad-campaigns.webp";
+import hoverImage2 from "../assets/images/marketing-&-promotions.webp";
+import easySubscriptionImage from "../assets/images/easy-subscription-management.webp";
+import eventUpdatesImage from "../assets/images/event-updates-and-reminders.webp";
+import pdfFile from "../assets/pdf/Media-Entertainment-Usecase.pdf";
+
 const MediaEntertainment = () => {
+  const submitFormAndOpenPDF = (event) => {
+    // Prevent the default form submission behavior
+    event.preventDefault();
+
+    // Perform form submission (assuming you have a form with the id 'marketing')
+    document.getElementById("marketing").submit();
+
+    // Open PDF in a new tab
+
+    window.open(pdfFile, "_blank");
+  };
   const homeFAQs = [
     {
       question:
@@ -98,35 +112,198 @@ const MediaEntertainment = () => {
   };
   return (
     <div>
-    <div className="container">
-            <div className="content py-md-5 py-0">
-                <div className="row align-items-center">
-                    <div className="col-lg-6 text-black mt-20 text-lg-start text-center">
-                        <div className="info text-black pe-md-5">
-                      
-                            <h1 className="heading">Connect Better with Conversational AI!</h1>
+      <Helmet>
+        <title>
+          WhatsApp API & Chatbot for Media and Entertainment Industry
+        </title>
+        <meta name="robots" content="index,follow" />
+        <meta
+          name="description"
+          content="Leverage WhatsApp Chatbot power to engage audiences in the media and entertainment industry. Anantya.ai enables seamless communication and content distribution."
+        />
+        <meta
+          property="og:title"
+          content="WhatsApp API & Chatbot for Media and Entertainment Industry"
+        />
+        <meta property="og:type" content="article" />
+        <meta
+          property="og:description"
+          content="Leverage WhatsApp Chatbot power to engage audiences in the media and entertainment industry. Anantya.ai enables seamless communication and content distribution."
+        />
+        <meta
+          property="og:url"
+          content="https://anantya.ai/media-entertainment-industry"
+        />
+        <meta property="og:site_name" content="anantya.ai" />
+        <meta
+          property="og:image"
+          content="https://anantya.ai/assets/img/media/transforming-engagement.webp"
+        />
+        <link
+          rel="canonical"
+          href="https://anantya.ai/media-entertainment-industry"
+        />
+        <meta name="author" content="Anantya" />
 
-                            <p className="mt-20 text-black">Get people excited about your new releases, suggest shows that match their interests, and attract more subscribers by having meaningful conversations with your audience at every stage with WhatsApp Business API.</p>
-                            
-                            <div className="btns mt-4">
-                                <a href="book-a-demo" className="btn login_button" data-bs-toggle="modal" data-bs-target="#myModal">
-                                    
-                                Sign Up for FREE
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-lg-6">
-                        <div className="wow zoomIn" data-wow-delay="0.2s" style={{ visibility: 'visible', animationDelay: '0.2s', animationName: 'zoomIn' }}>
-                            <img src={transformingEngagementImg} className="img-fluid" alt="Transform Education with WhatsApp APIs" />
-                        </div>
-                    </div>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            name: "Anantya.ai",
+            alternateName:
+              "Conversational Engagement Platform for Businesses | Anantya.ai",
+            url: "https://anantya.ai/",
+            logo: "https://anantya.ai/assets/img/logo.webp",
+            contactPoint: {
+              "@type": "ContactPoint",
+              telephone: "+971565480273",
+              contactType: "sales",
+              areaServed: ["AE", "SA", "BH"],
+              availableLanguage: "en",
+            },
+            sameAs: [
+              "https://www.facebook.com/anantyaai",
+              "https://www.instagram.com/anantya.ai",
+              "https://www.youtube.com/@Anantyaai",
+              "https://www.linkedin.com/company/anantya-ai",
+              "https://www.pinterest.com/anantyaai",
+            ],
+          })}
+        </script>
+
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "WebPage",
+                name: "WhatsApp API & Chatbot for Media and Entertainment Industry",
+                description:
+                  "Leverage WhatsApp Chatbot power to engage audiences in the media and entertainment industry. Anantya.ai enables seamless communication and content distribution.",
+              },
+              {
+                "@type": "WebSite",
+                name: "Anantya",
+                alternateName: "anantya.ai",
+                url: "https://anantya.ai/",
+              },
+            ],
+          })}
+        </script>
+
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              {
+                "@type": "ListItem",
+                position: 1,
+                name: "Home",
+                item: "https://anantya.ai",
+              },
+              {
+                "@type": "ListItem",
+                position: 2,
+                name: "Media and Entertainment",
+                item: "https://anantya.ai/media-entertainment-industry",
+              },
+            ],
+          })}
+        </script>
+
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: [
+              {
+                "@type": "Question",
+                name: "What Is The WhatsApp Business API?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "The WhatsApp Business API is a communication platform that allows businesses in the media and entertainment industry to connect with their audience, deliver personalized content, and provide customer support through the WhatsApp messaging app.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "How Can The Media And Entertainment Industry Benefit From Using The WhatsApp Business API?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "By leveraging the WhatsApp Business API, the industry can enhance audience engagement by sending timely updates, promoting new releases, and providing personalized content recommendations. It also enables efficient customer support, allowing users to interact with businesses directly through WhatsApp.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "What Are The Advantages Of Integrating Chatbots With The WhatsApp Business API?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Chatbots integrated with the WhatsApp Business API can automate responses to frequently asked questions, provide instant assistance, and handle customer queries at any time of the day. They enhance efficiency, reduce response times, and offer a seamless conversational experience for users.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "How Does The Verified Green Tick On WhatsApp Benefit The Media And Entertainment Industry?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "The verified green tick is a symbol of authenticity and trust. When businesses in the media and entertainment industry have a verified green tick on their WhatsApp account, it establishes credibility with users, assuring them that they are interacting with a legitimate and verified entity.",
+                },
+              },
+            ],
+          })}
+        </script>
+      </Helmet>
+      <div className="container py-5 mt-5">
+        <div className="content">
+          <div className="row align-items-center">
+            <div className="col-lg-6 text-black mt-20 text-lg-start text-center">
+              <div className="info text-black pe-md-5">
+                <h1 className="heading">
+                  Connect Better with Conversational AI!
+                </h1>
+
+                <p className="mt-20 text-black">
+                  Get people excited about your new releases, suggest shows that
+                  match their interests, and attract more subscribers by having
+                  meaningful conversations with your audience at every stage
+                  with WhatsApp Business API.
+                </p>
+
+                <div className="btns mt-4">
+                  <a
+                    href="book-a-demo"
+                    className="btn login_button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#myModal"
+                  >
+                    Sign Up for FREE
+                  </a>
                 </div>
+              </div>
             </div>
+            <div className="col-lg-6">
+              <div
+                className="wow zoomIn"
+                data-wow-delay="0.2s"
+                style={{
+                  visibility: "visible",
+                  animationDelay: "0.2s",
+                  animationName: "zoomIn",
+                }}
+              >
+                <img
+                  src={transformingEngagementImg}
+                  className="img-fluid"
+                  alt="Transform Education with WhatsApp APIs"
+                />
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="container">
+      </div>
+      <div className="container">
         <h2 className="logo_heading">
-        Top Media & Entertainment Brands Growing with WhatsApp
+          Top Media & Entertainment Brands Growing with WhatsApp
         </h2>
         <LogoCarousel />
         <p
@@ -152,11 +329,16 @@ const MediaEntertainment = () => {
         <div className="container py-5 my-5">
           <div className="row">
             <div className="col-md-6 col-sm-12 pe-md-5 text-lg-start text-center">
-              <h2>Drive Targeted Ad Campaigns & Real-Time Updates for Maximum Impact!
+              <h2>
+                Drive Targeted Ad Campaigns & Real-Time Updates for Maximum
+                Impact!
               </h2>
               <h6 className="text-justify pt-10">
-              Harness the power of WhatsApp Business API for your media and entertainment promotions. Engage fans with updates, exclusive content, and real-time <interactions className=""></interactions>
-             </h6>
+                Harness the power of WhatsApp Business API for your media and
+                entertainment promotions. Engage fans with updates, exclusive
+                content, and real-time{" "}
+                <interactions className=""></interactions>
+              </h6>
               <br />
               <div className="row row-cols-1 row-cols-md-2 g-4 px-md-0 px-3 pt-10">
                 <div className="col">
@@ -166,8 +348,13 @@ const MediaEntertainment = () => {
                     onMouseLeave={() => setHoveredCard("card1")} // Default state when not hovering
                   >
                     <div className="cta-content">
-                      <h4 className="card-title">Event Updates and Reminders</h4>
-                      <p>Keep fans informed about event schedules, venue changes, or last-minute announcements with WhatsApp Broadcasting. </p>
+                      <h4 className="card-title">
+                        Event Updates and Reminders
+                      </h4>
+                      <p>
+                        Keep fans informed about event schedules, venue changes,
+                        or last-minute announcements with WhatsApp Broadcasting.{" "}
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -178,10 +365,11 @@ const MediaEntertainment = () => {
                     onMouseLeave={() => setHoveredCard("card1")} // Default state when not hovering
                   >
                     <div className="cta-content">
-                      <h4 className="card-title">
-                            Marketing & Promotions</h4>
-                      <p>Say goodbye to multiple websites or apps – streamline customer experience with quick and hassle-free bookings, all in one place!
-
+                      <h4 className="card-title">Marketing & Promotions</h4>
+                      <p>
+                        Say goodbye to multiple websites or apps – streamline
+                        customer experience with quick and hassle-free bookings,
+                        all in one place!
                       </p>
                     </div>
                   </div>
@@ -211,15 +399,19 @@ const MediaEntertainment = () => {
               />
             </div>
             <div className="col-md-6 col-sm-12 px-5 text-lg-start text-center">
-              <h2>Easy Subscription Management & Hassle-Free Billing Support!
+              <h2>
+                Easy Subscription Management & Hassle-Free Billing Support!
               </h2>
               <br />
               <p className="text-justify">
-              Enable users to independently update subscription plans, renew packages, make payments, and manage their accounts.
+                Enable users to independently update subscription plans, renew
+                packages, make payments, and manage their accounts.
               </p>
-              
+
               <p className="text-justify">
-              Automate frequently asked questions (FAQs) regarding billing and account information, freeing up agents to prioritise critical customer interactions.
+                Automate frequently asked questions (FAQs) regarding billing and
+                account information, freeing up agents to prioritise critical
+                customer interactions.
               </p>
             </div>
           </div>
@@ -255,6 +447,68 @@ const MediaEntertainment = () => {
             </div>
             <div className="modal-body">
               {/* Your modal content for the second ebook */}
+
+              <form
+                action="https://formspree.io/f/mdorezev"
+                className="py-2 px-md-5 px-4"
+                method="post"
+                id="marketing"
+                onSubmit={submitFormAndOpenPDF}
+              >
+                <div className="row">
+                  <div className="col-lg-12 mb-3">
+                    <input
+                      type="text"
+                      name="name"
+                      className="form-control"
+                      placeholder="Name"
+                      required
+                    />
+                  </div>
+                  <div className="col-lg-12 mb-3">
+                    <input
+                      type="text"
+                      name="email"
+                      className="form-control"
+                      placeholder="Email Address *"
+                      required
+                    />
+                  </div>
+                  <div className="col-lg-12 mb-3">
+                    <input
+                      type="text"
+                      name="phone"
+                      className="form-control"
+                      placeholder="Phone Number (optional)"
+                    />
+                  </div>
+                  <div className="col-lg-12 mb-3">
+                    <input
+                      type="text"
+                      name="message"
+                      className="form-control"
+                      placeholder="Name of Organisation"
+                      required
+                    />
+                  </div>
+                  <div className="col-lg-12">
+                    <input
+                      type="url"
+                      name="url"
+                      className="form-control"
+                      placeholder="Website URL"
+                      required
+                    />
+                  </div>
+                  <div className="col-lg-12 text-center mt-3">
+                    <input
+                      type="submit"
+                      value="Send Your Request"
+                      className="btn w-50 bg-green text-white cursor-pointer"
+                    />
+                  </div>
+                </div>
+              </form>
             </div>
           </div>
         </div>
@@ -267,17 +521,19 @@ const MediaEntertainment = () => {
         <div className="container py-5">
           <div className="row">
             <div className="col-md-6 col-sm-12 my-auto px-5 text-lg-start text-center">
-              <h2>Event Updates and Reminders: Keeping Fans Informed and Engaged!
+              <h2>
+                Event Updates and Reminders: Keeping Fans Informed and Engaged!
               </h2>
               <br />
               <p className="text-justify">
-              Send timely event information and reminders to fans' mobile devices, keeping them informed and engaged throughout the experience.
+                Send timely event information and reminders to fans' mobile
+                devices, keeping them informed and engaged throughout the
+                experience.
               </p>
-            
+
               <p className="text-justify">
-              Recommend fresh and popular content tailored to your users' individual preferences, re-engaging dormant subscribers.
-
-
+                Recommend fresh and popular content tailored to your users'
+                individual preferences, re-engaging dormant subscribers.
               </p>
             </div>
             <div className="col-md-6 col-sm-12 my-auto px-5">
@@ -290,80 +546,109 @@ const MediaEntertainment = () => {
           </div>
         </div>
       </section>
-   
+
       <div className=" container integration py-5">
-        <h2>
-          {" "}
-          Connect to the Tools You Love{" "}
-        </h2>
+        <h2> Connect to the Tools You Love </h2>
         <LTRSlider />
         <RTLSlider />
       </div>
 
       <FAQSection faqs={homeFAQs} />
-      <section className="clients style-5 pb-20 mt-5" style={{ backgroundColor: '#f3fbff' }}>
-            <div className="container">
-                <div className="row row-cols-1 row-cols-md-2 g-4 px-md-0 px-3">
-                    <div className="section-head text-start mb-md-5 style-5 pt-md-5 col my-auto">
-                        <div className="row row-cols-1 row-cols-md-2 g-4 py-md-0 py-5 px-md-0 px-3">
-                            <div className="col">
-                                <div className="cta-card new text-center h-100">
-                                    <ul className="cta-usp new">
-                                        <li className="list-item cta d-flex p-1">
-                                            <div className="html-embed-27 cta w-embed">
-                                                <svg width="16" height="12" viewBox="0 0 18 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M5.60003 10.6L1.40003 6.4L3.05176e-05 7.8L5.60003 13.4L17.6 1.4L16.2 0L5.60003 10.6Z" fill="currentColor"></path>
-                                                </svg>
-                                            </div>
-                                            <div className="feature-text-2 text-start ps-2">
-                                                Experience a personalized demo with us
-                                            </div>
-                                        </li>
-                                        <li className="list-item cta d-flex p-1">
-                                            <div className="html-embed-27 cta w-embed">
-                                                <svg width="16" height="12" viewBox="0 0 18 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M5.60003 10.6L1.40003 6.4L3.05176e-05 7.8L5.60003 13.4L17.6 1.4L16.2 0L5.60003 10.6Z" fill="currentColor"></path>
-                                                </svg>
-                                            </div>
-                                            <div className="feature-text-2 text-start ps-2">
-                                                Discover why 10,000+ businesses choose us
-                                            </div>
-                                        </li>
-                                    </ul>
-                                    <a href="https://calendly.com/info-w0m/30min?month=2024-02" target="_blank" rel="noopener noreferrer" className="btn bg-green text-white btn-color text-center mt-10">
-                                        Book A Live Demo
-                                    </a>
-                                </div>
-                            </div>
-                            <div className="col">
-                                <div className="cta-card new text-center h-100">
-                                    <ul className="cta-usp new">
-                                        <li className="list-item cta d-flex p-1 text-center">
-                                            <div className="feature-text-2 text-center">
-                                                Experience Anantya.ai on Whatsapp
-                                            </div>
-                                        </li>
-                                        <li className="list-item cta d-flex p-1">
-                                            <img src={whatsappScannerImg} className="img-fluid w-50 mx-auto" alt="whatsapp-scaner-img" />
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
+      <section
+        className="clients style-5 pb-20 mt-5"
+        style={{ backgroundColor: "#f3fbff" }}
+      >
+        <div className="container">
+          <div className="row row-cols-1 row-cols-md-2 g-4 px-md-0 px-3">
+            <div className="section-head text-start mb-md-5 style-5 pt-md-5 col my-auto">
+              <div className="row row-cols-1 row-cols-md-2 g-4 py-md-0 py-5 px-md-0 px-3">
+                <div className="col">
+                  <div className="cta-card new text-center h-100">
+                    <ul className="cta-usp new">
+                      <li className="list-item cta d-flex p-1">
+                        <div className="html-embed-27 cta w-embed">
+                          <svg
+                            width="16"
+                            height="12"
+                            viewBox="0 0 18 14"
+                            fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M5.60003 10.6L1.40003 6.4L3.05176e-05 7.8L5.60003 13.4L17.6 1.4L16.2 0L5.60003 10.6Z"
+                              fill="currentColor"
+                            ></path>
+                          </svg>
                         </div>
-                    </div>
-                    <div className="style-5 col my-auto ps-md-5 text-lg-start text-center">
-                        <h2 className="mb-20 ">
-                            Experience Anantya.ai <br />
-                            <span>in Action!</span>
-                        </h2>
-                        <p>
-                            Register for our Live Demo today and discover why Anantya.ai is the right choice for your business and get answers to all your WhatsApp-related questions.
-                        </p>
-                    </div>
+                        <div className="feature-text-2 text-start ps-2">
+                          Experience a personalized demo with us
+                        </div>
+                      </li>
+                      <li className="list-item cta d-flex p-1">
+                        <div className="html-embed-27 cta w-embed">
+                          <svg
+                            width="16"
+                            height="12"
+                            viewBox="0 0 18 14"
+                            fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M5.60003 10.6L1.40003 6.4L3.05176e-05 7.8L5.60003 13.4L17.6 1.4L16.2 0L5.60003 10.6Z"
+                              fill="currentColor"
+                            ></path>
+                          </svg>
+                        </div>
+                        <div className="feature-text-2 text-start ps-2">
+                          Discover why 10,000+ businesses choose us
+                        </div>
+                      </li>
+                    </ul>
+                    <a
+                      href="https://calendly.com/info-w0m/30min?month=2024-02"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn bg-green text-white btn-color text-center mt-10"
+                    >
+                      Book A Live Demo
+                    </a>
+                  </div>
                 </div>
+                <div className="col">
+                  <div className="cta-card new text-center h-100">
+                    <ul className="cta-usp new">
+                      <li className="list-item cta d-flex p-1 text-center">
+                        <div className="feature-text-2 text-center">
+                          Experience Anantya.ai on Whatsapp
+                        </div>
+                      </li>
+                      <li className="list-item cta d-flex p-1">
+                        <img
+                          src={whatsappScannerImg}
+                          className="img-fluid w-50 mx-auto"
+                          alt="whatsapp-scaner-img"
+                        />
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
-            <hr className="line_breaker_2" />
-        </section>
+            <div className="style-5 col my-auto ps-md-5 text-lg-start text-center">
+              <h2 className="mb-20 ">
+                Experience Anantya.ai <br />
+                <span>in Action!</span>
+              </h2>
+              <p>
+                Register for our Live Demo today and discover why Anantya.ai is
+                the right choice for your business and get answers to all your
+                WhatsApp-related questions.
+              </p>
+            </div>
+          </div>
+        </div>
+        <hr className="line_breaker_2" />
+      </section>
       <ScrollToTopButton />
       <WhatsAppWidget />
     </div>

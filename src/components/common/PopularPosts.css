@@ -1,68 +1,72 @@
 /* src/components/PopularPosts.css */
 /* src/components/PopularPosts.css */
 .related-postes-slider .slide-item {
-    padding: 0 20px; /* Add padding around each slide */
-  }
-  
-  .related-postes-slider .slick-slide {
-    margin: 0 20px; /* Increased margin between slides */
-  }
-  
-  .related-postes-slider .slick-prev,
-  .related-postes-slider .slick-next {
-    top: 50%;
-    width: 40px;
-    height: 40px;
-    z-index: 1;
-    background-color: gray; /* Arrow background color */
-    border-radius: 50%;
-    color: #fff; /* Arrow color */
-    font-size: 24px;
-    line-height: 40px;
-    text-align: center;
-    cursor: pointer;
-    transform: translateY(-50%); /* Center vertically */
-  }
-  
-  .related-postes-slider .slick-prev {
-    left: 0px;
-    content: '←'; /* Left arrow */
-  }
-  
-  .related-postes-slider .slick-next {
-    left: 50px;
-    content: '→'; /* Right arrow */
-  }
-  
-  .related-postes-slider .slick-prev:before,
-  .related-postes-slider .slick-next:before {
-    font-family: 'Font Awesome 5 Free'; /* Optional: Use FontAwesome or similar */
-  }
-  
-  .related-postes-slider .slick-prev:hover,
-  .related-postes-slider .slick-next:hover {
-    background-color: #333; /* Change background on hover */
-  }
-  
-  /* Adjust space between slick dots and cards */
-  .slick-dots {
-    margin-top: 20px; /* Reduce space above dots */
-  }
-  
-  .slick-dots li button:before {
-    color: #000; /* Dot color */
-    font-size: 12px;
-  }
-  
-  .popular-posts .card{
-    transition: all 0.5s ease;
-    transition-duration: 1s;
-    padding: 20px;
-  }
-  .popular-posts .card:hover{
-       transform: scale(1.1);
-    }
-  
-    .slick-dots{
-        bottom: 80px;
-    }
+  padding: 0 20px; /* Add padding around each slide */
+}
+
+.related-postes-slider .slick-slide {
+  margin: 0 20px; /* Increased margin between slides */
+}
+
+.related-postes-slider .slick-prev,
+.related-postes-slider .slick-next {
+  top: 50%;
+  width: 40px;
+  height: 40px;
+  z-index: 1;
+  background-color: gray; /* Arrow background color */
+  border-radius: 50%;
+  color: #fff; /* Arrow color */
+  font-size: 24px;
+  line-height: 40px;
+  text-align: center;
+  cursor: pointer;
+  transform: translateY(-50%); /* Center vertically */
+}
+
+.related-postes-slider .slick-prev {
+  left: 0px;
+  content: "←"; /* Left arrow */
+}
+
+.related-postes-slider .slick-next {
+  left: 50px;
+  content: "→"; /* Right arrow */
+}
+
+.related-postes-slider .slick-prev:before,
+.related-postes-slider .slick-next:before {
+  font-family: "Font Awesome 5 Free"; /* Optional: Use FontAwesome or similar */
+}
+
+.related-postes-slider .slick-prev:hover,
+.related-postes-slider .slick-next:hover {
+  background-color: #333; /* Change background on hover */
+}
+
+/* Adjust space between slick dots and cards */
+.slick-dots {
+  margin-top: 20px; /* Reduce space above dots */
+}
+
+.slick-dots li button:before {
+  color: #000; /* Dot color */
+  font-size: 12px;
+}
+
+.popular-posts .card {
+  transition: all 0.5s ease;
+  transition-duration: 1s;
+  padding: 20px;
+}
+.popular-posts .card:hover {
+  transform: scale(1.1);
+}
+
+.slick-dots {
+  bottom: 80px;
+}
+.popular-posts .icon img {
+  width: 20%;
+  padding-bottom: 20px;
+}

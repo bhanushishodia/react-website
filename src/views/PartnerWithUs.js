@@ -1,5 +1,7 @@
 import React from 'react';
+
 import './partnerwithus.css'; // Optional: Add custom CSS file for styling
+import { Helmet } from 'react-helmet';
 import ScrollToTopButton from "../components/common/ScrollToTopButton";
 import WhatsAppWidget from "../components/common/WhatsAppWidget";
 import AffiliateForm from '../forms/AffiliateForm'; // Adjust the path as needed
@@ -25,6 +27,40 @@ const PartnerWithUs = () => {
   const logosRow1 = [logo1, logo2, logo3, logo4, logo5];
   const logosRow2 = [logo6, logo7, logo8, logo9, logo10];
   return (
+    <>
+    <Helmet>
+    <title>Collaborate to Grow with WhatsApp Solutions | Partner With Us</title>
+    <meta name="robots" content="index,follow" />
+    <meta name="description" content="Build fruitful partnerships with Anantya.ai for WhatsApp solutions. Together, we can empower businesses and enhance customer communication." />
+    <meta property="og:title" content="Collaborate to Grow with WhatsApp Solutions | Partner With Us" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="Build fruitful partnerships with Anantya.ai for WhatsApp solutions. Together, we can empower businesses and enhance customer communication." />
+    <meta property="og:url" content="https://anantya.ai/partner-with-us" />
+    <meta property="og:site_name" content="anantya.ai" />
+    <meta property="og:image" content="https://anantya.ai/assets/img/partner/let%E2%80%99s-grow-together-home.webp" />
+    <link rel="canonical" href="https://anantya.ai/partner-with-us" />
+    <meta name="author" content="Anantya" />
+    <script type="application/ld+json">
+      {JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://anantya.ai"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Work with us",
+            "item": "https://anantya.ai/partner-with-us"
+          }
+        ]
+      })}
+    </script>
+  </Helmet>
     <div className="partner-with-us-page">
       {/* section1 */}
       <section>
@@ -292,6 +328,7 @@ const PartnerWithUs = () => {
       <ScrollToTopButton />
       <WhatsAppWidget />
     </div>
+    </>
   );
 };
 

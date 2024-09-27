@@ -9,6 +9,9 @@ import step3Image from '../assets/images/walink-generator-step-3.webp'; // Impor
 import ScrollToTopButton from "../components/common/ScrollToTopButton";
 import WhatsAppWidget from "../components/common/WhatsAppWidget";
 import WhatsAppLinkGenerator from '../components/common/WhatsAppLinkGenerator';
+import LogoCarousel from "../components/common/LogoCarousel";
+
+
 const GenerateWhatsAppLink = () => {
   // Function to handle button click and scroll to the form
   const scrollToForm = () => {
@@ -42,6 +45,25 @@ const GenerateWhatsAppLink = () => {
         </div>
       </div>
     </div>
+    <div className="text-center pt-5">
+        <h2 className="logo_heading">Trusted by leading brands globally</h2>
+        <LogoCarousel />
+        <p
+          className="color-666 line_breaker text-center mt-5 wow fadeInDown"
+          style={{ visibility: "visible", animationName: "fadeInDown" }}
+        >
+          Generate leads, create help tickets, and chat across channels{" "}
+          <a
+            href="https://wa.link/hd4mvx"
+            className="color-000 fw-bold"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Get Started Now
+          </a>
+        </p>
+      </div>
+
      <div className="container text-md-start py-5">
     <h2 className="pb-3 text-center fw-light">Generate a link with 3 simple steps</h2>
     <div className="row row-cols-1 row-cols-md-3 g-4">

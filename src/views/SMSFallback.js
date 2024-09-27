@@ -1,5 +1,6 @@
 import React from "react";
 import "./SMSFallback.css";
+
 import ScrollToTopButton from "../components/common/ScrollToTopButton";
 import WhatsAppWidget from "../components/common/WhatsAppWidget";
 import CountUp from "react-countup";
@@ -10,11 +11,48 @@ import maximizeMessageDeliveryImg from "../assets/images/icons/maxumize-message-
 import optimizeCostsAndResourcesImg from "../assets/images/icons/optimize-costs-and.png";
 import ensureReliableConnectionImg from "../assets/images/icons/AnAensure-reliable.png";
 import completeReachImg from "../assets/images/icons/complete-reach.png";
-
+import { Helmet } from 'react-helmet';
 const SMSFallback = () => {
   return (
     <div>
-      <div className="container  py-5">
+      <div>
+      <Helmet>
+        <title>Whatsapp SMS Fallback | Fallback SMS Service | Anantya.ai</title>
+        <meta name="keywords" content="SMS Fallback, sms fallback, fallback sms, text message fallback, whatsapp fallback sms" />
+        <meta name="robots" content="index,follow" />
+        <meta name="description" content="Enhance Customer Service with SMS Fallback - fallback sms is a reliable backup for internet-based channels. Signup now." />
+        <meta property="og:title" content="Whatsapp SMS Fallback | Fallback SMS Service | Anantya.ai" />
+        <meta property="og:type" content="article" />
+        <meta property="og:description" content="Enhance Customer Service with SMS Fallback - fallback sms is a reliable backup for internet-based channels. Signup now." />
+        <meta property="og:url" content="https://anantya.ai/sms-fallback" />
+        <meta property="og:site_name" content="anantya.ai" />
+        <meta property="og:image" content="https://anantya.ai/assets/img/whatsapp-fallback-sms-home-page.webp" />
+        <link rel="canonical" href="https://anantya.ai/sms-fallback" />
+        <meta name="author" content="Anantya.ai" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://anantya.ai"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Fallback SMS",
+                "item": "https://anantya.ai/sms-fallback"
+              }
+            ]
+          })}
+        </script>
+      </Helmet>
+      </div>
+     
+      <div className="container  py-5 my-4">
         <div className="row align-items-center">
           <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 text-black mt-30 text-md-start text-center">
             <div className="info text-black">
@@ -187,12 +225,12 @@ const SMSFallback = () => {
       <section>
         <div className="container py-5">
           <div className="row">
-            <div className="col-md-6 col-sm-12 my-auto text-md-start text-center">
-              <h2>Why Implement WhatsApp Fallback SMS?</h2>
+            <div className="col-md-6 col-sm-12 my-auto text-start">
+              <h2 className="text-md-start text-center">Why Implement WhatsApp Fallback SMS?</h2>
               <ul>
                 <li className="d-flex align-items-center mb-2 mt-20">
                   <small className="icon-30 rounded-circle color-blue4 d-inline-flex align-items-center justify-content-center me-3">
-                    <svg
+                    <svg 
                       width="14"
                       height="14"
                       viewBox="0 0 18 14"
@@ -205,7 +243,7 @@ const SMSFallback = () => {
                       />
                     </svg>
                   </small>
-                  <p>
+                  <p className="">
                     Find users without WhatsApp and send messages through SMS.
                     Ensure no missed opportunities or incomplete communication.
                   </p>

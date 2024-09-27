@@ -1,176 +1,167 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import InnerHeader from '../components/common/InnerHeader';
-import stepImg1 from '../assets/images/fill-out-the-form.webp'; // Adjust the path based on your folder structure
-import stepImg2 from '../assets/images/set-a-strong-password.webp';
 
+import autoAssignSectionImage from '../assets/images/auto-assign-section.webp';
+import clickOnAddAutoAssignImage from '../assets/images/click-on-add-auto-assign.webp';
 import './knowledgecenter.css'; // Import the CSS file
 import ScrollToTopButton from "../components/common/ScrollToTopButton";
 import WhatsAppWidget from "../components/common/WhatsAppWidget";
 const AutoAssignChats = () => {
   return (
+    <>
+     <Helmet>
+            <title>How to Auto Assign Chats | Knowledge Center</title>
+            <meta name="robots" content="index,follow" />
+            <meta name="description" content="Here you can learn how to Auto Assign Chats" />
+            <meta property="og:title" content="How to Auto Assign Chats | Knowledge Center" />
+            <meta property="og:type" content="article" />
+            <meta property="og:description" content="Here you can learn how to Auto Assign Chats" />
+            <meta property="og:url" content="https://anantya.ai/how-to-auto-assign-chats" />
+            <meta property="og:site_name" content="anantya.ai" />
+            <meta property="og:image" content="https://anantya.ai/assets/img/auto-assign-section.webp" />
+            <link rel="canonical" href="https://anantya.ai/how-to-auto-assign-chats" />
+            <meta name="author" content="Anantya.ai" />
+
+            {/* JSON-LD Schema Markup */}
+            <script type="application/ld+json">
+                {JSON.stringify({
+                    "@context": "https://schema.org",
+                    "@type": "WebPage",
+                    "name": "How to Auto Assign Chats | Knowledge Center",
+                    "description": "Here you can learn how to Auto Assign Chats",
+                    "url": "https://anantya.ai/how-to-auto-assign-chats"
+                })}
+            </script>
+    </Helmet>
+ 
     <div className="page-content">
     <div>
       <InnerHeader />
     </div>
     <main className="career-details-page style-5 pt-100">
     <section className="jop-details pb-100">
-      <div className="container">
+      <div className="container py-5">
         <div className="content">
           <div className="row">
           <div className="col-lg-8">
-          <div className="jop-info">
-            <div className="tags mb-40">
-              <a href="#">Auto assign chat</a>
-              <a href="#">Agent Sublogin</a>
-            </div>
-            <h3 className="main-title mb-10">
-              How to Launch Your First Campaign - Step-by-Step Guide
-            </h3>
-            <p className="pb-40 color-999">
-              By <a href="#" className="color-000">Deepika Yadav</a>
-            </p>
+            <div className="jop-info text-start">
+                <div className="tags mb-40">
+                    <a href="/contact">Auto assign chat</a>
+                    <a href="/contact">Agent Sublogin</a>
+                </div>
+                <h3 className="main-title mb-10">How to Auto Assign Chats - Step-by-Step Guide</h3>
+                <p className="pb-40 color-999">
+    By <span className="color-000">Deepika Yadav</span>
+</p>
 
-            <div className="text d-flex mb-20">
-              <span className="icon color-blue5 me-2 flex-shrink-0">
-                <i className="fas fa-check-circle"></i>
-              </span>
-              <p>
-                Launching your very first campaign can be both exciting and a bit overwhelming.
-              </p>
-            </div>
-            <div className="text d-flex mb-20">
-              <span className="icon color-blue5 me-2 flex-shrink-0">
-                <i className="fas fa-check-circle"></i>
-              </span>
-              <p>
-                Whether you're trying to promote a product, raise awareness for a cause, or spread the word about an event, here is a step-by-step guide to launch your first campaign.
-              </p>
-            </div>
 
-            <h6 className="mt-40 mb-20">Step 1: Set Up Your WhatsApp Broadcast Campaign</h6>
-            <div className="text d-flex mb-20">
-              <span className="icon color-blue5 me-2 flex-shrink-0">
-                <i className="fas fa-check-circle"></i>
-              </span>
-              <p><strong className="color-000">Access the Campaigns Page:</strong> Log in to Anantya.ai Panel and navigate to the Campaigns Page.</p>
-            </div>
-            <div className="text d-flex mb-20">
-              <span className="icon color-blue5 me-2 flex-shrink-0">
-                <i className="fas fa-check-circle"></i>
-              </span>
-              <p><strong className="color-000">Create a New Campaign:</strong> Look for the "Add Campaign" button located at the top right corner of the page. Click on it to start a new campaign.</p>
-            </div>
-            <div className="text d-flex mb-20">
-              <span className="icon color-blue5 me-2 flex-shrink-0">
-                <i className="fas fa-check-circle"></i>
-              </span>
-              <p><strong className="color-000">Channel and Campaign Name:</strong> Choose a meaningful channel name that identifies the purpose of your campaign. Then, give your campaign a clear and concise name that reflects its content.</p>
-            </div>
-            <div className="text-center">
-              <img src="assets/img/broadcast-campaign.webp" className="img-fluid pb-3 mx-auto" alt="Broadcast Campaign" />
-            </div>
-            <div className="text d-flex mb-20">
-              <span className="icon color-blue5 me-2 flex-shrink-0">
-                <i className="fas fa-check-circle"></i>
-              </span>
-              <p><strong className="color-000">Select a Template:</strong> Choose a pre-approved template for your campaign.</p>
-            </div>
-            <div className="text d-flex mb-20">
-              <span className="icon color-blue5 me-2 flex-shrink-0">
-                <i className="fas fa-check-circle"></i>
-              </span>
-              <p>Pre-approved Template Messages are the different message templates that you got approved from WhatsApp according to different use cases. This includes Images, Text, Videos, PDFs, CTAs, and Quick Replies.</p>
-            </div>
-            <div className="text d-flex mb-20">
-              <span className="icon color-blue5 me-2 flex-shrink-0">
-                <i className="fas fa-check-circle"></i>
-              </span>
-              <p>These messages can be sent to both Active users (who are in the 24 hours window) and Inactive users.</p>
-            </div>
-            <div className="text d-flex mb-20">
-              <span className="icon color-blue5 me-2 flex-shrink-0">
-                <i className="fas fa-check-circle"></i>
-              </span>
-              <p><strong className="color-000">Import or Download Contacts:</strong> You have two options for adding contacts. You can import a list of contacts from a file, or you can use a sample format provided by the platform. This list should include the phone numbers of the recipients.</p>
-            </div>
-            <div className="text d-flex mb-20">
-              <span className="icon color-blue5 me-2 flex-shrink-0">
-                <i className="fas fa-check-circle"></i>
-              </span>
-              <p><strong className="color-000">Set Up Campaign:</strong> Follow the steps to configure your WhatsApp Broadcast campaign. This may include scheduling the send time, setting up any necessary personalization, and crafting the content of your message.</p>
-            </div>
+                <div className="text d-flex mb-20">
+                    <span className="icon color-blue5 me-2 flex-shrink-0">
+                        <i className="fas fa-check-circle"></i>
+                    </span>
+                    <p>With the 'Auto Assign' feature, you can set a special label for an Agent. This label will make sure the agent only sees chats that have that same label.</p>
+                </div>
+                <div className="text d-flex mb-20">
+                    <span className="icon color-blue5 me-2 flex-shrink-0">
+                        <i className="fas fa-check-circle"></i>
+                    </span>
+                    <p>Here's an example - Let's say there are 100 Chats happening in Live Chat, but only 20 of them are labeled as 'Payment'. Now, you give the label 'Payment' to a particular Agent.</p>
+                </div>
+                <div className="text d-flex mb-20">
+                    <span className="icon color-blue5 me-2 flex-shrink-0">
+                        <i className="fas fa-check-circle"></i>
+                    </span>
+                    <p>What happens next?</p>
+                </div>
+                <div className="text d-flex mb-20">
+                    <span className="icon color-blue5 me-2 flex-shrink-0">
+                        <i className="fas fa-check-circle"></i>
+                    </span>
+                    <p>By giving this label, the agent will only work on chats that are also labeled as 'Payment'. So, the agent will only see and work on those 20 chats that are about 'Payment'.</p>
+                </div>
 
-            <h6 className="mt-40 mb-20">Step 2: Validate and Review Contacts</h6>
-            <div className="text d-flex mb-20">
-              <span className="icon color-blue5 me-2 flex-shrink-0">
-                <i className="fas fa-check-circle"></i>
-              </span>
-              <p><strong className="color-000">Select Attributes:</strong> This step involves identifying attributes or fields in your contact list that you want to use for personalization. This could include names, locations, or any other relevant information.</p>
-            </div>
-            <div className="text d-flex mb-20">
-              <span className="icon color-blue5 me-2 flex-shrink-0">
-                <i className="fas fa-check-circle"></i>
-              </span>
-              <p><strong className="color-000">Validate Mapping:</strong> Ensure that the attributes you've selected match the corresponding fields in your contact list. This step helps avoid errors in personalization.</p>
-            </div>
-            <div className="text d-flex mb-20">
-              <span className="icon color-blue5 me-2 flex-shrink-0">
-                <i className="fas fa-check-circle"></i>
-              </span>
-              <p><strong className="color-000">Check Validity:</strong> The platform will display the number of valid and invalid contacts in your list. Review this information to ensure your message reaches the intended recipients.</p>
-            </div>
-            <div className="text-center">
-              <img src="assets/img/validate-and-review-contacts.webp" className="img-fluid pb-3 mx-auto" alt="Validate and Review Contacts" />
-            </div>
+                <h6 className="mt-4 mb-20">Step 1. Go to the Auto Assign Section</h6>
+                <div className="text d-flex mb-20">
+                    <span className="icon color-blue5 me-2 flex-shrink-0">
+                        <i className="fas fa-check-circle"></i>
+                    </span>
+                    <p>Navigate to Auto Assign: On the left side of the dashboard, you'll find various options. Look for and click on the "Auto Assign" section.</p>
+                </div>
+                <div className="text d-flex mb-20">
+                    <span className="icon color-blue5 me-2 flex-shrink-0">
+                        <i className="fas fa-check-circle"></i>
+                    </span>
+                    <p>Review Existing Actions: Once you're in the "Auto Assign" section, you might see a list of existing actions if any have been set up previously. If it's your first time using this feature, the dashboard may be empty.</p>
+                </div>
+                <div className="text d-flex mb-20">
+                    <span className="icon color-blue5 me-2 flex-shrink-0">
+                        <i className="fas fa-check-circle"></i>
+                    </span>
+                    <p>Add a New Auto Assign Rule: In the top right corner of the page, locate and click the "Add Auto Assign" button.</p>
+                </div>
 
-            <h6 className="mt-40 mb-20">Step 3: Review and Submit</h6>
-            <div className="text d-flex mb-20">
-              <span className="icon color-blue5 me-2 flex-shrink-0">
-                <i className="fas fa-check-circle"></i>
-              </span>
-              <p>The platform might provide a mechanism to determine the likelihood of recipients engaging with your message. This helps you assess the potential effectiveness of your campaign.</p>
-            </div>
-            <div className="text d-flex mb-20">
-              <span className="icon color-blue5 me-2 flex-shrink-0">
-                <i className="fas fa-check-circle"></i>
-              </span>
-              <p><strong className="color-000">Submit Your Campaign:</strong> After reviewing all the previous steps and ensuring everything is set up correctly, click on the "Submit" button to finalize your campaign setup.</p>
-            </div>
-            <div className="text-center">
-              <img src="assets/img/review-and-submit.webp" className="img-fluid pb-3 mx-auto" alt="Review and Submit" />
-            </div>
+                <div className="text-center">
+                    <img src={autoAssignSectionImage} className="img-fluid pb-3 mx-auto" alt="Auto Assign Section" />
+                </div>
 
-            <h6 className="mt-40 mb-20">Step 4: Monitor and Optimize</h6>
-            <div className="text d-flex mb-20">
-              <span className="icon color-blue5 me-2 flex-shrink-0">
-                <i className="fas fa-check-circle"></i>
-              </span>
-              <p><strong className="color-000">Monitor Campaign Performance:</strong> Once your campaign is live, monitor its performance through the campaign management platform. Track metrics like open rates, click-through rates, and responses.</p>
-            </div>
-            <div className="text d-flex mb-20">
-              <span className="icon color-blue5 me-2 flex-shrink-0">
-                <i className="fas fa-check-circle"></i>
-              </span>
-              <p><strong className="color-000">Optimize Based on Feedback:</strong> Based on the performance data and recipient feedback, make necessary adjustments to optimize future campaigns for better results.</p>
-            </div>
+                <h6 className="mt-4 mb-20">Step 2. Click on Add Auto Assign</h6>
+                <div className="text d-flex mb-20">
+                    <span className="icon color-blue5 me-2 flex-shrink-0">
+                        <i className="fas fa-check-circle"></i>
+                    </span>
+                    <p>After clicking "Add Auto Assign," a new dialog box will appear. You need to fill the form completely.</p>
+                </div>
+                <div className="text d-flex mb-20">
+                    <span className="icon color-blue5 me-2 flex-shrink-0">
+                        <i className="fas fa-check-circle"></i>
+                    </span>
+                    <p>Select the Channel: Choose  the communication channel for which you want to set up auto assignment.</p>
+                </div>
+                <div className="text d-flex mb-20">
+                    <span className="icon color-blue5 me-2 flex-shrink-0">
+                        <i className="fas fa-check-circle"></i>
+                    </span>
+                    <p>Choose an Agent: Select an agent from the list of available agents in your system. This agent will be responsible for handling chats that meet the specified criteria.</p>
+                </div>
+                <div className="text d-flex mb-20">
+                    <span className="icon color-blue5 me-2 flex-shrink-0">
+                        <i className="fas fa-check-circle"></i>
+                    </span>
+                    <p>Assign a Label: Apply a label to this auto-assign rule. Labels help you easily identify and manage different rules. In this case, you can label it as 'Payment' to indicate that this rule is for chats related to payments.</p>
+                </div>
+                <div className="text d-flex mb-20">
+                    <span className="icon color-blue5 me-2 flex-shrink-0">
+                        <i className="fas fa-check-circle"></i>
+                    </span>
+                    <p>Set Contact Limit: Determine the maximum number of chats you want to auto-assign to the chosen agent. For instance, if you want to limit it to 20 chats, enter "20" in the contact limit field.</p>
+                </div>
+                <div className="text d-flex mb-20">
+                    <span className="icon color-blue5 me-2 flex-shrink-0">
+                        <i className="fas fa-check-circle"></i>
+                    </span>
+                    <p>Save the Rule: After configuring all the details, review your settings to ensure they are accurate. Then, click the "Save" or "Create" button to save the auto-assign rule.</p>
+                </div>
 
-            <h6 className="mt-40 mb-20">Conclusion</h6>
-            <div className="text d-flex mb-20">
-              <span className="icon color-blue5 me-2 flex-shrink-0">
-                <i className="fas fa-check-circle"></i>
-              </span>
-              <p>Launching your first campaign can be an exciting journey. By following these steps, you’ll be well-equipped to create and manage successful campaigns that drive engagement and achieve your goals.</p>
+                <div className="text-center">
+                    <img src={clickOnAddAutoAssignImage} className="img-fluid pb-3 mx-auto" alt="Click on Add Auto Assign" />
+                </div>
+
+                <h6 className="mt-4 mb-20">Step 3: Monitor the Labels and Agents</h6>
+                <div className="text d-flex mb-10">
+                    <span className="icon color-blue5 me-2 flex-shrink-0">
+                        <i className="fas fa-check-circle"></i>
+                    </span>
+                    <p>Monitor Assigned Chats: The agent you've assigned the 'Payment' label to will now only see and handle chats that match the 'Payment' criteria. Regularly check the dashboard to monitor the assigned chats and agent performance.</p>
+                </div>
+                <div className="text d-flex mb-10">
+                    <span className="icon color-blue5 me-2 flex-shrink-0">
+                        <i className="fas fa-check-circle"></i>
+                    </span>
+                    <p>By following these steps, you can effectively use the "Auto Assign" feature to streamline your chat handling and ensure that the right agent is handling the right chats, leading to improved customer support and efficiency.</p>
+                </div>
             </div>
-            <div className="text d-flex mb-20">
-              <span className="icon color-blue5 me-2 flex-shrink-0">
-                <i className="fas fa-check-circle"></i>
-              </span>
-              <p>If you have any further questions or need assistance, don’t hesitate to reach out to our support team for help.</p>
-            </div>
-          </div>
-           </div>
-      
-         
+           </div> 
             <div className="col-lg-4">
               <div className="summary-card">
                 <h6 className="mb-20 pb-4 border-bottom border-1 brd-gray">Anantya Platform</h6>
@@ -193,7 +184,9 @@ const AutoAssignChats = () => {
     {/* Add more sections as needed */}
     <ScrollToTopButton />
       <WhatsAppWidget />
-  </div>
+   </div>
+
+    </>
   );
 };
 

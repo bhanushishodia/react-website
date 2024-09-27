@@ -1,0 +1,144 @@
+import React from "react";
+import ScrollToTopButton from "../../components/common/ScrollToTopButton";
+import WhatsAppWidget from "../../components/common/WhatsAppWidget";
+import ClientsSection from "../../components/common/ClientsSection"; // Adjust the path if necessary
+import PopularPosts from "../../components/common/PopularPosts";
+import chatLogo from "../../assets/images/icons/Logo-WeChat.svg"; // Importing the image
+import { Helmet } from 'react-helmet';
+const WeChat = () => {
+  return (
+    <div>
+       <Helmet>
+      <title>Integration for WeChat | Anantya.ai</title>
+      <meta name="robots" content="index,follow" />
+      <meta 
+        name="description" 
+        content="Leverage teams of agents to engage with your audience, generate leads, and cultivate enduring customer relationships on China's premier messaging platform." 
+      />
+      <meta 
+        name="keywords" 
+        content="wechat integration, wechat for business, wechat messenger" 
+      />
+      <meta property="og:title" content="Integration for WeChat | Anantya.ai" />
+      <meta property="og:type" content="website" />
+      <meta 
+        property="og:description" 
+        content="Leverage teams of agents to engage with your audience, generate leads, and cultivate enduring customer relationships on China's premier messaging platform." 
+      />
+      <meta property="og:url" content="https://anantya.ai/integrations/wechat" />
+      <meta property="og:site_name" content="anantya.ai" />
+      <meta 
+        property="og:image" 
+        content="https://anantya.ai/assets/img/home/Logo-WeChat.svg" 
+      />
+      <link rel="canonical" href="https://anantya.ai/integrations/wechat" />
+      <meta name="author" content="Anantya" />
+
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Anantya.ai",
+          "alternateName": "Conversational Engagement Platform for Businesses | Anantya.ai",
+          "url": "https://anantya.ai/",
+          "logo": "https://anantya.ai/assets/img/logo.webp",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+971565480273",
+            "contactType": "sales",
+            "areaServed": ["AE", "SA", "BH"],
+            "availableLanguage": "en"
+          },
+          "sameAs": [
+            "https://www.facebook.com/anantyaai",
+            "https://www.instagram.com/anantya.ai",
+            "https://www.youtube.com/@Anantyaai",
+            "https://www.linkedin.com/company/anantya-ai",
+            "https://www.pinterest.com/anantyaai"
+          ]
+        })}
+      </script>
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebPage",
+              "name": "Integration for WeChat | Anantya.ai",
+              "description": "Leverage teams of agents to engage with your audience, generate leads, and cultivate enduring customer relationships on China's premier messaging platform."
+            },
+            {
+              "@type": "WebSite",
+              "name": "Anantya",
+              "alternateName": "anantya.ai",
+              "url": "https://anantya.ai/"
+            }
+          ]
+        })}
+      </script>
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org/",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Homepage",
+              "item": "https://anantya.ai"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Integrations",
+              "item": "https://anantya.ai/integration"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Wechat",
+              "item": "https://anantya.ai/integrations/wechat"
+            }
+          ]
+        })}
+      </script>
+      </Helmet>
+      <div
+        className="py-5"
+        style={{
+          background: "linear-gradient(180deg, #e7f1f5, #fff 100%, #fff)",
+        }}
+      >
+        <div className="container my-5 text-lg-start">
+          <div className="text-block-125 integration mb-3">
+            <a className="internalpage_link" href="../integration">
+              <i class="fas fa-long-arrow-right ms-2 colorfa_1 my-auto"></i>{" "}
+              Integrations
+            </a>
+          </div>
+          <div className="align-items-center">
+            <div className="integrations-info-container d-inline-flex align-items-center">
+              <img
+                alt="Instagram"
+                src={chatLogo}
+                className="integration-logo"
+              />
+              <div className="div-block-267 ms-4">
+                <div className="title integration-category">
+                  Messaging Channels
+                </div>
+                <h1 className="category-title integration">WeChat</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <PopularPosts />
+      <ClientsSection />
+      <ScrollToTopButton />
+      <WhatsAppWidget />
+    </div>
+  );
+};
+
+export default WeChat;

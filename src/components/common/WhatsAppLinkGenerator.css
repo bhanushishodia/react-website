@@ -5,7 +5,7 @@
 
 .whatsapp-preview {
     position: relative;
-    width: 80%;
+   padding: 0px 20px;
     height: 90%;
     margin: 0 auto;
     vertical-align: middle;
@@ -135,4 +135,42 @@
   .modal .dialog { 
     border-radius: 40px;
     text-align: center;
-  }
+  }/* Hide the number input spinners in Firefox */
+/* Hide the number input spinners in Chrome, Safari, and Edge */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Hide the number input spinners in Firefox */
+/* Hide the number input spinners in Firefox and other browsers */
+input[type="number"] {
+    appearance: textfield; /* Standard appearance property */
+    -moz-appearance: textfield; /* Firefox */
+    -webkit-appearance: textfield; /* Chrome, Safari, and Edge */
+
+    /* Optional: Remove arrow buttons in Chrome, Safari, and Edge */
+    &::-webkit-inner-spin-button,
+    &::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+}
+
+.modal-title{
+    margin-left: auto;
+}.walink-card {
+    border: 1px solid #e7e7e7;
+    border-radius: 10px;
+    padding: 10px 25px;
+    height: 100%;
+    text-align: center;
+    transition: all .2s;
+    transform: none;
+    box-shadow: 8px 8px rgba(0, 0, 0, .08);
+}
+.walink-card  h6{
+   font-size: 1.5rem;
+   font-weight: 600;
+}

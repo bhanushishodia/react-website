@@ -1,5 +1,6 @@
 // src/views/TravelHospitality.js
 import React, { useState } from "react";
+import { Helmet } from 'react-helmet';
 import ScrollToTopButton from "../components/common/ScrollToTopButton";
 import WhatsAppWidget from "../components/common/WhatsAppWidget";
 import LTRSlider from "../components/common/LTRSlider";
@@ -16,7 +17,21 @@ import hoverImage1 from "../assets/images/share-exclusive-travel-deals-and-offer
 import hoverImage2 from "../assets/images/launch-a-ai-chatbot.webp";
 import offerDealImage from "../assets/images/promote-exclusive-travel.webp";
 import sendProactiveImage from "../assets/images/send-proactive-updates-for-travel-booking.webp";
+import pdfFile from '../assets/pdf/Travel-Hospitality-Usecase-Updated.pdf';
+
 const TravelHospitality = () => {
+
+const submitFormAndOpenPDF = (event) => {
+    // Prevent the default form submission behavior
+    event.preventDefault();
+
+    // Perform form submission (assuming you have a form with the id 'marketing')
+    document.getElementById("marketing").submit();
+
+    // Open PDF in a new tab	
+      			
+  window.open(pdfFile, "_blank");
+  };
   const homeFAQs = [
     {
       question:
@@ -98,8 +113,138 @@ const TravelHospitality = () => {
   };
   return (
     <div>
-     <div className="container">
-            <div className="content py-md-5 py-0">
+       (
+    <Helmet>
+      <title>Chatbot for Travel & Hospitality Industry | Whatsapp Business API</title>
+      <meta name="robots" content="index,follow" />
+      <meta
+        name="description"
+        content="Improve your customers' travel and hospitality experiences with the WhatsApp chatbot from Anantya.ai. Give quick help and create strong connections with your guests."
+      />
+      <meta property="og:title" content="Chatbot for Travel & Hospitality Industry | Whatsapp Business API" />
+      <meta property="og:type" content="article" />
+      <meta
+        property="og:description"
+        content="Improve your customers' travel and hospitality experiences with the WhatsApp chatbot from Anantya.ai. Give quick help and create strong connections with your guests."
+      />
+      <meta property="og:url" content="https://anantya.ai/travel-and-hospitality-industry" />
+      <meta property="og:site_name" content="anantya.ai" />
+      <meta property="og:image" content="https://anantya.ai/assets/img/travel/get-more-leads-for-your-travel.webp" />
+      <link rel="canonical" href="https://anantya.ai/travel-and-hospitality-industry" />
+      <meta name="author" content="Anantya" />
+
+      {/* Organization Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Anantya.ai",
+          "alternateName": "Conversational Engagement Platform for Businesses | Anantya.ai",
+          "url": "https://anantya.ai/",
+          "logo": "https://anantya.ai/assets/img/logo.webp",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+971565480273",
+            "contactType": "sales",
+            "areaServed": ["AE", "SA", "BH"],
+            "availableLanguage": "en"
+          },
+          "sameAs": [
+            "https://www.facebook.com/anantyaai",
+            "https://www.instagram.com/anantya.ai",
+            "https://www.youtube.com/@Anantyaai",
+            "https://www.linkedin.com/company/anantya-ai",
+            "https://www.pinterest.com/anantyaai"
+          ]
+        })}
+      </script>
+
+      {/* WebPage and Website Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebPage",
+              "name": "Chatbot for Travel & Hospitality Industry | Whatsapp Business API",
+              "description": "Improve your customers' travel and hospitality experiences with the WhatsApp chatbot from Anantya.ai. Give quick help and create strong connections with your guests."
+            },
+            {
+              "@type": "WebSite",
+              "name": "Anantya",
+              "alternateName": "anantya.ai",
+              "url": "https://anantya.ai/"
+            }
+          ]
+        })}
+      </script>
+
+      {/* BreadcrumbList Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://anantya.ai"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Travel & Hospitality",
+              "item": "https://anantya.ai/travel-and-hospitality-industry"
+            }
+          ]
+        })}
+      </script>
+
+      {/* FAQPage Schema */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How Can Conversational Automation Benefit The Travel And Hospitality Industry?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Conversational automation offers numerous benefits to the travel and hospitality industry. It allows businesses to engage and support travelers on their preferred messaging apps, enhancing customer experience and building personal connections. By automating tasks such as bookings, flight rescheduling, and providing real-time notifications, conversational automation brings efficiency to operations and improves overall customer satisfaction."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can Conversational Automation Improve Hotel Services?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Absolutely! Conversational automation empowers hotels to offer contactless services such as check-in and check-out, airport transfers, and room service orders. Guests can conveniently communicate their requests and access essential information like Wi-Fi details or laundry facilities through messaging apps, enhancing convenience and guest satisfaction."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can Conversational Automation Assist In Upselling And Cross-Selling Opportunities?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Absolutely! Conversational automation provides an engaging platform for businesses to upsell and cross-sell to guests and travelers. By engaging in conversational interactions, businesses can suggest additional services, amenities, or upgrades tailored to individual preferences, thereby boosting revenue opportunities and enhancing customer satisfaction."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Conversational Automation Beneficial For Both Travelers And Businesses?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, conversational automation benefits both travelers and businesses. Travelers enjoy the convenience of seamless bookings, real-time assistance, and personalized recommendations throughout their journey. For businesses, it enables improved customer engagement, operational efficiency, and revenue generation through upselling and cross-selling opportunities."
+              }
+            }
+          ]
+        })}
+      </script>
+    </Helmet>
+     <div className="container py-5 mt-5">
+            <div className="content">
                 <div className="row align-items-center">
                     <div className="col-lg-6 text-black mt-20">
                         <div className="info text-black pe-md-5 text-lg-start text-center">
@@ -255,6 +400,68 @@ Launch a AI Chatbot</h4>
             </div>
             <div className="modal-body">
               {/* Your modal content for the second ebook */}
+    
+                <form
+                  action="https://formspree.io/f/mdorezev"
+                  className="py-2 px-md-5 px-4"
+                  method="post"
+                  id="marketing"
+                  onSubmit={submitFormAndOpenPDF}
+                >
+                  <div className="row">
+                    <div className="col-lg-12 mb-3">
+                      <input
+                        type="text"
+                        name="name"
+                        className="form-control"
+                        placeholder="Name"
+                        required
+                      />
+                    </div>
+                    <div className="col-lg-12 mb-3">
+                      <input
+                        type="text"
+                        name="email"
+                        className="form-control"
+                        placeholder="Email Address *"
+                        required
+                      />
+                    </div>
+                    <div className="col-lg-12 mb-3">
+                      <input
+                        type="text"
+                        name="phone"
+                        className="form-control"
+                        placeholder="Phone Number (optional)"
+                      />
+                    </div>
+                    <div className="col-lg-12 mb-3">
+                      <input
+                        type="text"
+                        name="message"
+                        className="form-control"
+                        placeholder="Name of Organisation"
+                        required
+                      />
+                    </div>
+                    <div className="col-lg-12">
+                      <input
+                        type="url"
+                        name="url"
+                        className="form-control"
+                        placeholder="Website URL"
+                        required
+                      />
+                    </div>
+                    <div className="col-lg-12 text-center mt-3">
+                      <input
+                        type="submit"
+                        value="Send Your Request"
+                        className="btn w-50 bg-green text-white cursor-pointer"
+                      />
+                    </div>
+                  </div>
+                </form>
             </div>
           </div>
         </div>

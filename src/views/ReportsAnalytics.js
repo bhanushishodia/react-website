@@ -1,5 +1,6 @@
 // src/views/ReportsAnalytics.js
 import React from "react";
+import { Helmet } from 'react-helmet';
 import ScrollToTopButton from "../components/common/ScrollToTopButton";
 import WhatsAppWidget from "../components/common/WhatsAppWidget";
 import actionableAnalyticsImage from "../assets/images/actionable-analytics-for-unparalleled.webp";
@@ -13,8 +14,94 @@ import whatsappImg from '../assets/images/wa.link_3dzezc.png';
 const ReportsAnalytics = () => {
   return (
     <div>
-      <div className="container">
-        <div className="content py-md-5 py-0">
+       <Helmet>
+      <title>Reports and Analytics | WhatsApp Business Platform | Anantya.ai</title>
+      <meta name="keywords" content="whatsapp business analytics,whatsapp analytics,whatsapp reporting" />
+      <meta name="robots" content="index,follow" />
+      <meta 
+        name="description" 
+        content="Track conversions and gain insights with WhatsApp Business API. Get comprehensive chatbot analytics and real-time reporting for better performance tracking." 
+      />
+      <meta name="keywords" content="whatsapp business analytics, whatsapp analytics, whatsapp reporting, whatsapp report and analytics" />
+      <meta property="og:title" content="Reports and Analytics | WhatsApp Business Platform | Anantya.ai" />
+      <meta property="og:type" content="article" />
+      <meta 
+        property="og:description" 
+        content="Track conversions and gain insights with WhatsApp Business API. Get comprehensive chatbot analytics and real-time reporting for better performance tracking." 
+      />
+      <meta property="og:url" content="https://anantya.ai/reports-and-analytics" />
+      <meta property="og:site_name" content="anantya.ai" />
+      <meta property="og:image" content="https://anantya.ai/assets/img/report-analyatics/actionable-analytics-for-unparalleled.webp" />
+      <link rel="canonical" href="https://anantya.ai/reports-and-analytics" />
+      <meta name="author" content="Anantya" />
+      
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Anantya.ai",
+          "alternateName": "Conversational Engagement Platform for Businesses | Anantya.ai",
+          "url": "https://anantya.ai/",
+          "logo": "https://anantya.ai/assets/img/logo.webp",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+971565480273",
+            "contactType": "sales",
+            "areaServed": ["AE", "SA", "BH"],
+            "availableLanguage": "en"
+          },
+          "sameAs": [
+            "https://www.facebook.com/anantyaai",
+            "https://www.instagram.com/anantya.ai",
+            "https://www.youtube.com/@Anantyaai",
+            "https://www.linkedin.com/company/anantya-ai",
+            "https://www.pinterest.com/anantyaai"
+          ]
+        })}
+      </script>
+      
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebPage",
+              "name": "Reports and Analytics | WhatsApp Business Platform | Anantya.ai",
+              "description": "Track conversions and gain insights with WhatsApp Business API. Get comprehensive chatbot analytics and real-time reporting for better performance tracking."
+            },
+            {
+              "@type": "WebSite",
+              "name": "Anantya",
+              "alternateName": "anantya.ai",
+              "url": "https://anantya.ai/"
+            }
+          ]
+        })}
+      </script>
+      
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://anantya.ai"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Reports and Analytics",
+              "item": "https://anantya.ai/reports-and-analytics"
+            }
+          ]
+        })}
+      </script>
+    </Helmet>
+      <div className="container py-5 mt-5">
+        <div className="content ">
           <div className="row align-items-center">
             <div className="col-lg-6 text-black mt-20 text-lg-start text-center">
               <div className="info text-black pe-md-2">
@@ -71,7 +158,7 @@ const ReportsAnalytics = () => {
           <div className="content">
             <div className="row row-cols-1 row-cols-md-3 g-4 pb-5 px-md-0 px-3">
               <div className="col">
-                <a href="contact.html" className="features-card style-5 box-1 h-100">
+                <a href="contact" className="features-card style-5 box-1 h-100">
                   <div className="icon">
                     <img src={chatbotReportImg} alt="24-7" />
                   </div>
@@ -85,7 +172,7 @@ const ReportsAnalytics = () => {
                 </a>
               </div>
               <div className="col">
-                <a href="contact.html" className="features-card style-5 box-2 h-100">
+                <a href="contact" className="features-card style-5 box-2 h-100">
                   <div className="icon">
                     <img src={messagesStatisticImg} alt="services" />
                   </div>
@@ -98,7 +185,7 @@ const ReportsAnalytics = () => {
                 </a>
               </div>
               <div className="col">
-                <a href="contact.html" className="features-card style-5 box-3 h-100">
+                <a href="contact" className="features-card style-5 box-3 h-100">
                   <div className="icon">
                     <img src={labelReportImg} alt="cyber-security" />
                   </div>

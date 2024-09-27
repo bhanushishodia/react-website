@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from 'react-helmet';
 import InnerHeader from '../components/common/InnerHeader';
 import articleImg1 from '../assets/images/article-1.png'; // Adjust the path based on your folder structure
 import articleImg2 from '../assets/images/article-2.png';
@@ -8,27 +9,42 @@ import ScrollToTopButton from "../components/common/ScrollToTopButton";
 import WhatsAppWidget from "../components/common/WhatsAppWidget";
 const HowToSetupWelcomeMessage = () => {
   return (
+    <>
+    <Helmet>
+    <title>Set Up a Welcome Message on Anantya.ai Step by Step</title>
+    <meta name="robots" content="index,follow" />
+    <meta name="description" content="Guide to setup a welcome message on Anantya.ai for businesses." />
+    <meta property="og:title" content="Set Up a Welcome Message on Anantya.ai Step by Step" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="Guide to setup a welcome message on Anantya.ai for businesses." />
+    <meta property="og:url" content="https://anantya.ai/how-to-setup-a-welcome-message-on-anantya.ai" />
+    <meta property="og:site_name" content="anantya.ai" />
+    <meta property="og:image" content="https://anantya.ai/assets/img/article-1.png" />
+    <link rel="canonical" href="https://anantya.ai/how-to-setup-a-welcome-message-on-anantya.ai" />
+    <meta name="author" content="Anantya.ai" />
+</Helmet>
     <div className="page-content">
      <div>
       <InnerHeader />
     </div>
     <main className="career-details-page style-5 pt-100">
       <section className="jop-details pb-100">
-        <div className="container">
+        <div className="container py-5">
           <div className="content">
             <div className="row">
               <div className="col-lg-8">
-                <div className="jop-info py-5">
+                <div className="jop-info text-start">
                   <div className="tags mb-40">
-                    <a href="#">Auto assign chat</a>
-                    <a href="#">Agent Sublogin</a>
+                    <a href="/contact">Auto assign chat</a>
+                    <a href="/contact">Agent Sublogin</a>
                   </div>
                   <h3 className="main-title mb-10">
                     How to Set Up a Welcome Message: Step-by-Step Guide
                   </h3>
                   <p className="pb-40 color-999">
-                    By <a href="#" className="color-000">Deepika Yadav</a>
-                  </p>
+    By <span className="color-000">Deepika Yadav</span>
+</p>
+
                   <div className="text d-flex mb-20">
                     <span className="icon color-blue5 me-2 flex-shrink-0">
                       <i className="fas fa-check-circle"></i>
@@ -53,7 +69,7 @@ const HowToSetupWelcomeMessage = () => {
                       Follow this comprehensive step-by-step guide to establish an automatic welcome message for your users.
                     </p>
                   </div>
-                  <h6 className="mt-40 mb-20">Step 1: Go to Bot Setup</h6>
+                  <h6 className="mt-4 mb-20">Step 1: Go to Bot Setup</h6>
                   <div className="text d-flex mb-20">
                     <span className="icon color-blue5 me-2 flex-shrink-0">
                       <i className="fas fa-check-circle"></i>
@@ -65,7 +81,7 @@ const HowToSetupWelcomeMessage = () => {
                   <div className="text-center">
                     <img src={articleImg1} className="img-fluid pb-3 mx-auto" alt="Bot Setup" />
                   </div>
-                  <h6 className="mt-40 mb-20">Step 2: Add a Welcome Message</h6>
+                  <h6 className="mt-4 mb-20">Step 2: Add a Welcome Message</h6>
                   <div className="text d-flex mb-20">
                     <span className="icon color-blue5 me-2 flex-shrink-0">
                       <i className="fas fa-check-circle"></i>
@@ -77,7 +93,7 @@ const HowToSetupWelcomeMessage = () => {
                   <div className="text-center">
                     <img src={articleImg2} className="img-fluid pb-3 mx-auto" alt="Add Welcome Message" />
                   </div>
-                  <h6 className="mt-40 mb-20">Step 3: Setup Your Message</h6>
+                  <h6 className="mt-4 mb-20">Step 3: Setup Your Message</h6>
                   <div className="text d-flex mb-20">
                     <span className="icon color-blue5 me-2 flex-shrink-0">
                       <i className="fas fa-check-circle"></i>
@@ -113,7 +129,7 @@ const HowToSetupWelcomeMessage = () => {
                   <div className="text-center">
                     <img src={articleImg3} className="img-fluid pb-3 mx-auto" alt="Setup Your Message" />
                   </div>
-                  <h6 className="mt-40 mb-20">Step 4: Submit Your Welcome Message</h6>
+                  <h6 className="mt-4 mb-20">Step 4: Submit Your Welcome Message</h6>
                   <div className="text d-flex mb-20">
                     <span className="icon color-blue5 me-2 flex-shrink-0">
                       <i className="fas fa-check-circle"></i>
@@ -167,6 +183,7 @@ const HowToSetupWelcomeMessage = () => {
       <ScrollToTopButton />
       <WhatsAppWidget />
     </div>
+    </>
   );
 };
 

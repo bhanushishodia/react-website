@@ -49,6 +49,16 @@
     height: 100%;
     background: #fff;
 }
+.blog_card h5 {
+
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.blog_card a{
+
+color: #333;
+
+}
 
 .blog_card img {
     border-radius: 15px;
@@ -101,4 +111,48 @@
   .blog-content .btn-main {
     margin-top: 10px;
   }
-  
+  /* General table styling */
+.jop-info table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+
+/* Add borders to the table */
+.jop-info table, .jop-info th, .jop-info td {
+  border: 1px solid #ddd;
+}
+
+/* Styling the table header */
+.jop-info th {
+  background-color: #f2f2f2;
+  padding: 12px;
+  text-align: left;
+}
+
+/* Styling the table body */
+.jop-info td {
+  padding: 8px;
+}
+
+/* Make tables responsive */
+.jop-info table {
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+/* Optional: Add some hover effects */
+.jop-info tr:hover {
+  background-color: #f5f5f5;
+}
+
+/* Responsive Font Sizes */
+@media screen and (max-width: 768px) {
+  .jop-info th, .jop-info td {
+      font-size: 0.8rem;
+      padding: 10px;
+  }
+}
