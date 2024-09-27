@@ -23,7 +23,7 @@ const AutomatedChats = () => {
             <div className="row">
               <div className="col-lg-12 col-sm-12">
                 <div
-                  className="projects-tabs py-4"
+                  className="projects-tabs py-3"
                   style={{
                     color: "#76c6b7",
                     backgroundColor: "#fff",
@@ -139,7 +139,7 @@ const AutomatedChats = () => {
                   >
                     <div className="industry-1">
                       <div className="project-card style-7 d-inline-flex py-5 row m-md-0 m-0 p-0">
-                        <div className="info col-xl-6 col-lg-6 col-md-6 col-sm-12 my-auto text-lg-start text-center">
+                        <div className="info col-xl-6 col-lg-6 col-md-6 col-sm-12 my-auto text-start">
                           <h3>Your 'Complete' WhatsApp Marketing Platform</h3>
                           <p className="my-3">
                             Everything you need to notify, chat & engage
@@ -251,7 +251,7 @@ const AutomatedChats = () => {
                     <div className="industry-2">
                       <div className="swiper-slide">
                         <div className="project-card style-7 d-inline-flex py-5 row m-md-0  m-0 p-0">
-                          <div className="info col-xl-6 col-lg-6 col-md-6 col-sm-12 my-auto text-lg-start text-center">
+                          <div className="info col-xl-6 col-lg-6 col-md-6 col-sm-12 my-auto text-start ">
                             <h3>Engage Customers 24x7 via Smart Chatbot</h3>
                             <p className="my-3">
                               Whether you're solving customer queries or leading
@@ -327,7 +327,7 @@ const AutomatedChats = () => {
                     <div className="industry-3">
                       <div className="swiper-slide">
                         <div className="project-card style-7 d-inline-flex py-5 row m-md-0 m-0 p-0 ">
-                          <div className="info col-xl-6 col-lg-6 col-md-6 col-sm-12 my-auto text-lg-start text-center">
+                          <div className="info col-xl-6 col-lg-6 col-md-6 col-sm-12 my-auto text-start">
                             <h3>5X Your Sales - Start selling on WhatsApp!</h3>
                             <p className="my-3">
                               customers easily find, check out, and buy your
@@ -405,7 +405,7 @@ const AutomatedChats = () => {
                     <div className="industry-4">
                       <div className="swiper-slide">
                         <div className="project-card style-7 d-inline-flex py-5 row m-md-0  m-0 p-0">
-                          <div className="info col-xl-6 col-lg-6 col-md-6 col-sm-12 my-auto text-lg-start text-center">
+                          <div className="info col-xl-6 col-lg-6 col-md-6 col-sm-12 my-auto text-start">
                             <h3>
                               Boost Security with WhatsApp's Easy
                               Authentication.

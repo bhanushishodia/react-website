@@ -239,7 +239,7 @@ const EcommerceRetail = () => {
         <div className="content ">
           <div className="row align-items-center">
             <div className="col-lg-6 text-black mt-20 text-lg-start text-center">
-              <div className="info text-black pe-md-2">
+              <div className=" text-black pe-md-2">
                 <h1 className="heading">Transform Shopping Experience with WhatsApp Commerce</h1>
                 <p className="mt-20 text-black pe-md-5">
                   Boost your online sales with Anantya.ai. No matter what you

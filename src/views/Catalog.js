@@ -88,7 +88,7 @@ const Catalog = () => {
       <div className="content">
         <div className="row align-items-center">
           <div className="col-lg-6 text-black mt-20">
-            <div className="info text-black pe-md-5 text-lg-start text-center">
+            <div className=" text-black pe-md-5 text-lg-start text-center">
               <h1>
                 <span>WhatsApp Catalog:</span> List your Products Online
               </h1>

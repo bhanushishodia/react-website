@@ -116,7 +116,7 @@ const AutomatedChatBot = () => {
       <div className="content">
         <div className="row align-items-center">
           <div className="col-lg-6 text-black mt-20">
-            <div className="info text-black pe-md-4 text-lg-start text-center">
+            <div className=" text-black pe-md-4 text-lg-start text-center">
               <h1 className='heading'>
                 Automate up to 96% Queries with <span>WhatsApp Chatbots</span>
               </h1>

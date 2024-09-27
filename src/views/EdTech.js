@@ -244,7 +244,7 @@ const submitFormAndOpenPDF = (event) => {
         <div className="content ">
           <div className="row align-items-center">
             <div className="col-lg-6 text-black mt-20 text-lg-start text-center">
-              <div className="info text-black pe-md-5">
+              <div className=" text-black pe-md-5">
                 {/* <small className="mb-20 title_small">whatsapp-marketing</small> */}
                 <h1 className="heading">Transform Education with WhatsApp APIs</h1>
 

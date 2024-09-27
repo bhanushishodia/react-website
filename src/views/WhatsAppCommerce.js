@@ -134,7 +134,7 @@ window.open(pdfFile, "_blank");
       <div className="content ">
         <div className="row align-items-center">
           <div className="col-lg-6 text-black mt-20 text-md-start text-center">
-            <div className="info text-black "> 
+            <div className=" text-black "> 
               <h1 className='heading'>
                 WhatsApp Commerce: Set up your online store
               </h1>

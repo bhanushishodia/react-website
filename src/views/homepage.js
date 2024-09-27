@@ -251,7 +251,7 @@ const Homepage = () => {
       </div>
       {/* section3 */}
       {/* section4 */}
-      <div class="container py-5">
+      <div class="container py-5 mt-md-0 mt-5">
         <a
           href="https://wa.link/hd4mvx"
           target="_blank"
@@ -279,11 +279,11 @@ const Homepage = () => {
                 </div>
                 <p>
                   Whether you require a single channel or multiple integrations,
-                  our customizable software seamlessly melds <br /> with your
+                  our customizable software  <br /> seamlessly melds with your
                   sales and marketing processes.
                 </p>
               </div>
-              <div className={`col-lg-12 video-section ${isVisible ? 'zoom-in' : 'zoom-out'}`} ref={videoRef}>
+              <div className={`col-lg-12 mt-3 video-section ${isVisible ? 'zoom-in' : 'zoom-out'}`} ref={videoRef}>
         <video
           preload="auto"
           loop

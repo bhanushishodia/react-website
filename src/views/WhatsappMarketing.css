@@ -1,0 +1,12 @@
+@media screen and (max-width: 991px) {
+    .number-card.style-6 {
+        margin: 15px 20px;
+        border: 0 !important;
+    }
+}
+@media screen and (max-width: 991px) {
+    .heading{
+        font-size: 30px!important;
+    
+    }
+}

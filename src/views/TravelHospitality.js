@@ -247,7 +247,7 @@ const submitFormAndOpenPDF = (event) => {
             <div className="content">
                 <div className="row align-items-center">
                     <div className="col-lg-6 text-black mt-20">
-                        <div className="info text-black pe-md-5 text-lg-start text-center">
+                        <div className=" text-black pe-md-5 text-lg-start text-center">
                         
                             <h1 className="heading">Get More Leads for Your Travel Agency on WhatsApp</h1>
 

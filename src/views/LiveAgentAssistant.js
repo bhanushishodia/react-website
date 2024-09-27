@@ -98,7 +98,7 @@ const LiveAgentAssistant = () => {
       <div className="content">
         <div className="row align-items-center">
           <div className="col-lg-6 text-black mt-20 text-md-start text-center">
-            <div className="info text-black pe-md-4">
+            <div className=" text-black pe-md-4">
               <h1 className='heading'>Supercharge your Team's Productivity with WhatsApp</h1>
               <p className="mt-1 text-black pe-md-5">
                 With the WhatsApp Business API, provide Live Chat across multiple devices using the same phone number, to handle customer support, boost sales, and grow your business on WhatsApp.

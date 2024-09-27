@@ -138,7 +138,7 @@ const WhatsappMarketing = () => {
           <div className="content">
             <div className="row align-items-center">
               <div className="col-lg-6 text-black mt-20">
-                <div className="info text-black text-md-start text-center">
+                <div className=" text-black text-md-start text-center">
                   <h1 className="heading">
                     Kick Start Your WhatsApp Marketing Journey
                   </h1>
@@ -146,7 +146,7 @@ const WhatsappMarketing = () => {
                     Unlock the power of WhatsApp Marketing and watch your
                     business skyrocket to new heights! With us, you can achieve:
                   </p>
-                  <ul style={{ listStyleType: "none" }}>
+                  <ul style={{ listStyleType: "disc" }}>
                     <li>Upto 150x ROI by Broadcasting Messages</li>
                     <li>5x Conversions with Click to WhatsApp Ads</li>
                     <li>Automate your business for 2x Boost in sales</li>
@@ -195,7 +195,7 @@ const WhatsappMarketing = () => {
         </div>
         <section className="numbers">
           <div className="container py-5">
-            <div className="content">
+            <div className="content px-md-0 px-3">
               <div className="row">
                 <div className="col-lg-4">
                   <div className="number-card style-6">

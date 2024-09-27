@@ -14,7 +14,7 @@ import { Helmet } from 'react-helmet';
 const WhatsAppBusinessAPI = () => {
   return (
     <>
-     (
+     
     <Helmet>
       {/* Meta Tags */}
       <title>Whatsapp Business API Integration Platform | Anantya.ai</title>
@@ -95,8 +95,8 @@ const WhatsAppBusinessAPI = () => {
       <div className="container py-5 mt-4">
         <div className="content ">
           <div className="row align-items-center">
-            <div className="col-lg-6 info text-black text-lg-start text-center">
-              <div className="info text-black">
+            <div className="col-lg-6  text-black text-lg-start text-center">
+           
                 <h1 className=" mb-20 heading">
                   Grow Your Business With WhatsApp Business API
                 </h1>
@@ -144,7 +144,7 @@ const WhatsAppBusinessAPI = () => {
                     Book a Demo
                   </a>
                 </div>
-              </div>
+              
             </div>
             <div className="col-lg-6">
               <div

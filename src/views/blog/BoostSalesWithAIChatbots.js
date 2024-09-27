@@ -223,7 +223,7 @@ const BoostSalesWithAIChatbots = () => {
           </div>
 
           {/* Sidebar */}
-          <div className="col-lg-4 col-md-12 career-details-page style-5 summary-card">
+          <div className="col-lg-4 col-md-12 career-details-page style-5 ">
             <div className="summary-card">
                 <h6 className="pb-20 border-bottom border-1 brd-gray">Table of Contents</h6>
                 <ul>

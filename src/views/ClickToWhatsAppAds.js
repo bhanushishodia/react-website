@@ -89,7 +89,7 @@ const ClickToWhatsAppAds = () => {
         <div className="content ">
           <div className="row align-items-center">
             <div className="col-lg-6 text-black mt-20 text-lg-start text-center">
-              <div className="info text-black pe-md-5">
+              <div className=" text-black pe-md-5">
                 <h1>
                   Witness 5x ROI with Ads that <span>click to WhatsApp</span>
                 </h1>

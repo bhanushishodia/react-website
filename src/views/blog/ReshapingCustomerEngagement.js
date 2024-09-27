@@ -113,7 +113,7 @@ const ReshapingCustomerEngagement = () => {
     `}</script>
   </Helmet>
     <section>
-      <div className="container py-5 mt-4">
+       <div className="container py-5 mt-4">
         {/* SEO-Friendly Heading */}
         <h1 className="pb-2 text-center">
           From Vision to Reality: How Anantya.ai is Reshaping Customer Engagement on WhatsApp
@@ -129,7 +129,7 @@ const ReshapingCustomerEngagement = () => {
 
         <div className="row px-1 mx-1">
           {/* Main Content */}
-          <div className="col-lg-8 col-md-12 col-sm-12 text-justify">
+          <div className="col-lg-8 col-md-12 col-sm-12 text-justify text-start">
             <div className="blogcontentui">
               <div className="blogBox text-justify">
                 <section itemProp="articleBody" className="entry-content">
@@ -164,11 +164,11 @@ const ReshapingCustomerEngagement = () => {
 
                   {/* List Section */}
                   <ul className="py-4" style={{ padding: 0 }}>
-                    <li>&#8226; Send automated or scheduled notifications like payment reminders and delivery updates.</li>
-                    <li>&#8226; Broadcast messages to thousands of opted-in users at once.</li>
-                    <li>&#8226; Enable multiple human agents to reply on the same number for efficient support.</li>
-                    <li>&#8226; Become a Verified Business on WhatsApp with the green tick.</li>
-                    <li>&#8226; Install chatbots to automate sales and support, making your life easier.</li>
+                    <li> Send automated or scheduled notifications like payment reminders and delivery updates.</li>
+                    <li> Broadcast messages to thousands of opted-in users at once.</li>
+                    <li> Enable multiple human agents to reply on the same number for efficient support.</li>
+                    <li> Become a Verified Business on WhatsApp with the green tick.</li>
+                    <li>Install chatbots to automate sales and support, making your life easier.</li>
                   </ul>
 
                   {/* Section 7 */}

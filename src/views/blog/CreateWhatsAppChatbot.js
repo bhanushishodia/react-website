@@ -5,11 +5,11 @@ import whatsappChatbotImage from '../../assets/images/blog/whatsapp-chatbot-for-
 import whatsappChatbotImage1 from '../../assets/images/blog/anantyaai-dashboard-login.webp';
 import whatsappChatbotImage2 from '../../assets/images/blog/whatsapp-chatbot-dashboard.webp';
 import whatsappChatbotImage3 from '../../assets/images/blog/whatsapp-chatbot-setup.webp';
-import whatsappChatbotImage4 from '../../assets/images/blog/welcome-message.webp'; 
-import whatsappChatbotImage5 from '../../assets/images/blog/out-of-office-message.webp';
-import whatsappChatbotImage6 from '../../assets/images/blog/whatsapp-bot-setup.webp';
-import whatsappChatbotImage7 from '../../assets/images/blog/feedback-message.webp';
-import whatsappChatbotImage8 from '../../assets/images/blog/quick-reply.webp';
+// import whatsappChatbotImage4 from '../../assets/images/blog/welcome-message.webp'; 
+// import whatsappChatbotImage5 from '../../assets/images/blog/out-of-office-message.webp';
+// import whatsappChatbotImage6 from '../../assets/images/blog/whatsapp-bot-setup.webp';
+// import whatsappChatbotImage7 from '../../assets/images/blog/feedback-message.webp';
+// import whatsappChatbotImage8 from '../../assets/images/blog/quick-reply.webp';
 import { Helmet } from 'react-helmet';
 const CreateWhatsAppChatbot = () => {
   return (

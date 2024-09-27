@@ -25,7 +25,7 @@ function CustomHeader() {
 
   return (
     <header
-      className="header d-lg-none d-sm-block d-md-none d-block"
+      className="header d-lg-none d-sm-block d-md-none d-block custom_header"
       style={{
         position: "fixed",
         top: "0",
@@ -93,58 +93,58 @@ function CustomHeader() {
                   {openSubMenu === 0 && (
                     <>
                       <li className="nav-item">
-                        <a className="nav-link" href="/">
+                        <a className="nav-link" href="/whatsapp-marketing">
                         WhatsApp Marketing 
                         </a>
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link" href="/">
+                        <a className="nav-link" href="/whatsapp-commerce">
                            WhatsApp Commerce 
                         </a>
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link" href="/">
+                        <a className="nav-link" href="/whatsapp-support">
                           WhatsApp Support  
                         </a>
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link" href="/">
+                        <a className="nav-link" href="/whatsapp-authentication">
                            WhatsApp Authentication
                        
                         </a>
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link" href="/">
+                        <a className="nav-link" href="/ecommerce-industry">
                         Ecommerce & Retail
                         </a>
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link" href="/">
+                        <a className="nav-link" href="/healthcare-industry">
                         Healthcare
                         </a>
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link" href="/">
+                        <a className="nav-link" href="/edtech-industry">
                         Ed-Tech 
                         </a>
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link" href="/">
+                        <a className="nav-link" href="/banking-industry">
                         Banking & BFSI
                         </a>
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link" href="/">
+                        <a className="nav-link" href="/media-entertainment-industry">
                         Media & Entertainment
                         </a>
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link" href="/">
+                        <a className="nav-link" href="/food-and-beverage-industry">
                         Food & Beverage
                         </a>
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link" href="/">
+                        <a className="nav-link" href="/travel-and-hospitality-industry">
                         Travel & Hospitality
                         </a>
                       </li>
@@ -154,33 +154,33 @@ function CustomHeader() {
                   {openSubMenu === 1 && (
                     <>
                       <li className="nav-item">
-                        <a className="nav-link" href="/">
+                        <a className="nav-link" href="/live-agent-support">
                         Live Agent Assistant
                         </a>
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link" href="/">
+                        <a className="nav-link" href="/whatsapp-broadcasting">
                         WhatsApp Broadcasting
                         </a>
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link" href="/">
+                        <a className="nav-link" href="/reports-and-analytics">
                         Reports & Analytics 
                         </a>
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link" href="/">
+                        <a className="nav-link" href="/automated-chatbot">
                         Automated ChatBot 
                         </a>
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link" href="/">
+                        <a className="nav-link" href="/whatsapp-catalog">
                         
                         Catalog
                         </a>
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link" href="/">
+                        <a className="nav-link" href="/click-to-whatsapp-ads">
                         
                         Click to WhatsApp Ads 
                         </a>
@@ -190,42 +190,42 @@ function CustomHeader() {
                   {openSubMenu === 2 && (
                     <>
                       <li className="nav-item">
-                        <a className="nav-link" href="/">
+                        <a className="nav-link" href="/integrations/zapier">
                         Zapier
                         </a>
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link" href="/">
+                        <a className="nav-link" href="/integrations/hubspot">
                         Hubspot
                         </a>
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link" href="/">
+                        <a className="nav-link" href="/integrations/woocommerce">
                         WooCommerce
                         </a>
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link" href="/">
+                        <a className="nav-link" href="/integrations/dialogflow">
                         Dialogflow
                         </a>
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link" href="/">
+                        <a className="nav-link" href="/integrations/make">
                         make.com
                         </a>
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link" href="/">
+                        <a className="nav-link" href="/integrations/salesforce">
                         Salesforce
                         </a>
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link" href="/">
+                        <a className="nav-link" href="/integrations/pipedrive">
                         Pipedrive
                         </a>
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link" href="/">
+                        <a className="nav-link" href="/integrations/webhook">
                         Webhook
                         </a>
                       </li>
@@ -234,34 +234,34 @@ function CustomHeader() {
                   {openSubMenu === 3 && (
                     <>
                       <li className="nav-item">
-                        <a className="nav-link" href="/">
+                        <a className="nav-link" href="/blog">
                         Blog 
                         </a>
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link" href="/">
+                        <a className="nav-link" href="/about">
                         About Us 
                         </a>
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link" href="/">
+                        <a className="nav-link" href="/work-with-us">
                         Work With Us 
                         </a>
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link" href="/">
+                        <a className="nav-link" href="/contact">
                         
                           Contact 
                         </a>
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link" href="/">
+                        <a className="nav-link" href="/knowledge-center">
                         Knowledge Center 
 
                         </a>
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link" href="/">
+                        <a className="nav-link" href="/partner-with-us">
                         Partner With Us 
 
                         </a>
@@ -271,40 +271,40 @@ function CustomHeader() {
                   {openSubMenu === 4 && (
                     <>
                       <li className="nav-item">
-                        <a className="nav-link" href="/">
+                        <a className="nav-link" href="/whatsapp-business-api">
                         WhatsApp Business API
                         </a>
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link" href="/">
+                        <a className="nav-link" href="/integrations/instagram">
                         Instagram
                         </a>
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link" href="/">
+                        <a className="nav-link" href="/integrations/google-business-messages">
                         Google Messages
                         </a>
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link" href="/">
+                        <a className="nav-link" href="/integrations/viber">
                         
                         Viber
                         </a>
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link" href="/">
+                        <a className="nav-link" href="/integrations/line">
                         Line
 
                         </a>
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link" href="/">
+                        <a className="nav-link" href="/integrations/facebook-messenger">
                         Messenger
 
                         </a>
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link" href="/">
+                        <a className="nav-link" href="/integrations/wechat">
                         WeChat
 
                         </a>
@@ -395,7 +395,7 @@ function CustomHeader() {
                     href="https://calendly.com/info-w0m/30min?month=2024-02"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn btn-primary d-block"
+                    className="btn login_button d-block"
                   >
                     Book a Demo
                   </a>
