@@ -183,8 +183,8 @@ const CreateWhatsAppChatbot = () => {
                                         How to Create a WhatsApp ChatBot in Just a Few Steps
                                     </h3>
                                     <p className="pb-40 color-999">
-                                        Update on <a href="#" className="color-000">25 May 2024</a>
-                                    </p>
+                                     Update on <span className="color-000">25 May 2024</span></p>
+
                                     <div className="text d-flex mb-20">
                                         <p>
                                             Looking for different ways to boost your business or provide better customer support while using a <b>WhatsApp chatbot?</b>

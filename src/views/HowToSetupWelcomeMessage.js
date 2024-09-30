@@ -27,7 +27,7 @@ const HowToSetupWelcomeMessage = () => {
      <div>
       <InnerHeader />
     </div>
-    <main className="career-details-page style-5 pt-100">
+    <main className="career-details-page my-5 style-5 pt-100">
       <section className="jop-details pb-100">
         <div className="container py-5">
           <div className="content">
@@ -38,14 +38,14 @@ const HowToSetupWelcomeMessage = () => {
                     <a href="/contact">Auto assign chat</a>
                     <a href="/contact">Agent Sublogin</a>
                   </div>
-                  <h3 className="main-title mb-10">
+                  <h3 className="main-title mb-10 pt-3">
                     How to Set Up a Welcome Message: Step-by-Step Guide
                   </h3>
                   <p className="pb-40 color-999">
     By <span className="color-000">Deepika Yadav</span>
 </p>
 
-                  <div className="text d-flex mb-20">
+                  <div className="text d-flex mb-2">
                     <span className="icon color-blue5 me-2 flex-shrink-0">
                       <i className="fas fa-check-circle"></i>
                     </span>
@@ -53,7 +53,7 @@ const HowToSetupWelcomeMessage = () => {
                       A welcome message is a great way to instantly greet users and provide them with a positive first interaction when they connect with your platform.
                     </p>
                   </div>
-                  <div className="text d-flex mb-20">
+                  <div className="text d-flex mb-2">
                     <span className="icon color-blue5 me-2 flex-shrink-0">
                       <i className="fas fa-check-circle"></i>
                     </span>
@@ -61,7 +61,7 @@ const HowToSetupWelcomeMessage = () => {
                       Set up a welcome message that gets sent when new customers contact your business for the first time, or when existing users reach out after 24 hours.
                     </p>
                   </div>
-                  <div className="text d-flex mb-20">
+                  <div className="text d-flex mb-2">
                     <span className="icon color-blue5 me-2 flex-shrink-0">
                       <i className="fas fa-check-circle"></i>
                     </span>
@@ -69,8 +69,8 @@ const HowToSetupWelcomeMessage = () => {
                       Follow this comprehensive step-by-step guide to establish an automatic welcome message for your users.
                     </p>
                   </div>
-                  <h6 className="mt-4 mb-20">Step 1: Go to Bot Setup</h6>
-                  <div className="text d-flex mb-20">
+                  <h6 className="mt-4 mb-2">Step 1: Go to Bot Setup</h6>
+                  <div className="text d-flex mb-2">
                     <span className="icon color-blue5 me-2 flex-shrink-0">
                       <i className="fas fa-check-circle"></i>
                     </span>
@@ -81,8 +81,8 @@ const HowToSetupWelcomeMessage = () => {
                   <div className="text-center">
                     <img src={articleImg1} className="img-fluid pb-3 mx-auto" alt="Bot Setup" />
                   </div>
-                  <h6 className="mt-4 mb-20">Step 2: Add a Welcome Message</h6>
-                  <div className="text d-flex mb-20">
+                  <h6 className="mt-4 mb-2">Step 2: Add a Welcome Message</h6>
+                  <div className="text d-flex mb-2">
                     <span className="icon color-blue5 me-2 flex-shrink-0">
                       <i className="fas fa-check-circle"></i>
                     </span>
@@ -93,8 +93,8 @@ const HowToSetupWelcomeMessage = () => {
                   <div className="text-center">
                     <img src={articleImg2} className="img-fluid pb-3 mx-auto" alt="Add Welcome Message" />
                   </div>
-                  <h6 className="mt-4 mb-20">Step 3: Setup Your Message</h6>
-                  <div className="text d-flex mb-20">
+                  <h6 className="mt-4 mb-2">Step 3: Setup Your Message</h6>
+                  <div className="text d-flex mb-2">
                     <span className="icon color-blue5 me-2 flex-shrink-0">
                       <i className="fas fa-check-circle"></i>
                     </span>
@@ -102,7 +102,7 @@ const HowToSetupWelcomeMessage = () => {
                       Now, you have the choice of selecting a pre-approved message template or creating a customized welcome message tailored to your users.
                     </p>
                   </div>
-                  <div className="text d-flex mb-20">
+                  <div className="text d-flex mb-2">
                     <span className="icon color-blue5 me-2 flex-shrink-0">
                       <i className="fas fa-check-circle"></i>
                     </span>
@@ -110,7 +110,7 @@ const HowToSetupWelcomeMessage = () => {
                       Depending on your preferences, you can set up a regular text message, an image message, a video message, or even send a file as part of your welcome greeting.
                     </p>
                   </div>
-                  <div className="text d-flex mb-20">
+                  <div className="text d-flex mb-2">
                     <span className="icon color-blue5 me-2 flex-shrink-0">
                       <i className="fas fa-check-circle"></i>
                     </span>
@@ -118,7 +118,7 @@ const HowToSetupWelcomeMessage = () => {
                       Compose the content of your welcome message. If you're opting for a text message, write a warm and engaging greeting that resonates with your audience.
                     </p>
                   </div>
-                  <div className="text d-flex mb-20">
+                  <div className="text d-flex mb-2">
                     <span className="icon color-blue5 me-2 flex-shrink-0">
                       <i className="fas fa-check-circle"></i>
                     </span>
@@ -129,8 +129,8 @@ const HowToSetupWelcomeMessage = () => {
                   <div className="text-center">
                     <img src={articleImg3} className="img-fluid pb-3 mx-auto" alt="Setup Your Message" />
                   </div>
-                  <h6 className="mt-4 mb-20">Step 4: Submit Your Welcome Message</h6>
-                  <div className="text d-flex mb-20">
+                  <h6 className="mt-4 mb-2">Step 4: Submit Your Welcome Message</h6>
+                  <div className="text d-flex mb-2">
                     <span className="icon color-blue5 me-2 flex-shrink-0">
                       <i className="fas fa-check-circle"></i>
                     </span>
@@ -141,19 +141,19 @@ const HowToSetupWelcomeMessage = () => {
                   <div className="text-center">
                     <img src={articleImg4} className="img-fluid pb-3 mx-auto" alt="Submit Your Message" />
                   </div>
-                  <div className="text-start d-flex mb-20">
+                  <div className="text-start d-flex mb-2">
                     <span className="icon color-blue5 me-2 flex-shrink-0">
                       <i className="fas fa-check-circle"></i>
                     </span>
                     <p>Congratulations! You've successfully set up your welcome message.</p>
                   </div>
-                  <div className="text-start d-flex mb-20">
+                  <div className="text-start d-flex mb-2">
                     <span className="icon color-blue5 me-2 flex-shrink-0">
                       <i className="fas fa-check-circle"></i>
                     </span>
                     <p>From this point, you have the flexibility to manage your welcome messages.</p>
                   </div>
-                  <div className="text-start d-flex mb-20">
+                  <div className="text-start d-flex mb-2">
                     <span className="icon color-blue5 me-2 flex-shrink-0">
                       <i className="fas fa-check-circle"></i>
                     </span>
@@ -163,7 +163,7 @@ const HowToSetupWelcomeMessage = () => {
               </div>
               <div className="col-lg-4">
                 <div className="summary-card">
-                  <h6 className="mb-20 pb-4 border-bottom border-1 brd-gray">Anantya Platform</h6>
+                  <h6 className="mb-2 pb-4 border-bottom border-1 brd-gray">Anantya Platform</h6>
                   <ul>
                     <li><a href="how-to-setup-a-welcome-message-on-anantya.ai">How to Set Up a Welcome Message</a></li>
                     <li><a href="how-to-add-agent-sublogin">How to Add Agent Sublogin</a></li>

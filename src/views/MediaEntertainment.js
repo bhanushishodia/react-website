@@ -34,65 +34,25 @@ const MediaEntertainment = () => {
   const homeFAQs = [
     {
       question:
-        "How can an e-commerce business benefit from utilizing WhatsApp Business API?",
+        "Q1: What is the WhatsApp Business API?",
       answer:
-        "By leveraging the WhatsApp Business API, e-commerce businesses can effectively grow and sell products online. It enables direct communication with customers, providing personalized interactions and enhancing customer engagement. This leads to increased sales, improved customer satisfaction, and expanded reach.",
+        "A: The WhatsApp Business API is a communication platform that allows businesses in the media and entertainment industry to connect with their audience, deliver personalized content, and provide customer support through the WhatsApp messaging app.",
     },
     {
       question:
-        "How can e-commerce businesses utilize WhatsApp Business API for marketing and sales?",
-      answer: (
-        <>
-          E-commerce businesses can utilize WhatsApp Business API for marketing
-          and sales by:
-          <ol>
-            <li>
-              Sending personalized product recommendations and promotions to
-              customers.
-            </li>
-            <li>
-              Sharing product catalogs, allowing customers to browse and make
-              purchases directly on WhatsApp.
-            </li>
-            <li>
-              Automating abandoned cart notifications to recover lost sales.
-            </li>
-            <li>
-              Providing real-time customer support, addressing queries, and
-              resolving issues promptly.
-            </li>
-            <li>
-              Sending order updates, delivery notifications, and post-purchase
-              follow-ups.
-            </li>
-          </ol>
-        </>
-      ),
+        "Q2: How can the media and entertainment industry benefit from using the WhatsApp Business API?",
+      answer: 
+      "A: By leveraging the WhatsApp Business API, the industry can enhance audience engagement by sending timely updates, promoting new releases, and providing personalized content recommendations. It also enables efficient customer support, allowing users to interact with businesses directly through WhatsApp"
     },
     {
       question:
-        "Is WhatsApp Business API suitable for businesses of all sizes?",
+        "Q3: What are the advantages of integrating chatbots with the WhatsApp Business API?",
       answer:
-        "Yes, WhatsApp Business API is suitable for businesses of all sizes, ranging from small startups to large enterprises. It offers scalability, flexibility, and a range of features that can be tailored to meet the specific needs of each business. Whether you're just starting or already established, WhatsApp Business API can be an effective tool for e-commerce growth.",
+        "A: Chatbots integrated with the WhatsApp Business API can automate responses to frequently asked questions, provide instant assistance, and handle customer queries at any time of the day. They enhance efficiency, reduce response times, and offer a seamless conversational experience for users.",
     },
     {
-      question: "What are the advantages of Conversational Commerce?",
-      answer: (
-        <>
-          Conversational commerce offers numerous benefits to businesses. With
-          Anantya.ai, businesses can:
-          <ol>
-            <li>Expand market reach with chatbot shopping.</li>
-            <li>Build direct digital connections with customers.</li>
-            <li>Engage and respond in real time.</li>
-            <li>Turn messaging into a sales channel.</li>
-            <li>
-              Create consultative and conversational online commerce
-              experiences.
-            </li>
-          </ol>
-        </>
-      ),
+      question: "Q4: How does the verified green tick on WhatsApp benefit the media and entertainment industry?",
+      answer: "A: The verified green tick is a symbol of authenticity and trust. When businesses in the media and entertainment industry have a verified green tick on their WhatsApp account, it establishes credibility with users, assuring them that they are interacting with a legitimate and verified entity."
     },
     // Add more FAQs here if needed
   ];

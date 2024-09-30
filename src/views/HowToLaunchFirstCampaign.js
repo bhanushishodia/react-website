@@ -33,7 +33,7 @@ const HowToLaunchFirstCampaign = () => {
     <div>
       <InnerHeader />
     </div>
-    <main className="career-details-page style-5 pt-100">
+    <main className="career-details-page my-5 style-5 pt-100">
     <section className="jop-details pb-100">
       <div className="container py-5 ">
         <div className="content">
@@ -173,23 +173,15 @@ const HowToLaunchFirstCampaign = () => {
               <span className="icon color-blue5 me-2 flex-shrink-0">
                 <i className="fas fa-check-circle"></i>
               </span>
-              <p><strong className="color-000">Optimize Based on Feedback:</strong> Based on the performance data and recipient feedback, make necessary adjustments to optimize future campaigns for better results.</p>
+              <p><strong className="color-000">Engagement Analysis:</strong> Analyze the engagement data to understand which aspects of your campaign are resonating with your audience and which may need improvement.</p>
             </div>
             <img src={monitorImg} className='img-fluid pb-3 mx-auto' alt="Monitor Campaign Performance" />
 
-            <h6 className="mt-4 mb-20">Conclusion</h6>
-            <div className="text d-flex mb-20">
-              <span className="icon color-blue5 me-2 flex-shrink-0">
-                <i className="fas fa-check-circle"></i>
-              </span>
-              <p>Launching your first campaign can be an exciting journey. By following these steps, you’ll be well-equipped to create and manage successful campaigns that drive engagement and achieve your goals.</p>
-            </div>
-            <div className="text d-flex mb-20">
-              <span className="icon color-blue5 me-2 flex-shrink-0">
-                <i className="fas fa-check-circle"></i>
-              </span>
-              <p>If you have any further questions or need assistance, don’t hesitate to reach out to our support team for help.</p>
-            </div>
+           
+            <div class="text d-flex mb-20">
+                                    <span class="icon color-blue5 me-2 flex-shrink-0"> <i class="fas fa-check-circle"></i> </span>
+                                    <p> To know more about how you can monitor your campaigns. Click Here. </p>
+                                </div>
           </div>
            </div>
       

@@ -122,7 +122,7 @@ const LiveAgentAssistant = () => {
           <div className="content py-5">
             <div className="section-head text-center mb-40 style-5">
               <h2 className="fs-2">
-              Deliver Exceptional Customer Experiences <br/>
+              Deliver <span> Exceptional Customer Experiences </span> <br/>
               with a Unified Customer View
               </h2>
             </div>
@@ -216,8 +216,7 @@ const LiveAgentAssistant = () => {
             <div className="container py-5">
                 <div className="row">
                     <div className="col-md-6 col-sm-12 my-auto px-5 text-lg-start text-center">
-                        <h2>Deliver Exceptional Customer Experiences
-                        with a Unified Customer View
+                        <h2>Manage conversations more easily with <span>Live Agent Support </span>
                         </h2><br />
 
                         <ul>

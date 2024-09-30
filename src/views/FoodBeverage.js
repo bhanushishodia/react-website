@@ -35,65 +35,24 @@ const submitFormAndOpenPDF = (event) => {
   const homeFAQs = [
     {
       question:
-        "How can an e-commerce business benefit from utilizing WhatsApp Business API?",
+        "Q1: Can I promote my food menu and special offers using WhatsApp Business API?",
       answer:
-        "By leveraging the WhatsApp Business API, e-commerce businesses can effectively grow and sell products online. It enables direct communication with customers, providing personalized interactions and enhancing customer engagement. This leads to increased sales, improved customer satisfaction, and expanded reach.",
+        "A: Absolutely! WhatsApp Business API enables you to create engaging catalogs to showcase your food menu, highlight special offers, and tempt customers with mouthwatering visuals.",
     },
     {
       question:
-        "How can e-commerce businesses utilize WhatsApp Business API for marketing and sales?",
-      answer: (
-        <>
-          E-commerce businesses can utilize WhatsApp Business API for marketing
-          and sales by:
-          <ol>
-            <li>
-              Sending personalized product recommendations and promotions to
-              customers.
-            </li>
-            <li>
-              Sharing product catalogs, allowing customers to browse and make
-              purchases directly on WhatsApp.
-            </li>
-            <li>
-              Automating abandoned cart notifications to recover lost sales.
-            </li>
-            <li>
-              Providing real-time customer support, addressing queries, and
-              resolving issues promptly.
-            </li>
-            <li>
-              Sending order updates, delivery notifications, and post-purchase
-              follow-ups.
-            </li>
-          </ol>
-        </>
-      ),
+        "Q2: Are QR scanners a secure and dependable option for a safe dining experience?",
+      answer: "A: Absolutely! Our QR scanners are safe and reliable for a secure dining experience. We prioritize data security through encryption measures. You can confidently scan our QR codes to access the menu and place your order, knowing your information is protected from unauthorized access."
     },
     {
       question:
-        "Is WhatsApp Business API suitable for businesses of all sizes?",
+        "Q3: Can customers place orders directly through WhatsApp?",
       answer:
-        "Yes, WhatsApp Business API is suitable for businesses of all sizes, ranging from small startups to large enterprises. It offers scalability, flexibility, and a range of features that can be tailored to meet the specific needs of each business. Whether you're just starting or already established, WhatsApp Business API can be an effective tool for e-commerce growth.",
+        "Yes, customers can conveniently place orders directly through WhatsApp using the API. They can browse your menu, select items, provide necessary details, and complete the order process seamlessly within the WhatsApp interface.",
     },
     {
-      question: "What are the advantages of Conversational Commerce?",
-      answer: (
-        <>
-          Conversational commerce offers numerous benefits to businesses. With
-          Anantya.ai, businesses can:
-          <ol>
-            <li>Expand market reach with chatbot shopping.</li>
-            <li>Build direct digital connections with customers.</li>
-            <li>Engage and respond in real time.</li>
-            <li>Turn messaging into a sales channel.</li>
-            <li>
-              Create consultative and conversational online commerce
-              experiences.
-            </li>
-          </ol>
-        </>
-      ),
+      question: "Q4: How can a WhatsApp chat bot benefit my food business?",
+      answer: "A: A WhatsApp chat bot can significantly benefit your food business by automating customer interactions, and providing instant responses to inquiries about menus, prices, and special offers. It can also handle orders, process payments, and provide personalized recommendations, enhancing customer satisfaction and streamlining operations."
     },
     // Add more FAQs here if needed
   ];
@@ -113,7 +72,7 @@ const submitFormAndOpenPDF = (event) => {
   };
   return (
     <div>
-       (
+       
     <Helmet>
       <title>Chatbot for Food & Beverage Industry | Whatsapp Business API</title>
       <meta name="robots" content="index,follow" />

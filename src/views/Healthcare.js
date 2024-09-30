@@ -555,8 +555,8 @@ const submitFormAndOpenPDF = (event) => {
                 </div>
               </div>
             </div>
-            <div className="style-5 col my-auto ps-md-5">
-              <h2 className="mb-20 text-lg-start text-center">
+            <div className="style-5 col my-auto ps-md-5 text-lg-start text-center">
+              <h2 className="mb-20 ">
                 Experience Anantya.ai <br />
                 <span>in Action!</span>
               </h2>

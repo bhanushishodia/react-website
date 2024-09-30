@@ -667,7 +667,7 @@ const WhatsAppPricing = () => {
                   style={{ visibility: "visible", animationDelay: "0.2s" }}
                 >
                   <div className="popular-head">
-                    <p>Popular deal: 50% offer</p>
+                    <p className="popular-head">Popular deal: 50% offer</p>
                   </div>
                   <div className="pricing-card">
                     <div className="pricing-title">
@@ -764,7 +764,15 @@ const WhatsAppPricing = () => {
                           <span className="icon">
                             <img src={checkIcon} alt="Check icon" />
                           </span>
-                          <span>Enterprise Grade Support</span>
+                          <span>Support</span>
+                    
+                          <ul className="ps-md-5 ps-4">
+                            <li>Docs, Videos and FAQ</li>
+                            <li>Email & WhatsApp Support</li>
+                            <li>Hand held Onboarding & Setup</li>
+                            <li>Growth consultation</li>
+                            <li>Bot Building Assistance</li>
+                          </ul>
                         </li>
                       </ul>
                       <small className="pt-20">
@@ -782,11 +790,12 @@ const WhatsAppPricing = () => {
                 >
                   <div className="pricing-card">
                     <div className="pricing-title">
-                      <h2>Enterprise</h2>
+                      <h2>Custom
+                      </h2>
                       <p>Suitable for 100,000+ Conversations per month</p>
                     </div>
                     <div className="price">
-                      <p>₹9,999/month</p>
+                      <p>Custom Pricing </p>
                       <a href="https://wa.link/lt8ah2" className="price-btn">
                         Choose Plan →
                       </a>
@@ -800,37 +809,82 @@ const WhatsAppPricing = () => {
                           <span className="icon">
                             <img src={checkIcon} alt="Check icon" />
                           </span>
-                          <span>Custom Solutions</span>
+                          <span> All Channels</span>
                         </li>
                         <li>
                           <span className="icon">
                             <img src={checkIcon} alt="Check icon" />
                           </span>
-                          <span>Custom Pricing</span>
+                          <span>Greentick</span>
                         </li>
                         <li>
                           <span className="icon">
                             <img src={checkIcon} alt="Check icon" />
                           </span>
-                          <span>Custom Integrations</span>
+                          <span>2FA Secured Login</span>
                         </li>
                         <li>
                           <span className="icon">
                             <img src={checkIcon} alt="Check icon" />
                           </span>
-                          <span>Dedicated Account Manager</span>
+                          <span>5% discount on Anantya conversation Rate Card</span>
                         </li>
                         <li>
                           <span className="icon">
                             <img src={checkIcon} alt="Check icon" />
                           </span>
-                          <span>24/7 Support</span>
+                          <span>Custom Domain</span>
+                        </li>
+                        <li>
+                          <span className="icon">
+                            <img src={checkIcon} alt="Check icon" />
+                          </span>
+                          <span> Ip Whitelisting</span>
+                        </li>
+                        <li>
+                          <span className="icon">
+                            <img src={checkIcon} alt="Check icon" />
+                          </span>
+                          <span> Fallback message through SMS</span>
+                        </li>
+                        <li>
+                          <span className="icon">
+                            <img src={checkIcon} alt="Check icon" />
+                          </span>
+                          <span> Faster Message Delivery Speed</span>
+                        </li>
+                        <li>
+                          <span className="icon">
+                            <img src={checkIcon} alt="Check icon" />
+                          </span>
+                          <span> Special customizations</span>
+                        </li>
+                        <li>
+                          <span className="icon">
+                            <img src={checkIcon} alt="Check icon" />
+                          </span>
+                          <span> Special integrations</span>
+                        </li>
+                        <li>
+                          <span className="icon">
+                            <img src={checkIcon} alt="Check icon" />
+                          </span>
+                          <span> Chat bot Complex Journey</span>
+                        </li>
+                        <li>
+                          <span className="icon">
+                            <img src={checkIcon} alt="Check icon" />
+                          </span>
+                          <span> Unlimited Agents</span>
+                        </li>
+                        <li>
+                          <span className="icon">
+                            <img src={checkIcon} alt="Check icon" />
+                          </span>
+                          <span>  Customer Success Manager</span>
                         </li>
                       </ul>
-                      <small className="pt-20">
-                        Apart from free Service conversations, (Pay as per
-                        conversation charges here)
-                      </small>
+                     
                     </div>
                   </div>
                 </div>
@@ -853,7 +907,7 @@ const WhatsAppPricing = () => {
                       <p>Suitable for up to 10,000 Conversations per month</p>
                     </div>
                     <div className="price">
-                      <p>₹41,140/year</p>
+                      <p> ₹40,959/ year</p>
                       <a href="https://wa.link/wunhez" className="price-btn">
                         Choose Plan →
                       </a>
@@ -964,7 +1018,7 @@ const WhatsAppPricing = () => {
                       <p>Suitable for up to 100,000 Conversations per month</p>
                     </div>
                     <div className="price">
-                      <p>₹14,878/year</p>
+                      <p>₹74,395/year</p>
                       <a href="https://wa.link/1drkvc" className="price-btn">
                         Choose Plan →
                       </a>
@@ -1047,7 +1101,21 @@ const WhatsAppPricing = () => {
                           <span className="icon">
                             <img src={checkIcon} alt="Check icon" />
                           </span>
-                          <span>Standard & Premium Support</span>
+                          <span>Downloads Reports</span>
+                        </li>
+                        <li>
+                          <span className="icon">
+                            <img src={checkIcon} alt="Check icon" />
+                          </span>
+                          <span> Support</span>
+                         
+                        <ul class="ps-md-5 ps-5">
+                          <li>Docs, Videos and FAQ</li>
+                          <li>Email & WhatsApp Support</li>
+                          <li>Hand held Onboarding & Setup </li>
+                          <li>Growth consultation</li>
+                          <li>Bot Building Assistance</li>
+                        </ul>
                         </li>
                       </ul>
                       <small className="pt-20">
@@ -1065,11 +1133,11 @@ const WhatsAppPricing = () => {
                 >
                   <div className="pricing-card">
                     <div className="pricing-title">
-                      <h2>Enterprise</h2>
+                      <h2>Custom</h2>
                       <p>Suitable for 100,000+ Conversations per month</p>
                     </div>
                     <div className="price">
-                      <p>₹99,990/year</p>
+                      <p>Custom Pricing</p>
                       <a href="https://wa.link/9jqzsi" className="price-btn">
                         Choose Plan →
                       </a>
@@ -1083,31 +1151,79 @@ const WhatsAppPricing = () => {
                           <span className="icon">
                             <img src={checkIcon} alt="Check icon" />
                           </span>
-                          <span>Custom Solutions</span>
+                          <span> All Channels</span>
                         </li>
                         <li>
                           <span className="icon">
                             <img src={checkIcon} alt="Check icon" />
                           </span>
-                          <span>Custom Pricing</span>
+                          <span>Greentick</span>
                         </li>
                         <li>
                           <span className="icon">
                             <img src={checkIcon} alt="Check icon" />
                           </span>
-                          <span>Custom Integrations</span>
+                          <span>2FA Secured Login</span>
                         </li>
                         <li>
                           <span className="icon">
                             <img src={checkIcon} alt="Check icon" />
                           </span>
-                          <span>Dedicated Account Manager</span>
+                          <span>5% discount on Anantya conversation Rate Card</span>
                         </li>
                         <li>
                           <span className="icon">
                             <img src={checkIcon} alt="Check icon" />
                           </span>
-                          <span>24/7 Support</span>
+                          <span>Custom Domain</span>
+                        </li>
+                        <li>
+                          <span className="icon">
+                            <img src={checkIcon} alt="Check icon" />
+                          </span>
+                          <span>Ip Whitelisting</span>
+                        </li>
+                        <li>
+                          <span className="icon">
+                            <img src={checkIcon} alt="Check icon" />
+                          </span>
+                          <span>Fallback message through SMS</span>
+                        </li>
+                        <li>
+                          <span className="icon">
+                            <img src={checkIcon} alt="Check icon" />
+                          </span>
+                          <span> Faster Message Delivery Speed</span>
+                        </li>
+                        <li>
+                          <span className="icon">
+                            <img src={checkIcon} alt="Check icon" />
+                          </span>
+                          <span>Special customizations</span>
+                        </li>
+                        <li>
+                          <span className="icon">
+                            <img src={checkIcon} alt="Check icon" />
+                          </span>
+                          <span> Special integrations</span>
+                        </li>
+                        <li>
+                          <span className="icon">
+                            <img src={checkIcon} alt="Check icon" />
+                          </span>
+                          <span> Chat bot Complex Journey</span>
+                        </li>
+                        <li>
+                          <span className="icon">
+                            <img src={checkIcon} alt="Check icon" />
+                          </span>
+                          <span> Unlimited Agents</span>
+                        </li>
+                        <li>
+                          <span className="icon">
+                            <img src={checkIcon} alt="Check icon" />
+                          </span>
+                          <span> Customer Success Manager</span>
                         </li>
                       </ul>
                       <small className="pt-20">

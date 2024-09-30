@@ -128,7 +128,7 @@ const Catalog = () => {
       <div className="container">
         <div className="content py-5  text-center">
      
-            <h2>Convert Browsers into Buyers</h2>
+            <h2>Convert <span> Browsers into Buyers</span></h2>
             <p>Personalised Recommendations, One-on-One Chats, Instant Support!</p>
        
           <div className="content pt-4">

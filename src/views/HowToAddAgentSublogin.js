@@ -38,7 +38,7 @@ const HowToAddAgentSublogin = () => {
     <div>
       <InnerHeader />
     </div>
-    <main className="career-details-page style-5 pt-100">
+    <main className="career-details-page my-5 style-5 pt-100">
     <section className="jop-details pb-100">
       <div className="container py-5">
         <div className="content">

@@ -11,7 +11,7 @@ const FAQSection = ({ faqs }) => {
 
   return (
     <div className="faq-section container">
-      <h2 className='pb-4'>Frequently Asked Questions</h2>
+      <h2 className='pb-4'>Frequently Asked <span>Questions</span></h2>
       {faqs.map((faq, index) => (
         <div key={index} className="faq-item">
           <button 

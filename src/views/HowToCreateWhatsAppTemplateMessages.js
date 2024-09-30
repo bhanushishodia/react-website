@@ -40,7 +40,7 @@ const TemplateMessages = () => {
     <div>
       <InnerHeader />
     </div>
-    <main className="career-details-page style-5 pt-100">
+    <main className="career-details-page my-5 style-5 pt-100">
     <section className="jop-details pb-100">
       <div className="container py-5">
         <div className="content">
@@ -136,15 +136,129 @@ const TemplateMessages = () => {
           <span className="icon color-blue5 me-2 flex-shrink-0">
             <i className="fas fa-check-circle"></i>
           </span>
-          <p>1. Begin by choosing the communication channel.</p>
+          <p> Begin by choosing the communication channel.</p>
+        </div>
+        <div className="text d-flex">
+          <span className="icon color-blue5 me-2 flex-shrink-0">
+            <i className="fas fa-check-circle"></i>
+          </span>
+          <p> Select the appropriate template category.</p>
+        </div>
+        <div className="text d-flex">
+          <span className="icon color-blue5 me-2 flex-shrink-0">
+            <i className="fas fa-check-circle"></i>
+          </span>
+          <p>WhatsApp Template Messages offer various categories to suit different usage scenarios.</p>
+        </div>
+        <div className="text d-flex">
+          <span className="icon color-blue5 me-2 flex-shrink-0">
+            <i className="fas fa-check-circle"></i>
+          </span>
+          <p>Utility: Messages oriented towards transaction confirmations, cancellations, or subscriptions.</p>
+        </div>
+        <div className="text d-flex">
+          <span className="icon color-blue5 me-2 flex-shrink-0">
+            <i className="fas fa-check-circle"></i>
+          </span>
+          <p>Authentication: Messages containing one-time passwords (OTPs) and login codes for user verification.</p>
+        </div>
+        <div className="text d-flex">
+          <span className="icon color-blue5 me-2 flex-shrink-0">
+            <i className="fas fa-check-circle"></i>
+          </span>
+          <p>Marketing: Messages encompassing a business's products and services promotion, excluding transaction-related content.</p>
+        </div>
+        <div className="text d-flex">
+          <span className="icon color-blue5 me-2 flex-shrink-0">
+            <i className="fas fa-check-circle"></i>
+          </span>
+          <p>You have the option to select the language for your WhatsApp template message from a wide range of global languages and vernacular options. Please note that you can only choose a single language for each template message.</p>
+        </div>
+        <div className="text d-flex">
+          <span className="icon color-blue5 me-2 flex-shrink-0">
+            <i className="fas fa-check-circle"></i>
+          </span>
+          <p>Provide a name for your template. Ensure that the Template Name matches the Template Label. Make a few adjustments, such as starting with a lowercase letter and replacing spaces with underscores. For instance, use names like 'account_update', 'otp_verification', etc.</p>
+        </div>
+        <div className="text d-flex">
+          <span className="icon color-blue5 me-2 flex-shrink-0">
+            <i className="fas fa-check-circle"></i>
+          </span>
+          <p>Add a title or choose the type of media you want for the header. This sets the kind of WhatsApp template message you're sending, like TEXT, IMAGE, VIDEO, or FILE.</p>
+        </div>
+        <div className="text d-flex">
+          <span className="icon color-blue5 me-2 flex-shrink-0">
+            <i className="fas fa-check-circle"></i>
+          </span>
+          <p>Remember, you can't just send images alone. You need to include text with images, videos, or files.</p>
+        </div>
+        <div className="text d-flex">
+          <span className="icon color-blue5 me-2 flex-shrink-0">
+            <i className="fas fa-check-circle"></i>
+          </span>
+          <p>Remember, the media file has to come with some text. You can't only send Images, Files, or Videos. TEXT is a must because WhatsApp's approval depends on the text.</p>
         </div>
         {/* Add more steps here like in the original HTML */}
         <div className="text-center">
           <img
             src={templateMessageImage}
-            className="img-fluid pb-3 mx-auto"
+            className="img-fluid  mx-auto"
             alt="Template Message"
           />
+        </div>
+        <div className="text d-flex">
+          <span className="icon color-blue5 me-2 flex-shrink-0">
+            <i className="fas fa-check-circle"></i>
+          </span>
+          <p>Write down the template message that you plan to send to users once it's approved by WhatsApp in the text box.</p>
+        </div>
+        <div className="text d-flex">
+          <span className="icon color-blue5 me-2 flex-shrink-0">
+            <i className="fas fa-check-circle"></i>
+          </span>
+          <p>FORMAT – The template message should not be more than 1024 characters.</p>
+        </div>
+        <div className="text d-flex">
+          <span className="icon color-blue5 me-2 flex-shrink-0">
+            <i className="fas fa-check-circle"></i>
+          </span>
+          <p> Add a short line of text to the bottom of your message template.</p>
+        </div>
+        <div className="text d-flex">
+          <span className="icon color-blue5 me-2 flex-shrink-0">
+            <i className="fas fa-check-circle"></i>
+          </span>
+          <p>Create buttons that let customers respond to your message or take action</p>
+        </div>
+        <div className="text d-flex">
+          <span className="icon color-blue5 me-2 flex-shrink-0">
+            <i className="fas fa-check-circle"></i>
+          </span>
+          <p>If there are no interactive actions needed, just select 'None'. You can choose to add either 'CTAs' or 'Quick Replies' to a WhatsApp Template Message, but you can't have both within a single Template Message.</p>
+        </div>
+        <div className="text d-flex">
+          <span className="icon color-blue5 me-2 flex-shrink-0">
+            <i className="fas fa-check-circle"></i>
+          </span>
+          <p>Call to Actions: There are two types of Call to Action buttons - URL and Phone Number. A template message can contain a URL, a Phone Number, or both a URL and a Phone Number as CTAs. However, you cannot include two CTAs of the same type within a single template message.</p>
+        </div>
+        <div className="text d-flex">
+          <span className="icon color-blue5 me-2 flex-shrink-0">
+            <i className="fas fa-check-circle"></i>
+          </span>
+          <p>Quick Replies: These buttons enable interactive actions for user responses. When a user clicks on these buttons, the button text becomes the user's message.</p>
+        </div>
+        <div className="text d-flex">
+          <span className="icon color-blue5 me-2 flex-shrink-0">
+            <i className="fas fa-check-circle"></i>
+          </span>
+          <p>A template message can include up to 3 Quick Replies (as limited by Facebook), each with a maximum of 20 characters.</p>
+        </div>
+        <div className="text d-flex">
+          <span className="icon color-blue5 me-2 flex-shrink-0">
+            <i className="fas fa-check-circle"></i>
+          </span>
+          <p>WhatsApp template messages featuring Quick Reply buttons are useful for gathering feedback from customers or allowing them to choose between provided options.</p>
         </div>
 
         <h6 className="mt-4 mb-20">
@@ -165,6 +279,20 @@ const TemplateMessages = () => {
           <p>
             Usually, WhatsApp Template Messages are approved within a time frame
             of 1 minute to 24 hours!
+          </p>
+        </div>
+        <div className="text d-flex mb-20">
+          <span className="icon color-blue5 me-2 flex-shrink-0">
+            <i className="fas fa-check-circle"></i>
+          </span>
+          <p>Upon submitting the Template Message, it goes directly to WhatsApp for approval, and its status changes to IN-REVIEW.
+          </p>
+        </div>
+        <div className="text d-flex mb-20">
+          <span className="icon color-blue5 me-2 flex-shrink-0">
+            <i className="fas fa-check-circle"></i>
+          </span>
+          <p>If the Template Message adheres to WhatsApp's policies and rules, it receives an APPROVED status; otherwise, it is REJECTED.
           </p>
         </div>
       </div>

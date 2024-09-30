@@ -34,65 +34,24 @@ const BankingBFSI = () => {
   const homeFAQs = [
     {
       question:
-        "How can an e-commerce business benefit from utilizing WhatsApp Business API?",
+        "Q1: What is a Finance or Banking Chatbot?",
       answer:
-        "By leveraging the WhatsApp Business API, e-commerce businesses can effectively grow and sell products online. It enables direct communication with customers, providing personalized interactions and enhancing customer engagement. This leads to increased sales, improved customer satisfaction, and expanded reach.",
+        "A: A finance or banking chatbot encompasses a spectrum of capabilities, from straightforward, predefined journeys for common queries to sophisticated AI-driven conversations. These chatbots are trained on industry-specific data and scenarios within the banking, financial services, and insurance (BFSI) sector.",
     },
     {
       question:
-        "How can e-commerce businesses utilize WhatsApp Business API for marketing and sales?",
-      answer: (
-        <>
-          E-commerce businesses can utilize WhatsApp Business API for marketing
-          and sales by:
-          <ol>
-            <li>
-              Sending personalized product recommendations and promotions to
-              customers.
-            </li>
-            <li>
-              Sharing product catalogs, allowing customers to browse and make
-              purchases directly on WhatsApp.
-            </li>
-            <li>
-              Automating abandoned cart notifications to recover lost sales.
-            </li>
-            <li>
-              Providing real-time customer support, addressing queries, and
-              resolving issues promptly.
-            </li>
-            <li>
-              Sending order updates, delivery notifications, and post-purchase
-              follow-ups.
-            </li>
-          </ol>
-        </>
-      ),
+        "Q2: What are the Benefits of a Finance Chatbot?",
+      answer: "A: Intuitive and Convenient: A finance chatbot offers customers an intuitive and self-serve channel, available 24/7, for transactions, advice, and product exploration. Wide Engagement: With conversational AI, financial service providers can engage customers across 30+ messaging channels, catering to commerce, marketing, and support needs. Meaningful Digital Experiences: Deliver meaningful digital experiences to customers at scale, ensuring easy onboarding, accelerated transactions, simplified service requests, and elevated support quality"
     },
     {
       question:
-        "Is WhatsApp Business API suitable for businesses of all sizes?",
+        "Q3: Can BFSI companies leverage WhatsApp for marketing and promotions?",
       answer:
-        "Yes, WhatsApp Business API is suitable for businesses of all sizes, ranging from small startups to large enterprises. It offers scalability, flexibility, and a range of features that can be tailored to meet the specific needs of each business. Whether you're just starting or already established, WhatsApp Business API can be an effective tool for e-commerce growth.",
+        "A: Yes, WhatsApp can be utilized for marketing and promotional activities in the BFSI industry. Companies can share updates about new products, exclusive offers, investment opportunities, and financial tips to engage customers and nurture leads. However, it is important to follow WhatsApp's policies and guidelines for marketing purposes.",
     },
     {
-      question: "What are the advantages of Conversational Commerce?",
-      answer: (
-        <>
-          Conversational commerce offers numerous benefits to businesses. With
-          Anantya.ai, businesses can:
-          <ol>
-            <li>Expand market reach with chatbot shopping.</li>
-            <li>Build direct digital connections with customers.</li>
-            <li>Engage and respond in real time.</li>
-            <li>Turn messaging into a sales channel.</li>
-            <li>
-              Create consultative and conversational online commerce
-              experiences.
-            </li>
-          </ol>
-        </>
-      ),
+      question: "Q4: What are some best practices for BFSI companies utilizing WhatsApp?",
+      answer: "A: To maximize the benefits of WhatsApp, BFSI companies should focus on providing personalized customer experiences, ensuring timely responses to customer queries, maintaining data privacy, leveraging automation for routine tasks, and continuously adapting to customer needs and preferences."
     },
     // Add more FAQs here if needed
   ];

@@ -35,65 +35,24 @@ const submitFormAndOpenPDF = (event) => {
   const homeFAQs = [
     {
       question:
-        "How can an e-commerce business benefit from utilizing WhatsApp Business API?",
+        " Q1: How can conversational automation benefit the travel and hospitality industry?",
       answer:
-        "By leveraging the WhatsApp Business API, e-commerce businesses can effectively grow and sell products online. It enables direct communication with customers, providing personalized interactions and enhancing customer engagement. This leads to increased sales, improved customer satisfaction, and expanded reach.",
+        "A: Conversational automation offers numerous benefits to the travel and hospitality industry. It allows businesses to engage and support travelers on their preferred messaging apps, enhancing customer experience and building personal connections. By automating tasks such as bookings, flight rescheduling, and providing real-time notifications, conversational automation brings efficiency to operations and improves overall customer satisfaction.",
     },
     {
       question:
-        "How can e-commerce businesses utilize WhatsApp Business API for marketing and sales?",
-      answer: (
-        <>
-          E-commerce businesses can utilize WhatsApp Business API for marketing
-          and sales by:
-          <ol>
-            <li>
-              Sending personalized product recommendations and promotions to
-              customers.
-            </li>
-            <li>
-              Sharing product catalogs, allowing customers to browse and make
-              purchases directly on WhatsApp.
-            </li>
-            <li>
-              Automating abandoned cart notifications to recover lost sales.
-            </li>
-            <li>
-              Providing real-time customer support, addressing queries, and
-              resolving issues promptly.
-            </li>
-            <li>
-              Sending order updates, delivery notifications, and post-purchase
-              follow-ups.
-            </li>
-          </ol>
-        </>
-      ),
+        " Q2: Can conversational automation improve hotel services?",
+      answer: "A: Absolutely! Conversational automation empowers hotels to offer contactless services such as check-in and check-out, airport transfers, and room service orders. Guests can conveniently communicate their requests and access essential information like Wi-Fi details or laundry facilities through messaging apps, enhancing convenience and guest satisfaction."
     },
     {
       question:
-        "Is WhatsApp Business API suitable for businesses of all sizes?",
+        "Q3: Can conversational automation assist in upselling and cross-selling opportunities?",
       answer:
-        "Yes, WhatsApp Business API is suitable for businesses of all sizes, ranging from small startups to large enterprises. It offers scalability, flexibility, and a range of features that can be tailored to meet the specific needs of each business. Whether you're just starting or already established, WhatsApp Business API can be an effective tool for e-commerce growth.",
+        "A: Absolutely! Conversational automation provides an engaging platform for businesses to upsell and cross-sell to guests and travelers. By engaging in conversational interactions, businesses can suggest additional services, amenities, or upgrades tailored to individual preferences, thereby boosting revenue opportunities and enhancing customer satisfaction.",
     },
     {
-      question: "What are the advantages of Conversational Commerce?",
-      answer: (
-        <>
-          Conversational commerce offers numerous benefits to businesses. With
-          Anantya.ai, businesses can:
-          <ol>
-            <li>Expand market reach with chatbot shopping.</li>
-            <li>Build direct digital connections with customers.</li>
-            <li>Engage and respond in real time.</li>
-            <li>Turn messaging into a sales channel.</li>
-            <li>
-              Create consultative and conversational online commerce
-              experiences.
-            </li>
-          </ol>
-        </>
-      ),
+      question: "Q4: Is conversational automation beneficial for both travelers and businesses?",
+      answer: "A: Yes, conversational automation benefits both travelers and businesses. Travelers enjoy the convenience of seamless bookings, real-time assistance, and personalized recommendations throughout their journey. For businesses, it enables improved customer engagement, operational efficiency, and revenue generation through upselling and cross-selling opportunities."
     },
     // Add more FAQs here if needed
   ];
@@ -113,7 +72,7 @@ const submitFormAndOpenPDF = (event) => {
   };
   return (
     <div>
-       (
+       
     <Helmet>
       <title>Chatbot for Travel & Hospitality Industry | Whatsapp Business API</title>
       <meta name="robots" content="index,follow" />
@@ -366,6 +325,9 @@ Launch a AI Chatbot</h4>
               <p className="text-justify">Use WhatsApp links to promote on social media and other platforms
               </p>
               <p className="text-justify">Add a WhatsApp widget on your website to initiate conversations</p>
+              <a className="mt-20 internalpage_link" href="/click-to-whatsapp-ads">
+      Explore Click to WhatsApp Ads <i className="fas fa-long-arrow-right ms-2 color-blue7"></i>
+    </a>
             </div>
           </div>
         </div>
