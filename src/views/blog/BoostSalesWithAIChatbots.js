@@ -2,6 +2,7 @@ import React from 'react';
 import boostSalesImage from '../../assets/images/blog/boost-sales-on-festive-season-with-ai-chatbots.jpeg';
 import ScrollToTopButton from "../../components/common/ScrollToTopButton";
 import WhatsAppWidget from "../../components/common/WhatsAppWidget";
+import CommentForm from "../../components/common/CommentForm";
 import { Helmet } from 'react-helmet';
 const BoostSalesWithAIChatbots = () => {
   return (
@@ -111,10 +112,11 @@ const BoostSalesWithAIChatbots = () => {
           />
         </div>
 
-        <div className="row px-1">
+        <div className="row px-1 py-5 mt-5">
           {/* Main Content */}
           <div className="col-lg-8 col-md-12 col-sm-12">
             <div className="blogcontentui">
+              <article>
               <div className="blogBox text-justify">
                 <section itemProp="articleBody" className="entry-content">
                   <p>
@@ -198,34 +200,17 @@ const BoostSalesWithAIChatbots = () => {
                   </p>
                 </section>
               </div>
+              </article>
             </div>
-            <div className="form_box px-5 py-4 mt-5" style={{ borderLeft: '3px solid #f5c11629', borderRight: '3px solid #f5c11629' }}>
-              <h5><strong>Leave a Reply</strong></h5>
-              <p className="pb-0 mb-0">Your email address will not be published. Required fields are marked *</p>
-              <form action="https://formspree.io/f/xjvqbzny" method="POST">
-                <div className="row">
-                  <div className="col-6">
-                    <label htmlFor="name"></label>
-                    <input type="text" name="Name" className="form-control" id="name" placeholder="Name" />
-                  </div>
-                  <div className="col-6">
-                    <label htmlFor="email"></label>
-                    <input type="email" name="email" className="form-control" id="email" placeholder="Your Email id*" />
-                  </div>
-                </div>
-                <label htmlFor="comment" className="form-label"></label>
-                <textarea className="form-control" id="comment" name="comment" rows="3" placeholder="Comment"></textarea>
-                <div className="mt-3">
-                  <input type="submit" className="px-5 py-2 text-white" style={{ backgroundColor: '#f5c116', borderRadius: '5px', border: 'none' }} value="Post Comment" />
-                </div>
-              </form>
-            </div>
+             {/* Use CommentForm multiple times */}
+             <CommentForm />
+           
           </div>
 
           {/* Sidebar */}
           <div className="col-lg-4 col-md-12 career-details-page style-5 ">
             <div className="summary-card">
-                <h6 className="pb-20 border-bottom border-1 brd-gray">Table of Contents</h6>
+                <h6 className="font-weight-bold mb-3 text-start pb-3 border-bottom border-1 brd-gray">Table of Contents</h6>
                 <ul>
                     <li><a href="#section1">Introduction</a></li>
                     <li><a href="#section2">Understanding Customer Expectations</a></li>

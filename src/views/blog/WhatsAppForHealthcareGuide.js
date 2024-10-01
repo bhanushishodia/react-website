@@ -2,6 +2,11 @@ import React from 'react';
 import ScrollToTopButton from '../../components/common/ScrollToTopButton';
 import WhatsAppWidget from '../../components/common/WhatsAppWidget';
 import healthcareImage from '../../assets/images/blog/whatsapp-for-healthcare.webp'; // Adjust the path if necessary
+import bookYourImage from '../../assets/images/blog/book-your.webp';
+import instantPatientEngagementImage from '../../assets/images/blog/instant-patient-engagement.webp'; // Update the path
+import appointmentRemindersImage from '../../assets/images/blog/appointment-reminders.webp';
+import getWhatsAppBusinessImage from '../../assets/images/blog/get-whatsapp-business.webp'; // Update the path
+import theSolutionIsWhatsAppImage from '../../assets/images/blog/the-solution-is-whatsapp.webp';
 import { Helmet } from 'react-helmet';
 const WhatsAppForHealthcareGuide = () => {
   return (
@@ -169,80 +174,88 @@ const WhatsAppForHealthcareGuide = () => {
                     Update on 29 March 2024
                   </p>
 
-                  <div className="text d-flex mb-20">
+                  <div className="text d-flex mb-2">
                     <p>With a large user base of 2.79 billion people globally, WhatsApp is not only just for chatting; it’s also helping to save lives!</p>
                   </div>
-                  <div className="text d-flex mb-20">
+                  <div className="text d-flex mb-2">
                     <p>Remember, especially during the tough times of the world health pandemic, visiting the doctor was not as simple as compared to today.</p>
                   </div>
-                  <div className="text d-flex mb-20 mt-20">
+                  <div className="text d-flex mb-2 mt-2">
                     <p>That was a time when WhatsApp played a heroic role, and the credit here goes to the World Health Organization’s health alerts, which spread awareness about COVID-19 through WhatsApp.</p>
                   </div>
-                  <div className="text d-flex mb-20 mt-20">
+                  <div className="text d-flex mb-2 mt-2">
                     <p>Not only during the pandemic, but still, WhatsApp is a real lifesaver in healthcare, offering multiple ways to connect with patients and share essential information.</p>
                   </div>
-                  <div className="text d-flex mb-20 mt-20">
+                  <div className="text d-flex mb-2 mt-2">
                     <p>Let’s dig into the world of <b>WhatsApp healthcare</b> and see just how much it can do for us!</p>
                   </div>
                   <div className="text-center">
-                    <a href="https://wa.link/q7404l" target="_blank" rel="noopener noreferrer">
-                      <img src="assets/img/blog/get-whatsapp-business.webp" className="img-fluid pb-3 mx-auto" alt="get-whatsapp-business" />
-                    </a>
-                  </div>
+      <a href="https://wa.link/q7404l" target="_blank" rel="noopener noreferrer">
+        <img 
+          src={getWhatsAppBusinessImage}  // Dynamic image import
+          className="img-fluid pb-3 mx-auto" 
+          alt="get-whatsapp-business" 
+        />
+      </a>
+    </div>
 
                   <div id="whatsapp-broadcast11">
-                    <h6 className="mt-40 mb-20">Problems Facing the Healthcare Sector</h6>
-                    <div className="text d-flex mb-20">
+                    <h6 className="mt-40 mb-2">Problems Facing the Healthcare Sector</h6>
+                    <div className="text d-flex mb-2">
                       <p>These days, more and more people want top-notch healthcare without being bothered to visit the doctor in person. However, the outdated methods used by hospitals to manage patients are no longer acceptable.</p>
                     </div>
-                    <div className="text d-flex mb-20">
+                    <div className="text d-flex mb-2">
                       <p>As you can see, most people try to schedule checkup appointments online or over the phone. The issue is that using such approaches makes it difficult to immediately ask follow-up inquiries.</p>
                     </div>
-                    <div className="text d-flex mb-20">
+                    <div className="text d-flex mb-2">
                       <p>And talking over the phone about every last aspect of their examination? It is not quite simple. Plus, hospitals receive so many calls every day that patients have to wait for hours to speak with an actual person. How frustrating!</p>
                     </div>
                   </div>
 
                   <div id="whatsapp-broadcast12">
-                    <h6 className="mt-40 mb-20">The solution is WhatsApp!</h6>
-                    <div className="text d-flex mb-20">
+                    <h6 className="mt-40 mb-2">The solution is WhatsApp!</h6>
+                    <div className="text d-flex mb-2">
                       <p>Today, WhatsApp has simplified the user’s path like never before, especially in the healthcare sector. <b>WhatsApp Business API</b> provides a lot of features in terms of accuracy and speed, which has benefited the healthcare industry.</p>
                     </div>
-                    <div className="text d-flex mb-20">
+                    <div className="text d-flex mb-2">
                       <p>As discussed above, the <a href="https://www.whatsapp.com/coronavirus/who" target="_blank" rel="noopener noreferrer">World Health Organization</a> (WHO) is a good example of it, as it teamed up with WhatsApp to spread COVID-19 awareness.</p>
                     </div>
                     <div className="text-center">
-                      <img src="assets/img/blog/the-solution-is-whatsapp!.webp" className="img-fluid pb-3 mx-auto" alt="..." />
-                    </div>
-                    <div className="text d-flex mb-20">
+      <img 
+        src={theSolutionIsWhatsAppImage}  // Dynamic image import
+        className="img-fluid pb-3 mx-auto" 
+        alt="The solution is WhatsApp" 
+      />
+    </div>
+                    <div className="text d-flex mb-2">
                       <p>A recent study shows that with WhatsApp, the need for in-person appointments has decreased significantly for medical experts and physicians.</p>
                     </div>
-                    <div className="text d-flex mb-20">
+                    <div className="text d-flex mb-2">
                       <p>Hospitals need to start using WhatsApp as the primary messaging app, as it is the preferred choice for the majority of users. But here is the condition: you can’t use a regular WhatsApp account for this. You’ll need the <b>WhatsApp Business API</b> to do the job right.</p>
                     </div>
                   </div>
 
                   <div id="whatsapp-broadcast13">
-                    <h6 className="mt-40 mb-20">What is the WhatsApp Business API for healthcare?</h6>
-                    <div className="text d-flex mb-20">
+                    <h6 className="mt-40 mb-2">What is the WhatsApp Business API for healthcare?</h6>
+                    <div className="text d-flex mb-2">
                       <p>The <b>WhatsApp Business API</b> is a game-changer for healthcare organizations. It not only helps them connect with a large number of patients and clients, but it also makes the chat feel more personal.</p>
                     </div>
-                    <div className="text d-flex mb-20">
+                    <div className="text d-flex mb-2">
                       <p>With the use of the <b>WhatsApp Business API for healthcare,</b> patients can now easily schedule, confirm, or change appointments with just a message. Plus, using an <b>AI healthcare chatbot,</b> you get auto-reminders, which means fewer missed appointments, making both patients and staff happier.</p>
                     </div>
-                    <div className="text d-flex mb-20">
+                    <div className="text d-flex mb-2">
                       <p>Healthcare providers can also use the <b>WhatsApp Business API</b> to keep track of patient records and send helpful medication reminders. This helps patients follow their treatment plans, leading to better health in the long run.</p>
                     </div>
-                    <div className="text d-flex mb-20">
+                    <div className="text d-flex mb-2">
                       <p>With <b>WhatsApp Business API Healthcare,</b> patients can receive updates and test results directly on the app. And you know the best part of it: if patients have any questions or concerns, healthcare professionals can respond quickly, giving patients peace of mind.</p>
                     </div>
-                    <div className="text d-flex mb-20">
+                    <div className="text d-flex mb-2">
                       <p><a href="https://anantya.ai/healthcare-industry" target="_blank" rel="noopener noreferrer">WhatsApp Business API for healthcare</a> is the smart choice for all kinds of businesses because it connects easily with current healthcare systems.</p>
                     </div>
-                    <div className="text d-flex mb-20">
+                    <div className="text d-flex mb-2">
                       <p>In addition, it’s cost-effective in the long term, which, as a result, saves lots of money compared to traditional communication methods. Let's find out some more advantages of the <b>WhatsApp Business API in the healthcare sector.</b></p>
                     </div>
-                    <div className="text d-flex mb-20">
+                    <div className="text d-flex mb-2">
                       <p>To implement the <b>WhatsApp Business API in the healthcare sector,</b> you must have a brief knowledge of <b>WhatsApp broadcasting.</b> Check out our blog on <a href="https://anantya.ai/whatsapp-broadcasting-ultimate-guide" target="_blank" rel="noopener noreferrer">WhatsApp broadcasting.</a></p>
                     </div>
                   </div>
@@ -257,17 +270,17 @@ const WhatsAppForHealthcareGuide = () => {
                               <p className="text-center text-danger fs-12px mb-30">Fill in the details below to start your 14 Day FREE trial.<br />No Credit Card needed.*</p>
                               <div className="row px-5">
                                 <div className="col-lg-4">
-                                  <div className="form-group mb-20">
+                                  <div className="form-group mb-2">
                                     <input type="text" name="name" className="form-control" placeholder="Full Name" required />
                                   </div>
                                 </div>
                                 <div className="col-lg-4">
-                                  <div className="form-group mb-20">
+                                  <div className="form-group mb-2">
                                     <input type="email" name="email" className="form-control" placeholder="Email Address" required />
                                   </div>
                                 </div>
                                 <div className="col-lg-4">
-                                  <div className="form-group mb-20">
+                                  <div className="form-group mb-2">
                                     <input type="tel" name="phone" className="form-control" placeholder="Phone Number" required />
                                   </div>
                                 </div>
@@ -279,19 +292,99 @@ const WhatsAppForHealthcareGuide = () => {
                       </div>
                     </section>
                   </div>
-              
+                  <div id="whatsapp-broadcast14">
+      <div className="text d-flex mb-2">
+        <h6 className="mt-40">Advantages of the WhatsApp API for Healthcare</h6>
+      </div>
+      <div className="text d-flex mb-2">
+        <p>
+          WhatsApp for healthcare provides a variety of advantages for healthcare experts and patients. WhatsApp has
+          changed the way healthcare services are delivered and managed. Let’s dig in deeper.
+        </p>
+      </div>
+
+      <div className="text d-flex mb-2 mt-2">
+        <span className="icon color-blue5 me-2 flex-shrink-0">
+          <i className="fas fa-check-circle"></i>
+        </span>
+        <p><b>Communicate effectively with the WhatsApp Business API.</b></p>
+      </div>
+      <div className="text d-flex mb-2">
+        <p>
+          <b>WhatsApp Business API Healthcare</b> allows medical professionals to connect securely, swiftly, and
+          economically. Thanks to instant messaging, healthcare professionals may rapidly share updates, medical reports,
+          and critical information with patients and coworkers. Both patient care and decision-making are improved by
+          it.
+        </p>
+      </div>
+
+      <div className="text d-flex mb-2 mt-2">
+        <span className="icon color-blue5 me-2 flex-shrink-0">
+          <i className="fas fa-check-circle"></i>
+        </span>
+        <p><b>Appointment Reminders</b></p>
+      </div>
+      <div className="text d-flex mb-2">
+        <p>
+          Healthcare institutions can use WhatsApp to notify patients about their forthcoming visits, which will reduce
+          the number of missed appointments. This straightforward yet helpful benefit boosts the effectiveness of
+          healthcare delivery while ensuring patients receive the attention they need.
+        </p>
+      </div>
+
+      <div className="text d-flex mb-2 mt-2">
+        <span className="icon color-blue5 me-2 flex-shrink-0">
+          <i className="fas fa-check-circle"></i>
+        </span>
+        <p><b>Cost-Effective Communication</b></p>
+      </div>
+      <div className="text d-flex mb-2">
+        <p>
+          Both consumers and healthcare providers may find regular phone calls and SMS texts to be costly. WhatsApp
+          provides a more cost-effective means of communication, enabling a larger patient population to receive
+          healthcare services.
+        </p>
+      </div>
+
+      <div className="text d-flex mb-2 mt-2">
+        <span className="icon color-blue5 me-2 flex-shrink-0">
+          <i className="fas fa-check-circle"></i>
+        </span>
+        <p><b>Emergency Support</b></p>
+      </div>
+      <div className="text d-flex mb-2">
+        <p>
+          In case of an emergency, <b>patients can contact clinics or medical specialists via WhatsApp.</b> Instant
+          access may be quite beneficial, particularly when quick judgments and guidance are needed.
+        </p>
+      </div>
+
+      <div className="text d-flex mb-2 mt-2">
+        <span className="icon color-blue5 me-2 flex-shrink-0">
+          <i className="fas fa-check-circle"></i>
+        </span>
+        <p><b>Telemedicine and consultations</b></p>
+      </div>
+      <div className="text d-flex mb-2">
+        <p>
+          Telemedicine and virtual consultations have been made feasible via WhatsApp. Patients may communicate with
+          medical experts via the website, share symptoms, ask inquiries, and even request medication refills. This will
+          be especially helpful for patients with chronic diseases or minor health issues.
+        </p>
+      </div>
+    </div>
 
       <div id="whatsapp-broadcast15">
-        <h6 className="mt-40 mb-20">How do I use WhatsApp in the healthcare sector?</h6>
-        <div className="text d-flex mb-20">
+        <h6 className="mt-4 mb-2">How do I use WhatsApp in the healthcare sector?</h6>
+        <div className="text d-flex mb-2">
           <p>
             Healthcare companies use the <a href="https://anantya.ai/whatsapp-business-api" target="_blank" rel="noopener noreferrer">WhatsApp Business API</a> to create special groups just for patients. These groups all provide support, share information, and get everyone involved in the community.
           </p>
         </div>
-        <div className="text d-flex mb-20">
+        <div className="text d-flex mb-2">
           <p>With WhatsApp for healthcare, patients can find all sorts of helpful tips about staying healthy and living a good life. The aim is to keep everyone well and prevent sickness.</p>
         </div>
-        <div className="text d-flex mb-20">
+        <div className="text d-flex mb-2">
           <p>Now, let’s talk about how to ask about health stuff on WhatsApp. It’s a bit important, so let’s dive in and get some examples for your business.</p>
         </div>
         <h6 className="mt-40 mb-10">WhatsApp for Healthcare</h6>
@@ -312,122 +405,177 @@ const WhatsAppForHealthcareGuide = () => {
           </div>
         ))}
         
-        <div className="text d-flex mb-20 mt-20">
+        <div className="text d-flex mb-2 mt-2">
           <span className="icon color-blue5 me-2 flex-shrink-0"><i className="fas fa-check-circle"></i></span>
           <p><b>Appointment Reminders</b></p>
         </div>
         <div className="text-center">
-          <a href="https://wa.link/q7404l" target="_blank" rel="noopener noreferrer">
-            <img src="assets/img/blog/appointment-reminders.webp" className="img-fluid pb-3 mx-auto" alt="appointment-reminders" />
-          </a>
-        </div>
-        <div className="text d-flex mb-20">
+      <a href="https://wa.link/q7404l" target="_blank" rel="noopener noreferrer">
+        <img 
+          src={appointmentRemindersImage}  // Dynamic image import
+          className="img-fluid pb-3 mx-auto" 
+          alt="appointment-reminders" 
+        />
+      </a>
+    </div>
+        <div className="text d-flex mb-2">
           <p>Healthcare providers may experience inefficiencies and lost income as a result of missed appointments. By using WhatsApp to automate appointment reminders, you may increase patient attendance. This little action can enhance patient care and drastically lower the number of no-shows.</p>
         </div>
-        <div className="text d-flex mb-20">
+        <div className="text d-flex mb-2">
           <p>Schedule appointments and set up notifications and reminders automatically. Make scheduling consultations, examinations, and other appointments easier.</p>
         </div>
-        <div className="text d-flex mb-20">
+        <div className="text d-flex mb-2">
           <p>One can easily use <b>Anantya.ai</b> to automate appointment reminders on WhatsApp by connecting your CRM with Anantya.ai.</p>
         </div>
 
-        <div className="text d-flex mb-20 mt-20">
+        <div className="text d-flex mb-2 mt-2">
           <span className="icon color-blue5 me-2 flex-shrink-0"><i className="fas fa-check-circle"></i></span>
           <p><b>Instant patient engagement</b></p>
         </div>
         <div className="text-center">
-          <a href="https://calendly.com/info-w0m/30min?month=2024-02" target="_blank" rel="noopener noreferrer">
-            <img src="assets/img/blog/instant-patient-engagement.webp" className="img-fluid pb-3 mx-auto" alt="instant-patient-engagement" />
-          </a>
-        </div>
-        <div className="text d-flex mb-20">
+      <a 
+        href="https://calendly.com/info-w0m/30min?month=2024-02" 
+        target="_blank" 
+        rel="noopener noreferrer"
+      >
+        <img 
+          src={instantPatientEngagementImage}  // Dynamic image import
+          className="img-fluid pb-3 mx-auto" 
+          alt="instant-patient-engagement" 
+        />
+      </a>
+    </div>
+        <div className="text d-flex mb-2">
           <p>Adding a free WhatsApp button to your website will immediately engage patients. Users may 'click-to-chat' to establish a connection with you on WhatsApp if you have placed a WhatsApp button.</p>
         </div>
-        <div className="text d-flex mb-20">
+        <div className="text d-flex mb-2">
           <p>Once you have a WhatsApp button on your website, all people have to do to connect with you on WhatsApp is "click to chat."</p>
         </div>
-        <div className="text d-flex mb-20">
+        <div className="text d-flex mb-2">
           <p>This direct link promotes community building and active involvement in health care. By adding this WhatsApp button to your website, you may easily engage a large number of website visitors.</p>
         </div>
         
-        <div className="text d-flex mb-20 mt-20">
+        <div className="text d-flex mb-2 mt-2">
           <span className="icon color-blue5 me-2 flex-shrink-0"><i className="fas fa-check-circle"></i></span>
           <p><b>Real-time Feedback</b></p>
         </div>
 
-        <div className="text d-flex mb-20">
+        <div className="text d-flex mb-2">
           <p><a href="https://www.helpscout.com/75-customer-service-facts-quotes-statistics/" target="_blank" rel="noopener noreferrer">"78% of users back out of purchases due to poor customer experience."</a><br />
           Usually, companies seek customer feedback on their goods and services by email or SMS. Furthermore, those emails are disregarded or not opened 65% of the time.</p>
         </div>
-        <div className="text d-flex mb-20">
+        <div className="text d-flex mb-2">
           <p>However, using WhatsApp, you can encourage people to re-engage in addition to receiving fast feedback on your goods 98% of the time.</p>
         </div>
-        <div className="text d-flex mb-20">
+        <div className="text d-flex mb-2">
           <p>To improve customer comfort, send Quick Reply buttons to consumers and ask for their comments.</p>
         </div>
-        <div className="text d-flex mb-20">
+        <div className="text d-flex mb-2">
           <p>When they press the feedback button, your WhatsApp chatbot automatically sends them an offer to buy something else.</p>
         </div>
         
-        <div className="text d-flex mb-20 mt-20">
+        <div className="text d-flex mb-2 mt-2">
           <span className="icon color-blue5 me-2 flex-shrink-0"><i className="fas fa-check-circle"></i></span>
           <p><b>Health Announcements and Updates</b></p>
         </div>
 
-        <div className="text d-flex mb-20">
+        <div className="text d-flex mb-2">
           <p>You may broadcast messages to an unlimited number of users about new health services, upgrades, and instructional content—this is one of the top use cases of the <b>WhatsApp Business API for Healthcare.</b></p>
         </div>
-        <div className="text d-flex mb-20">
+        <div className="text d-flex mb-2">
           <p>By keeping patients and medical staff informed at all times, this real-time communication improves the patient experience.</p>
         </div>
-        <div className="text d-flex mb-20">
+        <div className="text d-flex mb-2">
           <p>To notify your opted-in subscribers of all these changes and announcements, you may set up a WhatsApp newsletter.</p>
         </div>
         
-        <div className="text d-flex mb-20 mt-20">
+        <div className="text d-flex mb-2 mt-2">
           <span className="icon color-blue5 me-2 flex-shrink-0"><i className="fas fa-check-circle"></i></span>
           <p><b>Personalized patient support</b></p>
         </div>
 
-        <div className="text d-flex mb-20">
+        <div className="text d-flex mb-2">
           <p>Personalized one-on-one live chats on WhatsApp might help you establish trust. Respond to inquiries promptly, promoting a helpful and interesting medical atmosphere.</p>
         </div>
-        <div className="text d-flex mb-20">
+        <div className="text d-flex mb-2">
           <p>In a patient's medical journey, this personalized touch may mean the world.</p>
         </div>
         
-        <div className="text d-flex mb-20 mt-20">
+        <div className="text d-flex mb-2 mt-2">
           <span className="icon color-blue5 me-2 flex-shrink-0"><i className="fas fa-check-circle"></i></span>
           <p><b>Run targeted marketing campaigns.</b></p>
         </div>
 
-        <div className="text d-flex mb-20">
+        <div className="text d-flex mb-2">
           <p>Use Anantya.ai retargeting campaigns for WhatsApp to target and filter particular audiences. Increase the effectiveness of your marketing campaigns by contacting the right individuals at the right time and generating more conversions.</p>
         </div>
-        <div className="text d-flex mb-20">
+        <div className="text d-flex mb-2">
           <p>For example, Imagine for a moment that you want to communicate with users who viewed your previous broadcast message. It is simple to see who has seen your message and to retarget them with your most recent one! Given that these users previously engaged with your broadcast, there is a tenfold increased likelihood that this message will be read.</p>
         </div>
         
-        <div className="text d-flex mb-20 mt-20">
+        <div className="text d-flex mb-2 mt-2">
           <span className="icon color-blue5 me-2 flex-shrink-0"><i className="fas fa-check-circle"></i></span>
           <p><b>Get Authenticity with Green Tick</b></p>
         </div>
 
-        <div className="text d-flex mb-20">
-          <p>WhatsApp for healthcare allows you to apply for WhatsApp green tick verification, which enables you to show the green tick beside your company name.</p>
+        <div className="text d-flex mb-2">
+          <p>With WhatsApp, Green Tick showcases your brand’s credibility on WhatsApp. Apply for a Green Tick free of charge with the help of Anantya.ai.</p>
         </div>
-        <div className="text d-flex mb-20">
-          <p>Consumers may trust your company and brand thanks to this level of credibility. It enables you to stand out from the crowd and let your clients know they are in good hands.</p>
+        <div className="text d-flex mb-2">
+          <p>It offers a clear statement of your dedication to truth and quality.</p>
         </div>
+        <div className="text-center">
+      <a href="contact" target="_blank" rel="noopener noreferrer">
+        <img 
+          src={bookYourImage}  // Correct way to dynamically insert the image source
+          className="img-fluid pb-3 mx-auto" 
+          alt="get-started-for-free"
+        />
+      </a>
+    </div>
+        
       </div>
-  
+      <div id="whatsapp-broadcast16">
+      <h6 className="mt-40 mb-2">Conclusion</h6>
+      <div className="text d-flex mb-2">
+        <p>
+          Using the WhatsApp Business API for healthcare is a game-changer, making it
+          simpler for patients to connect with medical experts and access important
+          information.
+        </p>
+      </div>
+      <div className="text d-flex mb-2">
+        <p>
+          With its wide reach and user-friendly features, WhatsApp is changing the
+          healthcare sector, from appointment scheduling to providing real-time
+          updates and personalized support.
+        </p>
+      </div>
+      <div className="text d-flex mb-2">
+        <p>
+          By using the <a href="https://anantya.ai/whatsapp-business-api-ultimate-guide" target="_blank" rel="noopener noreferrer">
+            WhatsApp Business API
+          </a>, healthcare organizations can
+          schedule timely communication, reduce missed appointments, and improve
+          patient care, all while saving time and money.
+        </p>
+      </div>
+      <div className="text d-flex mb-2">
+        <p>
+          The WhatsApp Business API helps them deliver and manage better healthcare
+          services for their patients and staff. So, why are you waiting? Choose the
+          best <b>WhatsApp business API provider</b>, like <b>Anantya.ai</b> for your
+          business, and sprinkle the magic of WhatsApp in your business.
+        </p>
+      </div>
+    </div>
 
 
       <section className="faq style-4 pb-60" id="whatsapp-broadcast17">
             <div className="container px-md-0 px-4" id="whatsapp-broadcast9">
                 <div className="section-head text-center style-4" style={{ padding: '24px 10px', boxShadow: '0px 0px 20px 6px #e0dfdf59', borderRadius: '20px' }}>
                     <small className="title_small">Frequently Asked Question</small>
-                    <hr className="line_breaker_2 mb-4" />
+                 
                     <div className="content">
                         <div className="faq style-3 style-4">
                             <div className="accordion" id="accordionSt4">

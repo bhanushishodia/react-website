@@ -134,39 +134,39 @@ const MetaFrequencyCappingUpdate = () => {
                                         </h3>
                                         <p className="pb-20 pt-10 color-999">Update on 26 June 2024</p>
 
-                                        <div className="text d-flex mb-20">
+                                        <div className="text d-flex mb-2">
                                             <p>
                                                 Nowadays, WhatsApp is being used for marketing and has gained lots of popularity.
                                                 This sounds pleasant while you not only interact but also promote your product
                                                 through messaging.
                                             </p>
                                         </div>
-                                        <div className="text d-flex mb-20">
+                                        <div className="text d-flex mb-2">
                                             <p>
                                                 But Meta found something fishy, while some brands were overdoing messaging and
                                                 spamming users. To fix this, Meta introduced a new feature called <b>“frequency capping”.</b>
                                             </p>
                                         </div>
-                                        <div className="text d-flex mb-20 mt-20">
+                                        <div className="text d-flex mb-2 mt-20">
                                             <p>
                                                 Starting on May 23, 2024, there will be a limit on how many marketing messages
                                                 you can send to each user. This global update aims to improve the user
                                                 experience by reducing spam.
                                             </p>
                                         </div>
-                                        <div className="text d-flex mb-20 mt-20">
+                                        <div className="text d-flex mb-2 mt-20">
                                             <p>Let’s learn about this update in an easier manner.</p>
                                         </div>
 
                                         <div id="whatsapp-broadcast1">
-                                            <h6 className="mt-40 mb-20">What is frequency capping?</h6>
-                                            <div className="text d-flex mb-20">
+                                            <h6 className="mt-4 mb-2">What is frequency capping?</h6>
+                                            <div className="text d-flex mb-2">
                                                 <p>
                                                     The quantity of promotional messages a company may deliver to its customers
                                                     in a given period of time is limited by frequency capping.
                                                 </p>
                                             </div>
-                                            <div className="text d-flex mb-20">
+                                            <div className="text d-flex mb-2">
                                                 <p>
                                                     Promotional messages sent using authorized <b>WhatsApp business templates</b>
                                                     are restricted by frequency capping. A user is only allowed to view a particular number of these messages from all companies during a specific time frame (imagine it as a quota). Meta continuously modifies this duration and the quantity of messages in order to enhance the user experience.
@@ -174,10 +174,10 @@ const MetaFrequencyCappingUpdate = () => {
                                             </div>
                                         </div>
 
-                                        <h6 className="mt-40 mb-20" id="whatsapp-broadcast2">
+                                        <h6 className="mt-4 mb-2" id="whatsapp-broadcast2">
                                             Why did Meta do things this way?
                                         </h6>
-                                        <div className="text d-flex mb-20">
+                                        <div className="text d-flex mb-2">
                                             <p>
                                                 Additionally, Meta is in charge of ensuring that users of WhatsApp do not become
                                                 overloaded with the volume of messages they receive. This limitation should
@@ -185,7 +185,7 @@ const MetaFrequencyCappingUpdate = () => {
                                                 subscribers.
                                             </p>
                                         </div>
-                                        <div className="text d-flex mb-20">
+                                        <div className="text d-flex mb-2">
                                             <p>
                                                 Better CTRs, higher levels of engagement, and higher conversions may result from
                                                 this.
@@ -193,14 +193,14 @@ const MetaFrequencyCappingUpdate = () => {
                                         </div>
 
                                         <div id="whatsapp-broadcast3">
-                                            <h6 className="mt-40 mb-20">Does this affect your messages?</h6>
+                                            <h6 className="mt-4 mb-2">Does this affect your messages?</h6>
                                         </div>
-                                        <div className="text d-flex mb-20">
+                                        <div className="text d-flex mb-2">
                                             <p>
                                                 Frequency capping is exclusive to marketing messages sent using the <b>WhatsApp Business API.</b> There will be no impact on these messages.
                                             </p>
                                         </div>
-                                        <div className="text d-flex mb-20">
+                                        <div className="text d-flex mb-2">
                                             <ul style={{ listStyleType: 'none' }}>
                                                 <li>
                                                     <span className="icon color-blue5 me-2 flex-shrink-0">
@@ -230,22 +230,22 @@ const MetaFrequencyCappingUpdate = () => {
                                                                 </p>
                                                                 <div className="row px-5">
                                                                     <div className="col-lg-4">
-                                                                        <div className="form-group mb-20">
+                                                                        <div className="form-group mb-2">
                                                                             <input type="text" name="name" className="form-control" placeholder="Full Name" required />
                                                                         </div>
                                                                     </div>
                                                                     <div className="col-lg-4">
-                                                                        <div className="form-group mb-20">
+                                                                        <div className="form-group mb-2">
                                                                             <input type="text" name="email" className="form-control" placeholder="Email Address" required />
                                                                         </div>
                                                                     </div>
                                                                     <div className="col-lg-4">
-                                                                        <div className="form-group mb-20">
+                                                                        <div className="form-group mb-2">
                                                                             <input type="text" name="phone" className="form-control" placeholder="Phone Number" required />
                                                                         </div>
                                                                     </div>
                                                                     <div className="col-lg-4">
-                                                                        <div className="form-group mb-20">
+                                                                        <div className="form-group mb-2">
                                                                             <input type="text" name="message" className="form-control" id="messages" placeholder="Name of Organisation" required />
                                                                         </div>
                                                                     </div>
@@ -266,15 +266,15 @@ const MetaFrequencyCappingUpdate = () => {
                                         </div>
 
                                         <div id="whatsapp-broadcast4">
-                                            <h6 className="mt-40 mb-20">What obstacles are you likely to encounter?</h6>
+                                            <h6 className="mt-4 mb-2">What obstacles are you likely to encounter?</h6>
                                         </div>
-                                        <div className="text d-flex mb-20">
+                                        <div className="text d-flex mb-2">
                                             <p>
                                                 Some marketing messages may not reach the intended demographic, which may be
                                                 problematic for businesses. But don't make quick assumptions!
                                             </p>
                                         </div>
-                                        <div className="text d-flex mb-20">
+                                        <div className="text d-flex mb-2">
                                             <p>
                                                 Although <b>frequency capping</b> is the reason for standard error codes, there
                                                 are other possible causes for these unsuccessful deliveries. Keep in mind that
@@ -282,7 +282,7 @@ const MetaFrequencyCappingUpdate = () => {
                                             </p>
                                         </div>
 
-                                        <h6 className="mt-40 mb-20">The latest update in marketing messages</h6>
+                                        <h6 className="mt-4 mb-2">The latest update in marketing messages</h6>
                                         <p>
                                             With WhatsApp capping frequency, Meta restricted many business accounts, which created an unnecessary disturbance. To ensure everything runs smoothly and remains under control, Meta has introduced new updates to marketing message regulations.
                                         </p>
@@ -292,26 +292,54 @@ const MetaFrequencyCappingUpdate = () => {
                                             <li>While sending these marketing messages, if the client doesn’t initiate any conversation, businesses are not eligible to send any further messages.</li>
                                         </ul>
                                         <p className="fw-bold mt-20">Meta’s new frequency capping update will transform the way businesses communicate with their clients.</p>
-
-                                        <h6 className="mt-40 mb-20">Conclusion</h6>
-                                        <div className="text d-flex mb-20">
+                                        <div id="whatsapp-broadcast5">
+            <h6 className="mt-4 mb-2">How can frequency capping be solved?</h6>
+            <div className="text d-flex mb-2">
+                <p>
+                    With this change, Meta hopes to prevent consumers from feeling overloaded or
+                    flooded by companies on WhatsApp. Here are three strategies to ensure that
+                    frequency capping has the least negative impact on you:
+                </p>
+            </div>
+            <div className="text d-flex mb-2">
+                <p>
+                    Make an effort to start deep discussions with your users. The regulations loosen
+                    considerably after the session is open and everyone has warmed up.
+                </p>
+            </div>
+            <div className="text d-flex mb-2">
+                <p>
+                    Give priority to communications that are qualitative rather than sending out a
+                    ton of messages all day long to your users.
+                </p>
+            </div>
+            <div className="text d-flex mb-2">
+                <p>
+                    Find out what works best for you by doing A/B testing. You may utilize this data
+                    to customize your <b>WhatsApp promotional messages</b> if you have enough of it.
+                </p>
+            </div>
+        </div>
+                                        <h6 className="mt-4 mb-2">In conclusion</h6>
+                                        <div className="text d-flex mb-2">
                                             <p>
-                                                Meta is on a mission to enhance the user experience on WhatsApp. With their new
-                                                frequency capping rules, they are reducing spam while making it easier for
-                                                businesses to interact with clients.
+                                            Brands will definitely be more aware of their WhatsApp advertising activities as a result of the frequency capping upgrade. Users' experiences might be improved, which would motivate them to interact and convert more.
                                             </p>
                                         </div>
-                                        <div className="text d-flex mb-20">
-                                            <p>
-                                                Brands will undoubtedly find a better way to connect with their clients in the
-                                                future while maximizing the effectiveness of their marketing strategies.
-                                            </p>
-                                        </div>
+                                        <div className="text d-flex mb-2">
+            <p>
+                <b>Anantya.ai</b> can make the process easier for businesses wishing to expand
+                their <b>WhatsApp marketing.</b> Here, you may schedule a 10-minute one-on-one
+                <a className="fs-6" href="https://calendly.com/info-w0m/30min" style={{ color: '#5dc4eb' }} target="_blank" rel="noopener noreferrer">
+                    meeting with us.
+                </a>
+            </p>
+        </div>
                                     </div>
                                 </div>
                                 <div className="col-lg-4">
             <div className="summary-card">
-                <h6 className="pb-20 border-bottom border-1 brd-gray">Table of Contents:</h6>
+                <h6 className="pb-3 border-bottom border-1 brd-gray">Table of Contents:</h6>
                 <ul>
                     <li><a href="#whatsapp-broadcast1">What is frequency capping?</a></li>
                     <li><a href="#whatsapp-broadcast2">Why did Meta do things this way?</a></li>

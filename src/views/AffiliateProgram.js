@@ -418,7 +418,7 @@ const AffiliateProgram = () => {
         </div>
       </div>
     </section>
-    <section className="container pt-5">
+    <section className="container py-5">
       <div className="cta-partner text-black mx-md-0 mx-3">
         <div className="row my-auto py-md-0 px-md-0 px-0 mx-md-0 mx-0 text-center">
           <div
@@ -430,9 +430,9 @@ const AffiliateProgram = () => {
             Partner Today!
             </h2>
             <span class="u-inline-block"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10">
-                                <path d="M9.1.3L4 5.4l-2-2c-.3-.3-.7-.4-1-.3S0 3.5 0 4c0 .4 0 .8.3 1l2.8 2.8c.2.2.5.3.8.3s.6-.1.8-.3l6-5.9c.3-.2.4-.6.3-1a1 1 0 0 0-.8-.8c-.4 0-.8 0-1 .3z" fill="currentColor"></path>
+                                <path d="M9.1.3L4 5.4l-2-2c-.3-.3-.7-.4-1-.3S0 3.5 0 4c0 .4 0 .8.3 1l2.8 2.8c.2.2.5.3.8.3s.6-.1.8-.3l6-5.9c.3-.2.4-.6.3-1a1 1 0 0 0-.8-.8c-.4 0-.8 0-1 .3z" fill="#54cdeb"></path>
                             </svg> &nbsp;Earn 50% Commission on your first sale.</span>
-            <img src={ctaImg} className="img-fluid w-75" alt="cta-img" />
+            <img src={ctaImg} className="img-fluid w-75 my-3" alt="cta-img" />
           </div>
 
           <div className="col-lg-6 col-md-6 col-sm-12 text-capitalize partner_forms my-auto px-md-5 px-4 text-left">

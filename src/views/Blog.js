@@ -499,11 +499,11 @@ const Blog = () => {
                     </h5>
                     <div className="info">
                       <div className="text">{card.description}</div>
-                      <a href={card.link}>
-                       
-                        Read More
-                        <i class="fas fa-long-arrow-right ms-2 colorfa_1 my-auto mt-2"></i>
-                      </a>
+                      <a href={card.link} className="custom-color-class">
+  Read More
+  <i className="fas fa-long-arrow-right ms-2 colorfa_1 my-auto mt-2"></i>
+</a>
+
                     </div>
                   </div>
                 </div>

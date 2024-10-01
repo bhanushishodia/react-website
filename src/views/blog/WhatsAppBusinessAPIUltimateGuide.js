@@ -102,25 +102,23 @@ const WhatsAppBroadcastingUltimateGuide = () => {
         </script>
       </Helmet>
     <div>
-       <div className="container py-5">
-      <div className="row px-md-5 px-1 mx-1 mx-md-5">
-        <div className="col-md-12 col-sm-12">
-          <div className="text-center py-4">
+       <div className="container py-5 blog-page mt-md-4 mt-5">
+       <h1 id="intro" class="font-weight pb-2 text-center">WhatsApp Business API: Your Ultimate 2024 Guide</h1>
+        <div className="text-center py-4">
             <img
               src={guideImage}
-              className="img-fluid"
+              className="img-fluid w-75"
               alt="WhatsApp Business API: Your Ultimate Guide"
             />
-          </div>
         </div>
-      </div>
-      </div>
+       </div>
     
        <section className="jop-details pb-100">
           <div className="container">
-        <div className="content">
-          <div className="row">
-            <div className="col-lg-8 blog">
+        <div className="content blogBox text-justify">
+          <div className="row py-5">
+              <div className="col-lg-8 blog text-start">
+              <article>
               <div className="jop-info">
        
             <h3 className="main-title mb-10">
@@ -138,7 +136,7 @@ const WhatsAppBroadcastingUltimateGuide = () => {
             </div>
 
             <div>
-                <h6 className="mt-40 mb-20">What is WhatsApp Business API?</h6>
+                <h6 className="mt-40 mb-20 text-start">What is WhatsApp Business API?</h6>
                 <div className="text d-flex mb-20">
                     <p>
                         WhatsApp Business API is one of the effective tools designed for medium and large businesses to manage their WhatsApp communication with customers. 
@@ -159,7 +157,7 @@ const WhatsAppBroadcastingUltimateGuide = () => {
             </div>
 
             <div>
-                <h6 className="mt-40 mb-20">Let’s simply understand this…</h6>
+                <h6 className="mt-40 mb-20 text-start">Let’s simply understand this…</h6>
                 <p className="pb-20">To summarize, each of them has its own distinct purpose:</p>
                 <ol>
                     <li className="pb-20">&nbsp;<b>Standard WhatsApp:</b> It's for personal use, allowing you to chat with friends and family.</li>
@@ -171,8 +169,8 @@ const WhatsAppBroadcastingUltimateGuide = () => {
                 </div>
             </div>
 
-            <div>
-                <h6 className="mt-40 mb-20">WhatsApp Business App can be used by:</h6>
+            <div className='text-start'>
+                <h6 className="mt-40 mb-20 text-start">WhatsApp Business App can be used by:</h6>
                 <ol>
                     <li className="pb-20">&nbsp;You have fewer than 500 customers.</li>
                     <li className="pb-20">&nbsp;One or two people can manage your customer chats.</li>
@@ -181,7 +179,7 @@ const WhatsAppBroadcastingUltimateGuide = () => {
                 </ol>
             </div>
 
-            <div id="whatsapp-broadcast13">
+            <div id="whatsapp-broadcast13" className='text-start'>
                 <h6 className="mt-40 mb-20">WhatsApp Business Platform (API) can be used by:</h6>
                 <ol>
                     <li className="pb-20">&nbsp;You have more than 500 customers.</li>
@@ -506,14 +504,39 @@ const WhatsAppBroadcastingUltimateGuide = () => {
           </ol>
         </div>
       </div>
+      <div id="whatsapp-broadcast45">
+  <h6 className="mt-40 mb-20">Conclusion</h6>
+  <div className="text d-flex mb-20">
+    <p>
+      WhatsApp Business API is a great tool for businesses to connect with customers, make things run smoother, and boost earnings.
+    </p>
+  </div>
+  <div className="text d-flex mb-20">
+    <p>
+      This guide covered how it's great for messaging, works well with other business tools, and gave examples in e-commerce, customer service, and marketing.
+    </p>
+  </div>
+  <div className="text d-flex mb-20">
+    <p>
+      If businesses use the WhatsApp Business API smartly, they can make customers happier and stand out from the competition. It's all about getting messaging and tool connections right while also considering privacy, how often to message, and creating effective chatbots.
+    </p>
+  </div>
+  <div className="text d-flex mb-20">
+    <p>
+      So, if you're a business person, definitely check out what the <b>WhatsApp Business API</b> can do for you—it's a game-changer in making your customers happy and improving your overall success.
+    </p>
+  </div>
+</div>
+
     </div>
 
               </div>
+              </article>
               </div>
               <div className="col-lg-4">
-      <div className="summary-card">
-        <h3 className="pb-20 border-bottom border-1 brd-gray">Table of Contents:</h3>
-        <ul>
+              <div className="summary-card">
+        <h3 className="pb-3 border-bottom border-1 brd-gray">Table of Contents:</h3>
+        <ul className="list-unstyled">
           <li><a href="#whatsapp-broadcast41">Use Case of the WhatsApp Business API</a></li>
           <li><a href="#whatsapp-broadcast42">How can I get started with the WhatsApp Business API?</a></li>
           <li><a href="#whatsapp-broadcast43">Advantages of choosing a WhatsApp Partner for the WhatsApp Business API</a></li>
@@ -521,7 +544,7 @@ const WhatsAppBroadcastingUltimateGuide = () => {
           <li><a href="#whatsapp-broadcast45">Conclusion</a></li>
           <li><a href="#whatsapp-broadcast46">FAQ</a></li>
         </ul>
-      </div>
+              </div>
               </div>
 
           

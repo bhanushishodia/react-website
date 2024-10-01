@@ -3,6 +3,8 @@ import ScrollToTopButton from '../../components/common/ScrollToTopButton';
 import WhatsAppWidget from '../../components/common/WhatsAppWidget';
 import clickToWhatsAppImage from '../../assets/images/blog/click-to-whatsapp-ads.jpeg';
 import { Helmet } from 'react-helmet';
+import CommentForm from "../../components/common/CommentForm";
+
 const ClickToWhatsAppAdsMarketing2023 = () => {
   return (
     <section>
@@ -119,11 +121,12 @@ const ClickToWhatsAppAdsMarketing2023 = () => {
           alt="click-to-whatsapp-ads" 
         />
       </div>
-      <div className="row px-1 mx-1">
+      <div className="row px-1 mx-1 py-5 mt-5">
         {/* Left Side Content */}
         <div className="col-lg-8 col-md-12 col-sm-12">
           <div className="blogcontentui">
             <div className="blogBox text-justify">
+              <article>
               <section itemProp="articleBody" className="entry-content">
                 <p><strong>WhatsApp Business API</strong> has already revolutionized the way that consumers and businesses interact and maintain connections. Brands provide 24/7 support, shopping assistance, reminders of abandoned carts, and promotions by utilizing WhatsApp Business' enormous reach and functionality.</p>
                 <p>To help you get a better return on your advertising investment, Meta has just launched ads that click to WhatsApp. You can gather all your leads—including their personally identifiable information, such as name and phone number—using ads that click to WhatsApp using WhatsApp Business API.</p>
@@ -164,34 +167,17 @@ const ClickToWhatsAppAdsMarketing2023 = () => {
                 <p>To make these ads work well, businesses need catchy ads, a smooth experience for users, and a keen eye on how well things are going to keep improving.</p>
                 <p>In a nutshell, using these ads in 2023 could take marketing to a whole new level. It's time to start creating Ads on Facebook/Instagram via <a href="https://anantya.ai/"><strong>Anantya.ai</strong></a> & drive leads to your WhatsApp Business account.</p>
               </section>
+              </article>
+               {/* Use CommentForm multiple times */}
+               <CommentForm />
             </div>
-            <div className="form_box px-5 py-4 my-3" style={{ borderLeft: '3px solid #f5c11629', borderRight: '3px solid #f5c11629' }}>
-              <h5><strong>Leave a Reply</strong></h5>
-              <p className="pb-0 mb-0">Your email address will not be published. Required fields are marked *</p>
-              <form action="https://formspree.io/f/xjvqbzny" method="POST">
-                <div className="row">
-                  <div className="col-6">
-                    <label htmlFor="name"></label>
-                    <input type="text" name="Name" className="form-control" id="name" placeholder="Name" />
-                  </div>
-                  <div className="col-6">
-                    <label htmlFor="email"></label>
-                    <input type="email" name="email" className="form-control" id="email" placeholder="Your Email id*" />
-                  </div>
-                </div>
-                <label htmlFor="comment" className="form-label"></label>
-                <textarea className="form-control" id="comment" name="comment" rows="3" placeholder="Comment"></textarea>
-                <div className="mt-3">
-                  <input type="submit" className="px-5 py-2 login_button" value="Post Comment" />
-                </div>
-              </form>
-            </div>
+            
           </div>
         </div>
         {/* Right Side Table of Contents */}
         <div className="col-lg-4 col-md-12 career-details-page style-5 ">
           <div className="summary-card bg-white">
-            <h3 className="pb-3">Table of Contents</h3>
+            <h3 className="pb-3 text-start border-bottom border-1 brd-gray">Table of Contents</h3>
             <ul>
               <li>
                 <h5>

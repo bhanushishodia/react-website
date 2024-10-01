@@ -172,7 +172,7 @@ const WhatsAppMarketingDirectCommunication = () => {
         `}
       </script>
     </Helmet>
-      <div className="container py-4">
+      <div className="container py-5">
             <div className="row px-md-5 px-1 mx-1 mx-md-5">
                 <div className="col-md-12 col-sm-12">
                     <div className="text-center py-4">
@@ -190,8 +190,8 @@ const WhatsAppMarketingDirectCommunication = () => {
                 <section className="jop-details pb-100">
                     <div className="container">
                         <div className="content">
-                            <div className="row">
-                                <div className="col-lg-8 blog">
+                            <div className="row py-5">
+                                <div className="col-lg-8 blog"> 
                                     <div className="jop-info">
                                         <h1 className="main-title fs-3 mb-10">WhatsApp Marketing: Build a Direct Line of Communication with Customers</h1>
                                         <p className="pb-20 pt-10 color-999">Update on 10 July 2024</p>
@@ -211,57 +211,105 @@ const WhatsAppMarketingDirectCommunication = () => {
                                         
                                         <div id="marketing">
                                             <h2 className="fs-5 mt-40 mb-20">What is WhatsApp marketing?</h2>
-                                            <div className="text d-flex mb-20">
-                                                <p>WhatsApp marketing is all about using WhatsApp to stay connected with your clients...</p>
-                                            </div>
-                                            <div className="text d-flex mb-20">
-                                                <p>Using WhatsApp has become a daily need for many people...</p>
-                                            </div>
-                                            <div className="text d-flex mb-20">
-                                                <p>With WhatsApp marketing, businesses have a win-win opportunity...</p>
-                                            </div>
+                                            <div class="text d-flex mb-20">
+
+                                        <p>WhatsApp marketing is all about using WhatsApp to stay connected with your
+                                            clients in a more personal and direct way. In comparison with emails or
+                                            social media posts, businesses can use WhatsApp to send updates, share
+                                            promotions, and provide customer support to their clients.
+                                        </p>
+                                    </div>
+                                    <div class="text d-flex mb-20">
+
+                                        <p>WhatsApp has become a thread of direct communication between you and your
+                                            clients, where businesses can chat with customers directly and instantly,
+                                            which helps to build stronger relationships with their consumers. </p>
+                                    </div>
+                                    <div class="text d-flex mb-20">
+
+                                        <p>Using WhatsApp has become a daily need for many people to stay in touch with
+                                            their family and friends, and the <b> WhatsApp Business API </b> has given
+                                            businesses
+                                            a golden opportunity. By providing features like group chats, broadcast
+                                            lists, and automated responses, businesses can now manage a large number of
+                                            messages while still keeping the conversation personal with each of their
+                                            clients. </p>
+                                    </div>
+                                    <div class="text d-flex mb-20">
+
+                                        <p>With WhatsApp marketing, businesses have a win-win opportunity to gain
+                                            customers and increase loyalty.</p>
+                                    </div>
                                         </div>
 
                                         <div id="marketing-platform">
                                             <img src={marketingPlatformImage} className="img-fluid" alt="WhatsApp as a marketing platform" />
                                             <h3 className="mt-40 fs-5 mb-20">How do I use WhatsApp as a marketing platform?</h3>
                                             <div className="text d-flex mb-20">
-                                                <p>Let’s count on some amazing features that WhatsApp will provide you...</p>
+                                            <p>Let’s count on some amazing features that WhatsApp will provide you after you
+                                            choose it. And what are all the things you can use after opting for WhatsApp
+                                            marketing as your marketing platform?</p>
                                             </div>
                                             <h6 className="mt-40 mb-20 fw-normal">Send promotional messages</h6>
                                             <div className="text d-flex mb-20">
-                                                <p>While using SMS marketing...</p>
+                                            <p>While using SMS marketing, you have an idea that your customer has reached
+                                            you, but are you sure that your message has been opened or not? If your
+                                            answer is no, then think about switching to WhatsApp.</p>
                                             </div>
                                             <div className="text d-flex mb-20">
-                                                <p>Send out product updates, shipping details...</p>
+                                            <p>Send out product updates, shipping details, marketing messages, update
+                                            customer queries, and more with <b>WhatsApp's business platform.</b></p>
                                             </div>
                                             <h6 className="mt-40 mb-20 fw-normal">Upgrade your customer service</h6>
                                             <div className="text d-flex mb-20">
-                                                <p>Businesses can improve their customer care service...</p>
+                                            <p>Businesses can improve their customer care service by using a WhatsApp
+                                            business account and sending each customer instant and personalized messages
+                                            according to their query.</p>
                                             </div>
                                             <div className="text d-flex mb-20">
-                                                <p><a href="whatsapp-marketing" style={{ color: '#5dc4eb' }}>WhatsApp Marketing</a> offers a number of features...</p>
+                                                <p><a href="whatsapp-marketing" style={{ color: '#5dc4eb' }}>WhatsApp Marketing</a>  becoming a bridge to the gap between customers and
+                                            businesses, offers a number of features like quick replies, labels, sending
+                                            greetings and away messages, etc. to upgrade the client experience.</p>
                                             </div>
                                             <h6 className="mt-40 mb-20 fw-normal">Automated Communication</h6>
                                             <div className="text d-flex mb-20">
-                                                <p>While using WhatsApp, you can easily automate interactions...</p>
+                                            <p>While using WhatsApp, you can easily automate interactions with your target
+                                            audience according to their previous purchases, choices, etc.</p>
                                             </div>
                                             <div className="text d-flex mb-20">
-                                                <p>With WhatsApp's built-in chatbot feature...</p>
+                                            <p>With WhatsApp's built-in chatbot feature, you can provide users with
+                                            pre-written responses to frequently requested queries while giving them
+                                            instant answers to every query they have.</p>
                                             </div>
                                             <h6 className="mt-40 mb-20 fw-normal">Showcase your products in a catalog</h6>
                                             <div className="text d-flex mb-20">
-                                                <p>The catalog feature of the WhatsApp business has blown the minds of every user...</p>
+                                            <p>
+                The catalog feature of the WhatsApp business has blown the minds of every user. 
+                Customers can browse your products without leaving the app; this is the power of the 
+                <a 
+                    href="whatsapp-business-api-ultimate-guide" 
+                    style={{ color: '#5dc4eb' }}
+                >
+                    WhatsApp business API.
+                </a>
+            </p>
                                             </div>
                                             <div className="text d-flex mb-20">
-                                                <p>Businesses can showcase 500 products or services...</p>
+                                            <p>Businesses can showcase 500 products or services with a title, price,
+                                            description, product number, and link to the product redirecting to their
+                                            website, with new releases to limited-edition items, bringing your whole
+                                            market to customers through the <b>WhatsApp catalog.</b></p>
                                             </div>
                                             <h6 className="mt-40 mb-20 fw-normal">Stay connected with your staff and colleagues</h6>
                                             <div className="text d-flex mb-20">
-                                                <p>WhatsApp Business isn't just limited to consumer communication...</p>
+                                            <p>WhatsApp Business isn't just limited to consumer communication. It's a useful
+                                            way of keeping in contact with staff members and office colleagues. Over
+                                            half of employees use messaging applications such as <b>WhatsApp for
+                                                business-related chats.</b></p>
                                             </div>
                                             <div className="text d-flex mb-20">
-                                                <p>You may message up to 256 people at once with the group chat tool...</p>
+                                            <p>You may message up to 256 people at once with the group chat tool. And with
+                                            the recent updates, businesses can also create a community on WhatsApp.</p>
                                             </div>
                                         </div>
                                     

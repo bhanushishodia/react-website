@@ -1,11 +1,15 @@
 
   
   .knowledge-center-page h1 {
-    font-size: 2rem;
+   
     margin-bottom: 20px;
   }
   
   .knowledge-center-page p {
+    font-size: 1rem;
+  }
+  .knowledge-center-page a {
+    color: #54ceeb;
     font-size: 1rem;
   }
   .knowledge_card{

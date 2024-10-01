@@ -5,11 +5,11 @@ import whatsappChatbotImage from '../../assets/images/blog/whatsapp-chatbot-for-
 import whatsappChatbotImage1 from '../../assets/images/blog/anantyaai-dashboard-login.webp';
 import whatsappChatbotImage2 from '../../assets/images/blog/whatsapp-chatbot-dashboard.webp';
 import whatsappChatbotImage3 from '../../assets/images/blog/whatsapp-chatbot-setup.webp';
-// import whatsappChatbotImage4 from '../../assets/images/blog/welcome-message.webp'; 
-// import whatsappChatbotImage5 from '../../assets/images/blog/out-of-office-message.webp';
-// import whatsappChatbotImage6 from '../../assets/images/blog/whatsapp-bot-setup.webp';
-// import whatsappChatbotImage7 from '../../assets/images/blog/feedback-message.webp';
-// import whatsappChatbotImage8 from '../../assets/images/blog/quick-reply.webp';
+import welcomeMessageImg from '../../assets/images/blog/welcome-message.webp';
+import outOfOfficeMessageImg from '../../assets/images/blog/out-of-office-message.webp';
+import whatsappBotSetupImg from '../../assets/images/blog/whatsapp-bot-setup.webp';
+import feedbackMessageImg from '../../assets/images/blog/feedback-message.webp';
+import quickReplyImg from '../../assets/images/blog/quick-reply.webp';
 import { Helmet } from 'react-helmet';
 const CreateWhatsAppChatbot = () => {
   return (
@@ -210,7 +210,7 @@ const CreateWhatsAppChatbot = () => {
                                     </div>
                                     
                                     <div id="whatsapp-broadcast31">
-                                        <h6 className="mt-40 mb-20">What is a WhatsApp chatbot?</h6>
+                                        <h6 className="mt-4 mb-20">What is a WhatsApp chatbot?</h6>
                                         <div className="text d-flex mb-20">
                                             <p>
                                                 A <a href="automated-chatbot" target="_blank">WhatsApp chatbot</a> is like having a virtual assistant for your business on WhatsApp. It is basically a computer programme that can automatically answer questions from customers about a given product or service.
@@ -235,7 +235,7 @@ const CreateWhatsAppChatbot = () => {
                                     </div>
 
                                     <div id="whatsapp-broadcast32">
-                                        <h6 className="mt-40 mb-20">Why should businesses use WhatsApp chatbots?</h6>
+                                        <h6 className="mt-4 mb-20">Why should businesses use WhatsApp chatbots?</h6>
                                         <div className="text d-flex mb-20">
                                             <p>
                                                 Do you agree that not all of us are developers? However, that doesn't mean we need to know how to code to use the WhatsApp Business API.
@@ -303,7 +303,7 @@ const CreateWhatsAppChatbot = () => {
 
                                     <div id="whatsapp-broadcast33">
                                         <div className="text d-flex mb-20">
-                                            <h6 className="mt-40">Benefits of Using WhatsApp ChatBots</h6>
+                                            <h6 className="mt-4">Benefits of Using WhatsApp ChatBots</h6>
                                         </div>
                                         <div className="text d-flex mb-20 mt-20">
                                             <span className="icon color-blue5 me-2 flex-shrink-0">
@@ -327,50 +327,60 @@ const CreateWhatsAppChatbot = () => {
                                             <p><b>Boost Chances for Sales and Engagement</b></p>
                                         </div>
                                         <div className="text d-flex mb-20">
-                                            <p>The basis of any effective business strategy is engagement. Chatbot platforms for WhatsApp offer engaging conversational tools that get potential customers closer to the sales channel.</p>
+                                            <p>The basis of any effective business strategy is engagement. Chatbot platforms for WhatsApp offer engaging conversational tools that get potential customers closer to the sales channel. This interactive strategy may improve the overall user experience in addition to increasing purchases.</p>
                                         </div>
                                         <div className="text d-flex mb-20 mt-20">
                                             <span className="icon color-blue5 me-2 flex-shrink-0">
                                                 <i className="fas fa-check-circle"></i>
                                             </span>
-                                            <p><b>Save Time and Money</b></p>
+                                            <p><b>Create a 24/7 communication channel.</b></p>
                                         </div>
                                         <div className="text d-flex mb-20">
-                                            <p>Support workers can assist several customers at once, as opposed to one person working in a single location. This can free up personnel to focus on urgent tasks, enabling the team to use resources more effectively.</p>
+                                            <p>With a WhatsApp chatbot, your business can remain open and active around the clock, even in a world where clients may be in different time zones.</p>
                                         </div>
                                         <div className="text d-flex mb-20">
-                                            <p>Additionally, it frees employees from repetitive tasks, enabling them to concentrate on the challenging ones.</p>
+                                            <p>By being available around the clock, you can guarantee that client inquiries are handled promptly, showing your dedication to meeting their demands and creating a chatbot flow that is constantly lively and responsive</p>
                                         </div>
                                         <div className="text d-flex mb-20 mt-20">
                                             <span className="icon color-blue5 me-2 flex-shrink-0">
                                                 <i className="fas fa-check-circle"></i>
                                             </span>
-                                            <p><b>Gain valuable insights through customer interaction</b></p>
+                                            <p><b>
+                                            Improve consumer trust and loyalty.</b></p>
                                         </div>
                                         <div className="text d-flex mb-20">
-                                            <p>Another advantage of utilizing a WhatsApp chatbot is the valuable data it generates from customer interactions.</p>
+                                            <p>Improved consumer satisfaction and loyalty can be achieved by allowing contact through the preferred service, thereby leading to an increase in brand trust and loyalty.</p>
                                         </div>
                                         <div className="text d-flex mb-20">
-                                            <p>Collecting and analyzing data about your clients can help you understand their wants and needs. You can improve your marketing strategy and user experience by implementing that knowledge.</p>
+                                            <p>Up to 52% of consumers prefer brands that provide convenient experiences.</p>
                                         </div>
                                         <div className="text d-flex mb-20 mt-20">
                                             <span className="icon color-blue5 me-2 flex-shrink-0">
                                                 <i className="fas fa-check-circle"></i>
                                             </span>
-                                            <p><b>Increase customer satisfaction and retention</b></p>
+                                            <p><b>Automate Frequently Asked Questions Responses</b></p>
                                         </div>
-                                        <div className="text d-flex mb-20">
-                                            <p>Chatbots provide real-time solutions and help retain customers.</p>
-                                        </div>
-                                        <div className="text d-flex mb-20">
-                                            <p>By adopting a WhatsApp chatbot, you can significantly enhance customer satisfaction and drive retention rates.</p>
-                                        </div>
+                                        <div class="text d-flex mb-20">
+
+<p>The capacity of a <b>WhatsApp chatbot for businesses</b> to consistently and accurately respond to frequently asked questions is one of its most notable capabilities.
+</p>
+</div>
+<div class="text d-flex mb-20">
+
+<p>Businesses can save time and resources by training their chatbots to identify frequently asked questions and provide prompt answers, thanks to the <a href="whatsapp-business-api-ultimate-guide" target="_blank"> WhatsApp Business API </a> connection.
+</p>
+</div>
+<div class="text d-flex mb-20">
+
+<p>So, as mentioned above, there are multiple benefits to using a chatbot in your business.
+     Let's see how you can easily create a WhatsApp chatbot by simply following these steps.</p>
+</div>
                                     </div>
                                
                                     <div id="whatsapp-broadcast34">
             <h3 className="main-title mb-10">Steps to Create WhatsApp Chatbots in 2024</h3>
 
-            <h6 className="mt-40 mb-20">Step 1: Choose the Best Platform</h6>
+            <h6 className="mt-4 mb-20">Step 1: Choose the Best Platform</h6>
             <div className="text d-flex mb-20">
                 <p>While creating a <b>WhatsApp chatbot,</b> you have two choices: whether you can code it or use a powerful, no-code chatbot platform.</p>
             </div>
@@ -381,7 +391,7 @@ const CreateWhatsAppChatbot = () => {
                 <p>We have WhatsApp chatbots that are ready to be used for any industry and use case; this reduces the time it takes to go live.</p>
             </div>
 
-            <h6 className="mt-40 mb-20">Step 2: Requirements for implementing chatbots on WhatsApp</h6>
+            <h6 className="mt-4 mb-20">Step 2: Requirements for implementing chatbots on WhatsApp</h6>
             <div className="text d-flex mb-20">
                 <p>You must first be able to use the business API for WhatsApp. Through its partners, WhatsApp provides access to these APIs directly.</p>
             </div>
@@ -398,7 +408,7 @@ const CreateWhatsAppChatbot = () => {
                 <p>You must ensure that this number can accept calls because WhatsApp will call it to verify and activate it for your WhatsApp Business Account.</p>
             </div>
 
-            <h6 className="mt-40 mb-20">Step 3: Log in with Anantya.ai</h6>
+            <h6 className="mt-4 mb-20">Step 3: Log in with Anantya.ai</h6>
             <div className="text d-flex mb-20">
                 <p>Once you are all done with the procedure of setting your <a href="whatsapp-business-api" target="_blank">WhatsApp Business API</a> in your account at Anantya.ai.</p>
             </div>
@@ -414,7 +424,7 @@ const CreateWhatsAppChatbot = () => {
                 <p>By simply typing the given login and password, you can log in to Anantya.ai’s API platform.</p>
             </div>
 
-            <h6 className="mt-40 mb-20">Step 4: Dashboard Panel</h6>
+            <h6 className="mt-4 mb-20">Step 4: Dashboard Panel</h6>
             <div className="text d-flex mb-20">
                 <p>Once you log in to the panel, you will get to see the dashboard, which has multiple options. For creating a chatbot, you should choose the “Bot setup” option on the left-hand side corner.</p>
             </div>
@@ -449,13 +459,105 @@ const CreateWhatsAppChatbot = () => {
                 </a>
             </div>
 
-            {/* Add more steps following the same structure for other options */}
-            {/* Ensure to replace images and text as per the rest of the steps */}
+            <div>
+            <div className="text d-flex mb-20 mt-20">
+                <span className="icon color-blue5 me-2 flex-shrink-0">
+                    <i className="fas fa-check-circle"></i>
+                </span>
+                <p><b>Second Option</b></p>
+            </div>
+            <div className="text d-flex mb-20">
+                <p><b>Welcome message:</b> In this option, if a customer has come to the client's WhatsApp for the first time, a welcome message will be sent automatically to the customer.</p>
+            </div>
+            <div className="text d-flex mb-20">
+                <p>The user can create a welcome message of his own by clicking on the "Add Welcome Message" button (as shown in the screenshot).</p>
+            </div>
+            <div className="text-center">
+                <a href="https://calendly.com/info-w0m/30min?month=2024-02" target="_blank" rel="noopener noreferrer">
+                    <img src={welcomeMessageImg} className="img-fluid pb-3 mx-auto" alt="welcome-message" />
+                </a>
+            </div>
+
+            <div className="text d-flex mb-20 mt-20">
+                <span className="icon color-blue5 me-2 flex-shrink-0">
+                    <i className="fas fa-check-circle"></i>
+                </span>
+                <p><b>Third Option</b></p>
+            </div>
+            <div className="text d-flex mb-20">
+                <p><b>Out of Office:</b> If a customer tries to chat before or after the client's working hours, then an Out of Office message will be sent to the customer.</p>
+            </div>
+            <div className="text d-flex mb-20">
+                <p>Again, here, users can create a message of their own and mention the days and times of their operation according to their needs.</p>
+            </div>
+            <div className="text-center">
+                <a href="https://calendly.com/info-w0m/30min?month=2024-02" target="_blank" rel="noopener noreferrer">
+                    <img src={outOfOfficeMessageImg} className="img-fluid pb-3 mx-auto" alt="out-of-office-message" />
+                </a>
+            </div>
+
+            <div className="text d-flex mb-20 mt-20">
+                <span className="icon color-blue5 me-2 flex-shrink-0">
+                    <i className="fas fa-check-circle"></i>
+                </span>
+                <p><b>Fourth Option</b></p>
+            </div>
+            <div className="text d-flex mb-20">
+                <p><b>Bot Setup:</b> Here, <b>anantya.ai</b> will share a sample chatflow format with the client; the user will then use that format to create a chatflow tailored to his needs and share it with us.</p>
+            </div>
+            <div className="text d-flex mb-20">
+                <p>We will then create a chatbot for the client. Then, customers can use services, order, buy, get information, and make payments with the help of the chatbot.</p>
+            </div>
+            <div className="text-center">
+                <a href="https://calendly.com/info-w0m/30min?month=2024-02" target="_blank" rel="noopener noreferrer">
+                    <img src={whatsappBotSetupImg} className="img-fluid pb-3 mx-auto" alt="whatsapp-bot-setup" />
+                </a>
+            </div>
+
+            <div className="text d-flex mb-20 mt-20">
+                <span className="icon color-blue5 me-2 flex-shrink-0">
+                    <i className="fas fa-check-circle"></i>
+                </span>
+                <p><b>Fifth Option</b></p>
+            </div>
+            <div className="text d-flex mb-20">
+                <p><b>Feedback Message:</b> Once a chat with the customer is over, the client gets an option to close the chat.</p>
+            </div>
+            <div className="text d-flex mb-20">
+                <p>When he closes a chat, an automatic feedback message will be sent to the customer (as mentioned in the screenshot).</p>
+            </div>
+            <div className="text d-flex mb-20">
+                <p>He can create and add a feedback message using the "Add Feedback Message" button. As seen in the below image.</p>
+            </div>
+            <div className="text-center">
+                <a href="https://calendly.com/info-w0m/30min?month=2024-02" target="_blank" rel="noopener noreferrer">
+                    <img src={feedbackMessageImg} className="img-fluid pb-3 mx-auto" alt="feedback-message" />
+                </a>
+            </div>
+
+            <div className="text d-flex mb-20 mt-20">
+                <span className="icon color-blue5 me-2 flex-shrink-0">
+                    <i className="fas fa-check-circle"></i>
+                </span>
+                <p><b>Sixth Option</b></p>
+            </div>
+            <div className="text d-flex mb-20">
+                <p><b>Quick reply:</b> For some basic keywords, we can create quick reply messages to send to customers.</p>
+            </div>
+            <div className="text d-flex mb-20">
+                <p><b>For example,</b> if we set a quick reply message for the word "location," automatically a quick reply will go to the customer saying, "Our location is." The client can use the "Add quick reply" button and can enter a title and their quick reply messages.</p>
+            </div>
+            <div className="text-center">
+                <a href="https://calendly.com/info-w0m/30min?month=2024-02" target="_blank" rel="noopener noreferrer">
+                    <img src={quickReplyImg} className="img-fluid pb-3 mx-auto" alt="quick-reply" />
+                </a>
+            </div>
+            </div>
 
                                </div> 
                               
-                               <div id="whatsapp-broadcast35">
-        <h6 className="mt-40 mb-20">Conclusion</h6>
+              <div id="whatsapp-broadcast35">
+        <h6 className="mt-4 mb-20">Conclusion</h6>
         <div className="text d-flex mb-20">
           <p>
             Creating a <b>WhatsApp chatbot for your business</b> will also enhance your customer support, boost sales and engagement, and improve overall customer satisfaction.
@@ -471,13 +573,13 @@ const CreateWhatsAppChatbot = () => {
             With the advantages of automation and 24/7 availability, WhatsApp chatbots offer a convenient and effective solution for businesses looking to enhance their customer service and drive growth.
           </p>
         </div>
-      </div>
+              </div>
 
-      <section className="faq style-4 pb-60" id="whatsapp-broadcast36">
+                              <section className="faq style-4 pb-60" id="whatsapp-broadcast36">
         <div className="container px-md-0 px-4" id="whatsapp-broadcast9">
           <div className="section-head text-center style-4" style={{ padding: '24px 10px', boxShadow: '0px 0px 20px 6px #e0dfdf59', borderRadius: '20px' }}>
             <small className="title_small">Frequently Asked Questions</small>
-            <hr className="line_breaker_2 mb-4" />
+     
             <div className="content">
               <div className="faq style-3 style-4">
                 <div className="accordion" id="accordionSt4">

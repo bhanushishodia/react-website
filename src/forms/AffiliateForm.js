@@ -81,7 +81,7 @@ const AffiliateForm = () => {
       <div className="my-4 text-center">
         <input 
           type="submit" 
-          className="px-5 py-2 login_button" 
+          className="  btn btn-primary" 
           value="Submit" 
         />
       </div>

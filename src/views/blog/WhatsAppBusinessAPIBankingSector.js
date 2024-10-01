@@ -192,7 +192,7 @@ const WhatsAppBusinessAPIBankingSector = () => {
         <section className="jop-details pb-100">
           <div className="container">
             <div className="content">
-              <div className="row">
+              <div className="row py-5 mb-5">
                 <div className="col-lg-8 blog">
                   <div className="jop-info">
                     <h3 className="main-title mb-10">
@@ -200,7 +200,7 @@ const WhatsAppBusinessAPIBankingSector = () => {
                     </h3>
                     <p className="pb-40 color-999">Update on 22 June 2024</p>
 
-                    <div className="text d-flex mb-20">
+                    <div className="text d-flex mb-2">
                       <p>
                         We all receive messages and notifications from banks, be
                         it offers of new savings accounts or credit card
@@ -211,14 +211,14 @@ const WhatsAppBusinessAPIBankingSector = () => {
                         Banking.
                       </p>
                     </div>
-                    <div className="text d-flex mb-20">
+                    <div className="text d-flex mb-2">
                       <p>
                         WhatsApp has made a vast change in communication
                         worldwide, with 2 billion users, and is an excellent
                         platform for banking conversations.
                       </p>
                     </div>
-                    <div className="text d-flex mb-20 mt-20">
+                    <div className="text d-flex mb-2 mt-20">
                       <p>
                         In this blog, we’ll explore how to effectively use
                         WhatsApp banking in detail.
@@ -226,10 +226,10 @@ const WhatsAppBusinessAPIBankingSector = () => {
                     </div>
 
                     <div id="whatsapp-broadcast1">
-                      <h6 className="mt-40 mb-20">
+                      <h6 className="mt-4 mb-2">
                         How is the banking sector using WhatsApp?
                       </h6>
-                      <div className="text d-flex mb-20">
+                      <div className="text d-flex mb-2">
                         <p>
                           Businesses may interact and communicate with clients
                           using WhatsApp Banking by connecting with thousands of
@@ -237,7 +237,7 @@ const WhatsAppBusinessAPIBankingSector = () => {
                           communication.
                         </p>
                       </div>
-                      <div className="text d-flex mb-20">
+                      <div className="text d-flex mb-2">
                         <p>
                           To fully utilize the WhatsApp Business API, the
                           majority of banks work with third-party business
@@ -251,24 +251,24 @@ const WhatsAppBusinessAPIBankingSector = () => {
                       </div>
                     </div>
 
-                    <h6 className="mt-40 mb-20" id="whatsapp-broadcast2">
+                    <h6 className="mt-4 mb-2" id="whatsapp-broadcast2">
                       Benefits of WhatsApp Banking
                     </h6>
-                    <div className="text d-flex mb-20">
+                    <div className="text d-flex mb-2">
                       <p>
                         Let’s talk about some of the advantages of using
                         WhatsApp for banking:
                       </p>
                     </div>
 
-                    <div className="text d-flex mb-20">
+                    <div className="text d-flex mb-2">
                       <ul style={{ listStyleType: "none" }}>
                         <li>
                           <span className="icon color-blue5 me-2 flex-shrink-0">
                             <i className="fas fa-check-circle"></i>
                           </span>
                           <b> Easy Onboarding </b>
-                          <div className="text d-flex mb-20 mt-20">
+                          <div className="text d-flex mb-2 mt-20">
                             <p>
                               Customers may find the onboarding process with
                               most banks to be somewhat complicated and
@@ -284,14 +284,14 @@ const WhatsAppBusinessAPIBankingSector = () => {
                             <i className="fas fa-check-circle"></i>
                           </span>
                           <b> Reach and scalability </b>
-                          <div className="text d-flex mb-20 mt-20">
+                          <div className="text d-flex mb-2 mt-20">
                             <p>
                               You may take full advantage of WhatsApp's enormous
                               potential and reach by utilizing WhatsApp Business
                               in conjunction with an API solution provider.
                             </p>
                           </div>
-                          <div className="text d-flex mb-20 mt-20">
+                          <div className="text d-flex mb-2 mt-20">
                             <p>
                               You may scale your messaging and meet consumer
                               demands as your business expands and more people
@@ -310,7 +310,7 @@ const WhatsAppBusinessAPIBankingSector = () => {
                             <i className="fas fa-check-circle"></i>
                           </span>
                           <b> Cost-effectiveness </b>
-                          <div className="text d-flex mb-20 mt-20">
+                          <div className="text d-flex mb-2 mt-20">
                             <p>
                               Unlike calls, WhatsApp allows you to promote your
                               WhatsApp business for banking services by sharing
@@ -318,7 +318,7 @@ const WhatsAppBusinessAPIBankingSector = () => {
                               client connections at a very low cost.
                             </p>
                           </div>
-                          <div className="text d-flex mb-20 mt-20">
+                          <div className="text d-flex mb-2 mt-20">
                             <p>
                               For example, using a chatbot for basic customer
                               service inquiries saves your company a ton of time
@@ -335,7 +335,7 @@ const WhatsAppBusinessAPIBankingSector = () => {
                             <i className="fas fa-check-circle"></i>
                           </span>
                           <b> Automation capabilities </b>
-                          <div className="text d-flex mb-20 mt-20">
+                          <div className="text d-flex mb-2 mt-20">
                             <p>
                               You can speed up response times and essentially
                               run marketing and promotion campaigns on autopilot
@@ -352,7 +352,7 @@ const WhatsAppBusinessAPIBankingSector = () => {
                             <i className="fas fa-check-circle"></i>
                           </span>
                           <b> Security </b>
-                          <div className="text d-flex mb-20 mt-20">
+                          <div className="text d-flex mb-2 mt-20">
                             <p>
                               Trust and security in the banking and financial
                               industries cannot be compromised in any way.
@@ -366,7 +366,7 @@ const WhatsAppBusinessAPIBankingSector = () => {
                               regulations.
                             </p>
                           </div>
-                          <div className="text d-flex mb-20 mt-20">
+                          <div className="text d-flex mb-2 mt-20">
                             <p>
                               Additionally, your company may demonstrate your
                               authenticity and trustworthiness using the
@@ -389,11 +389,11 @@ const WhatsAppBusinessAPIBankingSector = () => {
                     </div>
 
                     <div id="whatsapp-broadcast3">
-                      <h6 className="mt-40 mb-20">
+                      <h6 className="mt-4 mb-2">
                         Uses the WhatsApp API for banking
                       </h6>
                     </div>
-                    <div className="text d-flex mb-20">
+                    <div className="text d-flex mb-2">
                       <p>
                         There are many different use cases for WhatsApp in the
                         banking industry, ranging from satisfying client
@@ -401,14 +401,14 @@ const WhatsAppBusinessAPIBankingSector = () => {
                         follows:
                       </p>
                     </div>
-                    <div className="text d-flex mb-20">
-                      <ul style={{ listStyleType: "none" }}>
+                    <div className="text d-flex mb-2">
+                    <ul style={{ listStyleType: "none", paddingLeft:"0" }}>
                         <li>
                           <span className="icon color-blue5 me-2 flex-shrink-0">
                             <i className="fas fa-check-circle"></i>
                           </span>
                           <b>1. Lead generation process</b>
-                          <div className="text d-flex mb-20 mt-20">
+                          <div className="text d-flex mb-2 mt-20">
                             <p>
                               Make use of WhatsApp's{" "}
                               <a href="click-to-whatsapp-ads-marketing-2023">
@@ -417,7 +417,7 @@ const WhatsAppBusinessAPIBankingSector = () => {
                               function for online opt-ins and advertisements.
                             </p>
                           </div>
-                          <div className="text d-flex mb-20 mt-20">
+                          <div className="text d-flex mb-2 mt-20">
                             <p>
                               With WhatsApp's click-to-call capability, you can
                               easily start a conversation right from
@@ -433,14 +433,14 @@ const WhatsAppBusinessAPIBankingSector = () => {
                       </ul>
                     </div>
                     <div className="whatsapp-banking-benefits">
-                      <div className="text d-flex mb-20 mt-20">
+                      <div className="text d-flex mb-2 mt-20">
                         <p>
                           Capture insightful client information at the time of
                           opt-in, building confidence with the recognizable
                           interface.
                         </p>
                       </div>
-                      <div className="text d-flex mb-20 mt-20">
+                      <div className="text d-flex mb-2 mt-20">
                         <p>
                           WhatsApp banking makes it easier to get the necessary
                           user information after you opt-in. The well-known and
@@ -449,19 +449,21 @@ const WhatsAppBusinessAPIBankingSector = () => {
                           process.
                         </p>
                       </div>
+                      <ul style={{ listStyleType: "none", paddingLeft:"0" }}>
                       <li>
                         <span className="icon color-blue5 me-2 flex-shrink-0">
                           <i className="fas fa-check-circle"></i>
                         </span>
                         <b>2. Lead, follow up, and qualification</b>
                       </li>
-                      <div className="text d-flex mb-20 mt-20">
+                      </ul>
+                      <div className="text d-flex mb-2 mt-20">
                         <p>
                           The transition from contact gathering to qualification
                           was easy.
                         </p>
                       </div>
-                      <div className="text d-flex mb-20 mt-20">
+                      <div className="text d-flex mb-2 mt-20">
                         <p>
                           Easily qualify customers and optimize your sales
                           funnel using WhatsApp banking. To establish trust,
@@ -471,7 +473,7 @@ const WhatsAppBusinessAPIBankingSector = () => {
                           conversions right now!
                         </p>
                       </div>
-                      <div className="text d-flex mb-20 mt-20">
+                      <div className="text d-flex mb-2 mt-20">
                         <p>
                           Reach out using WhatsApp automation, with a 90% open
                           rate and 25% engagement: WhatsApp's high open rate and
@@ -484,20 +486,21 @@ const WhatsAppBusinessAPIBankingSector = () => {
                           human touch by automating the process.
                         </p>
                       </div>
-
+                      <ul style={{ listStyleType: "none", paddingLeft:"0" }}>
                       <li>
                         <span className="icon color-blue5 me-2 flex-shrink-0">
                           <i className="fas fa-check-circle"></i>
                         </span>
                         <b>3. Onboarding customers</b>
                       </li>
-                      <div className="text d-flex mb-20 mt-20">
+                      </ul>
+                      <div className="text d-flex mb-2 mt-20">
                         <p>
                           Use a WhatsApp assistant to aid new users during the
                           onboarding process.
                         </p>
-                      </div>
-                      <div className="text d-flex mb-20 mt-20">
+                      </div> 
+                      <div className="text d-flex mb-2 mt-20">
                         <p>
                           By offering individualized instruction,{" "}
                           <b>WhatsApp for the financial industry</b> can help
@@ -508,13 +511,13 @@ const WhatsAppBusinessAPIBankingSector = () => {
                           retention rates.
                         </p>
                       </div>
-                      <div className="text d-flex mb-20 mt-20">
+                      <div className="text d-flex mb-2 mt-20">
                         <p>
                           Give specific guidance to ensure a seamless
                           introduction to financial services.
                         </p>
                       </div>
-                      <div className="text d-flex mb-20 mt-20">
+                      <div className="text d-flex mb-2 mt-20">
                         <p>
                           When new users look into financial services, the
                           WhatsApp assistant offers them individualized advice.
@@ -524,19 +527,21 @@ const WhatsAppBusinessAPIBankingSector = () => {
                           to financial services simple and stress-free.
                         </p>
                       </div>
+                      <ul style={{ listStyleType: "none", paddingLeft:"0" }}>
                       <li>
                         <span className="icon color-blue5 me-2 flex-shrink-0">
                           <i className="fas fa-check-circle"></i>
                         </span>
                         <b>4. Document upload</b>
                       </li>
-                      <div className="text d-flex mb-20 mt-20">
+                      </ul>
+                      <div className="text d-flex mb-2 mt-20">
                         <p>
                           Simplify document upload and validation during
                           onboarding using WhatsApp:
                         </p>
                       </div>
-                      <div className="text d-flex mb-20 mt-20">
+                      <div className="text d-flex mb-2 mt-20">
                         <p>
                           Enable consumers to upload and validate papers
                           straight through WhatsApp to speed up the onboarding
@@ -544,13 +549,13 @@ const WhatsAppBusinessAPIBankingSector = () => {
                           is decreased by the familiar interface.
                         </p>
                       </div>
-                      <div className="text d-flex mb-20 mt-20">
+                      <div className="text d-flex mb-2 mt-20">
                         <p>
                           The UI makes users feel comfortable and ensures that
                           the process will continue even if it is interrupted.
                         </p>
                       </div>
-                      <div className="text d-flex mb-20 mt-20">
+                      <div className="text d-flex mb-2 mt-20">
                         <p>
                           WhatsApp is a well-liked option for both people and
                           organizations because of its easy-to-use design and
@@ -559,13 +564,15 @@ const WhatsAppBusinessAPIBankingSector = () => {
                           interruption, giving them peace of mind.
                         </p>
                       </div>
+                      <ul style={{ listStyleType: "none", paddingLeft:"0" }}>
                       <li>
                         <span className="icon color-blue5 me-2 flex-shrink-0">
                           <i className="fas fa-check-circle"></i>
                         </span>
                         <b>5. Account services and management</b>
                       </li>
-                      <div className="text d-flex mb-20 mt-20">
+                      </ul>
+                      <div className="text d-flex mb-2 mt-20">
                         <p>
                           Put{" "}
                           <a
@@ -578,7 +585,7 @@ const WhatsAppBusinessAPIBankingSector = () => {
                           into practice for easy account management.
                         </p>
                       </div>
-                      <div className="text d-flex mb-20 mt-20">
+                      <div className="text d-flex mb-2 mt-20">
                         <p>
                           Integrate WhatsApp to provide clients with smooth and
                           effective account management services. This covers
@@ -586,14 +593,14 @@ const WhatsAppBusinessAPIBankingSector = () => {
                           checks, and upcoming payments.
                         </p>
                       </div>
-                      <div className="text d-flex mb-20 mt-20">
+                      <div className="text d-flex mb-2 mt-20">
                         <p>
                           Help with inquiries for credit card status, balance
                           checks, past due payments, and transaction history,
                           among other things:
                         </p>
                       </div>
-                      <div className="text d-flex mb-20 mt-20">
+                      <div className="text d-flex mb-2 mt-20">
                         <p>
                           Bank customer service might be revolutionized via
                           WhatsApp automation. Customers may easily manage their
@@ -604,18 +611,20 @@ const WhatsAppBusinessAPIBankingSector = () => {
                           increases efficiency.
                         </p>
                       </div>
+                      <ul style={{ listStyleType: "none", paddingLeft:"0" }}>  
                       <li>
                         <span className="icon color-blue5 me-2 flex-shrink-0">
                           <i className="fas fa-check-circle"></i>
                         </span>
                         <b>6. Payments and transfers</b>
                       </li>
-                      <div className="text d-flex mb-20 mt-20">
+                      </ul>
+                      <div className="text d-flex mb-2 mt-20">
                         <p>
                           Allow smooth money transfers using WhatsApp banking.
                         </p>
                       </div>
-                      <div className="text d-flex mb-20 mt-20">
+                      <div className="text d-flex mb-2 mt-20">
                         <p>
                           For easy and safe peer-to-peer and business financial
                           transfers, use <b>WhatsApp banking.</b> With
@@ -629,13 +638,13 @@ const WhatsAppBusinessAPIBankingSector = () => {
                           this technology.
                         </p>
                       </div>
-                      <div className="text d-flex mb-20 mt-20">
+                      <div className="text d-flex mb-2 mt-20">
                         <p>
                           Boost simplicity in bill payment and transaction
                           confirmation issuance.
                         </p>
                       </div>
-                      <div className="text d-flex mb-20 mt-20">
+                      <div className="text d-flex mb-2 mt-20">
                         <p>
                           Allow WhatsApp to be used for bill payments and
                           transaction confirmations for more efficient and
@@ -666,7 +675,7 @@ const WhatsAppBusinessAPIBankingSector = () => {
                                 </p>
                                 <div className="row px-5">
                                   <div className="col-lg-4">
-                                    <div className="form-group mb-20">
+                                    <div className="form-group mb-2">
                                       <input
                                         type="text"
                                         name="name"
@@ -677,7 +686,7 @@ const WhatsAppBusinessAPIBankingSector = () => {
                                     </div>
                                   </div>
                                   <div className="col-lg-4">
-                                    <div className="form-group mb-20">
+                                    <div className="form-group mb-2">
                                       <input
                                         type="email"
                                         name="email"
@@ -688,7 +697,7 @@ const WhatsAppBusinessAPIBankingSector = () => {
                                     </div>
                                   </div>
                                   <div className="col-lg-4">
-                                    <div className="form-group mb-20">
+                                    <div className="form-group mb-2">
                                       <input
                                         type="text"
                                         name="phone"
@@ -699,7 +708,7 @@ const WhatsAppBusinessAPIBankingSector = () => {
                                     </div>
                                   </div>
                                   <div className="col-lg-4">
-                                    <div className="form-group mb-20">
+                                    <div className="form-group mb-2">
                                       <input
                                         type="text"
                                         name="message"
@@ -737,10 +746,10 @@ const WhatsAppBusinessAPIBankingSector = () => {
                       </section>
                     
                     </div>
-                    <h5 className="mt-40 mb-20" id="whatsapp-broadcast4">
+                    <h5 className="mt-4 mb-2" id="whatsapp-broadcast4">
                         Conclusion
                       </h5>
-                      <div className="text d-flex mb-20">
+                      <div className="text d-flex mb-2">
                         <p>
                           <a
                             className="fs-6"
@@ -758,7 +767,7 @@ const WhatsAppBusinessAPIBankingSector = () => {
                           the way banks engage with their clientele.
                         </p>
                       </div>
-                      <div className="text d-flex mb-20">
+                      <div className="text d-flex mb-2">
                         <p>
                           The applications of the <b>WhatsApp API in banking</b>{" "}
                           are numerous and significant, ranging from lead
@@ -783,7 +792,7 @@ const WhatsAppBusinessAPIBankingSector = () => {
             <div className="container px-md-0 px-4" id="whatsapp-broadcast5">
                 <div className="section-head text-center style-4" style={{ padding: '24px 10px', boxShadow: '0px 0px 20px 6px #e0dfdf59', borderRadius: '20px' }}>
                     <small className="title_small">Frequently Asked Question</small>
-                    <hr className="line_breaker_2 mb-4" />
+                  
                     <div className="content">
                         <div className="faq style-3 style-4">
                             <div className="accordion" id="accordionSt4">
@@ -875,7 +884,7 @@ const WhatsAppBusinessAPIBankingSector = () => {
                     <li><a href="#whatsapp-broadcast5">FAQ’s</a></li>
                 </ul>
             </div>
-        </div>
+               </div>
               </div>
             </div>
           </div>

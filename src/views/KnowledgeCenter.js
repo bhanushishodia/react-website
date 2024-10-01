@@ -91,7 +91,7 @@ const KnowledgeCenter = () => {
             <div className="container py-5 text-lg-start">
                 <div className="row py-5 text-black text-center my-auto">
                     <div className="col-md-12 col-sm-12 pt-3">
-                        <h1 className='fw-bold h2'>Anantya Support </h1>
+                        <h1 className='fw-bold'>Anantya Support </h1>
                     </div>
                    
                 </div>

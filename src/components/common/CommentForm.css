@@ -1,0 +1,28 @@
+
+        .form_box {
+            border-top: 10px solid #27afc8;
+            background: linear-gradient(45deg, transparent, #def1fa, transparent, #def1fa, transparent);
+            animation: 20s linear infinite gradient;
+            overflow: hidden;
+            border-radius: 30px;
+            padding: 20px 30px; 
+        }
+    
+    
+    .form_box h5 {
+        font-weight: bold;
+    }
+    
+    .form_box p {
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    
+    .form_box .form-control {
+        margin-bottom: 15px;
+    }
+    
+    .form_box .login_button {
+        padding: 10px 30px;
+    }
+    

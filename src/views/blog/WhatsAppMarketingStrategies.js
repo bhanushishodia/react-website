@@ -103,18 +103,18 @@ const WhatsAppMarketingStrategies = () => {
         </Helmet>
 
        <div className="container py-5 my-4">
-        <div className="row px-1 mx-1">
           <h1 className="pb-2 text-center">
             5 Winning WhatsApp Marketing Strategies to Drive 3X More Sales
           </h1>
-          <div className="text-center">
+         
             <img
               src={whatsappMarketingImg}
               className="img-fluid w-75"
-              alt="whatsapp-marketing"
+              alt="whatsapp-marketing-strategies"
             />
-          </div>
-          <div className="col-lg-8 col-md-12">
+        <div className="row px-1 mx-1 pt-5 my-5">
+        <div className="col-lg-8 col-md-12">
+            <article>
             <div className="blogBox text-justify">
               <section itemProp="articleBody" className="entry-content">
                 <p>
@@ -379,44 +379,56 @@ const WhatsAppMarketingStrategies = () => {
                     <span className="icon color-blue5 me-2 flex-shrink-0">
                       <i className="fas fa-check-circle"></i>
                     </span>{" "}
-                    Send out bulk messages
+                    Schedule your WhatsApp messages to 1000+ users in few clicks
                   </li>
                   <li>
                     <span className="icon color-blue5 me-2 flex-shrink-0">
                       <i className="fas fa-check-circle"></i>
                     </span>{" "}
-                    Integrate with Chatbots
+                    Send online payment confirmation messages on WhatsApp
                   </li>
                   <li>
                     <span className="icon color-blue5 me-2 flex-shrink-0">
                       <i className="fas fa-check-circle"></i>
                     </span>{" "}
-                    Sync messages with CRM
+                    Send bulk discount & offers messages
                   </li>
                   <li>
                     <span className="icon color-blue5 me-2 flex-shrink-0">
                       <i className="fas fa-check-circle"></i>
                     </span>{" "}
-                    Get advanced analytics
+                    Create an online store on WhatsApp
+                  </li>
+                  <li>
+                    <span className="icon color-blue5 me-2 flex-shrink-0">
+                      <i className="fas fa-check-circle"></i>
+                    </span>{" "}
+                    Nurture leads with WhatsApp Automation
+                  </li>
+                  <li>
+                    <span className="icon color-blue5 me-2 flex-shrink-0">
+                      <i className="fas fa-check-circle"></i>
+                    </span>{" "}
+                    Sync Facebook & Instagram Ads lead to WhatsApp
                   </li>
                 </ul>
                 <p>
-                  Getting started with WhatsApp Business API is quite easy.{" "}
+                 
                   <a href="https://anantya.ai/" style={{ color: "#5dc4eb" }}>
                     Anantya.ai
                   </a>{" "}
-                  will help you with everything from integration to getting the
-                  most out of it for your business.
+                  is a Meta Business Partner that helps businesses to get WhatsApp Business API and make the most out of it with intuitive features like WhatsApp broadcasting, Automation, Live Chat, WhatsApp Catalogues, and Click-to-WhatsApp Ads, all designed to supercharge your WhatsApp Marketing efforts.
                 </p>
               </section>
             </div>
+            </article>
           </div>
           <div className="col-lg-4 col-md-12 py-4 py-lg-0 ">
             <aside className="summary-card">
               <h3 className="font-weight-bold mb-3 text-start pb-3 border-bottom border-1 brd-gray">
                 Table of Contents
               </h3>
-              <ul className="list-unstyled">
+              <ul className="list-unstyled">  
                 <li>
                   <a href="#intro">Introduction</a>
                 </li>
@@ -448,6 +460,8 @@ const WhatsAppMarketingStrategies = () => {
             </aside>
           </div>
         </div>
+         
+       
       </div>
       <ScrollToTopButton />
       <WhatsAppWidget />

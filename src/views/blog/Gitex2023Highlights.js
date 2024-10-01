@@ -3,7 +3,9 @@ import ScrollToTopButton from '../../components/common/ScrollToTopButton';
 import WhatsAppWidget from '../../components/common/WhatsAppWidget';
 import gitexBlogImage from '../../assets/images/blog/gitexblog.jpeg'; // Adjust the path as necessary
 import gitexImage from '../../assets/images/blog/gitex-2.jpeg'; // Adjust the path as necessary
+import CommentForm from "../../components/common/CommentForm";
 import { Helmet } from 'react-helmet';
+
 const Gitex2023Highlights = () => {
   return (
     <>
@@ -108,11 +110,12 @@ const Gitex2023Highlights = () => {
         <img src={gitexBlogImage} style={{ borderRadius: '18px' }} className="img-fluid mx-auto" alt="gitex-blog" />
       </div>
 
-      <div className="row px-1 mx-1">
+      <div className="row px-1 mx-1 py-5 mt-5">
         {/* Left Side Content */}
         <div className="col-lg-8 col-md-12">
           <div className="blogcontentui">
             <div className="blogBox text-justify">
+              <article>
               <section itemProp="articleBody" className="entry-content">
                 <p>Anantya.ai, a leading <a href="https://anantya.ai/"><strong>WhatsApp Business API</strong></a> solution provider, made a significant presence at <a href="https://www.gitex.com/about"><strong>GITEX 2023</strong></a>, the world's premier global technology exhibition. Their showcase at GITEX, hosted in the impressive Dubai Harbour, emphasized the transformative potential of AI in messaging, reflecting their vision of revolutionizing the business landscape with AI-powered communication solutions.</p>
                 <p>GITEX GLOBAL, renowned for uniting innovative enterprises and forward-thinking visionaries, served as the stage for Anantya.ai's remarkable presentation this year. The 2023 edition of GITEX was themed "The Year to Imagine AI in Everything," aiming to contribute to the global pursuit of AI excellence by illuminating prophecies and expert insights regarding AI's profound influence.</p>
@@ -149,31 +152,18 @@ const Gitex2023Highlights = () => {
                 <h3 id="section5" className="wp-block-heading py-3">Conclusion</h3>
                 <p>At GITEX 2023, Anantya.ai will contribute to the revolution in AI-powered messaging. Their creative idea brought to light AI's enormous potential to transform company communication and change customer interactions. With an eye toward the future, Anantya.ai is committed to continuous innovation and promises more advanced solutions that will influence communication and enable companies to engage with clients in even more effective and meaningful ways.</p>
               </section>
+              </article>
             </div>
           </div>
 
-          <div className="form_box px-5 py-4 my-3" style={{ borderLeft: '3px solid #f5c11629', borderRight: '3px solid #f5c11629' }}>
-            <h5><strong>Leave a Reply</strong></h5>
-            <p className="pb-0 mb-0">Your email address will not be published. Required fields are marked *</p>
-            <form action="https://formspree.io/f/xjvqbzny" method="POST">
-              <div className="form-group py-1">
-                <input type="text" className="form-control" placeholder="Your Name *" name="name" required />
-              </div>
-              <div className="form-group py-1">
-                <input type="email" className="form-control" placeholder="Your Email *" name="email" required />
-              </div>
-              <div className="form-group py-1">
-                <textarea className="form-control" placeholder="Your Comment *" name="message" rows="5" required></textarea>
-              </div>
-              <button type="submit" className="btn btn-primary">Post Comment</button>
-            </form>
-          </div>
+                {/* Use CommentForm multiple times */}
+                <CommentForm />
         </div>
 
         {/* Right Side Content */}
         <div className="col-lg-4 col-md-12 career-details-page style-5 ">
       <div className="summary-card">
-        <h6 className="pb-20 border-bottom border-1 brd-gray">Table of Contents</h6>
+        <h6 className="font-weight-bold mb-3 text-start pb-3 border-bottom border-1 brd-gray">Table of Contents</h6>
         <ul>
           <li><a href="#section1">The importance of GITEX 2023 for messaging driven by AI</a></li>
           <li><a href="#section2">Unlocking WhatsApp Business API's Potential with Anantya.ai</a></li>

@@ -156,3 +156,8 @@ color: #333;
       padding: 10px;
   }
 }
+.custom-color-class{
+  color: #5dc4eb!important;
+  font-size: 14px;
+
+}

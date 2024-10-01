@@ -97,7 +97,7 @@ const SolutionPartner = () => {
             </script>
         </Helmet>
       <section>
-        <div className="container py-md-5 py-2">
+        <div className="container py-md-5 my-md-5 py-2">
           <div className="row">
             <div className="col-md-6 col-sm-12 my-auto text-md-start text-center">
               <span
@@ -420,7 +420,7 @@ const SolutionPartner = () => {
           </div>
         </div>
       </section>
-      <section className="container pt-5">
+      <section className="container py-5">
       <div className="cta-partner text-black mx-md-0 mx-3">
         <div className="row my-auto py-md-0 px-md-0 px-0 mx-md-0 mx-0 text-center">
           <div
