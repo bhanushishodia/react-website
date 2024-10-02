@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
+
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Redirect from './views/Redirect'; 
@@ -56,6 +57,7 @@ import Salesforce from './views/Integrations/Salesforce';
 import Pipedrive from './views/Integrations/Pipedrive';
 import Webhook from './views/Integrations/Webhook';
 import NotFound from './views/NotFound'; // Import the NotFound component
+import RedirectToExternal from './views/RedirectToExternal'; // path adjust karein
 
 // Channel Pages
 import WhatsAppBusinessAPI from './views/WhatsAppBusinessAPI';
@@ -101,7 +103,10 @@ import HowToCreateWhatsAppTemplateMessages from './views/HowToCreateWhatsAppTemp
 
 function Layout({ children }) {
   const location = useLocation();
-  const showHeaderFooter = location.pathname !== '/sales-hub';
+  // Check if the current path is not '/sales-hub' and not '/book-a-meeting'
+  const showHeaderFooter = 
+    location.pathname !== '/sales-hub' && location.pathname !== '/book-a-meeting';
+ 
 
   return (
     <div className="App">
@@ -230,6 +235,7 @@ function App() {
 <Route path="/how-to-auto-assign-chats" element={<HowToAutoAssignChats />} />
 <Route path="/how-to-create-whatsapp-templete-messages-in-anantya.ai" element={<HowToCreateWhatsAppTemplateMessages />} />
 <Route path="*" element={<NotFound />} />
+<Route path="/book-a-meeting" element={<RedirectToExternal />} />
           
         </Routes>
       </Layout>
