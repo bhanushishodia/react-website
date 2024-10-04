@@ -1,26 +1,29 @@
 import React from "react";
-import productDeck from "../../assets/images/icons/product-deck.png";
-import metaDeck from "../../assets/images/icons/meta-deck.png";
-import metaPolicy from "../../assets/images/icons/meta-policy.png";
-import followUpEmails from "../../assets/images/icons/follow-up-emails.png";
-import introductoryMail from "../../assets/images/icons/introductory-mail.png";
-import coldMailContent from "../../assets/images/icons/cold-mail-content.png";
-import introductoryMai from "../../assets/images/icons/introductory-mail.png";
-
-import bankingUsecase from "../../assets/images/icons/banking-usecase.png";
-import educationUsecase from "../../assets/images/icons/education-usecase.png";
-import foodBeverage from "../../assets/images/icons/food-&-beverage.png";
-import healthcareUsecase from "../../assets/images/icons/healthcare-usecase.png";
-import logisticUsecase from "../../assets/images/icons/logistic-usecase.png";
-import mediaUsecase from "../../assets/images/icons/media-usecase.png";
-import politicalUsecase from "../../assets/images/icons/political-usecase.png";
-import realEstateUsecase from "../../assets/images/icons/real-estate-usecase.png";
-import retailUsecase from "../../assets/images/icons/retail-usecase.png";
-import travelHospital from "../../assets/images/icons/travel-and-hospit.png";
+import { getImage } from '../../utils/getImage';  // Correct path to utility
 
 import "./ResourceLibrary.css"; // Import the new CSS file
 
 const ResourceLibrary = () => {
+  // Fetching images dynamically using getImage function
+const productDeck = getImage('icons/product-deck.png');
+const metaDeck = getImage('icons/meta-deck.png');
+const metaPolicy = getImage('icons/meta-policy.png');
+const followUpEmails = getImage('icons/follow-up-emails.png');
+const introductoryMail = getImage('icons/introductory-mail.png');
+const coldMailContent = getImage('icons/cold-mail-content.png');
+const introductoryMai = getImage('icons/introductory-mail.png');
+
+const bankingUsecase = getImage('icons/banking-usecase.png');
+const educationUsecase = getImage('icons/education-usecase.png');
+const foodBeverage = getImage('icons/food-&-beverage.png');
+const healthcareUsecase = getImage('icons/healthcare-usecase.png');
+const logisticUsecase = getImage('icons/logistic-usecase.png');
+const mediaUsecase = getImage('icons/media-usecase.png');
+const politicalUsecase = getImage('icons/political-usecase.png');
+const realEstateUsecase = getImage('icons/real-estate-usecase.png');
+const retailUsecase = getImage('icons/retail-usecase.png');
+const travelHospital = getImage('icons/travel-and-hospit.png');
+
   const usecases = [
     {
       img: bankingUsecase,
@@ -74,7 +77,10 @@ const ResourceLibrary = () => {
     },
   ];
   return (
-    <section className="resources style-7 mt-60 countdown-content" id="section13">
+    <section
+      className="resources style-7 mt-60 countdown-content"
+      id="section13"
+    >
       <h2 className="text-center">
         Explore our Comprehensive Resource Library
       </h2>
@@ -443,16 +449,19 @@ const ResourceLibrary = () => {
                           >
                             <img
                               src={introductoryMail}
-                              className="img-fluid  mx-auto"
+                              className="img-fluid mx-auto card-img-top"
                               alt="New Client Acquisition"
                             />
-                            <h6 className="pt-3 text-center">
-                              newclientacquisition.anantya.ai
-                            </h6>
+                            <div className="card-body">
+                              <h6 className="pt-3 text-center break-text">
+                                newclientacquisition.anantya.ai
+                              </h6>
+                            </div>
                           </a>
                         </div>
                       </div>
 
+                      {/* Repeat similar structure for other cards */}
                       <div className="col">
                         <div className="card">
                           <a
@@ -462,12 +471,14 @@ const ResourceLibrary = () => {
                           >
                             <img
                               src={coldMailContent}
-                              className="img-fluid  mx-auto"
+                              className="img-fluid mx-auto card-img-top"
                               alt="Account Activation"
                             />
-                            <h6 className="pt-3 text-center">
-                              accountactivation.anantya.ai
-                            </h6>
+                            <div className="card-body">
+                              <h6 className="pt-3 text-center break-text">
+                                accountactivation.anantya.ai
+                              </h6>
+                            </div>
                           </a>
                         </div>
                       </div>
@@ -481,18 +492,21 @@ const ResourceLibrary = () => {
                           >
                             <img
                               src={metaPolicy}
-                              className="img-fluid  mx-auto"
+                              className="img-fluid mx-auto card-img-top"
                               alt="Project Scope"
                             />
-                            <h6 className="pt-3 text-center">
-                              projectscope.anantya.ai
-                            </h6>
+                            <div className="card-body">
+                              <h6 className="pt-3 text-center break-text">
+                                projectscope.anantya.ai
+                              </h6>
+                            </div>
                           </a>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
+
                 <div
                   className="tab-pane fade"
                   id="pills-proj5"

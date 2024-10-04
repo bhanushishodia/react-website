@@ -1,8 +1,10 @@
 import React from 'react';
 import ScrollToTopButton from '../../components/common/ScrollToTopButton';
 import WhatsAppWidget from '../../components/common/WhatsAppWidget';
-import blogImage from '../../assets/images/blog/whatsapp-free-entry-frequency-capping.webp';
 import { Helmet } from 'react-helmet';
+import { getImage } from '../../utils/getImage'; // Correct path to utility
+// Fetching images dynamically using getImage function
+const blogImage = getImage('whatsapp-free-entry-frequency-capping.webp');
 const WhatsAppFreeEntryCapping = () => {
   return (
     <>

@@ -1,14 +1,18 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import InnerHeader from '../components/common/InnerHeader';
-import submitTemplateMessageImage from "../assets/images/submit-a-new-whatsApp-template-message.webp";
-import customizeTemplateMessageImage from "../assets/images/customize-the-template-message.webp";
-import templateMessageImage from "../assets/images/template-message.webp";
-import templateApprovalImage from "../assets/images/template-message-for-approval.webp";
-
 import './knowledgecenter.css'; // Import the CSS file
 import ScrollToTopButton from "../components/common/ScrollToTopButton";
 import WhatsAppWidget from "../components/common/WhatsAppWidget";
+import { getImage } from '../utils/getImage'; // Adjust the path as needed
+
+// Fetching images dynamically using the getImage function
+const submitTemplateMessageImage = getImage('submit-a-new-whatsApp-template-message.webp');
+const customizeTemplateMessageImage = getImage('customize-the-template-message.webp');
+const templateMessageImage = getImage('template-message.webp');
+const templateApprovalImage = getImage('template-message-for-approval.webp');
+
+
 const TemplateMessages = () => {
   return (
     <>

@@ -3,15 +3,19 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import ScrollToTopButton from "../components/common/ScrollToTopButton";
 import WhatsAppWidget from "../components/common/WhatsAppWidget";
-import productivityImage from '../assets/images/supercharge-your-teams-productivity.webp'; // Adjust path as needed
-import noCardIcon from '../assets/images/No-card-icon.svg'; // Adjust path as needed
-import helpAgent from '../assets/images/help-agents-create-better-customer.webp'; // Adjust path as needed
-import ctaImage from '../assets/images/cta/home-pagecta.jpg'; // Adjust the path as needed
-import manageConversationsImage from '../assets/images/cta/manage-conversations-more-easily.webp';
-import whatsappScannerImg from '../assets/images/wa.link_3dzezc.png';
-import agentIcon from "../assets/images/icons/track-agent-performance.png"; // Adjust the path as per your project structure
-import organizeServiceIcon from "../assets/images/icons/organize-teams.png"; // Adjust the path as per your project structure
-import manageIcon from "../assets/images/icons/manage-contacts.png"; // Adjust the path as per your projec
+import { getImage } from '../utils/getImage'; // Adjust the path as needed
+
+// Fetching images dynamically using the getImage function
+const productivityImage = getImage('supercharge-your-teams-productivity.webp');
+const noCardIcon = getImage('No-card-icon.svg');
+const helpAgent = getImage('help-agents-create-better-customer.webp');
+const ctaImage = getImage('cta/home-pagecta.jpg'); // Adjust the path as needed
+const manageConversationsImage = getImage('cta/manage-conversations-more-easily.webp');
+const whatsappScannerImg = getImage('wa.link_3dzezc.png');
+const agentIcon = getImage('icons/track-agent-performance.png'); // Adjust the path as per your project structure
+const organizeServiceIcon = getImage('icons/organize-teams.png'); // Adjust the path as per your project structure
+const manageIcon = getImage('icons/manage-contacts.png'); // Adjust the path as per your project structure
+
 const LiveAgentAssistant = () => {
   return (  
     <div>     

@@ -1,12 +1,15 @@
 import React from "react";
 import ScrollToTopButton from "../../components/common/ScrollToTopButton";
 import WhatsAppWidget from "../../components/common/WhatsAppWidget";
-import whatsappBroadcastImg from "../../assets/images/blog/whatsapp-broadcasting-your-ultimate-guide-whatsapp-broadcast-your-complete-business-booster-guide.webp"; // Importing image dynamically
-import getStartedImage from "../../assets/images/blog/get-started-for-free.jpg";
-import howToBroadcastImage from "../../assets/images/blog/how-to-broadcast-with-the-whatsapp.jpg";
-import startYourFreeTrialImage from "../../assets/images/blog/start-your-free-trial.jpg";
-import whatBroadcastImg from "../../assets/images/blog/what-is-a-whatsapp-broadcast.png";
 import { Helmet } from "react-helmet";
+import { getImage } from '../../utils/getImage'; // Correct path to utility
+// Fetching images dynamically using getImage function
+const whatsappBroadcastImg = getImage("whatsapp-broadcasting-your-ultimate-guide-whatsapp-broadcast-your-complete-business-booster-guide.webp");
+const getStartedImage = getImage("get-started-for-free.jpg");
+const howToBroadcastImage = getImage("how-to-broadcast-with-the-whatsapp.jpg");
+const startYourFreeTrialImage = getImage("start-your-free-trial.jpg");
+const whatBroadcastImg = getImage("what-is-a-whatsapp-broadcast.png");
+
 const WhatsAppBusinessAPIUltimateGuide = () => {
   return (
     <div>

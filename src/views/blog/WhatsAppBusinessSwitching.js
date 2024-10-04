@@ -1,14 +1,14 @@
 import React from 'react';
 import ScrollToTopButton from '../../components/common/ScrollToTopButton';
 import WhatsAppWidget from '../../components/common/WhatsAppWidget';
-import whatsappImage from '../../assets/images/blog/whatsapp-business-switching-from-green-tick-to-blue-tick.webp'; // Adjust the path as needed
 import { Helmet } from 'react-helmet';
-
+import { getImage } from '../../utils/getImage'; // Correct path to utility
+// Fetching the image dynamically using getImage function
+const whatsappImage = getImage('whatsapp-business-switching-from-green-tick-to-blue-tick.webp');
 const WhatsAppBusinessSwitching = () => {
   return (
     <>
-     
-    <Helmet>
+     <Helmet>
       {/* anup meta tags and schema */}
       <title>WhatsApp Business Verification: Green Tick Turns Blue</title>
       <meta

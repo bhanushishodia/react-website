@@ -1,11 +1,13 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import InnerHeader from '../components/common/InnerHeader';
-import stepImg1 from '../assets/images/fill-out-the-form.webp'; // Adjust the path based on your folder structure
-import stepImg2 from '../assets/images/set-a-strong-password.webp';
 import './knowledgecenter.css'; // Import the CSS file
 import ScrollToTopButton from "../components/common/ScrollToTopButton";
 import WhatsAppWidget from "../components/common/WhatsAppWidget";
+import { getImage } from '../utils/getImage'; // Adjust the path to your utility function
+// Fetching images dynamically using the getImage function
+const stepImg1 = getImage('fill-out-the-form.webp'); // Import the image
+const stepImg2 = getImage('set-a-strong-password.webp'); // Import the image
 const HowToAddAgentSublogin = () => {
   return (
     <>

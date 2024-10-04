@@ -3,14 +3,16 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import ScrollToTopButton from "../components/common/ScrollToTopButton";
 import WhatsAppWidget from "../components/common/WhatsAppWidget";
-import createChatbotsImg from '../assets/images/create-whatsapp-chatbots-easily.webp';
-import logicalFlowsImg from '../assets/images/icons/logical-flows.png';
-import saveTimeImg from '../assets/images/icons/save-time.png';
-import automateIntegrationImg from '../assets/images/icons/automate-integration.png';
-import businessOperationImg from '../assets/images/respond-to-customer-and-prospect-whatsapp.webp';
-import callToActionImg from '../assets/images/cta/automated-chatbot.webp'; // Adjust path if necessary
-import automateResponsesImg from '../assets/images/automate-responses-to-sales.webp'; // Adjust path if necessary
-import whatsappImage from '../assets/images/wa.link_3dzezc.png'; 
+import { getImage } from '../utils/getImage'; // Adjust the path to your utility
+// Fetching images dynamically using the getImage function
+const createChatbotsImg = getImage('create-whatsapp-chatbots-easily.webp'); // Adjust path if necessary
+const logicalFlowsImg = getImage('icons/logical-flows.png'); // Adjust path if necessary
+const saveTimeImg = getImage('icons/save-time.png'); // Adjust path if necessary
+const automateIntegrationImg = getImage('icons/automate-integration.png'); // Adjust path if necessary
+const businessOperationImg = getImage('respond-to-customer-and-prospect-whatsapp.webp'); // Adjust path if necessary
+const callToActionImg = getImage('cta/automated-chatbot.webp'); // Adjust path if necessary
+const automateResponsesImg = getImage('automate-responses-to-sales.webp'); // Adjust path if necessary
+const whatsappImage = getImage('wa.link_3dzezc.png'); // Adjust path if necessary
 const AutomatedChatBot = () => {
   return (
     <div>

@@ -3,18 +3,22 @@ import React from "react";
 import CountUp from "react-countup";  
 import './WhatsappSupport.css';
 import { Helmet } from 'react-helmet';
+import pdfFile from '../assets/pdf/Usecase-WhatsApp-Support.pdf';
 import ScrollToTopButton from "../components/common/ScrollToTopButton";
 import WhatsAppWidget from "../components/common/WhatsAppWidget";
 import DownloadEbookSection from "../components/common/DownloadEbookSection"; // Import the new component
-import downloadEbookImage from "../assets/images/download-ebook.png"; // Adjust path as needed
-import whatsAppSupportImage from "../assets/images/offer-support-at-scale-with.webp"; // Adjust the path as per your project structure
-import automateSalesImage from "../assets/images/automate-sales-with-whatsApp-chatbot.webp"; // Adjust the path as per your project structure
-import multipleHumanLiveChatImage from "../assets/images/multiple-human-live-chat.webp"; // Adjust the path as per your project structure
-import supportIcon from "../assets/images/icons/24_7-support.png"; // Adjust the path as per your project structure
-import reliableServiceIcon from "../assets/images/icons/Reliable-service.png"; // Adjust the path as per your project structure
-import securityIcon from "../assets/images/icons/fortified-security.png"; // Adjust the path as per your project structure
-import boostSupportImage from "../assets/images/boost-your-support-teams-efficiency.webp"; // Adjust path as needed
-import pdfFile from '../assets/pdf/Usecase-WhatsApp-Support.pdf';
+import { getImage } from '../utils/getImage'; // Adjust the path as needed
+
+// Fetching images dynamically using the getImage function
+const downloadEbookImage = getImage('download-ebook.png'); // Adjust path as needed
+const whatsAppSupportImage = getImage('offer-support-at-scale-with.webp'); // Adjust the path as per your project structure
+const automateSalesImage = getImage('automate-sales-with-whatsApp-chatbot.webp'); // Adjust the path as per your project structure
+const multipleHumanLiveChatImage = getImage('multiple-human-live-chat.webp'); // Adjust the path as per your project structure
+const supportIcon = getImage('icons/24_7-support.png'); // Adjust the path as per your project structure
+const reliableServiceIcon = getImage('icons/Reliable-service.png'); // Adjust the path as per your project structure
+const securityIcon = getImage('icons/fortified-security.png'); // Adjust the path as per your project structure
+const boostSupportImage = getImage('boost-your-support-teams-efficiency.webp'); // Adjust path as needed
+
 
 const WhatsAppSupport = () => {
 const submitFormAndOpenPDF = (event) => {

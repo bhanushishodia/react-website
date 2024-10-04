@@ -1,11 +1,13 @@
 import React from "react";
 import "./BlogPage.css"; // Import your CSS file for styles
-import whatsappAuthenticationImg from "../../assets/images/blog/whatsapp-authentication.webp";
-import whatsappSupportImg from "../../assets/images/blog/whatsapp-support.webp";
 import ScrollToTopButton from "../../components/common/ScrollToTopButton";
 import WhatsAppWidget from "../../components/common/WhatsAppWidget";
 import CommentForm from "../../components/common/CommentForm";
 import { Helmet } from "react-helmet";
+import { getImage } from '../../utils/getImage'; // Correct path to utility
+// Fetching images dynamically using getImage function
+const whatsappAuthenticationImg = getImage('whatsapp-authentication.webp');
+const whatsappSupportImg = getImage('whatsapp-support.webp');
 
 const WhatsAppBusinessAppVsAPI = () => {
   return (

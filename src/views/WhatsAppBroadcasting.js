@@ -4,15 +4,20 @@ import { Helmet } from 'react-helmet';
 import ScrollToTopButton from "../components/common/ScrollToTopButton";
 import WhatsAppWidget from "../components/common/WhatsAppWidget";
 import UseCasesSection from '../components/common/UseCasesSection';
-import broadcastingImage from "../assets/images/broadcast-messages-to-unlimited.webp"; // Update this path as necessary
-import scheduleMessagesIcon from "../assets/images/icons/schedule-messages.png";
-import campaignManagementIcon from "../assets/images/icons/campaign-management.png";
-import realTimeAnalyticsIcon from "../assets/images/icons/real-time-analytics.png";
 import broadcastVideo from "../assets/videos/whatsapp-broadcasting-demo.mp4";
-import ctaImage from '../assets/images/cta/Whatsapp-broadcasting-cta.webp';
-import campaignImage from '../assets/images/create-personalised-campaigns.webp';
-import marketingImage from '../assets/images/improve-marketing-campaign.webp';
-import whatsappScannerImage from '../assets/images/wa.link_3dzezc.png';
+import { getImage } from '../utils/getImage'; // Adjust the path as needed
+
+// Fetching images dynamically using the getImage function
+const broadcastingImage = getImage('broadcast-messages-to-unlimited.webp'); // Update this path as necessary
+const scheduleMessagesIcon = getImage('icons/schedule-messages.png');
+const campaignManagementIcon = getImage('icons/campaign-management.png');
+const realTimeAnalyticsIcon = getImage('icons/real-time-analytics.png');
+
+const ctaImage = getImage('cta/Whatsapp-broadcasting-cta.webp');
+const campaignImage = getImage('create-personalised-campaigns.webp');
+const marketingImage = getImage('improve-marketing-campaign.webp');
+const whatsappScannerImage = getImage('wa.link_3dzezc.png');
+
 const WhatsAppBroadcasting = () => {
   const CheckIcon = () => (
     <svg width="14" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -1,9 +1,11 @@
 import React, { useRef } from "react";
 import ScrollToTopButton from "../../components/common/ScrollToTopButton";
 import WhatsAppWidget from "../../components/common/WhatsAppWidget";
-import EmpoweringCustomerSupportImg from "../../assets/images/blog/Empowering-Customer-Support-min.webp";
 import { Helmet } from "react-helmet";
 import CommentForm from "../../components/common/CommentForm";
+import { getImage } from '../../utils/getImage'; // Correct path to utility
+// Fetching the image dynamically using getImage function
+const EmpoweringCustomerSupportImg = getImage('Empowering-Customer-Support-min.webp');
 const ReshapingCustomerEngagement = () => {
   // Create refs for each section
   const section1Ref = useRef(null);

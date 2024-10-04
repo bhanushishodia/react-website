@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./IncrediblePlatformCapabilities.css";
+
 import video1 from "../../assets/videos/broadcast-unlimited-promotional.mp4";
 import video2 from "../../assets/videos/automate-notifications-via.mp4";
 import video3 from "../../assets/videos/provide-live-chat-support-on-multiple-devices.mp4";

@@ -3,8 +3,10 @@ import ScrollToTopButton from "../../components/common/ScrollToTopButton";
 import WhatsAppWidget from "../../components/common/WhatsAppWidget";
 import ClientsSection from "../../components/common/ClientsSection"; // Adjust the path if necessary
 import PopularPosts from "../../components/common/PopularPosts";
-import chatLogo from "../../assets/images/icons/Logo-WeChat.svg"; // Importing the image
 import { Helmet } from 'react-helmet';
+import { getImage } from '../../utils/getImage'; // Adjust the path to your utility
+// Fetching the image dynamically using the getImage function
+const chatLogo = getImage('icons/Logo-WeChat.svg'); // Adjust path if necessary
 const WeChat = () => {
   return (
     <div>

@@ -5,27 +5,24 @@ import { Helmet } from 'react-helmet';
 import ScrollToTopButton from "../components/common/ScrollToTopButton";
 import WhatsAppWidget from "../components/common/WhatsAppWidget";
 import AffiliateForm from '../forms/AffiliateForm'; // Adjust the path as needed
-import partnerImage from '../assets/images/partner-program-homepage.webp'; // Adjust the path as necessary
-import prioritySupportImg from '../assets/images/icons/Priority-support.png'; // Adjust the path as necessary
-import revenueShareImg from '../assets/images/icons/revenue-share.png'; // Adjust the path as necessary
-import expandBusinessImg from '../assets/images/icons/expand-business.png'; // Adjust the path as necessary
-import affiliatePartnerImg from '../assets/images/partner/affiliate-partner.webp'; // Adjust the path as necessary
-import whiteLabelPartnerImg from '../assets/images/partner/whiteLabel-partner.webp'; // Adjust the path as necessary
-import solutionPartnerImg from '../assets/images/partner/solution-partner.webp'; // Adjust the path as necessary
-import ctaImg from '../assets/images/partner/partner-cta.webp'; // Adjust the path as necessary
-import logo1 from '../assets/images/updated-logo/1.png'; // Adjust the path as necessary
-import logo2 from '../assets/images/updated-logo/2.png';
-import logo3 from '../assets/images/updated-logo/3.png';
-import logo4 from '../assets/images/updated-logo/4.png';
-import logo5 from '../assets/images/updated-logo/5.png';
-import logo6 from '../assets/images/updated-logo/6.png';
-import logo7 from '../assets/images/updated-logo/7.png';
-import logo8 from '../assets/images/updated-logo/8.png';
-import logo9 from '../assets/images/updated-logo/9.png';
-import logo10 from '../assets/images/updated-logo/10.png';
+import { getImage } from '../utils/getImage'; // Adjust the path as needed
+
+// Fetching images dynamically using the getImage function
+const partnerImage = getImage('partner-program-homepage.webp');
+const prioritySupportImg = getImage('icons/Priority-support.png');
+const revenueShareImg = getImage('icons/revenue-share.png');
+const expandBusinessImg = getImage('icons/expand-business.png');
+const affiliatePartnerImg = getImage('partner/affiliate-partner.webp');
+const whiteLabelPartnerImg = getImage('partner/whiteLabel-partner.webp');
+const solutionPartnerImg = getImage('partner/solution-partner.webp');
+const ctaImg = getImage('partner/partner-cta.webp');
+
+// Importing logos dynamically
+const logos = Array.from({ length: 10 }, (_, index) => getImage(`updated-logo/${index + 1}.png`));
 const PartnerWithUs = () => {
-  const logosRow1 = [logo1, logo2, logo3, logo4, logo5];
-  const logosRow2 = [logo6, logo7, logo8, logo9, logo10];
+ // Dividing logos into two rows
+ const logosRow1 = logos.slice(0, 5); // First 5 logos
+ const logosRow2 = logos.slice(5);     // Last 5 logos
   return (
     <>
     <Helmet>
@@ -308,20 +305,21 @@ const PartnerWithUs = () => {
         </div>
 
         <div className="row row-cols-2 row-cols-md-5 mt-3 g-4 py-md-1 py-0 px-md-5 px-2 justify-content-center align-items-center">
-          {logosRow1.map((logo, index) => (
-            <div className="col" key={index}>
-              <img src={logo} className="img-fluid anantya_partner_logo" alt="logo-image" />
-            </div>
-          ))}
-        </div>
+  {logosRow1.map((logo, index) => (
+    <div className="col" key={index}>
+      <img src={logo} className="img-fluid anantya_partner_logo" alt={`Logo ${index + 1}`} />
+    </div>
+  ))}
+</div>
 
-        <div className="row row-cols-2 row-cols-md-5 g-4 py-md-3 mt-1 py-0 px-md-5 px-2 justify-content-center align-items-center">
-          {logosRow2.map((logo, index) => (
-            <div className="col" key={index}>
-              <img src={logo} className="img-fluid anantya_partner_logo" alt="logo-image" />
-            </div>
-          ))}
-        </div>
+<div className="row row-cols-2 row-cols-md-5 g-4 py-md-3 mt-1 py-0 px-md-5 px-2 justify-content-center align-items-center">
+  {logosRow2.map((logo, index) => (
+    <div className="col" key={index + 5}> {/* Ensure unique keys across both rows */}
+      <img src={logo} className="img-fluid anantya_partner_logo" alt={`Logo ${index + 6}`} />
+    </div>
+  ))}
+</div>
+
       </div>
       </section>
       {/* section5 */}

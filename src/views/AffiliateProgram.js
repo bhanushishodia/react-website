@@ -4,19 +4,21 @@ import "./AffiliateProgram.css"; // Import the CSS file
 import { Helmet } from 'react-helmet';
 import ScrollToTopButton from "../components/common/ScrollToTopButton";
 import WhatsAppWidget from "../components/common/WhatsAppWidget";
-import thumbnailImg from '../assets/images/thumblain.webp'; // Adjust path as needed
-import playButtonImg from '../assets/images/play-button-logo.png'; // Adjust path as needed
-import bloggerImg from '../assets/images/icons/Blogger.png'; // Adjust path as needed
-import youtuberImg from '../assets/images/icons/youtuber.png'; // Adjust path as needed
-import influencerImg from '../assets/images/icons/influencer.png'; // Adjust path as needed
-import webStudioImg from '../assets/images/icons/web studio.png'; // Adjust path as needed
-import freelancerImg from '../assets/images/icons/freelancer.png'; // Adjust path as needed
-import expertImg from '../assets/images/icons/exepert.png'; // Adjust path as needed
-import whyJoinImg from '../assets/images/why-should-you-join.webp'; // Adjust path as needed
+import { getImage } from '../utils/getImage'; // Adjust the path to your utility
+// Fetching images dynamically using the getImage function
+const thumbnailImg = getImage('thumblain.webp'); // Adjust path if necessary
+const playButtonImg = getImage('play-button-logo.png'); // Adjust path if necessary
+const bloggerImg = getImage('Blogger.png'); // Adjust path if necessary
+const youtuberImg = getImage('youtuber.png'); // Adjust path if necessary
+const influencerImg = getImage('influencer.png'); // Adjust path if necessary
+const webStudioImg = getImage('web studio.png'); // Adjust path if necessary
+const freelancerImg = getImage('freelancer.png'); // Adjust path if necessary
+const expertImg = getImage('exepert.png'); // Adjust path if necessary
+const whyJoinImg = getImage('why-should-you-join.webp'); // Adjust path if necessary
 
-import arrowRight1 from '../assets/images/icons/arrow-right-1.svg'; // Adjust path as needed
-import arrowRight2 from '../assets/images/icons/arrow-right-2.svg'; // Adjust path as needed
-import ctaImg from '../assets/images/partner/who-we-partner-with.webp'; // Adjust the path as necessary
+const arrowRight1 = getImage('arrow-right-1.svg'); // Adjust path if necessary
+const arrowRight2 = getImage('arrow-right-2.svg'); // Adjust path if necessary
+const ctaImg = getImage('who-we-partner-with.webp'); // Adjust the path as necessary
 const AffiliateProgram = () => {
   return (
     <>

@@ -1,11 +1,12 @@
 import React from 'react';
 import Slider from 'react-slick';
 import './PopularPosts.css'; // Import the CSS file for styling
-import InstagramIcon from '../../assets/images/icons/instagram.svg';
-import WhatsAppIcon from '../../assets/images/icons/Whatsapp.webp';
-import MessengerIcon from '../../assets/images/icons/Messenger.webp';
-
-const PopularPosts = () => {
+import { getImage } from '../../utils/getImage';  // Correct path to utility
+  // Fetching images dynamically using getImage function
+  const InstagramIcon = getImage('icons/instagram.svg');
+  const WhatsAppIcon = getImage('icons/Whatsapp.webp');
+  const MessengerIcon = getImage('icons/Messenger.webp');
+  const PopularPosts = () => {
   // Slick Slider settings
   const settings = {
     dots: true,

@@ -1,16 +1,21 @@
 // src/views/WhatsAppAuthentication.js
 import React from 'react';
 import { Helmet } from 'react-helmet';
+import pdfFile from '../assets/pdf/Usecase-WhatsApp-Authentication.pdf';
+import CountUp from 'react-countup';
+import DownloadEbookSection from "../components/common/DownloadEbookSection"; // Import the new component
 import ScrollToTopButton from "../components/common/ScrollToTopButton";
 import WhatsAppWidget from "../components/common/WhatsAppWidget";
-import securityImage from '../assets/images/double-up-on-security.webp';
-import CountUp from 'react-countup';
-import secureMessagingImage from '../assets/images/secure-messaging-with-dedicated.webp';
-import enhancedCustomerExperienceImg from '../assets/images/enhanced-customer-experience.webp';
-import DownloadEbookSection from "../components/common/DownloadEbookSection"; // Import the new component
-import downloadEbookImage from "../assets/images/download-ebook.png"; // Adjust path as needed
-import improveSecurityImg from '../assets/images/improve-security-with-whatsapp-otp.webp';
-import pdfFile from '../assets/pdf/Usecase-WhatsApp-Authentication.pdf';
+import { getImage } from '../utils/getImage'; // Adjust the path as needed
+
+// Fetching images dynamically using the getImage function
+const securityImage = getImage('double-up-on-security.webp');
+const secureMessagingImage = getImage('secure-messaging-with-dedicated.webp');
+const enhancedCustomerExperienceImg = getImage('enhanced-customer-experience.webp');
+const downloadEbookImage = getImage('download-ebook.png'); // Adjust path as needed
+const improveSecurityImg = getImage('improve-security-with-whatsapp-otp.webp');
+
+
 const WhatsAppAuthentication = () => {
 const submitFormAndOpenPDF = (event) => {
     // Prevent the default form submission behavior

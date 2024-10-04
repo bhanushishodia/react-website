@@ -6,19 +6,21 @@ import LTRSlider from "../components/common/LTRSlider";
 import RTLSlider from "../components/common/RTLSlider";
 import FAQSection from "../components/common/FAQSection";
 import LogoCarousel from "../components/common/LogoCarousel";
-import DownloadEbookSection from "../components/common/DownloadEbookSection"; // Import the new component
-import downloadEbookImage from "../assets/images/download-ebook.png"; // Adjust path as needed
-import whatsappScannerImg from '../assets/images/wa.link_3dzezc.png';
-import "./EcommerceRetail.css"; // Import your CSS file if needed
-import retargetingImage from "../assets/images/send-whatsapp-retargeting.webp";
-import ctaImage from "../assets/images/cta/ecommerce.webp";
-import chatAndSellMoreImg from "../assets/images/chat-and-sell-more-with.webp";
-import sellMoreImage from "../assets/images/sell-more-with-whatsapp-catalogues.webp"; // Update the
-import defaultImage from "../assets/images/convert-browsers-into.webp";
-import hoverImage1 from "../assets/images/promote-on-every-channel.webp";
-import hoverImage2 from "../assets/images/convert-browsers-into.webp";
 import { Helmet } from 'react-helmet';
+import "./EcommerceRetail.css"; // Import your CSS file if needed
 import pdfFile from '../assets/pdf/Usecase-WhatsApp-Commerce.pdf';
+import DownloadEbookSection from "../components/common/DownloadEbookSection"; // Import the new component
+import { getImage } from '../utils/getImage'; // Adjust the path to your utility function
+// Fetching images dynamically using the getImage function
+const downloadEbookImage = getImage('download-ebook.png'); // Adjust path as needed
+const whatsappScannerImg = getImage('wa.link_3dzezc.png');
+const retargetingImage = getImage('send-whatsapp-retargeting.webp');
+const ctaImage = getImage('cta/ecommerce.webp');
+const chatAndSellMoreImg = getImage('chat-and-sell-more-with.webp');
+const sellMoreImage = getImage('sell-more-with-whatsapp-catalogues.webp'); // Update the
+const defaultImage = getImage('convert-browsers-into.webp');
+const hoverImage1 = getImage('promote-on-every-channel.webp');
+const hoverImage2 = getImage('convert-browsers-into.webp');
 
 const EcommerceRetail = () => {
   const submitFormAndOpenPDF = (event) => {

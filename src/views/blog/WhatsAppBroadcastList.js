@@ -1,16 +1,19 @@
 import React from 'react';
 import ScrollToTopButton from '../../components/common/ScrollToTopButton';
 import WhatsAppWidget from '../../components/common/WhatsAppWidget';
-import broadcastImage from '../../assets/images/blog/whatsapp-broadcast-list-and-its-features.webp';
-import broadcastImg1 from '../../assets/images/blog/whatsapp-broadcast-list-1.webp';
-import broadcastImg2 from '../../assets/images/blog/whatsapp-broadcast-list-2.webp';
-import broadcastImg3 from '../../assets/images/blog/whatsapp-broadcast-list-3.webp';
-import broadcastImg4 from '../../assets/images/blog/whatsapp-broadcast-list-4.webp';
-import broadcastImg5 from '../../assets/images/blog/whatsapp-broadcast-list-5.webp';
-import broadcastImg6 from '../../assets/images/blog/whatsapp-broadcast-list-6.webp';
-import broadcastImg7 from '../../assets/images/blog/whatsapp-broadcast-list-7.webp';
-import ctaImage from '../../assets/images/blog/whatsapp-broadcast-list-cta.webp';
 import { Helmet } from 'react-helmet';
+import { getImage } from '../../utils/getImage'; // Correct path to utility
+// Fetching images dynamically using getImage function
+const broadcastImage = getImage('whatsapp-broadcast-list-and-its-features.webp');
+const broadcastImg1 = getImage('whatsapp-broadcast-list-1.webp');
+const broadcastImg2 = getImage('whatsapp-broadcast-list-2.webp');
+const broadcastImg3 = getImage('whatsapp-broadcast-list-3.webp');
+const broadcastImg4 = getImage('whatsapp-broadcast-list-4.webp');
+const broadcastImg5 = getImage('whatsapp-broadcast-list-5.webp');
+const broadcastImg6 = getImage('whatsapp-broadcast-list-6.webp');
+const broadcastImg7 = getImage('whatsapp-broadcast-list-7.webp');
+const ctaImage = getImage('whatsapp-broadcast-list-cta.webp');
+
 const WhatsAppBroadcastList = () => {
   return (
     <>

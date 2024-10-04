@@ -1,19 +1,24 @@
 import React from "react";
 import { Helmet } from 'react-helmet';
 import AffiliateForm from '../forms/AffiliateForm'; // Adjust the path as needed
-import partnerImage from "../assets/images/solution-partner-home-page.webp"; // Adjust the path as needed
-import dedicatedManagerImg from "../assets/images/icons/dedicated-manager.png";
-import productAndSalesImg from "../assets/images/icons/product-and-sales.png";
-import coMarketingImg from "../assets/images/icons/co-marketing.png";
-import customPricingImg from "../assets/images/icons/custom-pricing.png";
-import whatWeHandleImg from "../assets/images/what-we-handle-for-you.webp";
-import marketingAgenciesImg from "../assets/images/icons/marketing-agencies.png";
-import solutionProvidersImg from "../assets/images/icons/solution-providers.png";
-import consultantsFreelancersImg from "../assets/images/icons/consultants-&-freelancers.png";
-import allYouNeedImage from "../assets/images/all-You-need-to-do.webp"; // Adjust the import path as needed
-import ctaImg from '../assets/images/partner-cta.webp'; // Adjust the path as necessary
 import ScrollToTopButton from "../components/common/ScrollToTopButton";
 import WhatsAppWidget from "../components/common/WhatsAppWidget";
+import { getImage } from '../utils/getImage'; // Adjust the path as needed
+
+// Fetching images dynamically using the getImage function
+const partnerImage = getImage('solution-partner-home-page.webp');
+const dedicatedManagerImg = getImage('icons/dedicated-manager.png');
+const productAndSalesImg = getImage('icons/product-and-sales.png');
+const coMarketingImg = getImage('icons/co-marketing.png');
+const customPricingImg = getImage('icons/custom-pricing.png');
+const whatWeHandleImg = getImage('what-we-handle-for-you.webp');
+const marketingAgenciesImg = getImage('icons/marketing-agencies.png');
+const solutionProvidersImg = getImage('icons/solution-providers.png');
+const consultantsFreelancersImg = getImage('icons/consultants-&-freelancers.png');
+const allYouNeedImage = getImage('all-You-need-to-do.webp'); // Adjust the import path as needed
+const ctaImg = getImage('partner-cta.webp'); // Adjust the path as necessary
+
+
 const SolutionPartner = () => {
   return (
     <>

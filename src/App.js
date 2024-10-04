@@ -5,7 +5,6 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Redirect from './views/Redirect'; 
 // Common Components
-
 import Header from './components/common/Header';
 import Footer from './components/common/Footer';
 import CustomHeader from './components/common/CustomHeader';
@@ -105,8 +104,9 @@ function Layout({ children }) {
   const location = useLocation();
   // Check if the current path is not '/sales-hub' and not '/book-a-meeting'
   const showHeaderFooter = 
-    location.pathname !== '/sales-hub' && location.pathname !== '/book-a-meeting';
- 
+  location.pathname !== '/sales-hub' && 
+  location.pathname !== '/book-a-meeting' && 
+  location.pathname !== '/whatsapp-pricing';
 
   return (
     <div className="App">

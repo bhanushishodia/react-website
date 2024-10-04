@@ -3,30 +3,32 @@ import "./Blog.css"; // Ensure you have a corresponding CSS file for styling
 import ScrollToTopButton from "../components/common/ScrollToTopButton";
 import WhatsAppWidget from "../components/common/WhatsAppWidget";
 import { Link } from "react-router-dom"; // Import Link from react-router-dom
-import whatsappBroadcastingImg from "../assets/images/blog/whatsapp-broadcasting.webp";
-import marketingStrategyImg from "../assets/images/blog/Enhance-your-marketing-strategy-min.webp";
-import chatbotReportsImg from "../assets/images/blog/chatbot-reports.webp";
-import whatsappAuthImg from "../assets/images/blog/whatsapp-authertication.webp";
-import empoweringSupportImg from "../assets/images/blog/Empowering-Customer-Support-min.webp";
-import gitexBlogImg from "../assets/images/blog/gitexblog.jpeg";
-import boostSalesImg from "../assets/images/blog/boost-sales-on-festive-season-with-ai-chatbots.jpeg";
-import clickToWhatsAppAdsImg from "../assets/images/blog/click-to-whatsapp-ads.jpeg";
-import whatsappApiGuideImg from "../assets/images/blog/whatsapp-business-api-your-ultimate-guide.jpg";
-import whatsappBroadcastImg from "../assets/images/blog/whatsapp-broadcasting-your-ultimate-guide-whatsapp-broadcast-your-complete-business-booster-guide.webp";
-import whatsappHealthcareImg from "../assets/images/blog/whatsapp-for-healthcare.webp";
-import whatsappChatbotImg from "../assets/images/blog/whatsapp-chatbot-for-business.webp";
-import whatsappBankingImg from "../assets/images/blog/whatsapp-business-api-in-banking-sector.webp";
-import metaUpdateImg from "../assets/images/blog/meta-frequency-capping-update.webp";
-import whatsappMarketingImg from "../assets/images/blog/whatsapp-marketing-direct-communication-with-customers.webp";
-import whatsappPricingImg from "../assets/images/blog/whatsapp-business-api-conversation-pricing.webp";
-
-import whatsappGreenToBlueTickImg from '../assets/images/blog/whatsapp-business-switching-from-green-tick-to-blue-tick.webp';
-import whatsappPricingChangeImg from '../assets/images/blog/whatsapp-authentication-rates.webp';
-import whatsappFreeEntryImg from '../assets/images/blog/whatsapp-free-entry-frequency-capping.webp';
-import whatsappBroadcastListImg from '../assets/images/blog/whatsapp-broadcast-list-and-its-features.webp';
-import whatsappGovtAPIImg from '../assets/images/blog/whatsapp-business-api-for-government.webp';
-import whatsappAPIProvidersImg from '../assets/images/blog/whatsapp-business-api-providers-2024.webp';
 import { Helmet } from 'react-helmet';
+import { getImage } from '../utils/getImage'; // Adjust the path to your utility
+// Fetching images dynamically using the getImage function
+const whatsappBroadcastingImg = getImage('whatsapp-broadcasting.webp');
+const marketingStrategyImg = getImage('Enhance-your-marketing-strategy-min.webp');
+const chatbotReportsImg = getImage('chatbot-reports.webp');
+const whatsappAuthImg = getImage('whatsapp-authertication.webp');
+const empoweringSupportImg = getImage('Empowering-Customer-Support-min.webp');
+const gitexBlogImg = getImage('gitexblog.jpeg');
+const boostSalesImg = getImage('boost-sales-on-festive-season-with-ai-chatbots.jpeg');
+const clickToWhatsAppAdsImg = getImage('click-to-whatsapp-ads.jpeg');
+const whatsappApiGuideImg = getImage('whatsapp-business-api-your-ultimate-guide.jpg');
+const whatsappBroadcastImg = getImage('whatsapp-broadcasting-your-ultimate-guide-whatsapp-broadcast-your-complete-business-booster-guide.webp');
+const whatsappHealthcareImg = getImage('whatsapp-for-healthcare.webp');
+const whatsappChatbotImg = getImage('whatsapp-chatbot-for-business.webp');
+const whatsappBankingImg = getImage('whatsapp-business-api-in-banking-sector.webp');
+const metaUpdateImg = getImage('meta-frequency-capping-update.webp');
+const whatsappMarketingImg = getImage('whatsapp-marketing-direct-communication-with-customers.webp');
+const whatsappPricingImg = getImage('whatsapp-business-api-conversation-pricing.webp');
+const whatsappGreenToBlueTickImg = getImage('whatsapp-business-switching-from-green-tick-to-blue-tick.webp');
+const whatsappPricingChangeImg = getImage('whatsapp-authentication-rates.webp');
+const whatsappFreeEntryImg = getImage('whatsapp-free-entry-frequency-capping.webp');
+const whatsappBroadcastListImg = getImage('whatsapp-broadcast-list-and-its-features.webp');
+const whatsappGovtAPIImg = getImage('whatsapp-business-api-for-government.webp');
+const whatsappAPIProvidersImg = getImage('whatsapp-business-api-providers-2024.webp');
+
 
 const Blog = () => {
   const [selectedCategory, setSelectedCategory] = useState("all");

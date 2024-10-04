@@ -3,16 +3,21 @@ import { Helmet } from 'react-helmet';
 import AffiliateForm from '../forms/AffiliateForm'; // Adjust the path as needed
 import ScrollToTopButton from "../components/common/ScrollToTopButton";
 import WhatsAppWidget from "../components/common/WhatsAppWidget";
-import PartnerImage from '../assets/images/partner/Become-an-Anantya.webp'; 
-import PrioritySupport from '../assets/images/partner/Priority-support.png';
-import SuccessTraining from '../assets/images/partner/success-training.png';
-import CustomPricing from '../assets/images/partner/custom-pricing.png';   
-import growingMarketImage from '../assets/images/partner/enter-the-growing-market.webp';
-import solutionProvidersImg from '../assets/images/partner/solution-providers.png';
-import digitalAgencyImg from '../assets/images/partner/digital-agency.png';
-import softwareResellerImg from '../assets/images/partner/software-reseller.png';
-import dashboardImage from '../assets/images/partner/gain-a-new-revenue-stream.webp'; 
-import partnerImage from '../assets/images/partner/partner-cta.webp';
+
+import { getImage } from '../utils/getImage'; // Adjust the path as needed
+
+// Fetching images dynamically using the getImage function
+const PartnerImage = getImage('partner/Become-an-Anantya.webp'); 
+const PrioritySupport = getImage('partner/Priority-support.png');
+const SuccessTraining = getImage('partner/success-training.png');
+const CustomPricing = getImage('partner/custom-pricing.png');   
+const growingMarketImage = getImage('partner/enter-the-growing-market.webp');
+const solutionProvidersImg = getImage('partner/solution-providers.png');
+const digitalAgencyImg = getImage('partner/digital-agency.png');
+const softwareResellerImg = getImage('partner/software-reseller.png');
+const dashboardImage = getImage('partner/gain-a-new-revenue-stream.webp'); 
+const partnerImage = getImage('partner/partner-cta.webp');
+
 const WhiteLabelPartner = () => {
   return (
    <>

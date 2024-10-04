@@ -1,14 +1,16 @@
 import React from "react";
 import "./AutomatedChats.css"; // Create a CSS file for additional styles if needed
-import whatsappMarketing from "../../assets/images/whatsapp-marketing.webp"; // Adjust the path as needed
-import whatsappSupport from "../../assets/images/whatsapp-support.webp"; // Adjust the path as needed
-import whatsappCommerce from "../../assets/images/whatsapp-commerce.webp"; // Adjust the path as needed
-import whatsappAuthentication from "../../assets/images/whatsapp-authentication.webp";
-import whatsappMarketingIcon from "../../assets/images/icons/whatsapp-marketing.png"; // Adjust the path as needed
-import whatsappSupportIcon from "../../assets/images/icons/whatsapp-support.png"; // Adjust the path as needed
-import whatsappCommerceIcon from "../../assets/images/icons/whatsapp-commerce.png"; // Adjust the path as needed
-import whatsappAuthenticationIcon from "../../assets/images/icons/whatsapp-authentication.png"; // Ensure this path is correct
-
+import { getImage } from '../../utils/getImage';  // Correct path to utility
+ // For images in assets/images
+ const whatsappMarketing = getImage('whatsapp-marketing.webp');
+ const whatsappSupport = getImage('whatsapp-support.webp');
+ const whatsappCommerce = getImage('whatsapp-commerce.webp');
+ const whatsappAuthentication = getImage('whatsapp-authentication.webp');
+ // For icons in assets/images/icons
+ const whatsappMarketingIcon = getImage('icons/whatsapp-marketing.png');
+ const whatsappSupportIcon = getImage('icons/whatsapp-support.png');
+ const whatsappCommerceIcon = getImage('icons/whatsapp-commerce.png');
+ const whatsappAuthenticationIcon = getImage('icons/whatsapp-authentication.png');
 const AutomatedChats = () => {
   return (
     <div>

@@ -3,16 +3,18 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import ScrollToTopButton from '../components/common/ScrollToTopButton';
 import WhatsAppWidget from '../components/common/WhatsAppWidget';
-// Import images or other assets if needed
-import commerceImage from '../assets/images/set-up-your-online-store-on-whatsapp.webp'; // Adjust path as needed
-import sellImage from '../assets/images/sell-your-products-online-with-catalog.webp'; // Adjust path as needed
-import automatedImage from '../assets/images/create-automated-checkout-workflows.webp'; // Adjust path as needed
-import DownloadEbookSection from "../components/common/DownloadEbookSection"; // Import the new component
-import downloadEbookImage from '../assets/images/download-ebook.png'; // Adjust path as needed
-import whatsappImage from '../assets/images/cta/whatsapp-commerce.webp'; // Ensure the path is correct
-import shareCatalogsImage from '../assets/images/share-catalogs-as-part-of-campaigns.webp'; // Adjust the path as needed
 import pdfFile from '../assets/pdf/Usecase-WhatsApp-Commerce.pdf';
 import CountUp from 'react-countup';
+import DownloadEbookSection from "../components/common/DownloadEbookSection"; // Import the new component
+import { getImage } from '../utils/getImage'; // Adjust the path as needed
+// Fetching images dynamically using the getImage function
+const commerceImage = getImage('set-up-your-online-store-on-whatsapp.webp'); // Adjust path as needed
+const sellImage = getImage('sell-your-products-online-with-catalog.webp'); // Adjust path as needed
+const automatedImage = getImage('create-automated-checkout-workflows.webp'); // Adjust path as needed
+const downloadEbookImage = getImage('download-ebook.png'); // Adjust path as needed
+const whatsappImage = getImage('cta/whatsapp-commerce.webp'); // Ensure the path is correct
+const shareCatalogsImage = getImage('share-catalogs-as-part-of-campaigns.webp'); // Adjust the path as needed
+
 const WhatsAppCommercePage = () => {
   
 

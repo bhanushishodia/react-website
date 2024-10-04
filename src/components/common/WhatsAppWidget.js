@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import logo from "../../assets/images/rounded.png";
-import widgetImage from "../../assets/images/whatsapp-3.jpg"; // This is the image you want to use as a background
-import blueCheck from "../../assets/images/blue-check.png"; // Adjust the path as needed
+import { getImage } from '../../utils/getImage';  // Correct path to utility
 
 const WhatsAppWidget = () => {
+// Fetch images dynamically
+const logo = getImage('rounded.png');
+const blueCheck = getImage('blue-check.png');
   const [showChat, setShowChat] = useState(false);
   const [message, setMessage] = useState("");
 
@@ -261,8 +262,10 @@ const bodyStyles = {
   justifyContent: "center",
   alignItems: "center",
   padding: "0",
-  backgroundImage: `url(${widgetImage})`,
+  backgroundImage: `url(${getImage('whatsapp-3.jpg')})`, // Apply the correct image here
   backgroundSize: "cover",
+
+
   backgroundPosition: "center",
 
  

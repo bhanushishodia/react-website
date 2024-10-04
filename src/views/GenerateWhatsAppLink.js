@@ -2,14 +2,18 @@
 
 import React from 'react';
 import './GenerateWhatsAppLink.css'; // Assuming you have a CSS file for styling
-import whatsappImage from '../assets/images/whatsapp-link-generator.webp'; // Import the image
-import step1Image from '../assets/images/walink-generator-step-1.webp'; // Import Step 1 image
-import step2Image from '../assets/images/walink-generator-step-2.webp'; // Import Step 2 image
-import step3Image from '../assets/images/walink-generator-step-3.webp'; // Import Step 3 image
+
 import ScrollToTopButton from "../components/common/ScrollToTopButton";
 import WhatsAppWidget from "../components/common/WhatsAppWidget";
 import WhatsAppLinkGenerator from '../components/common/WhatsAppLinkGenerator';
 import LogoCarousel from "../components/common/LogoCarousel";
+import { getImage } from '../utils/getImage'; // Adjust the path to your utility function
+
+// Fetching images dynamically using the getImage function
+const whatsappImage = getImage('whatsapp-link-generator.webp'); // Import the image
+const step1Image = getImage('walink-generator-step-1.webp'); // Import Step 1 image
+const step2Image = getImage('walink-generator-step-2.webp'); // Import Step 2 image
+const step3Image = getImage('walink-generator-step-3.webp'); // Import Step 3 image
 
 
 const GenerateWhatsAppLink = () => {

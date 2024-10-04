@@ -3,9 +3,10 @@ import { QRCodeSVG } from "qrcode.react"; // Import QRCodeSVG for QR code genera
 import { Modal, Button } from "react-bootstrap"; // Import Modal and Button from React Bootstrap
 import "bootstrap/dist/css/bootstrap.min.css"; // Import Bootstrap CSS
 import "./WhatsAppLinkGenerator.css";
-import dpImage from "../../assets/images/dp.svg"; // Import your image here
 
+import { getImage } from '../../utils/getImage';  // Correct path to utility
 function WhatsAppLinkGenerator() {
+  const dpImage = getImage('dp.svg');
   const [phoneNumber, setPhoneNumber] = useState("");
   const [message, setMessage] = useState("");
   const [generatedLink, setGeneratedLink] = useState("");

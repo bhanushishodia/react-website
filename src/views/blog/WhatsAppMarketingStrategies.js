@@ -1,10 +1,12 @@
 import React from "react";
 import "./BlogPage.css"; // Import custom CSS if needed
-import whatsappMarketingImg from "../../assets/images/blog/whatsapp-marketing.webp";
-import offerAndDiscountImg from "../../assets/images/blog/offer-and-discount.webp";
 import ScrollToTopButton from '../../components/common/ScrollToTopButton';
 import WhatsAppWidget from '../../components/common/WhatsAppWidget';
 import { Helmet } from 'react-helmet';
+import { getImage } from '../../utils/getImage'; // Correct path to utility
+// Fetching images dynamically using getImage function
+const whatsappMarketingImg = getImage('whatsapp-marketing.webp');
+const offerAndDiscountImg = getImage('offer-and-discount.webp');
 const WhatsAppMarketingStrategies = () => {
   return (
     <div>

@@ -1,10 +1,11 @@
 import React from 'react';
 import ScrollToTopButton from '../../components/common/ScrollToTopButton';
 import WhatsAppWidget from '../../components/common/WhatsAppWidget';
-import clickToWhatsAppImage from '../../assets/images/blog/click-to-whatsapp-ads.jpeg';
 import { Helmet } from 'react-helmet';
 import CommentForm from "../../components/common/CommentForm";
-
+import { getImage } from '../../utils/getImage'; // Correct path to utility
+// Fetching the Click to WhatsApp image dynamically using getImage function
+const clickToWhatsAppImage = getImage('click-to-whatsapp-ads.jpeg');
 const ClickToWhatsAppAdsMarketing2023 = () => {
   return (
     <section>

@@ -2,34 +2,33 @@ import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-
-// Import images
-import bigCommerce from '../../assets/images/big-commerce.webp';
-import dialogflowLogo from '../../assets/images/dialogflow-logo.svg';
-import dropbox from '../../assets/images/dropbox.webp';
-import getresponse from '../../assets/images/getresponse.webp';
-import googleAnalytics from '../../assets/images/google-analytics.webp';
-import googleBusinessMessages from '../../assets/images/Google-Business-Messages.svg';
-import helpdesk from '../../assets/images/helpdesk.webp';
-import hubspot from '../../assets/images/hubspot.webp';
-import instagram from '../../assets/images/instagram.svg';
-import logoLine from '../../assets/images/Logo-LINE.svg';
-import logoPipedrive from '../../assets/images/Logo-Pipedrive.svg';
-import logoTelegram from '../../assets/images/Logo-Telegram.svg';
-import logoViber from '../../assets/images/Logo-Viber.svg';
-import logoWeChat from '../../assets/images/Logo-WeChat.svg';
-import messenger from '../../assets/images/Messenger.webp';
-import pipedrive from '../../assets/images/pipedrive.webp';
-import salesforce from '../../assets/images/salesforce.webp';
-import shopify from '../../assets/images/shopify.webp';
-import teamviewer from '../../assets/images/teamviewer.webp';
-import twilio from '../../assets/images/twilio.webp';
-import whatsapp from '../../assets/images/Whatsapp.webp';
-import wooCommerce from '../../assets/images/woo-commerce.webp';
-import wordpress from '../../assets/images/wordpress.webp';
-import zapier from '../../assets/images/zapier.webp';
-import zendesk from '../../assets/images/zendesk.webp';
-
+import { getImage } from '../../utils/getImage';  // Correct path to utility
+  // Fetching images dynamically using getImage function
+  const bigCommerce = getImage('big-commerce.webp');
+  const dialogflowLogo = getImage('dialogflow-logo.svg');
+  const dropbox = getImage('dropbox.webp');
+  const getresponse = getImage('getresponse.webp');
+  const googleAnalytics = getImage('google-analytics.webp');
+  const googleBusinessMessages = getImage('Google-Business-Messages.svg');
+  const helpdesk = getImage('helpdesk.webp');
+  const hubspot = getImage('hubspot.webp');
+  const instagram = getImage('instagram.svg');
+  const logoLine = getImage('Logo-LINE.svg');
+  const logoPipedrive = getImage('Logo-Pipedrive.svg');
+  const logoTelegram = getImage('Logo-Telegram.svg');
+  const logoViber = getImage('Logo-Viber.svg');
+  const logoWeChat = getImage('Logo-WeChat.svg');
+  const messenger = getImage('Messenger.webp');
+  const pipedrive = getImage('pipedrive.webp');
+  const salesforce = getImage('salesforce.webp');
+  const shopify = getImage('shopify.webp');
+  const teamviewer = getImage('teamviewer.webp');
+  const twilio = getImage('twilio.webp');
+  const whatsapp = getImage('Whatsapp.webp');
+  const wooCommerce = getImage('woo-commerce.webp');
+  const wordpress = getImage('wordpress.webp');
+  const zapier = getImage('zapier.webp');
+  const zendesk = getImage('zendesk.webp');
 const LTRSlider = () => {
   const settings = {
     dots: false,

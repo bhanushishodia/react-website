@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';  
-import downloadEbookImage from '../../assets/images/download-ebook.png';
+import { getImage } from '../../utils/getImage'; // Correct path to utility
+// Fetching images dynamically using getImage function
+const downloadEbookImage = getImage('download-ebook.png');
 const DownloadEbookSection = ({ title, description, modalTarget }) => {
   return (
     <section>                               

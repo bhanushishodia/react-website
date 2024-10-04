@@ -4,8 +4,12 @@ import { Helmet } from 'react-helmet';
 import Breadcrumb from '../components/common/Breadcrumb';
 import ScrollToTopButton from "../components/common/ScrollToTopButton";
 import WhatsAppWidget from "../components/common/WhatsAppWidget";
-import welcomeBackground from '../assets/images/inner5_back.png';
-import welcomeImage from '../assets/images/integration.webp';
+import { getImage } from '../utils/getImage'; // Adjust the path as needed
+
+// Fetching images dynamically using the getImage function
+const welcomeBackground = getImage('inner5_back.png');
+const welcomeImage = getImage('integration.webp');
+
 
 const WhatsAppTemplateMessages = () => {
   return (

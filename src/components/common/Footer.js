@@ -1,14 +1,16 @@
 import React from "react";
 import "./Footer.css";
-import facebook from "../../assets/images/fb.png";
-import instagram from "../../assets/images/insta.jpg";
-import linkedin from "../../assets/images/linkdin.png";
-import youtube from "../../assets/images/youtube.webp";
-import logo from "../../assets/images/logo.webp";
-import bestCustomerSupport from "../../assets/images/best-customer-support-2024.png";
-import highestRated from "../../assets/images/highest-rated-winter-2024.png";
+import { getImage } from '../../utils/getImage';  // Correct path to utility
+const facebook = getImage('fb.png');
+const instagram = getImage('insta.jpg');
+const linkedin = getImage('linkdin.png');
+const youtube = getImage('youtube.webp');
+const logo = getImage('logo.webp');
+const bestCustomerSupport = getImage('best-customer-support-2024.png');
+const highestRated = getImage('highest-rated-winter-2024.png');
 
 function Footer() {
+
   return (
     <footer className="style-11">
       <div className="container">

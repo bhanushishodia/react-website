@@ -1,15 +1,18 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import InnerHeader from '../components/common/InnerHeader';
-
-import broadcastImg from '../assets/images/broadcast-campaign.webp'; // Adjust the path based on your folder structure
-import validateImg from '../assets/images/validate-and-review-contacts.webp';
-import reviewImg from '../assets/images/review-and-submit.webp';
-import monitorImg from '../assets/images/monitor-and-optimize.webp';
-
 import './knowledgecenter.css'; // Import the CSS file
 import ScrollToTopButton from "../components/common/ScrollToTopButton";
 import WhatsAppWidget from "../components/common/WhatsAppWidget";
+import { getImage } from '../utils/getImage'; // Adjust the path as needed
+
+// Fetching images dynamically using the getImage function
+const broadcastImg = getImage('broadcast-campaign.webp');
+const validateImg = getImage('validate-and-review-contacts.webp');
+const reviewImg = getImage('review-and-submit.webp');
+const monitorImg = getImage('monitor-and-optimize.webp');
+
+
 const HowToLaunchFirstCampaign = () => {
   return (
     <>

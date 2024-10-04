@@ -1,11 +1,12 @@
 import React from 'react';
 import ScrollToTopButton from '../../components/common/ScrollToTopButton';
 import WhatsAppWidget from '../../components/common/WhatsAppWidget';
-import whatsappBusinessApiImage from '../../assets/images/blog/whatsapp-business-api-for-government.webp';
-import whatsappFeaturesImage from '../../assets/images/blog/whatsapp-business-api-features.webp';
-import benefitsImage from '../../assets/images/blog/benefits-of-whatsapp-business-api-for-government-sector.webp';
 import { Helmet } from 'react-helmet';
-
+import { getImage } from '../../utils/getImage'; // Correct path to utility
+// Fetching images dynamically using getImage function
+const whatsappBusinessApiImage = getImage('whatsapp-business-api-for-government.webp');
+const whatsappFeaturesImage = getImage('whatsapp-business-api-features.webp');
+const benefitsImage = getImage('benefits-of-whatsapp-business-api-for-government-sector.webp');
 const WhatsAppBusinessApiGovernment = () => {
   return ( 
     <>

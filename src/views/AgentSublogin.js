@@ -4,9 +4,11 @@ import Breadcrumb from '../components/common/Breadcrumb';
 import { Helmet } from 'react-helmet';
 import ScrollToTopButton from "../components/common/ScrollToTopButton";
 import WhatsAppWidget from "../components/common/WhatsAppWidget";
-import welcomeBackground from '../assets/images/inner5_back.png';
-import welcomeImage from '../assets/images/integration.webp';
-import articleImage4 from '../assets/images/article-4.png';
+import { getImage } from '../utils/getImage'; // Adjust the path to your utility
+// Fetching images dynamically using the getImage function
+const welcomeBackground = getImage('inner5_back.png'); // Adjust path if necessary
+const welcomeImage = getImage('integration.webp'); // Adjust path if necessary
+const articleImage4 = getImage('article-4.png'); // Adjust path if necessary
 const AgentSublogin = () => {
   return (
     <div>

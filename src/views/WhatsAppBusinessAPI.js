@@ -3,14 +3,20 @@ import React from 'react';
 import './Channels.css'; // Import any specific CSS if needed
 import ScrollToTopButton from "../components/common/ScrollToTopButton";
 import WhatsAppWidget from "../components/common/WhatsAppWidget";
-import metaLogo from "../assets/images/meta-logo.png"; // Import the image
-import whatsappBusinessImage from '../assets/images/grow-your-business-with-whatsapp.webp';
 import LogoCarousel from "../components/common/LogoCarousel";
-import marketingImage from '../assets/images/whatsapp-marketing-2.webp';
-import ChooseUsSection from '../components/common/ChooseUsSection';
-import downloadEbookImg from '../assets/images/download-ebook.png'; // 
-import whatsappBusinessApiImg from '../assets/images/cta/whatsapp-business-api.webp'; 
 import { Helmet } from 'react-helmet';
+import ChooseUsSection from '../components/common/ChooseUsSection';
+
+import { getImage } from '../utils/getImage'; // Adjust the path as needed
+
+// Fetching images dynamically using the getImage function
+const metaLogo = getImage('meta-logo.png'); // Import the image
+const whatsappBusinessImage = getImage('grow-your-business-with-whatsapp.webp');
+const marketingImage = getImage('whatsapp-marketing-2.webp');
+const downloadEbookImg = getImage('download-ebook.png');
+const whatsappBusinessApiImg = getImage('cta/whatsapp-business-api.webp');
+
+
 const WhatsAppBusinessAPI = () => {
   return (
     <>

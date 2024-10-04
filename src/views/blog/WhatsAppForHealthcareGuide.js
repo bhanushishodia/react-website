@@ -1,13 +1,16 @@
 import React from 'react';
 import ScrollToTopButton from '../../components/common/ScrollToTopButton';
-import WhatsAppWidget from '../../components/common/WhatsAppWidget';
-import healthcareImage from '../../assets/images/blog/whatsapp-for-healthcare.webp'; // Adjust the path if necessary
-import bookYourImage from '../../assets/images/blog/book-your.webp';
-import instantPatientEngagementImage from '../../assets/images/blog/instant-patient-engagement.webp'; // Update the path
-import appointmentRemindersImage from '../../assets/images/blog/appointment-reminders.webp';
-import getWhatsAppBusinessImage from '../../assets/images/blog/get-whatsapp-business.webp'; // Update the path
-import theSolutionIsWhatsAppImage from '../../assets/images/blog/the-solution-is-whatsapp.webp';
-import { Helmet } from 'react-helmet';
+import WhatsAppWidget from '../../components/common/WhatsAppWidget'; 
+import { Helmet } from 'react-helmet'; 
+import { getImage } from '../../utils/getImage'; // Correct path to utility
+// Fetching images dynamically using getImage function
+const healthcareImage = getImage('whatsapp-for-healthcare.webp');
+const bookYourImage = getImage('book-your.webp');
+const instantPatientEngagementImage = getImage('instant-patient-engagement.webp');
+const appointmentRemindersImage = getImage('appointment-reminders.webp');
+const getWhatsAppBusinessImage = getImage('get-whatsapp-business.webp');
+const theSolutionIsWhatsAppImage = getImage('the-solution-is-whatsapp.webp');
+
 const WhatsAppForHealthcareGuide = () => {
   return (
     <div>

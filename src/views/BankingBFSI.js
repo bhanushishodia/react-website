@@ -6,19 +6,22 @@ import LTRSlider from "../components/common/LTRSlider";
 import RTLSlider from "../components/common/RTLSlider";
 import FAQSection from "../components/common/FAQSection";
 import LogoCarousel from "../components/common/LogoCarousel";
-import DownloadEbookSection from "../components/common/DownloadEbookSection"; // Import the new component
-import downloadEbookImage from "../assets/images/download-ebook.png"; // Adjust path as needed
-import whatsappScannerImg from "../assets/images/wa.link_3dzezc.png";
 import "./EcommerceRetail.css"; // Import your CSS file if needed
 import { Helmet } from 'react-helmet';
-import educationImg from "../assets/images/transform-education-with-whatsapp.webp"; // Adjust the path if necessary
-import defaultImage from "../assets/images/empowering-fin-tech.webp";
-import hoverImage1 from "../assets/images/empowering-fin-tech.webp";
-import hoverImage2 from "../assets/images/convey-transactional-notifications.webp";
-import OnboardingMadeImage from "../assets/images/onboarding-made-easy.webp";
-import reduceCustomerImage from "../assets/images/reduce-customer-drop-offs.webp";
 import pdfFile from '../assets/pdf/Banking-Usecase-Updated.pdf';
+import DownloadEbookSection from "../components/common/DownloadEbookSection"; // Import the new component
+import { getImage } from '../utils/getImage'; // Adjust the path to your utility
 
+// Fetching images dynamically using the getImage function
+const downloadEbookImage = getImage('download-ebook.png'); // Adjust path as needed
+const whatsappScannerImg = getImage('wa.link_3dzezc.png'); // Adjust path as needed
+
+const educationImg = getImage('transform-education-with-whatsapp.webp'); // Adjust the path if necessary
+const defaultImage = getImage('empowering-fin-tech.webp'); // Adjust the path if necessary
+const hoverImage1 = getImage('empowering-fin-tech.webp'); // Adjust the path if necessary
+const hoverImage2 = getImage('convey-transactional-notifications.webp'); // Adjust the path if necessary
+const OnboardingMadeImage = getImage('onboarding-made-easy.webp'); // Adjust the path if necessary
+const reduceCustomerImage = getImage('reduce-customer-drop-offs.webp'); // Adjust the path if necessary
 const BankingBFSI = () => {
   const submitFormAndOpenPDF = (event) => {
       // Prevent the default form submission behavior

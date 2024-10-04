@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import logo from "../../assets/images/logo.webp";
 import "./CustomHeader.css"; // Ensure this file exists
-
+import { getImage } from '../../utils/getImage'; // Correct path to utility
+const logo = getImage('logo.webp');
 function CustomHeader() {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [openSubMenu, setOpenSubMenu] = useState(null); // State to track the open submenu

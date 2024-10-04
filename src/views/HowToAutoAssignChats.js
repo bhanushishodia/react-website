@@ -1,12 +1,14 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import InnerHeader from '../components/common/InnerHeader';
-
-import autoAssignSectionImage from '../assets/images/auto-assign-section.webp';
-import clickOnAddAutoAssignImage from '../assets/images/click-on-add-auto-assign.webp';
 import './knowledgecenter.css'; // Import the CSS file
 import ScrollToTopButton from "../components/common/ScrollToTopButton";
 import WhatsAppWidget from "../components/common/WhatsAppWidget";
+import { getImage } from '../utils/getImage'; // Adjust the path as needed
+
+// Fetching images dynamically using the getImage function
+const autoAssignSectionImage = getImage('auto-assign-section.webp');
+const clickOnAddAutoAssignImage = getImage('click-on-add-auto-assign.webp');
 const AutoAssignChats = () => {
   return (
     <>

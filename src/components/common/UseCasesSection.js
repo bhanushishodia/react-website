@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import './UseCasesSection.css'; // Optional: For additional styles if needed
-
-// Import images
-import promoCampaignsImg from '../../assets/images/promotional-campaigns.webp';
-import upsellingImg from '../../assets/images/upselling-cross-selling.webp';
-import newslettersImg from '../../assets/images/Whatspp-newsletters.webp';
+import { getImage } from '../../utils/getImage';  // Correct path to utility
+// Fetching images dynamically using getImage function
+  const promoCampaignsImg = getImage('promotional-campaigns.webp');
+  const upsellingImg = getImage('upselling-cross-selling.webp');
+  const newslettersImg = getImage('Whatspp-newsletters.webp');
 
 const UseCasesSection = () => {
-    const [activeTab, setActiveTab] = useState(1);
+   const [activeTab, setActiveTab] = useState(1);
   
     const tabContent = [
       {

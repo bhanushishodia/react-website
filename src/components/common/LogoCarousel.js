@@ -1,17 +1,21 @@
 import React from 'react';
 import Slider from 'react-slick';
 import './LogoCarousel.css'; // Adjust the path as per your project structure
-import img1 from "../../assets/images/1.png";
-import img2 from "../../assets/images/2.png";
-import img3 from "../../assets/images/3.png";
-import img4 from "../../assets/images/4.png";
-import img5 from "../../assets/images/5.png";
-import img6 from "../../assets/images/6.png";
-import img7 from "../../assets/images/7.png";
-import img8 from "../../assets/images/8.png";
-import img9 from "../../assets/images/9.png";
-import img10 from "../../assets/images/10.png";
+import { getImage } from '../../utils/getImage';  // Correct path to utility
 
+// Fetching images dynamically using getImage function
+const img1 = getImage('1.png');
+const img2 = getImage('2.png');
+const img3 = getImage('3.png');
+const img4 = getImage('4.png');
+const img5 = getImage('5.png');
+const img6 = getImage('6.png');
+const img7 = getImage('7.png');
+const img8 = getImage('8.png');
+const img9 = getImage('9.png');
+const img10 = getImage('10.png');
+
+// Creating the logos array
 const logos = [
   img1,
   img2,

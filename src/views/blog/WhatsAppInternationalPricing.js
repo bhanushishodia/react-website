@@ -1,8 +1,10 @@
 import React from 'react';
 import ScrollToTopButton from '../../components/common/ScrollToTopButton';
 import WhatsAppWidget from '../../components/common/WhatsAppWidget';
-import blogImage from '../../assets/images/blog/whatsapp-authentication-rates.webp'; // 
 import { Helmet } from 'react-helmet';
+import { getImage } from '../../utils/getImage'; // Correct path to utility
+// Fetching images dynamically using getImage function
+const blogImage = getImage('whatsapp-authentication-rates.webp');
 const WhatsAppInternationalPricing = () => {
   return (
     <>

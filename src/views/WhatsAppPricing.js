@@ -4,20 +4,23 @@ import "./whatsapppricing.css"; // Optional: Add custom CSS file for styling
 import ScrollToTopButton from "../components/common/ScrollToTopButton";
 import WhatsAppWidget from "../components/common/WhatsAppWidget";
 import CountUp from "react-countup";
+import { getImage } from '../utils/getImage'; // Adjust the path as needed
 
-import sebiLogo from '../assets/images/sebi.png';
-import harmanhouseLogo from '../assets/images/harmanhouse.png';
-import gulfUniversityLogo from '../assets/images/gulf-university.png';
-import orangeLogo from '../assets/images/orange.png';
-import suzukiLogo from '../assets/images/suzuki.png';
-import fullmarksLogo from '../assets/images/fullmarks.png';
-import checkIcon from "../assets/images/Check-icon.svg";
-import instantSetup from '../assets/images/icons/instant-whatsapp-setup.png';
-import noHiddenCharges from '../assets/images/icons/no-extra-hidden-charges.png';
-import customerSupport from '../assets/images/icons/24-7-customer-support.png';
-import whatsappMarketing from '../assets/images/whatsapp-marketing-home-page.webp';
-import chatbotImage from '../assets/images/create-whatsapp-chatbots-easily.webp';
-import liveAgentImage from '../assets/images/supercharge-your-teams-productivity.webp';
+// Fetching images dynamically using the getImage function
+const sebiLogo = getImage('sebi.png');
+const harmanhouseLogo = getImage('harmanhouse.png');
+const gulfUniversityLogo = getImage('gulf-university.png');
+const orangeLogo = getImage('orange.png');
+const suzukiLogo = getImage('suzuki.png');
+const fullmarksLogo = getImage('fullmarks.png');
+const checkIcon = getImage('Check-icon.svg');
+const instantSetup = getImage('icons/instant-whatsapp-setup.png');
+const noHiddenCharges = getImage('icons/no-extra-hidden-charges.png');
+const customerSupport = getImage('icons/24-7-customer-support.png');
+const whatsappMarketing = getImage('whatsapp-marketing-home-page.webp');
+const chatbotImage = getImage('create-whatsapp-chatbots-easily.webp');
+const liveAgentImage = getImage('supercharge-your-teams-productivity.webp');
+
 const WhatsAppPricing = () => {
   const showContent = (contentId) => {
     document.getElementById("monthly-content").style.display =

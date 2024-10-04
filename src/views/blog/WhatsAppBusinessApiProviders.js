@@ -1,13 +1,14 @@
 import React from 'react';
 import ScrollToTopButton from '../../components/common/ScrollToTopButton';
 import WhatsAppWidget from '../../components/common/WhatsAppWidget';
-import whatsappImage from '../../assets/images/blog/whatsapp-business-api-providers-2024.webp'; // Adjust the path as necessary
-import watiImage from '../../assets/images/blog/wati.webp'; // Adjust the path as necessary
-import interaktImg from '../../assets/images/blog/interakt.webp'; // Adjust the path as necessary
-import anantyaImg from '../../assets/images/blog/whatsapp-business-api-provider-anantya-ai.webp';
-import ctaImg from '../../assets/images/blog/cta.webp';
 import { Helmet } from 'react-helmet';
-
+import { getImage } from '../../utils/getImage'; // Correct path to utility
+// Fetching images dynamically using getImage function
+const whatsappImage = getImage('whatsapp-business-api-providers-2024.webp');
+const watiImage = getImage('wati.webp');
+const interaktImg = getImage('interakt.webp');
+const anantyaImg = getImage('whatsapp-business-api-provider-anantya-ai.webp');
+const ctaImg = getImage('cta.webp');
 const WhatsAppBusinessApiProviders = () => {
   return (
     <>

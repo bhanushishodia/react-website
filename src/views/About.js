@@ -3,9 +3,11 @@ import "./about.css"; // Optional: Add custom CSS file for styling
 import ScrollToTopButton from "../components/common/ScrollToTopButton";
 import WhatsAppWidget from "../components/common/WhatsAppWidget";
 import MapVideo from "../assets/videos/Map-video.mp4";
-import banerImage from "../assets/images/About-Us-Graphic.webp"; // Adjust the path as necessary
-import YashikaImage from "../assets/images/yashika-Maam.webp"; // Adjust the path as necessary
 import { Helmet } from 'react-helmet';
+import { getImage } from '../utils/getImage'; // Adjust the path to your utility
+// Fetching the images dynamically using the getImage function
+const banerImage = getImage('About-Us-Graphic.webp'); // Adjust path if necessary
+const YashikaImage = getImage('yashika-Maam.webp'); // Adjust path if necessary
 const About = () => {
   return (
     <>

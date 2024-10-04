@@ -1,18 +1,21 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import "./WhatsappMarketing.css"; // Import a CSS file if you have specific styles
-import whatsappMarketing from "../assets/images/whatsapp-marketing-home-page.webp"; // Adjust path as needed
-import broadcastImage from "../assets/images/broadcasting-promotional-messages.webp";
-import clickToWhatsAppImage from "../assets/images/run-click-to-whatsApp-ads.webp"; // Adjust the path as needed
+import pdfFile from '../assets/pdf/Usecase-WhatsApp-Marketing.pdf';
+import CountUp from "react-countup";
 import ScrollToTopButton from "../components/common/ScrollToTopButton";
 import WhatsAppWidget from "../components/common/WhatsAppWidget";
-import CountUp from "react-countup";
 import DownloadEbookSection from "../components/common/DownloadEbookSection"; // Import the new component
-import downloadEbookImage from "../assets/images/download-ebook.png"; // Adjust path as needed
-import automateNotificationsImage from "../assets/images/automate-notifications-&-reminders.webp"; // Adjust path as needed
-import callToActionImage from "../assets/images/cta/whatsapp-marketing.webp"; // Adjust path as needed
-import redirectTrafficImage from "../assets/images/redirect-website-traffic-on-whatsapp.webp"; // Adjust path as needed
-import pdfFile from '../assets/pdf/Usecase-WhatsApp-Marketing.pdf';
+import "./WhatsappMarketing.css"; // Import a CSS file if you have specific styles
+import { getImage } from '../utils/getImage'; // Adjust the path as needed
+
+// Fetching images dynamically using the getImage function
+const whatsappMarketing = getImage('whatsapp-marketing-home-page.webp'); // Adjust path as needed
+const broadcastImage = getImage('broadcasting-promotional-messages.webp');
+const clickToWhatsAppImage = getImage('run-click-to-whatsApp-ads.webp'); // Adjust the path as needed
+const downloadEbookImage = getImage('download-ebook.png'); // Adjust path as needed
+const automateNotificationsImage = getImage('automate-notifications-&-reminders.webp'); // Adjust path as needed
+const callToActionImage = getImage('cta/whatsapp-marketing.webp'); // Adjust path as needed
+const redirectTrafficImage = getImage('redirect-website-traffic-on-whatsapp.webp'); // Adjust path as needed
 
 const WhatsappMarketing = () => {
   const submitFormAndOpenPDF = (event) => {

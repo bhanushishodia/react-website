@@ -6,18 +6,23 @@ import WhatsAppWidget from "../components/common/WhatsAppWidget";
 import LTRSlider from "../components/common/LTRSlider";
 import RTLSlider from "../components/common/RTLSlider";
 import FAQSection from "../components/common/FAQSection";
+import pdfFile from '../assets/pdf/Travel-Hospitality-Usecase-Updated.pdf';
+import "./EcommerceRetail.css"; // Import your CSS file if needed
 import LogoCarousel from "../components/common/LogoCarousel";
 import DownloadEbookSection from "../components/common/DownloadEbookSection"; // Import the new component
-import downloadEbookImage from "../assets/images/download-ebook.png"; // Adjust path as needed
-import whatsappScannerImg from '../assets/images/wa.link_3dzezc.png';
-import "./EcommerceRetail.css"; // Import your CSS file if needed
-import travelAgencyImg from '../assets/images/get-more-leads-for-your-travel.webp'; // Adjust the path if necessary
-import defaultImage from "../assets/images/share-exclusive-travel-deals-and-offers.webp";
-import hoverImage1 from "../assets/images/share-exclusive-travel-deals-and-offers.webp";
-import hoverImage2 from "../assets/images/launch-a-ai-chatbot.webp";
-import offerDealImage from "../assets/images/promote-exclusive-travel.webp";
-import sendProactiveImage from "../assets/images/send-proactive-updates-for-travel-booking.webp";
-import pdfFile from '../assets/pdf/Travel-Hospitality-Usecase-Updated.pdf';
+import { getImage } from '../utils/getImage'; // Adjust the path as needed
+
+// Fetching images dynamically using the getImage function
+const downloadEbookImage = getImage('download-ebook.png'); // Adjust path as needed
+const whatsappScannerImg = getImage('wa.link_3dzezc.png');
+const travelAgencyImg = getImage('get-more-leads-for-your-travel.webp'); // Adjust the path if necessary
+const defaultImage = getImage('share-exclusive-travel-deals-and-offers.webp');
+const hoverImage1 = getImage('share-exclusive-travel-deals-and-offers.webp');
+const hoverImage2 = getImage('launch-a-ai-chatbot.webp');
+const offerDealImage = getImage('promote-exclusive-travel.webp');
+const sendProactiveImage = getImage('send-proactive-updates-for-travel-booking.webp');
+
+
 
 const TravelHospitality = () => {
 

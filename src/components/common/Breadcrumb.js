@@ -1,8 +1,10 @@
 import React from 'react';
 import './Breadcrumb.css'; // Ensure the CSS file is in the same directory
-// Import default images if needed
-import defaultBackground from '../../assets/images/inner5_back.png';
-import defaultSideImage from '../../assets/images/integration.webp';
+import { getImage } from '../../utils/getImage'; // Correct path to utility
+
+// Fetching default images dynamically using getImage function
+const defaultBackground = getImage('inner5_back.png');
+const defaultSideImage = getImage('integration.webp');
 
 const Breadcrumb = ({ links, backgroundImage = defaultBackground, title, sideImage = defaultSideImage }) => {
   return (

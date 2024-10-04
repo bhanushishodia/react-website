@@ -4,15 +4,19 @@ import "./SMSFallback.css";
 import ScrollToTopButton from "../components/common/ScrollToTopButton";
 import WhatsAppWidget from "../components/common/WhatsAppWidget";
 import CountUp from "react-countup";
-import whatsappFallbackImage from "../assets/images/whatsapp-fallback-sms-home-page.webp"; // Import your image
-import forgeReliableConnectionsImage from "../assets/images/forge-reliable-connections.webp"; // Import your image
-import whyImplementFallbackSMSImage from "../assets/images/why-implement-whatsapp-fallback-sms.webp"; // Import your image
-import maximizeMessageDeliveryImg from "../assets/images/icons/maxumize-message-delivery.png";
-import optimizeCostsAndResourcesImg from "../assets/images/icons/optimize-costs-and.png";
-import ensureReliableConnectionImg from "../assets/images/icons/AnAensure-reliable.png";
-import completeReachImg from "../assets/images/icons/complete-reach.png";
 import { Helmet } from 'react-helmet';
+import { getImage } from "../utils/getImage"; // Adjust the path as needed
+  // Using getImage to dynamically import images
+  const whatsappFallbackImage = getImage("whatsapp-fallback-sms-home-page.webp");
+  const forgeReliableConnectionsImage = getImage("forge-reliable-connections.webp");
+  const whyImplementFallbackSMSImage = getImage("why-implement-whatsapp-fallback-sms.webp");
+  const maximizeMessageDeliveryImg = getImage("icons/maxumize-message-delivery.png");
+  const optimizeCostsAndResourcesImg = getImage("icons/optimize-costs-and.png");
+  const ensureReliableConnectionImg = getImage("icons/AnAensure-reliable.png");
+  const completeReachImg = getImage("icons/complete-reach.png");
+
 const SMSFallback = () => {
+ 
   return (
     <div>
       <div>

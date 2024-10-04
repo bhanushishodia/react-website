@@ -1,10 +1,12 @@
 import React from "react";
 import "./StickyBar.css"; // Assuming you have a CSS file for styles
-import facebook from "../../assets/images/fb.png";
-import instagram from "../../assets/images/insta.jpg";
-import linkedin from "../../assets/images/linkdin.png";
-import youtube from "../../assets/images/youtube.webp";
-const ShareSection = () => {
+import { getImage } from '../../utils/getImage';  // Correct path to utility
+  // Fetching images dynamically using getImage function
+  const facebook = getImage('fb.png');
+  const instagram = getImage('insta.jpg');
+  const linkedin = getImage('linkdin.png');
+  const youtube = getImage('youtube.webp');
+  const ShareSection = () => {
   return (
     <div className="UTQd8b d-none d-lg-block">
       <div className="arrow"></div>

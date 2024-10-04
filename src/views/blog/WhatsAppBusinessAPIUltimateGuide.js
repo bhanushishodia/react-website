@@ -1,11 +1,12 @@
 import React from 'react';
 import ScrollToTopButton from '../../components/common/ScrollToTopButton';
 import WhatsAppWidget from '../../components/common/WhatsAppWidget';
-import guideImage from '../../assets/images/blog/whatsapp-business-api-your-ultimate-guide.jpg'; // Adjust the path as necessary
 import { Helmet } from 'react-helmet';
+import { getImage } from '../../utils/getImage'; // Correct path to utility
+// Fetching images dynamically using getImage function
+const guideImage = getImage('whatsapp-business-api-your-ultimate-guide.jpg');
 const WhatsAppBroadcastingUltimateGuide = () => {
   return (
-  
     <>
       <Helmet>
         {/* Meta Tags */}

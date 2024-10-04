@@ -1,12 +1,15 @@
 import React from "react";
 import { Helmet } from 'react-helmet';
 import InnerHeader from '../components/common/InnerHeader';
-import articleImg1 from '../assets/images/article-1.png'; // Adjust the path based on your folder structure
-import articleImg2 from '../assets/images/article-2.png';
-import articleImg3 from '../assets/images/article-3.png';
-import articleImg4 from '../assets/images/article-4.png';
 import ScrollToTopButton from "../components/common/ScrollToTopButton";
 import WhatsAppWidget from "../components/common/WhatsAppWidget";
+import { getImage } from '../utils/getImage'; // Adjust the path as needed
+
+// Fetching images dynamically using the getImage function
+const articleImg1 = getImage('article-1.png');
+const articleImg2 = getImage('article-2.png');
+const articleImg3 = getImage('article-3.png');
+const articleImg4 = getImage('article-4.png');
 const HowToSetupWelcomeMessage = () => {
   return (
     <>

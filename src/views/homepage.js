@@ -13,12 +13,15 @@ import WhatsAppWidget from "../components/common/WhatsAppWidget";
 import StickyBar from "../components/common/StickyBar";
 
 import video6 from "../assets/videos/Omnichannel live chat diagram.webm";
-import homePageGraphics from "../assets/images/anantya-home-page.webp"; // Import the image
-import metaLogo from "../assets/images/meta-logo.png"; // Import the image
-import ctaHome from "../assets/images/cta/home-pagecta.jpg"; // Import the image
-import icon1 from "../assets/images/icons/24_7-support.png"; // Import the image
-import icon2 from "../assets/images/icons/Reliable-service.png"; // Import the image
-import icon3 from "../assets/images/icons/fortified-security.png"; // Import the image
+import { getImage } from '../utils/getImage'; // Adjust the path to your utility function
+
+// Fetching images dynamically using the getImage function
+const homePageGraphics = getImage('anantya-home-page.webp'); // Import the image
+const metaLogo = getImage('meta-logo.png'); // Import the image
+const ctaHome = getImage('cta/home-pagecta.jpg'); // Import the image
+const icon1 = getImage('icons/24_7-support.png'); // Import the image
+const icon2 = getImage('icons/Reliable-service.png'); // Import the image
+const icon3 = getImage('icons/fortified-security.png'); // Import the image
 
 const Homepage = () => {
   const videoRef = useRef(null);

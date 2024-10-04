@@ -2,27 +2,28 @@ import React from 'react';
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 import './BlogSlider.css'; // Add necessary styles for Swiper
-// Import images
-import img1 from '../../assets/images/blog/whatsapp-business-app-vs-whatsapp-business-api.webp';
-import img2 from '../../assets/images/blog/5-winning-whatsapp-marketing-strategies.webp';
-import img3 from '../../assets/images/blog/from-vision-to-reality-how-anantya.ai.webp';
-import img4 from '../../assets/images/blog/whatsapp-business-api-in-banking-sector.webp'; // Add new images
-import img5 from '../../assets/images/blog/whatsapp-marketing-direct-communication-with-customers.webp'; // Add new images
-import img6 from '../../assets/images/blog/meta-frequency-capping-update.webp'; // Add new images
-import img7 from '../../assets/images/blog/meta-frequency-capping-update.webp'; // Add new images
-import img8 from '../../assets/images/blog/meta-frequency-capping-update.webp'; // Add new images
-import img9 from '../../assets/images/blog/meta-frequency-capping-update.webp'; // Add new images
-import img10 from '../../assets/images/blog/meta-frequency-capping-update.webp'; // Add new images
-import img11 from '../../assets/images/blog/meta-frequency-capping-update.webp'; // Add new images
-import img12 from '../../assets/images/blog/meta-frequency-capping-update.webp'; // Add new images
-import img13 from '../../assets/images/blog/meta-frequency-capping-update.webp'; // Add new images
-import img14 from '../../assets/images/blog/meta-frequency-capping-update.webp'; // Add new images
-import img15 from '../../assets/images/blog/meta-frequency-capping-update.webp'; // Add new images
-import img16 from '../../assets/images/blog/meta-frequency-capping-update.webp'; // Add new images
-import img17 from '../../assets/images/blog/meta-frequency-capping-update.webp'; // Add new images
-import img18 from '../../assets/images/blog/meta-frequency-capping-update.webp'; // Add new images
-import img19 from '../../assets/images/blog/meta-frequency-capping-update.webp'; // Add new images
-import img20 from '../../assets/images/blog/meta-frequency-capping-update.webp'; // Add new images
+import { getImage } from '../../utils/getImage'; // Adjust the path as needed
+// Blog images using the getImage function
+const img1 = getImage('blog/whatsapp-business-app-vs-whatsapp-business-api.webp');
+const img2 = getImage('blog/5-winning-whatsapp-marketing-strategies.webp');
+const img3 = getImage('blog/from-vision-to-reality-how-anantya.ai.webp');
+const img4 = getImage('blog/whatsapp-business-api-in-banking-sector.webp');
+const img5 = getImage('blog/whatsapp-marketing-direct-communication-with-customers.webp');
+const img6 = getImage('blog/meta-frequency-capping-update.webp');
+const img7 = getImage('blog/meta-frequency-capping-update.webp');
+const img8 = getImage('blog/meta-frequency-capping-update.webp');
+const img9 = getImage('blog/meta-frequency-capping-update.webp');
+const img10 = getImage('blog/meta-frequency-capping-update.webp');
+const img11 = getImage('blog/meta-frequency-capping-update.webp');
+const img12 = getImage('blog/meta-frequency-capping-update.webp');
+const img13 = getImage('blog/meta-frequency-capping-update.webp');
+const img14 = getImage('blog/meta-frequency-capping-update.webp');
+const img15 = getImage('blog/meta-frequency-capping-update.webp');
+const img16 = getImage('blog/meta-frequency-capping-update.webp');
+const img17 = getImage('blog/meta-frequency-capping-update.webp');
+const img18 = getImage('blog/meta-frequency-capping-update.webp');
+const img19 = getImage('blog/meta-frequency-capping-update.webp');
+const img20 = getImage('blog/meta-frequency-capping-update.webp');
 
 const BlogSlider = () => {
   React.useEffect(() => {

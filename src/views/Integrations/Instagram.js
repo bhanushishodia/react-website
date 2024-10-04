@@ -3,8 +3,10 @@ import ScrollToTopButton from "../../components/common/ScrollToTopButton";
 import WhatsAppWidget from "../../components/common/WhatsAppWidget";
 import ClientsSection from '../../components/common/ClientsSection'; // Adjust the path if necessary
 import PopularPosts from '../../components/common/PopularPosts'; 
-import instagramLogo from '../../assets/images/icons/instagram.svg'; // Importing the image
 import { Helmet } from 'react-helmet';
+import { getImage } from '../../utils/getImage'; // Correct path to utility
+// Fetching the Instagram logo dynamically using getImage function
+const instagramLogo = getImage('instagram.svg');
 const Instagram = () => {
   return (
     <div>

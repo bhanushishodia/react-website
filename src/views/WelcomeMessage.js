@@ -4,13 +4,16 @@ import { Helmet } from 'react-helmet';
 import Breadcrumb from '../components/common/Breadcrumb';
 import ScrollToTopButton from "../components/common/ScrollToTopButton";
 import WhatsAppWidget from "../components/common/WhatsAppWidget";
-// Import images
-import welcomeBackground from '../assets/images/inner5_back.png';
-import welcomeImage from '../assets/images/integration.webp';
-import articleImage1 from '../assets/images/article-1.png';
-import articleImage2 from '../assets/images/article-2.png';
-import articleImage3 from '../assets/images/article-3.png';
-import articleImage4 from '../assets/images/article-4.png';
+import { getImage } from '../utils/getImage'; // Adjust the path as needed
+
+// Fetching images dynamically using the getImage function
+const welcomeBackground = getImage('inner5_back.png');
+const welcomeImage = getImage('integration.webp');
+const articleImage1 = getImage('article-1.png');
+const articleImage2 = getImage('article-2.png');
+const articleImage3 = getImage('article-3.png');
+const articleImage4 = getImage('article-4.png');
+
 const WelcomeMessage = () => {
   return (
     <div>

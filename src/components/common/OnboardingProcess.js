@@ -1,17 +1,18 @@
 import React, { useState } from 'react';
 import './OnboardingProcess.css'; // Importing the CSS file
-
 // Importing images
-import sealTheDeal from '../../assets/images/sales-hub/seal-the-deal-and-kickstart-success.webp';
-import hassleFreeOnboarding from '../../assets/images/sales-hub/Hassle-free-client-onboarding.webp';
-import addSubheading from '../../assets/images/sales-hub/Add a subheading.webp';
-import onboardingMeeting from '../../assets/images/sales-hub/onboarding-meeting.webp';
-import unlockSuccess from '../../assets/images/sales-hub/unlock-success-with-account.webp';
-import readySetLaunch from '../../assets/images/sales-hub/tailored-account-training-and-setup.webp';
-import ongoingSupport from '../../assets/images/sales-hub/Smooth-Sailing-ahead.webp';
+import { getImage } from '../../utils/getImage';  // Correct path to utility
+   // Fetching images dynamically using getImage function
+   const sealTheDeal = getImage('sales-hub/seal-the-deal-and-kickstart-success.webp');
+   const hassleFreeOnboarding = getImage('sales-hub/Hassle-free-client-onboarding.webp');
+   const addSubheading = getImage('sales-hub/Add a subheading.webp');
+   const onboardingMeeting = getImage('sales-hub/onboarding-meeting.webp');
+   const unlockSuccess = getImage('sales-hub/unlock-success-with-account.webp');
+   const readySetLaunch = getImage('sales-hub/tailored-account-training-and-setup.webp');
+   const ongoingSupport = getImage('sales-hub/Smooth-Sailing-ahead.webp');
 
 const OnboardingProcess = () => {
-    const [selectedOption, setSelectedOption] = useState('option1');
+   const [selectedOption, setSelectedOption] = useState('option1');
 
     const handleOptionChange = (option) => {
         setSelectedOption(option);

@@ -3,8 +3,10 @@ import ScrollToTopButton from "../../components/common/ScrollToTopButton";
 import WhatsAppWidget from "../../components/common/WhatsAppWidget";
 import ClientsSection from '../../components/common/ClientsSection'; // Adjust the path if necessary
 import PopularPosts from '../../components/common/PopularPosts'; 
-import hubspotLogo from '../../assets/images/icons/hubspot.webp'; // Importing the image
 import { Helmet } from 'react-helmet';
+import { getImage } from '../../utils/getImage'; // Correct path to utility
+// Fetching the HubSpot logo dynamically using getImage function
+const hubspotLogo = getImage('hubspot.webp');
 function Hubspot() {
   return (
     <div>

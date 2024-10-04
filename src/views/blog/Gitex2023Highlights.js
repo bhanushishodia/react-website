@@ -1,10 +1,12 @@
 import React from 'react';
 import ScrollToTopButton from '../../components/common/ScrollToTopButton';
 import WhatsAppWidget from '../../components/common/WhatsAppWidget';
-import gitexBlogImage from '../../assets/images/blog/gitexblog.jpeg'; // Adjust the path as necessary
-import gitexImage from '../../assets/images/blog/gitex-2.jpeg'; // Adjust the path as necessary
 import CommentForm from "../../components/common/CommentForm";
 import { Helmet } from 'react-helmet';
+import { getImage } from '../../utils/getImage'; // Correct path to utility
+// Fetching images dynamically using getImage function
+const gitexBlogImage = getImage('gitexblog.jpeg');
+const gitexImage = getImage('gitex-2.jpeg');
 
 const Gitex2023Highlights = () => {
   return (

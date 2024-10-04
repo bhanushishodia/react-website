@@ -1,7 +1,8 @@
 import React from 'react';
 import './InnerHeader.css'; // Adjust the path as per your project structure
-import integrationImg from '../../assets/images/integration.webp'; // Adjust the path according to your project structure
-
+import { getImage } from '../../utils/getImage';  // Correct path to utility
+// Fetching images dynamically using getImage function
+const integrationImg = getImage('integration.webp');
 const InnerHeader = () => {
   return (
     <section

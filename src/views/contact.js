@@ -4,13 +4,16 @@ import ContactForm from "../forms/ContactForm"; // Correct casing used here
 import ScrollToTopButton from "../components/common/ScrollToTopButton";
 import WhatsAppWidget from "../components/common/WhatsAppWidget";
 import "./contact.css";
-import icon4 from "../assets/images/icons/call.png"; // Import the image
-import icon5 from "../assets/images/icons/email.png"; // Import the image
-import icon6 from "../assets/images/icons/location.png"; // Import the image
-import icon7 from "../assets/images/icons/branch.png"; // Import the image
-import supportImage from "../assets/images/customer-support.webp"; // Import the support image
-import salesImage from "../assets/images/Talk-to-sales.webp"; // Import the sales image
 import { Helmet } from 'react-helmet';
+import { getImage } from '../utils/getImage'; // Adjust the path to your utility
+// Fetching images dynamically using the getImage function
+const icon4 = getImage('icons/call.png');
+const icon5 = getImage('icons/email.png');
+const icon6 = getImage('icons/location.png');
+const icon7 = getImage('icons/branch.png');
+const supportImage = getImage('customer-support.webp');
+const salesImage = getImage('Talk-to-sales.webp');
+
 
 const Contact = () => {
   return (

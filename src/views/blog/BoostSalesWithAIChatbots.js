@@ -1,9 +1,11 @@
 import React from 'react';
-import boostSalesImage from '../../assets/images/blog/boost-sales-on-festive-season-with-ai-chatbots.jpeg';
 import ScrollToTopButton from "../../components/common/ScrollToTopButton";
 import WhatsAppWidget from "../../components/common/WhatsAppWidget";
 import CommentForm from "../../components/common/CommentForm";
 import { Helmet } from 'react-helmet';
+import { getImage } from '../../utils/getImage'; // Correct path to utility
+// Fetching the boost sales image dynamically using getImage function
+const boostSalesImage = getImage('boost-sales-on-festive-season-with-ai-chatbots.jpeg');
 const BoostSalesWithAIChatbots = () => {
   return (
     <section>

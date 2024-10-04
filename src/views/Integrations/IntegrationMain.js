@@ -5,18 +5,19 @@ import integrationsImg from "../../assets/images/integrations.webp"; // Correct 
 import ScrollToTopButton from "../../components/common/ScrollToTopButton";
 import WhatsAppWidget from "../../components/common/WhatsAppWidget";
 import { Helmet } from 'react-helmet';
-// Import images
-import instagramIcon from '../../assets/images/Integration/instagram.svg';
-import whatsappIcon from '../../assets/images/Integration/Whatsapp.webp';
-import messengerIcon from '../../assets/images/Integration/Messenger.webp';
-import wechatIcon from '../../assets/images/Integration/Logo-WeChat.svg';
-import lineIcon from '../../assets/images/Integration/Logo-LINE.svg';
-import viberIcon from '../../assets/images/Integration/Logo-Viber.svg';
-import googleBusinessMessagesIcon from '../../assets/images/Integration/Google-Business-Messages.svg';
-import smsIcon from '../../assets/images/Integration/Google-Business-Messages.svg'; // Update if SMS image is different
-import wordpressIcon from '../../assets/images/Integration/wordpress.webp';
-import squarespaceIcon from '../../assets/images/Integration/square.png';
-import shopifyIcon from '../../assets/images/Integration/shopify.webp';
+import { getImage } from '../../utils/getImage'; // Correct path to the utility
+// Fetching images dynamically using the getImage function
+const instagramIcon = getImage('Integration/instagram.svg');
+const whatsappIcon = getImage('Integration/Whatsapp.webp');
+const messengerIcon = getImage('Integration/Messenger.webp');
+const wechatIcon = getImage('Integration/Logo-WeChat.svg');
+const lineIcon = getImage('Integration/Logo-LINE.svg');
+const viberIcon = getImage('Integration/Logo-Viber.svg');
+const googleBusinessMessagesIcon = getImage('Integration/Google-Business-Messages.svg');
+const smsIcon = getImage('Integration/Google-Business-Messages.svg'); // Update if SMS image is different
+const wordpressIcon = getImage('Integration/wordpress.webp');
+const squarespaceIcon = getImage('Integration/square.png');
+const shopifyIcon = getImage('Integration/shopify.webp');
 const IntegrationMain = () => {
     const services = [
         { img: instagramIcon, title: 'Instagram', link: 'integrations/instagram', delay: '0' },

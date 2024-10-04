@@ -36,16 +36,23 @@
   background: #fff;
   border-radius: 12px;
   cursor: pointer;
-  padding: 16px;
-
+  padding: 16px 10px!important;
   box-shadow: 0 -1px 14px #27497d0f;
   width: 100%;
   transition: .3s;
   border: none;
+    overflow: hidden; /* Ensures content stays inside the card */
+  text-align: center; /* Center aligns the text */
 }
-
+.sales-hub .card-body {
+  padding: 10px;
+}
 .sales-hub .card:hover {
   transform: scale(1.05);
+}
+.break-text {
+  word-break: break-all; /* Allows breaking words at any character */
+  white-space: normal;   /* Allows the text to wrap */
 }
 
 .sales-hub .card h6 {

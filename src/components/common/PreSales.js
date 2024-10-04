@@ -1,10 +1,14 @@
 import React, { useEffect, useState } from "react";
 import "./PreSales.css";
-import image1 from "../../assets/images/sales-hub/engage-with-confidence.webp";
-import image2 from "../../assets/images/sales-hub/Hassle-free-client-onboarding.webp";
-import image3 from "../../assets/images/sales-hub/Add a subheading.webp";
-import image4 from "../../assets/images/sales-hub/master-negotiations-with-ease.webp";
-import image5 from "../../assets/images/sales-hub/confirmation-let's-make-it-official.webp";
+import { getImage } from "../../utils/getImage";
+
+// Use the getImage function to dynamically get the images
+const image1 = getImage("sales-hub/engage-with-confidence.webp");
+const image2 = getImage("sales-hub/Hassle-free-client-onboarding.webp");
+const image3 = getImage("sales-hub/Add a subheading.webp");
+const image4 = getImage("sales-hub/master-negotiations-with-ease.webp");
+const image5 = getImage("sales-hub/confirmation-let's-make-it-official.webp");
+
 
 const PreSales = () => {
   const [progress, setProgress] = useState(0);

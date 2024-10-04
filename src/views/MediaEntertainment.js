@@ -7,17 +7,22 @@ import LTRSlider from "../components/common/LTRSlider";
 import RTLSlider from "../components/common/RTLSlider";
 import FAQSection from "../components/common/FAQSection";
 import LogoCarousel from "../components/common/LogoCarousel";
-import DownloadEbookSection from "../components/common/DownloadEbookSection"; // Import the new component
-import downloadEbookImage from "../assets/images/download-ebook.png"; // Adjust path as needed
-import whatsappScannerImg from "../assets/images/wa.link_3dzezc.png";
 import "./EcommerceRetail.css"; // Import your CSS file if needed
-import transformingEngagementImg from "../assets/images/transforming-engagement.webp"; // Adjust the path if necessary
-import defaultImage from "../assets/images/drive-targeted-ad-campaigns.webp";
-import hoverImage1 from "../assets/images/drive-targeted-ad-campaigns.webp";
-import hoverImage2 from "../assets/images/marketing-&-promotions.webp";
-import easySubscriptionImage from "../assets/images/easy-subscription-management.webp";
-import eventUpdatesImage from "../assets/images/event-updates-and-reminders.webp";
 import pdfFile from "../assets/pdf/Media-Entertainment-Usecase.pdf";
+import DownloadEbookSection from "../components/common/DownloadEbookSection"; // Import the new component
+import { getImage } from '../utils/getImage'; // Adjust the path as needed
+
+// Fetching images dynamically using the getImage function
+const downloadEbookImage = getImage('download-ebook.png'); // Adjust path as needed
+const whatsappScannerImg = getImage('wa.link_3dzezc.png');
+
+const transformingEngagementImg = getImage('transforming-engagement.webp'); // Adjust the path if necessary
+const defaultImage = getImage('drive-targeted-ad-campaigns.webp');
+const hoverImage1 = getImage('drive-targeted-ad-campaigns.webp');
+const hoverImage2 = getImage('marketing-&-promotions.webp');
+const easySubscriptionImage = getImage('easy-subscription-management.webp');
+const eventUpdatesImage = getImage('event-updates-and-reminders.webp');
+
 
 const MediaEntertainment = () => {
   const submitFormAndOpenPDF = (event) => {

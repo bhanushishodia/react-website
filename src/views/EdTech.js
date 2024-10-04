@@ -7,18 +7,23 @@ import LTRSlider from "../components/common/LTRSlider";
 import RTLSlider from "../components/common/RTLSlider";
 import FAQSection from "../components/common/FAQSection";
 import LogoCarousel from "../components/common/LogoCarousel";
-import DownloadEbookSection from "../components/common/DownloadEbookSection"; // Import the new component
-import downloadEbookImage from "../assets/images/download-ebook.png"; // Adjust path as needed
-import whatsappScannerImg from "../assets/images/wa.link_3dzezc.png";
-import "./EcommerceRetail.css"; // Import your CSS file if needed
-import educationImg from "../assets/images/transform-education-with-whatsapp.webp"; // Adjust the path if necessary
-import defaultImage from "../assets/images/provide-support-to-students.webp";
-import hoverImage1 from "../assets/images/attract-students-with-exciting.webp";
-import hoverImage2 from "../assets/images/provide-support-to-students.webp";
-import smoothImage from "../assets/images/smooth-admissions-process.webp";
-import keepImage from "../assets/images/keep-students-engaged.webp";
 import { Helmet } from 'react-helmet';
+import "./EcommerceRetail.css"; // Import your CSS file if needed
 import pdfFile from '../assets/pdf/Education-Industry-Usecase-Updated.pdf';
+import DownloadEbookSection from "../components/common/DownloadEbookSection"; // Import the new component
+import { getImage } from '../utils/getImage'; // Adjust the path to your utility function
+
+// Fetching images dynamically using the getImage function
+const downloadEbookImage = getImage('download-ebook.png'); // Adjust path as needed
+const whatsappScannerImg = getImage('wa.link_3dzezc.png');
+
+const educationImg = getImage('transform-education-with-whatsapp.webp'); // Adjust the path if necessary
+const defaultImage = getImage('provide-support-to-students.webp');
+const hoverImage1 = getImage('attract-students-with-exciting.webp');
+const hoverImage2 = getImage('provide-support-to-students.webp');
+const smoothImage = getImage('smooth-admissions-process.webp');
+const keepImage = getImage('keep-students-engaged.webp');
+
 const EdTech = () => {
 const submitFormAndOpenPDF = (event) => {
     // Prevent the default form submission behavior

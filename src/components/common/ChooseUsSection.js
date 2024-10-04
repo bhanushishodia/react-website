@@ -1,17 +1,19 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import sharedTeamInboxIcon from '../../assets/images/icons/shared team inbox.png';
-import bulkBroadcastingIcon from '../../assets/images/icons/bulk broadcasting.png';
-import automatedChatbotIcon from '../../assets/images/icons/automated chatbot.png';
-import campaignAnalyticsIcon from '../../assets/images/icons/campaign analytics.png';
-import productCatalogsIcon from '../../assets/images/icons/product catalogs.png';
-
-import sharedTeamInboxImg from '../../assets/images/shared-team-inbox.webp';
-import bulkBroadcastingImg from '../../assets/images/bulk-broadcasting.webp';
-import automatedChatbotImg from '../../assets/images/automated-chatbot.webp';
-import campaignAnalyticsImg from '../../assets/images/campaign-analytics.webp';
-import productCatalogImg from '../../assets/images/Product-catalog.webp';
+import { getImage } from '../../utils/getImage'; // Correct path to utility
+// Fetching icon images dynamically using getImage function
+const sharedTeamInboxIcon = getImage('shared team inbox.png');
+const bulkBroadcastingIcon = getImage('bulk broadcasting.png');
+const automatedChatbotIcon = getImage('automated chatbot.png');
+const campaignAnalyticsIcon = getImage('campaign analytics.png');
+const productCatalogsIcon = getImage('product catalogs.png');
+// Fetching other images dynamically
+const sharedTeamInboxImg = getImage('shared-team-inbox.webp');
+const bulkBroadcastingImg = getImage('bulk-broadcasting.webp');
+const automatedChatbotImg = getImage('automated-chatbot.webp');
+const campaignAnalyticsImg = getImage('campaign-analytics.webp');
+const productCatalogImg = getImage('Product-catalog.webp');
 const ChooseUsSection = () => {
     return (
         <section className="choose-us style-9 py-5">

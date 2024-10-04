@@ -2,15 +2,18 @@
 import React from 'react';
 import ScrollToTopButton from "../components/common/ScrollToTopButton";
 import WhatsAppWidget from "../components/common/WhatsAppWidget";
-import catalogImage from '../assets/images/showcase-your-products-using-whatsapp-catalog.webp'; // Adjust path if necessary
-import increasedReachIcon from '../assets/images/icons/increased-reach.png'; // Adjust path if necessary
-import realTimeUpdatesIcon from '../assets/images/icons/real-time-updates.png'; // Adjust path if necessary
-import easyShoppingIcon from '../assets/images/icons/easy-shopping.png'; // Adjust path if necessary
-import connectWithAudienceImg from '../assets/images/connect-with-a-wider-audience-on-whatsapp.webp'; // Adjust path if necessary
-import whatsappCatalogImg from '../assets/images/cta/whatsapp-catalog.webp'; // Adjust path if necessary
-import simplifyShoppingImg from '../assets/images/Simplify-shopping-with-whatsapp.webp'; // Adjust path if necessary
-import whatsappImg from '../assets/images/wa.link_3dzezc.png'; // Adjust path if necessary
 import { Helmet } from 'react-helmet';
+import { getImage } from '../utils/getImage'; // Adjust the path to your utility
+// Fetching images dynamically using the getImage function
+const catalogImage = getImage('showcase-your-products-using-whatsapp-catalog.webp');
+const increasedReachIcon = getImage('increased-reach.png');
+const realTimeUpdatesIcon = getImage('real-time-updates.png');
+const easyShoppingIcon = getImage('easy-shopping.png');
+const connectWithAudienceImg = getImage('connect-with-a-wider-audience-on-whatsapp.webp');
+const whatsappCatalogImg = getImage('whatsapp-catalog.webp');
+const simplifyShoppingImg = getImage('Simplify-shopping-with-whatsapp.webp');
+const whatsappImg = getImage('wa.link_3dzezc.png');
+
 const Catalog = () => {
   return (
     <div>

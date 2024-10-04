@@ -2,15 +2,19 @@
 import React from "react";
 import ScrollToTopButton from "../components/common/ScrollToTopButton";
 import WhatsAppWidget from "../components/common/WhatsAppWidget";
-import runAdsImage from "../assets/images/run-click-to-whatsApp-ads.webp"; // Adjust path if necessary
-import boostConversionsImg from "../assets/images/icons/boost-conversions.png"; // Adjust path if necessary
-import seamlessExperienceImg from "../assets/images/icons/seamless-experience.png"; // Adjust path if necessary
-import increaseVisibilityImg from "../assets/images/icons/increase-visibility.png"; // Adjust path if necessary
-import VisibilityImg from "../assets/images/increase-the-visibility-of-your.webp"; // Adjust path if necessary
-import clickToWhatsAppImg from "../assets/images/cta/click-to-whatsapp.png"; // Adjust the path according to your folder structure
-import attractAndRetainImg from "../assets/images/attract-and-retain-customers.webp"; // Adjust the path as necessary
-import waLinkImg from "../assets/images/wa.link_3dzezc.png"; // Adjust the path as necessary
 import { Helmet } from 'react-helmet';
+import { getImage } from '../utils/getImage'; // Adjust the path to your utility
+
+// Fetching images dynamically using the getImage function
+const runAdsImage = getImage('run-click-to-whatsApp-ads.webp');
+const boostConversionsImg = getImage('boost-conversions.png');
+const seamlessExperienceImg = getImage('seamless-experience.png');
+const increaseVisibilityImg = getImage('increase-visibility.png');
+const VisibilityImg = getImage('increase-the-visibility-of-your.webp');
+const clickToWhatsAppImg = getImage('click-to-whatsapp.png');
+const attractAndRetainImg = getImage('attract-and-retain-customers.webp');
+const waLinkImg = getImage('wa.link_3dzezc.png');
+
 const ClickToWhatsAppAds = () => {
   return (
     <div>

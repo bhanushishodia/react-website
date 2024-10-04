@@ -1,10 +1,12 @@
 import React from 'react';
 import ScrollToTopButton from '../../components/common/ScrollToTopButton';
 import WhatsAppWidget from '../../components/common/WhatsAppWidget';
-import whatsappImage from '../../assets/images/blog/whatsapp-marketing-direct-communication-with-customers.webp';
-import marketingPlatformImage from '../../assets/images/blog/whatsapp-as-a-marketing-platform.webp';
-import whatsappMarketingImg from '../../assets/images/blog/benefits-of-whatsapp-marketing.webp';
 import { Helmet } from 'react-helmet';
+import { getImage } from '../../utils/getImage'; // Correct path to utility
+// Fetching images dynamically using getImage function
+const whatsappImage = getImage('whatsapp-marketing-direct-communication-with-customers.webp');
+const marketingPlatformImage = getImage('whatsapp-as-a-marketing-platform.webp');
+const whatsappMarketingImg = getImage('benefits-of-whatsapp-marketing.webp');
 const WhatsAppMarketingDirectCommunication = () => {
   return (
     <div>

@@ -6,18 +6,23 @@ import LTRSlider from "../components/common/LTRSlider";
 import RTLSlider from "../components/common/RTLSlider";
 import FAQSection from "../components/common/FAQSection";
 import LogoCarousel from "../components/common/LogoCarousel";
-import DownloadEbookSection from "../components/common/DownloadEbookSection"; // Import the new component
-import downloadEbookImage from "../assets/images/download-ebook.png"; // Adjust path as needed
-import whatsappScannerImg from "../assets/images/wa.link_3dzezc.png";
-import "./EcommerceRetail.css"; // Import your CSS file if needed
-import foodBeverageImg from "../assets/images/grow-your-food-business.webp"; // Adjust the path if necessary
-import defaultImage from "../assets/images/grow-your-restaurant.webp";
-import hoverImage1 from "../assets/images/grow-your-restaurant.webp";
-import hoverImage2 from "../assets/images/easy-order-and-tracking.webp";
-import promoteYourImage from "../assets/images/promote-your-dine-in-menu.webp";
-import issueVerifiedImage from "../assets/images/issue-verified-returns.webp";
 import { Helmet } from 'react-helmet';
+import "./EcommerceRetail.css"; // Import your CSS file if needed
 import pdfFile from '../assets/pdf/Food-Beverage-Usecase-Updated.pdf';
+import DownloadEbookSection from "../components/common/DownloadEbookSection"; // Import the new component
+import { getImage } from '../utils/getImage'; // Adjust the path to your utility function
+
+// Fetching images dynamically using the getImage function
+const downloadEbookImage = getImage('download-ebook.png'); // Adjust path as needed
+const whatsappScannerImg = getImage('wa.link_3dzezc.png');
+
+const foodBeverageImg = getImage('grow-your-food-business.webp'); // Adjust the path if necessary
+const defaultImage = getImage('grow-your-restaurant.webp');
+const hoverImage1 = getImage('grow-your-restaurant.webp');
+const hoverImage2 = getImage('easy-order-and-tracking.webp');
+const promoteYourImage = getImage('promote-your-dine-in-menu.webp');
+const issueVerifiedImage = getImage('issue-verified-returns.webp');
+
 const FoodBeverage = () => {
 const submitFormAndOpenPDF = (event) => {
     // Prevent the default form submission behavior

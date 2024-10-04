@@ -7,18 +7,19 @@ import LogoCarousel from "../components/common/LogoCarousel";
 import LTRSlider from "../components/common/LTRSlider";
 import RTLSlider from "../components/common/RTLSlider";
 import FAQSection from "../components/common/FAQSection";
-import DownloadEbookSection from "../components/common/DownloadEbookSection"; // Import the new component
-import downloadEbookImage from "../assets/images/download-ebook.png"; // Adjust path as needed
-import customerPulseImg from "../assets/images/keep-your-finger-on-your-customer’s.webp"; // Adjust the path as needed
-import defaultImage from "../assets/images/build-own-whatsapp-chatbot.webp";
-import hoverImage1 from "../assets/images/help-patients-on-any.webp";
-import hoverImage2 from "../assets/images/build-own-whatsapp-chatbot.webp";
-import whatsappScannerImg from "../assets/images/wa.link_3dzezc.png";
 import "./EcommerceRetail.css"; // Import your CSS file if needed
-import automateAppointmentImg from "../assets/images/automate-appointment-schedules.webp"; // Adjust the path if necessary
-import promoteTestPackagesImg from "../assets/images/promote-test-packages.webp"; // Adjust the path if necessary
 import pdfFile from '../assets/pdf/Healthcare-Usecase-Updated.pdf';
-
+import DownloadEbookSection from "../components/common/DownloadEbookSection"; // Import the new component
+import { getImage } from '../utils/getImage'; // Adjust the path to your utility function
+// Fetching images dynamically using the getImage function
+const downloadEbookImage = getImage('download-ebook.png'); // Adjust path as needed
+const customerPulseImg = getImage('keep-your-finger-on-your-customer’s.webp'); // Adjust the path as needed
+const defaultImage = getImage('build-own-whatsapp-chatbot.webp');
+const hoverImage1 = getImage('help-patients-on-any.webp');
+const hoverImage2 = getImage('build-own-whatsapp-chatbot.webp');
+const whatsappScannerImg = getImage('wa.link_3dzezc.png');
+const automateAppointmentImg = getImage('automate-appointment-schedules.webp'); // Adjust the path if necessary
+const promoteTestPackagesImg = getImage('promote-test-packages.webp'); // Adjust the path if necessary
 const Healthcare = () => {
 const submitFormAndOpenPDF = (event) => {
     // Prevent the default form submission behavior

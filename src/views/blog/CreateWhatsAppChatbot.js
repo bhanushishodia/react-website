@@ -1,16 +1,19 @@
 import React from 'react';
 import ScrollToTopButton from '../../components/common/ScrollToTopButton';
 import WhatsAppWidget from '../../components/common/WhatsAppWidget';
-import whatsappChatbotImage from '../../assets/images/blog/whatsapp-chatbot-for-business.webp';
-import whatsappChatbotImage1 from '../../assets/images/blog/anantyaai-dashboard-login.webp';
-import whatsappChatbotImage2 from '../../assets/images/blog/whatsapp-chatbot-dashboard.webp';
-import whatsappChatbotImage3 from '../../assets/images/blog/whatsapp-chatbot-setup.webp';
-import welcomeMessageImg from '../../assets/images/blog/welcome-message.webp';
-import outOfOfficeMessageImg from '../../assets/images/blog/out-of-office-message.webp';
-import whatsappBotSetupImg from '../../assets/images/blog/whatsapp-bot-setup.webp';
-import feedbackMessageImg from '../../assets/images/blog/feedback-message.webp';
-import quickReplyImg from '../../assets/images/blog/quick-reply.webp';
 import { Helmet } from 'react-helmet';
+import { getImage } from '../../utils/getImage'; // Correct path to utility
+// Fetching images dynamically using getImage function
+const whatsappChatbotImage = getImage('whatsapp-chatbot-for-business.webp');
+const whatsappChatbotImage1 = getImage('anantyaai-dashboard-login.webp');
+const whatsappChatbotImage2 = getImage('whatsapp-chatbot-dashboard.webp');
+const whatsappChatbotImage3 = getImage('whatsapp-chatbot-setup.webp');
+const welcomeMessageImg = getImage('welcome-message.webp');
+const outOfOfficeMessageImg = getImage('out-of-office-message.webp');
+const whatsappBotSetupImg = getImage('whatsapp-bot-setup.webp');
+const feedbackMessageImg = getImage('feedback-message.webp');
+const quickReplyImg = getImage('quick-reply.webp');
+
 const CreateWhatsAppChatbot = () => {
   return (
     <div>

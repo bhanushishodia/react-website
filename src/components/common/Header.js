@@ -1,58 +1,60 @@
 // src/components/common/Header.js
-import React, { useState } from "react";
+import React from 'react';
 import { Link } from "react-router-dom";
 import "./Header.css";
 import "./TopNavbar.css"; // Assuming you have a CSS file for styles
 import TopNavbar from "./TopNavbar"; // Adjust the path as necessary
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
-// Corrected paths for assets
-import logo from "../../assets/images/logo.webp";
-import whatsappMarketingIcon from "../../assets/images/icons/whatsapp-marketing.png";
-import whatsappCommerceIcon from "../../assets/images/icons/whatsapp-commerce.png";
-import whatsappSupportIcon from "../../assets/images/icons/whatsapp-support.png";
-import whatsappAuthenticationIcon from "../../assets/images/icons/whatsapp-authentication.png";
-import ecommerceRetailIcon from "../../assets/images/icons/ecommerce-&-retail.png";
-import healthcareIcon from "../../assets/images/icons/healthcare.png";
-import edTechIcon from "../../assets/images/icons/ed-tech.png";
-import bankingBFSIIcon from "../../assets/images/icons/banking-&-BFS.png";
-import mediaEntertainmentIcon from "../../assets/images/icons/media-&-entertainment.png";
-import foodBeverageIcon from "../../assets/images/icons/food-&-beverage.png";
-import travelHospitalityIcon from "../../assets/images/icons/travel-&-hospitalit.png";
-import liveAgentAssistantIcon from "../../assets/images/icons/live-agent-assistant.png";
-import whatsappBroadcastingIcon from "../../assets/images/icons/whatsapp-broadcasting.png";
-import reportsAnalyticsIcon from "../../assets/images/icons/reports-&-analytics.png";
-import automatedChatBotIcon from "../../assets/images/icons/automated-chatbot.png";
-import catalogIcon from "../../assets/images/icons/catalog.png";
-import clickToWhatsAppAdsIcon from "../../assets/images/icons/click-to-whatsapp-ads.png";
-import blogIcon from "../../assets/images/icons/blog.png";
-import contactIcon from "../../assets/images/icons/contact-us.png";
-import knowledgeCenterIcon from "../../assets/images/icons/knowledge-center.png";
-import partnerWithUsIcon from "../../assets/images/icons/partner-with-us.png";
-import aboutUsIcon from "../../assets/images/icons/about-us.png";
-import workWithUsIcon from "../../assets/images/icons/work-with-us.png";
-import whatsappBusinessIcon from "../../assets/images/icons/whatapp.png";
-import instagramIcon from "../../assets/images/icons/instagram.png";
-import googleMessagesIcon from "../../assets/images/icons/googlemessage.png";
-import viberIcon from "../../assets/images/icons/viber.png";
-import lineIcon from "../../assets/images/icons/line.png";
-import messengerIcon from "../../assets/images/icons/messanger.png";
-import weChatIcon from "../../assets/images/icons/wechat.png";
-import zapierIcon from "../../assets/images/icons/zapier.png";
-import hubspotIcon from "../../assets/images/icons/hubspot.png";
-import woocommerceIcon from "../../assets/images/icons/woocommerce.png";
-import dialogflowIcon from "../../assets/images/icons/dialogueflow.png";
-import makeIcon from "../../assets/images/icons/make.png";
-import salesforceIcon from "../../assets/images/icons/salesforce.png";
-import pipedriveIcon from "../../assets/images/icons/pipedrive.png";
-import webhookIcon from "../../assets/images/icons/webhook.png";
+import { getImage } from '../../utils/getImage'; // Correct path to utility
+
+// Fetching images dynamically using getImage function
+const logo = getImage("logo.webp");
+const whatsappMarketingIcon = getImage("icons/whatsapp-marketing.png");
+const whatsappCommerceIcon = getImage("icons/whatsapp-commerce.png");
+const whatsappSupportIcon = getImage("icons/whatsapp-support.png");
+const whatsappAuthenticationIcon = getImage("icons/whatsapp-authentication.png");
+const ecommerceRetailIcon = getImage("icons/ecommerce-&-retail.png");
+const healthcareIcon = getImage("icons/healthcare.png");
+const edTechIcon = getImage("icons/ed-tech.png");
+const bankingBFSIIcon = getImage("icons/banking-&-BFS.png");
+const mediaEntertainmentIcon = getImage("icons/media-&-entertainment.png");
+const foodBeverageIcon = getImage("icons/food-&-beverage.png");
+const travelHospitalityIcon = getImage("icons/travel-&-hospitalit.png");
+const liveAgentAssistantIcon = getImage("icons/live-agent-assistant.png");
+const whatsappBroadcastingIcon = getImage("icons/whatsapp-broadcasting.png");
+const reportsAnalyticsIcon = getImage("icons/reports-&-analytics.png");
+const automatedChatBotIcon = getImage("icons/automated-chatbot.png");
+const catalogIcon = getImage("icons/catalog.png");
+const clickToWhatsAppAdsIcon = getImage("icons/click-to-whatsapp-ads.png");
+const blogIcon = getImage("icons/blog.png");
+const contactIcon = getImage("icons/contact-us.png");
+const knowledgeCenterIcon = getImage("icons/knowledge-center.png");
+const partnerWithUsIcon = getImage("icons/partner-with-us.png");
+const aboutUsIcon = getImage("icons/about-us.png");
+const workWithUsIcon = getImage("icons/work-with-us.png");
+const whatsappBusinessIcon = getImage("icons/whatapp.png");
+const instagramIcon = getImage("icons/instagram.png");
+const googleMessagesIcon = getImage("icons/googlemessage.png");
+const viberIcon = getImage("icons/viber.png");
+const lineIcon = getImage("icons/line.png");
+const messengerIcon = getImage("icons/messanger.png");
+const weChatIcon = getImage("icons/wechat.png");
+const zapierIcon = getImage("icons/zapier.png");
+const hubspotIcon = getImage("icons/hubspot.png");
+const woocommerceIcon = getImage("icons/woocommerce.png");
+const dialogflowIcon = getImage("icons/dialogueflow.png");
+const makeIcon = getImage("icons/make.png");
+const salesforceIcon = getImage("icons/salesforce.png");
+const pipedriveIcon = getImage("icons/pipedrive.png");
+const webhookIcon = getImage("icons/webhook.png");
 
 function Header() {
-  const [showPopup, setShowPopup] = useState(false);
+  // const [showPopup, setShowPopup] = useState(false);
 
-  const togglePopup = () => {
-    setShowPopup(!showPopup);
-  };
+  // const togglePopup = () => {
+  //   setShowPopup(!showPopup);
+  // };
 
   return (
     <>

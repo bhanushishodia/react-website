@@ -1,9 +1,11 @@
 import React from 'react';
 import ScrollToTopButton from '../../components/common/ScrollToTopButton';
 import WhatsAppWidget from '../../components/common/WhatsAppWidget';
-import whatsappPricingImage from '../../assets/images/blog/whatsapp-business-api-conversation-pricing.webp';
-import blogImage from '../../assets/images/blog/whatsapp-business-api-conversation-pricing.webp';
 import { Helmet } from 'react-helmet';
+import { getImage } from '../../utils/getImage'; // Correct path to utility
+// Fetching images dynamically using getImage function
+const whatsappPricingImage = getImage('whatsapp-business-api-conversation-pricing.webp');
+const blogImage = getImage('whatsapp-business-api-conversation-pricing.webp'); // Note: This appears to be the same image as above
 const WhatsAppBusinessAPIPricing = () => {
   return (
     <div>

@@ -1,26 +1,34 @@
 import React from "react";
 import "./SalesHub.css"; // Import your CSS file for styles
-import PreSales from "../components/common/PreSales";
-import leftLogo from '../assets/images/sales-hub/logo.webp'; // Left logo import
-import rightLogo from '../assets/images/sales-hub/mobi-logo.png'; // Right logo import
-import presalesImage from '../assets/images/sales-hub/pre-sales.webp'; // Right logo import
-import postsalesImage from '../assets/images/sales-hub/post-confirmations.webp'; // Right logo import
-import resourceImage from '../assets/images/sales-hub/resources-process.webp'; // Right logo import
+import PreSales from "../components/common/preSales"; // Use exact casing
+
 import OnboardingProcess from '../components/common/OnboardingProcess';
 import ResourceLibrary from '../components/common/ResourceLibrary'; // Import the ResourceLibrary component
+import { getImage } from '../utils/getImage'; // Adjust the path as needed
+
+// Fetching images dynamically using the getImage function
+const leftLogo = getImage('sales-hub/logo.webp'); // Left logo import
+const rightLogo = getImage('sales-hub/mobi-logo.png'); // Right logo import
+const presalesImage = getImage('sales-hub/pre-sales.webp'); // Pre-sales image import
+const postsalesImage = getImage('sales-hub/post-confirmations.webp'); // Post-sales image import
+const resourceImage = getImage('sales-hub/resources-process.webp'); // Resources image import
+
 
 const SalesHub = () => {
   return (
     <div className="sales-hub">
       {/* Sticky Top Bar */}
       <div className="top-bar">
-        <div className="top-bar-left">
-          <img src={leftLogo} alt="Left Logo" className="logo" />
-        </div>
-        <div className="top-bar-right">
-          <img src={rightLogo} alt="Right Logo" className="logo" />
-        </div>
-      </div>
+  <div className="top-bar-left">
+    <a href="/">  {/* This makes the left logo clickable and redirects to the homepage */}
+      <img src={leftLogo} alt="Left Logo" className="logo" />
+    </a>
+  </div>
+  <div className="top-bar-right">
+    <img src={rightLogo} alt="Right Logo" className="logo" />
+  </div>
+       </div>
+
 
       {/* Main Container with Sidebar and Content */}
       <div className="main-container">

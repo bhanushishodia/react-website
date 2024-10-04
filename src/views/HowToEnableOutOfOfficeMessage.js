@@ -1,13 +1,17 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import InnerHeader from '../components/common/InnerHeader';
-import goToBotSetupImage from '../assets/images/go-to-bot-setup.webp';
-import addAwayMessageImage from '../assets/images/add-a-away-message.webp';
-import setupYourMessageImage from '../assets/images/setup-your-message.webp';
-import submitYourAwayMessageImage from '../assets/images/submit-your-away-message.webp';
 import './knowledgecenter.css'; // Import the CSS file
 import ScrollToTopButton from "../components/common/ScrollToTopButton";
 import WhatsAppWidget from "../components/common/WhatsAppWidget";
+import { getImage } from '../utils/getImage'; // Adjust the path as needed
+
+// Fetching images dynamically using the getImage function
+const goToBotSetupImage = getImage('go-to-bot-setup.webp');
+const addAwayMessageImage = getImage('add-a-away-message.webp');
+const setupYourMessageImage = getImage('setup-your-message.webp');
+const submitYourAwayMessageImage = getImage('submit-your-away-message.webp');
+
 const OutOfOffice = () => {
   return (
     <>

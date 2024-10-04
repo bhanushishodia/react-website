@@ -3,8 +3,10 @@ import ScrollToTopButton from "../../components/common/ScrollToTopButton";
 import WhatsAppWidget from "../../components/common/WhatsAppWidget";
 import ClientsSection from '../../components/common/ClientsSection'; // Adjust the path if necessary
 import PopularPosts from '../../components/common/PopularPosts'; 
-import viberLogo from '../../assets/images/icons/Logo-Viber.svg'; // Importing the image
 import { Helmet } from 'react-helmet';
+import { getImage } from '../../utils/getImage'; // Adjust the path to your utility
+// Fetching the image dynamically using the getImage function
+const viberLogo = getImage('icons/Logo-Viber.svg'); // Adjust path if necessary
 
 const Viber = () => {
   return (
