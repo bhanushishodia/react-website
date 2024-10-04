@@ -3,11 +3,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { getImage } from '../../utils/getImage'; // Correct path to utility
 // Fetching icon images dynamically using getImage function
-const sharedTeamInboxIcon = getImage('shared team inbox.png');
-const bulkBroadcastingIcon = getImage('bulk broadcasting.png');
-const automatedChatbotIcon = getImage('automated chatbot.png');
-const campaignAnalyticsIcon = getImage('campaign analytics.png');
-const productCatalogsIcon = getImage('product catalogs.png');
+const sharedTeamInboxIcon = getImage('/icons/shared team inbox.png');
+const bulkBroadcastingIcon = getImage('/icons/bulk broadcasting.png');
+const automatedChatbotIcon = getImage('/icons/automated chatbot.png');
+const campaignAnalyticsIcon = getImage('/icons/campaign analytics.png');
+const productCatalogsIcon = getImage('/icons/product catalogs.png');
 // Fetching other images dynamically
 const sharedTeamInboxImg = getImage('shared-team-inbox.webp');
 const bulkBroadcastingImg = getImage('bulk-broadcasting.webp');

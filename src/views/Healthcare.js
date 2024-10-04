@@ -13,7 +13,7 @@ import DownloadEbookSection from "../components/common/DownloadEbookSection"; //
 import { getImage } from '../utils/getImage'; // Adjust the path to your utility function
 // Fetching images dynamically using the getImage function
 const downloadEbookImage = getImage('download-ebook.png'); // Adjust path as needed
-const customerPulseImg = getImage('keep-your-finger-on-your-customer’s.webp'); // Adjust the path as needed
+const customerPulseImg = getImage('keep-your-finger-on-your-customer_s.webp'); // Adjust the path as needed
 const defaultImage = getImage('build-own-whatsapp-chatbot.webp');
 const hoverImage1 = getImage('help-patients-on-any.webp');
 const hoverImage2 = getImage('build-own-whatsapp-chatbot.webp');

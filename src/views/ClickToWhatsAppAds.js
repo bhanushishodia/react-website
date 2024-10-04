@@ -7,11 +7,11 @@ import { getImage } from '../utils/getImage'; // Adjust the path to your utility
 
 // Fetching images dynamically using the getImage function
 const runAdsImage = getImage('run-click-to-whatsApp-ads.webp');
-const boostConversionsImg = getImage('boost-conversions.png');
-const seamlessExperienceImg = getImage('seamless-experience.png');
-const increaseVisibilityImg = getImage('increase-visibility.png');
+const boostConversionsImg = getImage('/icons/boost-conversions.png');
+const seamlessExperienceImg = getImage('/icons/seamless-experience.png');
+const increaseVisibilityImg = getImage('/icons/increase-visibility.png');
 const VisibilityImg = getImage('increase-the-visibility-of-your.webp');
-const clickToWhatsAppImg = getImage('click-to-whatsapp.png');
+const clickToWhatsAppImg = getImage('/cta/click-to-whatsapp.png');
 const attractAndRetainImg = getImage('attract-and-retain-customers.webp');
 const waLinkImg = getImage('wa.link_3dzezc.png');
 

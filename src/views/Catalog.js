@@ -6,11 +6,11 @@ import { Helmet } from 'react-helmet';
 import { getImage } from '../utils/getImage'; // Adjust the path to your utility
 // Fetching images dynamically using the getImage function
 const catalogImage = getImage('showcase-your-products-using-whatsapp-catalog.webp');
-const increasedReachIcon = getImage('increased-reach.png');
-const realTimeUpdatesIcon = getImage('real-time-updates.png');
-const easyShoppingIcon = getImage('easy-shopping.png');
+const increasedReachIcon = getImage('/icons/increased-reach.png');
+const realTimeUpdatesIcon = getImage('/icons/real-time-updates.png');
+const easyShoppingIcon = getImage('/icons/easy-shopping.png');
 const connectWithAudienceImg = getImage('connect-with-a-wider-audience-on-whatsapp.webp');
-const whatsappCatalogImg = getImage('whatsapp-catalog.webp');
+const whatsappCatalogImg = getImage('cta/whatsapp-catalog.webp');
 const simplifyShoppingImg = getImage('Simplify-shopping-with-whatsapp.webp');
 const whatsappImg = getImage('wa.link_3dzezc.png');
 

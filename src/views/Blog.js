@@ -5,32 +5,31 @@ import WhatsAppWidget from "../components/common/WhatsAppWidget";
 import { Link } from "react-router-dom"; // Import Link from react-router-dom
 import { Helmet } from 'react-helmet';
 import { getImage } from '../utils/getImage'; // Adjust the path to your utility
+const whatsappBroadcastingImg = getImage('/blog/whatsapp-broadcasting.webp');
+const marketingStrategyImg = getImage('/blog/Enhance-your-marketing-strategy-min.webp');
+const chatbotReportsImg = getImage('/blog/chatbot-reports.webp');
+const whatsappAuthImg = getImage('/blog/whatsapp-authertication.webp');
+const empoweringSupportImg = getImage('/blog/Empowering-Customer-Support-min.webp');
+const gitexBlogImg = getImage('/blog/gitexblog.jpeg');
+const boostSalesImg = getImage('/blog/boost-sales-on-festive-season-with-ai-chatbots.jpeg');
+const clickToWhatsAppAdsImg = getImage('/blog/click-to-whatsapp-ads.jpeg');
+const whatsappApiGuideImg = getImage('/blog/whatsapp-business-api-your-ultimate-guide.jpg');
+const whatsappBroadcastImg = getImage('/blog/whatsapp-broadcasting-your-ultimate-guide-whatsapp-broadcast-your-complete-business-booster-guide.webp');
+const whatsappHealthcareImg = getImage('/blog/whatsapp-for-healthcare.webp');
+const whatsappChatbotImg = getImage('/blog/whatsapp-chatbot-for-business.webp');
+const whatsappBankingImg = getImage('/blog/whatsapp-business-api-in-banking-sector.webp');
+const metaUpdateImg = getImage('/blog/meta-frequency-capping-update.webp');
+const whatsappMarketingImg = getImage('/blog/whatsapp-marketing-direct-communication-with-customers.webp');
+const whatsappPricingImg = getImage('/blog/whatsapp-business-api-conversation-pricing.webp');
+const whatsappGreenToBlueTickImg = getImage('/blog/whatsapp-business-switching-from-green-tick-to-blue-tick.webp');
+const whatsappPricingChangeImg = getImage('/blog/whatsapp-authentication-rates.webp');
+const whatsappFreeEntryImg = getImage('/blog/whatsapp-free-entry-frequency-capping.webp');
+const whatsappBroadcastListImg = getImage('/blog/whatsapp-broadcast-list-and-its-features.webp');
+const whatsappGovtAPIImg = getImage('/blog/whatsapp-business-api-for-government.webp');
+const whatsappAPIProvidersImg = getImage('/blog/whatsapp-business-api-providers-2024.webp');
 // Fetching images dynamically using the getImage function
-const whatsappBroadcastingImg = getImage('whatsapp-broadcasting.webp');
-const marketingStrategyImg = getImage('Enhance-your-marketing-strategy-min.webp');
-const chatbotReportsImg = getImage('chatbot-reports.webp');
-const whatsappAuthImg = getImage('whatsapp-authertication.webp');
-const empoweringSupportImg = getImage('Empowering-Customer-Support-min.webp');
-const gitexBlogImg = getImage('gitexblog.jpeg');
-const boostSalesImg = getImage('boost-sales-on-festive-season-with-ai-chatbots.jpeg');
-const clickToWhatsAppAdsImg = getImage('click-to-whatsapp-ads.jpeg');
-const whatsappApiGuideImg = getImage('whatsapp-business-api-your-ultimate-guide.jpg');
-const whatsappBroadcastImg = getImage('whatsapp-broadcasting-your-ultimate-guide-whatsapp-broadcast-your-complete-business-booster-guide.webp');
-const whatsappHealthcareImg = getImage('whatsapp-for-healthcare.webp');
-const whatsappChatbotImg = getImage('whatsapp-chatbot-for-business.webp');
-const whatsappBankingImg = getImage('whatsapp-business-api-in-banking-sector.webp');
-const metaUpdateImg = getImage('meta-frequency-capping-update.webp');
-const whatsappMarketingImg = getImage('whatsapp-marketing-direct-communication-with-customers.webp');
-const whatsappPricingImg = getImage('whatsapp-business-api-conversation-pricing.webp');
-const whatsappGreenToBlueTickImg = getImage('whatsapp-business-switching-from-green-tick-to-blue-tick.webp');
-const whatsappPricingChangeImg = getImage('whatsapp-authentication-rates.webp');
-const whatsappFreeEntryImg = getImage('whatsapp-free-entry-frequency-capping.webp');
-const whatsappBroadcastListImg = getImage('whatsapp-broadcast-list-and-its-features.webp');
-const whatsappGovtAPIImg = getImage('whatsapp-business-api-for-government.webp');
-const whatsappAPIProvidersImg = getImage('whatsapp-business-api-providers-2024.webp');
-
-
 const Blog = () => {
+
   const [selectedCategory, setSelectedCategory] = useState("all");
 
   const cardsData = [
