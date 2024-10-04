@@ -1,12 +1,13 @@
 // src/views/Integration/IntegrationMain.js
 import React from "react";
 import "./IntegrationMain.css"; // Import the CSS file for styles
-import integrationsImg from "../../assets/images/integrations.webp"; // Correct path
+
 import ScrollToTopButton from "../../components/common/ScrollToTopButton";
 import WhatsAppWidget from "../../components/common/WhatsAppWidget";
 import { Helmet } from 'react-helmet';
 import { getImage } from '../../utils/getImage'; // Correct path to the utility
 // Fetching images dynamically using the getImage function
+const integrationsImg = getImage('images/integrations.webp'); // Correct path
 const instagramIcon = getImage('Integration/instagram.svg');
 const whatsappIcon = getImage('Integration/Whatsapp.webp');
 const messengerIcon = getImage('Integration/Messenger.webp');

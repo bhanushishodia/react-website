@@ -1,176 +1,180 @@
 .user-online {
-    font-size: .69375rem;
-    line-height: .8125rem;
+  font-size: 0.69375rem;
+  line-height: 0.8125rem;
 }
 
 .whatsapp-preview {
-    position: relative;
-   padding: 0px 20px;
-    height: 90%;
-    margin: 0 auto;
-    vertical-align: middle;
-    align-items: center;
-    margin-top: 30px;
+  position: relative;
+  padding: 0px 20px;
+  height: 90%;
+  margin: 0 auto;
+  vertical-align: middle;
+  align-items: center;
+  margin-top: 30px;
 }
 
 .iphone-layout {
-    background-image: url('../../assets/images/anantya-whatsapp.png');
-
-    /* Replace with your iPhone background image */
-    background-size: cover;
-    height: 100%;
-    width: 100%;
-    position: relative;
-    border-radius: 20px;
-    /* Optional: for rounded corners */
-    overflow: hidden;
+  /* Replace with your iPhone background image */
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  border-radius: 20px;
+  /* Optional: for rounded corners */
+  overflow: hidden;
 }
 
 .status-icons {
-    display: flex!important;
-    gap: 10px;
+  display: flex !important;
+  gap: 10px;
 }
 
 .status-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px 6px 20px;
-    background-color: #0a5f54;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px 6px 20px;
+  background-color: #0a5f54;
 }
 
 .status-time {
-    font-size: 14px;
-    color: #333;
+  font-size: 14px;
+  color: #333;
 }
 
 .status-icons {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
-.wifi-icon, .network-icon, .battery-icon {
-    margin-left: 5px;
+.wifi-icon,
+.network-icon,
+.battery-icon {
+  margin-left: 5px;
 }
 
 .status-time {
-    flex: 1;
-    text-align: start;
-    color: #fff;
-    line-height: 1.0625rem;
+  flex: 1;
+  text-align: start;
+  color: #fff;
+  line-height: 1.0625rem;
 }
 
 .chat-preview {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: calc(100% - 100px);
-    /* Adjust based on status bar height */
-    margin-left: 5rem;
-    padding: 10px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: calc(100% - 100px);
+  /* Adjust based on status bar height */
+  margin-left: 5rem;
+  padding: 10px;
 }
 
 .chat-preview p {
-    padding: .5rem;
-    align-items: end;
-    max-width: 80%!important;
-    line-height: 1.3125rem;
-    letter-spacing: .0071rem;
-    border-radius: .75rem;
-    --tw-bg-opacity: 1;
-    background-color: rgb(224 253 191 / var(--tw-bg-opacity));
-    max-width: 17.1875rem;
-    word-wrap: break-word;
+  padding: 0.5rem;
+  align-items: end;
+  max-width: 80% !important;
+  line-height: 1.3125rem;
+  letter-spacing: 0.0071rem;
+  border-radius: 0.75rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(224 253 191 / var(--tw-bg-opacity));
+  max-width: 17.1875rem;
+  word-wrap: break-word;
 }
 
 .chat-preview p:nth-child(odd) {
-    align-self: flex-start;
+  align-self: flex-start;
 }
 
 .chat-preview p:nth-child(even) {
-    align-self: flex-end;
-    background-color: #DCF8C6;
-    /* WhatsApp green color */
+  align-self: flex-end;
+  background-color: #dcf8c6;
+  /* WhatsApp green color */
 }
 
-.wifi-icon, .network-icon, .battery-icon {
-    margin-left: 5px;
-    color: #fff;
+.wifi-icon,
+.network-icon,
+.battery-icon {
+  margin-left: 5px;
+  color: #fff;
 }
 
 .profile-info {
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    color: #fff;
-    align-items: center;
-    padding: 0px 20px;
-    background-color: #0a5f54;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  color: #fff;
+  align-items: center;
+  padding: 0px 20px;
+  background-color: #0a5f54;
 }
 
 .profile-pic img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    margin-right: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
 }
 
 .mobile-number {
-    font-size: 16px;
-    margin-top: 10px;
-    color: #fff;
-}.modal-header, .modal-footer {
-    text-align: center;
-  }
-  
-  .modal-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .modal-title h4{
+  font-size: 16px;
+  margin-top: 10px;
+  color: #fff;
+}
+.modal-header,
+.modal-footer {
+  text-align: center;
+}
 
-    text-align: center;
-  }
-  .modal .dialog { 
-    border-radius: 40px;
-    text-align: center;
-  }/* Hide the number input spinners in Firefox */
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.modal-title h4 {
+  text-align: center;
+}
+.modal .dialog {
+  border-radius: 40px;
+  text-align: center;
+} /* Hide the number input spinners in Firefox */
 /* Hide the number input spinners in Chrome, Safari, and Edge */
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 /* Hide the number input spinners in Firefox */
 /* Hide the number input spinners in Firefox and other browsers */
 input[type="number"] {
-    appearance: textfield; /* Standard appearance property */
-    -moz-appearance: textfield; /* Firefox */
-    -webkit-appearance: textfield; /* Chrome, Safari, and Edge */
+  appearance: textfield; /* Standard appearance property */
+  -moz-appearance: textfield; /* Firefox */
+  -webkit-appearance: textfield; /* Chrome, Safari, and Edge */
 
-    /* Optional: Remove arrow buttons in Chrome, Safari, and Edge */
-    &::-webkit-inner-spin-button,
-    &::-webkit-outer-spin-button {
-        -webkit-appearance: none;
-        margin: 0;
-    }
+  /* Optional: Remove arrow buttons in Chrome, Safari, and Edge */
+  &::-webkit-inner-spin-button,
+  &::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
 }
 
-.modal-title{
-    margin-left: auto;
-}.walink-card {
-    border: 1px solid #e7e7e7;
-    border-radius: 10px;
-    padding: 10px 25px;
-    height: 100%;
-    text-align: center;
-    transition: all .2s;
-    transform: none;
-    box-shadow: 8px 8px rgba(0, 0, 0, .08);
+.modal-title {
+  margin-left: auto;
 }
-.walink-card  h6{
-   font-size: 1.5rem;
-   font-weight: 600;
+.walink-card {
+  border: 1px solid #e7e7e7;
+  border-radius: 10px;
+  padding: 10px 25px;
+  height: 100%;
+  text-align: center;
+  transition: all 0.2s;
+  transform: none;
+  box-shadow: 8px 8px rgba(0, 0, 0, 0.08);
+}
+.walink-card h6 {
+  font-size: 1.5rem;
+  font-weight: 600;
 }

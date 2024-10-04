@@ -5,6 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css"; // Import Bootstrap CSS
 import "./WhatsAppLinkGenerator.css";
 
 import { getImage } from '../../utils/getImage';  // Correct path to utility
+const whatsappBackgroundImg = getImage('anantya-whatsapp.png');
 function WhatsAppLinkGenerator() {
   const dpImage = getImage('dp.svg');
   const [phoneNumber, setPhoneNumber] = useState("");
@@ -119,7 +120,12 @@ function WhatsAppLinkGenerator() {
 
         <div className="col-lg-6 col-md-6 col-sm-12 px-5">
           <div id="whatsapp-preview" className="whatsapp-preview">
-            <div className="iphone-layout">
+          <div
+      className="iphone-layout"
+      style={{
+        backgroundImage: `url(${whatsappBackgroundImg})`,
+      }}
+    >
               <div className="status-bar">
                 <span className="status-time">12:45 PM</span>
                 <div className="status-icons">

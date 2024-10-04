@@ -1,17 +1,22 @@
 import React from 'react';
 import './InnerHeader.css'; // Adjust the path as per your project structure
-import { getImage } from '../../utils/getImage';  // Correct path to utility
+import { getImage } from '../../utils/getImage'; // Correct path to utility
+
 // Fetching images dynamically using getImage function
 const integrationImg = getImage('integration.webp');
+const backgroundImage = getImage('inner5_back.png'); // Fetch background image
+
 const InnerHeader = () => {
   return (
     <section
-      className="inner-header style-5">
+      className="inner-header style-5"
+      style={{ backgroundImage: `url(${backgroundImage})` }} // Use inline style for dynamic background image
+    >
       <div className="container">
         <div className="content">
-        <div className="links">
-          <a href="/homepage">Home</a>
-         <a href="/knowledge-center">Anantya Support</a>
+          <div className="links">
+            <a href="/homepage">Home</a>
+            <a href="/knowledge-center">Anantya Support</a>
           </div>
 
           <h2>Resources</h2>

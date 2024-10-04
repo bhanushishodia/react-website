@@ -3,13 +3,15 @@ import React from "react";
 import { Helmet } from 'react-helmet';
 import ScrollToTopButton from "../components/common/ScrollToTopButton";
 import WhatsAppWidget from "../components/common/WhatsAppWidget";
-import actionableAnalyticsImage from "../assets/images/actionable-analytics-for-unparalleled.webp";
-import chatbotReportImg from '../assets/images/icons/chatbot-report.png';
-import messagesStatisticImg from '../assets/images/icons/messages-statistic.png';
-import labelReportImg from '../assets/images/icons/label-report.png';
-import understandUserBehaviourImg from '../assets/images/understand-user-behaviour.webp';
-import enhanceBusinessSuccessImg from '../assets/images/enhance-business-success.webp';
-import whatsappImg from '../assets/images/wa.link_3dzezc.png';
+import { getImage } from '../utils/getImage';
+
+const actionableAnalyticsImage = getImage('actionable-analytics-for-unparalleled.webp');
+const chatbotReportImg = getImage('icons/chatbot-report.png');
+const messagesStatisticImg = getImage('icons/messages-statistic.png');
+const labelReportImg = getImage('icons/label-report.png');
+const understandUserBehaviourImg = getImage('understand-user-behaviour.webp');
+const enhanceBusinessSuccessImg = getImage('enhance-business-success.webp');
+const whatsappImg = getImage('wa.link_3dzezc.png');
 
 const ReportsAnalytics = () => {
   return (
