@@ -1,0 +1,53 @@
+.offer {
+  position: relative; /* Position relative for the absolute positioning of child elements */
+  overflow: hidden; /* Hide the overflow to prevent scrollbars from appearing */
+}
+
+.offer .container {
+  display: flex; /* Use flexbox to align images and content */
+  justify-content: space-between; /* Space out the content */
+  padding: 20px; /* Add some padding */
+  background-color: #f8f9fa; /* Set a background color for the entire container */
+}
+
+.scrollable-images {
+  display: flex; /* Keep images in a row */
+  animation: scroll 10s linear infinite; /* Scroll animation */
+  white-space: nowrap; /* Prevent line breaks */
+}
+
+.scrollable-images img {
+  width: 200px; /* Adjust width as necessary */
+  margin-right: 10px; /* Add some spacing between images */
+}
+
+/* Keyframes for scrolling effect */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%); /* Move to the left */
+  }
+}
+
+.diwali-offer {
+    color: #fff;
+  position: absolute; /* Position it absolutely within the .offer container */
+  top: 50%; /* Center it vertically */
+  right: 0px; /* Position it towards the right */
+  transform: translateY(-50%); /* Adjust to center it */
+  background-color: #140045; /* Light yellow background */
+  padding: 20px; /* Add padding */
+  border-radius: 8px; /* Rounded corners */
+  text-align: center; /* Center align the text */
+  z-index: 10; /* Ensure it is above other content */
+}
+.diwali-offer h3 {
+    color: #fff;
+
+}
+
+
+  
+  

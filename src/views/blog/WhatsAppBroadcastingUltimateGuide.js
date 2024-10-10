@@ -4,135 +4,132 @@ import WhatsAppWidget from "../../components/common/WhatsAppWidget";
 import { Helmet } from "react-helmet";
 import { getImage } from '../../utils/getImage'; // Correct path to utility
 // Fetching images dynamically using getImage function
-const whatsappBroadcastImg = getImage("whatsapp-broadcasting-your-ultimate-guide-whatsapp-broadcast-your-complete-business-booster-guide.webp");
-const getStartedImage = getImage("get-started-for-free.jpg");
-const howToBroadcastImage = getImage("how-to-broadcast-with-the-whatsapp.jpg");
-const startYourFreeTrialImage = getImage("start-your-free-trial.jpg");
-const whatBroadcastImg = getImage("what-is-a-whatsapp-broadcast.png");
+const whatsappBroadcastImg = getImage("/blog/whatsapp-broadcasting-your-ultimate-guide-whatsapp-broadcast-your-complete-business-booster-guide.webp");
+const getStartedImage = getImage("/blog/get-started-for-free.jpg");
+const howToBroadcastImage = getImage("/blog/how-to-broadcast-with-the-whatsapp.jpg");
+const startYourFreeTrialImage = getImage("/blog/start-your-free-trial.jpg");
+const whatBroadcastImg = getImage("/blog/what-is-a-whatsapp-broadcast.png");
 
 const WhatsAppBusinessAPIUltimateGuide = () => {
   return (
     <div>
       <Helmet>
-        <title>
-          WhatsApp Broadcasting: Your Complete Business Booster Guide
-        </title>
-        <meta
-          name="keywords"
-          content="Whatsapp Broadcasting,Whatsapp Broadcasting Software,whatsapp broadcast message,Whatsapp Broadcast,broadcast lists on whatsapp,Whatsapp Broadcast for business,whatsapp broadcasting service,Bulk Whatsapp Messaging,broadcast lists on whatsapp"
-        />
-        <meta name="robots" content="index,follow" />
-        <meta
-          name="description"
-          content="WhatsApp broadcasting is a useful tool for businesses to provide customized updates, special offers, and important notifications to get better engagement."
-        />
-        <meta property="og:type" content="article" />
-        <meta property="og:locale" content="en_AE" />
-        <meta property="og:locale" content="en_SA" />
-        <meta property="og:locale" content="en_BH" />
-        <meta
-          property="og:title"
-          content="WhatsApp Broadcasting: Your Complete Business Booster Guide"
-        />
-        <meta
-          property="og:description"
-          content="WhatsApp broadcasting is a useful tool for businesses to provide customized updates, special offers, and important notifications to get better engagement."
-        />
-        <meta
-          property="og:url"
-          content="https://anantya.ai/whatsapp-broadcasting-ultimate-guide"
-        />
-        <meta property="og:site_name" content="anantya.ai" />
-        <meta
-          property="og:image"
-          content="https://anantya.ai/assets/img/blog/whatsapp-broadcasting-your-ultimate-guide-whatsapp-broadcast-your-complete-business-booster-guide.webp"
-        />
-        <link
-          rel="canonical"
-          href="https://anantya.ai/whatsapp-broadcasting-ultimate-guide"
-        />
-        <meta name="author" content="Anantya" />
+      {/* Alternate Links */}
+      <link rel="alternate" hrefLang="x-default" href="https://anantya.ai/blog/whatsapp-broadcasting-ultimate-guide" />
+      <link rel="alternate" hreflang="en-ae" href="https://anantya.ai/blog/whatsapp-broadcasting-ultimate-guide" />
+      <link rel="alternate" hreflang="en-sa" href="https://anantya.ai/blog/whatsapp-broadcasting-ultimate-guide" />
+      <link rel="alternate" hreflang="en-bh" href="https://anantya.ai/blog/whatsapp-broadcasting-ultimate-guide" />
+      <link rel="alternate" hreflang="en-in" href="https://anantya.ai/blog/whatsapp-broadcasting-ultimate-guide" />
+      <link rel="alternate" hreflang="en" href="https://anantya.ai/blog/whatsapp-broadcasting-ultimate-guide" />
 
-        <script type="application/ld+json">
-          {JSON.stringify({
+      {/* Title and Meta */}
+      <title>WhatsApp Broadcasting: Your Complete Business Booster Guide</title>
+      <meta name="robots" content="index,follow" />
+      <meta name="title" content="WhatsApp Broadcasting: Your Complete Business Booster Guide" />
+      <meta name="description" content="WhatsApp broadcasting is a useful tool for businesses to provide customized updates, special offers, and important notifications to get better engagement." />
+      <meta name="keywords" content="Whatsapp Broadcasting,Whatsapp Broadcasting Software,whatsapp broadcast message,Whatsapp Broadcast,broadcast lists on whatsapp,Whatsapp Broadcast for business,whatsapp broadcasting service,Bulk Whatsapp Messaging,broadcast lists on whatsapp" />
+
+      {/* Open Graph Meta Tags */}
+      <meta property="og:type" content="blog" />
+      <meta property="og:locale" content="en_AE" />
+      <meta property="og:locale" content="en_SA" />
+      <meta property="og:locale" content="en_BH" />
+      <meta property="og:locale" content="en_IN" />
+      <meta property="og:title" content="WhatsApp Broadcasting: Your Complete Business Booster Guide" />
+      <meta property="og:description" content="WhatsApp broadcasting is a useful tool for businesses to provide customized updates, special offers, and important notifications to get better engagement." />
+      <meta property="og:url" content="https://anantya.ai/blog/whatsapp-broadcasting-ultimate-guide" />
+      <meta property="og:site_name" content="anantya.ai" />
+      <meta property="og:image" content="https://ik.imagekit.io/cloy701fl/images//blog/whatsapp-broadcasting-your-ultimate-guide-whatsapp-broadcast-your-complete-business-booster-guide.webp" />
+
+      {/* Canonical Link */}
+      <link rel="canonical" href="https://anantya.ai/blog/whatsapp-broadcasting-ultimate-guide" />
+      <meta name="author" content="Anantya" />
+
+      {/* JSON-LD Structured Data */}
+      <script type="application/ld+json">
+        {`
+          {
             "@context": "https://schema.org",
             "@type": "Organization",
-            name: "anantya.ai",
-            alternateName:
-              "Conversational Engagement Platform for Businesses | Anantya.ai",
-            url: "https://anantya.ai",
-            logo: "https://anantya.ai/assets/img/logo.webp",
-            contactPoint: {
+            "name": "anantya.ai",
+            "alternateName": "Conversational Engagement Platform for Businesses | Anantya.ai",
+            "url": "https://anantya.ai",
+            "logo": "https://ik.imagekit.io/cloy701fl/images/logo.webp",
+            "contactPoint": {
               "@type": "ContactPoint",
-              telephone: "+971565480273",
-              contactType: "sales",
-              areaServed: ["AE", "SA", "BH"],
-              availableLanguage: ["en"],
+              "telephone": "+971565480273",
+              "contactType": "sales",
+              "areaServed": ["AE","SA","BH","IN"],
+              "availableLanguage": ["en"]
             },
-            sameAs: [
+            "sameAs": [
               "https://www.facebook.com/anantyaai",
               "https://www.instagram.com/anantya.ai",
               "https://www.youtube.com/@Anantyaai",
               "https://www.linkedin.com/company/anantya-ai",
-              "https://www.pinterest.com/anantyaai",
-            ],
-          })}
-        </script>
+              "https://www.pinterest.com/anantyaai"
+            ]
+          }
+        `}
+      </script>
 
-        <script type="application/ld+json">
-          {JSON.stringify({
+      <script type="application/ld+json">
+        {`
+          {
             "@context": "https://schema.org",
             "@type": "BlogPosting",
-            mainEntityOfPage: {
+            "mainEntityOfPage": {
               "@type": "WebPage",
-              "@id": "https://anantya.ai/whatsapp-business-api-ultimate-guide",
+              "@id": "https://anantya.ai/blog/whatsapp-broadcasting-ultimate-guide"
             },
-            headline:
-              "WhatsApp Broadcasting: Your Complete Business Booster Guide",
-            description:
-              "WhatsApp broadcasting is a useful tool for businesses to provide customized updates, special offers, and important notifications to get better engagement.",
-            image:
-              "https://anantya.ai/assets/img/blog/whatsapp-broadcasting-your-ultimate-guide-whatsapp-broadcast-your-complete-business-booster-guide.webp",
-            author: {
+            "headline": "WhatsApp Broadcasting: Your Complete Business Booster Guide",
+            "description": "WhatsApp broadcasting is a useful tool for businesses to provide customized updates, special offers, and important notifications to get better engagement.",
+            "image": "https://ik.imagekit.io/cloy701fl/images//blog/whatsapp-broadcasting-your-ultimate-guide-whatsapp-broadcast-your-complete-business-booster-guide.webp",
+            "author": {
               "@type": "Organization",
-              name: "Anantya.ai",
-              url: "https://anantya.ai",
-              areaServed: ["AE", "SA", "BH"],
+              "name": "Anantya.ai",
+              "url": "https://anantya.ai",
+              "areaServed": ["AE","SA","BH","IN"]
             },
-            publisher: {
+            "publisher": {
               "@type": "Organization",
-              name: "Anantya.ai",
-              logo: {
+              "name": "Anantya.ai",
+              "logo": {
                 "@type": "ImageObject",
-                url: "https://anantya.ai/assets/img/logo.webp",
-              },
+                "url": "https://ik.imagekit.io/cloy701fl/images/logo.webp"
+              }
             },
-            datePublished: "2023-08-17",
-            dateModified: "2024-07-12",
-          })}
-        </script>
+            "datePublished": "2023-08-17",
+            "dateModified": "2024-07-12"
+          }
+        `}
+      </script>
 
-        <script type="application/ld+json">
-          {JSON.stringify({
+      <script type="application/ld+json">
+        {`
+          {
             "@context": "https://schema.org/",
             "@type": "BreadcrumbList",
-            itemListElement: [
-              {
-                "@type": "ListItem",
-                position: 1,
-                name: "Home",
-                item: "https://anantya.ai/",
-              },
-              {
-                "@type": "ListItem",
-                position: 2,
-                name: "WhatsApp Broadcasting: Your Complete Business Booster Guide",
-                item: "https://anantya.ai/whatsapp-business-api-ultimate-guide",
-              },
-            ],
-          })}
-        </script>
-      </Helmet>
+            "itemListElement": [{
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Homepage",
+              "item": "https://anantya.ai/"
+            },{
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Blog",
+              "item": "https://anantya.ai/blog"
+            },{
+              "@type": "ListItem",
+              "position": 3,
+              "name": "WhatsApp Broadcasting: Your Complete Business Booster Guide",
+              "item": "https://anantya.ai/blog/whatsapp-broadcasting-ultimate-guide"
+            }]
+          }
+        `}
+      </script>
+    </Helmet>
       <div className="container py-5 mt-4">
         <div className="row px-md-5 px-1 mx-1 mx-md-5">
           <div className="col-md-12 col-sm-12">
@@ -217,9 +214,9 @@ const WhatsAppBusinessAPIUltimateGuide = () => {
                     <div className="text d-flex mb-2">
                       <p>
                         Additionally, we’ll discuss how to do{" "}
-                        <b>WhatsApp broadcasting</b> for both
+                        <b>WhatsApp broadcasting </b> for both 
                         <a
-                          href="https://anantya.ai/whatsapp-business-app-vs-whatsapp-business-api"
+                          href="/whatsapp-business-app-vs-whatsapp-business-api"
                           className="fs-6"
                           style={{ color: "#54cde5" }}
                         >
@@ -309,7 +306,7 @@ const WhatsAppBusinessAPIUltimateGuide = () => {
                         The{" "}
                         <a
                           className="fw-bold fs-6"
-                          href="https://anantya.ai/whatsapp-broadcasting"
+                          href="/whatsapp-broadcasting"
                         >
                           WhatsApp broadcasting
                         </a>{" "}
@@ -475,7 +472,7 @@ const WhatsAppBusinessAPIUltimateGuide = () => {
                           give a break to your plans:
                         </p>
                       </div>
-                      <div className="text d-flex mb-2 ms-md-5">
+                      <div className="text d-flex mb-2 ">
                         <ul style={{ listStyleType: "disc" }}>
                           <li>
                             <b>WhatsApp Broadcast</b> has only a{" "}
@@ -560,7 +557,7 @@ const WhatsAppBusinessAPIUltimateGuide = () => {
                           and more, all from a single platform thanks to the{" "}
                           <a
                             className="fs-6"
-                            href="https://anantya.ai"
+                            href="/"
                             style={{ color: "#54cde5" }}
                           >
                             WhatsApp Business API.
@@ -737,7 +734,7 @@ const WhatsAppBusinessAPIUltimateGuide = () => {
                             If you are finding{" "}
                             <a
                               className="fs-6"
-                              href="https://anantya.ai/whatsapp-broadcasting"
+                              href="/whatsapp-broadcasting"
                               style={{ color: "#54cde5" }}
                             >
                               WhatsApp broadcasts
@@ -759,7 +756,7 @@ const WhatsAppBusinessAPIUltimateGuide = () => {
                           </p>
                         </div>
 
-                        <div className="text d-flex mb-20 ms-md-5">
+                        <div className="text d-flex mb-20 ">
                           <ul style={{ listStyleType: "disc" }}>
                             <li>
                               Imagine sending bulk messages to a large group of
@@ -793,7 +790,7 @@ const WhatsAppBusinessAPIUltimateGuide = () => {
                             </a>{" "}
                             you can really unleash the power of{" "}
                             <a
-                              href="whatsapp-business-api"
+                              href="/whatsapp-business-api"
                               style={{ color: "#54cde5" }}
                             >
                               WhatsApp for your business.
@@ -807,7 +804,7 @@ const WhatsAppBusinessAPIUltimateGuide = () => {
                           <p>
                             Worried about Meta’s new policy change? Anantya.ai
                             has a solution for you, with its{" "}
-                            <a href="sms-fallback" style={{ color: "#54cde5" }}>
+                            <a href="/sms-fallback" style={{ color: "#54cde5" }}>
                               SMS Fallback feature
                             </a>
                             , you can send messages that will reach the customer
@@ -816,9 +813,9 @@ const WhatsAppBusinessAPIUltimateGuide = () => {
                           </p>
                         </div>
 
-                        <h6 className="mt-40 mb-20" id="whatsapp-broadcast8">
+                        <h4 className="mt-40 mb-20 fs-3" id="whatsapp-broadcast8">
                           Conclusion
-                        </h6>
+                        </h4>
 
                         <div className="text d-flex mb-20">
                           <p>
@@ -837,7 +834,7 @@ const WhatsAppBusinessAPIUltimateGuide = () => {
                             With the{" "}
                             <a
                               className="fw-bold fs-6"
-                              href="https://anantya.ai/whatsapp-business-api-ultimate-guide"
+                              href="/whatsapp-business-api-ultimate-guide"
                             >
                               WhatsApp Business API,
                             </a>{" "}

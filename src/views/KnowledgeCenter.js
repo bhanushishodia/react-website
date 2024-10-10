@@ -6,33 +6,44 @@ import WhatsAppWidget from "../components/common/WhatsAppWidget";
 const KnowledgeCenter = () => {
   return (
     <>
-     <Helmet>
+     (
+        <Helmet>
+            {/* Alternate Links */}
+            <link rel="alternate" hrefLang="x-default" href="https://anantya.ai/knowledge-center" />
+            <link rel="alternate" hreflang="en-ae" href="https://anantya.ai/knowledge-center" />
+            <link rel="alternate" hreflang="en-sa" href="https://anantya.ai/knowledge-center" />
+            <link rel="alternate" hreflang="en-bh" href="https://anantya.ai/knowledge-center" />
+            <link rel="alternate" hreflang="en-in" href="https://anantya.ai/knowledge-center" />
+            <link rel="alternate" hreflang="en" href="https://anantya.ai/knowledge-center" />
+
+            {/* Title and Meta Tags */}
             <title>Knowledge Center - Knowledge center of Conversational Platform</title>
             <meta name="robots" content="index,follow" />
+            <meta name="title" content="Knowledge Center - Knowledge center of Conversational Platform" />
             <meta name="description" content="In our Knowledge centre pages we will explore scope of Conversational ai platform." />
+            <meta property="og:type" content="article" />
             <meta property="og:title" content="Knowledge Center - Knowledge center of Conversational Platform" />
-            <meta property="og:type" content="website" />
             <meta property="og:description" content="In our Knowledge centre pages we will explore scope of Conversational ai platform." />
             <meta property="og:url" content="https://anantya.ai/knowledge-center" />
             <meta property="og:site_name" content="anantya.ai" />
-            <meta property="og:image" content="https://anantya.ai/assets/img/home/Home%20page%20Graphics.webp" />
+            <meta property="og:image" content="https://ik.imagekit.io/cloy701fl/images/whatsapp-marketing.webp" />
             <link rel="canonical" href="https://anantya.ai/knowledge-center" />
             <meta name="author" content="Anantya" />
 
-            {/* JSON-LD Schema Markup */}
-            <script type="application/ld+json">
-                {JSON.stringify({
+            {/* JSON-LD for Organization */}
+            <script type="application/ld+json">{`
+                {
                     "@context": "https://schema.org",
                     "@type": "Organization",
                     "name": "Anantya.ai",
                     "alternateName": "Conversational Engagement Platform for Businesses | Anantya.ai",
                     "url": "https://anantya.ai/",
-                    "logo": "https://anantya.ai/assets/img/logo.webp",
+                    "logo": "https://ik.imagekit.io/cloy701fl/images/logo.webp",
                     "contactPoint": {
                         "@type": "ContactPoint",
                         "telephone": "+971565480273",
                         "contactType": "sales",
-                        "areaServed": ["AE", "SA", "BH"],
+                        "areaServed": ["AE", "SA", "BH", "IN"],
                         "availableLanguage": "en"
                     },
                     "sameAs": [
@@ -42,30 +53,23 @@ const KnowledgeCenter = () => {
                         "https://www.linkedin.com/company/anantya-ai",
                         "https://www.pinterest.com/anantyaai"
                     ]
-                })}
-            </script>
+                }
+            `}</script>
 
-            <script type="application/ld+json">
-                {JSON.stringify({
-                    "@context": "https://schema.org",
-                    "@graph": [
-                        {
-                            "@type": "WebPage",
-                            "name": "Knowledge Center - Knowledge center of Conversational Platform",
-                            "description": "In our Knowledge centre pages we will explore scope of Conversational ai platform."
-                        },
-                        {
-                            "@type": "WebSite",
-                            "name": "Anantya",
-                            "alternateName": "anantya.ai",
-                            "url": "https://anantya.ai/"
-                        }
-                    ]
-                })}
-            </script>
+            {/* JSON-LD for WebPage */}
+            <script type="application/ld+json">{`
+                {
+                    "@context": "https://schema.org/",
+                    "@type": "WebPage",
+                    "@id": "#WebPage",
+                    "url": "https://anantya.ai/knowledge-center",
+                    "name": "Knowledge Center - Knowledge center of Conversational Platform"
+                }
+            `}</script>
 
-            <script type="application/ld+json">
-                {JSON.stringify({
+            {/* JSON-LD for BreadcrumbList */}
+            <script type="application/ld+json">{`
+                {
                     "@context": "https://schema.org/",
                     "@type": "BreadcrumbList",
                     "itemListElement": [
@@ -82,9 +86,10 @@ const KnowledgeCenter = () => {
                             "item": "https://anantya.ai/knowledge-center"
                         }
                     ]
-                })}
-            </script>
+                }
+            `}</script>
         </Helmet>
+
     <div className="knowledge-center-page">
          {/* section1*/}
         <section style={{ background: '#f3fbff' }}>

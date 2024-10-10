@@ -26,88 +26,91 @@ const WhatsAppBroadcasting = () => {
   );
   return (
     <div>
-      <Helmet>
-            <title>Whatsapp Broadcasting Software for Business | Anantya.ai</title>
-            <meta name="keywords" content="Whatsapp Broadcasting,Whatsapp Broadcasting Software,whatsapp broadcast message,Whatsapp Broadcast,broadcast lists on whatsapp,Whatsapp Broadcast for business,whatsapp broadcasting service,Bulk Whatsapp Messaging,broadcast lists on whatsapp" />
-            <meta name="robots" content="index,follow" />
-            <meta 
-                name="description" 
-                content="Boost sales with WhatsApp Broadcasting software. Send messages effortlessly, convert customers, and increase engagement with our marketing tool." 
-            />
-            <meta property="og:title" content="Whatsapp Broadcasting Software for Business | Anantya.ai" />
-            <meta property="og:type" content="article" />
-            <meta 
-                property="og:description" 
-                content="Boost sales with WhatsApp Broadcasting software. Send messages effortlessly, convert customers, and increase engagement with our marketing tool." 
-            />
-            <meta property="og:url" content="https://anantya.ai/whatsapp-broadcasting" />
-            <meta property="og:site_name" content="anantya.ai" />
-            <meta property="og:image" content="https://anantya.ai/assets/img/whatsapp-support/offer-support-at-scale-with.webp" />
-            <link rel="canonical" href="https://anantya.ai/whatsapp-broadcasting" />
-            <meta name="author" content="Anantya" />
+       <Helmet>
+        <link rel="alternate" hrefLang="x-default" href="https://anantya.ai/whatsapp-broadcasting" />
+        <link rel="alternate" hreflang="en-ae" href="https://anantya.ai/whatsapp-broadcasting" />
+        <link rel="alternate" hreflang="en-sa" href="https://anantya.ai/whatsapp-broadcasting" />
+        <link rel="alternate" hreflang="en-bh" href="https://anantya.ai/whatsapp-broadcasting" />
+        <link rel="alternate" hreflang="en-in" href="https://anantya.ai/whatsapp-broadcasting" />
+        <link rel="alternate" hreflang="en" href="https://anantya.ai/whatsapp-broadcasting" />
 
-            <script type="application/ld+json">
-                {`
-                {
-                  "@context": "https://schema.org",
-                  "@type": "Organization",
-                  "name": "Anantya.ai",
-                  "alternateName": "Conversational Engagement Platform for Businesses | Anantya.ai",
-                  "url": "https://anantya.ai/",
-                  "logo": "https://anantya.ai/assets/img/logo.webp",
-                  "contactPoint": {
-                    "@type": "ContactPoint",
-                    "telephone": "+971565480273",
-                    "contactType": "sales",
-                    "areaServed": ["AE", "SA", "BH"],
-                    "availableLanguage": "en"
-                  },
-                  "sameAs": [
-                    "https://www.facebook.com/anantyaai",
-                    "https://www.instagram.com/anantya.ai",
-                    "https://www.youtube.com/@Anantyaai",
-                    "https://www.linkedin.com/company/anantya-ai",
-                    "https://www.pinterest.com/anantyaai"
-                  ]
-                }
-                `}
-            </script>
+        <title>Whatsapp Broadcasting Software for Business | Anantya.ai</title>
+        <meta name="robots" content="index,follow" />
+        <meta name="title" content="Whatsapp Broadcasting Software for Business | Anantya.ai" />
+        <meta name="description"
+          content="Boost sales with WhatsApp Broadcasting software. Send messages effortlessly, convert customers, and increase engagement with our marketing tool." />
+        <meta name="keywords" content="Whatsapp Broadcasting, Whatsapp Broadcasting Software, whatsapp broadcast message, Whatsapp Broadcast, broadcast lists on whatsapp, Whatsapp Broadcast for business, whatsapp broadcasting service, Bulk Whatsapp Messaging, broadcast lists on whatsapp" />
+        <meta property="og:type" content="article" />
+        <meta property="og:locale" content="en_AE" />
+        <meta property="og:locale" content="en_SA" />
+        <meta property="og:locale" content="en_BH" />
+        <meta property="og:locale" content="en_IN" />
+        <meta property="og:title" content="Whatsapp Broadcasting Software for Business | Anantya.ai" />
+        <meta property="og:description"
+          content="Boost sales with WhatsApp Broadcasting software. Send messages effortlessly, convert customers, and increase engagement with our marketing tool." />
+        <meta property="og:url" content="https://anantya.ai/whatsapp-broadcasting" />
+        <meta property="og:site_name" content="anantya.ai" />
+        <meta property="og:image" content="https://ik.imagekit.io/cloy701fl/images/broadcast-messages-to-unlimited.webp" />
+        <link rel="canonical" href="https://anantya.ai/whatsapp-broadcasting" />
+        <meta name="author" content="Anantya" />
 
-            <script type="application/ld+json">
-                {`
-                {
-                  "@context": "https://schema.org/",
-                  "@type": "WebPage",
-                  "@id": "#WebPage",
-                  "url": "https://anantya.ai/whatsapp-broadcasting",
-                  "name": "Whatsapp Broadcasting Software for Business | Anantya.ai"
-                }
-                `}
-            </script>
+        {/* Structured Data */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Anantya.ai",
+            "alternateName": "Conversational Engagement Platform for Businesses | Anantya.ai",
+            "url": "https://anantya.ai/",
+            "logo": "https://ik.imagekit.io/cloy701fl/images/logo.webp",
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+971565480273",
+              "contactType": "sales",
+              "areaServed": ["AE", "SA", "BH", "IN"],
+              "availableLanguage": "en"
+            },
+            "sameAs": [
+              "https://www.facebook.com/anantyaai",
+              "https://www.instagram.com/anantya.ai",
+              "https://www.youtube.com/@Anantyaai",
+              "https://www.linkedin.com/company/anantya-ai",
+              "https://www.pinterest.com/anantyaai"
+            ]
+          })}
+        </script>
 
-            <script type="application/ld+json">
-                {`
-                {
-                  "@context": "https://schema.org",
-                  "@type": "BreadcrumbList",
-                  "itemListElement": [
-                    {
-                      "@type": "ListItem",
-                      "position": 1,
-                      "name": "Home",
-                      "item": "https://anantya.ai"
-                    },
-                    {
-                      "@type": "ListItem",
-                      "position": 2,
-                      "name": "Whatsapp Broadcasting Software for Business | Anantya.ai",
-                      "item": "https://anantya.ai/whatsapp-broadcasting"
-                    }
-                  ]
-                }
-                `}
-            </script>
-        </Helmet>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org/",
+            "@type": "WebPage",
+            "@id": "#WebPage",
+            "url": "https://anantya.ai/whatsapp-broadcasting",
+            "name": "Whatsapp Broadcasting"
+          })}
+        </script>
+
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Homepage",
+                "item": "https://anantya.ai"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Whatsapp Broadcasting Software for Business | Anantya.ai",
+                "item": "https://anantya.ai/whatsapp-broadcasting"
+              }
+            ]
+          })}
+        </script>
+      </Helmet>
       <div className="container py-5 mt-5">
         <div className="content ">
           <div className="row align-items-center">

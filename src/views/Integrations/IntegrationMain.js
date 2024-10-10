@@ -7,7 +7,7 @@ import WhatsAppWidget from "../../components/common/WhatsAppWidget";
 import { Helmet } from 'react-helmet';
 import { getImage } from '../../utils/getImage'; // Correct path to the utility
 // Fetching images dynamically using the getImage function
-const integrationsImg = getImage('images/integrations.webp'); // Correct path
+const integrationsImg = getImage('integrations.webp'); // Correct path
 const instagramIcon = getImage('Integration/instagram.svg');
 const whatsappIcon = getImage('Integration/Whatsapp.webp');
 const messengerIcon = getImage('Integration/Messenger.webp');
@@ -38,107 +38,90 @@ const IntegrationMain = () => {
     <>
 
 <Helmet>
-      {/* anup meta tags and schema */}
-      <title>Integrations: Conversational AI for Customer Support | Anantya.ai</title>
+      {/* Alternate Links */}
+      <link rel="alternate" hrefLang="x-default" href="https://anantya.ai/integration" />
+      <link rel="alternate" hreflang="en-ae" href="https://anantya.ai/integration" />
+      <link rel="alternate" hreflang="en-sa" href="https://anantya.ai/integration" />
+      <link rel="alternate" hreflang="en-bh" href="https://anantya.ai/integration" />
+      <link rel="alternate" hreflang="en-in" href="https://anantya.ai/integration" />
+      <link rel="alternate" hreflang="en" href="https://anantya.ai/integration" />
+
+      {/* Title and Meta Tags */}
+      <title>Integrate Message Application with Whatsapp Business| Anantya.ai</title>
       <meta name="robots" content="index,follow" />
-      <meta 
-        name="description" 
-        content="Integration with all the largest platforms, Facebook Messenger, Google Business Messages, Instagram, Line, Telegram, Viber, Wechat, Dialogflow, Hubspot, Make, Salesforce, Pipedrive, Webhook, Woocommerce, and Zapier" 
-      />
-      <meta 
-        name="keywords" 
-        content="facebook messenger integration, google business messages integration, instagram integration, line integration, telegram integration, viber integration, wechat integration, dialogflow integration, hubspot integration, make integration, salesforce integration, pipedrive integration, webhook, woocommerce, zapier integration" 
-      />
-      <meta 
-        property="og:title" 
-        content="Integrations: Conversational AI for Customer Support | Anantya.ai" 
-      />
-      <meta property="og:type" content="website" />
-      <meta 
-        property="og:description" 
-        content="Integration with all the largest platforms, Facebook Messenger, Google Business Messages, Instagram, Line, Telegram, Viber, Wechat, Dialogflow, Hubspot, Make, Salesforce, Pipedrive, Webhook, Woocommerce, and Zapier" 
-      />
+      <meta name="title" content="Integrate Message Application with Whatsapp Business| Anantya.ai" />
+      <meta name="description" content="Integration with all the largest platforms, Facebook Messenger, Google Business Messages, Instagram, Line, Telegram, Viber, Wechat, Dialogflow, Hubspot, Make, Salesforce, Pipedrive, Webhook, Woocommerce, and Zapier" />
+      <meta name="keywords" content="facebook messenger integration, google business messages integration, instagram integration, line integration, telegram integration, viber integration, wechat integration, dialogflow integration, hubspot integration, make integration, salesforce integration, pipedrive integration, webhook, woocommerce, zapier integration" />
+      <meta property="og:type" content="article" />
+      <meta property="og:locale" content="en_AE" />
+      <meta property="og:locale" content="en_SA" />
+      <meta property="og:locale" content="en_BH" />
+      <meta property="og:locale" content="en_IN" />
+      <meta property="og:title" content="Integrate Message Application with Whatsapp Business| Anantya.ai" />
+      <meta property="og:description" content="Integration with all the largest platforms, Facebook Messenger, Google Business Messages, Instagram, Line, Telegram, Viber, Wechat, Dialogflow, Hubspot, Make, Salesforce, Pipedrive, Webhook, Woocommerce, and Zapier" />
       <meta property="og:url" content="https://anantya.ai/integration" />
       <meta property="og:site_name" content="anantya.ai" />
-      <meta property="og:image" content="" />
+      <meta property="og:image" content="https://ik.imagekit.io/cloy701fl/images/integrations.webp" />
       <link rel="canonical" href="https://anantya.ai/integration" />
       <meta name="author" content="Anantya" />
 
-      {/* JSON-LD Schema Markup */}
+      {/* JSON-LD Scripts */}
       <script type="application/ld+json">
-        {`
-          {
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            "name": "Anantya.ai",
-            "alternateName": "Conversational Engagement Platform for Businesses | Anantya.ai",
-            "url": "https://anantya.ai/",
-            "logo": "https://anantya.ai/assets/img/logo.webp",
-            "contactPoint": {
-              "@type": "ContactPoint",
-              "telephone": "+971565480273",
-              "contactType": "sales",
-              "areaServed": ["AE","SA","BH"],
-              "availableLanguage": "en"
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Anantya.ai",
+          "alternateName": "Conversational Engagement Platform for Businesses | Anantya.ai",
+          "url": "https://anantya.ai/",
+          "logo": "https://ik.imagekit.io/cloy701fl/images/logo.webp",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+971565480273",
+            "contactType": "sales",
+            "areaServed": ["AE", "SA", "BH", "IN"],
+            "availableLanguage": "en"
+          },
+          "sameAs": [
+            "https://www.facebook.com/anantyaai",
+            "https://www.instagram.com/anantya.ai",
+            "https://www.youtube.com/@Anantyaai",
+            "https://www.linkedin.com/company/anantya-ai",
+            "https://www.pinterest.com/anantyaai"
+          ]
+        })}
+      </script>
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org/",
+          "@type": "WebPage",
+          "@id": "#WebPage",
+          "url": "https://anantya.ai/integration",
+          "name": "Integrate Message Application with Whatsapp Business| Anantya.ai"
+        })}
+      </script>
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org/",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Homepage",
+              "item": "https://anantya.ai"
             },
-            "sameAs": [
-              "https://www.facebook.com/anantyaai",
-              "https://www.instagram.com/anantya.ai",
-              "https://www.youtube.com/@Anantyaai",
-              "https://www.linkedin.com/company/anantya-ai",
-              "https://www.pinterest.com/anantyaai"
-            ]
-          }
-        `}
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Integrations",
+              "item": "https://anantya.ai/integration"
+            }
+          ]
+        })}
       </script>
-
-      <script type="application/ld+json">
-        {`
-          {
-            "@context": "https://schema.org",
-            "@graph": [
-              {
-                "@type": "WebPage",
-                "name": "Integrations: Conversational AI for Customer Support | Anantya.ai",
-                "description": "Integration with all the largest platforms, Facebook Messenger, Google Business Messages, Instagram, Line, Telegram, Viber, Wechat, Dialogflow, Hubspot, Make, Salesforce, Pipedrive, Webhook, Woocommerce, and Zapier."
-              },
-              {
-                "@type": "WebSite",
-                "name": "Anantya",
-                "alternateName": "anantya.ai",
-                "url": "https://anantya.ai/"
-              }
-            ]
-          }
-        `}
-      </script>
-
-      <script type="application/ld+json">
-        {`
-          {
-            "@context": "https://schema.org/",
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-              {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Homepage",
-                "item": "https://anantya.ai"
-              },
-              {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "Integrations",
-                "item": "https://anantya.ai/integration"
-              }
-            ]
-          }
-        `}
-      </script>
-      {/* anup meta tags and schema */}
     </Helmet>
       <section className="about style-3">
-        <div className="container my-5">
+        <div className="container my-5 pt-md-0 pt-5">
           <div className="row">
             <div className="col-lg-5 my-auto text-lg-start text-center">
               <div className="integration info pe-lg-5">

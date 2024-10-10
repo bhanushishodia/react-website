@@ -19,88 +19,82 @@ const Contact = () => {
   return (
      <>
       <Helmet>
-                <title>Contact Us | Whatsapp API Platform | Anantya</title>
-                <meta name="robots" content="index,follow" />
-                <meta
-                    name="description"
-                    content="Connect with Verified WhatsApp API - Your trusted solution for seamless communication. Reach out to us today for secure and reliable WhatsApp integration."
-                />
-                <meta property="og:title" content="Contact Us | Whatsapp API Platform | Anantya" />
-                <meta property="og:type" content="article" />
-                <meta
-                    property="og:description"
-                    content="Connect with Verified WhatsApp API - Your trusted solution for seamless communication. Reach out to us today for secure and reliable WhatsApp integration."
-                />
-                <meta property="og:url" content="https://anantya.ai/contact" />
-                <meta property="og:site_name" content="anantya.ai" />
-                <meta property="og:image" content="https://anantya.ai/assets/img/contact/customer-support.webp" />
-                <link rel="canonical" href="https://anantya.ai/contact" />
-                <meta name="author" content="Anantya" />
-
-                <script type="application/ld+json">
-                    {JSON.stringify({
-                        "@context": "https://schema.org",
-                        "@type": "Organization",
-                        "name": "Anantya.ai",
-                        "alternateName": "Conversational Engagement Platform for Businesses | Anantya.ai",
-                        "url": "https://anantya.ai/",
-                        "logo": "https://anantya.ai/assets/img/logo.webp",
-                        "contactPoint": {
-                            "@type": "ContactPoint",
-                            "telephone": "+971565480273",
-                            "contactType": "sales",
-                            "areaServed": ["AE", "SA", "BH"],
-                            "availableLanguage": "en",
-                        },
-                        "sameAs": [
-                            "https://www.facebook.com/anantyaai",
-                            "https://www.instagram.com/anantya.ai",
-                            "https://www.youtube.com/@Anantyaai",
-                            "https://www.linkedin.com/company/anantya-ai",
-                            "https://www.pinterest.com/anantyaai",
-                        ],
-                    })}
-                </script>
-
-                <script type="application/ld+json">
-                    {JSON.stringify({
-                        "@context": "https://schema.org",
-                        "@graph": [
-                            {
-                                "@type": "WebPage",
-                                "name": "Contact Us | Whatsapp API Platform | Anantya",
-                                "description": "Connect with Verified WhatsApp API - Your trusted solution for seamless communication. Reach out to us today for secure and reliable WhatsApp integration.",
-                            },
-                            {
-                                "@type": "WebSite",
-                                "name": "Anantya",
-                                "alternateName": "anantya.ai",
-                                "url": "https://anantya.ai/",
-                            },
-                        ],
-                    })}
-                </script>
-
-                <script type="application/ld+json">
-                    {JSON.stringify({
-                        "@context": "https://schema.org",
-                        "@type": "BreadcrumbList",
-                        "itemListElement": [
-                            {
-                                "@type": "ListItem",
-                                "position": 1,
-                                "name": "Home",
-                                "item": "https://anantya.ai",
-                            },
-                            {
-                                "@type": "ListItem",
-                                "position": 2,
-                                "name": "Contact Us",
-                                "item": "https://anantya.ai/contact",
-                            },
-                        ],
-                    })}
-                </script>
+        <link rel="alternate" hrefLang="x-default" href="https://anantya.ai/contact" />
+        <link rel="alternate" hreflang="en-ae" href="https://anantya.ai/contact" />
+        <link rel="alternate" hreflang="en-sa" href="https://anantya.ai/contact" />
+        <link rel="alternate" hreflang="en-bh" href="https://anantya.ai/contact" />
+        <link rel="alternate" hreflang="en-in" href="https://anantya.ai/contact" />
+        <link rel="alternate" hreflang="en" href="https://anantya.ai/contact" />
+        <title>Contact Us | Whatsapp API Platform | Anantya.ai</title>
+        <meta name="robots" content="index,follow" />
+        <meta name="title" content="Contact Us | Whatsapp API Platform | Anantya.ai" />
+        <meta name="description"
+          content="Connect with Verified WhatsApp API - Your trusted solution for seamless communication. Reach out to us today for secure and reliable WhatsApp integration." />
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content="Contact Us | Whatsapp API Platform | Anantya.ai" />
+        <meta property="og:description"
+          content="Connect with Verified WhatsApp API - Your trusted solution for seamless communication. Reach out to us today for secure and reliable WhatsApp integration." />
+        <meta property="og:url" content="https://anantya.ai/contact" />
+        <meta property="og:site_name" content="anantya.ai" />
+        <meta property="og:image" content="https://ik.imagekit.io/cloy701fl/images/customer-support.webp" />
+        <link rel="canonical" href="https://anantya.ai/contact" />
+        <meta name="author" content="Anantya" />
+        <script type="application/ld+json">
+          {`
+          {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Anantya.ai",
+            "alternateName": "Conversational Engagement Platform for Businesses | Anantya.ai",
+            "url": "https://anantya.ai/",
+            "logo": "https://ik.imagekit.io/cloy701fl/images/logo.webp",
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+971565480273",
+              "contactType": "sales",
+              "areaServed": ["AE", "SA", "BH", "IN"],
+              "availableLanguage": "en"
+            },
+            "sameAs": [
+              "https://www.facebook.com/anantyaai",
+              "https://www.instagram.com/anantya.ai",
+              "https://www.youtube.com/@Anantyaai",
+              "https://www.linkedin.com/company/anantya-ai",
+              "https://www.pinterest.com/anantyaai"
+            ]
+          }`}
+        </script>
+        <script type="application/ld+json">
+          {`
+          {
+            "@context": "https://schema.org/",
+            "@type": "WebPage",
+            "@id": "#WebPage",
+            "url": "https://anantya.ai/contact",
+            "name": "Contact Us | Whatsapp API Platform | Anantya.ai"
+          }`}
+        </script>
+        <script type="application/ld+json">
+          {`
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://anantya.ai"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Contact Us",
+                "item": "https://anantya.ai/contact"
+              }
+            ]
+          }`}
+        </script>
       </Helmet>
       <div className="contact-page">
       <section>

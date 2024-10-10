@@ -6,103 +6,115 @@ import { Helmet } from 'react-helmet';
 import { getImage } from '../../utils/getImage'; // Correct path to utility
 // Fetching images dynamically using getImage function
 const whatsappMarketingImg = getImage('whatsapp-marketing.webp');
-const offerAndDiscountImg = getImage('offer-and-discount.webp');
+const offerAndDiscountImg = getImage('/blog/offer-and-discount.webp');
 const WhatsAppMarketingStrategies = () => {
   return (
     <div>
-       <Helmet>
-            <title>WhatsApp Marketing Strategies to Drive 3X More Sales in 2024</title>
-            <meta name="keywords" content="whatsapp marketing,whatsapp marketing strategy,whatsapp marketing ideas,whatsapp marketing tips,whatsapp business marketing,whatsapp marketing service" />
-            <meta name="robots" content="index,follow" />
-            <meta name="description" content="WhatsApp marketing is all about promoting goods and services using WhatsApp. 5 strategies will help you drive 3 times more sales for your business." />
-            <meta property="og:type" content="article" />
-            <meta property="og:locale" content="en_AE" />
-            <meta property="og:locale" content="en_SA" />
-            <meta property="og:locale" content="en_BH" />
-            <meta property="og:title" content="WhatsApp Marketing Strategies to Drive 3X More Sales in 2024" />
-            <meta property="og:description" content="WhatsApp marketing is all about promoting goods and services using WhatsApp. 5 strategies will help you drive 3 times more sales for your business." />
-            <meta property="og:url" content="https://anantya.ai/whatsapp-marketing-strategies-to-drive-sales" />
-            <meta property="og:site_name" content="anantya.ai" />
-            <meta property="og:image" content="https://anantya.ai/assets/img/home/whatsapp-marketing.webp" />
-            <link rel="canonical" href="https://anantya.ai/whatsapp-marketing-strategies-to-drive-sales" />
-            <meta name="author" content="Anantya" />
+    <Helmet>
+        <link rel="alternate" hrefLang="x-default" href="https://anantya.ai/blog/whatsapp-marketing-strategies-to-drive-sales" />
+        <link rel="alternate" hreflang="en-ae" href="https://anantya.ai/blog/whatsapp-marketing-strategies-to-drive-sales" />
+        <link rel="alternate" hreflang="en-sa" href="https://anantya.ai/blog/whatsapp-marketing-strategies-to-drive-sales" />
+        <link rel="alternate" hreflang="en-bh" href="https://anantya.ai/blog/whatsapp-marketing-strategies-to-drive-sales" />
+        <link rel="alternate" hreflang="en-in" href="https://anantya.ai/blog/whatsapp-marketing-strategies-to-drive-sales" />
+        <link rel="alternate" hreflang="en" href="https://anantya.ai/blog/whatsapp-marketing-strategies-to-drive-sales" />
 
-            <script type="application/ld+json">
-                {JSON.stringify({
-                    "@context": "https://schema.org",
-                    "@type": "Organization",
-                    "name": "anantya.ai",
-                    "alternateName": "Conversational Engagement Platform for Businesses | Anantya.ai",
-                    "url": "https://anantya.ai",
-                    "logo": "https://anantya.ai/assets/img/logo.webp",
-                    "contactPoint": {
-                        "@type": "ContactPoint",
-                        "telephone": "+971565480273",
-                        "contactType": "sales",
-                        "areaServed": ["AE", "SA", "BH"],
-                        "availableLanguage": ["en"]
-                    },
-                    "sameAs": [
-                        "https://www.facebook.com/anantyaai",
-                        "https://www.instagram.com/anantya.ai",
-                        "https://www.youtube.com/@Anantyaai",
-                        "https://www.linkedin.com/company/anantya-ai",
-                        "https://www.pinterest.com/anantyaai"
-                    ]
-                })}
-            </script>
+        <title>WhatsApp Marketing Strategies to Drive 3X More Sales in 2024</title>
+        <meta name="robots" content="index,follow" />
+        <meta name="title" content="WhatsApp Marketing Strategies to Drive 3X More Sales in 2024" />
+        <meta name="description" content="WhatsApp marketing is all about promoting goods and services using WhatsApp. 5 strategies will help you drive 3 times more sales for your business." />
+        <meta name="keywords" content="whatsapp marketing, whatsapp marketing strategy, whatsapp marketing strategies, whatsapp marketing ideas, whatsapp marketing tips, whatsapp business marketing, whatsapp marketing service, whatsapp marketing software, whatsapp marketing message, whatsapp marketing company, whatsapp marketing platform, whatsapp marketing api" />
+        <meta property="og:type" content="blog" />
+        <meta property="og:locale" content="en_AE" />
+        <meta property="og:title" content="WhatsApp Marketing Strategies to Drive 3X More Sales in 2024" />
+        <meta property="og:description" content="WhatsApp marketing is all about promoting goods and services using WhatsApp. 5 strategies will help you drive 3 times more sales for your business." />
+        <meta property="og:url" content="https://anantya.ai/blog/whatsapp-marketing-strategies-to-drive-sales" />
+        <meta property="og:site_name" content="anantya.ai" />
+        <meta property="og:image" content="https://ik.imagekit.io/cloy701fl/images/whatsapp-marketing.webp" />
+        <link rel="canonical" href="https://anantya.ai/blog/whatsapp-marketing-strategies-to-drive-sales" />
+        <meta name="author" content="Kiran Yadav" />
 
-            <script type="application/ld+json">
-                {JSON.stringify({
-                    "@context": "https://schema.org",
-                    "@type": "BlogPosting",
-                    "mainEntityOfPage": {
-                        "@type": "WebPage",
-                        "@id": "https://anantya.ai/whatsapp-marketing-strategies-to-drive-sales"
-                    },
-                    "headline": "WhatsApp Marketing Strategies to Drive 3X More Sales in 2024",
-                    "description": "WhatsApp marketing is all about promoting goods and services using WhatsApp. 5 strategies will help you drive 3 times more sales for your business.",
-                    "image": "https://anantya.ai/assets/img/home/whatsapp-marketing.webp",
-                    "author": {
-                        "@type": "Organization",
-                        "name": "Anantya.ai",
-                        "url": "https://anantya.ai",
-                        "areaServed": ["AE", "SA", "BH"]
-                    },
-                    "publisher": {
-                        "@type": "Organization",
-                        "name": "Anantya.ai",
-                        "logo": {
-                            "@type": "ImageObject",
-                            "url": "https://anantya.ai/assets/img/logo.webp"
-                        }
-                    },
-                    "datePublished": "2024-06-25",
-                    "dateModified": "2024-07-12"
-                })}
-            </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "anantya.ai",
+            "alternateName": "Conversational Engagement Platform for Businesses | Anantya.ai",
+            "url": "https://anantya.ai",
+            "logo": "https://ik.imagekit.io/cloy701fl/images/logo.webp",
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+971565480273",
+              "contactType": "sales",
+              "areaServed": ["AE", "SA", "BH", "IN"],
+              "availableLanguage": ["en"]
+            },
+            "sameAs": [
+              "https://www.facebook.com/anantyaai",
+              "https://www.instagram.com/anantya.ai",
+              "https://www.youtube.com/@Anantyaai",
+              "https://www.linkedin.com/company/anantya-ai",
+              "https://www.pinterest.com/anantyaai"
+            ]
+          })}
+        </script>
 
-            <script type="application/ld+json">
-                {JSON.stringify({
-                    "@context": "https://schema.org/",
-                    "@type": "BreadcrumbList",
-                    "itemListElement": [
-                        {
-                            "@type": "ListItem",
-                            "position": 1,
-                            "name": "Home",
-                            "item": "https://anantya.ai/"
-                        },
-                        {
-                            "@type": "ListItem",
-                            "position": 2,
-                            "name": "WhatsApp Marketing Strategies to Drive 3X More Sales in 2024",
-                            "item": "https://anantya.ai/whatsapp-marketing-strategies-to-drive-sales"
-                        }
-                    ]
-                })}
-            </script>
-        </Helmet>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BlogPosting",
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "https://anantya.ai/blog/whatsapp-marketing-strategies-to-drive-sales"
+            },
+            "headline": "WhatsApp Marketing Strategies to Drive 3X More Sales in 2024",
+            "description": "WhatsApp marketing is all about promoting goods and services using WhatsApp. 5 strategies will help you drive 3 times more sales for your business.",
+            "image": "https://ik.imagekit.io/cloy701fl/images/whatsapp-marketing.webp",
+            "author": {
+              "@type": "Organization",
+              "name": "Anantya.ai",
+              "url": "https://anantya.ai",
+              "areaServed": ["AE", "SA", "BH", "IN"]
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "Anantya.ai",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://ik.imagekit.io/cloy701fl/images/logo.webp"
+              }
+            },
+            "datePublished": "2024-06-25",
+            "dateModified": "2024-07-12"
+          })}
+        </script>
+
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org/",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Homepage",
+                "item": "https://anantya.ai/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Blog",
+                "item": "https://anantya.ai/blog"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "WhatsApp Marketing Strategies to Drive 3X More Sales in 2024",
+                "item": "https://anantya.ai/blog/whatsapp-marketing-strategies-to-drive-sales"
+              }
+            ]
+          })}
+        </script>
+      </Helmet>
 
        <div className="container py-5 my-4">
           <h1 className="pb-2 text-center">
@@ -133,7 +145,7 @@ const WhatsAppMarketingStrategies = () => {
                 <p>
                   And here's the thing – if you're not utilizing{" "}
                   <a
-                    href="whatsapp-marketing"
+                    href="/whatsapp-marketing"
                     style={{ color: "#5dc4eb" }}
                   >
                     {" "}
@@ -176,7 +188,7 @@ const WhatsAppMarketingStrategies = () => {
                   If the term WhatsApp Business API is new to you, then you
                   should probably first check out this{" "}
                   <a
-                    href="whatsapp-business-api-ultimate-guide"
+                    href="/whatsapp-business-api-ultimate-guide"
                     style={{ color: "#5dc4eb" }}
                   >
                     {" "}
@@ -198,7 +210,7 @@ const WhatsAppMarketingStrategies = () => {
                       WhatsApp has allowed businesses to send promotional
                       messages since 2021 with{" "}
                       <a
-                        href="https://anantya.ai/"
+                        href="/"
                         style={{ color: "#5dc4eb" }}
                       >
                         {" "}
@@ -215,7 +227,7 @@ const WhatsAppMarketingStrategies = () => {
                       With WhatsApp’s high open rate, personalized
                       communication, and creative messaging options, you can 3x
                       your business' sales and conversions with{" "}
-                      <a href="whatsapp-marketing"> WhatsApp Marketing.</a>
+                      <a href="/whatsapp-marketing"> WhatsApp Marketing.</a>
                     </p>
                   </li>
                   <li>
@@ -260,14 +272,14 @@ const WhatsAppMarketingStrategies = () => {
                     <p>
                       By using{" "}
                       <a
-                        href="https://anantya.ai/"
+                        href="/"
                         style={{ color: "#5dc4eb" }}
                       >
                         Anantya.ai
                       </a>
                       , you can run{" "}
                       <a
-                        href="click-to-whatsapp-ads-marketing-2023"
+                        href="/click-to-whatsapp-ads-marketing-2023"
                         style={{ color: "#5dc4eb" }}
                       >
                         Click-to-WhatsApp Ads
@@ -280,7 +292,7 @@ const WhatsAppMarketingStrategies = () => {
                     <img
                       src={offerAndDiscountImg}
                       className="img-fluid h-50 w-50 mx-auto"
-                      alt="blog-2-image"
+                      alt="Run Direct to WhatsApp Ads"
                     />
                   </div>
                   <li>
@@ -316,7 +328,7 @@ const WhatsAppMarketingStrategies = () => {
                     </h4>
                     <p>
                       Integrating a{" "}
-                      <a href="how-to-create-a-whatsapp-chatbot-for-business">
+                      <a href="/how-to-create-a-whatsapp-chatbot-for-business">
                         {" "}
                         WhatsApp Chatbot{" "}
                       </a>{" "}
@@ -341,7 +353,7 @@ const WhatsAppMarketingStrategies = () => {
                 <p>
                   The{" "}
                   <a
-                    href="whatsapp-marketing"
+                    href="/whatsapp-marketing"
                     style={{ color: "#5dc4eb" }}
                   >
                     {" "}
@@ -357,7 +369,7 @@ const WhatsAppMarketingStrategies = () => {
                 <p>
                   You can take help from Official WhatsApp Business partner
                   (BSP){" "}
-                  <a href="https://anantya.ai/" style={{ color: "#5dc4eb" }}>
+                  <a href="/" style={{ color: "#5dc4eb" }}>
                     Anantya.ai
                   </a>{" "}
                   to get started.
@@ -416,7 +428,7 @@ const WhatsAppMarketingStrategies = () => {
                 </ul>
                 <p>
                  
-                  <a href="https://anantya.ai/" style={{ color: "#5dc4eb" }}>
+                  <a href="/" style={{ color: "#5dc4eb" }}>
                     Anantya.ai
                   </a>{" "}
                   is a Meta Business Partner that helps businesses to get WhatsApp Business API and make the most out of it with intuitive features like WhatsApp broadcasting, Automation, Live Chat, WhatsApp Catalogues, and Click-to-WhatsApp Ads, all designed to supercharge your WhatsApp Marketing efforts.

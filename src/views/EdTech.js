@@ -127,15 +127,30 @@ const submitFormAndOpenPDF = (event) => {
   return (
     <div>
     <Helmet>
+      <link rel="alternate" hrefLang="x-default" href="https://anantya.ai/edtech-industry" />
+      <link rel="alternate" hreflang="en-ae" href="https://anantya.ai/edtech-industry" />
+      <link rel="alternate" hreflang="en-sa" href="https://anantya.ai/edtech-industry" />
+      <link rel="alternate" hreflang="en-bh" href="https://anantya.ai/edtech-industry" />
+      <link rel="alternate" hreflang="en-in" href="https://anantya.ai/edtech-industry" />
+      <link rel="alternate" hreflang="en" href="https://anantya.ai/edtech-industry" />
+
       <title>Enhance Learning with WhatsApp Integration | Ed-tech Whatsapp Chatbot</title>
       <meta name="robots" content="index,follow" />
-      <meta name="description" content="Whatsapp Chatbot for EdTech solutions with Anantya AI's WhatsApp integration. Streamline communication, engage learners, and create a more connected educational experience." />
-      <meta property="og:title" content="Enhance Learning with WhatsApp Integration | Ed-tech Whatsapp Chatbot" />
+      <meta name="title" content="Enhance Learning with WhatsApp Integration | Ed-tech Whatsapp Chatbot" />
+      <meta name="description"
+            content="Whatsapp Chatbot for EdTech solutions with Anantya AI's WhatsApp integration. Streamline communication, engage learners, and create a more connected educational experience." />
+      <meta name="keywords" content="whatsapp business api for Ed-tech, whatsapp business api for education, whatsapp for education, whatsapp business for education" />
       <meta property="og:type" content="article" />
-      <meta property="og:description" content="Whatsapp Chatbot for EdTech solutions with Anantya AI's WhatsApp integration. Streamline communication, engage learners, and create a more connected educational experience." />
+      <meta property="og:locale" content="en_AE" />
+      <meta property="og:locale" content="en_SA" />
+      <meta property="og:locale" content="en_BH" />
+      <meta property="og:locale" content="en_IN" />
+      <meta property="og:title" content="Enhance Learning with WhatsApp Integration | Ed-tech Whatsapp Chatbot" />
+      <meta property="og:description"
+            content="Whatsapp Chatbot for EdTech solutions with Anantya AI's WhatsApp integration. Streamline communication, engage learners, and create a more connected educational experience." />
       <meta property="og:url" content="https://anantya.ai/edtech-industry" />
       <meta property="og:site_name" content="anantya.ai" />
-      <meta property="og:image" content="https://anantya.ai/assets/img/edtech/transform-education-with-whatsapp.webp" />
+      <meta property="og:image" content="https://ik.imagekit.io/cloy701fl/images/transform-education-with-whatsapp.webp" />
       <link rel="canonical" href="https://anantya.ai/edtech-industry" />
       <meta name="author" content="Anantya" />
 
@@ -146,12 +161,12 @@ const submitFormAndOpenPDF = (event) => {
           "name": "Anantya.ai",
           "alternateName": "Conversational Engagement Platform for Businesses | Anantya.ai",
           "url": "https://anantya.ai/",
-          "logo": "https://anantya.ai/assets/img/logo.webp",
+          "logo": "https://ik.imagekit.io/cloy701fl/images/logo.webp",
           "contactPoint": {
             "@type": "ContactPoint",
             "telephone": "+971565480273",
             "contactType": "sales",
-            "areaServed": ["AE", "SA", "BH"],
+            "areaServed": ["AE", "SA", "BH", "IN"],
             "availableLanguage": "en"
           },
           "sameAs": [
@@ -166,20 +181,11 @@ const submitFormAndOpenPDF = (event) => {
 
       <script type="application/ld+json">
         {JSON.stringify({
-          "@context": "https://schema.org",
-          "@graph": [
-            {
-              "@type": "WebPage",
-              "name": "Enhance Learning with WhatsApp Integration | Ed-tech Whatsapp Chatbot",
-              "description": "Whatsapp Chatbot for EdTech solutions with Anantya AI's WhatsApp integration. Streamline communication, engage learners, and create a more connected educational experience."
-            },
-            {
-              "@type": "WebSite",
-              "name": "Anantya",
-              "alternateName": "anantya.ai",
-              "url": "https://anantya.ai/"
-            }
-          ]
+          "@context": "https://schema.org/",
+          "@type": "WebPage",
+          "@id": "#WebPage",
+          "url": "https://anantya.ai/edtech-industry",
+          "name": "Enhance Learning with WhatsApp Integration | Ed-tech Whatsapp Chatbot"
         })}
       </script>
 
@@ -191,7 +197,7 @@ const submitFormAndOpenPDF = (event) => {
             {
               "@type": "ListItem",
               "position": 1,
-              "name": "Home",
+              "name": "Homepage",
               "item": "https://anantya.ai"
             },
             {
@@ -203,48 +209,8 @@ const submitFormAndOpenPDF = (event) => {
           ]
         })}
       </script>
-
-      <script type="application/ld+json">
-        {JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "FAQPage",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "How Can Educational Institutes Benefit From Using WhatsApp?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "WhatsApp can be a powerful tool for educational institutes to enhance communication, engagement, and student support. It allows institutes to connect with students, share information, provide updates, deliver study materials, and facilitate interactive discussions."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "What Are Some Ways Educational Institutes Can Leverage WhatsApp?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Educational institutes can leverage WhatsApp in several ways, such as: Sending important announcements and notifications to students and parents. Sharing course materials, study resources, and assignment details. Conducting interactive discussions and Q&A sessions with students. Offering personalized support and guidance to students through direct messaging. Facilitating quick and convenient communication between teachers, students, and parents."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Can WhatsApp Be Used For Admissions And Enrollment Processes?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Absolutely! WhatsApp can simplify and expedite the admissions and enrollment process. Institutes can: Share admission forms, prospectuses, and course catalogs via WhatsApp. Answer prospective students' queries promptly and guide them through the application process. Conduct interviews, group discussions, and admission-related discussions through WhatsApp. Collect required documents and information from applicants using WhatsApp."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Is WhatsApp A Secure Platform For Educational Institutes To Use?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "While WhatsApp provides end-to-end encryption for messages, it's essential to ensure that sensitive information is shared responsibly. Institutes should educate users on data privacy, avoid sharing confidential information over public groups, and comply with applicable data protection regulations."
-              }
-            }
-          ]
-        })}
-      </script>
     </Helmet>
+  
       <div className="container py-5 mt-5">
         <div className="content ">
           <div className="row align-items-center">

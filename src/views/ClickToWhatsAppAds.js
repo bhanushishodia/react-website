@@ -18,75 +18,93 @@ const waLinkImg = getImage('wa.link_3dzezc.png');
 const ClickToWhatsAppAds = () => {
   return (
     <div>
-      <Helmet>
-      <title>Click-to-Whatsapp Ads | Experience Real-Time Connection</title>
-      <meta name="keywords" content="Click to Whatsapp Ads" />
-      <meta name="robots" content="index,follow" />
-      <meta name="description" content="Increase 5x ROI with click-to-WhatsApp ads, Run Click-to-WhatsApp ads on Facebook and Instagram to invite people for a chat." />
-      <meta property="og:title" content="Click-to-Whatsapp Ads | Experience Real-Time Connection" />
-      <meta property="og:type" content="article" />
-      <meta property="og:description" content="Increase 5x ROI with click-to-WhatsApp ads, Run Click-to-WhatsApp ads on Facebook and Instagram to invite people for a chat." />
-      <meta property="og:url" content="https://anantya.ai/click-to-whatsapp-ads" />
-      <meta property="og:site_name" content="anantya.ai" />
-      <meta property="og:image" content="https://anantya.ai/assets/img/whatsapp-support/offer-support-at-scale-with.webp" />
-      <link rel="canonical" href="https://anantya.ai/click-to-whatsapp-ads" />
-      <meta name="author" content="Anantya" />
-      
-      <script type="application/ld+json">
-        {JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "Organization",
-          "name": "Anantya.ai",
-          "alternateName": "Conversational Engagement Platform for Businesses | Anantya.ai",
-          "url": "https://anantya.ai/",
-          "logo": "https://anantya.ai/assets/img/logo.webp",
-          "contactPoint": {
-            "@type": "ContactPoint",
-            "telephone": "+971565480273",
-            "contactType": "sales",
-            "areaServed": ["AE", "SA", "BH"],
-            "availableLanguage": "en"
-          },
-          "sameAs": [
-            "https://www.facebook.com/anantyaai",
-            "https://www.instagram.com/anantya.ai",
-            "https://www.youtube.com/@Anantyaai",
-            "https://www.linkedin.com/company/anantya-ai",
-            "https://www.pinterest.com/anantyaai"
-          ]
-        })}
-      </script>
+       <Helmet>
+        <link rel="alternate" hrefLang="x-default" href="https://anantya.ai/click-to-whatsapp-ads" />
+        <link rel="alternate" hrefLang="en-ae" href="https://anantya.ai/click-to-whatsapp-ads" />
+        <link rel="alternate" hrefLang="en-sa" href="https://anantya.ai/click-to-whatsapp-ads" />
+        <link rel="alternate" hrefLang="en-bh" href="https://anantya.ai/click-to-whatsapp-ads" />
+        <link rel="alternate" hrefLang="en-in" href="https://anantya.ai/click-to-whatsapp-ads" />
+        <link rel="alternate" hrefLang="en" href="https://anantya.ai/click-to-whatsapp-ads" />
 
-      <script type="application/ld+json">
-        {JSON.stringify({
-          "@context": "https://schema.org/",
-          "@type": "WebPage",
-          "@id": "#WebPage",
-          "url": "https://anantya.ai/click-to-whatsapp-ads",
-          "name": "Click-to-Whatsapp Ads | Experience Real-Time Connection"
-        })}
-      </script>
+        <title>Click-to-Whatsapp Ads | Experience Real-Time Connection</title>
+        <meta name="robots" content="index,follow" />
+        <meta name="title" content="Click-to-Whatsapp Ads | Experience Real-Time Connection" />
+        <meta name="description" content="Increase 5x ROI with click-to-WhatsApp ads, Run Click-to-WhatsApp ads on Facebook and Instagram to invite people for a chat." />
+        <meta name="keywords" content="Click to Whatsapp Ads" />
+        <meta property="og:type" content="article" />
+        <meta property="og:locale" content="en_AE" />
+        <meta property="og:locale" content="en_SA" />
+        <meta property="og:locale" content="en_BH" />
+        <meta property="og:locale" content="en_IN" />
+        <meta property="og:title" content="Click-to-Whatsapp Ads | Experience Real-Time Connection" />
+        <meta property="og:description" content="Increase 5x ROI with click-to-WhatsApp ads, Run Click-to-WhatsApp ads on Facebook and Instagram to invite people for a chat." />
+        <meta property="og:url" content="https://anantya.ai/click-to-whatsapp-ads" />
+        <meta property="og:site_name" content="anantya.ai" />
+        <meta property="og:image" content="https://ik.imagekit.io/cloy701fl/images/run-click-to-whatsApp-ads.webp" />
+        <link rel="canonical" href="https://anantya.ai/click-to-whatsapp-ads" />
+        <meta name="author" content="Anantya" />
 
-      <script type="application/ld+json">
-        {JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "BreadcrumbList",
-          "itemListElement": [
-            {
-              "@type": "ListItem",
-              "position": 1,
-              "name": "Home",
-              "item": "https://anantya.ai"
+        <script type="application/ld+json">
+          {`
+          {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Anantya.ai",
+            "alternateName": "Conversational Engagement Platform for Businesses | Anantya.ai",
+            "url": "https://anantya.ai/",
+            "logo": "https://anantya.ai/assets/img/logo.webp",
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+971565480273",
+              "contactType": "sales",
+              "areaServed": ["AE","SA","BH","IN"],
+              "availableLanguage": "en"
             },
-            {
-              "@type": "ListItem",
-              "position": 2,
-              "name": "Click-to-Whatsapp Ads | Experience Real-Time Connection",
-              "item": "https://anantya.ai/click-to-whatsapp-ads"
-            }
-          ]
-        })}
-      </script>
+            "sameAs": [
+              "https://www.facebook.com/anantyaai",
+              "https://www.instagram.com/anantya.ai",
+              "https://www.youtube.com/@Anantyaai",
+              "https://www.linkedin.com/company/anantya-ai",
+              "https://www.pinterest.com/anantyaai"
+            ]
+          }
+          `}
+        </script>
+
+        <script type="application/ld+json">
+          {`
+          {
+            "@context": "https://schema.org/",
+            "@type": "WebPage",
+            "@id": "#WebPage",
+            "url": "https://anantya.ai/click-to-whatsapp-ads",
+            "name": "Click-to-Whatsapp Ads | Experience Real-Time Connection"
+          }
+          `}
+        </script>
+
+        <script type="application/ld+json">
+          {`
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Homepage",
+                "item": "https://anantya.ai"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Click-to-Whatsapp Ads",
+                "item": "https://anantya.ai/click-to-whatsapp-ads"
+              }
+            ]
+          }
+          `}
+        </script>
       </Helmet>
 
       <div className="container py-5 mt-5">

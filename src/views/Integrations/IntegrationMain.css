@@ -32,3 +32,11 @@
     margin-top: 15px;
     margin-bottom: 15px;
 }
+.integration_content ul li{
+ padding: 8px 0px;
+
+}
+.specific-section ul li {
+    padding: 6px 10px;
+    border-radius: 10px;
+}

@@ -12,134 +12,120 @@ const whatsappSupportImg = getImage('whatsapp-support.webp');
 const WhatsAppBusinessAppVsAPI = () => {
   return (
     <>
-      <Helmet>
-        {/* Meta Tags */}
-        <title>
-          Whatsapp Business App vs Whatsapp Business API - Anantya.ai
-        </title>
-        <meta
-          name="keywords"
-          content="whatsapp vs whatsapp business,whatsapp business vs whatsapp business api,whatsapp api vs whatsapp business,difference between whatsapp business and whatsapp business api"
-        />
-        <meta name="robots" content="index,follow" />
-        <meta
-          name="description"
-          content="Difference between the WhatsApp business app & whatsapp business API, Know which platform is best and fulfill your business requirements."
-        />
-        <meta
-          name="keywords"
-          content="WhatsApp vs WhatsApp Business, WhatsApp vs WhatsApp API, whatsapp business app vs whatsapp business api, whatsapp business vs whatsapp business api, whatsapp api vs whatsapp business, whatsapp business vs api, whatsapp business app vs api"
-        />
-        <meta property="og:type" content="article" />
-        <meta property="og:locale" content="en_AE" />
-        <meta property="og:locale" content="en_SA" />
-        <meta property="og:locale" content="en_BH" />
-        <meta
-          property="og:title"
-          content="Whatsapp Business App vs Whatsapp Business API - Anantya.ai"
-        />
-        <meta
-          property="og:description"
-          content="Difference between the WhatsApp business app & whatsapp business API, Know which platform is best and fulfill your business requirements."
-        />
-        <meta
-          property="og:url"
-          content="https://anantya.ai/whatsapp-business-app-vs-whatsapp-business-api"
-        />
-        <meta property="og:site_name" content="anantya.ai" />
-        <meta
-          property="og:image"
-          content="https://anantya.ai/assets/img/home/whatsapp-support.webp"
-        />
-        <link
-          rel="canonical"
-          href="https://anantya.ai/whatsapp-business-app-vs-whatsapp-business-api"
-        />
-        <meta name="author" content="Anantya" />
+        <Helmet>
+            {/* Alternate Language Links */}
+            <link rel="alternate" hrefLang="x-default" href="https://anantya.ai/blog/whatsapp-business-app-vs-whatsapp-business-api" />
+            <link rel="alternate" hreflang="en-ae" href="https://anantya.ai/blog/whatsapp-business-app-vs-whatsapp-business-api" />
+            <link rel="alternate" hreflang="en-sa" href="https://anantya.ai/blog/whatsapp-business-app-vs-whatsapp-business-api" />
+            <link rel="alternate" hreflang="en-bh" href="https://anantya.ai/blog/whatsapp-business-app-vs-whatsapp-business-api" />
+            <link rel="alternate" hreflang="en-in" href="https://anantya.ai/blog/whatsapp-business-app-vs-whatsapp-business-api" />
+            <link rel="alternate" hreflang="en" href="https://anantya.ai/blog/whatsapp-business-app-vs-whatsapp-business-api" />
+            
+            {/* Title and Meta Tags */}
+            <title>Whatsapp Business App vs Whatsapp Business API (2024)</title>
+            <meta name="robots" content="index,follow" />
+            <meta name="title" content="Whatsapp Business App vs Whatsapp Business API (2024)" />
+            <meta name="description" content="Difference between the WhatsApp business app & whatsapp business API, Know which platform is best and fulfill your business requirements." />
+            <meta name="keywords" content="whatsapp vs whatsapp business,whatsapp business vs whatsapp business api,whatsapp api vs whatsapp business,difference between whatsapp business and whatsapp business api" />
+            
+            {/* Open Graph Tags */}
+            <meta property="og:type" content="blog" />
+            <meta property="og:locale" content="en_AE" />
+            <meta property="og:title" content="Whatsapp Business App vs Whatsapp Business API (2024)" />
+            <meta property="og:description" content="Difference between the WhatsApp business app & whatsapp business API, Know which platform is best and fulfill your business requirements." />
+            <meta property="og:url" content="https://anantya.ai/blog/whatsapp-business-app-vs-whatsapp-business-api" />
+            <meta property="og:site_name" content="anantya.ai" />
+            <meta property="og:image" content="https://ik.imagekit.io/cloy701fl/images/whatsapp-authentication.webp" />
+            
+            {/* Canonical URL */}
+            <link rel="canonical" href="https://anantya.ai/blog/whatsapp-business-app-vs-whatsapp-business-api" />
+            <meta name="author" content="Kiran Yadav" />
+            
+            {/* JSON-LD Structured Data for Organization */}
+            <script type="application/ld+json">
+                {JSON.stringify({
+                    "@context": "https://schema.org",
+                    "@type": "Organization",
+                    "name": "anantya.ai",
+                    "alternateName": "Conversational Engagement Platform for Businesses | Anantya.ai",
+                    "url": "https://anantya.ai",
+                    "logo": "https://ik.imagekit.io/cloy701fl/images/logo.webp",
+                    "contactPoint": {
+                        "@type": "ContactPoint",
+                        "telephone": "+971565480273",
+                        "contactType": "sales",
+                        "areaServed": ["AE","SA","BH","IN"],
+                        "availableLanguage": ["en"]
+                    },
+                    "sameAs": [
+                        "https://www.facebook.com/anantyaai",
+                        "https://www.instagram.com/anantya.ai",
+                        "https://www.youtube.com/@Anantyaai",
+                        "https://www.linkedin.com/company/anantya-ai",
+                        "https://www.pinterest.com/anantyaai"
+                    ]
+                })}
+            </script>
 
-        {/* Organization Schema */}
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            name: "anantya.ai",
-            alternateName:
-              "Conversational Engagement Platform for Businesses | Anantya.ai",
-            url: "https://anantya.ai",
-            logo: "https://anantya.ai/assets/img/logo.webp",
-            contactPoint: {
-              "@type": "ContactPoint",
-              telephone: "+971565480273",
-              contactType: "sales",
-              areaServed: ["AE", "SA", "BH"],
-              availableLanguage: ["en"],
-            },
-            sameAs: [
-              "https://www.facebook.com/anantyaai",
-              "https://www.instagram.com/anantya.ai",
-              "https://www.youtube.com/@Anantyaai",
-              "https://www.linkedin.com/company/anantya-ai",
-              "https://www.pinterest.com/anantyaai",
-            ],
-          })}
-        </script>
+            {/* JSON-LD Structured Data for Blog Post */}
+            <script type="application/ld+json">
+                {JSON.stringify({
+                    "@context": "https://schema.org",
+                    "@type": "BlogPosting",
+                    "mainEntityOfPage": {
+                        "@type": "WebPage",
+                        "@id": "https://anantya.ai/blog/whatsapp-business-app-vs-whatsapp-business-api"
+                    },
+                    "headline": "Whatsapp Business App vs Whatsapp Business API (2024)",
+                    "description": "Difference between the WhatsApp business app & whatsapp business API, Know which platform is best and fulfill your business requirements.",
+                    "image": "https://ik.imagekit.io/cloy701fl/images/whatsapp-authentication.webp",
+                    "author": {
+                        "@type": "Organization",
+                        "name": "Anantya.ai",
+                        "url": "https://anantya.ai",
+                        "areaServed": ["AE", "SA", "BH", "IN"]
+                    },
+                    "publisher": {
+                        "@type": "Organization",
+                        "name": "Anantya.ai",
+                        "logo": {
+                            "@type": "ImageObject",
+                            "url": "https://ik.imagekit.io/cloy701fl/images/logo.webp"
+                        }
+                    },
+                    "datePublished": "2023-08-17",
+                    "dateModified": "2024-07-12"
+                })}
+            </script>
 
-        {/* BlogPosting Schema */}
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BlogPosting",
-            mainEntityOfPage: {
-              "@type": "WebPage",
-              "@id":
-                "https://anantya.ai/whatsapp-business-app-vs-whatsapp-business-api",
-            },
-            headline:
-              "Whatsapp Business App vs Whatsapp Business API - Anantya.ai",
-            description:
-              "Difference between the WhatsApp business app & whatsapp business API, Know which platform is best and fulfill your business requirements.",
-            image: "https://anantya.ai/assets/img/home/whatsapp-support.webp",
-            author: {
-              "@type": "Organization",
-              name: "Anantya.ai",
-              url: "https://anantya.ai",
-              areaServed: ["AE", "SA", "BH"],
-            },
-            publisher: {
-              "@type": "Organization",
-              name: "Anantya.ai",
-              logo: {
-                "@type": "ImageObject",
-                url: "https://anantya.ai/assets/img/logo.webp",
-              },
-            },
-            datePublished: "2023-08-17",
-            dateModified: "2024-07-12",
-          })}
-        </script>
-
-        {/* Breadcrumb Schema */}
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org/",
-            "@type": "BreadcrumbList",
-            itemListElement: [
-              {
-                "@type": "ListItem",
-                position: 1,
-                name: "Home",
-                item: "https://anantya.ai/",
-              },
-              {
-                "@type": "ListItem",
-                position: 2,
-                name: "Whatsapp Business App vs Whatsapp Business API - Anantya.ai",
-                item: "https://anantya.ai/whatsapp-business-app-vs-whatsapp-business-api",
-              },
-            ],
-          })}
-        </script>
-      </Helmet>
+            {/* JSON-LD Structured Data for Breadcrumbs */}
+            <script type="application/ld+json">
+                {JSON.stringify({
+                    "@context": "https://schema.org/",
+                    "@type": "BreadcrumbList",
+                    "itemListElement": [
+                        {
+                            "@type": "ListItem",
+                            "position": 1,
+                            "name": "Homepage",
+                            "item": "https://anantya.ai/"
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 2,
+                            "name": "Blog",
+                            "item": "https://anantya.ai/blog"
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 3,
+                            "name": "Whatsapp Business App vs Whatsapp Business API (2024)",
+                            "item": "https://anantya.ai/blog/whatsapp-business-app-vs-whatsapp-business-api"
+                        }
+                    ]
+                })}
+            </script>
+        </Helmet>
       <section>
         <div className="container py-5 blog-page mt-md-4 mt-5">
           <h1 id="intro" className="font-weight pb-2 text-center">
@@ -210,7 +196,7 @@ const WhatsAppBusinessAppVsAPI = () => {
                         href="https://www.facebook.com/business/success/chatclass"
                         rel="noopener noreferrer"
                         style={{ color: "#5dc4eb" }}
-                      >
+                      target="_blank">
                         launched by Facebook in 2018
                       </a>
                       , lets businesses send and receive unlimited messages to
@@ -322,7 +308,7 @@ const WhatsAppBusinessAppVsAPI = () => {
                     <p>
                       Whereas,{" "}
                       <a
-                        href="whatsapp-business-api-ultimate-guide"
+                        href="/whatsapp-business-api-ultimate-guide"
                         style={{ color: "#5dc4eb" }}
                       >
                         WhatsApp Business API
@@ -369,7 +355,7 @@ const WhatsAppBusinessAppVsAPI = () => {
                     </ul>
                     <p>
                       On the other hand,{" "}
-                      <a href="whatsapp-business-api">
+                      <a href="/whatsapp-business-api">
                         WhatsApp Business Platform (API)
                       </a>{" "}
                       works through a partner service like Enchant, offering a
@@ -456,7 +442,7 @@ const WhatsAppBusinessAppVsAPI = () => {
                     <p>
                       Using WhatsApp Business API, you have the option to run{" "}
                       <a
-                        href="click-to-whatsapp-ads-marketing-2023"
+                        href="/click-to-whatsapp-ads-marketing-2023"
                         style={{ color: "#5dc4eb" }}
                       >
                         {" "}

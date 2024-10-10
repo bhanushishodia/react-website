@@ -33,45 +33,31 @@ const WhatsappMarketing = () => {
   return (
     <>
       <Helmet>
+        {/* Alternate Links */}
+        <link rel="alternate" hrefLang="x-default" href="https://anantya.ai/whatsapp-marketing" />
+        <link rel="alternate" hreflang="en-ae" href="https://anantya.ai/whatsapp-marketing" />
+        <link rel="alternate" hreflang="en-sa" href="https://anantya.ai/whatsapp-marketing" />
+        <link rel="alternate" hreflang="en-bh" href="https://anantya.ai/whatsapp-marketing" />
+        <link rel="alternate" hreflang="en-in" href="https://anantya.ai/whatsapp-marketing" />
+        <link rel="alternate" hreflang="en" href="https://anantya.ai/whatsapp-marketing" />
+
         {/* Title and Meta Tags */}
         <title>Boost Engagement with WhatsApp Marketing | Anantya.ai</title>
-        <meta
-          name="keywords"
-          content="whatsapp marketing,whatsapp business marketing,whatsapp marketing service,whatsapp marketing software,whatsapp marketing company"
-        />
         <meta name="robots" content="index,follow" />
-        <meta
-          name="description"
-          content="Get WhatsApp marketing service to engage customers and make sales. Find out how the WhatsApp marketing platform can help your business succeed."
-        />
-
-        {/* Open Graph Meta Tags */}
-        <meta
-          property="og:title"
-          content="Boost Engagement with WhatsApp Marketing | Anantya.ai"
-        />
+        <meta name="title" content="Boost Engagement with WhatsApp Marketing | Anantya.ai" />
+        <meta name="description" content="Get WhatsApp marketing service to engage customers and make sales. Find out how the WhatsApp marketing platform can help your business succeed." />
+        <meta name="keywords" content="whatsapp marketing,whatsapp business marketing,whatsapp marketing service,whatsapp marketing software,whatsapp marketing company" />
         <meta property="og:type" content="article" />
-        <meta
-          property="og:description"
-          content="Get WhatsApp marketing service to engage customers and make sales. Find out how the WhatsApp marketing platform can help your business succeed."
-        />
-        <meta
-          property="og:url"
-          content="https://anantya.ai/whatsapp-marketing"
-        />
+        <meta property="og:locale" content="en_AE" />
+        <meta property="og:title" content="Boost Engagement with WhatsApp Marketing | Anantya.ai" />
+        <meta property="og:description" content="Get WhatsApp marketing service to engage customers and make sales. Find out how the WhatsApp marketing platform can help your business succeed." />
+        <meta property="og:url" content="https://anantya.ai/whatsapp-marketing" />
         <meta property="og:site_name" content="anantya.ai" />
-        <meta
-          property="og:image"
-          content="https://anantya.ai/assets/img/whatsapp-marketing/whatsapp-marketing-home-page.webp"
-        />
-
-        {/* Canonical Link */}
+        <meta property="og:image" content="https://ik.imagekit.io/cloy701fl/images/whatsapp-marketing-home-page.webp" />
         <link rel="canonical" href="https://anantya.ai/whatsapp-marketing" />
-
-        {/* Author */}
         <meta name="author" content="Anantya" />
 
-        {/* JSON-LD Schema for Organization */}
+        {/* Structured Data */}
         <script type="application/ld+json">
           {`
           {
@@ -80,12 +66,12 @@ const WhatsappMarketing = () => {
             "name": "Anantya.ai",
             "alternateName": "Conversational Engagement Platform for Businesses | Anantya.ai",
             "url": "https://anantya.ai/",
-            "logo": "https://anantya.ai/assets/img/logo.webp",
+            "logo": "https://ik.imagekit.io/cloy701fl/images/logo.webp",
             "contactPoint": {
               "@type": "ContactPoint",
               "telephone": "+971565480273",
               "contactType": "sales",
-              "areaServed": ["AE", "SA", "BH"],
+              "areaServed": ["AE","SA","BH", "IN"],
               "availableLanguage": "en"
             },
             "sameAs": [
@@ -96,10 +82,9 @@ const WhatsappMarketing = () => {
               "https://www.pinterest.com/anantyaai"
             ]
           }
-        `}
+          `}
         </script>
 
-        {/* JSON-LD Schema for WebPage */}
         <script type="application/ld+json">
           {`
           {
@@ -109,10 +94,9 @@ const WhatsappMarketing = () => {
             "url": "https://anantya.ai/whatsapp-marketing",
             "name": "Boost Engagement with WhatsApp Marketing | Anantya.ai"
           }
-        `}
+          `}
         </script>
 
-        {/* JSON-LD Schema for BreadcrumbList */}
         <script type="application/ld+json">
           {`
           {
@@ -122,18 +106,18 @@ const WhatsappMarketing = () => {
               {
                 "@type": "ListItem",
                 "position": 1,
-                "name": "Home",
+                "name": "Homepage",
                 "item": "https://anantya.ai"
               },
               {
                 "@type": "ListItem",
                 "position": 2,
-                "name": "Boost Engagement with WhatsApp Marketing | Anantya.ai",
+                "name": "WhatsApp Marketing",
                 "item": "https://anantya.ai/whatsapp-marketing"
               }
             ]
           }
-        `}
+          `}
         </script>
       </Helmet>
       <div className="whatsapp-marketing-page">

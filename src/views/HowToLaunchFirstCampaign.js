@@ -16,21 +16,95 @@ const monitorImg = getImage('monitor-and-optimize.webp');
 const HowToLaunchFirstCampaign = () => {
   return (
     <>
-    <Helmet>
-            <title>How to Launch Your First Campaign in Anantya.ai | Knowledge Center</title>
-            <meta name="robots" content="index,follow" />
-            <meta name="description" content="Step-by-step guide to launch your first campaign in Anantya.ai" />
-            <meta property="og:title" content="How to Launch Your First Campaign in Anantya.ai" />
-            <meta property="og:type" content="article" />
-            <meta property="og:description" content="Step-by-step guide to launch your first campaign in Anantya.ai" />
-            <meta property="og:url" content="https://anantya.ai/how-to-launch-first-campaign-in-anantya.ai" />
-            <meta property="og:site_name" content="anantya.ai" />
-            <meta property="og:image" content="https://anantya.ai/assets/img/broadcast-campaign.webp" />
-            <link rel="canonical" href="https://anantya.ai/how-to-launch-first-campaign-in-anantya.ai" />
-            <meta name="author" content="Anantya.ai" />
+     <Helmet>
+        {/* Alternate Language Links */}
+        <link rel="alternate" hrefLang="x-default" href="https://anantya.ai/how-to-launch-first-campaign-in-anantya-ai" />
+        <link rel="alternate" hreflang="en-ae" href="https://anantya.ai/how-to-launch-first-campaign-in-anantya-ai" />
+        <link rel="alternate" hreflang="en-sa" href="https://anantya.ai/how-to-launch-first-campaign-in-anantya-ai" />
+        <link rel="alternate" hreflang="en-bh" href="https://anantya.ai/how-to-launch-first-campaign-in-anantya-ai" />
+        <link rel="alternate" hreflang="en-in" href="https://anantya.ai/how-to-launch-first-campaign-in-anantya-ai" />
+        <link rel="alternate" hreflang="en" href="https://anantya.ai/how-to-launch-first-campaign-in-anantya-ai" />
 
-           
-        </Helmet>
+        {/* Meta Tags */}
+        <title>How to Launch Your First Campaign on Whatsapp Business</title>
+        <meta name="robots" content="index,follow" />
+        <meta name="title" content="How to Launch Your First Campaign on Whatsapp Business" />
+        <meta name="description" content="How to Launch Your First Campaign on Whatsapp Business" />
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content="How to Launch Your First Campaign on Whatsapp Business" />
+        <meta property="og:description" content="How to Launch Your First Campaign on Whatsapp Business" />
+        <meta property="og:url" content="https://anantya.ai/how-to-launch-first-campaign-in-anantya-ai" />
+        <meta property="og:site_name" content="anantya.ai" />
+        <meta property="og:image" content="https://ik.imagekit.io/cloy701fl/images/anantya-home-page.webp" />
+        <link rel="canonical" href="https://anantya.ai/how-to-launch-first-campaign-in-anantya-ai" />
+        <meta name="author" content="Anantya.ai" />
+
+        {/* JSON-LD for Organization */}
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Anantya.ai",
+              "alternateName": "Conversational Engagement Platform for Businesses | Anantya.ai",
+              "url": "https://anantya.ai/",
+              "logo": "https://ik.imagekit.io/cloy701fl/images/logo.webp",
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+971565480273",
+                "contactType": "sales",
+                "areaServed": ["AE","SA","BH","IN"],
+                "availableLanguage": "en"
+              },
+              "sameAs": [
+                "https://www.facebook.com/anantyaai",
+                "https://www.instagram.com/anantya.ai",
+                "https://www.youtube.com/@Anantyaai",
+                "https://www.linkedin.com/company/anantya-ai",
+                "https://www.pinterest.com/anantyaai"
+              ]
+            }
+          `}
+        </script>
+
+        {/* JSON-LD for WebPage */}
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org/",
+              "@type": "WebPage",
+              "@id": "#WebPage",
+              "url": "https://anantya.ai/how-to-launch-first-campaign-in-anantya-ai",
+              "name": "How to Launch Your First Campaign on Whatsapp Business"
+            }
+          `}
+        </script>
+
+        {/* JSON-LD for Breadcrumb */}
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org/",
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Homepage",
+                  "item": "https://anantya.ai"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "How to Launch Your First Campaign on Whatsapp Business",
+                  "item": "https://anantya.ai/how-to-launch-first-campaign-in-anantya-ai"
+                }
+              ]
+            }
+          `}
+        </script>
+      </Helmet>
+
     
     <div className="page-content">
     <div>

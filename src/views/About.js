@@ -11,46 +11,91 @@ const YashikaImage = getImage('yashika-Maam.webp'); // Adjust path if necessary
 const About = () => {
   return (
     <>
-    <Helmet>
-                <title>About Anantya | Verified Whatsapp Business API</title>
-                <meta name="robots" content="index,follow" />
-                <meta
-                    name="description"
-                    content="Learn about Anantya AI, a leading provider of intelligent software solutions. Discover how our cutting-edge technology helps businesses streamline operations, enhance productivity, and achieve success."
-                />
-                <meta property="og:title" content="About Anantya | Verified Whatsapp Business API" />
-                <meta property="og:type" content="article" />
-                <meta
-                    property="og:description"
-                    content="Learn about Anantya AI, a leading provider of intelligent software solutions. Discover how our cutting-edge technology helps businesses streamline operations, enhance productivity, and achieve success."
-                />
-                <meta property="og:url" content="https://anantya.ai/about" />
-                <meta property="og:site_name" content="anantya.ai" />
-                <meta property="og:image" content="https://anantya.ai/assets/img/team/About%20Us%20Graphic.webp" />
-                <link rel="canonical" href="https://anantya.ai/about" />
-                <meta name="author" content="Anantya" />
+  <Helmet>
+        <link rel="alternate" hrefLang="x-default" href="https://anantya.ai/about" />
+        <link rel="alternate" hreflang="en-ae" href="https://anantya.ai/about" />
+        <link rel="alternate" hreflang="en-sa" href="https://anantya.ai/about" />
+        <link rel="alternate" hreflang="en-bh" href="https://anantya.ai/about" />
+        <link rel="alternate" hreflang="en-in" href="https://anantya.ai/about" />
+        <link rel="alternate" hreflang="en" href="https://anantya.ai/about" />
 
-                <script type="application/ld+json">
-                    {JSON.stringify({
-                        "@context": "https://schema.org",
-                        "@type": "BreadcrumbList",
-                        "itemListElement": [
-                            {
-                                "@type": "ListItem",
-                                "position": 1,
-                                "name": "Home",
-                                "item": "https://anantya.ai",
-                            },
-                            {
-                                "@type": "ListItem",
-                                "position": 2,
-                                "name": "About Us",
-                                "item": "https://anantya.ai/about",
-                            },
-                        ],
-                    })}
-                </script>
-     </Helmet>
+        <title>About Anantya.ai | Verified Whatsapp Business API</title>
+        <meta name="robots" content="index,follow" />
+        <meta name="title" content="About Anantya.ai | Verified Whatsapp Business API" />
+        <meta name="description"
+          content="Learn about Anantya AI, a leading provider of intelligent software solutions. Discover how our cutting-edge technology helps businesses streamline operations, enhance productivity, and achieve success." />
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content="About Anantya.ai | Verified Whatsapp Business API" />
+        <meta property="og:description"
+          content="Learn about Anantya AI, a leading provider of intelligent software solutions. Discover how our cutting-edge technology helps businesses streamline operations, enhance productivity, and achieve success." />
+        <meta property="og:url" content="https://anantya.ai/about" />
+        <meta property="og:site_name" content="anantya.ai" />
+        <meta property="og:image" content="https://ik.imagekit.io/cloy701fl/images/About-Us-Graphic.webp" />
+        <link rel="canonical" href="https://anantya.ai/about" />
+        <meta name="author" content="Anantya" />
+
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Anantya.ai",
+              "alternateName": "Conversational Engagement Platform for Businesses | Anantya.ai",
+              "url": "https://anantya.ai/",
+              "logo": "https://ik.imagekit.io/cloy701fl/images/logo.webp",
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+971565480273",
+                "contactType": "sales",
+                "areaServed": ["AE","SA","BH","IN"],
+                "availableLanguage": "en"
+              },
+              "sameAs": [
+                "https://www.facebook.com/anantyaai",
+                "https://www.instagram.com/anantya.ai",
+                "https://www.youtube.com/@Anantyaai",
+                "https://www.linkedin.com/company/anantya-ai",
+                "https://www.pinterest.com/anantyaai"
+              ]
+            }
+          `}
+        </script>
+
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org/",
+              "@type": "WebPage",
+              "@id": "#WebPage",
+              "url": "https://anantya.ai/about",
+              "name": "About Anantya.ai | Verified Whatsapp Business API"
+            }
+          `}
+        </script>
+
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "https://anantya.ai"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "About Us",
+                  "item": "https://anantya.ai/about"
+                }
+              ]
+            }
+          `}
+        </script>
+      </Helmet>
     <div className="about-page mt-md-2 pt-md-5 mt-5 pt-5">
       <h1>Anantya.ai</h1>
       <p className="px-3">Bridging the Gap Between Businesses and Customers</p>

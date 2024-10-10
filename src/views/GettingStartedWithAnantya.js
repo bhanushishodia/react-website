@@ -6,42 +6,89 @@ import { Helmet } from 'react-helmet';
 const GettingStartedWithAnantya = () => {
     return (
       <>
-      <Helmet>
-      <title>Anantya.ai Knowledge Center</title>
-      <meta name="robots" content="index,follow" />
-      <meta name="description" content="Anantya.ai Knowledge Center" />
-      <meta property="og:title" content="Anantya.ai Knowledge Center" />
-      <meta property="og:type" content="article" />
-      <meta property="og:description" content="Anantya.ai Knowledge Center" />
-      <meta property="og:url" content="https://anantya.ai/knowledge-center" />
-      <meta property="og:site_name" content="anantya.ai" />
-      <meta property="og:image" content="" />
-      <link rel="canonical" href="https://anantya.ai/knowledge-center" />
-      <meta name="author" content="Anantya.ai" />
+    (
+        <Helmet>
+            {/* Alternate Links */}
+            <link rel="alternate" hrefLang="x-default" href="https://anantya.ai/getting-started-with-anantya" />
+            <link rel="alternate" hreflang="en-ae" href="https://anantya.ai/getting-started-with-anantya" />
+            <link rel="alternate" hreflang="en-sa" href="https://anantya.ai/getting-started-with-anantya" />
+            <link rel="alternate" hreflang="en-bh" href="https://anantya.ai/getting-started-with-anantya" />
+            <link rel="alternate" hreflang="en-in" href="https://anantya.ai/getting-started-with-anantya" />
+            <link rel="alternate" hreflang="en" href="https://anantya.ai/getting-started-with-anantya" />
 
-      <script type="application/ld+json">{`
-        {
-          "@context": "https://schema.org",
-          "@type": "Organization",
-          "name": "anantya.ai",
-          "alternateName": "Anantya.ai: WhatsApp Business API Providers",
-          "url": "https://anantya.ai/",
-          "logo": "https://anantya.ai/images/logo.png",
-          "contactPoint": {
-            "@type": "ContactPoint",
-            "telephone": "+971565480273",
-            "contactType": "sales",
-            "availableLanguage": ["en"]
-          },
-          "sameAs": [
-            "https://www.facebook.com/anantyaai",
-            "https://www.instagram.com/anantya.ai/",
-            "https://www.linkedin.com/company/anantya-ai/",
-            "https://www.pinterest.com/anantyaai/"
-          ]
-        }
-      `}</script>
-    </Helmet>
+            {/* Title and Meta Tags */}
+            <title>Helpful resources to easily set up your Anantya account</title>
+            <meta name="robots" content="index,follow" />
+            <meta name="title" content="Helpful resources to easily set up your Anantya account" />
+            <meta name="description" content="Helpful resources to easily set up your Anantya account" />
+            <meta property="og:type" content="article" />
+            <meta property="og:title" content="Helpful resources to easily set up your Anantya account" />
+            <meta property="og:description" content="Helpful resources to easily set up your Anantya account" />
+            <meta property="og:url" content="https://anantya.ai/getting-started-with-anantya" />
+            <meta property="og:site_name" content="anantya.ai" />
+            <meta property="og:image" content="https://ik.imagekit.io/cloy701fl/images/anantya-home-page.webp" />
+            <link rel="canonical" href="https://anantya.ai/getting-started-with-anantya" />
+            <meta name="author" content="Anantya.ai" />
+
+            {/* JSON-LD for Organization */}
+            <script type="application/ld+json">{`
+                {
+                    "@context": "https://schema.org",
+                    "@type": "Organization",
+                    "name": "Anantya.ai",
+                    "alternateName": "Conversational Engagement Platform for Businesses | Anantya.ai",
+                    "url": "https://anantya.ai/",
+                    "logo": "https://ik.imagekit.io/cloy701fl/images/logo.webp",
+                    "contactPoint": {
+                        "@type": "ContactPoint",
+                        "telephone": "+971565480273",
+                        "contactType": "sales",
+                        "areaServed": ["AE", "SA", "BH", "IN"],
+                        "availableLanguage": "en"
+                    },
+                    "sameAs": [
+                        "https://www.facebook.com/anantyaai",
+                        "https://www.instagram.com/anantya.ai",
+                        "https://www.youtube.com/@Anantyaai",
+                        "https://www.linkedin.com/company/anantya-ai",
+                        "https://www.pinterest.com/anantyaai"
+                    ]
+                }
+            `}</script>
+
+            {/* JSON-LD for WebPage */}
+            <script type="application/ld+json">{`
+                {
+                    "@context": "https://schema.org/",
+                    "@type": "WebPage",
+                    "@id": "#WebPage",
+                    "url": "https://anantya.ai/getting-started-with-anantya",
+                    "name": "Helpful resources to easily set up your Anantya account"
+                }
+            `}</script>
+
+            {/* JSON-LD for BreadcrumbList */}
+            <script type="application/ld+json">{`
+                {
+                    "@context": "https://schema.org/",
+                    "@type": "BreadcrumbList",
+                    "itemListElement": [
+                        {
+                            "@type": "ListItem",
+                            "position": 1,
+                            "name": "Homepage",
+                            "item": "https://anantya.ai"
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 2,
+                            "name": "Helpful resources to easily set up your Anantya account",
+                            "item": "https://anantya.ai/getting-started-with-anantya"
+                        }
+                    ]
+                }
+            `}</script>
+        </Helmet>
         <div className="px-0 ">
               <section className="support-section" style={{ background: '#f3fbff' }}>
              <div className="container py-5 text-center">

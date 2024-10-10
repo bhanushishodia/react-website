@@ -31,87 +31,93 @@ const submitFormAndOpenPDF = (event) => {
   return (
     <div>
        <Helmet>
-            <title>WhatsApp OTP Verification | Anantya.ai</title>
-            <meta name="keywords" content="Whatsapp OTP,Whatsapp OTP Verification API,Whatsapp OTP verification,whatsapp otp api" />
-            <meta name="robots" content="index,follow" />
-            <meta 
-                name="description" 
-                content="Secure your account & transaction with Anantya.ai's WhatsApp OTP Verification. Fast, reliable, & easy to implement. Ensure user authenticity with every interaction." 
-            />
-            <meta property="og:title" content="WhatsApp OTP Verification | Anantya.ai" />
-            <meta property="og:type" content="article" />
-            <meta 
-                property="og:description" 
-                content="Secure your account & transaction with Anantya.ai's WhatsApp OTP Verification. Fast, reliable, & easy to implement. Ensure user authenticity with every interaction." 
-            />
-            <meta property="og:url" content="https://anantya.ai/whatsapp-authentication" />
-            <meta property="og:site_name" content="anantya.ai" />
-            <meta property="og:image" content="https://anantya.ai/assets/img/whatsapp-support/offer-support-at-scale-with.webp" />
-            <link rel="canonical" href="https://anantya.ai/whatsapp-authentication" />
-            <meta name="author" content="Anantya" />
+        <link rel="alternate" hrefLang="x-default" href="https://anantya.ai/whatsapp-authentication" />
+        <link rel="alternate" hreflang="en-ae" href="https://anantya.ai/whatsapp-authentication" />
+        <link rel="alternate" hreflang="en-sa" href="https://anantya.ai/whatsapp-authentication" />
+        <link rel="alternate" hreflang="en-bh" href="https://anantya.ai/whatsapp-authentication" />
+        <link rel="alternate" hreflang="en-in" href="https://anantya.ai/whatsapp-authentication" />
+        <link rel="alternate" hreflang="en" href="https://anantya.ai/whatsapp-authentication" />
 
-            <script type="application/ld+json">
-                {`
-                {
-                  "@context": "https://schema.org",
-                  "@type": "Organization",
-                  "name": "Anantya.ai",
-                  "alternateName": "Conversational Engagement Platform for Businesses | Anantya.ai",
-                  "url": "https://anantya.ai/",
-                  "logo": "https://anantya.ai/assets/img/logo.webp",
-                  "contactPoint": {
-                    "@type": "ContactPoint",
-                    "telephone": "+971565480273",
-                    "contactType": "sales",
-                    "areaServed": ["AE", "SA", "BH"],
-                    "availableLanguage": "en"
-                  },
-                  "sameAs": [
-                    "https://www.facebook.com/anantyaai",
-                    "https://www.instagram.com/anantya.ai",
-                    "https://www.youtube.com/@Anantyaai",
-                    "https://www.linkedin.com/company/anantya-ai",
-                    "https://www.pinterest.com/anantyaai"
-                  ]
-                }
-                `}
-            </script>
+        <title>WhatsApp OTP Verification | Anantya.ai</title>
+        <meta name="robots" content="index,follow" />
+        <meta name="title" content="WhatsApp OTP Verification | Anantya.ai" />
+        <meta name="description" content="Secure your account & transaction with Anantya.ai's WhatsApp OTP Verification. Fast, reliable, & easy to implement. Ensure user authenticity with every interaction." />
+        <meta name="keywords" content="Whatsapp OTP,Whatsapp OTP Verification API,Whatsapp OTP verification,whatsapp otp api" />
+        <meta property="og:type" content="article" />
+        <meta property="og:locale" content="en_AE" />
+        <meta property="og:locale" content="en_SA" />
+        <meta property="og:locale" content="en_BH" />
+        <meta property="og:locale" content="en_IN" />
+        <meta property="og:title" content="WhatsApp OTP Verification | Anantya.ai" />
+        <meta property="og:description" content="Secure your account & transaction with Anantya.ai's WhatsApp OTP Verification. Fast, reliable, & easy to implement. Ensure user authenticity with every interaction." />
+        <meta property="og:url" content="https://anantya.ai/whatsapp-authentication" />
+        <meta property="og:site_name" content="anantya.ai" />
+        <meta property="og:image" content="https://ik.imagekit.io/cloy701fl/images/double-up-on-security.webp" />
+        <link rel="canonical" href="https://anantya.ai/whatsapp-authentication" />
+        <meta name="author" content="Anantya" />
 
-            <script type="application/ld+json">
-                {`
-                {
-                  "@context": "https://schema.org/",
-                  "@type": "WebPage",
-                  "@id": "#WebPage",
-                  "url": "https://anantya.ai/whatsapp-authentication",
-                  "name": "WhatsApp OTP Verification | Anantya.ai"
-                }
-                `}
-            </script>
+        <script type="application/ld+json">
+          {`
+          {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Anantya.ai",
+            "alternateName": "Conversational Engagement Platform for Businesses | Anantya.ai",
+            "url": "https://anantya.ai/",
+            "logo": "https://ik.imagekit.io/cloy701fl/images/logo.webp",
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+971565480273",
+              "contactType": "sales",
+              "areaServed": ["AE","SA","BH","IN"],
+              "availableLanguage": "en"
+            },
+            "sameAs": [
+              "https://www.facebook.com/anantyaai",
+              "https://www.instagram.com/anantya.ai",
+              "https://www.youtube.com/@Anantyaai",
+              "https://www.linkedin.com/company/anantya-ai",
+              "https://www.pinterest.com/anantyaai"
+            ]
+          }
+          `}
+        </script>
 
-            <script type="application/ld+json">
-                {`
-                {
-                  "@context": "https://schema.org",
-                  "@type": "BreadcrumbList",
-                  "itemListElement": [
-                    {
-                      "@type": "ListItem",
-                      "position": 1,
-                      "name": "Home",
-                      "item": "https://anantya.ai"
-                    },
-                    {
-                      "@type": "ListItem",
-                      "position": 2,
-                      "name": "WhatsApp OTP Verification | Anantya.ai",
-                      "item": "https://anantya.ai/whatsapp-authentication"
-                    }
-                  ]
-                }
-                `}
-            </script>
-        </Helmet>
+        <script type="application/ld+json">
+          {`
+          {
+            "@context": "https://schema.org/",
+            "@type": "WebPage",
+            "@id": "#WebPage",
+            "url": "https://anantya.ai/whatsapp-authentication",
+            "name": "WhatsApp OTP Verification | Anantya.ai"
+          }
+          `}
+        </script>
+
+        <script type="application/ld+json">
+          {`
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Homepage",
+                "item": "https://anantya.ai"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "WhatsApp OTP Verification",
+                "item": "https://anantya.ai/whatsapp-authentication"
+              }
+            ]
+          }
+          `}
+        </script>
+      </Helmet>
 
        <div className="container mt-5  py-5">
       <div className="content">

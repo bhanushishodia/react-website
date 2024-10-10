@@ -22,101 +22,89 @@ const ctaImg = getImage('who-we-partner-with.webp'); // Adjust the path as neces
 const AffiliateProgram = () => {
   return (
     <>
+     <Helmet>
+                <link rel="alternate" hrefLang="x-default" href="https://anantya.ai/affiliate-program" />
+                <link rel="alternate" hreflang="en-ae" href="https://anantya.ai/affiliate-program" />
+                <link rel="alternate" hreflang="en-sa" href="https://anantya.ai/affiliate-program" />
+                <link rel="alternate" hreflang="en-bh" href="https://anantya.ai/affiliate-program" />
+                <link rel="alternate" hreflang="en-in" href="https://anantya.ai/affiliate-program" />
+                <link rel="alternate" hreflang="en" href="https://anantya.ai/affiliate-program" />
+
+                <title>Join Our Affiliate Program and Become a Partner | Anantya.ai</title>
+                <meta name="robots" content="index,follow" />
+                <meta name="title" content="Join Our Affiliate Program and Become a Partner | Anantya.ai" />
+                <meta name="description" content="Explore the Anantya Affiliate Program and become affiliate partner and start earning recurring commissions by promoting our top-notch service. Apply now" />
+                <meta name="keywords" content="affiliate program, affiliate marketing programs, affiliate marketing, best affiliate programs" />
+                <meta property="og:type" content="article" />
+                <meta property="og:locale" content="en_IN" />
+                <meta property="og:locale" content="en_AE" />
+                <meta property="og:locale" content="en_SA" />
+                <meta property="og:locale" content="en_BH" />
+                <meta property="og:title" content="Join Our Affiliate Program and Become a Partner | Anantya.ai" />
+                <meta property="og:description" content="Explore the Anantya Affiliate Program and become affiliate partner and start earning recurring commissions by promoting our top-notch service. Apply now" />
+                <meta property="og:url" content="https://anantya.ai/affiliate-program" />
+                <meta property="og:site_name" content="anantya.ai" />
+                <meta property="og:image" content="https://ik.imagekit.io/cloy701fl/images/why-should-you-join.webp" />
+                <link rel="canonical" href="https://anantya.ai/affiliate-program" />
+                <meta name="author" content="Anantya" />
+
+                <script type="application/ld+json">
+                    {JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "Organization",
+                        "name": "Anantya.ai",
+                        "alternateName": "Conversational Engagement Platform for Businesses | Anantya.ai",
+                        "url": "https://anantya.ai/",
+                        "logo": "https://ik.imagekit.io/cloy701fl/images/logo.webp",
+                        "contactPoint": {
+                            "@type": "ContactPoint",
+                            "telephone": "+971565480273",
+                            "contactType": "sales",
+                            "areaServed": ["AE", "SA", "BH", "IN"],
+                            "availableLanguage": "en"
+                        },
+                        "sameAs": [
+                            "https://www.facebook.com/anantyaai",
+                            "https://www.instagram.com/anantya.ai",
+                            "https://www.youtube.com/@Anantyaai",
+                            "https://www.linkedin.com/company/anantya-ai",
+                            "https://www.pinterest.com/anantyaai"
+                        ]
+                    })}
+                </script>
+
+                <script type="application/ld+json">
+                    {JSON.stringify({
+                        "@context": "https://schema.org/",
+                        "@type": "WebPage",
+                        "@id": "#WebPage",
+                        "url": "https://anantya.ai/affiliate-program",
+                        "name": "Join Our Affiliate Program and Become a Partner | Anantya.ai"
+                    })}
+                </script>
+
+                <script type="application/ld+json">
+                    {JSON.stringify({
+                        "@context": "https://schema.org/",
+                        "@type": "BreadcrumbList",
+                        "itemListElement": [
+                            {
+                                "@type": "ListItem",
+                                "position": 1,
+                                "name": "Homepage",
+                                "item": "https://anantya.ai"
+                            },
+                            {
+                                "@type": "ListItem",
+                                "position": 2,
+                                "name": "Affiliate Program",
+                                "item": "https://anantya.ai/affiliate-program"
+                            }
+                        ]
+                    })}
+                </script>
+            </Helmet>
     
-      <Helmet>
-        {/* Title and Meta Tags */}
-        <title>Join Our Affiliate Program and Become a Partner | Anantya.ai</title>
-        <meta name="robots" content="index,follow" />
-        <meta
-          name="description"
-          content="Explore the Anantya Affiliate Program and become affiliate partner and start earning recurring commissions by promoting our top-notch service. Apply now"
-        />
-        <meta
-          name="keywords"
-          content="affiliate program, affiliate marketing programs, affiliate marketing, best affiliate programs"
-        />
-        <meta
-          property="og:title"
-          content="Join Our Affiliate Program and Become a Partner | Anantya.ai"
-        />
-        <meta property="og:type" content="article" />
-        <meta
-          property="og:description"
-          content="Explore the Anantya Affiliate Program and become affiliate partner and start earning recurring commissions by promoting our top-notch service. Apply now"
-        />
-        <meta property="og:url" content="https://anantya.ai/affiliate-program" />
-        <meta property="og:site_name" content="anantya.ai" />
-        <meta property="og:image" content="https://anantya.ai/assets/img/partner/why-should-you-join.webp" />
-        <link rel="canonical" href="https://anantya.ai/affiliate-program" />
-        <meta name="author" content="Anantya" />
-
-        {/* Schema.org JSON-LD */}
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            "name": "Anantya.ai",
-            "alternateName": "Conversational Engagement Platform for Businesses | Anantya.ai",
-            "url": "https://anantya.ai/",
-            "logo": "https://anantya.ai/assets/img/logo.webp",
-            "contactPoint": {
-              "@type": "ContactPoint",
-              "telephone": "+971565480273",
-              "contactType": "sales",
-              "areaServed": ["AE", "SA", "BH"],
-              "availableLanguage": "en"
-            },
-            "sameAs": [
-              "https://www.facebook.com/anantyaai",
-              "https://www.instagram.com/anantya.ai",
-              "https://www.youtube.com/@Anantyaai",
-              "https://www.linkedin.com/company/anantya-ai",
-              "https://www.pinterest.com/anantyaai"
-            ]
-          })}
-        </script>
-
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@graph": [
-              {
-                "@type": "WebPage",
-                "name": "Join Our Affiliate Program and Become a Partner | Anantya.ai",
-                "description":
-                  "Explore the Anantya Affiliate Program and become affiliate partner and start earning recurring commissions by promoting our top-notch service. Apply now"
-              },
-              {
-                "@type": "WebSite",
-                "name": "Anantya",
-                "alternateName": "anantya.ai",
-                "url": "https://anantya.ai/"
-              }
-            ]
-          })}
-        </script>
-
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org/",
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-              {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Homepage",
-                "item": "https://anantya.ai"
-              },
-              {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "Affiliate Program",
-                "item": "https://anantya.ai/affiliate-program"
-              }
-            ]
-          })}
-        </script>
-      </Helmet>
     <section>
       <div className="container py-5 my-5">
         <div className="row">

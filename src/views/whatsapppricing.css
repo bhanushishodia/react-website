@@ -680,3 +680,34 @@ footer.style-14 .foot-info .foot-logo {
   background-color: #fff;
   border-radius: 6px;
 }
+.ad{
+  background-color: #fbfbfc;
+
+}.features-cards.style-5.box-1 {
+  display: block;
+  border: 1px solid #fdf5e6;
+  border-radius: 16px;
+  padding: 0px 10px;
+  padding-bottom: 10px;
+  background: linear-gradient(180deg, #fdf5e6, #fff 40%, #fff);
+}
+.features-cards.style-5.box-1 p{
+font-size: 14px; 
+padding: 10px;
+text-align: left;
+}
+.features-cards.style-5.box-1 .card-title{
+font-size: 14px; 
+padding: 0px 6px;
+text-align: left;
+}/* Button styling */
+  
+
+
+@media (min-width: 768px) {
+  #myStikcyform {
+    position: relative; /* Default position */
+    right: 0;
+    left: auto;  /* Ensure right alignment */
+  }
+}

@@ -4,150 +4,131 @@ import WhatsAppWidget from '../../components/common/WhatsAppWidget';
 import { Helmet } from 'react-helmet'; 
 import { getImage } from '../../utils/getImage'; // Correct path to utility
 // Fetching images dynamically using getImage function
-const healthcareImage = getImage('whatsapp-for-healthcare.webp');
-const bookYourImage = getImage('book-your.webp');
-const instantPatientEngagementImage = getImage('instant-patient-engagement.webp');
-const appointmentRemindersImage = getImage('appointment-reminders.webp');
-const getWhatsAppBusinessImage = getImage('get-whatsapp-business.webp');
-const theSolutionIsWhatsAppImage = getImage('the-solution-is-whatsapp.webp');
+const healthcareImage = getImage('/blog/whatsapp-for-healthcare.webp');
+const bookYourImage = getImage('/blog/book-your.webp');
+const instantPatientEngagementImage = getImage('/blog/instant-patient-engagement.webp');
+const appointmentRemindersImage = getImage('/blog/appointment-reminders.webp');
+const getWhatsAppBusinessImage = getImage('/blog/get-whatsapp-business.webp');
+const theSolutionIsWhatsAppImage = getImage('/blog/the-solution-is-whatsapp.webp');
 
 const WhatsAppForHealthcareGuide = () => {
   return (
     <div>
-    <Helmet>
-      {/* Meta Tags */}
-      <title>How to Use WhatsApp for Healthcare: A Simple guide (2024)</title>
-      <meta
-        name="keywords"
-        content="whatsapp chatbot for healthcare, Whatsapp for Healthcare, Whatsapp Business API for healthcare, whatsapp business for healthcare, conversational ai in healthcare, conversational ai for healthcare, healthcare ai chatbot"
-      />
-      <meta name="robots" content="index,follow" />
-      <meta
-        name="description"
-        content="Discover how to use WhatsApp for healthcare in a simple guide. Harness the power of WhatsApp API and chatbot for healthcare solutions."
-      />
-      <meta
-        name="keywords"
-        content="whatsapp chatbot for healthcare, Whatsapp for Healthcare, Whatsapp Business API for healthcare, whatsapp business for healthcare, ai healthcare chatbot, Chatbots on healthcare"
-      />
-      <meta property="og:title" content="How to Use WhatsApp for Healthcare: A Simple guide (2024)" />
-      <meta property="og:type" content="article" />
-      <meta
-        property="og:description"
-        content="Discover how to use WhatsApp for healthcare in a simple guide. Harness the power of WhatsApp API and chatbot for healthcare solutions."
-      />
-      <meta property="og:url" content="https://anantya.ai/whatsapp-for-healthcare-a-simple-guide" />
-      <meta property="og:site_name" content="anantya.ai" />
-      <meta property="og:image" content="https://anantya.ai/assets/img/blog/whatsapp-for-healthcare.webp" />
-      <link rel="canonical" href="https://anantya.ai/whatsapp-for-healthcare-a-simple-guide" />
-      <meta name="author" content="Anantya" />
+ <Helmet>
+        {/* Alternate links */}
+        <link rel="alternate" hrefLang="x-default" href="https://anantya.ai/blog/whatsapp-for-healthcare-a-simple-guide" />
+        <link rel="alternate" hreflang="en-ae" href="https://anantya.ai/blog/whatsapp-for-healthcare-a-simple-guide" />
+        <link rel="alternate" hreflang="en-sa" href="https://anantya.ai/blog/whatsapp-for-healthcare-a-simple-guide" />
+        <link rel="alternate" hreflang="en-bh" href="https://anantya.ai/blog/whatsapp-for-healthcare-a-simple-guide" />
+        <link rel="alternate" hreflang="en-in" href="https://anantya.ai/blog/whatsapp-for-healthcare-a-simple-guide" />
+        <link rel="alternate" hreflang="en" href="https://anantya.ai/blog/whatsapp-for-healthcare-a-simple-guide" />
 
-      {/* Organization Schema */}
-      <script type="application/ld+json">
-        {`
-        {
-          "@context": "https://schema.org",
-          "@type": "Organization",
-          "name": "anantya.ai",
-          "alternateName": "Conversational Engagement Platform for Businesses | Anantya.ai",
-          "url": "https://anantya.ai",
-          "logo": "https://anantya.ai/assets/img/logo.webp",
-          "contactPoint": {
-            "@type": "ContactPoint",
-            "telephone": "+971565480273",
-            "contactType": "sales",
-            "areaServed": ["AE","SA","BH"],
-            "availableLanguage": ["en"]
-          },
-          "sameAs": [
-            "https://www.facebook.com/anantyaai",
-            "https://www.instagram.com/anantya.ai",
-            "https://www.youtube.com/@Anantyaai",
-            "https://www.linkedin.com/company/anantya-ai",
-            "https://www.pinterest.com/anantyaai"
-          ]
-        }
-        `}
-      </script>
+        {/* Meta Tags */}
+        <title>How to Use WhatsApp for Healthcare: A Simple guide (2024)</title>
+        <meta name="robots" content="index,follow" />
+        <meta name="title" content="How to Use WhatsApp for Healthcare: A Simple guide (2024)" />
+        <meta name="description" content="Discover how to use WhatsApp for healthcare in a simple guide. Harness the power of WhatsApp API and chatbot for healthcare solutions." />
+        <meta name="keywords" content="whatsapp chatbot for healthcare,Whatsapp for Healthcare,Whatsapp Business API for healthcare,whatsapp business for healthcare,conversational ai in healthcare,conversational ai for healthcare,healthcare ai chatbot" />
 
-      {/* BlogPosting Schema */}
-      <script type="application/ld+json">
-        {`
-        {
-          "@context": "https://schema.org",
-          "@type": "BlogPosting",
-          "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": "https://anantya.ai/whatsapp-for-healthcare-a-simple-guide"
-          },
-          "headline": "How to Use WhatsApp for Healthcare: A Simple guide (2024)",
-          "description": "Discover how to use WhatsApp for healthcare in a simple guide. Harness the power of WhatsApp API and chatbot for healthcare solutions.",
-          "image": "https://anantya.ai/assets/img/blog/whatsapp-for-healthcare.webp",
-          "author": {
+        {/* Open Graph Tags */}
+        <meta property="og:type" content="blog" />
+        <meta property="og:locale" content="en_AE" />
+        <meta property="og:locale" content="en_SA" />
+        <meta property="og:locale" content="en_BH" />
+        <meta property="og:locale" content="en_IN" />
+        <meta property="og:title" content="How to Use WhatsApp for Healthcare: A Simple guide (2024)" />
+        <meta property="og:description" content="Discover how to use WhatsApp for healthcare in a simple guide. Harness the power of WhatsApp API and chatbot for healthcare solutions." />
+        <meta property="og:url" content="https://anantya.ai/blog/whatsapp-for-healthcare-a-simple-guide" />
+        <meta property="og:site_name" content="anantya.ai" />
+        <meta property="og:image" content="https://ik.imagekit.io/cloy701fl/images//blog/whatsapp-for-healthcare.webp" />
+        <link rel="canonical" href="https://anantya.ai/blog/whatsapp-for-healthcare-a-simple-guide" />
+        <meta name="author" content="Anantya" />
+
+        {/* JSON-LD Organization Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
             "@type": "Organization",
-            "name": "Anantya.ai",
+            "name": "anantya.ai",
+            "alternateName": "Conversational Engagement Platform for Businesses | Anantya.ai",
             "url": "https://anantya.ai",
-            "areaServed": ["AE","SA","BH"]
-          },
-          "publisher": {
-            "@type": "Organization",
-            "name": "Anantya.ai",
-            "logo": {
-              "@type": "ImageObject",
-              "url": "https://anantya.ai/assets/img/logo.webp"
-            }
-          },
-          "datePublished": "2024-03-29"
-        }
-        `}
-      </script>
+            "logo": "https://ik.imagekit.io/cloy701fl/images/logo.webp",
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+971565480273",
+              "contactType": "sales",
+              "areaServed": ["AE", "SA", "BH", "IN"],
+              "availableLanguage": ["en"]
+            },
+            "sameAs": [
+              "https://www.facebook.com/anantyaai",
+              "https://www.instagram.com/anantya.ai",
+              "https://www.youtube.com/@Anantyaai",
+              "https://www.linkedin.com/company/anantya-ai",
+              "https://www.pinterest.com/anantyaai"
+            ]
+          })}
+        </script>
 
-      {/* Breadcrumb Schema */}
-      <script type="application/ld+json">
-        {`
-        {
-          "@context": "https://schema.org/", 
-          "@type": "BreadcrumbList", 
-          "itemListElement": [{
-            "@type": "ListItem", 
-            "position": 1, 
-            "name": "Home",
-            "item": "https://anantya.ai/"  
-          },{
-            "@type": "ListItem", 
-            "position": 2, 
-            "name": "How to Use WhatsApp for Healthcare: A Simple guide",
-            "item": "https://anantya.ai/whatsapp-for-healthcare-a-simple-guide"  
-          }]
-        }
-        `}
-      </script>
+        {/* JSON-LD Blog Posting Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BlogPosting",
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "https://anantya.ai/blog/whatsapp-for-healthcare-a-simple-guide"
+            },
+            "headline": "How to Use WhatsApp for Healthcare: A Simple guide (2024)",
+            "description": "Discover how to use WhatsApp for healthcare in a simple guide. Harness the power of WhatsApp API and chatbot for healthcare solutions.",
+            "image": "https://ik.imagekit.io/cloy701fl/images//blog/whatsapp-for-healthcare.webp",
+            "author": {
+              "@type": "Organization",
+              "name": "Anantya.ai",
+              "url": "https://anantya.ai",
+              "areaServed": ["AE", "SA", "BH", "IN"]
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "Anantya.ai",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://ik.imagekit.io/cloy701fl/images/logo.webp"
+              }
+            },
+            "datePublished": "2024-03-29"
+          })}
+        </script>
 
-      {/* FAQ Schema */}
-      <script type="application/ld+json">
-        {`
-        {
-          "@context": "https://schema.org",
-          "@type": "FAQPage",
-          "mainEntity": [{
-            "@type": "Question",
-            "name": "Is WhatsApp Safe To Use For Healthcare?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "When used appropriately and in accordance with security regulations, WhatsApp may be a secure medium for medical communications. Anantya.ai, a supplier of the WhatsApp Business API, increases this security by providing industry-standard encrypted messaging solutions."
-            }
-          },{
-            "@type": "Question",
-            "name": "How Can Healthcare Experts Communicate With Patients Using WhatsApp?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Medical providers may use the WhatsApp Business API for healthcare to share test results, make appointments, offer advice, and even conduct virtual consultations."
-            }
-          }]
-        }
-        `}
-      </script>
-    </Helmet>
+        {/* JSON-LD Breadcrumb Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org/",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Homepage",
+                "item": "https://anantya.ai/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Blog",
+                "item": "https://anantya.ai/blog"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "How to Use WhatsApp for Healthcare: A Simple guide",
+                "item": "https://anantya.ai/blog/whatsapp-for-healthcare-a-simple-guide"
+              }
+            ]
+          })}
+        </script>
+      </Helmet>
+
       <div className="container py-5 mt-3">
             <div className="row px-md-5 px-1 mx-1 mx-md-5">
                 <div className="col-md-12 col-sm-12">
@@ -170,7 +151,7 @@ const WhatsAppForHealthcareGuide = () => {
             <div className="row">
               <div className="col-lg-8 blog">
                 <div className="jop-info">
-                  <h3 className="main-title mb-10">
+                  <h3 className="main-title mb-1">
                     How to Use WhatsApp for Healthcare: A Simple Guide
                   </h3>
                   <p className="pb-40 color-999">
@@ -203,7 +184,7 @@ const WhatsAppForHealthcareGuide = () => {
     </div>
 
                   <div id="whatsapp-broadcast11">
-                    <h6 className="mt-40 mb-2">Problems Facing the Healthcare Sector</h6>
+                    <h6 className="mt-4 mb-2">Problems Facing the Healthcare Sector</h6>
                     <div className="text d-flex mb-2">
                       <p>These days, more and more people want top-notch healthcare without being bothered to visit the doctor in person. However, the outdated methods used by hospitals to manage patients are no longer acceptable.</p>
                     </div>
@@ -216,7 +197,7 @@ const WhatsAppForHealthcareGuide = () => {
                   </div>
 
                   <div id="whatsapp-broadcast12">
-                    <h6 className="mt-40 mb-2">The solution is WhatsApp!</h6>
+                    <h6 className="mt-4 mb-2">The solution is WhatsApp!</h6>
                     <div className="text d-flex mb-2">
                       <p>Today, WhatsApp has simplified the user’s path like never before, especially in the healthcare sector. <b>WhatsApp Business API</b> provides a lot of features in terms of accuracy and speed, which has benefited the healthcare industry.</p>
                     </div>
@@ -239,7 +220,7 @@ const WhatsAppForHealthcareGuide = () => {
                   </div>
 
                   <div id="whatsapp-broadcast13">
-                    <h6 className="mt-40 mb-2">What is the WhatsApp Business API for healthcare?</h6>
+                    <h6 className="mt-4 mb-2">What is the WhatsApp Business API for healthcare?</h6>
                     <div className="text d-flex mb-2">
                       <p>The <b>WhatsApp Business API</b> is a game-changer for healthcare organizations. It not only helps them connect with a large number of patients and clients, but it also makes the chat feel more personal.</p>
                     </div>
@@ -253,13 +234,13 @@ const WhatsAppForHealthcareGuide = () => {
                       <p>With <b>WhatsApp Business API Healthcare,</b> patients can receive updates and test results directly on the app. And you know the best part of it: if patients have any questions or concerns, healthcare professionals can respond quickly, giving patients peace of mind.</p>
                     </div>
                     <div className="text d-flex mb-2">
-                      <p><a href="https://anantya.ai/healthcare-industry" target="_blank" rel="noopener noreferrer">WhatsApp Business API for healthcare</a> is the smart choice for all kinds of businesses because it connects easily with current healthcare systems.</p>
+                      <p><a href="/healthcare-industry" target="_blank" rel="noopener noreferrer">WhatsApp Business API for healthcare</a> is the smart choice for all kinds of businesses because it connects easily with current healthcare systems.</p>
                     </div>
                     <div className="text d-flex mb-2">
                       <p>In addition, it’s cost-effective in the long term, which, as a result, saves lots of money compared to traditional communication methods. Let's find out some more advantages of the <b>WhatsApp Business API in the healthcare sector.</b></p>
                     </div>
                     <div className="text d-flex mb-2">
-                      <p>To implement the <b>WhatsApp Business API in the healthcare sector,</b> you must have a brief knowledge of <b>WhatsApp broadcasting.</b> Check out our blog on <a href="https://anantya.ai/whatsapp-broadcasting-ultimate-guide" target="_blank" rel="noopener noreferrer">WhatsApp broadcasting.</a></p>
+                      <p>To implement the <b>WhatsApp Business API in the healthcare sector,</b> you must have a brief knowledge of <b>WhatsApp broadcasting.</b> Check out our blog on <a href="/whatsapp-broadcasting-ultimate-guide" target="_blank" rel="noopener noreferrer">WhatsApp broadcasting.</a></p>
                     </div>
                   </div>
 
@@ -270,7 +251,7 @@ const WhatsAppForHealthcareGuide = () => {
                           <div className="text-center">
                             <h5 className="text-center text-black">Create Your Anantya.ai Account</h5>
                             <form action="https://formspree.io/f/mdorezev" className="form" method="post">
-                              <p className="text-center text-danger fs-12px mb-30">Fill in the details below to start your 14 Day FREE trial.<br />No Credit Card needed.*</p>
+                              <p className="text-center text-danger fs-12px mb-3">Fill in the details below to start your 14 Day FREE trial.<br />No Credit Card needed.*</p>
                               <div className="row px-5">
                                 <div className="col-lg-4">
                                   <div className="form-group mb-2">
@@ -297,7 +278,7 @@ const WhatsAppForHealthcareGuide = () => {
                   </div>
                   <div id="whatsapp-broadcast14">
       <div className="text d-flex mb-2">
-        <h6 className="mt-40">Advantages of the WhatsApp API for Healthcare</h6>
+        <h6 className="mt-4">Advantages of the WhatsApp API for Healthcare</h6>
       </div>
       <div className="text d-flex mb-2">
         <p>
@@ -381,7 +362,7 @@ const WhatsAppForHealthcareGuide = () => {
         <h6 className="mt-4 mb-2">How do I use WhatsApp in the healthcare sector?</h6>
         <div className="text d-flex mb-2">
           <p>
-            Healthcare companies use the <a href="https://anantya.ai/whatsapp-business-api" target="_blank" rel="noopener noreferrer">WhatsApp Business API</a> to create special groups just for patients. These groups all provide support, share information, and get everyone involved in the community.
+            Healthcare companies use the <a href="/whatsapp-business-api" target="_blank" rel="noopener noreferrer">WhatsApp Business API</a> to create special groups just for patients. These groups all provide support, share information, and get everyone involved in the community.
           </p>
         </div>
         <div className="text d-flex mb-2">
@@ -390,7 +371,7 @@ const WhatsAppForHealthcareGuide = () => {
         <div className="text d-flex mb-2">
           <p>Now, let’s talk about how to ask about health stuff on WhatsApp. It’s a bit important, so let’s dive in and get some examples for your business.</p>
         </div>
-        <h6 className="mt-40 mb-10">WhatsApp for Healthcare</h6>
+        <h6 className="mt-4 mb-1">WhatsApp for Healthcare</h6>
         
         {/* List of benefits */}
         {[
@@ -402,7 +383,7 @@ const WhatsAppForHealthcareGuide = () => {
           "Run targeted marketing campaigns.",
           "Get Authenticity with Green Tick"
         ].map((item, index) => (
-          <div className="text d-flex mb-10" key={index}>
+          <div className="text d-flex mb-1" key={index}>
             <span className="icon color-blue5 me-2 flex-shrink-0"><i className="fas fa-check-circle"></i></span>
             <p>{item}</p>
           </div>
@@ -528,7 +509,7 @@ const WhatsAppForHealthcareGuide = () => {
           <p>It offers a clear statement of your dedication to truth and quality.</p>
         </div>
         <div className="text-center">
-      <a href="contact" target="_blank" rel="noopener noreferrer">
+      <a href="/contact" target="_blank" rel="noopener noreferrer">
         <img 
           src={bookYourImage}  // Correct way to dynamically insert the image source
           className="img-fluid pb-3 mx-auto" 
@@ -539,7 +520,7 @@ const WhatsAppForHealthcareGuide = () => {
         
       </div>
       <div id="whatsapp-broadcast16">
-      <h6 className="mt-40 mb-2">Conclusion</h6>
+      <h6 className="mt-4 mb-2">Conclusion</h6>
       <div className="text d-flex mb-2">
         <p>
           Using the WhatsApp Business API for healthcare is a game-changer, making it
@@ -556,7 +537,7 @@ const WhatsAppForHealthcareGuide = () => {
       </div>
       <div className="text d-flex mb-2">
         <p>
-          By using the <a href="https://anantya.ai/whatsapp-business-api-ultimate-guide" target="_blank" rel="noopener noreferrer">
+          By using the <a href="/whatsapp-business-api-ultimate-guide" target="_blank" rel="noopener noreferrer">
             WhatsApp Business API
           </a>, healthcare organizations can
           schedule timely communication, reduce missed appointments, and improve
@@ -634,7 +615,7 @@ const WhatsAppForHealthcareGuide = () => {
                                             </h2>
                                             <div id="collapse4" className="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#accordionSt4">
                                                 <div className="accordion-body">
-                                                    <p>Patients may use the <a href="https://anantya.ai/healthcare-industry" target="_blank" rel="noopener noreferrer">WhatsApp chatbot for healthcare</a> to schedule, confirm, or reschedule appointments, get prescription refills, and even participate in telemedicine sessions. These features make it simpler and easier to obtain healthcare services.</p>
+                                                    <p>Patients may use the <a href="/healthcare-industry" target="_blank" rel="noopener noreferrer">WhatsApp chatbot for healthcare</a> to schedule, confirm, or reschedule appointments, get prescription refills, and even participate in telemedicine sessions. These features make it simpler and easier to obtain healthcare services.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -680,7 +661,7 @@ const WhatsAppForHealthcareGuide = () => {
               {/* Sidebar can be added here if needed */}
               <div className="col-lg-4">
             <div className="summary-card">
-                <h6 className="pb-20 border-bottom border-1 brd-gray">Table of Contents:</h6>
+                <h6 className="pb-2 mb-3 border-bottom border-1 brd-gray">Table of Contents:</h6>
                 <ul>
                     <li><a href="#whatsapp-broadcast11">Problems Facing the Healthcare Sector</a></li>
                     <li><a href="#whatsapp-broadcast12">The Solution is WhatsApp!</a></li>

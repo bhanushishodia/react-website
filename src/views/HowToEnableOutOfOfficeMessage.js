@@ -15,21 +15,100 @@ const submitYourAwayMessageImage = getImage('submit-your-away-message.webp');
 const OutOfOffice = () => {
   return (
     <>
-      <Helmet>
-            <title>How to Enable WhatsApp Out-of-Office Message in Anantya.ai | Knowledge Center</title>
-            <meta name="robots" content="index,follow" />
-            <meta name="description" content="How to Enable WhatsApp Out-of-Office Message in Anantya.ai, Step-by-Step" />
-            <meta property="og:title" content="How to Enable WhatsApp Out-of-Office Message in Anantya.ai | Knowledge Center" />
-            <meta property="og:type" content="article" />
-            <meta property="og:description" content="How to Enable WhatsApp Out-of-Office Message in Anantya.ai, Step-by-Step" />
-            <meta property="og:url" content="https://anantya.ai/how-to-enable-whatsapp-out-of-office-message" />
-            <meta property="og:site_name" content="anantya.ai" />
-            <meta property="og:image" content="https://anantya.ai/assets/img/go-to-bot-setup.webp" />
-            <link rel="canonical" href="https://anantya.ai/how-to-enable-whatsapp-out-of-office-message" />
-            <meta name="author" content="Anantya.ai" />
+       <Helmet>
+        {/* Alternate Links */}
+        <link rel="alternate" hrefLang="x-default" href="https://anantya.ai/how-to-enable-whatsapp-out-of-office-message" />
+        <link rel="alternate" hreflang="en-ae" href="https://anantya.ai/how-to-enable-whatsapp-out-of-office-message" />
+        <link rel="alternate" hreflang="en-sa" href="https://anantya.ai/how-to-enable-whatsapp-out-of-office-message" />
+        <link rel="alternate" hreflang="en-bh" href="https://anantya.ai/how-to-enable-whatsapp-out-of-office-message" />
+        <link rel="alternate" hreflang="en-in" href="https://anantya.ai/how-to-enable-whatsapp-out-of-office-message" />
+        <link rel="alternate" hreflang="en" href="https://anantya.ai/how-to-enable-whatsapp-out-of-office-message" />
+        
+        {/* Page Title and Meta Tags */}
+        <title>How to Enable WhatsApp Out-of-Office Message in Whatsapp Business</title>
+        <meta name="robots" content="index,follow" />
+        <meta name="title" content="How to Enable WhatsApp Out-of-Office Message in Whatsapp Business" />
+        <meta name="description" content="How to Enable WhatsApp Out-of-Office Message in Whatsapp Business" />
+        
+        {/* Open Graph Meta Tags */}
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content="How to Enable WhatsApp Out-of-Office Message in Whatsapp Business" />
+        <meta property="og:description" content="How to Enable WhatsApp Out-of-Office Message in Whatsapp Business" />
+        <meta property="og:url" content="https://anantya.ai/how-to-enable-whatsapp-out-of-office-message" />
+        <meta property="og:site_name" content="anantya.ai" />
+        <meta property="og:image" content="https://ik.imagekit.io/cloy701fl/images/anantya-home-page.webp" />
+        
+        {/* Canonical Link */}
+        <link rel="canonical" href="https://anantya.ai/how-to-enable-whatsapp-out-of-office-message" />
+        
+        {/* Author Meta Tag */}
+        <meta name="author" content="Anantya.ai" />
 
-         
-        </Helmet>
+        {/* Organization Schema */}
+        <script type="application/ld+json">
+          {`
+          {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Anantya.ai",
+            "alternateName": "Conversational Engagement Platform for Businesses | Anantya.ai",
+            "url": "https://anantya.ai/",
+            "logo": "https://ik.imagekit.io/cloy701fl/images/logo.webp",
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+971565480273",
+              "contactType": "sales",
+              "areaServed": ["AE","SA","BH","IN"],
+              "availableLanguage": "en"
+            },
+            "sameAs": [
+              "https://www.facebook.com/anantyaai",
+              "https://www.instagram.com/anantya.ai",
+              "https://www.youtube.com/@Anantyaai",
+              "https://www.linkedin.com/company/anantya-ai",
+              "https://www.pinterest.com/anantyaai"
+            ]
+          }
+          `}
+        </script>
+
+        {/* WebPage Schema */}
+        <script type="application/ld+json">
+          {`
+          {
+            "@context": "https://schema.org/",
+            "@type": "WebPage",
+            "@id": "#WebPage",
+            "url": "https://anantya.ai/how-to-enable-whatsapp-out-of-office-message",
+            "name": "How to Enable WhatsApp Out-of-Office Message in Whatsapp Business"
+          }
+          `}
+        </script>
+
+        {/* Breadcrumb Schema */}
+        <script type="application/ld+json">
+          {`
+          {
+            "@context": "https://schema.org/",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Homepage",
+                "item": "https://anantya.ai"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "How to Enable WhatsApp Out-of-Office Message in Whatsapp Business",
+                "item": "https://anantya.ai/how-to-enable-whatsapp-out-of-office-message"
+              }
+            ]
+          }
+          `}
+        </script>
+      </Helmet>
     <div className="page-content">
     <div>
       <InnerHeader />

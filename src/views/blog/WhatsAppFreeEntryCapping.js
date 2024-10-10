@@ -4,111 +4,117 @@ import WhatsAppWidget from '../../components/common/WhatsAppWidget';
 import { Helmet } from 'react-helmet';
 import { getImage } from '../../utils/getImage'; // Correct path to utility
 // Fetching images dynamically using getImage function
-const blogImage = getImage('whatsapp-free-entry-frequency-capping.webp');
+const blogImage = getImage('/blog/whatsapp-free-entry-frequency-capping.webp');
 const WhatsAppFreeEntryCapping = () => {
   return (
     <>
-    <Helmet>
-    <title>WhatsApp’s 2024 Free Entry Point & Frequency Capping</title>
-    <meta name="robots" content="index,follow" />
-    <meta name="description"
-        content="Learn how WhatsApp’s 2024 updates on free entry points and frequency capping can impact your business messaging strategy. Stay ahead and effective." />
-    <meta property="og:type" content="article" />
-    <meta property="og:locale" content="en_IN" />
-    <meta property="og:locale" content="en_AE" />
-    <meta property="og:locale" content="en_SA" />
-    <meta property="og:locale" content="en_BH" />
-    <meta property="og:title" content="WhatsApp’s 2024 Free Entry Point & Frequency Capping" />
-    <meta property="og:description"
-        content="Learn how WhatsApp’s 2024 updates on free entry points and frequency capping can impact your business messaging strategy. Stay ahead and effective." />
-    <meta property="og:url" content="https://anantya.ai/whatsapp-free-entry-frequency-capping" />
-    <meta property="og:site_name" content="anantya.ai" />
-    <meta property="og:image"
-        content="https://anantya.ai/assets/img/blog/whatsapp-free-entry-frequency-capping.webp" />
-    <link rel="canonical" href="https://anantya.ai/whatsapp-free-entry-frequency-capping" />
-    <meta name="author" content="Anantya" />
+  <Helmet>
+      <link rel="alternate" hrefLang="x-default" href="https://anantya.ai/blog/whatsapp-free-entry-frequency-capping" />
+      <link rel="alternate" hrefLang="en-ae" href="https://anantya.ai/blog/whatsapp-free-entry-frequency-capping" />
+      <link rel="alternate" hrefLang="en-sa" href="https://anantya.ai/blog/whatsapp-free-entry-frequency-capping" />
+      <link rel="alternate" hrefLang="en-bh" href="https://anantya.ai/blog/whatsapp-free-entry-frequency-capping" />
+      <link rel="alternate" hrefLang="en-in" href="https://anantya.ai/blog/whatsapp-free-entry-frequency-capping" />
+      <link rel="alternate" hrefLang="en" href="https://anantya.ai/blog/whatsapp-free-entry-frequency-capping" />
 
-    {/* JSON-LD for Organization */}
-    <script type="application/ld+json">
-        {`
-        {
-            "@context": "https://schema.org",
+      <title>WhatsApp’s 2024 Free Entry Point & Frequency Capping</title>
+      <meta name="robots" content="index,follow" />
+      <meta name="title" content="WhatsApp’s 2024 Free Entry Point & Frequency Capping" />
+      <meta name="description" content="Learn how WhatsApp’s 2024 updates on free entry points and frequency capping can impact your business messaging strategy. Stay ahead and effective." />
+      <meta name="keywords" content="meta frequency capping" />
+      <meta property="og:type" content="blog" />
+      <meta property="og:locale" content="en_IN" />
+      <meta property="og:locale" content="en_AE" />
+      <meta property="og:locale" content="en_SA" />
+      <meta property="og:locale" content="en_BH" />
+      <meta property="og:title" content="WhatsApp’s 2024 Free Entry Point & Frequency Capping" />
+      <meta property="og:description" content="Learn how WhatsApp’s 2024 updates on free entry points and frequency capping can impact your business messaging strategy. Stay ahead and effective." />
+      <meta property="og:url" content="https://anantya.ai/blog/whatsapp-free-entry-frequency-capping" />
+      <meta property="og:site_name" content="anantya.ai" />
+      <meta property="og:image" content="https://ik.imagekit.io/cloy701fl/images//blog/whatsapp-free-entry-frequency-capping.webp" />
+      <link rel="canonical" href="https://anantya.ai/blog/whatsapp-free-entry-frequency-capping" />
+      <meta name="author" content="Kiran Yadav" />
+
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "anantya.ai",
+          "alternateName": "Conversational Engagement Platform for Businesses | Anantya.ai",
+          "url": "https://anantya.ai",
+          "logo": "https://ik.imagekit.io/cloy701fl/images/logo.webp",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+971565480273",
+            "contactType": "sales",
+            "areaServed": ["IN", "AE", "SA", "BH"],
+            "availableLanguage": ["en"]
+          },
+          "sameAs": [
+            "https://www.facebook.com/anantyaai",
+            "https://www.instagram.com/anantya.ai",
+            "https://www.youtube.com/@Anantyaai",
+            "https://www.linkedin.com/company/anantya-ai",
+            "https://www.pinterest.com/anantyaai"
+          ]
+        })}
+      </script>
+
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://anantya.ai/blog/whatsapp-free-entry-frequency-capping"
+          },
+          "headline": "WhatsApp’s 2024 Free Entry Point & Frequency Capping",
+          "description": "Learn how WhatsApp’s 2024 updates on free entry points and frequency capping can impact your business messaging strategy. Stay ahead and effective.",
+          "image": "https://ik.imagekit.io/cloy701fl/images//blog/whatsapp-free-entry-frequency-capping.webp",
+          "author": {
             "@type": "Organization",
-            "name": "anantya.ai",
-            "alternateName": "Conversational Engagement Platform for Businesses | Anantya.ai",
+            "name": "Anantya.ai",
             "url": "https://anantya.ai",
-            "logo": "https://anantya.ai/assets/img/logo.webp",
-            "contactPoint": {
-                "@type": "ContactPoint",
-                "telephone": "+971565480273",
-                "contactType": "sales",
-                "areaServed": ["IN","AE","SA","BH"],
-                "availableLanguage": ["en"]
-            },
-            "sameAs": [
-                "https://www.facebook.com/anantyaai",
-                "https://www.instagram.com/anantya.ai",
-                "https://www.youtube.com/@Anantyaai",
-                "https://www.linkedin.com/company/anantya-ai",
-                "https://www.pinterest.com/anantyaai"
-            ]
-        }
-        `}
-    </script>
+            "areaServed": ["IN", "AE", "SA", "BH"]
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Anantya.ai",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://ik.imagekit.io/cloy701fl/images/logo.webp"
+            }
+          },
+          "datePublished": "2024-08-20"
+        })}
+      </script>
 
-    {/* JSON-LD for BlogPosting */}
-    <script type="application/ld+json">
-        {`
-        {
-            "@context": "https://schema.org",
-            "@type": "BlogPosting",
-            "mainEntityOfPage": {
-                "@type": "WebPage",
-                "@id": "https://anantya.ai/whatsapp-free-entry-frequency-capping"
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org/",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Homepage",
+              "item": "https://anantya.ai/"
             },
-            "headline": "WhatsApp’s 2024 Free Entry Point & Frequency Capping",
-            "description": "Learn how WhatsApp’s 2024 updates on free entry points and frequency capping can impact your business messaging strategy. Stay ahead and effective.",
-            "image": "https://anantya.ai/assets/img/blog/whatsapp-free-entry-frequency-capping.webp",
-            "author": {
-                "@type": "Organization",
-                "name": "Anantya.ai",
-                "url": "https://anantya.ai",
-                "areaServed": ["IN","AE","SA","BH"]
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Blog",
+              "item": "https://anantya.ai/blog"
             },
-            "publisher": {
-                "@type": "Organization",
-                "name": "Anantya.ai",
-                "logo": {
-                    "@type": "ImageObject",
-                    "url": "https://anantya.ai/assets/img/logo.webp"
-                }
-            },
-            "datePublished": "2024-08-20"
-        }
-        `}
-    </script>
-
-    {/* JSON-LD for BreadcrumbList */}
-    <script type="application/ld+json">
-        {`
-        {
-            "@context": "https://schema.org/",
-            "@type": "BreadcrumbList",
-            "itemListElement": [{
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Home",
-                "item": "https://anantya.ai/"
-            }, {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "WhatsApp’s 2024 Free Entry Point & Frequency Capping",
-                "item": "https://anantya.ai/whatsapp-free-entry-frequency-capping"
-            }]
-        }
-        `}
-    </script>
-   </Helmet>
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "WhatsApp’s 2024 Free Entry Point & Frequency Capping",
+              "item": "https://anantya.ai/blog/whatsapp-free-entry-frequency-capping"
+            }
+          ]
+        })}
+      </script>
+    </Helmet>
     <div className="container py-5 mt-3">
     <div className="row px-md-5 px-1 mx-1 mx-md-5 ">
         <div className="col-md-12 col-sm-12 ">
@@ -137,10 +143,10 @@ const WhatsAppFreeEntryCapping = () => {
                                 <p>However, there is a wider picture through WhatsApp's Free Entry Point. This feature offers businesses a way to engage with customers, as users are the ones who get to take action first.</p>
 
                                 <h2 className="main-title fs-4 mb-10">What are free-entry point conversations?</h2>
-                                <p>In simple terms, the Free Entry Point is a window that lets businesses engage with their clients without being restricted by <a href="meta-new-frequency-capping-update" style={{ color: '#5dc4eb' }}>frequency capping</a> limitations. It’s one of the great ways to reach out and establish a connection with their audience.</p>
+                                <p>In simple terms, the Free Entry Point is a window that lets businesses engage with their clients without being restricted by <a href="/meta-new-frequency-capping-update" style={{ color: '#5dc4eb' }}>frequency capping</a> limitations. It’s one of the great ways to reach out and establish a connection with their audience.</p>
                                 <p>This feature makes you worry-free as users initiate the conversation, and the window is open for 24 hours, where businesses have no restrictions on sending marketing messages until the period ends.</p>
 
-                                <p><b>Starting the conversation:</b> A free entry point conversation starts when the consumer initiates the conversation through your Facebook page call-to-action or through a <a href="click-to-whatsapp-ads-marketing-2023" style={{ color: '#5dc4eb' }}>click-to-WhatsApp ad</a> button. The conversation begins if the business responds to their message within a span of 24 hours.</p>
+                                <p><b>Starting the conversation:</b> A free entry point conversation starts when the consumer initiates the conversation through your Facebook page call-to-action or through a <a href="/click-to-whatsapp-ads-marketing-2023" style={{ color: '#5dc4eb' }}>click-to-WhatsApp ad</a> button. The conversation begins if the business responds to their message within a span of 24 hours.</p>
 
                                 <p><b>Duration and Use:</b> If the free entry point is opened once, the window is available for a period of 24 hours only. Businesses are not charged more to send any type of communication during this time period.</p>
                                 <p>But if one doesn't reply within the allotted 24 hours, you have to develop a message template, which might cost extra and come under the marketing, utility, or authentication areas.</p>
@@ -148,7 +154,7 @@ const WhatsAppFreeEntryCapping = () => {
                                 <p><b>Managing Conversations:</b> Any open discussion of customers is immediately shut down when businesses start a free entry point chat. It is not possible to initiate new discussions until the Free Entry Point time closes. Free-form communications can only be sent when a customer support window is active.</p>
                                 <p>Once the 24-hour service window closes, a new one will open if the consumer initiates a conversation again.</p>
 
-                                <p>Did you know with <a href="index" style={{ color: '#5dc4eb' }}>Anantya.ai</a> you can handle your Instagram, Facebook, and Telegram all in one panel? Businesses can also redirect their clients to WhatsApp by displaying advertisements on their websites.</p>
+                                <p>Did you know with <a href="/" style={{ color: '#5dc4eb' }}>Anantya.ai</a> you can handle your Instagram, Facebook, and Telegram all in one panel? Businesses can also redirect their clients to WhatsApp by displaying advertisements on their websites.</p>
 
                                 <h2 id="add-instagram-facebook-ctas" className="fs-3 my-3">How do I add Instagram and Facebook CTAs?</h2>
                                 <p>Businesses can use one smart strategy to increase interaction with WhatsApp by using Facebook and Instagram to increase traffic to the app.</p>
@@ -160,7 +166,7 @@ const WhatsAppFreeEntryCapping = () => {
                                 <p>Businesses can make use of WhatsApp's Free Entry Points by including these features, increasing consumer engagement while lowering costs.</p>
 
                                 <h2 id="how-anantya-ai-can-help" className="fs-4 my-2">How Anantya.ai Can Help</h2>
-                                <p>Anantya.ai will make your work process simpler with its <a href="whatsapp-business-api-ultimate-guide" style={{ color: '#5dc4eb' }}>WhatsApp Business API</a> service. For you to take advantage of services like free entry points, we help companies with the setup and management of their WhatsApp business API accounts.</p>
+                                <p>Anantya.ai will make your work process simpler with its <a href="/whatsapp-business-api-ultimate-guide" style={{ color: '#5dc4eb' }}>WhatsApp Business API</a> service. For you to take advantage of services like free entry points, we help companies with the setup and management of their WhatsApp business API accounts.</p>
                                 <p>Anantya.ai helps with easy customer interaction management and the addition of powerful call-to-action buttons on your Facebook and Instagram pages. We assure you that we will handle all the technical stuff while you just concentrate on managing and growing your company.</p>
 
                                 <h2 id="conclusion" className="fs-4 my-2">Conclusion</h2>
@@ -171,7 +177,7 @@ const WhatsAppFreeEntryCapping = () => {
                         </div>
                         <div className="col-lg-4">
                             <div className="summary-card">
-                                <h6 className="pb-20 border-bottom border-1 brd-gray">Table of Contents: </h6>
+                                <h6 className="pb-3 border-bottom border-1 brd-gray">Table of Contents: </h6>
                                 <ul>
                                     <li><a href="#add-instagram-facebook-ctas">How do I add Instagram and Facebook CTAs?</a></li>
                                     <li><a href="#how-anantya-ai-can-help">How Anantya.ai Can Help</a></li>

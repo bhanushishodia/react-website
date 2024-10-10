@@ -25,39 +25,100 @@ const PartnerWithUs = () => {
  const logosRow2 = logos.slice(5);     // Last 5 logos
   return (
     <>
-    <Helmet>
-    <title>Collaborate to Grow with WhatsApp Solutions | Partner With Us</title>
-    <meta name="robots" content="index,follow" />
-    <meta name="description" content="Build fruitful partnerships with Anantya.ai for WhatsApp solutions. Together, we can empower businesses and enhance customer communication." />
-    <meta property="og:title" content="Collaborate to Grow with WhatsApp Solutions | Partner With Us" />
-    <meta property="og:type" content="article" />
-    <meta property="og:description" content="Build fruitful partnerships with Anantya.ai for WhatsApp solutions. Together, we can empower businesses and enhance customer communication." />
-    <meta property="og:url" content="https://anantya.ai/partner-with-us" />
-    <meta property="og:site_name" content="anantya.ai" />
-    <meta property="og:image" content="https://anantya.ai/assets/img/partner/let%E2%80%99s-grow-together-home.webp" />
-    <link rel="canonical" href="https://anantya.ai/partner-with-us" />
-    <meta name="author" content="Anantya" />
-    <script type="application/ld+json">
-      {JSON.stringify({
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
+  <Helmet>
+        {/* Alternate links for different regions */}
+        <link rel="alternate" hrefLang="x-default" href="https://anantya.ai/partner-with-us" />
+        <link rel="alternate" hrefLang="en-ae" href="https://anantya.ai/partner-with-us" />
+        <link rel="alternate" hrefLang="en-sa" href="https://anantya.ai/partner-with-us" />
+        <link rel="alternate" hrefLang="en-bh" href="https://anantya.ai/partner-with-us" />
+        <link rel="alternate" hrefLang="en-in" href="https://anantya.ai/partner-with-us" />
+        <link rel="alternate" hrefLang="en" href="https://anantya.ai/partner-with-us" />
+
+        {/* Meta tags */}
+        <title>Collaborate to Grow with WhatsApp Solutions | Partner With Us</title>
+        <meta name="robots" content="index,follow" />
+        <meta name="title" content="Collaborate to Grow with WhatsApp Solutions | Partner With Us" />
+        <meta
+          name="description"
+          content="Build fruitful partnerships with Anantya.ai for WhatsApp solutions. Together, we can empower businesses and enhance customer communication."
+        />
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content="Collaborate to Grow with WhatsApp Solutions | Partner With Us" />
+        <meta
+          property="og:description"
+          content="Build fruitful partnerships with Anantya.ai for WhatsApp solutions. Together, we can empower businesses and enhance customer communication."
+        />
+        <meta property="og:url" content="https://anantya.ai/partner-with-us" />
+        <meta property="og:site_name" content="anantya.ai" />
+        <meta property="og:image" content="https://ik.imagekit.io/cloy701fl/images/partner-program-homepage.webp" />
+        <link rel="canonical" href="https://anantya.ai/partner-with-us" />
+        <meta name="author" content="Anantya" />
+
+        {/* JSON-LD schema for Organization */}
+        <script type="application/ld+json">
+          {`
           {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Home",
-            "item": "https://anantya.ai"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Work with us",
-            "item": "https://anantya.ai/partner-with-us"
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Anantya.ai",
+            "alternateName": "Conversational Engagement Platform for Businesses | Anantya.ai",
+            "url": "https://anantya.ai/",
+            "logo": "https://ik.imagekit.io/cloy701fl/images/logo.webp",
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+971565480273",
+              "contactType": "sales",
+              "areaServed": ["AE", "SA", "BH", "IN"],
+              "availableLanguage": "en"
+            },
+            "sameAs": [
+              "https://www.facebook.com/anantyaai",
+              "https://www.instagram.com/anantya.ai",
+              "https://www.youtube.com/@Anantyaai",
+              "https://www.linkedin.com/company/anantya-ai",
+              "https://www.pinterest.com/anantyaai"
+            ]
           }
-        ]
-      })}
-    </script>
-  </Helmet>
+          `}
+        </script>
+
+        {/* JSON-LD schema for WebPage */}
+        <script type="application/ld+json">
+          {`
+          {
+            "@context": "https://schema.org/",
+            "@type": "WebPage",
+            "@id": "#WebPage",
+            "url": "https://anantya.ai/partner-with-us",
+            "name": "Collaborate to Grow with WhatsApp Solutions | Partner With Us"
+          }
+          `}
+        </script>
+
+        {/* JSON-LD schema for BreadcrumbList */}
+        <script type="application/ld+json">
+          {`
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://anantya.ai"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Collaborate to Grow with WhatsApp Solutions | Partner With Us",
+                "item": "https://anantya.ai/partner-with-us"
+              }
+            ]
+          }
+          `}
+        </script>
+      </Helmet>
     <div className="partner-with-us-page">
       {/* section1 */}
       <section>
@@ -83,37 +144,30 @@ const PartnerWithUs = () => {
                       We've got the Smartest WhatsApp Engagement Platform, and you have your audience. Together, we can conquer the market.
                     </p>
                     <div className="info">
-                      <form
-                        action="https://formspree.io/f/mdorezev"
-                        className="form"
-                        method="post"
-                      >
-                        <div className="form-group">
-                          <span className="icon">
-                            <i className="far fa-envelope"></i>
-                          </span>
-                          <input
-                            type="email"
-                            name="_replyto"
-                            placeholder="Your email address"
-                            required
-                          />
-                          <input
-                            type="hidden"
-                            name="_subject"
-                            value="New partnership inquiry"
-                          />
-                          <button
-                            type="submit"
-                            className="btn  rounded-pill bg-green"
-                          >
-                            <span>
-                              Become a Partner 
-                            </span>
-                          </button>
-                        </div>
-                      </form>
-                    </div>
+  <form action="https://formspree.io/f/mdorezev" className="form" method="post">
+    <div className="" style={{ display: "flex", alignItems: "center", border: "1px solid #ddd", padding: "5px", borderRadius: "50px", width: "fit-content" }}>
+      <span className="icon" style={{ marginLeft: "10px" }}>
+        <i className="far fa-envelope"></i>
+      </span>
+      <input
+        type="email"
+        name="_replyto"
+        placeholder="Your email address"
+        required
+        style={{ border: "none", outline: "none", background:"none", flexGrow: 1 }}
+      />
+      <input type="hidden" name="_subject" value="New partnership inquiry" />
+      <button
+        type="submit"
+        className="btn rounded-pill bg-green"
+        style={{ marginLeft: "10px",  color: "#fff", border: "none", padding: "10px 20px", borderRadius: "30px", whiteSpace: "nowrap" }}
+      >
+        <span>Become a Partner</span>
+      </button>
+    </div>
+  </form>
+                       </div>
+
                   </div>
                 </div>
                 <div className="col-md-6 col-sm-12 pt-md-0 pt-4">

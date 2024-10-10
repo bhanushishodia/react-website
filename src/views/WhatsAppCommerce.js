@@ -32,54 +32,45 @@ window.open(pdfFile, "_blank");
 
   return (
     <>
-     <Helmet>
-      {/* Title and Meta Tags */}
-      <title>WhatsApp Commerce | Anantya.ai</title>
-      <meta
-        name="keywords"
-        content="Whatsapp Commerce,Whatsapp Commerce Platform,Whatsapp Commerce API"
-      />
-      <meta name="robots" content="index,follow" />
-      <meta
-        name="description"
-        content="Use WhatsApp Commerce to directly sell your products and services, boost sales, improve conversion rates, and streamline customer service operations."
-      />
+  <Helmet>
+        <link rel="alternate" hrefLang="x-default" href="https://anantya.ai/whatsapp-commerce" />
+        <link rel="alternate" hreflang="en-ae" href="https://anantya.ai/whatsapp-commerce" />
+        <link rel="alternate" hreflang="en-sa" href="https://anantya.ai/whatsapp-commerce" />
+        <link rel="alternate" hreflang="en-bh" href="https://anantya.ai/whatsapp-commerce" />
+        <link rel="alternate" hreflang="en-in" href="https://anantya.ai/whatsapp-commerce" />
+        <link rel="alternate" hreflang="en" href="https://anantya.ai/whatsapp-commerce" />
 
-      {/* Open Graph Meta Tags */}
-      <meta property="og:title" content="WhatsApp Commerce | Anantya.ai" />
-      <meta property="og:type" content="article" />
-      <meta
-        property="og:description"
-        content="Use WhatsApp Commerce to directly sell your products and services, boost sales, improve conversion rates, and streamline customer service operations."
-      />
-      <meta property="og:url" content="https://anantya.ai/whatsapp-commerce" />
-      <meta property="og:site_name" content="anantya.ai" />
-      <meta
-        property="og:image"
-        content="https://anantya.ai/assets/img/whatsapp-commerce/set-up-your-online-store-on-whatsapp.webp"
-      />
+        <title>WhatsApp Commerce | Anantya.ai</title>
+        <meta name="robots" content="index,follow" />
+        <meta name="title" content="WhatsApp Commerce | Anantya.ai" />
+        <meta name="description" content="Use WhatsApp Commerce to directly sell your products and services, boost sales, improve conversion rates, and streamline customer service operations." />
+        <meta name="keywords" content="Whatsapp Commerce,Whatsapp Commerce Platform,Whatsapp Commerce API" />
+        <meta property="og:type" content="article" />
+        <meta property="og:locale" content="en_AE" />
+        <meta property="og:locale" content="en_SA" />
+        <meta property="og:locale" content="en_BH" />
+        <meta property="og:locale" content="en_IN" />
+        <meta property="og:title" content="WhatsApp Commerce | Anantya.ai" />
+        <meta property="og:description" content="Use WhatsApp Commerce to directly sell your products and services, boost sales, improve conversion rates, and streamline customer service operations." />
+        <meta property="og:url" content="https://anantya.ai/whatsapp-commerce" />
+        <meta property="og:site_name" content="anantya.ai" />
+        <meta property="og:image" content="https://ik.imagekit.io/cloy701fl/images/set-up-your-online-store-on-whatsapp.webp" />
+        <link rel="canonical" href="https://anantya.ai/whatsapp-commerce" />
+        <meta name="author" content="Anantya" />
 
-      {/* Canonical Link */}
-      <link rel="canonical" href="https://anantya.ai/whatsapp-commerce" />
-
-      {/* Author */}
-      <meta name="author" content="Anantya" />
-
-      {/* JSON-LD Schema for Organization */}
-      <script type="application/ld+json">
-        {`
-          {
+        <script type="application/ld+json">
+          {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Organization",
             "name": "Anantya.ai",
             "alternateName": "Conversational Engagement Platform for Businesses | Anantya.ai",
             "url": "https://anantya.ai/",
-            "logo": "https://anantya.ai/assets/img/logo.webp",
+            "logo": "https://ik.imagekit.io/cloy701fl/images/logo.webp",
             "contactPoint": {
               "@type": "ContactPoint",
               "telephone": "+971565480273",
               "contactType": "sales",
-              "areaServed": ["AE", "SA", "BH"],
+              "areaServed": ["AE", "SA", "BH", "IN"],
               "availableLanguage": "en"
             },
             "sameAs": [
@@ -89,47 +80,40 @@ window.open(pdfFile, "_blank");
               "https://www.linkedin.com/company/anantya-ai",
               "https://www.pinterest.com/anantyaai"
             ]
-          }
-        `}
-      </script>
+          })}
+        </script>
 
-      {/* JSON-LD Schema for WebPage */}
-      <script type="application/ld+json">
-        {`
-          {
+        <script type="application/ld+json">
+          {JSON.stringify({
             "@context": "https://schema.org/",
             "@type": "WebPage",
             "@id": "#WebPage",
             "url": "https://anantya.ai/whatsapp-commerce",
             "name": "WhatsApp Commerce | Anantya.ai"
-          }
-        `}
-      </script>
+          })}
+        </script>
 
-      {/* JSON-LD Schema for BreadcrumbList */}
-      <script type="application/ld+json">
-        {`
-          {
+        <script type="application/ld+json">
+          {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             "itemListElement": [
               {
                 "@type": "ListItem",
                 "position": 1,
-                "name": "Home",
+                "name": "Homepage",
                 "item": "https://anantya.ai"
               },
               {
                 "@type": "ListItem",
                 "position": 2,
-                "name": "WhatsApp Commerce | Anantya.ai",
+                "name": "WhatsApp Commerce",
                 "item": "https://anantya.ai/whatsapp-commerce"
               }
             ]
-          }
-        `}
-      </script>
-    </Helmet>
+          })}
+        </script>
+      </Helmet>
     <div className="whatsapp-commerce-page">
       <section>
       <div className="container mt-5 py-5">

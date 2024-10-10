@@ -5,111 +5,131 @@ import { Helmet } from 'react-helmet';
 import CommentForm from "../../components/common/CommentForm";
 import { getImage } from '../../utils/getImage'; // Correct path to utility
 // Fetching the Click to WhatsApp image dynamically using getImage function
-const clickToWhatsAppImage = getImage('click-to-whatsapp-ads.jpeg');
+const clickToWhatsAppImage = getImage('/blog/click-to-whatsapp-ads.jpeg');
 const ClickToWhatsAppAdsMarketing2023 = () => {
   return (
     <section>
-      <Helmet>
-            <title>Boost Your Marketing in 2023 with Click to WhatsApp Ads</title>
-            <meta name="keywords" content="whatsapp for advertising, click to whatsapp ads" />
-            <meta name="robots" content="index,follow" />
-            <meta 
-                name="description" 
-                content="Elevate your marketing efforts in 2023 with Click to WhatsApp Ads, the ultimate and easy-to-use marketing tactic. Learn how to connect with your audience seamlessly. Level up your strategy now!" 
-            />
-            <meta property="og:title" content="Boost Your Marketing in 2023 with Click to WhatsApp Ads" />
-            <meta property="og:type" content="blog" />
-            <meta 
-                property="og:description" 
-                content="Elevate your marketing efforts in 2023 with Click to WhatsApp Ads, the ultimate and easy-to-use marketing tactic. Learn how to connect with your audience seamlessly. Level up your strategy now!" 
-            />
-            <meta property="og:url" content="https://anantya.ai/blog/click-to-whatsapp-ads-marketing-2023" />
-            <meta property="og:site_name" content="anantya.ai" />
-            <meta property="og:image" content="https://anantya.ai/assets/img/click-to-whatsapp-ads.jpeg" />
-            <link rel="canonical" href="https://anantya.ai/click-to-whatsapp-ads-marketing-2023" />
-            <meta name="author" content="Anantya.ai" />
-            
-            <script type="application/ld+json">
-                {`
-                {
-                    "@context": "https://schema.org",
-                    "@type": "Organization",
-                    "name": "Anantya.ai",
-                    "alternateName": "Conversational Engagement Platform for Businesses | Anantya.ai",
-                    "url": "https://anantya.ai/",
-                    "logo": "https://anantya.ai/assets/img/logo.webp",
-                    "contactPoint": {
-                        "@type": "ContactPoint",
-                        "telephone": "+971565480273",
-                        "contactType": "sales",
-                        "areaServed": ["AE", "SA", "BH"],
-                        "availableLanguage": "en"
-                    },
-                    "sameAs": [
-                        "https://www.facebook.com/anantyaai",
-                        "https://www.instagram.com/anantya.ai",
-                        "https://www.youtube.com/@Anantyaai",
-                        "https://www.linkedin.com/company/anantya-ai",
-                        "https://www.pinterest.com/anantyaai"
-                    ]
-                }
-                `}
-            </script>
+     <Helmet>
+        {/* Alternate links */}
+        <link rel="alternate" hrefLang="x-default" href="https://anantya.ai/blog/click-to-whatsapp-ads-marketing-2023" />
+        <link rel="alternate" hreflang="en-ae" href="https://anantya.ai/blog/click-to-whatsapp-ads-marketing-2023" />
+        <link rel="alternate" hreflang="en-sa" href="https://anantya.ai/blog/click-to-whatsapp-ads-marketing-2023" />
+        <link rel="alternate" hreflang="en-bh" href="https://anantya.ai/blog/click-to-whatsapp-ads-marketing-2023" />
+        <link rel="alternate" hreflang="en-in" href="https://anantya.ai/blog/click-to-whatsapp-ads-marketing-2023" />
+        <link rel="alternate" hreflang="en" href="https://anantya.ai/blog/click-to-whatsapp-ads-marketing-2023" />
 
-            <script type="application/ld+json">
-                {`
-                {
-                    "@context": "https://schema.org",
-                    "@type": "BlogPosting",
-                    "mainEntityOfPage": {
-                        "@type": "WebPage",
-                        "@id": "https://anantya.ai/click-to-whatsapp-ads-marketing-2023"
-                    },
-                    "headline": "Boost Your Marketing in 2023 with Click to WhatsApp Ads",
-                    "description": "Elevate your marketing efforts in 2023 with Click to WhatsApp Ads, the ultimate and easy-to-use marketing tactic. Learn how to connect with your audience seamlessly. Level up your strategy now!",
-                    "image": "https://anantya.ai/assets/img/click-to-whatsapp-ads.jpeg",  
-                    "author": {
-                        "@type": "Organization",
-                        "name": "Anantya.ai",
-                        "url": "https://anantya.ai",
-                        "areaServed": ["AE", "SA", "BH"]
-                    },  
-                    "publisher": {
-                        "@type": "Organization",
-                        "name": "Anantya.ai",
-                        "logo": {
-                            "@type": "ImageObject",
-                            "url": "https://anantya.ai/assets/img/logo.webp"
-                        }
-                    },
-                    "datePublished": "2023-11-17"
-                }
-                `}
-            </script>
+        {/* Page Title */}
+        <title>Boost Your Marketing in 2023 with Click to WhatsApp Ads</title>
 
-            <script type="application/ld+json">
-                {`
-                {
-                    "@context": "https://schema.org",
-                    "@type": "BreadcrumbList",
-                    "itemListElement": [
-                        {
-                            "@type": "ListItem",
-                            "position": 1,
-                            "name": "Home",
-                            "item": "https://anantya.ai"
-                        },
-                        {
-                            "@type": "ListItem",
-                            "position": 2,
-                            "name": "Boost Your Marketing in 2023 with Click to WhatsApp Ads",
-                            "item": "https://anantya.ai/click-to-whatsapp-ads-marketing-2023"
-                        }
-                    ]
+        {/* Meta Tags */}
+        <meta name="robots" content="index,follow" />
+        <meta name="title" content="Boost Your Marketing in 2023 with Click to WhatsApp Ads" />
+        <meta name="description" content="Elevate your marketing efforts in 2023 with Click to WhatsApp Ads, the ultimate and easy-to-use marketing tactic. Learn how to connect with your audience seamlessly. Level up your strategy now!" />
+        <meta name="keywords" content="whatsapp ads, whatsapp advertising, whatsapp for advertising, click to whatsapp ad" />
+        <meta property="og:type" content="blog" />
+        <meta property="og:locale" content="en_AE" />
+        <meta property="og:locale" content="en_SA" />
+        <meta property="og:locale" content="en_BH" />
+        <meta property="og:locale" content="en_IN" />
+        <meta property="og:title" content="Boost Your Marketing in 2023 with Click to WhatsApp Ads" />
+        <meta property="og:description" content="Elevate your marketing efforts in 2023 with Click to WhatsApp Ads, the ultimate and easy-to-use marketing tactic. Learn how to connect with your audience seamlessly. Level up your strategy now!" />
+        <meta property="og:url" content="https://anantya.ai/blog/click-to-whatsapp-ads-marketing-2023" />
+        <meta property="og:site_name" content="anantya.ai" />
+        <meta property="og:image" content="https://ik.imagekit.io/cloy701fl/images//blog/click-to-whatsapp-ads.jpeg" />
+        <link rel="canonical" href="https://anantya.ai/blog/click-to-whatsapp-ads-marketing-2023" />
+        <meta name="author" content="Anantya.ai" />
+
+        {/* Structured Data (Organization) */}
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Anantya.ai",
+              "alternateName": "Conversational Engagement Platform for Businesses | Anantya.ai",
+              "url": "https://anantya.ai/",
+              "logo": "https://ik.imagekit.io/cloy701fl/images/logo.webp",
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+971565480273",
+                "contactType": "sales",
+                "areaServed": ["AE", "SA", "BH", "IN"],
+                "availableLanguage": "en"
+              },
+              "sameAs": [
+                "https://www.facebook.com/anantyaai",
+                "https://www.instagram.com/anantya.ai",
+                "https://www.youtube.com/@Anantyaai",
+                "https://www.linkedin.com/company/anantya-ai",
+                "https://www.pinterest.com/anantyaai"
+              ]
+            }
+          `}
+        </script>
+
+        {/* Structured Data (BlogPosting) */}
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "BlogPosting",
+              "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "https://anantya.ai/blog/click-to-whatsapp-ads-marketing-2023"
+              },
+              "headline": "Boost Your Marketing in 2023 with Click to WhatsApp Ads",
+              "description": "Elevate your marketing efforts in 2023 with Click to WhatsApp Ads, the ultimate and easy-to-use marketing tactic. Learn how to connect with your audience seamlessly. Level up your strategy now!",
+              "image": "https://ik.imagekit.io/cloy701fl/images//blog/click-to-whatsapp-ads.jpeg",
+              "author": {
+                "@type": "Organization",
+                "name": "Anantya.ai",
+                "url": "https://anantya.ai",
+                "areaServed": ["AE","SA","BH","IN"]
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Anantya.ai",
+                "logo": {
+                  "@type": "ImageObject",
+                  "url": "https://ik.imagekit.io/cloy701fl/images/logo.webp"
                 }
-                `}
-            </script>
-        </Helmet>
+              },
+              "datePublished": "2023-11-17"
+            }
+          `}
+        </script>
+
+        {/* BreadcrumbList Structured Data */}
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org/",
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Homepage",
+                  "item": "https://anantya.ai/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Blog",
+                  "item": "https://anantya.ai/blog"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Boost Your Marketing in 2023 with Click to WhatsApp Ads",
+                  "item": "https://anantya.ai/blog/click-to-whatsapp-ads-marketing-2023"
+                }
+              ]
+            }
+          `}
+        </script>
+      </Helmet>
+
     <div className="container py-5 mt-4">
       <h1 className="pb-2 text-center px-5 mx-5">
         Elevate Your Marketing in 2023 with Click-to-WhatsApp Ads: A Game-Changing Strategy
@@ -139,7 +159,7 @@ const ClickToWhatsAppAdsMarketing2023 = () => {
 
                 <h3 id="section2" className="wp-block-heading py-4">Why It's a Game-Changer</h3>
                 <h4>1. Personalized Communication</h4>
-                <p>One of the key strengths of <a href="https://anantya.ai/"><strong>WhatsApp Business API</strong></a> is its intimate and personalized nature. Click-to-WhatsApp ads capitalize on this by facilitating one-on-one interactions between businesses and customers. This direct line of communication enables tailored conversations, leading to more meaningful interactions and higher conversion rates.</p>
+                <p>One of the key strengths of <a href="/"><strong>WhatsApp Business API</strong></a> is its intimate and personalized nature. Click-to-WhatsApp ads capitalize on this by facilitating one-on-one interactions between businesses and customers. This direct line of communication enables tailored conversations, leading to more meaningful interactions and higher conversion rates.</p>
                 <h4>2. Enhanced Customer Service</h4>
                 <p>Customers today seek convenience and prompt responses. Click-to-WhatsApp ads streamline the customer service process by allowing users to instantly connect with businesses for inquiries, support, or purchases. This instant communication using WhatsApp Business API can significantly improve customer satisfaction and loyalty.</p>
                 <h4>3. Increased Engagement and Conversion</h4>
@@ -158,7 +178,7 @@ const ClickToWhatsAppAdsMarketing2023 = () => {
                 <h4>1. Create Compelling Ad Content</h4>
                 <p>Craft ads that are concise, visually appealing, and include a clear call-to-action prompting users to engage via WhatsApp. Compelling visuals, persuasive copy, and enticing offers can significantly boost click-through rates.</p>
                 <h4>2. Streamline the Customer Experience</h4>
-                <p>Ensure a seamless experience for users clicking on the ads. Direct them to relevant landing pages or initiate conversations on <a href="https://anantya.ai/whatsapp-business-app-vs-whatsapp-business-api"><strong>WhatsApp Business API</strong></a> with pre-set messages to guide them through the process.</p>
+                <p>Ensure a seamless experience for users clicking on the ads. Direct them to relevant landing pages or initiate conversations on <a href="/whatsapp-business-app-vs-whatsapp-business-api"><strong>WhatsApp Business API</strong></a> with pre-set messages to guide them through the process.</p>
                 <h4>3. Monitor and Optimize</h4>
                 <p>Track the performance of your click-to-WhatsApp ads meticulously. Analyze metrics such as click-through rates, conversation rates, and customer feedback to refine your strategies continually.</p>
 
@@ -166,7 +186,7 @@ const ClickToWhatsAppAdsMarketing2023 = () => {
                 <p><a href="https://business.whatsapp.com/products/ads-that-click-to-whatsapp"><strong>Click-to-WhatsApp ads</strong></a> are a big deal for marketing in 2023. They let businesses talk directly with people on WhatsApp when they click on an ad. This is a game-changer because it makes communication super personal, helps with customer service, and boosts how much people engage with ads.</p>
                 <p>These ads have lots of perks, like starting chats easily, making ads just for certain goals, and getting important info from customers directly. They also help businesses connect better with customers and might lead to more sales with WhatsApp Business API.</p>
                 <p>To make these ads work well, businesses need catchy ads, a smooth experience for users, and a keen eye on how well things are going to keep improving.</p>
-                <p>In a nutshell, using these ads in 2023 could take marketing to a whole new level. It's time to start creating Ads on Facebook/Instagram via <a href="https://anantya.ai/"><strong>Anantya.ai</strong></a> & drive leads to your WhatsApp Business account.</p>
+                <p>In a nutshell, using these ads in 2023 could take marketing to a whole new level. It's time to start creating Ads on Facebook/Instagram via <a href="/"><strong>Anantya.ai</strong></a> & drive leads to your WhatsApp Business account.</p>
               </section>
               </article>
                {/* Use CommentForm multiple times */}

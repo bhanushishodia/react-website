@@ -4,178 +4,131 @@ import WhatsAppWidget from "../../components/common/WhatsAppWidget";
 import { Helmet } from 'react-helmet';
 import { getImage } from '../../utils/getImage'; // Correct path to utility
 // Fetching images dynamically using getImage function
-const whatsappImage = getImage('whatsapp-business-api-in-banking-sector.webp');
-const benefitsImage = getImage('benefits-of-whatsapp-banking.webp');
+const whatsappImage = getImage('/blog/whatsapp-business-api-in-banking-sector.webp');
+const benefitsImage = getImage('/blog/benefits-of-whatsapp-banking.webp');
 const WhatsAppBusinessAPIBankingSector = () => {
   return (
     <div>
        <Helmet>
-        {/* Meta Tags */}
-        <title>How the WhatsApp Business API Transforms Banking Sector</title>
-        <meta
-          name="keywords"
-          content="whatsapp chatbot for banking,api for banking,Chatbot for Banking,conversational ai for banking"
-        />
-        <meta name="robots" content="index,follow" />
-        <meta
-          name="description"
-          content="Discover how the WhatsApp Business API revolutionizes the banking sector with enhanced customer service and efficient communication.Learn about WhatsApp chatbot solutions tailored for banking."
-        />
-        <meta
-          name="keywords"
-          content="whatsapp business api for banking, whatsapp chatbot for banking, whatsapp banking api, api for banking"
-        />
-        <meta property="og:title" content="How the WhatsApp Business API Transforms Banking Sector" />
-        <meta property="og:type" content="article" />
-        <meta
-          property="og:description"
-          content="Discover how the WhatsApp Business API revolutionizes the banking sector with enhanced customer service and efficient communication.Learn about WhatsApp chatbot solutions tailored for banking."
-        />
-        <meta property="og:url" content="https://anantya.ai/whatsapp-business-api-for-banking-sector" />
-        <meta property="og:site_name" content="anantya.ai" />
-        <meta
-          property="og:image"
-          content="https://anantya.ai/assets/img/blog/whatsapp-business-api-in-banking-sector.webp"
-        />
-        <link rel="canonical" href="https://anantya.ai/whatsapp-business-api-for-banking-sector" />
-        <meta name="author" content="Anantya" />
+                {/* Alternate Links */}
+                <link rel="alternate" hrefLang="x-default" href="https://anantya.ai/blog/whatsapp-business-api-for-banking-sector" />
+                <link rel="alternate" hreflang="en-ae" href="https://anantya.ai/blog/whatsapp-business-api-for-banking-sector" />
+                <link rel="alternate" hreflang="en-sa" href="https://anantya.ai/blog/whatsapp-business-api-for-banking-sector" />
+                <link rel="alternate" hreflang="en-bh" href="https://anantya.ai/blog/whatsapp-business-api-for-banking-sector" />
+                <link rel="alternate" hreflang="en-in" href="https://anantya.ai/blog/whatsapp-business-api-for-banking-sector" />
+                <link rel="alternate" hreflang="en" href="https://anantya.ai/blog/whatsapp-business-api-for-banking-sector" />
 
-        {/* Schema for Organization */}
-        <script type="application/ld+json">
-          {`
-            {
-              "@context": "https://schema.org",
-              "@type": "Organization",
-              "name": "anantya.ai",
-              "alternateName": "Conversational Engagement Platform for Businesses | Anantya.ai",
-              "url": "https://anantya.ai",
-              "logo": "https://anantya.ai/assets/img/logo.webp",
-              "contactPoint": {
-                "@type": "ContactPoint",
-                "telephone": "+971565480273",
-                "contactType": "sales",
-                "areaServed": ["AE","SA","BH"],
-                "availableLanguage": ["en"]
-              },
-              "sameAs": [
-                "https://www.facebook.com/anantyaai",
-                "https://www.instagram.com/anantya.ai",
-                "https://www.youtube.com/@Anantyaai",
-                "https://www.linkedin.com/company/anantya-ai",
-                "https://www.pinterest.com/anantyaai"
-              ]
-            }
-          `}
-        </script>
+                {/* Title and Meta Tags */}
+                <title>How the WhatsApp Business API Transforms Banking Sector</title>
+                <meta name="robots" content="index,follow" />
+                <meta name="title" content="How the WhatsApp Business API Transforms Banking Sector" />
+                <meta name="description" content="Discover how the WhatsApp Business API revolutionizes the banking sector with enhanced customer service and efficient communication. Learn about WhatsApp chatbot solutions tailored for banking." />
+                <meta name="keywords" content="whatsapp business api for banking, whatsapp chatbot for banking, whatsapp banking api, api for banking, conversational ai for banking" />
 
-        {/* Schema for BlogPosting */}
-        <script type="application/ld+json">
-          {`
-            {
-              "@context": "https://schema.org",
-              "@type": "BlogPosting",
-              "mainEntityOfPage": {
-                "@type": "WebPage",
-                "@id": "https://anantya.ai/whatsapp-business-api-for-banking-sector"
-              },
-              "headline": "How the WhatsApp Business API Transforms Banking Sector",
-              "description": "Discover how the WhatsApp Business API revolutionizes the banking sector with enhanced customer service and efficient communication.Learn about WhatsApp chatbot solutions tailored for banking.",
-              "image": "https://anantya.ai/assets/img/blog/whatsapp-business-api-in-banking-sector.webp",
-              "author": {
-                "@type": "Organization",
-                "name": "Anantya.ai",
-                "url": "https://anantya.ai",
-                "areaServed": ["AE","SA","BH"]
-              },
-              "publisher": {
-                "@type": "Organization",
-                "name": "Anantya.ai",
-                "logo": {
-                  "@type": "ImageObject",
-                  "url": "https://anantya.ai/assets/img/logo.webp"
-                }
-              },
-              "datePublished": "2024-06-18"
-            }
-          `}
-        </script>
+                {/* Open Graph (OG) Meta Tags */}
+                <meta property="og:type" content="blog" />
+                <meta property="og:locale" content="en_AE" />
+                <meta property="og:locale" content="en_SA" />
+                <meta property="og:locale" content="en_BH" />
+                <meta property="og:locale" content="en_IN" />
+                <meta property="og:title" content="How the WhatsApp Business API Transforms Banking Sector" />
+                <meta property="og:description" content="Discover how the WhatsApp Business API revolutionizes the banking sector with enhanced customer service and efficient communication. Learn about WhatsApp chatbot solutions tailored for banking." />
+                <meta property="og:url" content="https://anantya.ai/blog/whatsapp-business-api-for-banking-sector" />
+                <meta property="og:site_name" content="anantya.ai" />
+                <meta property="og:image" content="https://ik.imagekit.io/cloy701fl/images//blog/whatsapp-business-api-in-banking-sector.webp" />
 
-        {/* Schema for BreadcrumbList */}
-        <script type="application/ld+json">
-          {`
-            {
-              "@context": "https://schema.org/",
-              "@type": "BreadcrumbList",
-              "itemListElement": [
-                {
-                  "@type": "ListItem",
-                  "position": 1,
-                  "name": "Home",
-                  "item": "https://anantya.ai/"
-                },
-                {
-                  "@type": "ListItem",
-                  "position": 2,
-                  "name": "How the WhatsApp Business API Transforms Banking Sector",
-                  "item": "https://anantya.ai/whatsapp-business-api-for-banking-sector"
-                }
-              ]
-            }
-          `}
-        </script>
+                {/* Canonical Link */}
+                <link rel="canonical" href="https://anantya.ai/blog/whatsapp-business-api-for-banking-sector" />
 
-        {/* FAQ Schema */}
-        <script type="application/ld+json">
-          {`
-            {
-              "@context": "https://schema.org",
-              "@type": "FAQPage",
-              "mainEntity": [
-                {
-                  "@type": "Question",
-                  "name": "How Can I Use WhatsApp For Banking?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "By connecting a WhatsApp chatbot via the WhatsApp Business API, WhatsApp may be used for financial purposes. Financial guidance, fraud warnings, transaction updates, and account queries are just a few of the services that this chatbot may provide. Consumers may communicate with the chatbot for a range of banking requirements, increasing the efficiency and accessibility of banking."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "What Is The WhatsApp API For Banking?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Banks may use chatbots for automated customer care by integrating their systems with WhatsApp using the WhatsApp Business API platform. With the help of this API, handling client interactions, streamlining banking procedures, and providing a number of services straight through the WhatsApp messaging platform are all made safe and effective."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "What Is A WhatsApp Chatbot For Banking?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "An artificial intelligence-powered automated messaging tool that utilizes WhatsApp to interact with clients is known as a banking chatbot. It can respond to questions, help with transactions, and offer customer service."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "How Does A WhatsApp Bot Benefit Banks?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "WhatsApp chatbot for banking provides round-the-clock customer service, speeds up response times, cuts down on overhead, and raises customer satisfaction by offering prompt, effective assistance."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "Can WhatsApp Chatbots Handle Transactions?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "According to their programming and system connection with the bank, advanced chatbots may help with simple tasks like processing transfers, making payments, and checking balances."
-                  }
-                }
-              ]
-            }
-          `}
-        </script>
-      </Helmet>
+                {/* Author Meta Tag */}
+                <meta name="author" content="Anantya" />
+
+                {/* JSON-LD Structured Data for Organization */}
+                <script type="application/ld+json">
+                    {`
+                    {
+                        "@context": "https://schema.org",
+                        "@type": "Organization",
+                        "name": "anantya.ai",
+                        "alternateName": "Conversational Engagement Platform for Businesses | Anantya.ai",
+                        "url": "https://anantya.ai",
+                        "logo": "https://ik.imagekit.io/cloy701fl/images/logo.webp",
+                        "contactPoint": {
+                            "@type": "ContactPoint",
+                            "telephone": "+971565480273",
+                            "contactType": "sales",
+                            "areaServed": ["AE","SA","BH","IN"],
+                            "availableLanguage": ["en"]
+                        },
+                        "sameAs": [
+                            "https://www.facebook.com/anantyaai",
+                            "https://www.instagram.com/anantya.ai",
+                            "https://www.youtube.com/@Anantyaai",
+                            "https://www.linkedin.com/company/anantya-ai",
+                            "https://www.pinterest.com/anantyaai"
+                        ]
+                    }
+                    `}
+                </script>
+
+                {/* JSON-LD Structured Data for BlogPosting */}
+                <script type="application/ld+json">
+                    {`
+                    {
+                        "@context": "https://schema.org",
+                        "@type": "BlogPosting",
+                        "mainEntityOfPage": {
+                            "@type": "WebPage",
+                            "@id": "https://anantya.ai/blog/whatsapp-business-api-for-banking-sector"
+                        },
+                        "headline": "How the WhatsApp Business API Transforms Banking Sector",
+                        "description": "Discover how the WhatsApp Business API revolutionizes the banking sector with enhanced customer service and efficient communication. Learn about WhatsApp chatbot solutions tailored for banking.",
+                        "image": "https://ik.imagekit.io/cloy701fl/images//blog/whatsapp-business-api-in-banking-sector.webp",
+                        "author": {
+                            "@type": "Organization",
+                            "name": "Anantya.ai",
+                            "url": "https://anantya.ai",
+                            "areaServed": ["AE","SA","BH","IN"]
+                        },
+                        "publisher": {
+                            "@type": "Organization",
+                            "name": "Anantya.ai",
+                            "logo": {
+                                "@type": "ImageObject",
+                                "url": "https://ik.imagekit.io/cloy701fl/images/logo.webp"
+                            }
+                        },
+                        "datePublished": "2024-06-18"
+                    }
+                    `}
+                </script>
+
+                {/* JSON-LD Structured Data for Breadcrumb */}
+                <script type="application/ld+json">
+                    {`
+                    {
+                        "@context": "https://schema.org/",
+                        "@type": "BreadcrumbList",
+                        "itemListElement": [{
+                            "@type": "ListItem",
+                            "position": 1,
+                            "name": "Homepage",
+                            "item": "https://anantya.ai/"
+                        },{
+                            "@type": "ListItem",
+                            "position": 2,
+                            "name": "Blog",
+                            "item": "https://anantya.ai/blog"
+                        },{
+                            "@type": "ListItem",
+                            "position": 3,
+                            "name": "How the WhatsApp Business API Transforms Banking Sector",
+                            "item": "https://anantya.ai/blog/whatsapp-business-api-for-banking-sector"
+                        }]
+                    }
+                    `}
+                </script>
+        </Helmet>
       <div className="container py-4 mt-4">
         <div className="row px-md-5 px-1 mx-1 mx-md-5">
           <div className="col-md-12 col-sm-12">
@@ -264,7 +217,7 @@ const WhatsAppBusinessAPIBankingSector = () => {
                     </div>
 
                     <div className="text d-flex mb-2">
-                      <ul style={{ listStyleType: "none" }}>
+                      <ul style={{ listStyleType: "none", padding:"0" }}>
                         <li>
                           <span className="icon color-blue5 me-2 flex-shrink-0">
                             <i className="fas fa-check-circle"></i>
@@ -298,7 +251,7 @@ const WhatsAppBusinessAPIBankingSector = () => {
                               You may scale your messaging and meet consumer
                               demands as your business expands and more people
                               choose banking through WhatsApp. Thus, the{" "}
-                              <a href="banking-industry" target="_blank">
+                              <a href="/banking-industry" target="_blank">
                                 WhatsApp Business API for
                               </a>{" "}
                               Banking is an excellent way to ensure that your
@@ -413,7 +366,7 @@ const WhatsAppBusinessAPIBankingSector = () => {
                           <div className="text d-flex mb-2 mt-20">
                             <p>
                               Make use of WhatsApp's{" "}
-                              <a href="click-to-whatsapp-ads-marketing-2023">
+                              <a href="/click-to-whatsapp-ads-marketing-2023">
                                 click-to-whatsApp
                               </a>{" "}
                               function for online opt-ins and advertisements.
@@ -578,7 +531,7 @@ const WhatsAppBusinessAPIBankingSector = () => {
                         <p>
                           Put{" "}
                           <a
-                            href="automated-chatbot"
+                            href="/automated-chatbot"
                             target="_blank"
                             rel="noopener noreferrer"
                           >
@@ -748,14 +701,14 @@ const WhatsAppBusinessAPIBankingSector = () => {
                       </section>
                     
                     </div>
-                    <h5 className="mt-4 mb-2" id="whatsapp-broadcast4">
+                    <h5 className="mt-4 mb-2 fs-3 mb-3" id="whatsapp-broadcast4">
                         Conclusion
                       </h5>
                       <div className="text d-flex mb-2">
                         <p>
                           <a
                             className="fs-6"
-                            href="whatsapp-business-api-ultimate-guide"
+                            href="/whatsapp-business-api-ultimate-guide"
                             target="_blank"
                             rel="noopener noreferrer"
                           >
@@ -780,7 +733,7 @@ const WhatsAppBusinessAPIBankingSector = () => {
                           utilizing WhatsApp banking. Select{" "}
                           <a
                             className="fs-6"
-                            href="index"
+                            href="/"
                             target="_blank"
                             rel="noopener noreferrer"
                           >

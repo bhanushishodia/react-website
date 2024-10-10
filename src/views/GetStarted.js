@@ -8,47 +8,92 @@ const GetStarted = () => {
   return (
     <>
      <div>
-      <Helmet>
-        <title>Start Your Whatsapp API Journey with Anantya.ai | Get Started</title>
-        <meta name="robots" content="index,follow" />
-        <meta name="description" content="Start your WhatsApp API journey with Anantya.ai. Get affordable plans and seamless integration to enhance your business communication today." />
-        <meta property="og:type" content="article" />
-        <meta property="og:locale" content="en_IN" />
-        <meta property="og:title" content="Start Your Whatsapp API Journey with Anantya.ai | Get Started" />
-        <meta property="og:description" content="Start your WhatsApp API journey with Anantya.ai. Get affordable plans and seamless integration to enhance your business communication today." />
-        <meta property="og:url" content="https://anantya.ai/campaign-request-demo" />
-        <meta property="og:site_name" content="anantya.ai" />
-        <meta property="og:image" content="https://anantya.ai/assets/img/no-code-chat-bot.webp" />
-        <link rel="canonical" href="https://anantya.ai/campaign-request-demo" />
-        <meta name="author" content="Anantya" />
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            "name": "anantya.ai",
-            "alternateName": "Conversational Engagement Platform for Businesses | Anantya.ai",
-            "url": "https://anantya.ai",
-            "logo": "https://anantya.ai/assets/img/logo.webp",
-            "contactPoint": {
-              "@type": "ContactPoint",
-              "telephone": "+971565480273",
-              "contactType": "sales",
-              "areaServed": ["IN"],
-              "availableLanguage": ["en"]
-            },
-            "sameAs": [
-              "https://www.facebook.com/anantyaai",
-              "https://www.instagram.com/anantya.ai",
-              "https://www.youtube.com/@Anantyaai",
-              "https://www.linkedin.com/company/anantya-ai",
-              "https://www.pinterest.com/anantyaai"
-            ]
-          })}
-        </script>
-      </Helmet>
-     
+        <Helmet>
+                <link rel="alternate" hrefLang="x-default" href="https://anantya.ai/campaign-request-demo" />
+                <link rel="alternate" hreflang="en-ae" href="https://anantya.ai/campaign-request-demo" />
+                <link rel="alternate" hreflang="en-sa" href="https://anantya.ai/campaign-request-demo" />
+                <link rel="alternate" hreflang="en-bh" href="https://anantya.ai/campaign-request-demo" />
+                <link rel="alternate" hreflang="en-in" href="https://anantya.ai/campaign-request-demo" />
+                <link rel="alternate" hreflang="en" href="https://anantya.ai/campaign-request-demo" />
+
+                <title>Start Your Whatsapp API Journey with Anantya.ai | Get Started</title>
+                <meta name="robots" content="index,follow" />
+                <meta name="title" content="Start Your Whatsapp API Journey with Anantya.ai | Get Started" />
+                <meta name="description"
+                    content="Start your WhatsApp API journey with Anantya.ai. Get affordable plans and seamless integration to enhance your business communication today." />
+                <meta property="og:type" content="article" />
+                <meta property="og:locale" content="en_AE" />
+                <meta property="og:locale" content="en_SA" />
+                <meta property="og:locale" content="en_BH" />
+                <meta property="og:locale" content="en_IN" />
+                <meta property="og:title" content="Start Your Whatsapp API Journey with Anantya.ai | Get Started" />
+                <meta property="og:description"
+                    content="Start your WhatsApp API journey with Anantya.ai. Get affordable plans and seamless integration to enhance your business communication today." />
+                <meta property="og:url" content="https://anantya.ai/campaign-request-demo" />
+                <meta property="og:site_name" content="anantya.ai" />
+                <meta property="og:image" content="https://ik.imagekit.io/cloy701fl/images/anantya-home-page.webp" />
+                <link rel="canonical" href="https://anantya.ai/campaign-request-demo" />
+                <meta name="author" content="Anantya" />
+
+                {/* JSON-LD Structured Data */}
+                <script type="application/ld+json">
+                    {JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "Organization",
+                        "name": "anantya.ai",
+                        "alternateName": "Conversational Engagement Platform for Businesses | Anantya.ai",
+                        "url": "https://anantya.ai",
+                        "logo": "https://ik.imagekit.io/cloy701fl/images/logo.webp",
+                        "contactPoint": {
+                            "@type": "ContactPoint",
+                            "telephone": "+971565480273",
+                            "contactType": "sales",
+                            "areaServed": ["IN", "AE", "SA", "BH"],
+                            "availableLanguage": ["en"]
+                        },
+                        "sameAs": [
+                            "https://www.facebook.com/anantyaai",
+                            "https://www.instagram.com/anantya.ai",
+                            "https://www.youtube.com/@Anantyaai",
+                            "https://www.linkedin.com/company/anantya-ai",
+                            "https://www.pinterest.com/anantyaai"
+                        ]
+                    })}
+                </script>
+
+                <script type="application/ld+json">
+                    {JSON.stringify({
+                        "@context": "https://schema.org/",
+                        "@type": "WebPage",
+                        "@id": "#WebPage",
+                        "url": "https://anantya.ai/campaign-request-demo",
+                        "name": "Start Your Whatsapp API Journey with Anantya.ai | Get Started"
+                    })}
+                </script>
+
+                <script type="application/ld+json">
+                    {JSON.stringify({
+                        "@context": "https://schema.org/",
+                        "@type": "BreadcrumbList",
+                        "itemListElement": [
+                            {
+                                "@type": "ListItem",
+                                "position": 1,
+                                "name": "Home",
+                                "item": "https://anantya.ai/"
+                            },
+                            {
+                                "@type": "ListItem",
+                                "position": 2,
+                                "name": "Start Your Whatsapp API Journey with Anantya.ai | Get Started",
+                                "item": "https://anantya.ai/campaign-request-demo"
+                            }
+                        ]
+                    })}
+                </script>
+        </Helmet>
     </div>
-     <div className="container">
+     <div className="container py-5 mt-md-0 mt-5">
       <div className="content-wrapper row">
         <div className="get-started-content col-xl-6 col-lg-6 col-md-6 col-sm-12">
           <h1>Experience Anantya.ai in Action!</h1>

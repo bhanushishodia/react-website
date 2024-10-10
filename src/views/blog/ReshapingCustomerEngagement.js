@@ -5,7 +5,7 @@ import { Helmet } from "react-helmet";
 import CommentForm from "../../components/common/CommentForm";
 import { getImage } from '../../utils/getImage'; // Correct path to utility
 // Fetching the image dynamically using getImage function
-const EmpoweringCustomerSupportImg = getImage('Empowering-Customer-Support-min.webp');
+const EmpoweringCustomerSupportImg = getImage('/blog/Empowering-Customer-Support-min.webp');
 const ReshapingCustomerEngagement = () => {
   // Create refs for each section
   const section1Ref = useRef(null);
@@ -21,112 +21,123 @@ const ReshapingCustomerEngagement = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Reshaping Customer Engagement on WhatsApp</title>
-        <meta name="robots" content="index,follow" />
-        <meta
-          name="description"
-          content="Transforming customer engagement on WhatsApp: Explore innovative strategies to enhance interactions, build relationships, and drive satisfaction. Elevate your approach now."
-        />
-        <meta
-          property="og:title"
-          content="Reshaping Customer Engagement on WhatsApp"
-        />
-        <meta property="og:type" content="blog" />
-        <meta
-          property="og:description"
-          content="Transforming customer engagement on WhatsApp: Explore innovative strategies to enhance interactions, build relationships, and drive satisfaction. Elevate your approach now."
-        />
-        <meta
-          property="og:url"
-          content="https://anantya.ai/reshaping-customer-engagement-on-whatsapp"
-        />
-        <meta property="og:site_name" content="anantya.ai" />
-        <meta
-          property="og:image"
-          content="https://anantya.ai/assets/img/Empowering-Customer-Support-min.webp"
-        />
-        <link
-          rel="canonical"
-          href="https://anantya.ai/reshaping-customer-engagement-on-whatsapp"
-        />
-        <meta name="author" content="Anantya.ai" />
+     
+        <div>
+            <Helmet>
+                {/* Alternate Links for Hreflang */}
+                <link rel="alternate" hrefLang="x-default" href="https://anantya.ai/blog/reshaping-customer-engagement-on-whatsapp" />
+                <link rel="alternate" hreflang="en-ae" href="https://anantya.ai/blog/reshaping-customer-engagement-on-whatsapp" />
+                <link rel="alternate" hreflang="en-sa" href="https://anantya.ai/blog/reshaping-customer-engagement-on-whatsapp" />
+                <link rel="alternate" hreflang="en-bh" href="https://anantya.ai/blog/reshaping-customer-engagement-on-whatsapp" />
+                <link rel="alternate" hreflang="en-in" href="https://anantya.ai/blog/reshaping-customer-engagement-on-whatsapp" />
+                <link rel="alternate" hreflang="en" href="https://anantya.ai/blog/reshaping-customer-engagement-on-whatsapp" />
 
-        <script type="application/ld+json">{`
-      {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Anantya.ai",
-        "alternateName": "Conversational Engagement Platform for Businesses | Anantya.ai",
-        "url": "https://anantya.ai/",
-        "logo": "https://anantya.ai/assets/img/logo.webp",
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "telephone": "+971565480273",
-          "contactType": "sales",
-          "areaServed": ["AE", "SA", "BH"],
-          "availableLanguage": "en"
-        },
-        "sameAs": [
-          "https://www.facebook.com/anantyaai",
-          "https://www.instagram.com/anantya.ai",
-          "https://www.youtube.com/@Anantyaai",
-          "https://www.linkedin.com/company/anantya-ai",
-          "https://www.pinterest.com/anantyaai"
-        ]
-      }
-    `}</script>
+                {/* Basic Meta Tags */}
+                <title>Reshaping Customer Engagement on WhatsApp</title>
+                <meta name="robots" content="index,follow" />
+                <meta name="title" content="Reshaping Customer Engagement on WhatsApp" />
+                <meta name="description" content="Transforming customer engagement on WhatsApp: Explore innovative strategies to enhance interactions, build relationships, and drive satisfaction. Elevate your approach now." />
 
-        <script type="application/ld+json">{`
-      {
-        "@context": "https://schema.org",
-        "@type": "BlogPosting",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://anantya.ai/reshaping-customer-engagement-on-whatsapp"
-        },
-        "headline": "Reshaping Customer Engagement on WhatsApp",
-        "description": "Transforming customer engagement on WhatsApp: Explore innovative strategies to enhance interactions, build relationships, and drive satisfaction. Elevate your approach now.",
-        "image": "https://anantya.ai/assets/img/Empowering-Customer-Support-min.webp",  
-        "author": {
-          "@type": "Organization",
-          "name": "Anantya.ai",
-          "url": "https://anantya.ai",
-          "areaServed": ["AE", "SA", "BH"]
-        },  
-        "publisher": {
-          "@type": "Organization",
-          "name": "Anantya.ai",
-          "logo": {
-            "@type": "ImageObject",
-            "url": "https://anantya.ai/assets/img/logo.webp"
-          }
-        },
-        "datePublished": "2023-08-17"
-      }
-    `}</script>
+                {/* Open Graph Tags */}
+                <meta property="og:type" content="blog" />
+                <meta property="og:locale" content="en_AE" />
+                <meta property="og:title" content="Reshaping Customer Engagement on WhatsApp" />
+                <meta property="og:description" content="Transforming customer engagement on WhatsApp: Explore innovative strategies to enhance interactions, build relationships, and drive satisfaction. Elevate your approach now." />
+                <meta property="og:url" content="https://anantya.ai/blog/reshaping-customer-engagement-on-whatsapp" />
+                <meta property="og:site_name" content="anantya.ai" />
+                <meta property="og:image" content="https://anantya.ai/assets/img/Empowering-Customer-Support-min.webp" />
 
-        <script type="application/ld+json">{`
-      {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Home",
-            "item": "https://anantya.ai"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Reshaping Customer Engagement on WhatsApp",
-            "item": "https://anantya.ai/reshaping-customer-engagement-on-whatsapp"
-          }
-        ]
-      }
-    `}</script>
-      </Helmet>
+                {/* Canonical Link */}
+                <link rel="canonical" href="https://anantya.ai/blog/reshaping-customer-engagement-on-whatsapp" />
+                
+                {/* Author Meta Tag */}
+                <meta name="author" content="Kiran Yadav" />
+
+                {/* JSON-LD Schema Markup */}
+                <script type="application/ld+json">
+                    {`
+                    {
+                      "@context": "https://schema.org",
+                      "@type": "Organization",
+                      "name": "Anantya.ai",
+                      "alternateName": "Conversational Engagement Platform for Businesses | Anantya.ai",
+                      "url": "https://anantya.ai/",
+                      "logo": "https://ik.imagekit.io/cloy701fl/images/logo.webp",
+                      "contactPoint": {
+                        "@type": "ContactPoint",
+                        "telephone": "+971565480273",
+                        "contactType": "sales",
+                        "areaServed": ["AE","SA","BH","IN"],
+                        "availableLanguage": "en"
+                      },
+                      "sameAs": [
+                        "https://www.facebook.com/anantyaai",
+                        "https://www.instagram.com/anantya.ai",
+                        "https://www.youtube.com/@Anantyaai",
+                        "https://www.linkedin.com/company/anantya-ai",
+                        "https://www.pinterest.com/anantyaai"
+                      ]
+                    }
+                    `}
+                </script>
+
+                <script type="application/ld+json">
+                    {`
+                    {
+                      "@context": "https://schema.org",
+                      "@type": "BlogPosting",
+                      "mainEntityOfPage": {
+                        "@type": "WebPage",
+                        "@id": "https://anantya.ai/blog/reshaping-customer-engagement-on-whatsapp"
+                      },
+                      "headline": "Reshaping Customer Engagement on WhatsApp",
+                      "description": "Transforming customer engagement on WhatsApp: Explore innovative strategies to enhance interactions, build relationships, and drive satisfaction. Elevate your approach now.",
+                      "image": "https://anantya.ai/assets/img/Empowering-Customer-Support-min.webp",  
+                      "author": {
+                        "@type": "Organization",
+                        "name": "Anantya.ai",
+                        "url": "https://anantya.ai",
+                        "areaServed": ["AE","SA","BH","IN"]
+                      },  
+                      "publisher": {
+                        "@type": "Organization",
+                        "name": "Anantya.ai",
+                        "logo": {
+                          "@type": "ImageObject",
+                          "url": "https://ik.imagekit.io/cloy701fl/images/logo.webp"
+                        }
+                      },
+                      "datePublished": "2023-08-17"
+                    }
+                    `}
+                </script>
+
+                <script type="application/ld+json">
+                    {`
+                    {
+                      "@context": "https://schema.org/", 
+                      "@type": "BreadcrumbList", 
+                      "itemListElement": [{
+                        "@type": "ListItem", 
+                        "position": 1, 
+                        "name": "Homepage",
+                        "item": "https://anantya.ai/"  
+                      },{
+                        "@type": "ListItem", 
+                        "position": 2, 
+                        "name": "Blog",
+                        "item": "https://anantya.ai/blog"  
+                      },{
+                        "@type": "ListItem", 
+                        "position": 3, 
+                        "name": "Reshaping Customer Engagement on WhatsApp",
+                        "item": "https://anantya.ai/blog/reshaping-customer-engagement-on-whatsapp"  
+                      }]
+                    }
+                    `}
+                </script>
+            </Helmet>
+       </div>
       <section>
         <div className="container py-5 mt-4">
           {/* SEO-Friendly Heading */}
@@ -154,7 +165,7 @@ const ReshapingCustomerEngagement = () => {
                       <p>
                         Wondering what{" "}
                         <a
-                          href="https://anantya.ai/contact"
+                          href="/contact"
                           style={{ color: "#5dc4eb" }}
                         >
                           Anantya.ai
@@ -237,7 +248,7 @@ const ReshapingCustomerEngagement = () => {
                       </p>
                       <p>
                         The{" "}
-                        <a href="contact" style={{ color: "#5dc4eb" }}>
+                        <a href="/contact" style={{ color: "#5dc4eb" }}>
                           WhatsApp Business API,
                         </a>{" "}
                         launched by Facebook in 2018, lets businesses send and
@@ -293,7 +304,7 @@ const ReshapingCustomerEngagement = () => {
                         handle all of these tasks effortlessly! With Anantya.ai,
                         you can unlock the full potential of{" "}
                         <a
-                          href="https://anantya.ai/automated-chatbot"
+                          href="/automated-chatbot"
                           style={{ color: "#5dc4eb" }}
                         >
                           WhatsApp for your business

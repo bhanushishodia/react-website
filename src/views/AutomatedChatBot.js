@@ -17,56 +17,45 @@ const AutomatedChatBot = () => {
   return (
     <div>
     
-      <Helmet>
-        {/* Title and Meta Tags */}
-        <title>Whatsapp Chatbot for Business | No-Code Chatbot Builder</title>
-        <meta
-          name="keywords"
-          content="Whatsapp Chatbot for Business,Whatsapp Automation Chatbot,whatsapp auto reply chatbot,Whatsapp Chatbot,Chatbot in Whatsapp,Whatsapp Bot,whatsapp auto reply chatbot"
-        />
-        <meta name="robots" content="index,follow" />
-        <meta
-          name="description"
-          content="Build Whatsapp Chatbot within a few minutes from Anantya.ai's no-code chatbot builder. You can automate chat between customers & Organisations."
-        />
-        <meta
-          property="og:title"
-          content="Whatsapp Chatbot for Business | No-Code Chatbot Builder"
-        />
-        <meta property="og:type" content="article" />
-        <meta
-          property="og:description"
-          content="Build Whatsapp Chatbot within a few minutes from Anantya.ai's no-code chatbot builder. You can automate chat between customers & Organisations."
-        />
-        <meta
-          property="og:url"
-          content="https://anantya.ai/automated-chatbot"
-        />
-        <meta property="og:site_name" content="anantya.ai" />
-        <meta
-          property="og:image"
-          content="https://anantya.ai/assets/img/whatsapp-support/offer-support-at-scale-with.webp"
-        />
-        <link
-          rel="canonical"
-          href="https://anantya.ai/automated-chatbot"
-        />
-        <meta name="author" content="Anantya" />
+    <Helmet>
+      <link rel="alternate" hrefLang="x-default" href="https://anantya.ai/automated-chatbot" />
+      <link rel="alternate" hreflang="en-ae" href="https://anantya.ai/automated-chatbot" />
+      <link rel="alternate" hreflang="en-sa" href="https://anantya.ai/automated-chatbot" />
+      <link rel="alternate" hreflang="en-bh" href="https://anantya.ai/automated-chatbot" />
+      <link rel="alternate" hreflang="en-in" href="https://anantya.ai/automated-chatbot" />
+      <link rel="alternate" hreflang="en" href="https://anantya.ai/automated-chatbot" />
 
-        {/* JSON-LD Schema for Organization */}
-        <script type="application/ld+json">{`
-        {
+      <title>Whatsapp Chatbot for Business | No-Code Chatbot Builder</title>
+      <meta name="robots" content="index,follow" />
+      <meta name="title" content="Whatsapp Chatbot for Business | No-Code Chatbot Builder" />
+      <meta name="description" content="Build Whatsapp Chatbot within a few minutes from Anantya.ai's no-code chatbot builder. You can automate chat between customers & Organisations." />
+      <meta name="keywords" content="Whatsapp Chatbot for Business,Whatsapp Automation Chatbot,whatsapp auto reply chatbot,Whatsapp Chatbot,Chatbot in Whatsapp,Whatsapp Bot,whatsapp auto reply chatbot" />
+      <meta property="og:type" content="article" />
+      <meta property="og:locale" content="en_AE" />
+      <meta property="og:locale" content="en_SA" />
+      <meta property="og:locale" content="en_BH" />
+      <meta property="og:locale" content="en_IN" />
+      <meta property="og:title" content="Whatsapp Chatbot for Business | No-Code Chatbot Builder" />
+      <meta property="og:description" content="Build Whatsapp Chatbot within a few minutes from Anantya.ai's no-code chatbot builder. You can automate chat between customers & Organisations." />
+      <meta property="og:url" content="https://anantya.ai/automated-chatbot" />
+      <meta property="og:site_name" content="anantya.ai" />
+      <meta property="og:image" content="https://ik.imagekit.io/cloy701fl/images/create-whatsapp-chatbots-easily.webp" />
+      <link rel="canonical" href="https://anantya.ai/automated-chatbot" />
+      <meta name="author" content="Anantya" />
+
+      <script type="application/ld+json">
+        {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Organization",
           "name": "Anantya.ai",
           "alternateName": "Conversational Engagement Platform for Businesses | Anantya.ai",
           "url": "https://anantya.ai/",
-          "logo": "https://anantya.ai/assets/img/logo.webp",
+          "logo": "https://ik.imagekit.io/cloy701fl/images/logo.webp",
           "contactPoint": {
             "@type": "ContactPoint",
             "telephone": "+971565480273",
             "contactType": "sales",
-            "areaServed": ["AE","SA","BH"],
+            "areaServed": ["AE", "SA", "BH", "IN"],
             "availableLanguage": "en"
           },
           "sameAs": [
@@ -76,44 +65,40 @@ const AutomatedChatBot = () => {
             "https://www.linkedin.com/company/anantya-ai",
             "https://www.pinterest.com/anantyaai"
           ]
-        }
-        `}</script>
+        })}
+      </script>
 
-        {/* JSON-LD Schema for WebPage */}
-        <script type="application/ld+json">{`
-        {         
-          "@context": "https://schema.org/",         
-          "@type": "WebPage",         
-          "@id": "#WebPage",         
-          "url": "https://anantya.ai/automated-chatbot",          
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org/",
+          "@type": "WebPage",
+          "@id": "#WebPage",
+          "url": "https://anantya.ai/automated-chatbot",
           "name": "Whatsapp Chatbot for Business | No-Code Chatbot Builder"
-        }
-        `}</script>
+        })}
+      </script>
 
-        {/* JSON-LD Schema for BreadcrumbList */}
-        <script type="application/ld+json">{`
-        {
+      <script type="application/ld+json">
+        {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "BreadcrumbList",
           "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Home",
-            "item": "https://anantya.ai"
-          },  
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Whatsapp Chatbot for Business | No-Code Chatbot Builder",
-            "item": "https://anantya.ai/automated-chatbot"
-          }]
-        }
-        `}</script>
-      </Helmet>
-
-
-
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Homepage",
+              "item": "https://anantya.ai"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Whatsapp Chatbot for Business | No-Code Chatbot Builder",
+              "item": "https://anantya.ai/automated-chatbot"
+            }
+          ]
+        })}
+      </script>
+    </Helmet>
        <div className="container py-5 mt-5">
       <div className="content">
         <div className="row align-items-center">

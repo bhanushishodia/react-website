@@ -4,110 +4,123 @@ import WhatsAppWidget from '../../components/common/WhatsAppWidget';
 import { Helmet } from 'react-helmet';
 import { getImage } from '../../utils/getImage'; // Correct path to utility
 // Fetching images dynamically using getImage function
-const whatsappBusinessApiImage = getImage('whatsapp-business-api-for-government.webp');
-const whatsappFeaturesImage = getImage('whatsapp-business-api-features.webp');
-const benefitsImage = getImage('benefits-of-whatsapp-business-api-for-government-sector.webp');
+const whatsappBusinessApiImage = getImage('/blog/whatsapp-business-api-for-government.webp');
+const whatsappFeaturesImage = getImage('/blog/whatsapp-business-api-features.webp');
+const benefitsImage = getImage('/blog/benefits-of-whatsapp-business-api-for-government-sector.webp');
 const WhatsAppBusinessApiGovernment = () => {
   return ( 
     <>
-        <Helmet>
-            {/* Meta Tags */}
+       <Helmet>
+            <link rel="alternate" hrefLang="x-default" href="https://anantya.ai/blog/whatsapp-business-api-for-government" />
+            <link rel="alternate" hreflang="en-ae" href="https://anantya.ai/blog/whatsapp-business-api-for-government" />
+            <link rel="alternate" hreflang="en-sa" href="https://anantya.ai/blog/whatsapp-business-api-for-government" />
+            <link rel="alternate" hreflang="en-bh" href="https://anantya.ai/blog/whatsapp-business-api-for-government" />
+            <link rel="alternate" hreflang="en-in" href="https://anantya.ai/blog/whatsapp-business-api-for-government" />
+            <link rel="alternate" hreflang="en" href="https://anantya.ai/blog/whatsapp-business-api-for-government" />
+            
             <title>How Government Uses WhatsApp Business API to Serve Citizens?</title>
             <meta name="robots" content="index,follow" />
+            <meta name="title" content="How Government Uses WhatsApp Business API to Serve Citizens?" />
             <meta name="description" content="Discover how the Indian government uses WhatsApp Business API to connect with citizens, providing faster, easier, and efficient public services." />
             <meta name="keywords" content="whatsapp business api for government," />
-            <meta property="og:type" content="article" />
+            <meta property="og:type" content="blog" />
             <meta property="og:locale" content="en_IN" />
             <meta property="og:locale" content="en_AE" />
             <meta property="og:locale" content="en_SA" />
             <meta property="og:locale" content="en_BH" />
             <meta property="og:title" content="How Government Uses WhatsApp Business API to Serve Citizens?" />
             <meta property="og:description" content="Discover how the Indian government uses WhatsApp Business API to connect with citizens, providing faster, easier, and efficient public services." />
-            <meta property="og:url" content="https://anantya.ai/whatsapp-business-api-for-government" />
+            <meta property="og:url" content="https://anantya.ai/blog/whatsapp-business-api-for-government" />
             <meta property="og:site_name" content="anantya.ai" />
-            <meta property="og:image" content="https://anantya.ai/assets/img/whatsapp-business-api-for-government.webp" />
-            <link rel="canonical" href="https://anantya.ai/whatsapp-business-api-for-government" />
+            <meta property="og:image" content="https://ik.imagekit.io/cloy701fl/images/blog/whatsapp-business-api-for-government.webp" />
+            <link rel="canonical" href="https://anantya.ai/blog/whatsapp-business-api-for-government" />
             <meta name="author" content="Kiran Yadav" />
 
-            {/* Organization Schema */}
-            <script type="application/ld+json">{`
-                {
-                  "@context": "https://schema.org",
-                  "@type": "Organization",
-                  "name": "anantya.ai",
-                  "alternateName": "Conversational Engagement Platform for Businesses | Anantya.ai",
-                  "url": "https://anantya.ai",
-                  "logo": "https://anantya.ai/assets/img/logo.webp",
-                  "contactPoint": {
-                    "@type": "ContactPoint",
-                    "telephone": "+971565480273",
-                    "contactType": "sales",
-                    "areaServed": ["IN","AE","SA","BH"],
-                    "availableLanguage": ["en"]
-                  },
-                  "sameAs": [
-                    "https://www.facebook.com/anantyaai",
-                    "https://www.instagram.com/anantya.ai",
-                    "https://www.youtube.com/@Anantyaai",
-                    "https://www.linkedin.com/company/anantya-ai",
-                    "https://www.pinterest.com/anantyaai"
-                  ]
-                }
-            `}</script>
-
-            {/* Blog Posting Schema */}
-            <script type="application/ld+json">{`
-                {
-                  "@context": "https://schema.org",
-                  "@type": "BlogPosting",
-                  "mainEntityOfPage": {
-                    "@type": "WebPage",
-                    "@id": "https://anantya.ai/whatsapp-business-api-for-government"
-                  },
-                  "headline": "How Government Uses WhatsApp Business API to Serve Citizens?",
-                  "description": "Discover how the Indian government uses WhatsApp Business API to connect with citizens, providing faster, easier, and efficient public services.",
-                  "image": "https://anantya.ai/assets/img/whatsapp-business-api-for-government.webp",  
-                  "author": {
+            <script type="application/ld+json">
+                {JSON.stringify({
+                    "@context": "https://schema.org",
                     "@type": "Organization",
-                    "name": "Anantya.ai",
+                    "name": "anantya.ai",
+                    "alternateName": "Conversational Engagement Platform for Businesses | Anantya.ai",
                     "url": "https://anantya.ai",
-                    "areaServed": ["IN","AE","SA","BH"]
-                  },  
-                  "publisher": {
-                    "@type": "Organization",
-                    "name": "Anantya.ai",
-                    "logo": {
-                      "@type": "ImageObject",
-                      "url": "https://anantya.ai/assets/img/logo.webp"
-                    }
-                  },
-                  "datePublished": "2024-09-05"
-                }
-            `}</script>
+                    "logo": "https://ik.imagekit.io/cloy701fl/images/logo.webp",
+                    "contactPoint": {
+                        "@type": "ContactPoint",
+                        "telephone": "+971565480273",
+                        "contactType": "sales",
+                        "areaServed": ["IN", "AE", "SA", "BH"],
+                        "availableLanguage": ["en"]
+                    },
+                    "sameAs": [
+                        "https://www.facebook.com/anantyaai",
+                        "https://www.instagram.com/anantya.ai",
+                        "https://www.youtube.com/@Anantyaai",
+                        "https://www.linkedin.com/company/anantya-ai",
+                        "https://www.pinterest.com/anantyaai"
+                    ]
+                })}
+            </script>
 
-            {/* Breadcrumb Schema */}
-            <script type="application/ld+json">{`
-                {
-                  "@context": "https://schema.org/", 
-                  "@type": "BreadcrumbList", 
-                  "itemListElement": [{
-                    "@type": "ListItem", 
-                    "position": 1, 
-                    "name": "Home",
-                    "item": "https://anantya.ai/"  
-                  },{
-                    "@type": "ListItem", 
-                    "position": 2, 
-                    "name": "How Government Uses WhatsApp Business API to Serve Citizens?",
-                    "item": "https://anantya.ai/whatsapp-business-api-for-government"  
-                  }]
-                }
-            `}</script>
+            <script type="application/ld+json">
+                {JSON.stringify({
+                    "@context": "https://schema.org",
+                    "@type": "BlogPosting",
+                    "mainEntityOfPage": {
+                        "@type": "WebPage",
+                        "@id": "https://anantya.ai/blog/whatsapp-business-api-for-government"
+                    },
+                    "headline": "How Government Uses WhatsApp Business API to Serve Citizens?",
+                    "description": "Discover how the Indian government uses WhatsApp Business API to connect with citizens, providing faster, easier, and efficient public services.",
+                    "image": "https://ik.imagekit.io/cloy701fl/images/blog/whatsapp-business-api-for-government.webp",
+                    "author": {
+                        "@type": "Organization",
+                        "name": "Anantya.ai",
+                        "url": "https://anantya.ai",
+                        "areaServed": ["IN", "AE", "SA", "BH"]
+                    },
+                    "publisher": {
+                        "@type": "Organization",
+                        "name": "Anantya.ai",
+                        "logo": {
+                            "@type": "ImageObject",
+                            "url": "https://ik.imagekit.io/cloy701fl/images/logo.webp"
+                        }
+                    },
+                    "datePublished": "2024-09-05",
+                })}
+            </script>
+
+            <script type="application/ld+json">
+                {JSON.stringify({
+                    "@context": "https://schema.org/",
+                    "@type": "BreadcrumbList",
+                    "itemListElement": [
+                        {
+                            "@type": "ListItem",
+                            "position": 1,
+                            "name": "Homepage",
+                            "item": "https://anantya.ai/"
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 2,
+                            "name": "Blog",
+                            "item": "https://anantya.ai/blog"
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 3,
+                            "name": "How Government Uses WhatsApp Business API to Serve Citizens?",
+                            "item": "https://anantya.ai/blog/whatsapp-business-api-for-government"
+                        }
+                    ]
+                })}
+            </script>
         </Helmet>
-    <div className="container py-4">
+    <div className="container py-5">
     <div className="row px-md-5 px-1 mx-1 mx-md-5">
       <div className="col-md-12 col-sm-12">
-        <div className="text-center py-4">
+        <div className="text-center py-5">
           <img
             src={whatsappBusinessApiImage}
             className="img-fluid h-50 w-75 mx-auto"
@@ -133,7 +146,7 @@ const WhatsAppBusinessApiGovernment = () => {
 
                   <section id="whatsapp-api-for-gov">
                     <h2 className="fs-4 mb-10 mt-10">What is WhatsApp Business API for the Government?</h2>
-                    <p><a href="whatsapp-business-api-ultimate-guide" style={{ color: '#5dc4eb' }}>WhatsApp Business API</a> can be a very effective tool to reach out to a larger audience at once. Unlike the usual WhatsApp app, which is designed to connect with people while sharing messages, photos, and videos among family & friends, the WhatsApp Business API is made for businesses that send and receive messages in a good quantity on a daily basis.</p>
+                    <p><a href="/whatsapp-business-api-ultimate-guide" style={{ color: '#5dc4eb' }}>WhatsApp Business API</a> can be a very effective tool to reach out to a larger audience at once. Unlike the usual WhatsApp app, which is designed to connect with people while sharing messages, photos, and videos among family & friends, the WhatsApp Business API is made for businesses that send and receive messages in a good quantity on a daily basis.</p>
                     <p>Here the <b>government can use WhatsApp Business API</b> to send important alerts and updates on services, share information about public programs, notify about health precautions, or even help citizens apply for services through WhatsApp.</p>
                     <p><b>WhatsApp Business API for the government</b> will also enable the use of automated chatbots to answer common questions or guide citizens in processes like registrations or applying for public services.</p>
                     <p>Let us list down some amazing features the government has at its disposal with the WhatsApp business API.</p>
@@ -152,7 +165,7 @@ const WhatsAppBusinessApiGovernment = () => {
                         <strong>WhatsApp Catalog: All government services, in one place</strong><br />
                         Make things easier with WhatsApp by giving your users a simple menu on their mobile phones where they can find a list of all the government services along with their concerned departments in the form of a Catalog.<br />
                         <br />WhatsApp’s catalog feature can come in handy for a lot of different reasons, for example, users can find the nearest vaccination centre, learn about public healthcare programs, the nearest E-seva Kendra and its schedule, or get some educational resources. The catalog feature has all the options in a single place.<br />
-                        <br />No need to get confused with websites or stand in long lines at government offices for petty concerns or queries; just browse through these services with Anantya.ai’s <a href="whatsapp-catalog" style={{ color: '#5dc4eb' }}>WhatsApp catalog</a> features.<br />
+                        <br />No need to get confused with websites or stand in long lines at government offices for petty concerns or queries; just browse through these services with Anantya.ai’s <a href="/whatsapp-catalog" style={{ color: '#5dc4eb' }}>WhatsApp catalog</a> features.<br />
                       </li>
                       <li>
                         <strong>WhatsApp Flows</strong><br />
@@ -178,26 +191,38 @@ const WhatsAppBusinessApiGovernment = () => {
                         <strong>Stay Updated with Notifications</strong><br />
                         Interactive notifications make it easy to stay updated with important information. For example, with <b>WhatsApp Business API, the Government</b> can send reminders about an approaching tax deadline or any important alert about new or upcoming government policies.<br /><br />
                         These notifications will include buttons that will let your user respond faster, whether to download the e-receipt of the paid tax or check the status of the service requested. This way, you can stay updated and informed with <b>WhatsApp API’s interactive notifications.</b><br /><br />
-                        It may become a concern when a few of your citizens are not on WhatsApp. Anantya.ai has a solution for that too; whether your consumer is on WhatsApp or not, Anantya.ai’s <a href="whatsapp-business-api-ultimate-guide" style={{ color: '#5dc4eb' }}>SMS Fallback</a> feature sends every notification that is needed through SMS. Hence, you get both solutions in one platform.<br />
+                        It may become a concern when a few of your citizens are not on WhatsApp. Anantya.ai has a solution for that too; whether your consumer is on WhatsApp or not, Anantya.ai’s <a href="/whatsapp-business-api-ultimate-guide" style={{ color: '#5dc4eb' }}>SMS Fallback</a> feature sends every notification that is needed through SMS. Hence, you get both solutions in one platform.<br />
                       </li>
                       <li>
                         <strong>24/7 Chatbot</strong><br />
                         To get small work done from government offices, it takes up a citizen’s one whole day’s leave or even more, due to the long waiting period. Isn't it frustrating when we don't get an answer quickly?<br /><br />
                         This WhatsApp chatbot will relieve your consumers of their frustration; they will get 24/7 assistance to help with common questions, provide information about things related to government programs, and guide them through simple tasks.<br /><br />
-                        Anantya.ai-powered <a href="how-to-create-a-whatsapp-chatbot-for-business" style={{ color: '#5dc4eb' }}>WhatsApp Chatbot</a> will always be ready for all the queries your consumers may have, whether to be their assistant, answer their service-related questions, or get a review form filled out.<br />
+                        Anantya.ai-powered <a href="/how-to-create-a-whatsapp-chatbot-for-business" style={{ color: '#5dc4eb' }}>WhatsApp Chatbot</a> will always be ready for all the queries your consumers may have, whether to be their assistant, answer their service-related questions, or get a review form filled out.<br />
                       </li>
                       <li>
                         <strong>Send Multimedia Messages</strong><br />
                         Always sending long messages won't attract citizens to read them in full. Let photos and pictures say it all. The government can use WhatsApp's multimedia feature to share useful content, like sharing the step-by-step process of applying for a passport or sending what precautions to take during a pandemic.
-                        These visual messages will convey important information in a more engaging and simple way, which will help citizens understand and comply better.
+                        These visual messages will convey important information in a more engaging and simple way, which will help citizens understand and act on it more easily while using <b>WhatsApp Business API for the government.</b>
                       </li>
                     </ul>
                   </section>
+                  <section id="conclusion">
+      <h2 className="fs-4 mb-10 mt-10">Conclusion</h2>
+      <p>
+        Using the WhatsApp business API from Anantya.ai will make messaging simple and effective for government agencies. With features like chatbots, multimedia messages, and interactive notifications, the government of India can easily connect with citizens, provide important information, and streamline services.
+      </p>
+      <p>
+        Here, the Anantya.ai platform will make sure that communication is fast, clear, and accessible, making it simpler for the government to engage with the public and deliver services efficiently.
+      </p>
+      <p>
+        Choose Anantya.ai to make your WhatsApp API journey more convenient and effective.
+      </p>
+    </section>
                 </div>
               </div>
               <div className="col-lg-4">
       <div className="summary-card">
-        <h6 className="pb-20 border-bottom border-1 brd-gray">Table of Contents:</h6>
+        <h6 className="pb-3 border-bottom border-1 brd-gray">Table of Contents:</h6>
         <ul>
           <li><a href="#whatsapp-api-for-gov">What is WhatsApp Business API for the Government?</a></li>
           <li><a href="#whatsapp-features">WhatsApp features that can be helpful for the government</a></li>

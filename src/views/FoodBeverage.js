@@ -78,123 +78,95 @@ const submitFormAndOpenPDF = (event) => {
   return (
     <div>
        
-    <Helmet>
-      <title>Chatbot for Food & Beverage Industry | Whatsapp Business API</title>
+       <Helmet>
+      {/* Alternate Links */}
+      <link rel="alternate" hrefLang="x-default" href="https://anantya.ai/food-and-beverage-industry" />
+      <link rel="alternate" hrefLang="en-ae" href="https://anantya.ai/food-and-beverage-industry" />
+      <link rel="alternate" hrefLang="en-sa" href="https://anantya.ai/food-and-beverage-industry" />
+      <link rel="alternate" hrefLang="en-bh" href="https://anantya.ai/food-and-beverage-industry" />
+      <link rel="alternate" hrefLang="en-in" href="https://anantya.ai/food-and-beverage-industry" />
+      <link rel="alternate" hrefLang="en" href="https://anantya.ai/food-and-beverage-industry" />
+
+      {/* Title and Meta Tags */}
+      <title>Chatbot for Food & Beverage Industry | WhatsApp Business API</title>
       <meta name="robots" content="index,follow" />
+      <meta name="title" content="Chatbot for Food & Beverage Industry | WhatsApp Business API" />
       <meta name="description" content="Make your customers happy in the food and beverage industry using WhatsApp's Chatbot for fast and easy communication. Anantya.ai helps you have smooth conversations." />
-      <meta property="og:title" content="Chatbot for Food & Beverage Industry | Whatsapp Business API" />
+      <meta name="keywords" content="whatsapp business api for food and beverage sector, whatsapp api for food industry, whatsapp chatbot for food industry" />
       <meta property="og:type" content="article" />
+      <meta property="og:locale" content="en_AE" />
+      <meta property="og:locale" content="en_SA" />
+      <meta property="og:locale" content="en_BH" />
+      <meta property="og:locale" content="en_IN" />
+      <meta property="og:title" content="Chatbot for Food & Beverage Industry | WhatsApp Business API" />
       <meta property="og:description" content="Make your customers happy in the food and beverage industry using WhatsApp's Chatbot for fast and easy communication. Anantya.ai helps you have smooth conversations." />
       <meta property="og:url" content="https://anantya.ai/food-and-beverage-industry" />
       <meta property="og:site_name" content="anantya.ai" />
-      <meta property="og:image" content="https://anantya.ai/assets/img/food/grow-your-food-business.webp" />
+      <meta property="og:image" content="https://ik.imagekit.io/cloy701fl/images/grow-your-food-business.webp" />
       <link rel="canonical" href="https://anantya.ai/food-and-beverage-industry" />
       <meta name="author" content="Anantya" />
 
+      {/* JSON-LD Schema Markup */}
       <script type="application/ld+json">
-        {JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "Organization",
-          "name": "Anantya.ai",
-          "alternateName": "Conversational Engagement Platform for Businesses | Anantya.ai",
-          "url": "https://anantya.ai/",
-          "logo": "https://anantya.ai/assets/img/logo.webp",
-          "contactPoint": {
-            "@type": "ContactPoint",
-            "telephone": "+971565480273",
-            "contactType": "sales",
-            "areaServed": ["AE", "SA", "BH"],
-            "availableLanguage": "en"
-          },
-          "sameAs": [
-            "https://www.facebook.com/anantyaai",
-            "https://www.instagram.com/anantya.ai",
-            "https://www.youtube.com/@Anantyaai",
-            "https://www.linkedin.com/company/anantya-ai",
-            "https://www.pinterest.com/anantyaai"
-          ]
-        })}
+        {`
+          {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Anantya.ai",
+            "alternateName": "Conversational Engagement Platform for Businesses | Anantya.ai",
+            "url": "https://anantya.ai/",
+            "logo": "https://ik.imagekit.io/cloy701fl/images/logo.webp",
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+971565480273",
+              "contactType": "sales",
+              "areaServed": ["AE","SA","BH","IN"],
+              "availableLanguage": "en"
+            },
+            "sameAs": [
+              "https://www.facebook.com/anantyaai",
+              "https://www.instagram.com/anantya.ai",
+              "https://www.youtube.com/@Anantyaai",
+              "https://www.linkedin.com/company/anantya-ai",
+              "https://www.pinterest.com/anantyaai"
+            ]
+          }
+        `}
       </script>
 
       <script type="application/ld+json">
-        {JSON.stringify({
-          "@context": "https://schema.org",
-          "@graph": [
-            {
-              "@type": "WebPage",
-              "name": "Chatbot for Food & Beverage Industry | Whatsapp Business API",
-              "description": "Make your customers happy in the food and beverage industry using WhatsApp's Chatbot for fast and easy communication. Anantya.ai helps you have smooth conversations."
-            },
-            {
-              "@type": "WebSite",
-              "name": "Anantya",
-              "alternateName": "anantya.ai",
-              "url": "https://anantya.ai/"
-            }
-          ]
-        })}
+        {`
+          {
+            "@context": "https://schema.org/",
+            "@type": "WebPage",
+            "@id": "#WebPage",
+            "url": "https://anantya.ai/food-and-beverage-industry",
+            "name": "Chatbot for Food & Beverage Industry | WhatsApp Business API"
+          }
+        `}
       </script>
 
       <script type="application/ld+json">
-        {JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "BreadcrumbList",
-          "itemListElement": [
-            {
-              "@type": "ListItem",
-              "position": 1,
-              "name": "Home",
-              "item": "https://anantya.ai"
-            },
-            {
-              "@type": "ListItem",
-              "position": 2,
-              "name": "Food & Beverage",
-              "item": "https://anantya.ai/food-and-beverage-industry"
-            }
-          ]
-        })}
-      </script>
-
-      <script type="application/ld+json">
-        {JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "FAQPage",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "Q1: Can I Promote My Food Menu And Special Offers Using WhatsApp Business API?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Absolutely! WhatsApp Business API enables you to create engaging catalogs to showcase your food menu, highlight special offers, and tempt customers with mouthwatering visuals."
+        {`
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Homepage",
+                "item": "https://anantya.ai"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Food & Beverage",
+                "item": "https://anantya.ai/food-and-beverage-industry"
               }
-            },
-            {
-              "@type": "Question",
-              "name": "Are QR Scanners A Secure And Dependable Option For A Safe Dining Experience?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Absolutely! Our QR scanners are safe and reliable for a secure dining experience. We prioritize data security through encryption measures. You can confidently scan our QR codes to access the menu and place your order, knowing your information is protected from unauthorized access."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Can Customers Place Orders Directly Through WhatsApp?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Yes, customers can conveniently place orders directly through WhatsApp using the API. They can browse your menu, select items, provide necessary details, and complete the order process seamlessly within the WhatsApp interface."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "How Can A WhatsApp Chat Bot Benefit My Food Business?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "A WhatsApp chat bot can significantly benefit your food business by automating customer interactions, and providing instant responses to inquiries about menus, prices, and special offers. It can also handle orders, process payments, and provide personalized recommendations, enhancing customer satisfaction and streamlining operations."
-              }
-            }
-          ]
-        })}
+            ]
+          }
+        `}
       </script>
     </Helmet>
       <div className="container py-5 mt-5">

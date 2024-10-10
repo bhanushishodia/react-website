@@ -11,30 +11,98 @@ const stepImg2 = getImage('set-a-strong-password.webp'); // Import the image
 const HowToAddAgentSublogin = () => {
   return (
     <>
-     <Helmet>
-            <title>How to Add Agent Sublogin: A Step-by-Step Guide | Knowledge Center</title>
-            <meta name="robots" content="index,follow" />
-            <meta name="description" content="Step-by-Step Guide, How to Add Agent Sublogin" />
-            <meta property="og:title" content="How to Add Agent Sublogin: A Step-by-Step Guide | Knowledge Center" />
-            <meta property="og:type" content="article" />
-            <meta property="og:description" content="Step-by-Step Guide, How to Add Agent Sublogin" />
-            <meta property="og:url" content="https://anantya.ai/how-to-add-agent-sublogin" />
-            <meta property="og:site_name" content="anantya.ai" />
-            <meta property="og:image" content="https://anantya.ai/assets/img/fill-out-the-form.webp" />
-            <link rel="canonical" href="https://anantya.ai/how-to-add-agent-sublogin" />
-            <meta name="author" content="Anantya.ai" />
+     
+    <Helmet>
+      {/* Link alternate */}
+      <link rel="alternate" hrefLang="x-default" href="https://anantya.ai/how-to-add-agent-sublogin" />
+      <link rel="alternate" hreflang="en-ae" href="https://anantya.ai/how-to-add-agent-sublogin" />
+      <link rel="alternate" hreflang="en-sa" href="https://anantya.ai/how-to-add-agent-sublogin" />
+      <link rel="alternate" hreflang="en-bh" href="https://anantya.ai/how-to-add-agent-sublogin" />
+      <link rel="alternate" hreflang="en-in" href="https://anantya.ai/how-to-add-agent-sublogin" />
+      <link rel="alternate" hreflang="en" href="https://anantya.ai/how-to-add-agent-sublogin" />
 
-            {/* JSON-LD Schema Markup */}
-            <script type="application/ld+json">
-                {JSON.stringify({
-                    "@context": "https://schema.org",
-                    "@type": "WebPage",
-                    "name": "How to Add Agent Sublogin: A Step-by-Step Guide | Knowledge Center",
-                    "description": "Step-by-Step Guide, How to Add Agent Sublogin",
-                    "url": "https://anantya.ai/how-to-add-agent-sublogin"
-                })}
-            </script>
-        </Helmet>
+      {/* Title */}
+      <title>How to Add Agent Sublogin on Whatsapp Business</title>
+      
+      {/* Meta Tags */}
+      <meta name="robots" content="index,follow" />
+      <meta name="title" content="How to Add Agent Sublogin on Whatsapp Business" />
+      <meta name="description" content="How to Add Agent Sublogin on Whatsapp Business" />
+      
+      {/* Open Graph Tags */}
+      <meta property="og:type" content="article" />
+      <meta property="og:title" content="How to Add Agent Sublogin on Whatsapp Business" />
+      <meta property="og:description" content="How to Add Agent Sublogin on Whatsapp Business" />
+      <meta property="og:url" content="https://anantya.ai/how-to-add-agent-sublogin" />
+      <meta property="og:site_name" content="anantya.ai" />
+      <meta property="og:image" content="https://ik.imagekit.io/cloy701fl/images/anantya-home-page.webp" />
+      
+      {/* Canonical Link */}
+      <link rel="canonical" href="https://anantya.ai/how-to-add-agent-sublogin" />
+      
+      {/* Author Meta Tag */}
+      <meta name="author" content="Anantya.ai" />
+      
+      {/* Organization Schema */}
+      <script type="application/ld+json">
+        {`{
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Anantya.ai",
+          "alternateName": "Conversational Engagement Platform for Businesses | Anantya.ai",
+          "url": "https://anantya.ai/",
+          "logo": "https://ik.imagekit.io/cloy701fl/images/logo.webp",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+971565480273",
+            "contactType": "sales",
+            "areaServed": ["AE","SA","BH","IN"],
+            "availableLanguage": "en"
+          },
+          "sameAs": [
+            "https://www.facebook.com/anantyaai",
+            "https://www.instagram.com/anantya.ai",
+            "https://www.youtube.com/@Anantyaai",
+            "https://www.linkedin.com/company/anantya-ai",
+            "https://www.pinterest.com/anantyaai"
+          ]
+        }`}
+      </script>
+
+      {/* WebPage Schema */}
+      <script type="application/ld+json">
+        {`{
+          "@context": "https://schema.org/",
+          "@type": "WebPage",
+          "@id": "#WebPage",
+          "url": "https://anantya.ai/how-to-add-agent-sublogin",
+          "name": "How to Add Agent Sublogin on Whatsapp Business"
+        }`}
+      </script>
+
+      {/* BreadcrumbList Schema */}
+      <script type="application/ld+json">
+        {`{
+          "@context": "https://schema.org/",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Homepage",
+              "item": "https://anantya.ai"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "How to Add Agent Sublogin on Whatsapp Business",
+              "item": "https://anantya.ai/how-to-add-agent-sublogin"
+            }
+          ]
+        }`}
+      </script>
+    </Helmet>
+
 
     <div className="page-content">
     <div>

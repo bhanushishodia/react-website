@@ -210,99 +210,104 @@ const Blog = () => {
   return (
     <>
       <Helmet>
+      {/* Alternate Links */}
+      <link rel="alternate" hrefLang="x-default" href="https://anantya.ai/blog" />
+      <link rel="alternate" hreflang="en-ae" href="https://anantya.ai/blog" />
+      <link rel="alternate" hreflang="en-sa" href="https://anantya.ai/blog" />
+      <link rel="alternate" hreflang="en-bh" href="https://anantya.ai/blog" />
+      <link rel="alternate" hreflang="en-in" href="https://anantya.ai/blog" />
+      <link rel="alternate" hreflang="en" href="https://anantya.ai/blog" />
+
+      {/* Title and Meta Tags */}
       <title>Anantya.ai Blog and Article - Stay Updated with Latest WhatsApp Trends</title>
       <meta name="robots" content="index,follow" />
-      <meta
-        name="description"
-        content="Explore Anantya.ai insightful articles and updates on WhatsApp trends innovations. Stay updated with WhatsApp Business API."
-      />
+      <meta name="title" content="Anantya.ai Blog and Article - Stay Updated with Latest WhatsApp Trends" />
+      <meta name="description" content="Explore Anantya.ai insightful articles and updates on WhatsApp trends innovations. Stay updated with WhatsApp Business API." />
+      <meta property="og:type" content="blog" />
       <meta property="og:title" content="Anantya.ai Blog and Article - Stay Updated with Latest WhatsApp Trends" />
-      <meta property="og:type" content="article" />
-      <meta
-        property="og:description"
-        content="Explore Anantya.ai insightful articles and updates on WhatsApp trends innovations. Stay updated with WhatsApp Business API."
-      />
+      <meta property="og:description" content="Explore Anantya.ai insightful articles and updates on WhatsApp trends innovations. Stay updated with WhatsApp Business API." />
       <meta property="og:url" content="https://anantya.ai/blog" />
       <meta property="og:site_name" content="anantya.ai" />
-      <meta property="og:image" content="https://anantya.ai/assets/img/home/Home%20page%20Graphics.webp" />
+      <meta property="og:image" content="https://ik.imagekit.io/cloy701fl/images/anantya-home-page.webp" />
       <link rel="canonical" href="https://anantya.ai/blog" />
       <meta name="author" content="Anantya" />
 
+      {/* JSON-LD Structured Data */}
       <script type="application/ld+json">
         {`
-          {
-            "@context": "https://schema.org",
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Anantya.ai",
+          "alternateName": "Conversational Engagement Platform for Businesses | Anantya.ai",
+          "url": "https://anantya.ai/",
+          "logo": "https://ik.imagekit.io/cloy701fl/images/logo.webp",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+971565480273",
+            "contactType": "sales",
+            "areaServed": ["AE", "SA", "BH", "IN"],
+            "availableLanguage": "en"
+          },
+          "sameAs": [
+            "https://www.facebook.com/anantyaai",
+            "https://www.instagram.com/anantya.ai",
+            "https://www.youtube.com/@Anantyaai",
+            "https://www.linkedin.com/company/anantya-ai",
+            "https://www.pinterest.com/anantyaai"
+          ]
+        }
+        `}
+      </script>
+      <script type="application/ld+json">
+        {`
+        {
+          "@context": "https://schema.org",
+          "@type": "Article",
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://anantya.ai/blog"
+          },
+          "headline": "Anantya.ai Blog and Article - Stay Updated with Latest WhatsApp Trends",
+          "description": "Explore Anantya.ai insightful articles and updates on WhatsApp trends innovations. Stay updated with WhatsApp Business API.",
+          "image": "https://anantya.ai/assets/img/home/Home%20page%20Graphics.webp",
+          "author": {
             "@type": "Organization",
             "name": "Anantya.ai",
-            "alternateName": "Conversational Engagement Platform for Businesses | Anantya.ai",
-            "url": "https://anantya.ai/",
-            "logo": "https://anantya.ai/assets/img/logo.webp",
-            "contactPoint": {
-              "@type": "ContactPoint",
-              "telephone": "+971565480273",
-              "contactType": "sales",
-              "areaServed": ["AE", "SA", "BH"],
-              "availableLanguage": "en"
-            },
-            "sameAs": [
-              "https://www.facebook.com/anantyaai",
-              "https://www.instagram.com/anantya.ai",
-              "https://www.youtube.com/@Anantyaai",
-              "https://www.linkedin.com/company/anantya-ai",
-              "https://www.pinterest.com/anantyaai"
-            ]
-          }
+            "url": "https://anantya.ai"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Anantya.ai",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://anantya.ai/assets/img/logo.webp"
+            }
+          },
+          "datePublished": "2024-03-21"
+        }
         `}
       </script>
       <script type="application/ld+json">
         {`
-          {
-            "@context": "https://schema.org",
-            "@type": "Article",
-            "mainEntityOfPage": {
-              "@type": "WebPage",
-              "@id": "https://anantya.ai/blog"
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://anantya.ai"
             },
-            "headline": "Anantya.ai Blog and Article - Stay Updated with Latest WhatsApp Trends",
-            "description": "Explore Anantya.ai insightful articles and updates on WhatsApp trends innovations. Stay updated with WhatsApp Business API.",
-            "image": "https://anantya.ai/assets/img/home/Home%20page%20Graphics.webp",
-            "author": {
-              "@type": "Organization",
-              "name": "Anantya.ai",
-              "url": "https://anantya.ai"
-            },
-            "publisher": {
-              "@type": "Organization",
-              "name": "Anantya.ai",
-              "logo": {
-                "@type": "ImageObject",
-                "url": "https://anantya.ai/assets/img/logo.webp"
-              }
-            },
-            "datePublished": "2024-03-21"
-          }
-        `}
-      </script>
-      <script type="application/ld+json">
-        {`
-          {
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-              {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Home",
-                "item": "https://anantya.ai"
-              },
-              {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "Blog",
-                "item": "https://anantya.ai/blog"
-              }
-            ]
-          }
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Blog",
+              "item": "https://anantya.ai/blog"
+            }
+          ]
+        }
         `}
       </script>
     </Helmet>

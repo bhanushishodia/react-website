@@ -5,102 +5,120 @@ import CommentForm from "../../components/common/CommentForm";
 import { Helmet } from 'react-helmet';
 import { getImage } from '../../utils/getImage'; // Correct path to utility
 // Fetching the boost sales image dynamically using getImage function
-const boostSalesImage = getImage('boost-sales-on-festive-season-with-ai-chatbots.jpeg');
+const boostSalesImage = getImage('/blog/boost-sales-on-festive-season-with-ai-chatbots.jpeg');
 const BoostSalesWithAIChatbots = () => {
   return (
     <section>
        <Helmet>
-            <title>Elevate Customer Experiences and Drive Festive Season Sales with AI Chatbots</title>
-            <meta name="robots" content="index,follow" />
-            <meta name="description" content="Supercharge your festive season sales and delight customers with AI chatbots. Learn how AI-powered chatbots can enhance customer experiences and boost your holiday revenue." />
-            <meta name="keywords" content="whatsapp chatbot, chatbot in whatsapp, whatsapp bot, AI Chatbot" />
-            <meta property="og:title" content="Elevate Customer Experiences and Drive Festive Season Sales with AI Chatbots" />
-            <meta property="og:type" content="blog" />
-            <meta property="og:description" content="Supercharge your festive season sales and delight customers with AI chatbots. Learn how AI-powered chatbots can enhance customer experiences and boost your holiday revenue." />
-            <meta property="og:url" content="https://anantya.ai/boost-sales-on-festive-season-with-ai-chatbots" />
-            <meta property="og:site_name" content="anantya.ai" />
-            <meta property="og:image" content="https://anantya.ai/assets/img/boost-sales-on-festive-season-with-ai-chatbots.jpeg" />
-            <link rel="canonical" href="https://anantya.ai/boost-sales-on-festive-season-with-ai-chatbots" />
-            <meta name="author" content="Anantya.ai" />
+      {/* Alternate Links */}
+      <link rel="alternate" hrefLang="x-default" href="https://anantya.ai/blog/boost-sales-on-festive-season-with-ai-chatbots" />
+      <link rel="alternate" hreflang="en-ae" href="https://anantya.ai/blog/boost-sales-on-festive-season-with-ai-chatbots" />
+      <link rel="alternate" hreflang="en-sa" href="https://anantya.ai/blog/boost-sales-on-festive-season-with-ai-chatbots" />
+      <link rel="alternate" hreflang="en-bh" href="https://anantya.ai/blog/boost-sales-on-festive-season-with-ai-chatbots" />
+      <link rel="alternate" hrefLang="en-in" href="https://anantya.ai/blog/boost-sales-on-festive-season-with-ai-chatbots" />
+      <link rel="alternate" hreflang="en" href="https://anantya.ai/blog/boost-sales-on-festive-season-with-ai-chatbots" />
 
-            {/* JSON-LD for Organization */}
-            <script type="application/ld+json">
-                {JSON.stringify({
-                    "@context": "https://schema.org",
-                    "@type": "Organization",
-                    "name": "Anantya.ai",
-                    "alternateName": "Conversational Engagement Platform for Businesses | Anantya.ai",
-                    "url": "https://anantya.ai/",
-                    "logo": "https://anantya.ai/assets/img/logo.webp",
-                    "contactPoint": {
-                        "@type": "ContactPoint",
-                        "telephone": "+971565480273",
-                        "contactType": "sales",
-                        "areaServed": ["AE", "SA", "BH"],
-                        "availableLanguage": "en"
-                    },
-                    "sameAs": [
-                        "https://www.facebook.com/anantyaai",
-                        "https://www.instagram.com/anantya.ai",
-                        "https://www.youtube.com/@Anantyaai",
-                        "https://www.linkedin.com/company/anantya-ai",
-                        "https://www.pinterest.com/anantyaai"
-                    ]
-                })}
-            </script>
+      {/* Title and Meta Tags */}
+      <title>Boost Sales with Whatsapp Chatbot on Festival Season (2024)</title>
+      <meta name="robots" content="index,follow" />
+      <meta name="title" content="Boost Sales with Whatsapp Chatbot on Festival Season (2024)" />
+      <meta name="description" content="Supercharge your festive season sales and delight customers with AI chatbots. Learn how AI-powered chatbots can enhance customer experiences and boost your holiday revenue." />
+      <meta name="keywords" content="whatsapp chatbot, chatbot in whatsapp, whatsapp bot, AI Chatbot" />
+      <meta property="og:type" content="blog" />
+      <meta property="og:locale" content="en_AE" />
+      <meta property="og:locale" content="en_SA" />
+      <meta property="og:locale" content="en_BH" />
+      <meta property="og:locale" content="en_IN" />
+      <meta property="og:title" content="Boost Sales with Whatsapp Chatbot on Festival Season (2024)" />
+      <meta property="og:description" content="Supercharge your festive season sales and delight customers with AI chatbots. Learn how AI-powered chatbots can enhance customer experiences and boost your holiday revenue." />
+      <meta property="og:url" content="https://anantya.ai/blog/boost-sales-on-festive-season-with-ai-chatbots" />
+      <meta property="og:site_name" content="anantya.ai" />
+      <meta property="og:image" content="https://ik.imagekit.io/cloy701fl/images//blog/boost-sales-on-festive-season-with-ai-chatbots.jpeg" />
+      <link rel="canonical" href="https://anantya.ai/blog/boost-sales-on-festive-season-with-ai-chatbots" />
+      <meta name="author" content="Kiran Yadav" />
 
-            {/* JSON-LD for Blog Post */}
-            <script type="application/ld+json">
-                {JSON.stringify({
-                    "@context": "https://schema.org",
-                    "@type": "BlogPosting",
-                    "mainEntityOfPage": {
-                        "@type": "WebPage",
-                        "@id": "https://anantya.ai/boost-sales-on-festive-season-with-ai-chatbots"
-                    },
-                    "headline": "Elevate Customer Experiences and Drive Festive Season Sales with AI Chatbots",
-                    "description": "Supercharge your festive season sales and delight customers with AI chatbots. Learn how AI-powered chatbots can enhance customer experiences and boost your holiday revenue.",
-                    "image": "https://anantya.ai/assets/img/boost-sales-on-festive-season-with-ai-chatbots.jpeg",
-                    "author": {
-                        "@type": "Organization",
-                        "name": "Anantya.ai",
-                        "url": "https://anantya.ai",
-                        "areaServed": ["AE", "SA", "BH"]
-                    },
-                    "publisher": {
-                        "@type": "Organization",
-                        "name": "Anantya.ai",
-                        "logo": {
-                            "@type": "ImageObject",
-                            "url": "https://anantya.ai/assets/img/logo.webp"
-                        }
-                    },
-                    "datePublished": "2023-11-03"
-                })}
-            </script>
+      {/* Structured Data */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Anantya.ai",
+          "alternateName": "Conversational Engagement Platform for Businesses | Anantya.ai",
+          "url": "https://anantya.ai/",
+          "logo": "https://ik.imagekit.io/cloy701fl/images/logo.webp",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+971565480273",
+            "contactType": "sales",
+            "areaServed": ["AE", "SA", "BH", "IN"],
+            "availableLanguage": "en"
+          },
+          "sameAs": [
+            "https://www.facebook.com/anantyaai",
+            "https://www.instagram.com/anantya.ai",
+            "https://www.youtube.com/@Anantyaai",
+            "https://www.linkedin.com/company/anantya-ai",
+            "https://www.pinterest.com/anantyaai"
+          ]
+        })}
+      </script>
 
-            {/* JSON-LD for BreadcrumbList */}
-            <script type="application/ld+json">
-                {JSON.stringify({
-                    "@context": "https://schema.org",
-                    "@type": "BreadcrumbList",
-                    "itemListElement": [
-                        {
-                            "@type": "ListItem",
-                            "position": 1,
-                            "name": "Home",
-                            "item": "https://anantya.ai"
-                        },
-                        {
-                            "@type": "ListItem",
-                            "position": 2,
-                            "name": "Reshaping Customer Engagement on WhatsApp",
-                            "item": "https://anantya.ai/reshaping-customer-engagement-on-whatsapp"
-                        }
-                    ]
-                })}
-            </script>
-        </Helmet>
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://anantya.ai/blog/boost-sales-on-festive-season-with-ai-chatbots"
+          },
+          "headline": "Boost Sales with Whatsapp Chatbot on Festival Season (2024)",
+          "description": "Supercharge your festive season sales and delight customers with AI chatbots. Learn how AI-powered chatbots can enhance customer experiences and boost your holiday revenue.",
+          "image": "https://ik.imagekit.io/cloy701fl/images//blog/boost-sales-on-festive-season-with-ai-chatbots.jpeg",
+          "author": {
+            "@type": "Organization",
+            "name": "Anantya.ai",
+            "url": "https://anantya.ai",
+            "areaServed": ["AE", "SA", "BH", "IN"]
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Anantya.ai",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://ik.imagekit.io/cloy701fl/images/logo.webp"
+            }
+          },
+          "datePublished": "2023-11-03"
+        })}
+      </script>
+
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org/",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Homepage",
+              "item": "https://anantya.ai/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Blog",
+              "item": "https://anantya.ai/blog"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Boost Sales with Whatsapp Chatbot on Festival Season (2024)",
+              "item": "https://anantya.ai/blog/boost-sales-on-festive-season-with-ai-chatbots"
+            }
+          ]
+        })}
+      </script>
+    </Helmet>
       <div className="container py-5 mt-4">
         <h1 className="pb-2 text-center px-5">
           Enhance Customer Experiences and Boost Sales this Festive Season with AI Chatbots
@@ -153,7 +171,7 @@ const BoostSalesWithAIChatbots = () => {
                     In comparison with structured bots, generative AI bots create a language that sounds like people, resulting in interactions with customers that are authentic and interesting. These bots analyze client information to provide tailored product recommendations that increase the possibility that customers will make a purchase.
                   </p>
                   <p>
-                    With <a href="https://anantya.ai/automated-chatbot"><strong>WhatsApp Chatbots</strong></a> leading customers through engaging chat experiences, marketers can effectively acquire new customers and build a first-party database for future sales by utilizing Click to WhatsApp advertisements as lead magnets. When compared to online advertising, marketers find Click to WhatsApp ads to be a very cost-effective technique for lowering acquisition costs.
+                    With <a href="/automated-chatbot"><strong>WhatsApp Chatbots</strong></a> leading customers through engaging chat experiences, marketers can effectively acquire new customers and build a first-party database for future sales by utilizing Click to WhatsApp advertisements as lead magnets. When compared to online advertising, marketers find Click to WhatsApp ads to be a very cost-effective technique for lowering acquisition costs.
                   </p>
                   <p>
                     During the holiday season, businesses experiment with new Click to WhatsApp ad uses, like utilizing them to recruit new employees. One e-grocery firm, for example, uses Click to WhatsApp ads to attract delivery specialists, doing away with the requirement for a recruitment partner.
@@ -187,7 +205,7 @@ const BoostSalesWithAIChatbots = () => {
 
                   <h3 id="section5" className="wp-block-heading py-3">Groceries</h3>
                   <p>
-                    Food and seasonal sweets are more in demand during festive holidays and gatherings. <a href="https://anantya.ai/automated-chatbot"><strong>WhatsApp AI chatbots</strong></a> make Diwali shopping simple by assisting clients in stocking up on necessities and unique ingredients and even sending gourmet gift baskets with ease.
+                    Food and seasonal sweets are more in demand during festive holidays and gatherings. <a href="/automated-chatbot"><strong>WhatsApp AI chatbots</strong></a> make Diwali shopping simple by assisting clients in stocking up on necessities and unique ingredients and even sending gourmet gift baskets with ease.
                   </p>
 
                   <h3 id="section6" className="wp-block-heading py-3">Conclusion</h3>

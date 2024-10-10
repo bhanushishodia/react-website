@@ -12,29 +12,97 @@ const clickOnAddAutoAssignImage = getImage('click-on-add-auto-assign.webp');
 const AutoAssignChats = () => {
   return (
     <>
-     <Helmet>
-            <title>How to Auto Assign Chats | Knowledge Center</title>
-            <meta name="robots" content="index,follow" />
-            <meta name="description" content="Here you can learn how to Auto Assign Chats" />
-            <meta property="og:title" content="How to Auto Assign Chats | Knowledge Center" />
-            <meta property="og:type" content="article" />
-            <meta property="og:description" content="Here you can learn how to Auto Assign Chats" />
-            <meta property="og:url" content="https://anantya.ai/how-to-auto-assign-chats" />
-            <meta property="og:site_name" content="anantya.ai" />
-            <meta property="og:image" content="https://anantya.ai/assets/img/auto-assign-section.webp" />
-            <link rel="canonical" href="https://anantya.ai/how-to-auto-assign-chats" />
-            <meta name="author" content="Anantya.ai" />
+    <Helmet>
+      {/* Alternate Links */}
+      <link rel="alternate" hrefLang="x-default" href="https://anantya.ai/how-to-auto-assign-chats" />
+      <link rel="alternate" hreflang="en-ae" href="https://anantya.ai/how-to-auto-assign-chats" />
+      <link rel="alternate" hreflang="en-sa" href="https://anantya.ai/how-to-auto-assign-chats" />
+      <link rel="alternate" hreflang="en-bh" href="https://anantya.ai/how-to-auto-assign-chats" />
+      <link rel="alternate" hreflang="en-in" href="https://anantya.ai/how-to-auto-assign-chats" />
+      <link rel="alternate" hreflang="en" href="https://anantya.ai/how-to-auto-assign-chats" />
 
-            {/* JSON-LD Schema Markup */}
-            <script type="application/ld+json">
-                {JSON.stringify({
-                    "@context": "https://schema.org",
-                    "@type": "WebPage",
-                    "name": "How to Auto Assign Chats | Knowledge Center",
-                    "description": "Here you can learn how to Auto Assign Chats",
-                    "url": "https://anantya.ai/how-to-auto-assign-chats"
-                })}
-            </script>
+      {/* Title and Meta Tags */}
+      <title>How to Auto Assign Chats on Whatsapp Business</title>
+      <meta name="robots" content="index,follow" />
+      <meta name="title" content="How to Auto Assign Chats on Whatsapp Business" />
+      <meta name="description" content="How to Auto Assign Chats on Whatsapp Business" />
+
+      {/* Open Graph Meta Tags */}
+      <meta property="og:type" content="article" />
+      <meta property="og:title" content="How to Auto Assign Chats on Whatsapp Business" />
+      <meta property="og:description" content="How to Auto Assign Chats on Whatsapp Business" />
+      <meta property="og:url" content="https://anantya.ai/how-to-auto-assign-chats" />
+      <meta property="og:site_name" content="anantya.ai" />
+      <meta property="og:image" content="https://ik.imagekit.io/cloy701fl/images/anantya-home-page.webp" />
+
+      {/* Canonical Link */}
+      <link rel="canonical" href="https://anantya.ai/how-to-auto-assign-chats" />
+      <meta name="author" content="Anantya.ai" />
+
+      {/* Structured Data (Organization) */}
+      <script type="application/ld+json">
+        {`
+          {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Anantya.ai",
+            "alternateName": "Conversational Engagement Platform for Businesses | Anantya.ai",
+            "url": "https://anantya.ai/",
+            "logo": "https://ik.imagekit.io/cloy701fl/images/logo.webp",
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+971565480273",
+              "contactType": "sales",
+              "areaServed": ["AE", "SA", "BH", "IN"],
+              "availableLanguage": "en"
+            },
+            "sameAs": [
+              "https://www.facebook.com/anantyaai",
+              "https://www.instagram.com/anantya.ai",
+              "https://www.youtube.com/@Anantyaai",
+              "https://www.linkedin.com/company/anantya-ai",
+              "https://www.pinterest.com/anantyaai"
+            ]
+          }
+        `}
+      </script>
+
+      {/* Structured Data (WebPage) */}
+      <script type="application/ld+json">
+        {`
+          {
+            "@context": "https://schema.org/",
+            "@type": "WebPage",
+            "@id": "#WebPage",
+            "url": "https://anantya.ai/how-to-auto-assign-chats",
+            "name": "How to Auto Assign Chats on Whatsapp Business"
+          }
+        `}
+      </script>
+
+      {/* Structured Data (BreadcrumbList) */}
+      <script type="application/ld+json">
+        {`
+          {
+            "@context": "https://schema.org/",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Homepage",
+                "item": "https://anantya.ai"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "How to Auto Assign Chats on Whatsapp Business",
+                "item": "https://anantya.ai/how-to-auto-assign-chats"
+              }
+            ]
+          }
+        `}
+      </script>
     </Helmet>
  
     <div className="page-content">

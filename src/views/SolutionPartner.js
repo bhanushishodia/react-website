@@ -22,88 +22,97 @@ const ctaImg = getImage('partner-cta.webp'); // Adjust the path as necessary
 const SolutionPartner = () => {
   return (
     <>
-    <Helmet>
-            <title>Solution Partner | Solution Program | Anantya.ai</title>
-            <meta name="robots" content="index,follow" />
-            <meta name="description" content="Join our Solution Program, become a valued solution partner, and use our products to drive your customers' growth. Witness your business flourish as you provide effective solutions." />
-            <meta name="keywords" content="solution program, solution partner" />
-            <meta property="og:title" content="Solution Partner | Solution Program | Anantya.ai" />
-            <meta property="og:type" content="article" />
-            <meta property="og:description" content="Join our Solution Program, become a valued solution partner, and use our products to drive your customers' growth. Witness your business flourish as you provide effective solutions." />
-            <meta property="og:url" content="https://anantya.ai/solution-partner" />
-            <meta property="og:site_name" content="anantya.ai" />
-            <meta property="og:image" content="https://anantya.ai/assets/img/partner/promote-&-sell.webp" />
-            <link rel="canonical" href="https://anantya.ai/solution-partner" />
-            <meta name="author" content="Anantya" />
+   <Helmet>
+        <link rel="alternate" hrefLang="x-default" href="https://anantya.ai/solution-partner" />
+        <link rel="alternate" hrefLang="en-ae" href="https://anantya.ai/solution-partner" />
+        <link rel="alternate" hrefLang="en-sa" href="https://anantya.ai/solution-partner" />
+        <link rel="alternate" hrefLang="en-bh" href="https://anantya.ai/solution-partner" />
+        <link rel="alternate" hrefLang="en-in" href="https://anantya.ai/solution-partner" />
+        <link rel="alternate" hrefLang="en" href="https://anantya.ai/solution-partner" />
 
-            <script type="application/ld+json">
-                {JSON.stringify({
-                    "@context": "https://schema.org",
-                    "@type": "Organization",
-                    "name": "Anantya.ai",
-                    "alternateName": "Conversational Engagement Platform for Businesses | Anantya.ai",
-                    "url": "https://anantya.ai/",
-                    "logo": "https://anantya.ai/assets/img/logo.webp",
-                    "contactPoint": {
-                        "@type": "ContactPoint",
-                        "telephone": "+971565480273",
-                        "contactType": "sales",
-                        "areaServed": ["AE", "SA", "BH"],
-                        "availableLanguage": "en"
-                    },
-                    "sameAs": [
-                        "https://www.facebook.com/anantyaai",
-                        "https://www.instagram.com/anantya.ai",
-                        "https://www.youtube.com/@Anantyaai",
-                        "https://www.linkedin.com/company/anantya-ai",
-                        "https://www.pinterest.com/anantyaai"
-                    ]
-                })}
-            </script>
+        <title>Solution Partner | Solution Program | Anantya.ai</title>
+        <meta name="robots" content="index,follow" />
+        <meta name="description" content="Join our Solution Program, become a valued solution partner, and use our products to drive your customers' growth. Witness your business flourish as you provide effective solutions." />
+        <meta name="keywords" content="solution program, solution partner" />
+        <meta property="og:type" content="article" />
+        <meta property="og:locale" content="en_IN" />
+        <meta property="og:locale" content="en_AE" />
+        <meta property="og:locale" content="en_SA" />
+        <meta property="og:locale" content="en_BH" />
+        <meta property="og:title" content="Solution Partner | Solution Program | Anantya.ai" />
+        <meta property="og:description" content="Join our Solution Program, become a valued solution partner, and use our products to drive your customers' growth. Witness your business flourish as you provide effective solutions." />
+        <meta property="og:url" content="https://anantya.ai/solution-partner" />
+        <meta property="og:site_name" content="anantya.ai" />
+        <meta property="og:image" content="https://ik.imagekit.io/cloy701fl/images/solution-partner-home-page.webp" />
+        <link rel="canonical" href="https://anantya.ai/solution-partner" />
+        <meta name="author" content="Anantya" />
 
-            <script type="application/ld+json">
-                {JSON.stringify({
-                    "@context": "https://schema.org",
-                    "@graph": [
-                        {
-                            "@type": "WebPage",
-                            "name": "Solution Partner | Solution Program | Anantya.ai",
-                            "description": "Join our Solution Program, become a valued solution partner, and use our products to drive your customers' growth. Witness your business flourish as you provide effective solutions."
-                        },
-                        {
-                            "@type": "WebSite",
-                            "name": "Anantya",
-                            "alternateName": "anantya.ai",
-                            "url": "https://anantya.ai/"
-                        }
-                    ]
-                })}
-            </script>
+        {/* JSON-LD Structured Data */}
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Anantya.ai",
+              "alternateName": "Conversational Engagement Platform for Businesses | Anantya.ai",
+              "url": "https://anantya.ai/",
+              "logo": "https://ik.imagekit.io/cloy701fl/images/logo.webp",
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+971565480273",
+                "contactType": "sales",
+                "areaServed": ["AE","SA","BH","IN"],
+                "availableLanguage": "en"
+              },
+              "sameAs": [
+                "https://www.facebook.com/anantyaai",
+                "https://www.instagram.com/anantya.ai",
+                "https://www.youtube.com/@Anantyaai",
+                "https://www.linkedin.com/company/anantya-ai",
+                "https://www.pinterest.com/anantyaai"
+              ]
+            }
+          `}
+        </script>
 
-            <script type="application/ld+json">
-                {JSON.stringify({
-                    "@context": "https://schema.org/",
-                    "@type": "BreadcrumbList",
-                    "itemListElement": [
-                        {
-                            "@type": "ListItem",
-                            "position": 1,
-                            "name": "Homepage",
-                            "item": "https://anantya.ai"
-                        },
-                        {
-                            "@type": "ListItem",
-                            "position": 2,
-                            "name": "Solution Partner",
-                            "item": "https://anantya.ai/solution-partner"
-                        }
-                    ]
-                })}
-            </script>
-        </Helmet>
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org/",
+              "@type": "WebPage",
+              "@id": "#WebPage",
+              "url": "https://anantya.ai/solution-partner",
+              "name": "Solution Partner | Solution Program | Anantya.ai"
+            }
+          `}
+        </script>
+
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org/",
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Homepage",
+                  "item": "https://anantya.ai"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Solution Partner",
+                  "item": "https://anantya.ai/solution-partner"
+                }
+              ]
+            }
+          `}
+        </script>
+      </Helmet>
       <section>
-        <div className="container py-md-5 my-md-5 py-2">
-          <div className="row">
+        <div className="container py-md-5 my-md-5 py-5 ">
+          <div className="row pt-md-0 pt-5">
             <div className="col-md-6 col-sm-12 my-auto text-md-start text-center">
               <span
                 style={{

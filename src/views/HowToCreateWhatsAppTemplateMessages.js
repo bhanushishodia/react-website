@@ -16,28 +16,91 @@ const templateApprovalImage = getImage('template-message-for-approval.webp');
 const TemplateMessages = () => {
   return (
     <>
-     <Helmet>
-            <title>How to Create Your Whatsapp Template Messages in Anantya.ai | Knowledge Center</title>
+     (
+        <Helmet>
+            {/* Alternate links */}
+            <link rel="alternate" hrefLang="x-default" href="https://anantya.ai/how-to-create-whatsapp-templete-messages-in-anantya-ai" />
+            <link rel="alternate" hreflang="en-ae" href="https://anantya.ai/how-to-create-whatsapp-templete-messages-in-anantya-ai" />
+            <link rel="alternate" hreflang="en-sa" href="https://anantya.ai/how-to-create-whatsapp-templete-messages-in-anantya-ai" />
+            <link rel="alternate" hreflang="en-bh" href="https://anantya.ai/how-to-create-whatsapp-templete-messages-in-anantya-ai" />
+            <link rel="alternate" hreflang="en-in" href="https://anantya.ai/how-to-create-whatsapp-templete-messages-in-anantya-ai" />
+            <link rel="alternate" hreflang="en" href="https://anantya.ai/how-to-create-whatsapp-templete-messages-in-anantya-ai" />
+
+            {/* Title and meta tags */}
+            <title>How to Create Your Whatsapp Template Messages in Anantya.ai</title>
             <meta name="robots" content="index,follow" />
+            <meta name="title" content="How to Create Your Whatsapp Template Messages in Anantya.ai" />
             <meta name="description" content="Learn all the important steps to make WhatsApp Template Messages and get them approved by WhatsApp in a single guide!" />
-            <meta property="og:title" content="How to Create Your Whatsapp Template Messages in Anantya.ai | Knowledge Center" />
             <meta property="og:type" content="article" />
+            <meta property="og:title" content="How to Create Your Whatsapp Template Messages in Anantya.ai" />
             <meta property="og:description" content="Learn all the important steps to make WhatsApp Template Messages and get them approved by WhatsApp in a single guide!" />
-            <meta property="og:url" content="https://anantya.ai/how-to-create-whatsapp-templete-messages-in-anantya.ai" />
+            <meta property="og:url" content="https://anantya.ai/how-to-create-whatsapp-templete-messages-in-anantya-ai" />
             <meta property="og:site_name" content="anantya.ai" />
-            <meta property="og:image" content="https://anantya.ai/assets/img/submit-a-new-whatsApp-template-message.webp" />
-            <link rel="canonical" href="https://anantya.ai/how-to-create-whatsapp-templete-messages-in-anantya.ai" />
+            <meta property="og:image" content="https://ik.imagekit.io/cloy701fl/images/anantya-home-page.webp" />
+            <link rel="canonical" href="https://anantya.ai/how-to-create-whatsapp-templete-messages-in-anantya-ai" />
             <meta name="author" content="Anantya.ai" />
 
-            {/* JSON-LD Schema Markup */}
+            {/* JSON-LD structured data */}
             <script type="application/ld+json">
-                {JSON.stringify({
+                {`
+                {
                     "@context": "https://schema.org",
+                    "@type": "Organization",
+                    "name": "Anantya.ai",
+                    "alternateName": "Conversational Engagement Platform for Businesses | Anantya.ai",
+                    "url": "https://anantya.ai/",
+                    "logo": "https://ik.imagekit.io/cloy701fl/images/logo.webp",
+                    "contactPoint": {
+                        "@type": "ContactPoint",
+                        "telephone": "+971565480273",
+                        "contactType": "sales",
+                        "areaServed": ["AE", "SA", "BH", "IN"],
+                        "availableLanguage": "en"
+                    },
+                    "sameAs": [
+                        "https://www.facebook.com/anantyaai",
+                        "https://www.instagram.com/anantya.ai",
+                        "https://www.youtube.com/@Anantyaai",
+                        "https://www.linkedin.com/company/anantya-ai",
+                        "https://www.pinterest.com/anantyaai"
+                    ]
+                }
+                `}
+            </script>
+
+            <script type="application/ld+json">
+                {`
+                {
+                    "@context": "https://schema.org/",
                     "@type": "WebPage",
-                    "name": "How to Create Your Whatsapp Template Messages in Anantya.ai | Knowledge Center",
-                    "description": "Learn all the important steps to make WhatsApp Template Messages and get them approved by WhatsApp in a single guide!",
-                    "url": "https://anantya.ai/how-to-create-whatsapp-templete-messages-in-anantya.ai"
-                })}
+                    "@id": "#WebPage",
+                    "url": "https://anantya.ai/how-to-create-whatsapp-templete-messages-in-anantya-ai",
+                    "name": "How to Create Your Whatsapp Template Messages in Anantya.ai"
+                }
+                `}
+            </script>
+
+            <script type="application/ld+json">
+                {`
+                {
+                    "@context": "https://schema.org/",
+                    "@type": "BreadcrumbList",
+                    "itemListElement": [
+                        {
+                            "@type": "ListItem",
+                            "position": 1,
+                            "name": "Homepage",
+                            "item": "https://anantya.ai"
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 2,
+                            "name": "How to Create Your Whatsapp Template Messages in Anantya.ai",
+                            "item": "https://anantya.ai/how-to-create-whatsapp-templete-messages-in-anantya-ai"
+                        }
+                    ]
+                }
+                `}
             </script>
         </Helmet>
     <div className="page-content">

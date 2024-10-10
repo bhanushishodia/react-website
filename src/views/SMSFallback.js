@@ -21,37 +21,92 @@ const SMSFallback = () => {
     <div>
       <div>
       <Helmet>
+        {/* Alternate Links */}
+        <link rel="alternate" hrefLang="x-default" href="https://anantya.ai/sms-fallback" />
+        <link rel="alternate" hreflang="en-ae" href="https://anantya.ai/sms-fallback" />
+        <link rel="alternate" hreflang="en-sa" href="https://anantya.ai/sms-fallback" />
+        <link rel="alternate" hreflang="en-bh" href="https://anantya.ai/sms-fallback" />
+        <link rel="alternate" hreflang="en-in" href="https://anantya.ai/sms-fallback" />
+        <link rel="alternate" hreflang="en" href="https://anantya.ai/sms-fallback" />
+
+        {/* Title and Meta Tags */}
         <title>Whatsapp SMS Fallback | Fallback SMS Service | Anantya.ai</title>
-        <meta name="keywords" content="SMS Fallback, sms fallback, fallback sms, text message fallback, whatsapp fallback sms" />
         <meta name="robots" content="index,follow" />
+        <meta name="title" content="Whatsapp SMS Fallback | Fallback SMS Service | Anantya.ai" />
         <meta name="description" content="Enhance Customer Service with SMS Fallback - fallback sms is a reliable backup for internet-based channels. Signup now." />
-        <meta property="og:title" content="Whatsapp SMS Fallback | Fallback SMS Service | Anantya.ai" />
+        <meta name="keywords" content="sms fallback, fallback sms, text message fallback, whatsapp fallback sms" />
         <meta property="og:type" content="article" />
+        <meta property="og:locale" content="en_AE" />
+        <meta property="og:locale" content="en_SA" />
+        <meta property="og:locale" content="en_BH" />
+        <meta property="og:locale" content="en_IN" />
+        <meta property="og:title" content="Whatsapp SMS Fallback | Fallback SMS Service | Anantya.ai" />
         <meta property="og:description" content="Enhance Customer Service with SMS Fallback - fallback sms is a reliable backup for internet-based channels. Signup now." />
         <meta property="og:url" content="https://anantya.ai/sms-fallback" />
         <meta property="og:site_name" content="anantya.ai" />
-        <meta property="og:image" content="https://anantya.ai/assets/img/whatsapp-fallback-sms-home-page.webp" />
+        <meta property="og:image" content="https://ik.imagekit.io/cloy701fl/images/whatsapp-fallback-sms-home-page.webp" />
         <link rel="canonical" href="https://anantya.ai/sms-fallback" />
         <meta name="author" content="Anantya.ai" />
+
+        {/* JSON-LD Scripts */}
         <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-              {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Home",
-                "item": "https://anantya.ai"
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Anantya.ai",
+              "alternateName": "Conversational Engagement Platform for Businesses | Anantya.ai",
+              "url": "https://anantya.ai/",
+              "logo": "https://ik.imagekit.io/cloy701fl/images/logo.webp",
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+971565480273",
+                "contactType": "sales",
+                "areaServed": ["AE", "SA", "BH", "IN"],
+                "availableLanguage": "en"
               },
-              {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "Fallback SMS",
-                "item": "https://anantya.ai/sms-fallback"
-              }
-            ]
-          })}
+              "sameAs": [
+                "https://www.facebook.com/anantyaai",
+                "https://www.instagram.com/anantya.ai",
+                "https://www.youtube.com/@Anantyaai",
+                "https://www.linkedin.com/company/anantya-ai",
+                "https://www.pinterest.com/anantyaai"
+              ]
+            }
+          `}
+        </script>
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org/",
+              "@type": "WebPage",
+              "@id": "#WebPage",
+              "url": "https://anantya.ai/sms-fallback",
+              "name": "Whatsapp SMS Fallback | Fallback SMS Service | Anantya.ai"
+            }
+          `}
+        </script>
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "https://anantya.ai"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "SMS Fallback",
+                  "item": "https://anantya.ai/sms-fallback"
+                }
+              ]
+            }
+          `}
         </script>
       </Helmet>
       </div>

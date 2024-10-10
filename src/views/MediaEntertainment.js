@@ -78,145 +78,92 @@ const MediaEntertainment = () => {
   return (
     <div>
       <Helmet>
-        <title>
-          WhatsApp API & Chatbot for Media and Entertainment Industry
-        </title>
-        <meta name="robots" content="index,follow" />
-        <meta
-          name="description"
-          content="Leverage WhatsApp Chatbot power to engage audiences in the media and entertainment industry. Anantya.ai enables seamless communication and content distribution."
-        />
-        <meta
-          property="og:title"
-          content="WhatsApp API & Chatbot for Media and Entertainment Industry"
-        />
-        <meta property="og:type" content="article" />
-        <meta
-          property="og:description"
-          content="Leverage WhatsApp Chatbot power to engage audiences in the media and entertainment industry. Anantya.ai enables seamless communication and content distribution."
-        />
-        <meta
-          property="og:url"
-          content="https://anantya.ai/media-entertainment-industry"
-        />
-        <meta property="og:site_name" content="anantya.ai" />
-        <meta
-          property="og:image"
-          content="https://anantya.ai/assets/img/media/transforming-engagement.webp"
-        />
-        <link
-          rel="canonical"
-          href="https://anantya.ai/media-entertainment-industry"
-        />
-        <meta name="author" content="Anantya" />
+      <link rel="alternate" hrefLang="x-default" href="https://anantya.ai/media-entertainment-industry" />
+      <link rel="alternate" hreflang="en-ae" href="https://anantya.ai/media-entertainment-industry" />
+      <link rel="alternate" hreflang="en-sa" href="https://anantya.ai/media-entertainment-industry" />
+      <link rel="alternate" hreflang="en-bh" href="https://anantya.ai/media-entertainment-industry" />
+      <link rel="alternate" hreflang="en-in" href="https://anantya.ai/media-entertainment-industry" />
+      <link rel="alternate" hreflang="en" href="https://anantya.ai/media-entertainment-industry" />
 
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            name: "Anantya.ai",
-            alternateName:
-              "Conversational Engagement Platform for Businesses | Anantya.ai",
-            url: "https://anantya.ai/",
-            logo: "https://anantya.ai/assets/img/logo.webp",
-            contactPoint: {
-              "@type": "ContactPoint",
-              telephone: "+971565480273",
-              contactType: "sales",
-              areaServed: ["AE", "SA", "BH"],
-              availableLanguage: "en",
+      <title>WhatsApp API & Chatbot for Media and Entertainment Industry</title>
+      <meta name="robots" content="index,follow" />
+      <meta name="title" content="WhatsApp API & Chatbot for Media and Entertainment Industry" />
+      <meta name="description" content="Leverage WhatsApp Chatbot power to engage audiences in the media and entertainment industry. Anantya.ai enables seamless communication and content distribution." />
+      <meta name="keywords" content="whatsapp business api for media, whatsapp api for media, whatsapp chatbot for media" />
+      <meta property="og:type" content="article" />
+      <meta property="og:locale" content="en_AE" />
+      <meta property="og:locale" content="en_SA" />
+      <meta property="og:locale" content="en_BH" />
+      <meta property="og:locale" content="en_IN" />
+      <meta property="og:title" content="WhatsApp API & Chatbot for Media and Entertainment Industry" />
+      <meta property="og:description" content="Leverage WhatsApp Chatbot power to engage audiences in the media and entertainment industry. Anantya.ai enables seamless communication and content distribution." />
+      <meta property="og:url" content="https://anantya.ai/media-entertainment-industry" />
+      <meta property="og:site_name" content="anantya.ai" />
+      <meta property="og:image" content="https://ik.imagekit.io/cloy701fl/images/transforming-engagement.webp" />
+      <link rel="canonical" href="https://anantya.ai/media-entertainment-industry" />
+      <meta name="author" content="Anantya" />
+
+      <script type="application/ld+json">
+        {`
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Anantya.ai",
+          "alternateName": "Conversational Engagement Platform for Businesses | Anantya.ai",
+          "url": "https://anantya.ai/",
+          "logo": "https://ik.imagekit.io/cloy701fl/images/logo.webp",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+971565480273",
+            "contactType": "sales",
+            "areaServed": ["AE", "SA", "BH", "IN"],
+            "availableLanguage": "en"
+          },
+          "sameAs": [
+            "https://www.facebook.com/anantyaai",
+            "https://www.instagram.com/anantya.ai",
+            "https://www.youtube.com/@Anantyaai",
+            "https://www.linkedin.com/company/anantya-ai",
+            "https://www.pinterest.com/anantyaai"
+          ]
+        }
+        `}
+      </script>
+
+      <script type="application/ld+json">
+        {`
+        {
+          "@context": "https://schema.org/",
+          "@type": "WebPage",
+          "@id": "#WebPage",
+          "url": "https://anantya.ai/media-entertainment-industry",
+          "name": "WhatsApp API & Chatbot for Media and Entertainment Industry"
+        }
+        `}
+      </script>
+
+      <script type="application/ld+json">
+        {`
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Homepage",
+              "item": "https://anantya.ai"
             },
-            sameAs: [
-              "https://www.facebook.com/anantyaai",
-              "https://www.instagram.com/anantya.ai",
-              "https://www.youtube.com/@Anantyaai",
-              "https://www.linkedin.com/company/anantya-ai",
-              "https://www.pinterest.com/anantyaai",
-            ],
-          })}
-        </script>
-
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@graph": [
-              {
-                "@type": "WebPage",
-                name: "WhatsApp API & Chatbot for Media and Entertainment Industry",
-                description:
-                  "Leverage WhatsApp Chatbot power to engage audiences in the media and entertainment industry. Anantya.ai enables seamless communication and content distribution.",
-              },
-              {
-                "@type": "WebSite",
-                name: "Anantya",
-                alternateName: "anantya.ai",
-                url: "https://anantya.ai/",
-              },
-            ],
-          })}
-        </script>
-
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            itemListElement: [
-              {
-                "@type": "ListItem",
-                position: 1,
-                name: "Home",
-                item: "https://anantya.ai",
-              },
-              {
-                "@type": "ListItem",
-                position: 2,
-                name: "Media and Entertainment",
-                item: "https://anantya.ai/media-entertainment-industry",
-              },
-            ],
-          })}
-        </script>
-
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            mainEntity: [
-              {
-                "@type": "Question",
-                name: "What Is The WhatsApp Business API?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "The WhatsApp Business API is a communication platform that allows businesses in the media and entertainment industry to connect with their audience, deliver personalized content, and provide customer support through the WhatsApp messaging app.",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "How Can The Media And Entertainment Industry Benefit From Using The WhatsApp Business API?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "By leveraging the WhatsApp Business API, the industry can enhance audience engagement by sending timely updates, promoting new releases, and providing personalized content recommendations. It also enables efficient customer support, allowing users to interact with businesses directly through WhatsApp.",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "What Are The Advantages Of Integrating Chatbots With The WhatsApp Business API?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "Chatbots integrated with the WhatsApp Business API can automate responses to frequently asked questions, provide instant assistance, and handle customer queries at any time of the day. They enhance efficiency, reduce response times, and offer a seamless conversational experience for users.",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "How Does The Verified Green Tick On WhatsApp Benefit The Media And Entertainment Industry?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "The verified green tick is a symbol of authenticity and trust. When businesses in the media and entertainment industry have a verified green tick on their WhatsApp account, it establishes credibility with users, assuring them that they are interacting with a legitimate and verified entity.",
-                },
-              },
-            ],
-          })}
-        </script>
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Media and Entertainment",
+              "item": "https://anantya.ai/media-entertainment-industry"
+            }
+          ]
+        }
+        `}
+      </script>
       </Helmet>
       <div className="container py-5 mt-5">
         <div className="content">

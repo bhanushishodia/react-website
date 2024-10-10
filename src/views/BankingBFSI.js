@@ -16,7 +16,7 @@ import { getImage } from '../utils/getImage'; // Adjust the path to your utility
 const downloadEbookImage = getImage('download-ebook.png'); // Adjust path as needed
 const whatsappScannerImg = getImage('wa.link_3dzezc.png'); // Adjust path as needed
 
-const educationImg = getImage('transform-education-with-whatsapp.webp'); // Adjust the path if necessary
+const educationImg = getImage('exceptional-customer-experience.webp'); // Adjust the path if necessary
 const defaultImage = getImage('empowering-fin-tech.webp'); // Adjust the path if necessary
 const hoverImage1 = getImage('empowering-fin-tech.webp'); // Adjust the path if necessary
 const hoverImage2 = getImage('convey-transactional-notifications.webp'); // Adjust the path if necessary
@@ -74,21 +74,32 @@ const BankingBFSI = () => {
   };
   return (
     <div>
-       <Helmet>
+   <Helmet>
+      <link rel="alternate" hrefLang="x-default" href="https://anantya.ai/banking-industry" />
+      <link rel="alternate" hreflang="en-ae" href="https://anantya.ai/banking-industry" />
+      <link rel="alternate" hreflang="en-sa" href="https://anantya.ai/banking-industry" />
+      <link rel="alternate" hreflang="en-bh" href="https://anantya.ai/banking-industry" />
+      <link rel="alternate" hreflang="en-in" href="https://anantya.ai/banking-industry" />
+      <link rel="alternate" hreflang="en" href="https://anantya.ai/banking-industry" />
+
       <title>Banking and Finance Whatsapp Chatbots | Secure WhatsApp API</title>
-      <meta name="keywords" content="Whatsapp chatbot for Banking,Chatbot for Banking,conversational ai for banking" />
       <meta name="robots" content="index,follow" />
+      <meta name="title" content="Banking and Finance Whatsapp Chatbots | Secure WhatsApp API" />
       <meta name="description" content="Use a automated Whatsapp Chatbot for banking industry to simplify the communication process, make customer interactions fast and secure with Anantya.ai." />
-      <meta property="og:title" content="Banking and Finance Whatsapp Chatbots | Secure WhatsApp API" />
+      <meta name="keywords" content="Whatsapp chatbot for Banking,Chatbot for Banking,conversational ai for banking" />
       <meta property="og:type" content="article" />
+      <meta property="og:locale" content="en_AE" />
+      <meta property="og:locale" content="en_SA" />
+      <meta property="og:locale" content="en_BH" />
+      <meta property="og:locale" content="en_IN" />
+      <meta property="og:title" content="Banking and Finance Whatsapp Chatbots | Secure WhatsApp API" />
       <meta property="og:description" content="Use a automated Whatsapp Chatbot for banking industry to simplify the communication process, make customer interactions fast and secure with Anantya.ai." />
       <meta property="og:url" content="https://anantya.ai/banking-industry" />
       <meta property="og:site_name" content="anantya.ai" />
-      <meta property="og:image" content="https://anantya.ai/assets/img/bfsi/exceptional-customer-experience.webp" />
+      <meta property="og:image" content="https://ik.imagekit.io/cloy701fl/images/exceptional-customer-experience.webp" />
       <link rel="canonical" href="https://anantya.ai/banking-industry" />
       <meta name="author" content="Anantya" />
-      
-      {/* JSON-LD for Organization */}
+
       <script type="application/ld+json">
         {JSON.stringify({
           "@context": "https://schema.org",
@@ -96,12 +107,12 @@ const BankingBFSI = () => {
           "name": "Anantya.ai",
           "alternateName": "Conversational Engagement Platform for Businesses | Anantya.ai",
           "url": "https://anantya.ai/",
-          "logo": "https://anantya.ai/assets/img/logo.webp",
+          "logo": "https://ik.imagekit.io/cloy701fl/images/logo.webp",
           "contactPoint": {
             "@type": "ContactPoint",
             "telephone": "+971565480273",
             "contactType": "sales",
-            "areaServed": ["AE", "SA", "BH"],
+            "areaServed": ["AE", "SA", "BH", "IN"],
             "availableLanguage": "en"
           },
           "sameAs": [
@@ -114,27 +125,16 @@ const BankingBFSI = () => {
         })}
       </script>
 
-      {/* JSON-LD for WebPage and WebSite */}
       <script type="application/ld+json">
         {JSON.stringify({
-          "@context": "https://schema.org",
-          "@graph": [
-            {
-              "@type": "WebPage",
-              "name": "Banking and Finance Whatsapp Chatbots | Secure WhatsApp API",
-              "description": "Use a automated Whatsapp Chatbot for banking industry to simplify the communication process, make customer interactions fast and secure with Anantya.ai."
-            },
-            {
-              "@type": "WebSite",
-              "name": "Anantya",
-              "alternateName": "anantya.ai",
-              "url": "https://anantya.ai/"
-            }
-          ]
+          "@context": "https://schema.org/",
+          "@type": "WebPage",
+          "@id": "#WebPage",
+          "url": "https://anantya.ai/banking-industry",
+          "name": "Banking and Finance Whatsapp Chatbots | Secure WhatsApp API"
         })}
       </script>
 
-      {/* JSON-LD for BreadcrumbList */}
       <script type="application/ld+json">
         {JSON.stringify({
           "@context": "https://schema.org",
@@ -143,7 +143,7 @@ const BankingBFSI = () => {
             {
               "@type": "ListItem",
               "position": 1,
-              "name": "Home",
+              "name": "Homepage",
               "item": "https://anantya.ai"
             },
             {
@@ -151,48 +151,6 @@ const BankingBFSI = () => {
               "position": 2,
               "name": "Banking & BFSI",
               "item": "https://anantya.ai/banking-industry"
-            }
-          ]
-        })}
-      </script>
-
-      {/* JSON-LD for FAQPage */}
-      <script type="application/ld+json">
-        {JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "FAQPage",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "Q1: What Is A Finance Or Banking Chatbot?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "A finance or banking chatbot encompasses a spectrum of capabilities, from straightforward, predefined journeys for common queries to sophisticated AI-driven conversations. These chatbots are trained on industry-specific data and scenarios within the banking, financial services, and insurance (BFSI) sector."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "What Are The Benefits Of A Finance Chatbot?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Intuitive and Convenient: A finance chatbot offers customers an intuitive and self-serve channel, available 24/7, for transactions, advice, and product exploration. Wide Engagement: With conversational AI, financial service providers can engage customers across 30+ messaging channels, catering to commerce, marketing, and support needs. Meaningful Digital Experiences: Deliver meaningful digital experiences to customers at scale, ensuring easy onboarding, accelerated transactions, simplified service requests, and elevated support quality."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Can BFSI Companies Leverage WhatsApp For Marketing And Promotions?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Yes, WhatsApp can be utilized for marketing and promotional activities in the BFSI industry. Companies can share updates about new products, exclusive offers, investment opportunities, and financial tips to engage customers and nurture leads. However, it is important to follow WhatsApp's policies and guidelines for marketing purposes."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "What Are Some Best Practices For BFSI Companies Utilizing WhatsApp?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "To maximize the benefits of WhatsApp, BFSI companies should focus on providing personalized customer experiences, ensuring timely responses to customer queries, maintaining data privacy, leveraging automation for routine tasks, and continuously adapting to customer needs and preferences."
-              }
             }
           ]
         })}

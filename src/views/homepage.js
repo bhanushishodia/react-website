@@ -78,44 +78,55 @@ const Homepage = () => {
     <div className="main-content">
       <div>
       <Helmet>
-        <title>Conversational Engagement Platform for Businesses | Anantya.ai</title>
-        <meta name="robots" content="index,follow" />
-        <meta name="description" content="Anantya.ai is your Smartest Conversational Engagement Platform for Marketing, Commerce and Support & get every channel on a single platform." />
-        <meta name="keywords" content="conversational engagement platform, conversational ai platform for customer engagement, conversational customer engagement software, conversational engagement software, whatsApp official api provider, whatsApp business solutions, whatsapp business solution provider, whatsapp business api, whatsapp api, Whatsapp for Business, whatsapp bulk message sender, whatsapp bulk message software, bulk whatsapp sender software, mass whatsapp messaging, whatsapp bulk sms sender, whatsapp bulk sms software, api of whatsapp, Whatsapp Api for Business" />
-        <meta property="og:title" content="Conversational Engagement Platform for Businesses | Anantya.ai" />
-        <meta property="og:type" content="website" />
-        <meta property="og:description" content="Anantya.ai is your Smartest Conversational Engagement Platform for Marketing, Commerce and Support & get every channel on a single platform." />
-        <meta property="og:url" content="https://anantya.ai" />
-        <meta property="og:site_name" content="anantya.ai" />
-        <meta property="og:image" content="https://anantya.ai/assets/img/home/Home%20page%20Graphics.webp" />
-        <link rel="canonical" href="https://anantya.ai" />
-        <meta name="author" content="Anantya" />
-        <script type="application/ld+json">
-          {`
-            {
-              "@context": "https://schema.org",
-              "@type": "Organization",
-              "name": "Anantya.ai",
-              "alternateName": "Conversational Engagement Platform for Businesses | Anantya.ai",
-              "url": "https://anantya.ai/",
-              "logo": "https://anantya.ai/assets/img/logo.webp",
-              "contactPoint": {
-                "@type": "ContactPoint",
-                "telephone": "+971565480273",
-                "contactType": "sales",
-                "areaServed": ["AE","SA","BH"],
-                "availableLanguage": "en"
-              },
-              "sameAs": [
-                "https://www.facebook.com/anantyaai",
-                "https://www.instagram.com/anantya.ai",
-                "https://www.youtube.com/@Anantyaai",
-                "https://www.linkedin.com/company/anantya-ai",
-                "https://www.pinterest.com/anantyaai"
-              ]
-            }
-          `}
-        </script>
+      <link rel="alternate" hrefLang="x-default" href="https://anantya.ai" />
+                <link rel="alternate" hreflang="en-ae" href="https://anantya.ai" />
+                <link rel="alternate" hreflang="en-sa" href="https://anantya.ai" />
+                <link rel="alternate" hreflang="en-bh" href="https://anantya.ai" />
+                <link rel="alternate" hreflang="en-in" href="https://anantya.ai" />
+                <link rel="alternate" hreflang="en" href="https://anantya.ai" />
+                <title>Conversational Engagement Platform for Businesses | Anantya.ai</title>
+                <meta name="robots" content="index,follow" />
+                <meta name="title" content="Conversational Engagement Platform for Businesses | Anantya.ai" />
+                <meta name="description" content="Anantya.ai is your Smartest Conversational Engagement Platform for Marketing, Commerce and Support & get every channel on a single platform." />
+                <meta name="keywords" content="conversational engagement platform, conversational ai platform for customer engagement, conversational customer engagement software, conversational engagement software, whatsApp official api provider, whatsApp business solutions, whatsapp business solution provider, whatsapp business api, whatsapp api, Whatsapp for Business, whatsapp bulk message sender, whatsapp bulk message software, bulk whatsapp sender software, mass whatsapp messaging, whatsapp bulk sms sender, whatsapp bulk sms software, api of whatsapp, Whatsapp Api for Business" />
+                <meta property="og:type" content="article" />
+                <meta property="og:locale" content="en_AE" />
+                <meta property="og:locale" content="en_SA" />
+                <meta property="og:locale" content="en_BH" />
+                <meta property="og:locale" content="en_IN" />
+                <meta property="og:title" content="Conversational Engagement Platform for Businesses | Anantya.ai" />
+                <meta property="og:description" content="Anantya.ai is your Smartest Conversational Engagement Platform for Marketing, Commerce and Support & get every channel on a single platform." />
+                <meta property="og:url" content="https://anantya.ai" />
+                <meta property="og:site_name" content="anantya.ai" />
+                <meta property="og:image" content="https://ik.imagekit.io/cloy701fl/images/anantya-home-page.webp" />
+                <link rel="canonical" href="https://anantya.ai" />
+                <meta name="author" content="Anantya" />
+                <script type="application/ld+json">
+                    {`
+                    {
+                      "@context": "https://schema.org",
+                      "@type": "Organization",
+                      "name": "Anantya.ai",
+                      "alternateName": "Conversational Engagement Platform for Businesses | Anantya.ai",
+                      "url": "https://anantya.ai/",
+                      "logo": "https://ik.imagekit.io/cloy701fl/images/logo.webp",
+                      "contactPoint": {
+                        "@type": "ContactPoint",
+                        "telephone": "+971565480273",
+                        "contactType": "sales",
+                        "areaServed": ["AE", "SA", "BH", "IN"],
+                        "availableLanguage": "en"
+                      },
+                      "sameAs": [
+                        "https://www.facebook.com/anantyaai",
+                        "https://www.instagram.com/anantya.ai",
+                        "https://www.youtube.com/@Anantyaai",
+                        "https://www.linkedin.com/company/anantya-ai",
+                        "https://www.pinterest.com/anantyaai"
+                      ]
+                    }
+                    `}
+                </script>
       </Helmet>
       
     </div>

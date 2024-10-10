@@ -69,118 +69,97 @@ const submitFormAndOpenPDF = (event) => {
   };
   return (
     <div>
-        <Helmet>
-            <title>Whatsapp Chatbot for Healthcare: Transform Communication with WhatsApp</title>
-            <meta name="keywords" content="whatsapp chatbot for healthcare,Whatsapp for Healthcare,Whatsapp Business API for healthcare,whatsapp business for healthcare,conversational ai in healthcare,conversational ai for healthcare,healthcare ai chatbot" />
-            <meta name="robots" content="index,follow" />
-            <meta name="description" content="Improve patient communication and healthcare services using Anantya AI's WhatsApp Chatbot Services. Secure, reliable, and efficient communication for the healthcare industry." />
-            <meta property="og:title" content="Whatsapp Chatbot for Healthcare: Transform Communication with WhatsApp" />
-            <meta property="og:type" content="article" />
-            <meta property="og:description" content="Improve patient communication and healthcare services using Anantya AI's WhatsApp Chatbot Services. Secure, reliable, and efficient communication for the healthcare industry." />
-            <meta property="og:url" content="https://anantya.ai/healthcare-industry" />
-            <meta property="og:site_name" content="anantya.ai" />
-            <meta property="og:image" content="https://anantya.ai/assets/img/health/keep-your-finger-on-your-customer%E2%80%99s.webp" />
-            <link rel="canonical" href="https://anantya.ai/healthcare-industry" />
-            <meta name="author" content="Anantya" />
+       <Helmet>
+        <link rel="alternate" hrefLang="x-default" href="https://anantya.ai/healthcare-industry" />
+        <link rel="alternate" hreflang="en-ae" href="https://anantya.ai/healthcare-industry" />
+        <link rel="alternate" hreflang="en-sa" href="https://anantya.ai/healthcare-industry" />
+        <link rel="alternate" hreflang="en-bh" href="https://anantya.ai/healthcare-industry" />
+        <link rel="alternate" hreflang="en-in" href="https://anantya.ai/healthcare-industry" />
+        <link rel="alternate" hreflang="en" href="https://anantya.ai/healthcare-industry" />
 
-            <script type="application/ld+json">
-                {JSON.stringify({
-                    "@context": "https://schema.org",
-                    "@type": "Organization",
-                    "name": "Anantya.ai",
-                    "alternateName": "Conversational Engagement Platform for Businesses | Anantya.ai",
-                    "url": "https://anantya.ai/",
-                    "logo": "https://anantya.ai/assets/img/logo.webp",
-                    "contactPoint": {
-                        "@type": "ContactPoint",
-                        "telephone": "+971565480273",
-                        "contactType": "sales",
-                        "areaServed": ["AE", "SA", "BH"],
-                        "availableLanguage": "en"
-                    },
-                    "sameAs": [
-                        "https://www.facebook.com/anantyaai",
-                        "https://www.instagram.com/anantya.ai",
-                        "https://www.youtube.com/@Anantyaai",
-                        "https://www.linkedin.com/company/anantya-ai",
-                        "https://www.pinterest.com/anantyaai"
-                    ]
-                })}
-            </script>
+        <title>Whatsapp Chatbot for Healthcare: Transform Communication with WhatsApp</title>
+        <meta name="robots" content="index,follow" />
+        <meta name="title" content="Whatsapp Chatbot for Healthcare: Transform Communication with WhatsApp" />
+        <meta
+          name="description"
+          content="Improve patient communication and healthcare services using Anantya AI's WhatsApp Chatbot Services. Secure, reliable, and efficient communication for the healthcare industry."
+        />
+        <meta
+          name="keywords"
+          content="whatsapp chatbot for healthcare, Whatsapp for Healthcare, Whatsapp Business API for healthcare, whatsapp business for healthcare, conversational ai in healthcare, conversational ai for healthcare, healthcare ai chatbot"
+        />
+        <meta property="og:type" content="article" />
+        <meta property="og:locale" content="en_AE" />
+        <meta property="og:locale" content="en_SA" />
+        <meta property="og:locale" content="en_BH" />
+        <meta property="og:locale" content="en_IN" />
+        <meta property="og:title" content="Whatsapp Chatbot for Healthcare: Transform Communication with WhatsApp" />
+        <meta
+          property="og:description"
+          content="Improve patient communication and healthcare services using Anantya AI's WhatsApp Chatbot Services. Secure, reliable, and efficient communication for the healthcare industry."
+        />
+        <meta property="og:url" content="https://anantya.ai/healthcare-industry" />
+        <meta property="og:site_name" content="anantya.ai" />
+        <meta property="og:image" content="https://ik.imagekit.io/cloy701fl/images/keep-your-finger-on-your-customer_s.webp" />
+        <link rel="canonical" href="https://anantya.ai/healthcare-industry" />
+        <meta name="author" content="Anantya" />
 
-            <script type="application/ld+json">
-                {JSON.stringify({
-                    "@context": "https://schema.org",
-                    "@graph": [
-                        {
-                            "@type": "WebPage",
-                            "name": "Whatsapp Chatbot for Healthcare: Transform Communication with WhatsApp",
-                            "description": "Improve patient communication and healthcare services using Anantya AI's WhatsApp Chatbot Services. Secure, reliable, and efficient communication for the healthcare industry."
-                        },
-                        {
-                            "@type": "WebSite",
-                            "name": "Anantya",
-                            "alternateName": "anantya.ai",
-                            "url": "https://anantya.ai/"
-                        }
-                    ]
-                })}
-            </script>
-
-            <script type="application/ld+json">
-                {JSON.stringify({
-                    "@context": "https://schema.org",
-                    "@type": "BreadcrumbList",
-                    "itemListElement": [
-                        {
-                            "@type": "ListItem",
-                            "position": 1,
-                            "name": "Home",
-                            "item": "https://anantya.ai"
-                        },
-                        {
-                            "@type": "ListItem",
-                            "position": 2,
-                            "name": "Healthcare",
-                            "item": "https://anantya.ai/healthcare-industry"
-                        }
-                    ]
-                })}
-            </script>
-
-            <script type="application/ld+json">
-                {JSON.stringify({
-                    "@context": "https://schema.org",
-                    "@type": "FAQPage",
-                    "mainEntity": [
-                        {
-                            "@type": "Question",
-                            "name": "Are There Any Limitations Or Restrictions For Using WhatsApp Business API In Healthcare?",
-                            "acceptedAnswer": {
-                                "@type": "Answer",
-                                "text": "Yes, WhatsApp has certain guidelines and policies that businesses must adhere to while using WhatsApp Business API. These include restrictions on sending promotional content, complying with opt-in/opt-out regulations, and respecting user privacy."
-                            }
-                        },
-                        {
-                            "@type": "Question",
-                            "name": "Is WhatsApp Business API Secure For Handling Patient Data?",
-                            "acceptedAnswer": {
-                                "@type": "Answer",
-                                "text": "Yes, WhatsApp Business API is designed with security and privacy in mind. It offers end-to-end encryption for messages, ensuring that patient data and communications remain secure."
-                            }
-                        },
-                        {
-                            "@type": "Question",
-                            "name": "How Can WhatsApp Business API Benefit The Healthcare Industry?",
-                            "acceptedAnswer": {
-                                "@type": "Answer",
-                                "text": "WhatsApp Business API offers several benefits for the healthcare industry. It enables seamless communication between healthcare providers and patients, facilitates appointment scheduling, provides real-time updates and reminders, offers personalized support, and enhances overall patient engagement and satisfaction."
-                            }
-                        }
-                    ]
-                })}
-            </script>
-        </Helmet>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Anantya.ai",
+            "alternateName": "Conversational Engagement Platform for Businesses | Anantya.ai",
+            "url": "https://anantya.ai/",
+            "logo": "https://ik.imagekit.io/cloy701fl/images/logo.webp",
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+971565480273",
+              "contactType": "sales",
+              "areaServed": ["AE", "SA", "BH", "IN"],
+              "availableLanguage": "en",
+            },
+            "sameAs": [
+              "https://www.facebook.com/anantyaai",
+              "https://www.instagram.com/anantya.ai",
+              "https://www.youtube.com/@Anantyaai",
+              "https://www.linkedin.com/company/anantya-ai",
+              "https://www.pinterest.com/anantyaai",
+            ],
+          })}
+        </script>
+        
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org/",
+            "@type": "WebPage",
+            "@id": "#WebPage",
+            "url": "https://anantya.ai/healthcare-industry",
+            "name": "Whatsapp Chatbot for Healthcare: Transform Communication with WhatsApp",
+          })}
+        </script>
+        
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Homepage",
+                "item": "https://anantya.ai",
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Healthcare",
+                "item": "https://anantya.ai/healthcare-industry",
+              },
+            ],
+          })}
+        </script>
+      </Helmet>
       <div className="container py-5 mt-5">
         <div className="content ">
           <div className="row align-items-center">

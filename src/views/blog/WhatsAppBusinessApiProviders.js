@@ -4,134 +4,144 @@ import WhatsAppWidget from '../../components/common/WhatsAppWidget';
 import { Helmet } from 'react-helmet';
 import { getImage } from '../../utils/getImage'; // Correct path to utility
 // Fetching images dynamically using getImage function
-const whatsappImage = getImage('whatsapp-business-api-providers-2024.webp');
-const watiImage = getImage('wati.webp');
-const interaktImg = getImage('interakt.webp');
-const anantyaImg = getImage('whatsapp-business-api-provider-anantya-ai.webp');
-const ctaImg = getImage('cta.webp');
+const whatsappImage = getImage('/blog/whatsapp-business-api-providers-2024.webp');
+const watiImage = getImage('/blog/wati.webp');
+const interaktImg = getImage('/blog/interakt.webp');
+const anantyaImg = getImage('/blog/whatsapp-business-api-provider-anantya-ai.webp');
+const ctaImg = getImage('/blog/cta.webp');
 const WhatsAppBusinessApiProviders = () => {
   return (
     <>
-    <Helmet>
-      {/* anup meta tags and schema */}
-      <title>Top WhatsApp Business API Providers in 2024</title>
-      <meta name="robots" content="index,follow" />
-      <meta
-        name="description"
-        content="Discover the best WhatsApp Business API providers in 2024. Choose the right partner for seamless communication and business growth. Easy setup, reliable support!"
-      />
-      <meta
-        name="keywords"
-        content="whatsapp business solution provider, whatsapp api provider, best whatsapp business api provider, whatsapp api service provider, official whatsapp business solution provider, whatsapp business api providers, whatsapp service provider, whatsapp business solution provider list"
-      />
-      <meta property="og:type" content="article" />
-      <meta property="og:locale" content="en_IN" />
-      <meta property="og:locale" content="en_AE" />
-      <meta property="og:locale" content="en_SA" />
-      <meta property="og:locale" content="en_BH" />
-      <meta property="og:title" content="Top WhatsApp Business API Providers in 2024" />
-      <meta
-        property="og:description"
-        content="Discover the best WhatsApp Business API providers in 2024. Choose the right partner for seamless communication and business growth. Easy setup, reliable support!"
-      />
-      <meta property="og:url" content="https://anantya.ai/whatsapp-business-api-providers" />
-      <meta property="og:site_name" content="anantya.ai" />
-      <meta
-        property="og:image"
-        content="https://anantya.ai/assets/img/whatsapp-business-api-providers-2024.webp"
-      />
-      <link rel="canonical" href="https://anantya.ai/whatsapp-business-api-providers" />
-      <meta name="author" content="Kiran Yadav" />
+ <Helmet>
+        {/* Alternate links */}
+        <link rel="alternate" hrefLang="x-default" href="https://anantya.ai/blog/whatsapp-business-api-providers" />
+        <link rel="alternate" hreflang="en-ae" href="https://anantya.ai/blog/whatsapp-business-api-providers" />
+        <link rel="alternate" hreflang="en-sa" href="https://anantya.ai/blog/whatsapp-business-api-providers" />
+        <link rel="alternate" hreflang="en-bh" href="https://anantya.ai/blog/whatsapp-business-api-providers" />
+        <link rel="alternate" hreflang="en-in" href="https://anantya.ai/blog/whatsapp-business-api-providers" />
+        <link rel="alternate" hreflang="en" href="https://anantya.ai/blog/whatsapp-business-api-providers" />
 
-      {/* Schema.org JSON-LD for Organization */}
-      <script type="application/ld+json">
-        {`
-        {
-          "@context": "https://schema.org",
-          "@type": "Organization",
-          "name": "anantya.ai",
-          "alternateName": "Conversational Engagement Platform for Businesses | Anantya.ai",
-          "url": "https://anantya.ai",
-          "logo": "https://anantya.ai/assets/img/logo.webp",
-          "contactPoint": {
-            "@type": "ContactPoint",
-            "telephone": "+971565480273",
-            "contactType": "sales",
-            "areaServed": ["IN", "AE", "SA", "BH"],
-            "availableLanguage": ["en"]
-          },
-          "sameAs": [
-            "https://www.facebook.com/anantyaai",
-            "https://www.instagram.com/anantya.ai",
-            "https://www.youtube.com/@Anantyaai",
-            "https://www.linkedin.com/company/anantya-ai",
-            "https://www.pinterest.com/anantyaai"
-          ]
-        }
-        `}
-      </script>
+        {/* Page Title and Meta Tags */}
+        <title>Top WhatsApp Business API Providers in 2024</title>
+        <meta name="robots" content="index,follow" />
+        <meta name="title" content="Top WhatsApp Business API Providers in 2024" />
+        <meta
+          name="description"
+          content="Discover the best WhatsApp Business API providers in 2024. Choose the right partner for seamless communication and business growth. Easy setup, reliable support!"
+        />
+        <meta
+          name="keywords"
+          content="whatsapp business solution provider, whatsapp api provider, best whatsapp business api provider, whatsapp api service provider, official whatsapp business solution provider, whatsapp business api providers, whatsapp service provider, whatsapp business solution provider list"
+        />
+        
+        {/* Open Graph Meta Tags */}
+        <meta property="og:type" content="blog" />
+        <meta property="og:locale" content="en_IN" />
+        <meta property="og:locale" content="en_AE" />
+        <meta property="og:locale" content="en_SA" />
+        <meta property="og:locale" content="en_BH" />
+        <meta property="og:title" content="Top WhatsApp Business API Providers in 2024" />
+        <meta
+          property="og:description"
+          content="Discover the best WhatsApp Business API providers in 2024. Choose the right partner for seamless communication and business growth. Easy setup, reliable support!"
+        />
+        <meta property="og:url" content="https://anantya.ai/blog/whatsapp-business-api-providers" />
+        <meta property="og:site_name" content="anantya.ai" />
+        <meta property="og:image" content="https://ik.imagekit.io/cloy701fl/images//blog/whatsapp-business-api-providers-2024.webp" />
+        <link rel="canonical" href="https://anantya.ai/blog/whatsapp-business-api-providers" />
+        <meta name="author" content="Kiran Yadav" />
 
-      {/* Schema.org JSON-LD for Blog Posting */}
-      <script type="application/ld+json">
-        {`
-        {
-          "@context": "https://schema.org",
-          "@type": "BlogPosting",
-          "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": "https://anantya.ai/whatsapp-business-api-providers"
-          },
-          "headline": "Top WhatsApp Business API Providers in 2024",
-          "description": "Discover the best WhatsApp Business API providers in 2024. Choose the right partner for seamless communication and business growth. Easy setup, reliable support!",
-          "image": "https://anantya.ai/assets/img/whatsapp-business-api-providers-2024.webp",
-          "author": {
+        {/* JSON-LD Structured Data for Organization */}
+        <script type="application/ld+json">
+          {`
+          {
+            "@context": "https://schema.org",
             "@type": "Organization",
-            "name": "Anantya.ai",
+            "name": "anantya.ai",
+            "alternateName": "Conversational Engagement Platform for Businesses | Anantya.ai",
             "url": "https://anantya.ai",
-            "areaServed": ["IN", "AE", "SA", "BH"]
-          },
-          "publisher": {
-            "@type": "Organization",
-            "name": "Anantya.ai",
-            "logo": {
-              "@type": "ImageObject",
-              "url": "https://anantya.ai/assets/img/logo.webp"
-            }
-          },
-          "datePublished": "2024-09-10"
-        }
-        `}
-      </script>
+            "logo": "https://ik.imagekit.io/cloy701fl/images/logo.webp",
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+971565480273",
+              "contactType": "sales",
+              "areaServed": ["IN","AE","SA","BH"],
+              "availableLanguage": ["en"]
+            },
+            "sameAs": [
+              "https://www.facebook.com/anantyaai",
+              "https://www.instagram.com/anantya.ai",
+              "https://www.youtube.com/@Anantyaai",
+              "https://www.linkedin.com/company/anantya-ai",
+              "https://www.pinterest.com/anantyaai"
+            ]
+          }
+          `}
+        </script>
 
-      {/* Schema.org JSON-LD for BreadcrumbList */}
-      <script type="application/ld+json">
-        {`
-        {
-          "@context": "https://schema.org",
-          "@type": "BreadcrumbList",
-          "itemListElement": [
-            {
+        {/* JSON-LD Structured Data for Blog Posting */}
+        <script type="application/ld+json">
+          {`
+          {
+            "@context": "https://schema.org",
+            "@type": "BlogPosting",
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "https://anantya.ai/blog/whatsapp-business-api-providers"
+            },
+            "headline": "Top WhatsApp Business API Providers in 2024",
+            "description": "Discover the best WhatsApp Business API providers in 2024. Choose the right partner for seamless communication and business growth. Easy setup, reliable support!",
+            "image": "https://ik.imagekit.io/cloy701fl/images//blog/whatsapp-business-api-providers-2024.webp",
+            "author": {
+              "@type": "Organization",
+              "name": "Anantya.ai",
+              "url": "https://anantya.ai",
+              "areaServed": ["IN","AE","SA","BH"]
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "Anantya.ai",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://ik.imagekit.io/cloy701fl/images/logo.webp"
+              }
+            },
+            "datePublished": "2024-09-10"
+          }
+          `}
+        </script>
+
+        {/* JSON-LD Structured Data for Breadcrumb List */}
+        <script type="application/ld+json">
+          {`
+          {
+            "@context": "https://schema.org/",
+            "@type": "BreadcrumbList",
+            "itemListElement": [{
               "@type": "ListItem",
               "position": 1,
-              "name": "Home",
+              "name": "Homepage",
               "item": "https://anantya.ai/"
-            },
-            {
+            },{
               "@type": "ListItem",
               "position": 2,
+              "name": "Blog",
+              "item": "https://anantya.ai/blog"
+            },{
+              "@type": "ListItem",
+              "position": 3,
               "name": "Top WhatsApp Business API Providers in 2024",
-              "item": "https://anantya.ai/whatsapp-business-api-providers"
-            }
-          ]
-        }
-        `}
-      </script>
-      {/* anup meta tags and schema */}
-    </Helmet>
-    <div className="container py-4">
+              "item": "https://anantya.ai/blog/whatsapp-business-api-providers"
+            }]
+          }
+          `}
+        </script>
+      </Helmet>
+
+    <div className="container py-5">
       <div className="row px-md-5 px-1 mx-1 mx-md-5">
         <div className="col-md-12 col-sm-12">
-          <div className="text-center py-4">
+          <div className="text-center py-5">
             <img
               src={whatsappImage}
               className="img-fluid h-50 w-75 mx-auto"
@@ -186,7 +196,7 @@ const WhatsAppBusinessApiProviders = () => {
                       <h2 className="fs-4 mb-10 mt-10">How to Pick the Right WhatsApp Business API Provider</h2>
                       <p>
                         Companies can successfully communicate with their consumers through integrating{' '}
-                        <a href="whatsapp-business-api-ultimate-guide" style={{ color: '#5dc4eb' }}>
+                        <a href="/whatsapp-business-api-ultimate-guide" style={{ color: '#5dc4eb' }}>
                           WhatsApp Business API
                         </a>{' '}
                         with their CRMs and/or other channels. However, choosing the right <b>WhatsApp Business API provider</b> is
@@ -314,7 +324,7 @@ const WhatsAppBusinessApiProviders = () => {
       <section id="anantya" className="wati">
         <h2 className="fs-4 mb-10 mt-10">Anantya.ai</h2>
         <p>
-          Anantya.ai is an <a href="whatsapp-business-api" style={{ color: '#5dc4eb' }}>official WhatsApp Business API solution.</a> It provides businesses with an all-in-one WhatsApp Business Solution that includes automation, chatbots, catalogs, and multi-agent customer support.
+          Anantya.ai is an <a href="/whatsapp-business-api" style={{ color: '#5dc4eb' }}>official WhatsApp Business API solution.</a> It provides businesses with an all-in-one WhatsApp Business Solution that includes automation, chatbots, catalogs, and multi-agent customer support.
         </p>
         <p>
           Anantya.ai is specially designed for businesses aiming to streamline communication and customer interactions; it also uses powerful features to enhance business growth and customer engagement.
@@ -337,7 +347,7 @@ const WhatsAppBusinessApiProviders = () => {
           <li><strong>Easy Interaction with Existing Tools:</strong> To simplify company procedures, it smoothly integrates with your CRMs and many other platforms.</li>
         </ul>
         <p>
-          Businesses searching for an all-inclusive, multi-channel platform with cutting-edge automations and customer support features may consider <a href="index" style={{ color: '#5dc4eb' }}>Anantya.ai.</a>
+          Businesses searching for an all-inclusive, multi-channel platform with cutting-edge automations and customer support features may consider <a href="/" style={{ color: '#5dc4eb' }}>Anantya.ai.</a>
         </p>
         <p>
           Anantya.ai will be the ideal solution for businesses looking for good multichannel support. Its wide range of features makes it a great choice for mid-sized and expanding organizations looking to get the most out of WhatsApp interaction and communication.
@@ -350,7 +360,7 @@ const WhatsAppBusinessApiProviders = () => {
         <img src={ctaImg} className="img-fluid my-4" alt="CTA" />
         <p>Make WhatsApp the greatest sales and marketing tool with Anantya.ai.</p>
 
-        <a href="contact" target="_blank" style={{ color: '#5dc4eb' }}>Your Free Trial Now 👉</a>
+        <a href="/contact" target="_blank" style={{ color: '#5dc4eb' }}>Your Free Trial Now 👉</a>
       </section>
                
       <section id="conclusion">
@@ -366,7 +376,7 @@ const WhatsAppBusinessApiProviders = () => {
                   </div>
                    <div className="col-lg-4">
         <div className="summary-card">
-          <h6 className="pb-20 border-bottom border-1 brd-gray">Table of Contents:</h6>
+          <h6 className="pb-3 border-bottom border-1 brd-gray">Table of Contents:</h6>
           <ul>
             <li><a href="#what-is-whatsapp-business-api">What is WhatsApp Business API?</a></li>
             <li><a href="#how-to-pick-the-right-provider">How to Pick the Right WhatsApp Business API Provider</a></li>

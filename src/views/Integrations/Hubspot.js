@@ -3,6 +3,7 @@ import ScrollToTopButton from "../../components/common/ScrollToTopButton";
 import WhatsAppWidget from "../../components/common/WhatsAppWidget";
 import ClientsSection from '../../components/common/ClientsSection'; // Adjust the path if necessary
 import PopularPosts from '../../components/common/PopularPosts'; 
+import SidebarInfo from "../../components/common/SidebarInfo"; // Adjust the path as necessary
 import { Helmet } from 'react-helmet';
 import { getImage } from '../../utils/getImage'; // Correct path to utility
 // Fetching the HubSpot logo dynamically using getImage function
@@ -141,6 +142,30 @@ function Hubspot() {
        </div>
      </div>
    </div>
+   <div className="container py-5">
+      <div className="row">
+        <div className='col-lg-4 col-md-4 col-sm-12'>
+          <SidebarInfo />
+        </div>
+        <div className='col-lg-8 col-md-8 col-sm-12 my-auto ps-5 text-start mt-md-0 mt-4'>
+        <div className='integration_content'>
+        <p>Through the powerful integration capabilities of Zapier, seamlessly link Anantya.ai with HubSpot to automate the synchronization of contact details between both platforms.</p>
+                    <ul>
+                        <li>Streamline Contact Management: Effortlessly maintain accurate and up-to-date contact information by automating the transfer of data between Anantya.ai and HubSpot.
+                        </li>
+                        <li>Enhance Lead Generation: Ensure that leads captured through Anantya.ai are seamlessly integrated into HubSpot, allowing for effective nurturing and conversion strategies.
+                        </li>
+                        <li>Improve Sales and Marketing Alignment: Enable sales and marketing teams to access unified contact data, fostering collaboration and enhancing targeting efforts.
+                         </li>
+                        <li>Optimize Workflow Efficiency: By automating contact synchronization, reduce manual data entry tasks and free up valuable time for more strategic initiatives.
+                         </li>
+                          
+                    </ul>
+         </div>
+        </div>
+      </div>
+
+    </div>
      <PopularPosts />
      <ClientsSection />
      <ScrollToTopButton />

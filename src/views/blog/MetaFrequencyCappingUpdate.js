@@ -4,122 +4,132 @@ import WhatsAppWidget from "../../components/common/WhatsAppWidget";
 import { Helmet } from "react-helmet";
 import { getImage } from '../../utils/getImage'; // Correct path to utility
 // Fetching the image dynamically using getImage function
-const blogImage = getImage('meta-frequency-capping-update.webp');
+const blogImage = getImage('/blog/meta-frequency-capping-update.webp');
 const MetaFrequencyCappingUpdate = () => {
   return (
     <div>
-      <Helmet>
-        <title>WhatsApp’s 2024 Free Entry Point & Frequency Capping</title>
+    <Helmet>
+        <link rel="alternate" hrefLang="x-default" href="https://anantya.ai/blog/meta-new-frequency-capping-update" />
+        <link rel="alternate" hreflang="en-ae" href="https://anantya.ai/blog/meta-new-frequency-capping-update" />
+        <link rel="alternate" hreflang="en-sa" href="https://anantya.ai/blog/meta-new-frequency-capping-update" />
+        <link rel="alternate" hreflang="en-bh" href="https://anantya.ai/blog/meta-new-frequency-capping-update" />
+        <link rel="alternate" hreflang="en-in" href="https://anantya.ai/blog/meta-new-frequency-capping-update" />
+        <link rel="alternate" hreflang="en" href="https://anantya.ai/blog/meta-new-frequency-capping-update" />
+
+        <title>Meta's Frequency Capping Update Explained All You Need to Know</title>
         <meta name="robots" content="index,follow" />
+        <meta name="title" content="Meta's Frequency Capping Update Explained All You Need to Know" />
         <meta
           name="description"
-          content="Learn how WhatsApp’s 2024 updates on free entry points and frequency capping can impact your business messaging strategy. Stay ahead and effective."
+          content="Discover how Meta's new frequency capping update and WhatsApp Business API enhance ad performance and user experience. Learn key benefits & tips"
         />
-        <meta property="og:type" content="article" />
-        <meta property="og:locale" content="en_IN" />
+        <meta
+          name="keywords"
+          content="meta frequency capping, frequency capping, meta frequency for whatsapp business api, whatsapp business api frequency capping"
+        />
+        <meta property="og:type" content="blog" />
         <meta property="og:locale" content="en_AE" />
         <meta property="og:locale" content="en_SA" />
         <meta property="og:locale" content="en_BH" />
+        <meta property="og:locale" content="en_IN" />
         <meta
           property="og:title"
-          content="WhatsApp’s 2024 Free Entry Point & Frequency Capping"
+          content="Meta's Frequency Capping Update Explained All You Need to Know"
         />
         <meta
           property="og:description"
-          content="Learn how WhatsApp’s 2024 updates on free entry points and frequency capping can impact your business messaging strategy. Stay ahead and effective."
+          content="Discover how Meta's new frequency capping update and WhatsApp Business API enhance ad performance and user experience. Learn key benefits & tips"
         />
         <meta
           property="og:url"
-          content="https://anantya.ai/whatsapp-free-entry-frequency-capping"
+          content="https://anantya.ai/blog/meta-new-frequency-capping-update"
         />
         <meta property="og:site_name" content="anantya.ai" />
         <meta
           property="og:image"
-          content="https://anantya.ai/assets/img/blog/whatsapp-free-entry-frequency-capping.webp"
+          content="https://ik.imagekit.io/cloy701fl/images//blog/meta-frequency-capping-update.webp"
         />
-        <link
-          rel="canonical"
-          href="https://anantya.ai/whatsapp-free-entry-frequency-capping"
-        />
+        <link rel="canonical" href="https://anantya.ai/blog/meta-new-frequency-capping-update" />
         <meta name="author" content="Anantya" />
 
-        {/* JSON-LD Structured Data */}
+        {/* Organization Schema */}
         <script type="application/ld+json">
-          {JSON.stringify({
+          {`{
             "@context": "https://schema.org",
             "@type": "Organization",
-            name: "anantya.ai",
-            alternateName:
-              "Conversational Engagement Platform for Businesses | Anantya.ai",
-            url: "https://anantya.ai",
-            logo: "https://anantya.ai/assets/img/logo.webp",
-            contactPoint: {
+            "name": "anantya.ai",
+            "alternateName": "Conversational Engagement Platform for Businesses | Anantya.ai",
+            "url": "https://anantya.ai",
+            "logo": "https://ik.imagekit.io/cloy701fl/images/logo.webp",
+            "contactPoint": {
               "@type": "ContactPoint",
-              telephone: "+971565480273",
-              contactType: "sales",
-              areaServed: ["IN", "AE", "SA", "BH"],
-              availableLanguage: ["en"],
+              "telephone": "+971565480273",
+              "contactType": "sales",
+              "areaServed": ["AE","SA","BH","IN"],
+              "availableLanguage": ["en"]
             },
-            sameAs: [
+            "sameAs": [
               "https://www.facebook.com/anantyaai",
               "https://www.instagram.com/anantya.ai",
               "https://www.youtube.com/@Anantyaai",
               "https://www.linkedin.com/company/anantya-ai",
-              "https://www.pinterest.com/anantyaai",
-            ],
-          })}
+              "https://www.pinterest.com/anantyaai"
+            ]
+          }`}
         </script>
 
+        {/* BlogPosting Schema */}
         <script type="application/ld+json">
-          {JSON.stringify({
+          {`{
             "@context": "https://schema.org",
             "@type": "BlogPosting",
-            mainEntityOfPage: {
+            "mainEntityOfPage": {
               "@type": "WebPage",
-              "@id": "https://anantya.ai/whatsapp-free-entry-frequency-capping",
+              "@id": "https://anantya.ai/blog/meta-new-frequency-capping-update"
             },
-            headline: "WhatsApp’s 2024 Free Entry Point & Frequency Capping",
-            description:
-              "Learn how WhatsApp’s 2024 updates on free entry points and frequency capping can impact your business messaging strategy. Stay ahead and effective.",
-            image:
-              "https://anantya.ai/assets/img/blog/whatsapp-free-entry-frequency-capping.webp",
-            author: {
+            "headline": "Meta's Frequency Capping Update Explained All You Need to Know",
+            "description": "Discover how Meta's new frequency capping update and WhatsApp Business API enhance ad performance and user experience. Learn key benefits & tips",
+            "image": "https://ik.imagekit.io/cloy701fl/images//blog/meta-frequency-capping-update.webp",
+            "author": {
               "@type": "Organization",
-              name: "Anantya.ai",
-              url: "https://anantya.ai",
-              areaServed: ["IN", "AE", "SA", "BH"],
+              "name": "Anantya.ai",
+              "url": "https://anantya.ai",
+              "areaServed": ["AE","SA","BH","IN"]
             },
-            publisher: {
+            "publisher": {
               "@type": "Organization",
-              name: "Anantya.ai",
-              logo: {
+              "name": "Anantya.ai",
+              "logo": {
                 "@type": "ImageObject",
-                url: "https://anantya.ai/assets/img/logo.webp",
-              },
+                "url": "https://ik.imagekit.io/cloy701fl/images/logo.webp"
+              }
             },
-            datePublished: "2024-08-20",
-          })}
+            "datePublished": "2024-06-25"
+          }`}
         </script>
 
+        {/* Breadcrumb Schema */}
         <script type="application/ld+json">
-          {JSON.stringify({
+          {`{
             "@context": "https://schema.org/",
             "@type": "BreadcrumbList",
-            itemListElement: [
-              {
-                "@type": "ListItem",
-                position: 1,
-                name: "Home",
-                item: "https://anantya.ai/",
-              },
-              {
-                "@type": "ListItem",
-                position: 2,
-                name: "WhatsApp’s 2024 Free Entry Point & Frequency Capping",
-                item: "https://anantya.ai/whatsapp-free-entry-frequency-capping",
-              },
-            ],
-          })}
+            "itemListElement": [{
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Homepage",
+              "item": "https://anantya.ai/"
+            },{
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Blog",
+              "item": "https://anantya.ai/blog"
+            },{
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Meta's Frequency Capping Update Explained All You Need to Know",
+              "item": "https://anantya.ai/blog/meta-new-frequency-capping-update"
+            }]
+          }`}
         </script>
       </Helmet>
       <div className="container py-4 mt-4">
@@ -238,7 +248,7 @@ const MetaFrequencyCappingUpdate = () => {
                         </p>
                       </div>
                       <div className="text d-flex mb-2">
-                        <ul style={{ listStyleType: "none" }}>
+                        <ul style={{ listStyleType: "none", padding:"0" }}>
                           <li>
                             <span className="icon color-blue5 me-2 flex-shrink-0">
                               <i className="fas fa-check-circle"></i>
@@ -438,7 +448,7 @@ const MetaFrequencyCappingUpdate = () => {
                           </p>
                         </div>
                       </div>
-                      <h6 className="mt-4 mb-2">In conclusion</h6>
+                      <h6 className="mt-4 mb-2 fs-3">In conclusion</h6>
                       <div className="text d-flex mb-2">
                         <p>
                           Brands will definitely be more aware of their WhatsApp
@@ -453,7 +463,7 @@ const MetaFrequencyCappingUpdate = () => {
                           <b>Anantya.ai</b> can make the process easier for
                           businesses wishing to expand their{" "}
                           <b>WhatsApp marketing.</b> Here, you may schedule a
-                          10-minute one-on-one
+                          10-minute one-on-one 
                           <a
                             className="fs-6"
                             href="https://calendly.com/info-w0m/30min"
@@ -461,7 +471,7 @@ const MetaFrequencyCappingUpdate = () => {
                             target="_blank"
                             rel="noopener noreferrer"
                           >
-                            meeting with us.
+                             meeting with us.
                           </a>
                         </p>
                       </div>

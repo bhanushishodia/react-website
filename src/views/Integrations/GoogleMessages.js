@@ -3,6 +3,7 @@ import ScrollToTopButton from "../../components/common/ScrollToTopButton";
 import WhatsAppWidget from "../../components/common/WhatsAppWidget";
 import ClientsSection from '../../components/common/ClientsSection'; // Adjust the path if necessary
 import PopularPosts from '../../components/common/PopularPosts'; 
+import SidebarInfo from "../../components/common/SidebarInfo"; // Adjust the path as necessary
 import { Helmet } from 'react-helmet';
 import { getImage } from '../../utils/getImage'; // Correct path to utility
 // Fetching the Instagram logo dynamically using getImage function
@@ -10,56 +11,49 @@ const instagramLogo = getImage('Google-Business-Messages.svg');
 
 const GoogleMessages = () => {
   return (
+    
     <div>
-       
-    <Helmet>
-      {/* anup meta tags and schema */}
-      <title>Google Business Messages Integration for Business | Anantya.ai</title>
-      <meta name="robots" content="index,follow" />
-      <meta 
-        name="description" 
-        content="Anantya.ai Provides Google Business Messages for Business. It'll help you to engage your audience through google business message." 
-      />
-      <meta 
-        name="keywords" 
-        content="google my business chat integration, google business messages, business messages google, google messages for business, google my business messages, messaging google my business" 
-      />
-      <meta 
-        property="og:title" 
-        content="Google Business Messages Integration for Business | Anantya.ai" 
-      />
-      <meta property="og:type" content="website" />
-      <meta 
-        property="og:description" 
-        content="Anantya.ai Provides Google Business Messages for Business. It'll help you to engage your audience through google business message." 
-      />
-      <meta 
-        property="og:url" 
-        content="https://anantya.ai/integrations/google-business-messages" 
-      />
-      <meta property="og:site_name" content="anantya.ai" />
-      <meta 
-        property="og:image" 
-        content="https://anantya.ai/assets/img/home/Google-Business-Messages.svg" 
-      />
-      <link rel="canonical" href="https://anantya.ai/integrations/google-business-messages" />
-      <meta name="author" content="Anantya" />
-      
-      {/* JSON-LD Schema Markup */}
-      <script type="application/ld+json">
-        {`
-          {
+      <Helmet>
+        <link rel="alternate" hrefLang="x-default" href="https://anantya.ai/integrations/google-business-messages" />
+        <link rel="alternate" hrefLang="en-ae" href="https://anantya.ai/integrations/google-business-messages" />
+        <link rel="alternate" hrefLang="en-sa" href="https://anantya.ai/integrations/google-business-messages" />
+        <link rel="alternate" hrefLang="en-bh" href="https://anantya.ai/integrations/google-business-messages" />
+        <link rel="alternate" hrefLang="en-in" href="https://anantya.ai/integrations/google-business-messages" />
+        <link rel="alternate" hrefLang="en" href="https://anantya.ai/integrations/google-business-messages" />
+
+        <title>Integrate Google Business Messages with Whatsapp</title>
+        <meta name="robots" content="index,follow" />
+        <meta name="title" content="Integrate Google Business Messages with Whatsapp" />
+        <meta name="description" content="Anantya.ai Provides Google Business Messages for Business. It'll help you to engage your audience through google business message." />
+        <meta name="keywords" content="google my business chat integration, google business messages, business messages google, google my business messages, messaging google my business" />
+        
+        <meta property="og:type" content="article" />
+        <meta property="og:locale" content="en_AE" />
+        <meta property="og:locale" content="en_SA" />
+        <meta property="og:locale" content="en_BH" />
+        <meta property="og:locale" content="en_IN" />
+        <meta property="og:title" content="Integrate Google Business Messages with Whatsapp" />
+        <meta property="og:description" content="Anantya.ai Provides Google Business Messages for Business. It'll help you to engage your audience through google business message." />
+        <meta property="og:url" content="https://anantya.ai/integrations/google-business-messages" />
+        <meta property="og:site_name" content="anantya.ai" />
+        <meta property="og:image" content="https://ik.imagekit.io/cloy701fl/images/Google-Business-Messages.svg" />
+        
+        <link rel="canonical" href="https://anantya.ai/integrations/google-business-messages" />
+        <meta name="author" content="Anantya" />
+        
+        <script type="application/ld+json">
+          {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Organization",
             "name": "Anantya.ai",
             "alternateName": "Conversational Engagement Platform for Businesses | Anantya.ai",
             "url": "https://anantya.ai/",
-            "logo": "https://anantya.ai/assets/img/logo.webp",
+            "logo": "https://ik.imagekit.io/cloy701fl/images/logo.webp",
             "contactPoint": {
               "@type": "ContactPoint",
               "telephone": "+971565480273",
               "contactType": "sales",
-              "areaServed": ["AE","SA","BH"],
+              "areaServed": ["AE", "SA", "BH", "IN"],
               "availableLanguage": "en"
             },
             "sameAs": [
@@ -69,34 +63,21 @@ const GoogleMessages = () => {
               "https://www.linkedin.com/company/anantya-ai",
               "https://www.pinterest.com/anantyaai"
             ]
-          }
-        `}
-      </script>
+          })}
+        </script>
 
-      <script type="application/ld+json">
-        {`
-          {
-            "@context": "https://schema.org",
-            "@graph": [
-              {
-                "@type": "WebPage",
-                "name": "Google Business Messages Integration for Business | Anantya.ai",
-                "description": "Anantya.ai Provides Google Business Messages for Business. It'll help you to engage your audience through google business message."
-              },
-              {
-                "@type": "WebSite",
-                "name": "Anantya",
-                "alternateName": "anantya.ai",
-                "url": "https://anantya.ai/"
-              }
-            ]
-          }
-        `}
-      </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org/",
+            "@type": "WebPage",
+            "@id": "#WebPage",
+            "url": "https://anantya.ai/integrations/google-business-messages",
+            "name": "Integrate Google Business Messages with Whatsapp"
+          })}
+        </script>
 
-      <script type="application/ld+json">
-        {`
-          {
+        <script type="application/ld+json">
+          {JSON.stringify({
             "@context": "https://schema.org/",
             "@type": "BreadcrumbList",
             "itemListElement": [
@@ -119,13 +100,11 @@ const GoogleMessages = () => {
                 "item": "https://anantya.ai/integrations/google-business-messages"
               }
             ]
-          }
-        `}
-      </script>
-      {/* anup meta tags and schema */}
-    </Helmet>
+          })}
+        </script>
+      </Helmet>
 
-    <div className="py-5" style={{ background: 'linear-gradient(180deg, #e7f1f5, #fff 100%, #fff)' }}>
+    <div className="py-5 my-5" style={{ background: 'linear-gradient(180deg, #e7f1f5, #fff 100%, #fff)' }}>
       <div className="container my-5 text-lg-start">
         <div className="text-block-125 integration mb-3">
           <a className="internalpage_link" href="../integration">
@@ -142,6 +121,41 @@ const GoogleMessages = () => {
           </div>
         </div>
       </div>
+    </div>
+    <div className="container py-5">
+      <div className="row">
+        <div className='col-lg-4 col-md-4 col-sm-12'>
+          <SidebarInfo />
+        </div>
+        <div className='col-lg-8 col-md-8 col-sm-12 my-auto ps-5 text-start mt-md-0 mt-4'>
+        <div className='integration_content'>
+        <p>
+        Engage your audience through Google Business Messages by leveraging teams
+        of agents to support and sell to customers who reach out through your
+        Google Business Profile.
+      </p>
+      <ul>
+        <li>
+          Manage incoming conversations - greet customers, communicate
+          availability, and direct them to the appropriate agent or department.
+        </li>
+        <li>
+          Respond to chats - transfer customers, generate support tickets, or
+          process their orders.
+        </li>
+        <li>
+          Supervise and report on conversations - assess agent performance,
+          maintain visibility over their chats, and intervene when necessary.
+        </li>
+        <li>
+          Implement business processes - customize Google Business Messages to
+          suit your business needs and enhance overall efficiency.
+        </li>
+      </ul>
+         </div>
+        </div>
+      </div>
+
     </div>
     <PopularPosts />
     <ClientsSection />

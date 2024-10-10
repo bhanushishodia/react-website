@@ -13,19 +13,88 @@ const articleImg4 = getImage('article-4.png');
 const HowToSetupWelcomeMessage = () => {
   return (
     <>
+  
     <Helmet>
-    <title>Set Up a Welcome Message on Anantya.ai Step by Step</title>
-    <meta name="robots" content="index,follow" />
-    <meta name="description" content="Guide to setup a welcome message on Anantya.ai for businesses." />
-    <meta property="og:title" content="Set Up a Welcome Message on Anantya.ai Step by Step" />
-    <meta property="og:type" content="article" />
-    <meta property="og:description" content="Guide to setup a welcome message on Anantya.ai for businesses." />
-    <meta property="og:url" content="https://anantya.ai/how-to-setup-a-welcome-message-on-anantya.ai" />
-    <meta property="og:site_name" content="anantya.ai" />
-    <meta property="og:image" content="https://anantya.ai/assets/img/article-1.png" />
-    <link rel="canonical" href="https://anantya.ai/how-to-setup-a-welcome-message-on-anantya.ai" />
-    <meta name="author" content="Anantya.ai" />
-</Helmet>
+      {/* Alternate links */}
+      <link rel="alternate" hrefLang="x-default" href="https://anantya.ai/how-to-setup-a-welcome-message-on-anantya-ai" />
+      <link rel="alternate" hreflang="en-ae" href="https://anantya.ai/how-to-setup-a-welcome-message-on-anantya-ai" />
+      <link rel="alternate" hreflang="en-sa" href="https://anantya.ai/how-to-setup-a-welcome-message-on-anantya-ai" />
+      <link rel="alternate" hreflang="en-bh" href="https://anantya.ai/how-to-setup-a-welcome-message-on-anantya-ai" />
+      <link rel="alternate" hreflang="en-in" href="https://anantya.ai/how-to-setup-a-welcome-message-on-anantya-ai" />
+      <link rel="alternate" hreflang="en" href="https://anantya.ai/how-to-setup-a-welcome-message-on-anantya-ai" />
+
+      {/* Meta tags */}
+      <title>How to setup a Welcome message on WhatsApp Business</title>
+      <meta name="robots" content="index,follow" />
+      <meta name="title" content="How to setup a Welcome message on WhatsApp Business" />
+      <meta name="description" content="How to setup a Welcome message on WhatsApp Business API Step-by-Step Guide" />
+      <meta property="og:type" content="article" />
+      <meta property="og:title" content="How to setup a Welcome message on WhatsApp Business" />
+      <meta property="og:description" content="How to setup a Welcome message on WhatsApp Business API Step-by-Step Guide" />
+      <meta property="og:url" content="https://anantya.ai/how-to-setup-a-welcome-message-on-anantya-ai" />
+      <meta property="og:site_name" content="anantya.ai" />
+      <meta property="og:image" content="https://ik.imagekit.io/cloy701fl/images/article-1.png" />
+      <link rel="canonical" href="https://anantya.ai/how-to-setup-a-welcome-message-on-anantya-ai" />
+      <meta name="author" content="Anantya.ai" />
+
+      {/* Structured Data (JSON-LD) */}
+      <script type="application/ld+json">
+        {`{
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Anantya.ai",
+          "alternateName": "Conversational Engagement Platform for Businesses | Anantya.ai",
+          "url": "https://anantya.ai/",
+          "logo": "https://ik.imagekit.io/cloy701fl/images/logo.webp",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+971565480273",
+            "contactType": "sales",
+            "areaServed": ["AE", "SA", "BH", "IN"],
+            "availableLanguage": "en"
+          },
+          "sameAs": [
+            "https://www.facebook.com/anantyaai",
+            "https://www.instagram.com/anantya.ai",
+            "https://www.youtube.com/@Anantyaai",
+            "https://www.linkedin.com/company/anantya-ai",
+            "https://www.pinterest.com/anantyaai"
+          ]
+        }`}
+      </script>
+
+      <script type="application/ld+json">
+        {`{
+          "@context": "https://schema.org/",
+          "@type": "WebPage",
+          "@id": "#WebPage",
+          "url": "https://anantya.ai/how-to-setup-a-welcome-message-on-anantya-ai",
+          "name": "How to setup a Welcome message on WhatsApp Business"
+        }`}
+      </script>
+
+      <script type="application/ld+json">
+        {`{
+          "@context": "https://schema.org/",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Homepage",
+              "item": "https://anantya.ai"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "How to setup a Welcome message on WhatsApp Business",
+              "item": "https://anantya.ai/how-to-setup-a-welcome-message-on-anantya-ai"
+            }
+          ]
+        }`}
+      </script>
+    </Helmet>
+  
     <div className="page-content">
      <div>
       <InnerHeader />

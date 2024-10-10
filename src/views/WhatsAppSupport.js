@@ -35,97 +35,89 @@ const submitFormAndOpenPDF = (event) => {
 
   return (
     <div>
-      <Helmet>
-      {/* Title and Meta Tags */}
-      <title>Customer Support Chatbot by Anantya.ai | Chatbot Solutions</title>
-      <meta name="robots" content="index,follow" />
-      <meta
-        name="description"
-        content="Enhance customer support with Anantya.ai's WhatsApp chatbot. Offer 24/7 assistance, resolve issues quickly, and improve customer satisfaction."
-      />
+     <Helmet>
+  <link rel="alternate" hrefLang="x-default" href="https://anantya.ai/whatsapp-support" />
+  <link rel="alternate" hrefLang="en-ae" href="https://anantya.ai/whatsapp-support" />
+  <link rel="alternate" hrefLang="en-sa" href="https://anantya.ai/whatsapp-support" />
+  <link rel="alternate" hrefLang="en-bh" href="https://anantya.ai/whatsapp-support" />
+  <link rel="alternate" hrefLang="en-in" href="https://anantya.ai/whatsapp-support" />
+  <link rel="alternate" hrefLang="en" href="https://anantya.ai/whatsapp-support" />
+  
+  <title>Customer Support Chatbot by Anantya.ai | Chatbot Support</title>
+  <meta name="robots" content="index,follow" />
+  <meta name="title" content="Customer Support Chatbot by Anantya.ai | Chatbot Support" />
+  <meta name="description" content="Enhance customer support with Anantya.ai's WhatsApp chatbot. Offer 24/7 assistance, resolve issues quickly, and improve customer satisfaction." />
+  <meta name="keywords" content="support on whatsapp" />
+  <meta property="og:type" content="article" />
+  <meta property="og:locale" content="en_AE" />
+  <meta property="og:locale" content="en_SA" />
+  <meta property="og:locale" content="en_BH" />
+  <meta property="og:locale" content="en_IN" />
+  <meta property="og:title" content="Customer Support Chatbot by Anantya.ai | Chatbot Support" />
+  <meta property="og:description" content="Enhance customer support with Anantya.ai's WhatsApp chatbot. Offer 24/7 assistance, resolve issues quickly, and improve customer satisfaction." />
+  <meta property="og:url" content="https://anantya.ai/whatsapp-support" />
+  <meta property="og:site_name" content="anantya.ai" />
+  <meta property="og:image" content="https://ik.imagekit.io/cloy701fl/images/offer-support-at-scale-with.webp" />
+  <link rel="canonical" href="https://anantya.ai/whatsapp-support" />
+  <meta name="author" content="Anantya" />
 
-      {/* Open Graph Meta Tags */}
-      <meta property="og:title" content="Customer Support Chatbot by Anantya.ai | Chatbot Solutions" />
-      <meta property="og:type" content="article" />
-      <meta
-        property="og:description"
-        content="Enhance customer support with Anantya.ai's WhatsApp chatbot. Offer 24/7 assistance, resolve issues quickly, and improve customer satisfaction."
-      />
-      <meta property="og:url" content="https://anantya.ai/whatsapp-support" />
-      <meta property="og:site_name" content="anantya.ai" />
-      <meta property="og:image" content="https://anantya.ai/assets/img/whatsapp-support/offer-support-at-scale-with.webp" />
+  <script type="application/ld+json">
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Anantya.ai",
+      "alternateName": "Conversational Engagement Platform for Businesses | Anantya.ai",
+      "url": "https://anantya.ai/",
+      "logo": "https://ik.imagekit.io/cloy701fl/images/logo.webp",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+971565480273",
+        "contactType": "sales",
+        "areaServed": ["AE", "SA", "BH", "IN"],
+        "availableLanguage": "en"
+      },
+      "sameAs": [
+        "https://www.facebook.com/anantyaai",
+        "https://www.instagram.com/anantya.ai",
+        "https://www.youtube.com/@Anantyaai",
+        "https://www.linkedin.com/company/anantya-ai",
+        "https://www.pinterest.com/anantyaai"
+      ]
+    })}
+  </script>
 
-      {/* Canonical Link */}
-      <link rel="canonical" href="https://anantya.ai/whatsapp-support" />
+  <script type="application/ld+json">
+    {JSON.stringify({
+      "@context": "https://schema.org/",
+      "@type": "WebPage",
+      "@id": "#WebPage",
+      "url": "https://anantya.ai/whatsapp-support",
+      "name": "Customer Support Chatbot by Anantya.ai | Chatbot Support"
+    })}
+  </script>
 
-      {/* Author */}
-      <meta name="author" content="Anantya" />
+  <script type="application/ld+json">
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Homepage",
+          "item": "https://anantya.ai"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Customer Support Chatbot",
+          "item": "https://anantya.ai/whatsapp-support"
+        }
+      ]
+    })}
+  </script>
+</Helmet>
 
-      {/* JSON-LD Schema for Organization */}
-      <script type="application/ld+json">
-        {`
-          {
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            "name": "Anantya.ai",
-            "alternateName": "Conversational Engagement Platform for Businesses | Anantya.ai",
-            "url": "https://anantya.ai/",
-            "logo": "https://anantya.ai/assets/img/logo.webp",
-            "contactPoint": {
-              "@type": "ContactPoint",
-              "telephone": "+971565480273",
-              "contactType": "sales",
-              "areaServed": ["AE", "SA", "BH"],
-              "availableLanguage": "en"
-            },
-            "sameAs": [
-              "https://www.facebook.com/anantyaai",
-              "https://www.instagram.com/anantya.ai",
-              "https://www.youtube.com/@Anantyaai",
-              "https://www.linkedin.com/company/anantya-ai",
-              "https://www.pinterest.com/anantyaai"
-            ]
-          }
-        `}
-      </script>
-
-      {/* JSON-LD Schema for WebPage */}
-      <script type="application/ld+json">
-        {`
-          {
-            "@context": "https://schema.org/",
-            "@type": "WebPage",
-            "@id": "#WebPage",
-            "url": "https://anantya.ai/whatsapp-support",
-            "name": "Customer Support Chatbot by Anantya.ai | Chatbot Solutions"
-          }
-        `}
-      </script>
-
-      {/* JSON-LD Schema for BreadcrumbList */}
-      <script type="application/ld+json">
-        {`
-          {
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-              {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Home",
-                "item": "https://anantya.ai"
-              },
-              {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "Customer Support Chatbot by Anantya.ai | Chatbot Solutions",
-                "item": "https://anantya.ai/whatsapp-support"
-              }
-            ]
-          }
-        `}
-      </script>
-      </Helmet>
       <div className="container mt-5">
         <div className="content py-5">
           <div className="row align-items-center">

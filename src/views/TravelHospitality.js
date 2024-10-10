@@ -77,136 +77,94 @@ const submitFormAndOpenPDF = (event) => {
   };
   return (
     <div>
-       
-    <Helmet>
-      <title>Chatbot for Travel & Hospitality Industry | Whatsapp Business API</title>
-      <meta name="robots" content="index,follow" />
-      <meta
-        name="description"
-        content="Improve your customers' travel and hospitality experiences with the WhatsApp chatbot from Anantya.ai. Give quick help and create strong connections with your guests."
-      />
-      <meta property="og:title" content="Chatbot for Travel & Hospitality Industry | Whatsapp Business API" />
-      <meta property="og:type" content="article" />
-      <meta
-        property="og:description"
-        content="Improve your customers' travel and hospitality experiences with the WhatsApp chatbot from Anantya.ai. Give quick help and create strong connections with your guests."
-      />
-      <meta property="og:url" content="https://anantya.ai/travel-and-hospitality-industry" />
-      <meta property="og:site_name" content="anantya.ai" />
-      <meta property="og:image" content="https://anantya.ai/assets/img/travel/get-more-leads-for-your-travel.webp" />
-      <link rel="canonical" href="https://anantya.ai/travel-and-hospitality-industry" />
-      <meta name="author" content="Anantya" />
+      <Helmet>
+            <link rel="alternate" hrefLang="x-default" href="https://anantya.ai/travel-and-hospitality-industry" />
+            <link rel="alternate" hreflang="en-ae" href="https://anantya.ai/travel-and-hospitality-industry" />
+            <link rel="alternate" hreflang="en-sa" href="https://anantya.ai/travel-and-hospitality-industry" />
+            <link rel="alternate" hreflang="en-bh" href="https://anantya.ai/travel-and-hospitality-industry" />
+            <link rel="alternate" hreflang="en-in" href="https://anantya.ai/travel-and-hospitality-industry" />
+            <link rel="alternate" hreflang="en" href="https://anantya.ai/travel-and-hospitality-industry" />
 
-      {/* Organization Schema */}
-      <script type="application/ld+json">
-        {JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "Organization",
-          "name": "Anantya.ai",
-          "alternateName": "Conversational Engagement Platform for Businesses | Anantya.ai",
-          "url": "https://anantya.ai/",
-          "logo": "https://anantya.ai/assets/img/logo.webp",
-          "contactPoint": {
-            "@type": "ContactPoint",
-            "telephone": "+971565480273",
-            "contactType": "sales",
-            "areaServed": ["AE", "SA", "BH"],
-            "availableLanguage": "en"
-          },
-          "sameAs": [
-            "https://www.facebook.com/anantyaai",
-            "https://www.instagram.com/anantya.ai",
-            "https://www.youtube.com/@Anantyaai",
-            "https://www.linkedin.com/company/anantya-ai",
-            "https://www.pinterest.com/anantyaai"
-          ]
-        })}
-      </script>
+            <title>Chatbot for Travel & Hospitality Industry | Whatsapp Business API</title>
+            <meta name="robots" content="index,follow" />
+            <meta name="title" content="Chatbot for Travel & Hospitality Industry | Whatsapp Business API" />
+            <meta name="description" content="Improve your customers' travel and hospitality experiences with the WhatsApp chatbot from Anantya.ai. Give quick help and create strong connections with your guests." />
+            <meta name="keywords" content="whatsapp business api for travel industry, whatsapp api for travel industry, whatsapp chatbot for travel industry" />
+            <meta property="og:type" content="article" />
+            <meta property="og:locale" content="en_AE" />
+            <meta property="og:locale" content="en_SA" />
+            <meta property="og:locale" content="en_BH" />
+            <meta property="og:locale" content="en_IN" />
+            <meta property="og:title" content="Chatbot for Travel & Hospitality Industry | Whatsapp Business API" />
+            <meta property="og:description" content="Improve your customers' travel and hospitality experiences with the WhatsApp chatbot from Anantya.ai. Give quick help and create strong connections with your guests." />
+            <meta property="og:url" content="https://anantya.ai/travel-and-hospitality-industry" />
+            <meta property="og:site_name" content="anantya.ai" />
+            <meta property="og:image" content="https://ik.imagekit.io/cloy701fl/images/get-more-leads-for-your-travel.webp" />
+            <link rel="canonical" href="https://anantya.ai/travel-and-hospitality-industry" />
+            <meta name="author" content="Anantya" />
 
-      {/* WebPage and Website Schema */}
-      <script type="application/ld+json">
-        {JSON.stringify({
-          "@context": "https://schema.org",
-          "@graph": [
-            {
-              "@type": "WebPage",
-              "name": "Chatbot for Travel & Hospitality Industry | Whatsapp Business API",
-              "description": "Improve your customers' travel and hospitality experiences with the WhatsApp chatbot from Anantya.ai. Give quick help and create strong connections with your guests."
-            },
-            {
-              "@type": "WebSite",
-              "name": "Anantya",
-              "alternateName": "anantya.ai",
-              "url": "https://anantya.ai/"
-            }
-          ]
-        })}
-      </script>
+            <script type="application/ld+json">
+                {`
+                {
+                    "@context": "https://schema.org",
+                    "@type": "Organization",
+                    "name": "Anantya.ai",
+                    "alternateName": "Conversational Engagement Platform for Businesses | Anantya.ai",
+                    "url": "https://anantya.ai/",
+                    "logo": "https://ik.imagekit.io/cloy701fl/images/logo.webp",
+                    "contactPoint": {
+                        "@type": "ContactPoint",
+                        "telephone": "+971565480273",
+                        "contactType": "sales",
+                        "areaServed": ["AE","SA","BH","IN"],
+                        "availableLanguage": "en"
+                    },
+                    "sameAs": [
+                        "https://www.facebook.com/anantyaai",
+                        "https://www.instagram.com/anantya.ai",
+                        "https://www.youtube.com/@Anantyaai",
+                        "https://www.linkedin.com/company/anantya-ai",
+                        "https://www.pinterest.com/anantyaai"
+                    ]
+                }
+                `}
+            </script>
 
-      {/* BreadcrumbList Schema */}
-      <script type="application/ld+json">
-        {JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "BreadcrumbList",
-          "itemListElement": [
-            {
-              "@type": "ListItem",
-              "position": 1,
-              "name": "Home",
-              "item": "https://anantya.ai"
-            },
-            {
-              "@type": "ListItem",
-              "position": 2,
-              "name": "Travel & Hospitality",
-              "item": "https://anantya.ai/travel-and-hospitality-industry"
-            }
-          ]
-        })}
-      </script>
+            <script type="application/ld+json">
+                {`
+                {         
+                    "@context": "https://schema.org/",         
+                    "@type": "WebPage",         
+                    "@id": "#WebPage",         
+                    "url": "https://anantya.ai/travel-and-hospitality-industry",          
+                    "name": "Chatbot for Travel & Hospitality Industry | Whatsapp Business API"
+                }
+                `}
+            </script>
 
-      {/* FAQPage Schema */}
-      <script type="application/ld+json">
-        {JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "FAQPage",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "How Can Conversational Automation Benefit The Travel And Hospitality Industry?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Conversational automation offers numerous benefits to the travel and hospitality industry. It allows businesses to engage and support travelers on their preferred messaging apps, enhancing customer experience and building personal connections. By automating tasks such as bookings, flight rescheduling, and providing real-time notifications, conversational automation brings efficiency to operations and improves overall customer satisfaction."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Can Conversational Automation Improve Hotel Services?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Absolutely! Conversational automation empowers hotels to offer contactless services such as check-in and check-out, airport transfers, and room service orders. Guests can conveniently communicate their requests and access essential information like Wi-Fi details or laundry facilities through messaging apps, enhancing convenience and guest satisfaction."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Can Conversational Automation Assist In Upselling And Cross-Selling Opportunities?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Absolutely! Conversational automation provides an engaging platform for businesses to upsell and cross-sell to guests and travelers. By engaging in conversational interactions, businesses can suggest additional services, amenities, or upgrades tailored to individual preferences, thereby boosting revenue opportunities and enhancing customer satisfaction."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Is Conversational Automation Beneficial For Both Travelers And Businesses?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Yes, conversational automation benefits both travelers and businesses. Travelers enjoy the convenience of seamless bookings, real-time assistance, and personalized recommendations throughout their journey. For businesses, it enables improved customer engagement, operational efficiency, and revenue generation through upselling and cross-selling opportunities."
-              }
-            }
-          ]
-        })}
-      </script>
-    </Helmet>
+            <script type="application/ld+json">
+                {`
+                {
+                    "@context": "https://schema.org",
+                    "@type": "BreadcrumbList",
+                    "itemListElement": [
+                        {
+                            "@type": "ListItem",
+                            "position": 1,
+                            "name": "Home",
+                            "item": "https://anantya.ai"
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 2,
+                            "name": "Travel & Hospitality",
+                            "item": "https://anantya.ai/travel-and-hospitality-industry"
+                        }
+                    ]
+                }
+                `}
+            </script>
+        </Helmet>
      <div className="container py-5 mt-5">
             <div className="content">
                 <div className="row align-items-center">

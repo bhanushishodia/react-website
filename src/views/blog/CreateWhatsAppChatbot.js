@@ -4,162 +4,129 @@ import WhatsAppWidget from '../../components/common/WhatsAppWidget';
 import { Helmet } from 'react-helmet';
 import { getImage } from '../../utils/getImage'; // Correct path to utility
 // Fetching images dynamically using getImage function
-const whatsappChatbotImage = getImage('whatsapp-chatbot-for-business.webp');
-const whatsappChatbotImage1 = getImage('anantyaai-dashboard-login.webp');
-const whatsappChatbotImage2 = getImage('whatsapp-chatbot-dashboard.webp');
-const whatsappChatbotImage3 = getImage('whatsapp-chatbot-setup.webp');
-const welcomeMessageImg = getImage('welcome-message.webp');
-const outOfOfficeMessageImg = getImage('out-of-office-message.webp');
-const whatsappBotSetupImg = getImage('whatsapp-bot-setup.webp');
-const feedbackMessageImg = getImage('feedback-message.webp');
-const quickReplyImg = getImage('quick-reply.webp');
+const whatsappChatbotImage = getImage('/blog/whatsapp-chatbot-for-business.webp');
+const whatsappChatbotImage1 = getImage('/blog/anantyaai-dashboard-login.webp');
+const whatsappChatbotImage2 = getImage('/blog/whatsapp-chatbot-dashboard.webp');
+const whatsappChatbotImage3 = getImage('/blog/whatsapp-chatbot-setup.webp');
+const welcomeMessageImg = getImage('/blog/welcome-message.webp');
+const outOfOfficeMessageImg = getImage('/blog/out-of-office-message.webp');
+const whatsappBotSetupImg = getImage('/blog/whatsapp-bot-setup.webp');
+const feedbackMessageImg = getImage('/blog/feedback-message.webp');
+const quickReplyImg = getImage('/blog/quick-reply.webp');
 
 const CreateWhatsAppChatbot = () => {
   return (
     <div>
-      <Helmet>
-      <title>Whatsapp Chatbot: Create a WhatsApp ChatBot for Business</title>
-      <meta name="keywords" content="whatsapp chatbot,whatsapp chatbot for business,chatbot in whatsapp,whatsapp bot for business,whatsapp business chatbot,how to create chatbot,how to create whatsapp bot,how to create whatsapp chatbot,how to create chatbot in whatsapp" />
-      <meta name="robots" content="index,follow" />
-      <meta name="description" content="Unlock the process of creating a WhatsApp chatbot for business in a few simple steps with the guidance of Anantya.ai's comprehensive tutorial." />
-      <meta property="og:title" content="Whatsapp Chatbot: Create a WhatsApp ChatBot for Business" />
-      <meta property="og:type" content="article" />
-      <meta property="og:description" content="Unlock the process of creating a WhatsApp chatbot for business in a few simple steps with the guidance of Anantya.ai's comprehensive tutorial." />
-      <meta property="og:url" content="https://anantya.ai/how-to-create-a-whatsapp-chatbot-for-business" />
-      <meta property="og:site_name" content="anantya.ai" />
-      <meta property="og:image" content="https://anantya.ai/assets/img/blog/whatsapp-chatbot-for-business.webp" />
-      <link rel="canonical" href="https://anantya.ai/how-to-create-a-whatsapp-chatbot-for-business" />
-      <meta name="author" content="Anantya" />
+     <Helmet>
+        {/* Alternate Links */}
+        <link rel="alternate" hrefLang="x-default" href="https://anantya.ai/blog/how-to-create-a-whatsapp-chatbot-for-business" />
+        <link rel="alternate" hreflang="en-ae" href="https://anantya.ai/blog/how-to-create-a-whatsapp-chatbot-for-business" />
+        <link rel="alternate" hreflang="en-sa" href="https://anantya.ai/blog/how-to-create-a-whatsapp-chatbot-for-business" />
+        <link rel="alternate" hreflang="en-bh" href="https://anantya.ai/blog/how-to-create-a-whatsapp-chatbot-for-business" />
+        <link rel="alternate" hreflang="en-in" href="https://anantya.ai/blog/how-to-create-a-whatsapp-chatbot-for-business" />
+        <link rel="alternate" hreflang="en" href="https://anantya.ai/blog/how-to-create-a-whatsapp-chatbot-for-business" />
 
-      <script type="application/ld+json">{`
-        {
-          "@context": "https://schema.org",
-          "@type": "Organization",
-          "name": "anantya.ai",
-          "alternateName": "Conversational Engagement Platform for Businesses | Anantya.ai",
-          "url": "https://anantya.ai",
-          "logo": "https://anantya.ai/assets/img/logo.webp",
-          "contactPoint": {
-            "@type": "ContactPoint",
-            "telephone": "+971565480273",
-            "contactType": "sales",
-            "areaServed": ["AE","SA","BH"],
-            "availableLanguage": ["en"]
-          },
-          "sameAs": [
-            "https://www.facebook.com/anantyaai",
-            "https://www.instagram.com/anantya.ai",
-            "https://www.youtube.com/@Anantyaai",
-            "https://www.linkedin.com/company/anantya-ai",
-            "https://www.pinterest.com/anantyaai"
-          ]
-        }
-      `}</script>
+        {/* Page Title & Meta Tags */}
+        <title>Whatsapp Chatbot: Create a WhatsApp ChatBot for Business</title>
+        <meta name="robots" content="index,follow" />
+        <meta name="title" content="Whatsapp Chatbot: Create a WhatsApp ChatBot for Business" />
+        <meta name="description" content="Unlock the process of creating a WhatsApp chatbot for business in a few simple steps with the guidance of Anantya.ai's comprehensive tutorial." />
+        <meta name="keywords" content="whatsapp chatbot,whatsapp chatbot for business,chatbot in whatsapp,whatsapp bot for business,whatsapp business chatbot,how to create chatbot,how to create whatsapp bot,how to create whatsapp chatbot,how to create chatbot in whatsapp" />
+        
+        {/* Open Graph Meta Tags */}
+        <meta property="og:type" content="blog" />
+        <meta property="og:locale" content="en_AE" />
+        <meta property="og:locale" content="en_SA" />
+        <meta property="og:locale" content="en_BH" />
+        <meta property="og:locale" content="en_IN" />
+        <meta property="og:title" content="Whatsapp Chatbot: Create a WhatsApp ChatBot for Business" />
+        <meta property="og:description" content="Unlock the process of creating a WhatsApp chatbot for business in a few simple steps with the guidance of Anantya.ai's comprehensive tutorial." />
+        <meta property="og:url" content="https://anantya.ai/blog/how-to-create-a-whatsapp-chatbot-for-business" />
+        <meta property="og:site_name" content="anantya.ai" />
+        <meta property="og:image" content="https://ik.imagekit.io/cloy701fl/images//blog/whatsapp-chatbot-for-business.webp" />
+        <link rel="canonical" href="https://anantya.ai/blog/how-to-create-a-whatsapp-chatbot-for-business" />
+        <meta name="author" content="Anantya" />
 
-      <script type="application/ld+json">{`
-        {
-          "@context": "https://schema.org",
-          "@type": "BlogPosting",
-          "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": "https://anantya.ai/how-to-create-a-whatsapp-chatbot-for-business"
-          },
-          "headline": "Whatsapp Chatbot: Create a WhatsApp ChatBot for Business",
-          "description": "Unlock the process of creating a WhatsApp chatbot for business in a few simple steps with the guidance of Anantya.ai's comprehensive tutorial.",
-          "image": "https://anantya.ai/assets/img/blog/whatsapp-chatbot-for-business.webp",  
-          "author": {
+        {/* Structured Data - Organization */}
+        <script type="application/ld+json">
+          {`{
+            "@context": "https://schema.org",
             "@type": "Organization",
-            "name": "Anantya.ai",
+            "name": "anantya.ai",
+            "alternateName": "Conversational Engagement Platform for Businesses | Anantya.ai",
             "url": "https://anantya.ai",
-            "areaServed": ["AE","SA","BH"]
-          },  
-          "publisher": {
-            "@type": "Organization",
-            "name": "Anantya.ai",
-            "logo": {
-              "@type": "ImageObject",
-              "url": "https://anantya.ai/assets/img/logo.webp"
-            }
-          },
-          "datePublished": "2024-04-25"
-        }
-      `}</script>
+            "logo": "https://ik.imagekit.io/cloy701fl/images/logo.webp",
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+971565480273",
+              "contactType": "sales",
+              "areaServed": ["AE","SA","BH","IN"],
+              "availableLanguage": ["en"]
+            },
+            "sameAs": [
+              "https://www.facebook.com/anantyaai",
+              "https://www.instagram.com/anantya.ai",
+              "https://www.youtube.com/@Anantyaai",
+              "https://www.linkedin.com/company/anantya-ai",
+              "https://www.pinterest.com/anantyaai"
+            ]
+          }`}
+        </script>
 
-      <script type="application/ld+json">{`
-        {
-          "@context": "https://schema.org/", 
-          "@type": "BreadcrumbList", 
-          "itemListElement": [{
-            "@type": "ListItem", 
-            "position": 1, 
-            "name": "Home",
-            "item": "https://anantya.ai/"  
-          },{
-            "@type": "ListItem", 
-            "position": 2, 
-            "name": "Whatsapp Chatbot: Create a WhatsApp ChatBot for Business",
-            "item": "https://anantya.ai/how-to-create-a-whatsapp-chatbot-for-business"  
-          }]
-        }
-      `}</script>
+        {/* Structured Data - Blog Posting */}
+        <script type="application/ld+json">
+          {`{
+            "@context": "https://schema.org",
+            "@type": "BlogPosting",
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "https://anantya.ai/blog/how-to-create-a-whatsapp-chatbot-for-business"
+            },
+            "headline": "Whatsapp Chatbot: Create a WhatsApp ChatBot for Business",
+            "description": "Unlock the process of creating a WhatsApp chatbot for business in a few simple steps with the guidance of Anantya.ai's comprehensive tutorial.",
+            "image": "https://ik.imagekit.io/cloy701fl/images//blog/whatsapp-chatbot-for-business.webp",
+            "author": {
+              "@type": "Organization",
+              "name": "Anantya.ai",
+              "url": "https://anantya.ai",
+              "areaServed": ["AE","SA","BH","IN"]
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "Anantya.ai",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://ik.imagekit.io/cloy701fl/images/logo.webp"
+              }
+            },
+            "datePublished": "2024-04-25"
+          }`}
+        </script>
 
-      <script type="application/ld+json">{`
-        {
-          "@context": "https://schema.org",
-          "@type": "FAQPage",
-          "mainEntity": [{
-            "@type": "Question",
-            "name": "Which Two Methods Are Best For Integrating And Creating A Chatbot For WhatsApp?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Either the WhatsApp Business App or the WhatsApp Business Platform can be used to link your WhatsApp chatbot service. Small businesses should choose the first option, but if you require more than basic automation, you will need to engage developers to build chatbots on your behalf. However, because Anantya.ai is a WhatsApp business solution provider, the second choice makes integration quick and easy."
-            }
-          },{
-            "@type": "Question",
-            "name": "What Requirements Must Be Followed To Integrate A Chatbot With WhatsApp?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Your company must have access to the official WhatsApp Business API and a confirmed Facebook Business account in order to successfully integrate a chatbot with WhatsApp. You also require a registered business phone number on WhatsApp."
-            }
-          },{
-            "@type": "Question",
-            "name": "How Can I Use A WhatsApp Chatbot To Send Broadcasts?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Broadcasts can be used to send people through paths, messages with options, and simple text messages. You can even plan your broadcasts and direct them to particular user segments with our help. You must utilize a template message if you want to broadcast messages on WhatsApp after the 24-hour deadline has passed. All you need to do is use the Template Message node to set up the templates right in the conversation flow while creating your WhatsApp AI chatbot."
-            }
-          },{
-            "@type": "Question",
-            "name": "How Can I Access The Business API For WhatsApp?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "WhatsApp uses its partners to distribute its business APIs. With our platform, Anantya.ai will assist you in gaining access to the WhatsApp API when you construct a free chatbot. Additionally, you can acquire a 24-hour verification of your WhatsApp AI number."
-            }
-          },{
-            "@type": "Question",
-            "name": "How Much Does The Chatbot On WhatsApp Cost?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "WhatsApp marketing is growing, and you need to take advantage of this by using WhatsApp to connect with your clients. Therefore, even though implementing your WhatsApp AI chatbot isn't free, we can assist you in doing so at a reasonable cost because of our relationships with WhatsApp API providers."
-            }
-          },{
-            "@type": "Question",
-            "name": "What Is The Business API For WhatsApp?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Medium-sized and big organizations use the WhatsApp Business API to increase consumer engagement on WhatsApp with interactive buttons, broadcasts, templates, and other unique capabilities that aren't found in the WhatsApp Business App. Large companies with lots of clients and a business suite that connects with their other software, processes, and data are the ones who use it the most."
-            }
-          },{
-            "@type": "Question",
-            "name": "Is There A Free Anantya.Ai WhatsApp Integration?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes, the Anantya.ai WhatsApp API service provider offers you free chatbot use with the WhatsApp API platform Connectivity."
-            }
-          }]
-        }
-      `}</script>
-       </Helmet>
+        {/* Structured Data - Breadcrumb List */}
+        <script type="application/ld+json">
+          {`{
+            "@context": "https://schema.org/",
+            "@type": "BreadcrumbList",
+            "itemListElement": [{
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Homepage",
+              "item": "https://anantya.ai/"
+            },{
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Blog",
+              "item": "https://anantya.ai/blog"
+            },{
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Whatsapp Chatbot: Create a WhatsApp ChatBot for Business",
+              "item": "https://anantya.ai/blog/how-to-create-a-whatsapp-chatbot-for-business"
+            }]
+          }`}
+        </script>
+      </Helmet>
 
 
          <div className="container py-4 mt-4 ">
@@ -216,7 +183,7 @@ const CreateWhatsAppChatbot = () => {
                                         <h6 className="mt-4 mb-20">What is a WhatsApp chatbot?</h6>
                                         <div className="text d-flex mb-20">
                                             <p>
-                                                A <a href="automated-chatbot" target="_blank">WhatsApp chatbot</a> is like having a virtual assistant for your business on WhatsApp. It is basically a computer programme that can automatically answer questions from customers about a given product or service.
+                                                A <a href="/automated-chatbot" target="_blank">WhatsApp chatbot</a> is like having a virtual assistant for your business on WhatsApp. It is basically a computer programme that can automatically answer questions from customers about a given product or service.
                                                 It can also share useful content and send updates about orders, payments, and shipping directly through WhatsApp.
                                             </p>
                                         </div>
@@ -370,7 +337,7 @@ const CreateWhatsAppChatbot = () => {
 </div>
 <div class="text d-flex mb-20">
 
-<p>Businesses can save time and resources by training their chatbots to identify frequently asked questions and provide prompt answers, thanks to the <a href="whatsapp-business-api-ultimate-guide" target="_blank"> WhatsApp Business API </a> connection.
+<p>Businesses can save time and resources by training their chatbots to identify frequently asked questions and provide prompt answers, thanks to the <a href="/whatsapp-business-api-ultimate-guide" target="_blank"> WhatsApp Business API </a> connection.
 </p>
 </div>
 <div class="text d-flex mb-20">
@@ -413,7 +380,7 @@ const CreateWhatsAppChatbot = () => {
 
             <h6 className="mt-4 mb-20">Step 3: Log in with Anantya.ai</h6>
             <div className="text d-flex mb-20">
-                <p>Once you are all done with the procedure of setting your <a href="whatsapp-business-api" target="_blank">WhatsApp Business API</a> in your account at Anantya.ai.</p>
+                <p>Once you are all done with the procedure of setting your <a href="/whatsapp-business-api" target="_blank">WhatsApp Business API</a> in your account at Anantya.ai.</p>
             </div>
             <div className="text d-flex mb-20">
                 <p>You get the login credentials for the Anantya.ai Platform from our team, and the page window will appear as shown below.</p>
@@ -626,7 +593,7 @@ const CreateWhatsAppChatbot = () => {
                         <div id="collapse13" className="accordion-collapse collapse" aria-labelledby="heading13" data-bs-parent="#accordionSt4">
                           <div className="accordion-body">
                             <p>Broadcasts can be used to send people through paths, messages with options, and simple text messages. You can even plan your broadcasts and direct them to particular user segments with our help.</p>
-                            <p>You must utilize a template message if you want to <a href="whatsapp-broadcasting">broadcast messages on WhatsApp</a> after the 24-hour deadline has passed.</p>
+                            <p>You must utilize a template message if you want to <a href="/whatsapp-broadcasting">broadcast messages on WhatsApp</a> after the 24-hour deadline has passed.</p>
                             <p>All you need to do is use the Template Message node to set up the templates right in the conversation flow while creating your WhatsApp AI chatbot.</p>
                           </div>
                         </div>
