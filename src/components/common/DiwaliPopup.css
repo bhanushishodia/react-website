@@ -1,0 +1,156 @@
+.diwali-popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999; /* Higher than the navbar */
+}
+
+.diwali-popup-content {
+  background-color: #fff;
+  padding: 0px;
+  border-radius: 0px;
+  display: flex;
+  max-width: 800px;
+  width: 100%;
+  position: relative;
+}
+
+/* Left side (Image) */
+.diwali-popup-left {
+  flex: 1.2;
+  padding: 0;
+}
+
+
+
+.diwali-popup-right {
+  flex: 1;
+  padding: 16px 0; /* Top and bottom padding for form */
+}
+.diwali-popup-right .form-control {
+  min-height: 36px;
+}
+.diwali-popup-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.diwali-popup-form label {
+  margin-bottom: 8px;
+}
+
+.diwali-popup-form input {
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 5px;
+  width: auto;
+  border: 1px solid #ddd;
+}
+
+.diwali-popup-close-btn {
+  position: absolute;
+  right: -25px; /* Adjust to place the close button outside the popup */
+  top: -25px; /* Move the close button upwards */
+  background-color: transparent;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  font-size: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.diwali-popup-right .btn.login_button {
+  width: auto;
+}
+
+.gradient {
+  background: linear-gradient(45deg, transparent, #def1fa, transparent, #e8e8f347, transparent);
+}
+
+/* Mobile Responsive Styles (For devices below 768px) */
+@media (max-width: 768px) {
+  .diwali-popup-content {
+    flex-direction: column; /* Stack image and form vertically */
+    max-width: 95vw; /* Take more width on mobile */
+    padding: 10px;
+  }
+
+  .diwali-popup-left {
+    padding: 0;
+  }
+ 
+
+  .diwali-popup-image {
+    min-height: 300px; /* Adjust image height for mobile */
+  }
+
+  .diwali-popup-right {
+    padding: 15px;
+  }
+
+  .diwali-popup-form input {
+    font-size: 14px; /* Adjust input font size for mobile */
+    padding: 8px;
+  }
+
+  .diwali-popup-close-btn {
+    right: -10px;
+    top: -10px;
+    width: 35px;
+    font-size: 30px;
+    height: 35px;
+  }
+
+  .diwali-popup-right .btn.login_button {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+.diwali-popup-right small{
+  font-size: 12px;
+  text-align: center!important;
+  margin: 0 auto;
+
+}
+/* Further responsive adjustments for very small screens (below 480px) */
+@media (max-width: 480px) {
+  .diwali-popup-content {
+    flex-direction: column; /* Stack image and form vertically */
+    max-width: 100vw;
+    padding: 5px;
+  }
+
+  .diwali-popup-image {
+    min-height: 250px; /* Adjust image height for very small screens */
+  }
+
+  .diwali-popup-right {
+    padding: 10px;
+  }
+
+  .diwali-popup-form input {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  .diwali-popup-close-btn {
+    right: 15px;
+    top: -5px;
+    width: 30px;
+    font-size: 40px;
+    height: 30px;
+  }
+
+  .diwali-popup-right .btn.login_button {
+    padding: 8px;
+    font-size: 12px;
+  }
+}
